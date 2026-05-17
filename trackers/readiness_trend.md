@@ -54,6 +54,20 @@
 
 ---
 
+## W20 Sunday row
+
+| Date | Day | Sleep h | Restful % | HRV ms | HRV %vs baseline | Calves L | Calves R | Body feel | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-05-17 | SUN | ~8h50 | 51% (4h30) | 77 sleeping / 68.6 daily | +55% | OK | OK | — | Recovery walk only 30:32; HRV strong; mild elevation in sleeping HR (56 bpm) attributed to probe load + wine + late computer; calves clean |
+
+---
+
+## W20 7-day summary
+
+| W20 summary | 7h27 avg | ~49% avg | 32–69 ms range | 5.5/10 est | — | — | 1 Green / 4 Yellow / 1 Red |
+
+---
+
 ## Phase 2 Build — HRV Pattern Observations
 
 - Sleep volume averages 6h54 across W17–W20 — chronically below 7h30 Green threshold
