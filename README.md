@@ -39,6 +39,12 @@ wolf-hyrox/
 ├── CLAUDE.md                    ← agent operating manual (read first)
 ├── STATE.md                     ← single source of truth
 ├── README.md                    ← you are here
+├── PORTAL.html                  ← Wolf Portal navigation entry point (GitHub Pages)
+│
+├── plans/                       ← wolf_wNN_plan.html (one per week, auto-generated)
+├── completed/                   ← wolf_wNN_completed.html (one per week, auto-generated)
+├── master/                      ← hyrox_*_master_plan.html, Week_09 legacy block
+├── analytics/                   ← yaro_athlete_dashboard_v2.html, performance analysis
 │
 ├── state/                       ← LIVE, daily updates
 │   ├── current_week.md          ← daily-append buffer (THE working doc)
@@ -70,8 +76,12 @@ wolf-hyrox/
 │   ├── probe_log.md
 │   └── readiness_trend.md
 │
-└── dashboard/                   ← auto-generated HTML for Wolf Portal
-    └── week_NN.html
+└── .claude/commands/            ← Claude Code slash commands
+    ├── status.md
+    ├── morning.md
+    ├── session.md
+    ├── update-portal.md
+    └── close-week.md
 ```
 
 ---

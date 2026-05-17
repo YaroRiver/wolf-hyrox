@@ -132,7 +132,7 @@ These are read on demand:
    - Update limiter
 8. Update `trackers/readiness_trend.md` 7-day summary
 9. If phase boundary crossed: annotate `reference/master_plan.md`
-10. (Optional) regenerate `dashboard/week_NN.html` for Wolf Portal publication
+10. (Optional) regenerate `completed/wolf_wNN_completed.html` and `plans/wolf_wNN_plan.html` for Wolf Portal publication
 11. `git commit -m "W<NN> close-out + W<NN+1> plan"`
 12. `git push origin main`
 
@@ -254,6 +254,12 @@ wolf-hyrox/
 ├── CLAUDE.md                    ← this file
 ├── STATE.md                     ← single source of truth
 ├── README.md
+├── PORTAL.html                  ← Wolf Portal navigation entry point
+│
+├── plans/                       ← wolf_wNN_plan.html (one per week)
+├── completed/                   ← wolf_wNN_completed.html (one per week)
+├── master/                      ← hyrox_*_master_plan.html, Week_09 legacy
+├── analytics/                   ← yaro_athlete_dashboard_v2.html, performance analysis
 │
 ├── state/                       ← LIVE, daily
 │   ├── current_week.md
@@ -272,7 +278,7 @@ wolf-hyrox/
 │   └── masters_protocols.md
 │
 ├── archive/2026/                ← IMMUTABLE history
-│   └── week_NN_report.md
+│   ├── week_NN_report.md
 │   └── week_NN_plan.md
 │
 ├── trackers/                    ← APPEND-ONLY KPI logs
@@ -285,8 +291,12 @@ wolf-hyrox/
 │   ├── probe_log.md
 │   └── readiness_trend.md
 │
-└── dashboard/                   ← auto-generated HTML
-    └── week_NN.html
+└── .claude/commands/            ← Claude Code slash commands
+    ├── status.md
+    ├── morning.md
+    ├── session.md
+    ├── update-portal.md
+    └── close-week.md
 ```
 
 ---
@@ -315,5 +325,5 @@ For day-to-day execution: this file is read, not modified.
 
 ---
 
-**Last updated:** 2026-05-16
+**Last updated:** 2026-05-17
 **Athlete confirmation required for changes to this file.**

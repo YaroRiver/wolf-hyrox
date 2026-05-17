@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sports science performance analysis for Yaro's HYROX preparation - Sydney 2026">
+<meta property="og:title" content="Performance Analysis: Yaro 2026">
+<meta property="og:type" content="document">
+<meta property="og:description" content="Comprehensive sports science assessment for HYROX Sydney 03.07.2026">
 <title>PERFORMANCE ANALYSIS // YARO 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -21,7 +25,21 @@
     --orange: #FF8C42;
   }
 
+  @media (prefers-color-scheme: light) {
+    :root.light-mode {
+      --bg: #F5F7FA;
+      --surface: #FFFFFF;
+      --surface2: #F0F4F8;
+      --border: #D0D8E0;
+      --text: #1A2332;
+      --muted: #6B7684;
+      --label: #4A5568;
+    }
+  }
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
 
   body {
     background: var(--bg);
@@ -29,6 +47,12 @@
     font-family: 'DM Sans', sans-serif;
     min-height: 100vh;
     overflow-x: hidden;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
   }
 
   body::before {
@@ -41,7 +65,99 @@
     pointer-events: none; z-index: 0;
   }
 
+  /* Theme toggle */
+  .theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.2s ease;
+  }
+
+  .theme-toggle:hover {
+    background: var(--surface2);
+  }
+
+  /* TOC */
+  .toc-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 10px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: var(--accent);
+    transition: all 0.2s ease;
+  }
+
+  .toc-btn:hover {
+    background: var(--surface2);
+  }
+
+  .toc-panel {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 280px;
+    height: 100vh;
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    padding: 60px 20px 20px 20px;
+    overflow-y: auto;
+    z-index: 99;
+    transition: left 0.3s ease;
+  }
+
+  .toc-panel.active {
+    left: 0;
+  }
+
+  .toc-panel h3 {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+
+  .toc-list {
+    list-style: none;
+  }
+
+  .toc-list li {
+    margin-bottom: 10px;
+  }
+
+  .toc-list a {
+    color: var(--label);
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.2s ease;
+    display: block;
+    padding: 6px 10px;
+    border-radius: 3px;
+  }
+
+  .toc-list a:hover {
+    color: var(--accent);
+    background: rgba(0,229,255,0.05);
+  }
+
   .wrap { max-width: 1100px; margin: 0 auto; padding: 40px 24px; position: relative; z-index: 1; }
+
 
   /* ── HEADER ── */
   .hdr {
@@ -79,13 +195,14 @@
 
   /* ── SECTION ── */
   .section {
-    margin-bottom: 32px;
+    margin-bottom: 48px;
     animation: fadeUp .5s ease both;
+    scroll-margin-top: 80px;
   }
 
   .section-hdr {
     display: flex; align-items: center; gap: 14px;
-    margin-bottom: 16px; padding-bottom: 12px;
+    margin-bottom: 20px; padding-bottom: 16px;
     border-bottom: 1px solid var(--border);
   }
 
@@ -98,7 +215,8 @@
 
   .sec-badge {
     margin-left: auto; font-family: 'DM Mono', monospace; font-size: 8px;
-    padding: 3px 10px; letter-spacing: 2px; border: 1px solid; flex-shrink: 0;
+    padding: 5px 12px; letter-spacing: 1px; border: 1px solid; flex-shrink: 0;
+    border-radius: 3px;
   }
 
   .badge-ok   { color: var(--green); border-color: rgba(0,255,135,.25); background: rgba(0,255,135,.04); }
@@ -243,11 +361,66 @@
   .section:nth-child(5){animation-delay:.16s} .section:nth-child(6){animation-delay:.20s}
   .section:nth-child(7){animation-delay:.24s} .section:nth-child(8){animation-delay:.28s}
 
-  @media (max-width: 760px) { .data-grid, .data-grid-3 { grid-template-columns: 1fr 1fr; } .verdict-strip { grid-template-columns: repeat(3,1fr); } .tt-header, .tt-row { grid-template-columns: 2fr 1fr 1fr; } .tt-header .tc:last-child, .tt-row .tc:last-child { display: none; } }
-  @media (max-width: 520px) { .data-grid { grid-template-columns: 1fr; } .hdr-title { font-size: 48px; } }
+  /* Responsive */
+  @media (max-width: 900px) {
+    .toc-btn { display: flex; align-items: center; gap: 6px; }
+    .wrap { padding: 40px 20px; }
+  }
+
+  @media (max-width: 768px) {
+    .data-grid, .data-grid-3 { grid-template-columns: 1fr; }
+    .verdict-strip { grid-template-columns: repeat(2,1fr); }
+    .tt-header, .tt-row { grid-template-columns: 1fr 1fr; }
+    .tt-header .tc:nth-child(3), .tt-row .tc:nth-child(3),
+    .tt-header .tc:nth-child(4), .tt-row .tc:nth-child(4) { display: none; }
+    .hdr-meta { gap: 12px; flex-wrap: wrap; }
+    .hm { font-size: 8px; }
+    .score-section { flex-direction: column; }
+    .score-breakdown { width: 100%; }
+  }
+
+  @media (max-width: 520px) {
+    .data-grid { grid-template-columns: 1fr; }
+    .hdr-title { font-size: 42px; }
+    .sec-title { font-size: 20px; }
+    .hdr-eyebrow { font-size: 8px; letter-spacing: 2px; }
+    .verdict-strip { grid-template-columns: 1fr; }
+    .toc-btn, .theme-toggle { padding: 8px; font-size: 14px; }
+    .wrap { padding: 30px 16px; margin-top: 50px; }
+    .hm { flex: 1; min-width: 120px; }
+  }
+
+  /* Print styles */
+  @media print {
+    .toc-btn, .theme-toggle, .toc-panel { display: none; }
+    body { background: white; color: black; }
+    .wrap { max-width: 100%; padding: 0; }
+    a { color: #0066cc; }
+    .section { page-break-inside: avoid; margin-bottom: 20px; }
+    .verdict { page-break-inside: avoid; }
+  }
+
 </style>
 </head>
 <body>
+<button class="toc-btn" id="tocBtn" aria-label="Toggle table of contents">≡ TOC</button>
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+
+<nav class="toc-panel" id="tocPanel" aria-label="Table of contents">
+  <h3>Розділи</h3>
+  <ul class="toc-list">
+    <li><a href="#sec-01">01 · Профіль Атлета</a></li>
+    <li><a href="#sec-02">02 · Тренувальний Блок</a></li>
+    <li><a href="#sec-03">03 · HYROX Мета</a></li>
+    <li><a href="#sec-04">04 · Wall Balls</a></li>
+    <li><a href="#sec-05">05 · Біг</a></li>
+    <li><a href="#sec-06">06 · Сон (Критично)</a></li>
+    <li><a href="#sec-07">07 · Силова Підготовка</a></li>
+    <li><a href="#sec-08">08 · Оптимізація</a></li>
+    <li><a href="#sec-09">09 · Оцінка</a></li>
+  </ul>
+</nav>
+
 <div class="wrap">
 
   <!-- HEADER -->
@@ -289,7 +462,7 @@
   </div>
 
   <!-- 1. ATHLETE PROFILE -->
-  <div class="section">
+  <div class="section" id="sec-01">
     <div class="section-hdr">
       <div class="sec-num">01</div>
       <div class="sec-title" style="color:var(--accent);">Базовий Профіль Атлета</div>
@@ -321,7 +494,7 @@
   </div>
 
   <!-- 2. PERIODIZATION -->
-  <div class="section">
+  <div class="section" id="sec-02">
     <div class="section-hdr">
       <div class="sec-num">02</div>
       <div class="sec-title" style="color:var(--green);">Структура Тренувального Блоку</div>
@@ -379,7 +552,7 @@
   </div>
 
   <!-- 3. HYROX TARGET FEASIBILITY -->
-  <div class="section">
+  <div class="section" id="sec-03">
     <div class="section-hdr">
       <div class="sec-num">03</div>
       <div class="sec-title" style="color:var(--gold);">Реалістичність Цілі 1:15:00 — Sydney 03.07.2026</div>
@@ -443,7 +616,7 @@
   </div>
 
   <!-- 4. WB ANALYSIS -->
-  <div class="section">
+  <div class="section" id="sec-04">
     <div class="section-hdr">
       <div class="sec-num">04</div>
       <div class="sec-title" style="color:var(--red);">Прогресія Wall Balls</div>
@@ -475,7 +648,7 @@
   </div>
 
   <!-- 5. RUNNING ANALYSIS -->
-  <div class="section">
+  <div class="section" id="sec-05">
     <div class="section-hdr">
       <div class="sec-num">05</div>
       <div class="sec-title" style="color:var(--green);">Бігова Підготовка</div>
@@ -516,7 +689,7 @@
   </div>
 
   <!-- 6. SLEEP - CRITICAL -->
-  <div class="section">
+  <div class="section" id="sec-06">
     <div class="section-hdr">
       <div class="sec-num">06</div>
       <div class="sec-title" style="color:var(--red);">Sleep Debt — Критична Зона</div>
@@ -553,7 +726,7 @@
   </div>
 
   <!-- 7. STRENGTH ASSESSMENT -->
-  <div class="section">
+  <div class="section" id="sec-07">
     <div class="section-hdr">
       <div class="sec-num">07</div>
       <div class="sec-title" style="color:var(--gold);">Силова Підготовка</div>
@@ -568,7 +741,7 @@
   </div>
 
   <!-- 8. WHAT'S MISSING -->
-  <div class="section">
+  <div class="section" id="sec-08">
     <div class="section-hdr">
       <div class="sec-num">08</div>
       <div class="sec-title" style="color:var(--orange);">Що Можна Додати</div>
@@ -617,7 +790,7 @@
   </div>
 
   <!-- SCORE -->
-  <div class="section">
+  <div class="section" id="sec-09">
     <div class="section-hdr">
       <div class="sec-num">09</div>
       <div class="sec-title" style="color:var(--accent);">Оцінка по Категоріях</div>
@@ -692,12 +865,63 @@
 </div>
 
 <script>
+  // Animate bars only on page load
+  let barsAnimated = false;
   window.addEventListener('load', () => {
+    if (barsAnimated) return;
+    barsAnimated = true;
     document.querySelectorAll('.sb-bar-fill').forEach(el => {
       const w = el.style.width;
       el.style.width = '0';
       setTimeout(() => { el.style.width = w; }, 300);
     });
+  });
+
+  // Theme toggle
+  const themeToggle = document.getElementById('themeToggle');
+  const html = document.documentElement;
+
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const savedTheme = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
+
+  function setTheme(theme) {
+    if (theme === 'light') {
+      html.classList.add('light-mode');
+      themeToggle.textContent = '☀️';
+      localStorage.setItem('theme', 'light');
+    } else {
+      html.classList.remove('light-mode');
+      themeToggle.textContent = '🌙';
+      localStorage.setItem('theme', 'dark');
+    }
+  }
+
+  setTheme(savedTheme);
+  themeToggle.addEventListener('click', () => {
+    const isLight = html.classList.contains('light-mode');
+    setTheme(isLight ? 'dark' : 'light');
+  });
+
+  // TOC toggle
+  const tocBtn = document.getElementById('tocBtn');
+  const tocPanel = document.getElementById('tocPanel');
+
+  tocBtn.addEventListener('click', () => {
+    tocPanel.classList.toggle('active');
+  });
+
+  // Close TOC when link clicked
+  document.querySelectorAll('.toc-list a').forEach(link => {
+    link.addEventListener('click', () => {
+      tocPanel.classList.remove('active');
+    });
+  });
+
+  // Close TOC on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && tocPanel.classList.contains('active')) {
+      tocPanel.classList.remove('active');
+    }
   });
 </script>
 
