@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SYDNEY BUILD W22 · 2026 // YARO</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #080C10; --surface: #0E1419; --surface2: #141B22;
+    --border: #1E2D3D; --accent: #00E5FF; --red: #FF4757;
+    --gold: #FFD700; --green: #00FF87; --text: #E8EDF2;
+    --muted: #5A6A7A; --label: #8A9BAB; --orange: #FF8C42;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; min-height: 100vh; overflow-x: hidden; }
+  body::before { content: ''; position: fixed; inset: 0; background-image: linear-gradient(rgba(0,229,255,0.022) 1px, transparent 1px), linear-gradient(90deg, rgba(0,229,255,0.022) 1px, transparent 1px); background-size: 40px 40px; pointer-events: none; z-index: 0; }
+  .wrap { max-width: 1300px; margin: 0 auto; padding: 36px 24px; position: relative; z-index: 1; }
+
+  /* ── HEADER ── */
+  .hdr { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 28px; padding-bottom: 24px; border-bottom: 1px solid var(--border); animation: fadeUp .5s ease both; }
+  .eyebrow { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 4px; color: var(--accent); text-transform: uppercase; margin-bottom: 6px; }
+  .title    { font-family: 'Bebas Neue', sans-serif; font-size: clamp(52px, 8vw, 88px); line-height: .88; letter-spacing: 4px; }
+  .subtitle { font-family: 'Bebas Neue', sans-serif; font-size: clamp(16px, 2.2vw, 24px); letter-spacing: 5px; color: var(--muted); margin-top: 4px; }
+  .block-info { margin-top: 10px; font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); letter-spacing: 1px; }
+  .block-info span { color: var(--accent); }
+  .hdr-right { text-align: right; }
+  .week-badge { font-family: 'Bebas Neue', sans-serif; font-size: 56px; color: var(--accent); letter-spacing: 3px; line-height: 1; }
+  .week-range { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--text); letter-spacing: 2px; margin-top: 2px; }
+  .week-year  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 2px; margin-bottom: 10px; }
+  .live-badge { display: inline-flex; align-items: center; gap: 6px; font-family: 'DM Mono', monospace; font-size: 9px; color: var(--accent); letter-spacing: 2px; text-transform: uppercase; padding: 5px 12px; border: 1px solid rgba(0,229,255,.2); background: rgba(0,229,255,.04); }
+  .ld { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); animation: pulse 2s ease-in-out infinite; }
+
+  /* ── PHASE BAR ── */
+  .phase-banner { display: flex; align-items: center; margin-bottom: 20px; border: 1px solid var(--border); overflow: hidden; animation: fadeUp .5s .04s ease both; }
+  .ph-seg { flex: 1; padding: 11px 10px; font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 2px; text-transform: uppercase; text-align: center; position: relative; border-right: 1px solid var(--border); transition: background .2s; }
+  .ph-seg:last-child { border-right: none; }
+  .ph-seg::after { content: '→'; position: absolute; right: -7px; top: 50%; transform: translateY(-50%); color: var(--border); font-size: 11px; z-index: 1; }
+  .ph-seg:last-child::after { display: none; }
+  .ph-seg .ph-wk { font-family: 'Bebas Neue', sans-serif; font-size: 17px; letter-spacing: 2px; display: block; line-height: 1; margin-bottom: 3px; }
+  .ph-seg.done { background: rgba(0,255,135,.05); color: var(--green); }
+  .ph-seg.done .ph-wk { color: var(--green); }
+  .ph-seg.now  { background: rgba(0,229,255,.08); color: var(--accent); }
+  .ph-seg.now  .ph-wk { color: var(--accent); }
+  .ph-seg.next { color: var(--muted); }
+  .ph-seg.next .ph-wk { color: var(--muted); }
+  .ph-seg.far  { color: var(--border); }
+  .ph-seg.far  .ph-wk { color: var(--border); }
+
+  /* ── CONTEXT BANNER ── */
+  .correction-banner { background: var(--surface); border: 1px solid rgba(0,229,255,.2); border-left: 3px solid var(--accent); padding: 14px 22px; margin-bottom: 14px; animation: fadeUp .5s .06s ease both; }
+  .cb-label { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--accent); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 5px; }
+  .cb-text  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.7; }
+  .cb-text span { color: var(--text); }
+
+  /* ── VACCINE BANNER ── */
+  .new-banner { background: var(--surface); border: 1px solid rgba(255,215,0,.15); border-left: 3px solid var(--gold); padding: 12px 22px; margin-bottom: 20px; animation: fadeUp .5s .08s ease both; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .nb-label { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 3px; }
+  .nb-text  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.5; }
+  .nb-text span { color: var(--text); }
+  .nb-tags  { display: flex; gap: 6px; flex-wrap: wrap; margin-left: auto; }
+  .nb-tag   { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--gold); padding: 3px 8px; border: 1px solid rgba(255,215,0,.2); background: rgba(255,215,0,.05); letter-spacing: 1px; }
+
+  /* ── HRV STRIP ── */
+  .hrv-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-bottom: 20px; animation: fadeUp .5s .10s ease both; }
+  .hs { background: var(--surface); padding: 12px 16px; display: flex; align-items: flex-start; gap: 10px; transition: background .2s; }
+  .hs:hover { background: var(--surface2); }
+  .hs-pill { font-family: 'DM Mono', monospace; font-size: 8px; padding: 3px 8px; letter-spacing: 2px; flex-shrink: 0; }
+  .pill-green { background: rgba(0,255,135,.08); color: var(--green); border: 1px solid rgba(0,255,135,.2); }
+  .pill-gold  { background: rgba(255,215,0,.08); color: var(--gold);  border: 1px solid rgba(255,215,0,.2); }
+  .pill-red   { background: rgba(255,71,87,.08);  color: var(--red);   border: 1px solid rgba(255,71,87,.2); }
+  .hs-action { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--text); margin-bottom: 3px; }
+  .hs-desc   { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); line-height: 1.5; }
+
+  /* ── OBJECTIVES ── */
+  .obj-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-bottom: 20px; animation: fadeUp .5s .12s ease both; }
+  .obj { background: var(--surface); padding: 14px 16px; position: relative; overflow: hidden; transition: background .2s; }
+  .obj:hover { background: var(--surface2); }
+  .obj::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 100%; }
+  .obj:nth-child(1)::before { background: var(--gold); }
+  .obj:nth-child(2)::before { background: var(--accent); }
+  .obj:nth-child(3)::before { background: var(--orange); }
+  .obj:nth-child(4)::before { background: var(--green); }
+  .obj-num  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 2px; margin-bottom: 4px; }
+  .obj-text { font-family: 'DM Mono', monospace; font-size: 9.5px; color: var(--label); line-height: 1.5; }
+  .obj-text .hi { color: var(--text); }
+
+  /* ── MINDSET ── */
+  .mindset { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); padding: 13px 22px; margin-bottom: 20px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; animation: fadeUp .5s .14s ease both; position: relative; overflow: hidden; }
+  .mindset::after { content: '🐺'; position: absolute; right: 16px; top: 50%; transform: translateY(-50%); font-size: 44px; opacity: .06; pointer-events: none; }
+  .mw { font-family: 'Bebas Neue', sans-serif; font-size: 18px; letter-spacing: 4px; color: var(--muted); transition: color .2s; }
+  .mw:hover { color: var(--text); }
+  .mw.hi { color: var(--accent); }
+  .msep { color: var(--border); font-size: 13px; }
+
+  /* ── SECTION LABEL ── */
+  .section-lbl { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 4px; color: var(--muted); text-transform: uppercase; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+  .section-lbl::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  /* ── WEEK GRID ── */
+  .week-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; margin-bottom: 24px; }
+  .dc { background: var(--surface); border: 1px solid var(--border); border-top: 3px solid transparent; transition: transform .2s; animation: fadeUp .5s ease both; overflow: hidden; }
+  .dc:hover { transform: translateY(-3px); }
+  .dc.mon { border-top-color: var(--accent); }
+  .dc.tue { border-top-color: var(--green); }
+  .dc.wed { border-top-color: var(--gold); }
+  .dc.thu { border-top-color: var(--muted); }
+  .dc.fri { border-top-color: var(--accent); }
+  .dc.sat { border-top-color: var(--red); }
+  .dc.sun { border-top-color: var(--muted); }
+  .dc:nth-child(1){animation-delay:.14s} .dc:nth-child(2){animation-delay:.19s}
+  .dc:nth-child(3){animation-delay:.24s} .dc:nth-child(4){animation-delay:.29s}
+  .dc:nth-child(5){animation-delay:.34s} .dc:nth-child(6){animation-delay:.39s}
+  .dc:nth-child(7){animation-delay:.44s}
+
+  .dc-head { padding: 12px 13px 10px; border-bottom: 1px solid var(--border); }
+  .dc-iso { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 1px; margin-bottom: 4px; }
+  .dc-iso .yr { color: var(--muted); } .dc-iso .dot { color: var(--border); margin: 0 2px; }
+  .dc-iso .mo { color: var(--label); } .dc-iso .dd { color: var(--text); font-weight: 500; }
+  .dc-abbr { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 3px; line-height: 1; }
+  .mon .dc-abbr { color: var(--accent); }
+  .tue .dc-abbr { color: var(--green); }
+  .wed .dc-abbr { color: var(--gold); }
+  .thu .dc-abbr { color: var(--muted); }
+  .fri .dc-abbr { color: var(--accent); }
+  .sat .dc-abbr { color: var(--red); }
+  .sun .dc-abbr { color: var(--muted); }
+
+  .dc-tag { display: inline-block; margin-top: 6px; font-family: 'DM Mono', monospace; font-size: 7px; letter-spacing: 1.5px; padding: 2px 7px; text-transform: uppercase; }
+  .mon .dc-tag { background: rgba(0,229,255,.07); color: var(--accent); }
+  .tue .dc-tag { background: rgba(0,255,135,.07); color: var(--green); }
+  .wed .dc-tag { background: rgba(255,215,0,.07); color: var(--gold); }
+  .thu .dc-tag { background: rgba(90,106,122,.08); color: var(--muted); }
+  .fri .dc-tag { background: rgba(0,229,255,.07); color: var(--accent); }
+  .sat .dc-tag { background: rgba(255,71,87,.07); color: var(--red); }
+  .sun .dc-tag { background: rgba(90,106,122,.08); color: var(--muted); }
+
+  .dc-body { padding: 10px 13px 13px; }
+  .di { font-family: 'DM Mono', monospace; font-size: 9.5px; color: var(--label); padding: 4px 0; border-bottom: 1px solid rgba(30,45,61,.5); line-height: 1.4; display: flex; align-items: flex-start; gap: 5px; }
+  .di:last-child { border-bottom: none; }
+  .di .ic { flex-shrink: 0; color: var(--muted); }
+  .hi { color: var(--text); } .gr { color: var(--green); } .ac { color: var(--accent); }
+  .rd { color: var(--red); }  .gd { color: var(--gold); }  .mu { color: var(--muted); }
+  .or { color: var(--orange); }
+
+  .di-section { font-family: 'DM Mono', monospace; font-size: 7.5px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; padding: 6px 0 2px; border-bottom: 1px solid rgba(30,45,61,.5); display: block; }
+
+  .opt-box { margin-top: 7px; padding: 6px 9px; font-family: 'DM Mono', monospace; font-size: 8px; line-height: 1.6; border: 1px solid; }
+  .opt-green { color: var(--green); border-color: rgba(0,255,135,.2); background: rgba(0,255,135,.03); }
+  .opt-gold  { color: var(--gold);  border-color: rgba(255,215,0,.2);  background: rgba(255,215,0,.03); }
+  .opt-red   { color: var(--red);   border-color: rgba(255,71,87,.15);  background: rgba(255,71,87,.03); }
+  .opt-blue  { color: var(--accent); border-color: rgba(0,229,255,.15); background: rgba(0,229,255,.03); }
+  .opt-label { letter-spacing: 2px; text-transform: uppercase; margin-bottom: 2px; font-size: 7px; display: block; }
+
+  /* ── BOTTOM CARDS ── */
+  .bottom-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 14px; }
+  .card { background: var(--surface); border: 1px solid var(--border); padding: 22px; animation: fadeUp .5s ease both; transition: border-color .2s, transform .2s; }
+  .card:hover { border-color: rgba(0,229,255,.1); transform: translateY(-2px); }
+  .card-ttl { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 3px; color: var(--muted); text-transform: uppercase; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .ct-dot { width: 6px; height: 6px; flex-shrink: 0; }
+
+  .ex-row { padding: 8px 0; border-bottom: 1px solid var(--border); display: grid; grid-template-columns: 1fr auto auto; gap: 8px; align-items: center; }
+  .ex-row:last-child { border-bottom: none; }
+  .er-name   { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.3; }
+  .er-weight { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--text); letter-spacing: 1px; text-align: right; }
+  .er-weight .wu { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--accent); }
+  .er-scheme { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); text-align: right; }
+
+  .wb-probe-row { display: flex; align-items: flex-start; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--border); }
+  .wb-probe-row:last-child { border-bottom: none; }
+  .wpr-round { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); width: 22px; flex-shrink: 0; margin-top: 2px; }
+  .wpr-body  { flex: 1; }
+  .wpr-label { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--label); margin-bottom: 2px; }
+  .wpr-tgt   { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); }
+
+  .success-item { display: flex; align-items: flex-start; gap: 8px; padding: 7px 0; border-bottom: 1px solid var(--border); font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.4; }
+  .success-item:last-child { border-bottom: none; }
+  .success-item::before { content: '→'; color: var(--accent); flex-shrink: 0; }
+
+  .identity { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); padding: 22px 28px; margin-bottom: 14px; animation: fadeUp .5s .5s ease both; position: relative; overflow: hidden; }
+  .identity::after { content: '🐺'; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 72px; opacity: .05; pointer-events: none; }
+  .id-lbl { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; }
+  .id-lines { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 5px; }
+  .id-line  { font-family: 'Bebas Neue', sans-serif; font-size: 17px; letter-spacing: 3px; color: var(--muted); transition: color .2s; }
+  .id-line:hover { color: var(--text); }
+  .id-line.hl { color: var(--accent); }
+
+  .footer { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .footer-l { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); letter-spacing: 2px; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); padding: 3px 8px; border: 1px solid var(--border); letter-spacing: 1px; transition: all .2s; cursor: default; }
+  .tag:hover { color: var(--accent); border-color: rgba(0,229,255,.3); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes pulse  { 0%, 100% { opacity: 1; } 50% { opacity: .3; } }
+
+  @media (max-width: 1100px) { .week-grid { grid-template-columns: repeat(4,1fr); } .bottom-grid { grid-template-columns: 1fr 1fr; } .obj-strip { grid-template-columns: 1fr 1fr; } .hrv-strip { grid-template-columns: 1fr; } }
+  @media (max-width: 750px)  { .week-grid { grid-template-columns: repeat(2,1fr); } .bottom-grid { grid-template-columns: 1fr; } .hdr { flex-direction: column; gap: 16px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HEADER -->
+  <div class="hdr">
+    <div>
+      <div class="eyebrow">🐺 Sydney Build · Phase 3 · RACE SPECIFICITY — Week 1</div>
+      <div class="title">WEEK<br>TWENTY-TWO</div>
+      <div class="subtitle">Phase 3 — De-load / Transition</div>
+      <div class="block-info">Sydney Build <span>Week 9</span> · Phase <span>3 of 4 · Race Specificity</span> · Goal <span>1:15:00 · 03·07·2026</span></div>
+    </div>
+    <div class="hdr-right">
+      <div class="week-badge">W22</div>
+      <div class="week-range">2026·05·25 → 2026·05·31</div>
+      <div class="week-year">39 days to Sydney at week start</div>
+      <div class="live-badge"><span class="ld"></span>Phase 3 · De-load W1</div>
+    </div>
+  </div>
+
+  <!-- PHASE BAR -->
+  <div class="phase-banner">
+    <div class="ph-seg done"><span class="ph-wk">P1</span>Stabilize W14–16 ✓</div>
+    <div class="ph-seg done"><span class="ph-wk">P2</span>Build W17–21 ✓</div>
+    <div class="ph-seg now"><span class="ph-wk">W22</span>P3 De-load ◀</div>
+    <div class="ph-seg next"><span class="ph-wk">W23–24</span>P3 Real Build</div>
+    <div class="ph-seg next"><span class="ph-wk">W25–26</span>P4 Taper</div>
+    <div class="ph-seg far"><span class="ph-wk">RACE</span>Sydney 07·03</div>
+  </div>
+
+  <!-- DE-LOAD CONTEXT BANNER -->
+  <div class="correction-banner">
+    <div class="cb-label">◉ W22 De-load — Three Converging Reasons</div>
+    <div class="cb-text">1. <span>Vaccine Wednesday 16:15</span> — immune response 24–48h forces light Wed–Thu.<br>2. <span>HRV 35 Sunday (−22%)</span> — body absorbing Saturday probe; soft re-entry needed.<br>3. <span>260 WB reps in 3 days + 3-day immune signal</span> — accumulated load must discharge before W23 build. This timing is favourable: 8 build weeks needed a de-load anyway.</div>
+  </div>
+
+  <!-- VACCINE BANNER -->
+  <div class="new-banner">
+    <div style="font-size:20px;flex-shrink:0;">💉</div>
+    <div>
+      <div class="nb-label">Flu Vaccine — Wednesday 2026-05-27 · 16:15 · Burwood Guardian Medical</div>
+      <div class="nb-text">No training after the shot. <span>Hydration, light evening, early sleep.</span> Assume mild arm soreness + possible low-grade fatigue Thu. No upper-body pressing on vaccine arm Thu.</div>
+    </div>
+    <div class="nb-tags">
+      <div class="nb-tag">Vaccine Wed 16:15</div>
+      <div class="nb-tag">Light Wed–Thu</div>
+      <div class="nb-tag">Real build = W23</div>
+    </div>
+  </div>
+
+  <!-- HRV RULES -->
+  <div class="hrv-strip">
+    <div class="hs">
+      <div class="hs-pill pill-green">GREEN ≥45</div>
+      <div><div class="hs-action">Proceed as planned · HR dip ≥ 20%</div><div class="hs-desc">Execute session as written · no bonuses this week</div></div>
+    </div>
+    <div class="hs">
+      <div class="hs-pill pill-gold">YELLOW 40–45</div>
+      <div><div class="hs-action">Reduce volume one step · no max efforts</div><div class="hs-desc">HR dip 15–20% · nap-rescued = Yellow ceiling, not Green</div></div>
+    </div>
+    <div class="hs">
+      <div class="hs-pill pill-red">RED &lt;40</div>
+      <div><div class="hs-action">Walk + mobility only</div><div class="hs-desc">HR dip &lt; 15% · any vaccine fever/aches = full rest</div></div>
+    </div>
+  </div>
+
+  <!-- OBJECTIVES -->
+  <div class="obj-strip">
+    <div class="obj">
+      <div class="obj-num">OBJ 01</div>
+      <div class="obj-text">Vaccine Wed — <span class="hi">absorb cleanly</span> · no training stress · early sleep</div>
+    </div>
+    <div class="obj">
+      <div class="obj-num">OBJ 02</div>
+      <div class="obj-text">Tue — <span class="hi">one clean WB rhythm session</span> banked pre-vaccine</div>
+    </div>
+    <div class="obj">
+      <div class="obj-num">OBJ 03</div>
+      <div class="obj-text">Immune signal — <span class="hi">above-neck OK</span> · below-neck = rest + reassess</div>
+    </div>
+    <div class="obj">
+      <div class="obj-num">OBJ 04</div>
+      <div class="obj-text">HRV <span class="hi">rebuilds ≥ 45</span> by Fri — enter W23 fresh</div>
+    </div>
+  </div>
+
+  <!-- MINDSET -->
+  <div class="mindset">
+    <div class="mw hi">One quality Tuesday.</div>
+    <div class="msep">·</div>
+    <div class="mw hi">Vaccine absorbed.</div>
+    <div class="msep">·</div>
+    <div class="mw">Not measured by volume.</div>
+    <div class="msep">·</div>
+    <div class="mw">Protect W23.</div>
+  </div>
+
+  <!-- WEEK GRID -->
+  <div class="section-lbl">📆 Week Structure — W22 · Phase 3 De-load</div>
+  <div class="week-grid">
+
+    <!-- MON 25 -->
+    <div class="dc mon">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">05</span><span class="dot">·</span><span class="dd">25</span></div>
+        <div class="dc-abbr">MON</div>
+        <div class="dc-tag">Recovery / Easy Aerobic</div>
+      </div>
+      <div class="dc-body">
+        <div class="opt-box opt-green" style="margin-bottom:6px;">
+          <span class="opt-label">HRV ≥ 45 + calves 0-1</span>
+          Easy bike Z2 or jog HR 120–135 · 30–40 min + mobility
+        </div>
+        <div class="opt-box opt-red">
+          <span class="opt-label">HRV &lt; 40 or calves 2+</span>
+          Walk 30 min + mobility only
+        </div>
+        <div class="di" style="margin-top:8px;"><span class="ic">✗</span><span class="mu">No lower load · No WB · No BBJ · No lunges</span></div>
+        <div class="di"><span class="ic">→</span><span class="ac">Purpose: absorb Sat. Let HRV rebuild. Protect Tue.</span></div>
+      </div>
+    </div>
+
+    <!-- TUE 26 — MAIN -->
+    <div class="dc tue">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">05</span><span class="dot">·</span><span class="dd">26</span></div>
+        <div class="dc-abbr">TUE</div>
+        <div class="dc-tag">MAIN Quality 🏀🏃</div>
+      </div>
+      <div class="dc-body">
+        <span class="di-section">Gate: HRV ≥ 45 + calves ≤ 1 + immune not worse</span>
+        <div class="di"><span class="ic">🏃</span><span>WU: 15 min bike + mobility + shoulder prime</span></div>
+        <div class="di"><span class="ic">🔄</span><span>3 rounds: 600m @ HR≤150 + <span class="gr">WB 30</span> @ 72-78s + rest 2:30</span></div>
+        <div class="di"><span class="ic">🎿</span><span>Optional: 1×500m Ski Erg easy (baseline pending)</span></div>
+        <div class="opt-box opt-red" style="margin-top:6px;">
+          <span class="opt-label">Hard Caps</span>
+          WB max 30/set · No probe · No 4th round · No sled · Total WB ≤ 90
+        </div>
+      </div>
+    </div>
+
+    <!-- WED 27 — VACCINE -->
+    <div class="dc wed">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">05</span><span class="dot">·</span><span class="dd">27</span></div>
+        <div class="dc-abbr">WED</div>
+        <div class="dc-tag">Light AM + Vaccine 💉</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">🌅</span><span>AM: mobility 15 min OR easy bike 20 min Z1 only</span></div>
+        <div class="di"><span class="ic">💉</span><span><span class="gd">Vaccine 16:15</span> · Burwood Guardian Medical</span></div>
+        <div class="di"><span class="ic">—</span><span>Post: hydration · light evening · early sleep</span></div>
+        <div class="di"><span class="ic">✗</span><span class="mu">Nothing hard before or after shot</span></div>
+      </div>
+    </div>
+
+    <!-- THU 28 — POST-VACCINE -->
+    <div class="dc thu">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">05</span><span class="dot">·</span><span class="dd">28</span></div>
+        <div class="dc-abbr">THU</div>
+        <div class="dc-tag">Recovery · Post-Vaccine</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">🚶</span><span>Walk 30–40 min easy OR bike 25 min Z1-Z2</span></div>
+        <div class="di"><span class="ic">—</span><span>Gentle mobility — no pressing (vaccine arm)</span></div>
+        <div class="opt-box opt-red" style="margin-top:6px;">
+          <span class="opt-label">If fever / notable fatigue / aches</span>
+          Full rest · hydration · monitor only
+        </div>
+      </div>
+    </div>
+
+    <!-- FRI 29 — REASSESS -->
+    <div class="dc fri">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">05</span><span class="dot">·</span><span class="dd">29</span></div>
+        <div class="dc-abbr">FRI</div>
+        <div class="dc-tag">Reassess 🔎</div>
+      </div>
+      <div class="dc-body">
+        <div class="opt-box opt-green" style="margin-bottom:5px;">
+          <span class="opt-label">Vaccine mild + HRV clean + immune clear</span>
+          Easy 30–40 min run Z2 + WB 3×15 light + short BBJ
+        </div>
+        <div class="opt-box opt-red">
+          <span class="opt-label">Response notable or HRV low</span>
+          Easy aerobic / walk + mobility only
+        </div>
+      </div>
+    </div>
+
+    <!-- SAT 30 — CONDITIONAL PROBE -->
+    <div class="dc sat">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">05</span><span class="dot">·</span><span class="dd">30</span></div>
+        <div class="dc-abbr">SAT</div>
+        <div class="dc-tag">Conditional Key Session 🏀</div>
+      </div>
+      <div class="dc-body">
+        <span class="di-section">ALL gates must be clear</span>
+        <div class="di"><span class="ic">—</span><span>HRV ≥ 45 + no vaccine fatigue + immune clear + calves ≤ 1</span></div>
+        <div class="opt-box opt-green" style="margin-top:5px;">
+          <span class="opt-label">Green — WB Ceiling Push</span>
+          3R [500m + BBJ 30m + WB 30] → 1km @ 4:55-5:05 → probe floor 50 / target 55 / stretch 60 · STOP at clean failure
+        </div>
+        <div class="opt-box opt-gold" style="margin-top:5px;">
+          <span class="opt-label">Yellow</span>
+          3-round rhythm only · WB 30×3 · No probe
+        </div>
+        <div class="opt-box opt-red" style="margin-top:5px;">
+          <span class="opt-label">Red / vaccine / immune</span>
+          Walk + mobility · de-load stands on its own
+        </div>
+      </div>
+    </div>
+
+    <!-- SUN 31 -->
+    <div class="dc sun">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">05</span><span class="dot">·</span><span class="dd">31</span></div>
+        <div class="dc-abbr">SUN</div>
+        <div class="dc-tag">Recovery + Close-out</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">🚶</span><span>Walk 30–45 min easy + mobility</span></div>
+        <div class="di"><span class="ic">📋</span><span>W22 close-out: archive + W23 plan</span></div>
+        <div class="di"><span class="ic">—</span><span class="mu">W23 = first real Phase 3 build week</span></div>
+        <div class="di" style="padding:10px 0 0;font-size:18px;justify-content:center;border:none;opacity:.3;">🌙</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM CARDS -->
+  <div class="bottom-grid">
+
+    <!-- TUE Quality Detail -->
+    <div class="card" style="animation-delay:.46s;">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--green);"></span>Tue 05·26 — Quality Session Detail</div>
+
+      <div class="ex-row">
+        <div class="er-name">Warm-up</div>
+        <div class="er-weight" style="font-size:14px;">15<span class="wu">min</span></div>
+        <div class="er-scheme">bike + mobility</div>
+      </div>
+      <div class="ex-row">
+        <div class="er-name">600m Run (×3)</div>
+        <div class="er-weight" style="font-size:14px;color:var(--accent);">HR≤150</div>
+        <div class="er-scheme">2:35–2:45</div>
+      </div>
+      <div class="ex-row">
+        <div class="er-name">Wall Ball (×3)</div>
+        <div class="er-weight" style="font-size:14px;color:var(--green);">30<span class="wu">reps</span></div>
+        <div class="er-scheme">72–78s · 9kg</div>
+      </div>
+      <div class="ex-row">
+        <div class="er-name">Rest between rounds</div>
+        <div class="er-weight" style="font-size:14px;">2:30</div>
+        <div class="er-scheme">full stop</div>
+      </div>
+      <div class="ex-row">
+        <div class="er-name">Ski Erg (optional)</div>
+        <div class="er-weight" style="font-size:14px;color:var(--accent);">500<span class="wu">m</span></div>
+        <div class="er-scheme">easy baseline</div>
+      </div>
+      <div class="ex-row">
+        <div class="er-name">Cool-down</div>
+        <div class="er-weight" style="font-size:14px;">10<span class="wu">min</span></div>
+        <div class="er-scheme">easy</div>
+      </div>
+
+      <div style="margin-top:12px;padding:9px 11px;border:1px solid rgba(255,71,87,.12);background:rgba(255,71,87,.03);">
+        <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--red);letter-spacing:2px;margin-bottom:3px;">Hard Caps</div>
+        <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--label);">WB max <span style="color:var(--text);">30/set</span>. No probe. No 4th round. No sled. WB total ≤ 90 reps.</div>
+      </div>
+    </div>
+
+    <!-- Wed/Thu vaccine detail -->
+    <div class="card" style="animation-delay:.50s;">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--gold);"></span>Wed / Thu — Vaccine Protocol</div>
+
+      <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--gold);letter-spacing:2px;margin-bottom:10px;text-transform:uppercase;">💉 Wed 2026-05-27</div>
+
+      <div class="ex-row">
+        <div class="er-name">AM training</div>
+        <div class="er-weight" style="font-size:14px;color:var(--gold);">15<span class="wu">min</span></div>
+        <div class="er-scheme">mobility Z1 only</div>
+      </div>
+      <div class="ex-row">
+        <div class="er-name">Vaccine</div>
+        <div class="er-weight" style="font-size:14px;color:var(--gold);">16:15</div>
+        <div class="er-scheme">Burwood</div>
+      </div>
+      <div class="ex-row">
+        <div class="er-name">Post-vaccine</div>
+        <div class="er-weight" style="font-size:14px;">rest</div>
+        <div class="er-scheme">hydrate · sleep</div>
+      </div>
+
+      <div style="margin:14px 0 10px;font-family:'DM Mono',monospace;font-size:8px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;">Thu 2026-05-28 — Post-Vaccine</div>
+
+      <div class="ex-row">
+        <div class="er-name">Default activity</div>
+        <div class="er-weight" style="font-size:14px;">walk</div>
+        <div class="er-scheme">30–40 min easy</div>
+      </div>
+      <div class="ex-row">
+        <div class="er-name">If fever/aches</div>
+        <div class="er-weight" style="font-size:14px;color:var(--red);">rest</div>
+        <div class="er-scheme">full rest + hydrate</div>
+      </div>
+      <div class="ex-row">
+        <div class="er-name">Upper-body pressing</div>
+        <div class="er-weight" style="font-size:14px;color:var(--red);">✗</div>
+        <div class="er-scheme">vaccine arm</div>
+      </div>
+
+      <div style="margin-top:12px;padding:9px 11px;border:1px solid rgba(0,229,255,.1);background:rgba(0,229,255,.03);">
+        <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--accent);letter-spacing:2px;margin-bottom:3px;">Immune Protocol</div>
+        <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--label);">Above-neck signal = moderate OK. <span style="color:var(--text);">Below-neck (chest, fever, aches) = rest + reassess.</span> Don't stack hard training on lingering signal.</div>
+      </div>
+    </div>
+
+    <!-- SAT Conditional Probe -->
+    <div class="card" style="animation-delay:.54s;">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--red);"></span>SAT Conditional Probe Structure + Success</div>
+
+      <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--red);letter-spacing:2px;margin-bottom:10px;text-transform:uppercase;">🏀 Green Gate — 3-Round Fatigue Entry</div>
+
+      <div class="wb-probe-row">
+        <div class="wpr-round">R1</div>
+        <div class="wpr-body">
+          <div class="wpr-label">500m run + BBJ 30m + WB 30</div>
+          <div class="wpr-tgt">WB target 72–80s · rest 2:30</div>
+        </div>
+      </div>
+      <div class="wb-probe-row">
+        <div class="wpr-round">R2</div>
+        <div class="wpr-body">
+          <div class="wpr-label">Same structure</div>
+          <div class="wpr-tgt">Same targets · rest 2:30</div>
+        </div>
+      </div>
+      <div class="wb-probe-row">
+        <div class="wpr-round">R3</div>
+        <div class="wpr-body">
+          <div class="wpr-label">Same structure</div>
+          <div class="wpr-tgt">Same targets · rest 2:30</div>
+        </div>
+      </div>
+      <div class="wb-probe-row">
+        <div class="wpr-round">🏃</div>
+        <div class="wpr-body">
+          <div class="wpr-label">Final 1km entry run</div>
+          <div class="wpr-tgt" style="color:var(--red);">Target 4:55–5:05 · NOT 4:41 — controlled</div>
+        </div>
+      </div>
+      <div class="wb-probe-row" style="border:1px solid rgba(255,71,87,.15);background:rgba(255,71,87,.03);padding:8px;margin-top:4px;border-bottom:1px solid rgba(255,71,87,.15);">
+        <div class="wpr-round" style="color:var(--red);">★</div>
+        <div class="wpr-body">
+          <div class="wpr-label" style="color:var(--text);">WB Probe — floor 50 / target 55 / stretch 60</div>
+          <div class="wpr-tgt" style="color:var(--red);">STOP at clean technical failure — NO ugly reps</div>
+        </div>
+      </div>
+
+      <div style="margin:14px 0 10px;font-family:'DM Mono',monospace;font-size:8px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;">W22 Success Criteria</div>
+
+      <div class="success-item">HRV rebuilds to <span style="color:var(--text);">≥ 45 by end of week</span></div>
+      <div class="success-item">Immune signal <span style="color:var(--text);">resolves through vaccine</span></div>
+      <div class="success-item">Vaccine absorbed <span style="color:var(--text);">without illness</span></div>
+      <div class="success-item">One clean <span style="color:var(--text);">Tuesday quality session</span> banked</div>
+      <div class="success-item">Body enters W23 <span style="color:var(--text);">fresh for real Phase 3 build</span></div>
+    </div>
+
+  </div>
+
+  <!-- IDENTITY -->
+  <div class="identity">
+    <div class="id-lbl">🐺 Wolf Identity</div>
+    <div class="id-lines">
+      <div class="id-line">We do not chase races.</div>
+      <div class="id-line">We build capacity.</div>
+      <div class="id-line hl">We hunt numbers.</div>
+      <div class="id-line hl">We earn the flight.</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-l">W22 · 2026·05·25 → 2026·05·31 &nbsp;//&nbsp; YARO &nbsp;//&nbsp; SYDNEY BUILD · WEEK 9 · PHASE 3: RACE SPECIFICITY · W1 DE-LOAD</div>
+    <div class="tags">
+      <div class="tag">#Phase3Entry</div>
+      <div class="tag">#DeLoad</div>
+      <div class="tag">#VaccineWeek</div>
+      <div class="tag">#Sydney</div>
+      <div class="tag">#39Days</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
