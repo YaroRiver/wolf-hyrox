@@ -9,12 +9,15 @@
 | Date | Week | R1 | R2 | R3 | R4 | Notes |
 |---|---|---|---|---|---|---|
 | 2026-05-16 W20 SAT | Sydney W7 | 2:04 @ HR 122 | 1:50 @ HR 147 | 1:59 @ HR 144 | 2:04 @ HR 144 | Controlled; HR stayed sub-cap; created fatigue without burning probe |
+| 2026-05-23 W21 SAT | Sydney W8 | 0:58 @ HR ? | 0:54 @ HR ? | 0:48 @ HR ? | 0:49 @ HR ? | 4×400m within HYROX round structure; settled after R1; no HR cap breach |
 
 ## Race-Entry 1 km Runs (post-fragment, pre-probe)
 
 | Date | Distance | Time | Avg Pace | Avg HR | Notes |
 |---|---|---|---|---|---|
 | 2026-05-16 W20 SAT | 1.09 km | 5:34 | 5:05/km | 145 bpm | Correct entry zone; preserved WB probe; final segment 5:25/km HR 149 |
+| 2026-05-21 W21 THU | 3×600m | — | rhythm entry (HR 125/139/155) | — | Z1→Z3→Z4 progression over 3 rounds; controlled rhythm entry for [run+BBJ+WB] structure |
+| 2026-05-23 W21 SAT | 1.03 km | — | 4:41/km | 150 bpm | **TOO AGGRESSIVE** — plan was 4:55-5:10; lesson: controlled entry pace for probe day |
 
 ## 1 km Repeat Sessions (Monday — Speed Economy)
 
@@ -28,6 +31,7 @@
 | 2026-04-20 | W17 MON | Sydney W4 Phase 2 W1 | 6×800m | **R4 4:16** | 4:16–4:29 | 141–143 | 167→178 | Phase 2 opener; race-pace corridor |
 | 2026-04-27 | W18 MON | Sydney W5 Phase 2 W2 | 5×1km | **R2 4:14** | 4:17 | 145–146 | 171→181 | Grade A; plan was 4:25–4:35 |
 | 2026-05-11 | W20 MON | Sydney W7 Phase 2 W4 | 4×1km Yellow | 4:22 | 4:22–4:26 | 142–144 | — | Yellow; HRV suppressed |
+| 2026-05-18 | W21 MON | Sydney W8 Phase 2 W5 | 4×1km Yellow | **4:19 (R4)** | 4:25 avg | 141–147 | 166→178 | **VO₂max PR 57→58**; final rep fastest; fragmented sleep / low mood; Z5 0:00; cadence progressive |
 
 ---
 

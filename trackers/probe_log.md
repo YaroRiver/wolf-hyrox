@@ -22,6 +22,7 @@
 | 12 | 2026-05-02 | WB clean line under fragment | W18 SAT 4-round + probe | — | establish | **30 clean / 1:09** | Technical stop | Clean fragment lock established at 30 |
 | 13 | 2026-05-09 | WB clean line under fragment | W19 SAT 4-round + probe | 30 | 40 | **40 clean** | Clean line stop | Clean fragment lock 30 → **40** |
 | 14 | 2026-05-16 | WB ceiling under harder fatigue | W20 SAT 4-round + 1.09 km entry + max set | 40 | 45 | **50 reps / 1:59 @ 9 kg** | Athlete stop (target exceeded +5; no technical break reported) | Clean fragment lock 40 → **50**; total volume PR 140 → **150**; round stability lock 61/61/62/61 |
+| 15 | 2026-05-23 | WB single-set ceiling consolidation | W21 SAT full Option A (4-round + 1.03km entry @ 4:41/km) | 50 | 50 clean (consolidate) | **50 clean + 5 ugly = 55 total / 2:16** | Clean failure at rep 50; 5 ugly reps past line (lesson: stop at clean failure) | Lock held at **50 clean** under full HYROX fatigue; ugly reps not counted; probe HR avg 155, Z5 1:45 |
 
 ---
 
@@ -29,8 +30,8 @@
 
 | Date | Element | Format | Floor | Target | Status |
 |---|---|---|---|---|---|
-| 2026-05-23 | WB consolidation under harder fatigue | W21 SAT 4-round + extended entry (1.2 km OR +1 round) | 50 | 50 clean repeat (NOT 70) | SCHEDULED — judgment: avoid reckless jump per W20 post-session note |
-| 2026-05-30 | WB 60 under fragment | W22 SAT Phase 3 W1 | 50 | 60 | PLANNED |
+| 2026-05-23 | WB consolidation under harder fatigue | W21 SAT 4-round + 1.03km entry | 50 | 50 clean | **COMPLETED — 50 clean confirmed** (see probe #15 above) |
+| 2026-05-30 | WB ceiling push | W22 SAT Phase 3 W1 — **CONDITIONAL** (vaccine + HRV gate) | 50 | 55 | 60 stretch | PLANNED — gate: HRV ≥ 45 + no vaccine fatigue + immune clear + calves ≤ 1/10 |
 | 2026-06-06 | WB 80 under fragment | W23 SAT Phase 3 W2 | 60 | 80 | PLANNED |
 | 2026-06-13 | WB 100 attempt / race sim | W24 SAT Phase 3 W3 | 80 | 100 | PLANNED |
 | 2026-06-20 | Skill touch | W25 SAT Phase 4 W1 (taper) | — | 50 fresh | PLANNED |
@@ -42,9 +43,9 @@
 ## Probe Trajectory Summary
 
 ### Wall Ball Clean Line (under fragment fatigue)
-30 (W18) → 40 (W19) → **50 (W20, under deeper fatigue including 1.09 km entry)** → consolidate 50 (W21) → 60 (Phase 3 W1) → 80 (Phase 3 W2) → 100 (Phase 3 W3) → 100 UB (race)
+30 (W18) → 40 (W19) → **50 (W20, under deeper fatigue)** → **50 CONFIRMED (W21, full Option A fatigue)** → 55 (W22 conditional) → 60 (Phase 3 W2) → 80 (Phase 3 W3) → 100 (Phase 3 W4) → 100 UB (race)
 
-**Trajectory note:** W20 result accelerated the path by ~1 week. Phase 3 entry stronger than planned.
+**Trajectory note:** W20 accelerated by ~1 week. W21 consolidation confirmed the lock — per-set ceiling now broken (35×3=105 Thu). Race strategy locked: break pattern, not unbroken 100.
 
 ### Sled Push Working Load
 204 kg → 220 kg → 225 kg → 240 kg → **245 kg (current)** → progression by rest reduction

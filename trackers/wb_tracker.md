@@ -23,6 +23,8 @@
 | 2026-05-02 | W18 SAT | Sydney W5 Phase 2 W2 | 4-round race fragment + probe | 4×25: 1:01 / 0:58 / 0:59 / 0:58; **probe 30 clean / 1:09** | ~130 | First clean-line probe under fragment; lock established 30 |
 | 2026-05-09 | W19 SAT | Sydney W6 Phase 2 W3 | 4-round race fragment + probe | 4×25: 58 / 61 / 58 / 59 sec; **probe 40 clean** | **140** | Clean lock 30 → 40 progression; calf-controlled, sleep 8h25 / HRV 56 |
 | 2026-05-16 | W20 SAT | Sydney W7 Phase 2 W4 | 4-round fragment + 1.09 km entry + max set | 4×25: 61/61/62/61; **probe 50 reps / 1:59 @ 9 kg** | **150 (NEW BUILD PR)** | Clean lock 40 → 50 under DEEPER fatigue (post 1.09 km @ 5:05/km HR 145); target +5; Grade A; HRV 67 +54% baseline, sleep 9h35 |
+| 2026-05-21 | W21 THU | Sydney W8 Phase 2 W5 | 3-round rhythm [600m + BBJ 30m + WB 35] | 35×3 = **105 unbroken under fatigue** @ 9kg; splits 1:22/1:19/1:18 (faster each round) | **105** | BREAKTHROUGH: per-set ceiling progression proven; 25-rep stagnation broken; YELLOW-GREEN |
+| 2026-05-23 | W21 SAT | Sydney W8 Phase 2 W5 | 4-round fragment + 1.03km entry + probe | 25×4 = 100 @ 9kg (61/56/56/56) + **probe 50 clean** +5 ugly = 55 in 2:16; probe HR avg 155, Z5 1:45 | **150** | OFFICIAL: 50 clean single-set under full HYROX fatigue confirmed; lesson: stop at clean failure, no ugly reps; GREEN-YELLOW |
 
 ---
 

@@ -18,6 +18,8 @@
 | 2026-04-11 | W15 SAT | Sydney W2 Phase 1 | 28+28 kg | 20 m × 4 | Stable; followed by 20 WB clean |
 | 2026-05-12 | W20 TUE | Sydney W7 Phase 2 W4 | 32+32 kg | 30 m × 2 | Calf-protected day; clean execution |
 | 2026-05-16 | W20 SAT | Sydney W7 Phase 2 W4 | 28+28 kg | 22 m × 4 (race-fragment) | R4 ~1:02; slightly longer than planned 20m; no calf breakdown; clean |
+| 2026-05-19 | W21 TUE | Sydney W8 Phase 2 W5 | 32+32 kg | 30 m × 2 (skipped 3rd, calves 3/2 post) | splits 1:28/1:11; strength block; calf escalation after — session shortened |
+| 2026-05-23 | W21 SAT | Sydney W8 Phase 2 W5 | 28+28 kg | 20 m × 4 (80m total, race-fragment) | splits 48/37/36/37 sec; under HYROX fatigue, settled after R1; calf 2/10 post (no escalation) |
 
 ---
 

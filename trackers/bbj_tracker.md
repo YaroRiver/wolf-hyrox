@@ -18,6 +18,8 @@
 | 2026-04-30 W18 THU | Sydney W5 Phase 2 W2 | 30 m | 1:56 | 2:10 | 14 sec | R1 pace dropped, R2 fade emerged |
 | 2026-05-07 W19 THU | Sydney W6 Phase 2 W3 | (calf-protected) | — | — | — | BBJ likely removed or reduced |
 | 2026-05-14 W20 THU | Sydney W7 Phase 2 W4 | 30 m | **1:34** | **2:06** | **32 sec** | LIMITER CONFIRMED; R1 too fast → R2 collapse |
+| 2026-05-21 W21 THU | Sydney W8 Phase 2 W5 | 30 m × 3 (90m total) | 2:23 | 2:10 | 2:01 | ~4.0 sec/m; improved each round under fatigue; 3-round format within [run+BBJ+WB] structure |
+| 2026-05-23 W21 SAT | Sydney W8 Phase 2 W5 | 20 m × 4 (80m total) | 0:58 | 0:54 | 0:48 | 0:49 | ~4.0 sec/m; inside full round structure (run+lunge+BBJ+WB); no fade |
 
 ### Saturday race-fragment — 20 m (W18, W19, W20)
 

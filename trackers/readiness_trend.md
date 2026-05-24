@@ -68,6 +68,24 @@
 
 ---
 
+## W21 (2026-05-18 to 2026-05-24) — Phase 2 Final Week
+
+| Date | Day | Sleep h | Restful % | HRV ms | HRV %vs baseline | Calves L | Calves R | Body feel | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-05-18 | MON | 7h00 (fragmented) | 35% (14.3% disruption) | 42 daily | suppressed | 2/10 | 3/10 | 4/10 | Low mood, pelvic/anal spasm overnight; HR dip 13%; no nap; YELLOW |
+| 2026-05-19 | TUE | — | — | 31→102 post-nap | — | 1/10→3/10 | 1/10→2/10 | 7/10 post | Nap-rescued; post-session calf escalation 3/2; under-knee pulling appeared; YELLOW→GREEN |
+| 2026-05-20 | WED | — | — | 49 | — | 2/10 | 2/10 | 6/10→7/10 | Under-knee resolved; active recovery upper; calves stable; RECOVERY |
+| 2026-05-21 | THU | 7h50 | — | 39→42 post-nap | — | 0/10→1/10 brief | 0/10 | 5→9 post | Power-nap rescued; mild nose signal; L-calf 1/10 brief during BBJ, no cramp; YELLOW-GREEN |
+| 2026-05-22 | FRI | — | — | — | — | — | — | — | Recovery day; 45 min easy walk only |
+| 2026-05-23 | SAT | 7h20 (onset 1:00am) | — | 49 daily | +7% | 2/10 | 2/10 | irritated | HR dip 10% (low — incomplete recovery); resp 17.6 brpm; immune signal; GREEN-YELLOW; probe day |
+| 2026-05-24 | SUN | 8h45 | — | 35 daily (-22%), quick 33 | -22% | — | — | — | RED — HRV crash absorbing Sat; HR dip 26% (recovered — clean absorption, not illness); walk only |
+
+## W21 7-day summary
+
+| W21 summary | ~7h28 avg (logged days) | — | 35–49 ms range | — | — | — | 0 Green / 4 Yellow-Green / 1 RED (Sun absorption) |
+
+---
+
 ## Phase 2 Build — HRV Pattern Observations
 
 - Sleep volume averages 6h54 across W17–W20 — chronically below 7h30 Green threshold
