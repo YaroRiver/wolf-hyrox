@@ -86,6 +86,34 @@
 
 ---
 
+## W22 (2026-05-25 to 2026-05-31) — Vaccine Disruption Week
+
+| Date | Day | Sleep h | Restful % | HRV ms | HRV %vs baseline | Calves L | Calves R | Body feel | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-05-25 | MON | 8h05 | 68% (5h30) | 37.7 daily / 56 relaxed | -16% → rebounding | — | — | Yellow | 3-day target 101%; daily HRV suppressed; relaxed HRV 56 after breathing; easy run 5.02km Z1-Z2 |
+| 2026-05-26 | TUE | 6h43 | — | 42 sleeping / 46.2 daily / 44.8 24h | +2% daily | — | — | Yellow | Disruption 8.0%; quick HRV 80 PM; pre-session 58; 2-round WB rhythm (30+30) completed |
+| 2026-05-27 | WED | 6h55 | — | 67 sleeping | — | — | — | Yellow | 3-day target 75%; flu vaccine 16:15; SpO2 95%; no training |
+| 2026-05-28 | THU | — | — | — | — | — | — | Yellow-Red | Post-vaccine sinus symptoms; no formal training; recovery only |
+| 2026-05-29 | FRI | 5h15 | 54% (2h50) | 32 sleeping | — | — | — | 3/10 — broken | 3-day target 52%; HR dip 14%; SpO2 97%; resp 16.6 brpm; RED — no training |
+| 2026-05-30 | SAT | 9h10 | 57% (5h15) | 54 sleeping | — | 3/10 (cramp) | — | Yellow-Red | Sleeping HR 59 bpm; HR dip 9%; sinus headache; left calf NIGHT CRAMP; no training |
+| 2026-05-31 | SUN | 7h30 | 57% (4h15) | 37 sleeping | — | — | — | Yellow | 3-day target 76%; HR dip 13%; recovery walk 5.38km avg HR 90 bpm |
+
+## W22 7-day summary
+
+| W22 summary | ~7h26 avg (logged days) | ~59% avg restful | 32–67 ms range | — | — | — | 0 Green / 4 Yellow / 1 RED / 1 Vaccine day |
+
+---
+
+## W23 (2026-06-01 to 2026-06-07) — Phase 3 Re-entry
+
+| Date | Day | Sleep h | Restful % | HRV ms | HRV %vs baseline | Calves L | Calves R | Body feel | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-06-01 | MON | — | — | — | — | — | — | — | Data not provided; recovery context post-W22 |
+| 2026-06-02 | TUE | 8h25 | 63% (5h20) | 31 sleeping / 34.3 daily / 38 24h | -22% daily | — | — | Red-Yellow | Sleeping HR 58; HR dip 11%; disruption 20min; quick HRV 46; 7-day rhythm 58%; no training — correct |
+| 2026-06-03 | WED | 8h00 | 61% (4h55) | 44 sleeping / 36.3 daily / 42.7 24h | -18% daily | — | — | Yellow | Sleeping HR 56; HR dip 18%; disruption 0.0%; quick HRV 48; easy bike 52:21 avg HR 108 Z1 dominant |
+
+---
+
 ## Phase 2 Build — HRV Pattern Observations
 
 - Sleep volume averages 6h54 across W17–W20 — chronically below 7h30 Green threshold
