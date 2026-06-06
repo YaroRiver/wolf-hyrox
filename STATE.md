@@ -5,15 +5,15 @@
 ---
 
 ## TIME ANCHOR
-- **Last updated:** 2026-06-03 (Wednesday evening, Melbourne)
+- **Last updated:** 2026-06-06 (Saturday, Melbourne)
 - **Race day:** 2026-07-03 (Friday) — HYROX Sydney
-- **Days to race:** 30 (as of 2026-06-03)
-- **Sydney Build Day:** 66 (Wednesday 2026-06-03)
+- **Days to race:** 27 (as of 2026-06-06)
+- **Sydney Build Day:** 69 (Saturday 2026-06-06)
 - **Sydney Build Week:** 10
 - **Annual Week:** 23 (2026-06-01 → 2026-06-07)
 - **Phase:** Phase 3 — RACE SPECIFICITY (Week 2 — Re-entry after vaccine disruption)
 - **W22 STATUS:** COMPLETE — Vaccine Disruption / Recovery Protection Week (Grade B)
-- **W23 STATUS:** IN PROGRESS — Mon/Tue recovery, Wed controlled re-entry bike done
+- **W23 STATUS:** IN PROGRESS — Mon/Tue recovery, Wed/Thu bike re-entry, Fri recovery, Sat walk-max only. WB 60 probe NOT completed (gate not met: sleeping HRV 32 ms, HR dip 8%, headache active). Probe deferred to W24.
 
 ---
 
@@ -76,8 +76,8 @@ NOT limiters: sled (confirmed), CV capacity (VO₂max 58), absolute strength.
 ---
 
 ## CALENDAR (race horizon)
-- **W23 (06-01→06-07):** Phase 3 W2 — Re-entry (Mon/Tue recovery, Wed bike re-entry done; Thu–Sat pending)
-- **W24 (06-08→06-14):** Phase 3 real build (WB 65–70, BBJ distance, lunges 90m, Ski/Row/Farmers baselines; B12 ~06-14)
+- **W23 (06-01→06-07):** Phase 3 W2 — Recovery protection week (2×bike only, 3×rest). WB probe not completed. Sunday = close-out + W24 plan.
+- **W24 (06-08→06-14):** LAST REAL BUILD WEEK — WB 60 probe (floor 55 / target 60 / stretch 65), BBJ restart, lunge restart (60m), run quality, Ski/Row/Farmers baselines. B12 ~06-14.
 - **W25-26:** Phase 4 taper
 - **W27:** Race week (race 07-03)
 
@@ -113,5 +113,5 @@ Conditional:
 
 ---
 
-**This file last fully refreshed:** 2026-06-03 (Wednesday — W22 close-out, W23 re-entry in progress)
-**Next mandatory refresh:** Saturday post-probe 2026-06-06 + Sunday 2026-06-07 (W23 close-out)
+**This file last fully refreshed:** 2026-06-06 (Saturday — W23 through Sat logged; probe deferred)
+**Next mandatory refresh:** Sunday 2026-06-07 (W23 close-out + W24 plan generation)
