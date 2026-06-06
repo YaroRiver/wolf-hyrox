@@ -17,7 +17,8 @@
 - **Frequency:** once per month
 - **Timing:** typically from the beginning of the month
 - **Dose:** 1 ml per injection
-- **Last injection:** 2026-05-14 (W20 THU, before Thursday session — calves improved post-injection)
+- **Last injection:** 2026-06-02 (W23 MON — athlete confirmed 2026-06-06)
+- **Previous injection:** 2026-05-14 (W20 THU — calves improved significantly post-injection)
 
 ### Coaching Rules
 - Track every B12 injection date in `trackers/readiness_trend.md` or daily current_week.md entries

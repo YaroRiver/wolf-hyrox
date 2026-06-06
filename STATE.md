@@ -23,7 +23,7 @@
 - **HR recovery:** 160→99 bpm in 2 min (excellent)
 - **Race target:** 1:15:00 HYROX Sydney 2026-07-03
 - **Gym:** Iron Viking, Moorabbin (Australia)
-- **Medical:** Pernicious anemia, B12 monthly (last 2026-05-14, next ~2026-06-14); chronic calf-Achilles-soleus zone; cardiac event W13 resolved
+- **Medical:** Pernicious anemia, B12 monthly (last 2026-06-02, next ~2026-07-02); chronic calf-Achilles-soleus zone; cardiac event W13 resolved
 - **2025 Melbourne baseline:** 1:33:44, rank #603, Pro M 45-49. Gap to target: 18:44.
 - **Detailed profile:** `reference/athlete_profile.md`
 
@@ -59,7 +59,7 @@ NOT limiters: sled (confirmed), CV capacity (VO₂max 58), absolute strength.
 - **HRV:** Still suppressed entering W23. Sunday W22: 37 ms. Tuesday W23: 31 ms sleeping / 34.3 ms daily (-22%). Wednesday W23: 44 ms sleeping / 36.3 ms daily (-18%). Direction improving but not yet at baseline. Target ≥ 45 ms for quality sessions.
 - **Sleep:** 3-day sleep target under target all week in W22 and early W23. 7-day rhythm 58–59%. Improving slowly. Bed onset improving (9:45 pm Wednesday W23).
 - **Sinus:** Active W22 Wed–Sat. Monitoring in W23. Must be clear before quality work.
-- **B12:** Last 2026-05-14; next ~2026-06-14 (11 days away). Monitor calf/Achilles response in this window.
+- **B12:** Last 2026-06-02; next ~2026-07-02. B12 NOT the cause of current bilateral calf symptoms. Myofascial trigger points primary explanation.
 
 **Reference:** `state/limiters_now.md`
 
