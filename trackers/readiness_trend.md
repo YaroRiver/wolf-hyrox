@@ -104,6 +104,14 @@
 
 ---
 
+## W24 (2026-06-08 to 2026-06-14) — Phase 3 Final / Last Build Week
+
+| Date | Day | Sleep h | Restful % | HRV ms | HRV %vs baseline | Calves L | Calves R | Body feel | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-06-08 | MON | 8h00 | 51% (4h05) | 48 sleeping / 41.8 daily / 41.4 24h | -3% daily | 0/10 | 0/10 | 7/10 improving | Sleeping HR 58; HR dip 9%; quick HRV 40; sinus 0.5/10; Yellow-Green; short re-entry fragment |
+
+---
+
 ## W23 (2026-06-01 to 2026-06-07) — Phase 3 Re-entry
 
 | Date | Day | Sleep h | Restful % | HRV ms | HRV %vs baseline | Calves L | Calves R | Body feel | Notes |
