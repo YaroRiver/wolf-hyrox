@@ -111,6 +111,14 @@
 | 2026-06-01 | MON | — | — | — | — | — | — | — | Data not provided; recovery context post-W22 |
 | 2026-06-02 | TUE | 8h25 | 63% (5h20) | 31 sleeping / 34.3 daily / 38 24h | -22% daily | — | — | Red-Yellow | Sleeping HR 58; HR dip 11%; disruption 20min; quick HRV 46; 7-day rhythm 58%; no training — correct |
 | 2026-06-03 | WED | 8h00 | 61% (4h55) | 44 sleeping / 36.3 daily / 42.7 24h | -18% daily | — | — | Yellow | Sleeping HR 56; HR dip 18%; disruption 0.0%; quick HRV 48; easy bike 52:21 avg HR 108 Z1 dominant |
+| 2026-06-04 | THU | 7h40 | 63% (4h50) | 25 sleeping / 40 daily / 35 24h | -9% daily | — | — | Yellow | Sleeping HR 58; HR dip 19%; SpO2 94%; quick HRV spike 81ms but 24h HRV 34–36ms; bike 43:33 avg HR 113 |
+| 2026-06-05 | FRI | 7h55 | 62% (4h55) | 40 sleeping / 37.3 daily / 43.7 24h | -14% daily | — | — | Yellow-Red | Sleeping HR 59; HR dip 19%; quick HRV 33ms; sinus headache active; no training — correct |
+| 2026-06-06 | SAT | 8h17 | 55% (4h35) | 32 sleeping / 38.7 daily / 38.6 24h | -11% daily | — | — | Yellow-Red | Sleeping HR 58; HR dip 8%; quick HRV 63ms; headache still active; walk maximum only; probe gate not met |
+| 2026-06-07 | SUN | 6h35 | 58% (3h50) | 36 sleeping / 34.8 daily / 38.4 24h | -19% daily | — | — | Yellow-Red | Sleeping HR 58; HR dip 12%; quick HRV 31ms; SpO2 97%; no training — recovery only |
+
+## W23 7-day summary
+
+| W23 summary | 7h49 avg (6 days, Mon missing) | ~60% avg | 25–44 ms sleeping / 34–40 ms daily | — | — | — | 0 Green / 2 Yellow (Wed, Thu) / 4 Yellow-Red (Tue, Fri, Sat, Sun) |
 
 ---
 

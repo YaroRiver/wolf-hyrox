@@ -1,46 +1,48 @@
-# Current Week Plan — W22 (Sydney Build Week 9, Phase 3 Week 1 — De-load/Transition)
+# Current Week Plan — W24 (Sydney Build Week 11, Phase 3 Week 3 — FINAL BUILD WEEK)
 
 ```
-TIME ANCHOR (verified 2026-05-24 Sunday evening Melbourne)
-- Date: 2026-05-24 (Sunday)
-- Build Day 56 · Build Week 8 end · Annual Week 21 close
-- Phase 2 — BUILD: COMPLETE
-- Phase 3 — RACE SPECIFICITY: starts Monday 2026-05-25
-- Days to race: 40 (Sunday) / 39 (Monday W22 start)
+TIME ANCHOR (verified 2026-06-08 Monday Melbourne)
+- Date: 2026-06-08 (Monday)
+- Build Day 71 · Build Week 11 · Annual Week 24
+- Phase 3 — RACE SPECIFICITY: Final Week
+- Phase 4 — TAPER starts Monday 2026-06-15
+- Days to race: 25
 ```
 
-**Full W22 plan:** `archive/2026/week_22_plan.md`
+**Full W24 plan:** `archive/2026/week_24_plan.md`
 
 ---
 
-## W22 WEEK STRUCTURE (summary)
+## W24 WEEK STRUCTURE (summary)
 
 | Day | Date | Type | Gate |
 |---|---|---|---|
-| MON | 05-25 | Recovery / easy aerobic | HRV ≥ 45 → easy run Z2; < 40 → walk only |
-| **TUE** | **05-26** | **MAIN quality: WB rhythm + run** | HRV ≥ 45 + calves ≤ 1/10 + immune not worse |
-| WED | 05-27 | Light AM + **vaccine 16:15** | Nothing hard. Mobility only. |
-| THU | 05-28 | Recovery / post-vaccine light | Walk / easy bike Z1-Z2 only |
-| FRI | 05-29 | Reassess | Mild vaccine → Z2 + technique; notable → walk |
-| SAT | 05-30 | Conditional WB ceiling probe | ALL green gates required (see probe_log) |
-| SUN | 05-31 | Recovery + W22 close-out | Walk + mobility |
+| **MON** | **06-08** | **Re-entry quality touch** | Submit readiness → Green: run + WB fragment; Yellow: easy bike; Red: walk |
+| **TUE** | **06-09** | **Lower quality: sled + lunges + run** | Calf ≤ 1/10 → sled race loads + lunge restart + short run quality + BBJ touch |
+| WED | 06-10 | Recovery / easy aerobic | Easy bike 25–35 min, HR 100–125 only |
+| **THU** | **06-11** | **HYROX 3-round simulation** | Green: 3 rounds run + WB + BBJ/lunges; Yellow: 2 rounds |
+| FRI | 06-12 | Aerobic reset | Protect Saturday. No intensity. |
+| **SAT** | **06-13** | **WB PROBE SESSION** | ALL gates: Sleep ≥ 7h30 + HRV ≥ 45 ms + Daily within 15% + HR dip ≥ 18% + Calf ≤ 1/10 + Sinus clear |
+| SUN | 06-14 | Recovery + close-out | Walk + mobility + generate W25 taper plan |
 
-## TUE QUALITY SESSION PLAN
-- Warm-up 15 min (bike + mobility + calf check)
-- 3 × [600m run HR cap 150 + WB 30 @ 9kg 72-78 sec + rest 2:30]
-- Optional: 1 × 500m Ski Erg easy (baseline pending A/B/C answer)
-- Cool-down 10 min
-- **Caps:** WB max 30/set. No probe. No 4th round. No sled.
+## PROBE (Saturday 2026-06-13)
+- Race fragment: 3 rounds (run 500m + WB 30)
+- Final entry: 1.0 km run @ 5:00–5:10/km
+- WB probe: floor 55 / target 60 / stretch 70 clean
+- Stop rule: clean technical failure only — no ugly reps past the line
 
-## SAT CONDITIONAL PROBE PLAN (if all gates clear)
-- 3 rounds [500m run + BBJ 30m + WB 30] as fatigue entry
-- Final 1km run controlled @ 4:55-5:05 (NOT 4:41)
-- WB probe: floor 50 / target 55 / stretch 60
-- **Stop at clean technical failure only — no ugly reps**
-
-## HRV GATE SYSTEM
+## HRV GATE SYSTEM (this week)
 | Zone | HRV | Action |
 |---|---|---|
-| GREEN | ≥ 45 or within 10% baseline + HR dip ≥ 20% | Proceed as planned |
-| YELLOW | 40-45 or HR dip 15-20% | Reduce volume one step, no max efforts |
-| RED | < 40 or HR dip < 15% | Recovery only — walk + mobility |
+| GREEN | Sleeping HRV ≥ 45 ms + Daily within 10% + HR dip ≥ 18% | Full quality / probe eligible |
+| YELLOW | Sleeping HRV 38–45 ms + Daily 10–20% below + HR dip 12–18% | Controlled quality only, no probe |
+| RED | Sleeping HRV < 38 ms OR Daily > 20% below OR HR dip < 12% | Recovery only — walk + mobility |
+
+## CALF GATE (applies every session)
+- 0/10: Full session approved
+- 1/10: Proceed with caution — no BBJ, no lunges
+- 2/10: Bike only or walk — no impact
+- ≥ 3/10: Walk + mobility only — Yellow day regardless of HRV
+- ≥ 4/10: Red day — no training
+- Any string sensation: treat as 2/10 minimum
+- Overnight cramp: Red day, full rest

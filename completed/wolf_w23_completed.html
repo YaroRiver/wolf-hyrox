@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SYDNEY BUILD W23 · COMPLETED // YARO 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #080C10; --surface: #0E1419; --surface2: #141B22;
+    --border: #1E2D3D; --accent: #00E5FF; --red: #FF4757;
+    --gold: #FFD700; --green: #00FF87; --text: #E8EDF2;
+    --muted: #5A6A7A; --label: #8A9BAB; --orange: #FF8C42;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; min-height: 100vh; overflow-x: hidden; }
+  body::before { content: ''; position: fixed; inset: 0; background-image: linear-gradient(rgba(0,229,255,0.022) 1px, transparent 1px), linear-gradient(90deg, rgba(0,229,255,0.022) 1px, transparent 1px); background-size: 40px 40px; pointer-events: none; z-index: 0; }
+  .wrap { max-width: 1300px; margin: 0 auto; padding: 36px 24px; position: relative; z-index: 1; }
+
+  .hdr { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 28px; padding-bottom: 24px; border-bottom: 1px solid var(--border); animation: fadeUp .5s ease both; }
+  .hdr-eyebrow { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 4px; color: var(--gold); text-transform: uppercase; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+  .cd { width: 5px; height: 5px; border-radius: 50%; background: var(--gold); }
+  .hdr-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(52px, 8vw, 88px); line-height: .88; letter-spacing: 4px; }
+  .hdr-sub   { font-family: 'Bebas Neue', sans-serif; font-size: clamp(16px, 2.2vw, 24px); letter-spacing: 6px; color: var(--muted); margin-top: 4px; }
+  .hdr-block { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); letter-spacing: 1px; margin-top: 8px; }
+  .hdr-block span { color: var(--accent); }
+  .hdr-right { text-align: right; }
+  .week-badge { font-family: 'Bebas Neue', sans-serif; font-size: 56px; color: var(--gold); letter-spacing: 3px; line-height: 1; }
+  .week-range { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--text); letter-spacing: 2px; margin-top: 2px; }
+  .week-year  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 2px; margin-bottom: 10px; }
+  .done-badge { display: inline-flex; align-items: center; gap: 6px; font-family: 'DM Mono', monospace; font-size: 9px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; padding: 5px 12px; border: 1px solid rgba(255,215,0,.25); background: rgba(255,215,0,.05); }
+
+  .summary-strip { display: grid; grid-template-columns: repeat(7, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-bottom: 20px; animation: fadeUp .5s .06s ease both; }
+  .ss { background: var(--surface); padding: 14px 16px; text-align: center; transition: background .2s; }
+  .ss:hover { background: var(--surface2); }
+  .ss .sv { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 2px; line-height: 1; }
+  .ss .su { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--accent); margin-left: 2px; }
+  .ss .sl { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-top: 4px; }
+
+  .ctx-banner { background: var(--surface); border: 1px solid rgba(0,229,255,.18); border-left: 3px solid var(--accent); padding: 14px 22px; margin-bottom: 14px; animation: fadeUp .5s .07s ease both; }
+  .ctx-label { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--accent); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 5px; }
+  .ctx-text  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.6; }
+  .ctx-text span { color: var(--text); }
+
+  .sinus-banner { background: var(--surface); border: 1px solid rgba(255,140,66,.2); border-left: 3px solid var(--orange); padding: 12px 22px; margin-bottom: 14px; animation: fadeUp .5s .08s ease both; }
+  .sb2-label { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--orange); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 4px; }
+  .sb2-text  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.6; }
+  .sb2-text span { color: var(--text); }
+
+  .sleep-banner { background: var(--surface); border: 1px solid rgba(0,229,255,.12); border-left: 3px solid var(--accent); padding: 14px 22px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; animation: fadeUp .5s .10s ease both; flex-wrap: wrap; gap: 12px; }
+  .sb-label { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--accent); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 4px; }
+  .sleep-arc { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .sleep-day .sd-score { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 1px; line-height: 1; }
+  .sleep-day .sd-label { font-family: 'DM Mono', monospace; font-size: 7px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; margin-top: 2px; text-align: center; }
+  .sleep-arrow { color: var(--border); font-family: 'DM Mono', monospace; font-size: 12px; }
+
+  .section-lbl { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 4px; color: var(--muted); text-transform: uppercase; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+  .section-lbl::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  .week-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; margin-bottom: 24px; }
+  .dc { background: var(--surface); border: 1px solid var(--border); border-top: 3px solid transparent; transition: transform .2s; animation: fadeUp .5s ease both; overflow: hidden; }
+  .dc.done:hover { transform: translateY(-3px); }
+  .dc.done-green { border-top-color: var(--green); }
+  .dc.done-gold  { border-top-color: var(--gold); }
+  .dc.done-red   { border-top-color: var(--red); }
+  .dc.done-blue  { border-top-color: var(--accent); }
+  .dc.walk-day   { border-top-color: var(--muted); }
+  .dc:nth-child(1){animation-delay:.12s} .dc:nth-child(2){animation-delay:.17s}
+  .dc:nth-child(3){animation-delay:.22s} .dc:nth-child(4){animation-delay:.27s}
+  .dc:nth-child(5){animation-delay:.32s} .dc:nth-child(6){animation-delay:.37s}
+  .dc:nth-child(7){animation-delay:.42s}
+  .dc-head { padding: 12px 13px 10px; border-bottom: 1px solid var(--border); }
+  .dc-iso { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 1px; margin-bottom: 4px; }
+  .dc-iso .yr { color: var(--muted); } .dc-iso .dot { color: var(--border); margin: 0 2px; }
+  .dc-iso .mo { color: var(--label); } .dc-iso .dd { color: var(--text); font-weight: 500; }
+  .dc-abbr { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 3px; line-height: 1; }
+  .done-green .dc-abbr { color: var(--green); }
+  .done-gold  .dc-abbr { color: var(--gold); }
+  .done-red   .dc-abbr { color: var(--red); }
+  .done-blue  .dc-abbr { color: var(--accent); }
+  .walk-day   .dc-abbr { color: var(--muted); }
+  .dc-tag { display: inline-block; margin-top: 6px; font-family: 'DM Mono', monospace; font-size: 7px; letter-spacing: 1.5px; padding: 2px 7px; text-transform: uppercase; }
+  .done-green .dc-tag { background: rgba(0,255,135,.07); color: var(--green); }
+  .done-gold  .dc-tag { background: rgba(255,215,0,.07); color: var(--gold); }
+  .done-red   .dc-tag { background: rgba(255,71,87,.07);  color: var(--red); }
+  .done-blue  .dc-tag { background: rgba(0,229,255,.07);  color: var(--accent); }
+  .walk-day   .dc-tag { background: rgba(90,106,122,.08); color: var(--muted); }
+  .status-chip { display: inline-block; margin-top: 7px; font-family: 'DM Mono', monospace; font-size: 7px; padding: 2px 6px; letter-spacing: 1px; border: 1px solid; }
+  .chip-done   { color: var(--green); border-color: rgba(0,255,135,.25); background: rgba(0,255,135,.04); }
+  .chip-yellow { color: var(--gold);  border-color: rgba(255,215,0,.25);  background: rgba(255,215,0,.04); }
+  .chip-smart  { color: var(--accent); border-color: rgba(0,229,255,.2); background: rgba(0,229,255,.04); }
+  .chip-red    { color: var(--red); border-color: rgba(255,71,87,.25); background: rgba(255,71,87,.04); }
+  .sleep-chip { display: inline-block; margin-top: 5px; font-family: 'DM Mono', monospace; font-size: 7px; padding: 1px 6px; letter-spacing: 1px; border: 1px solid; }
+  .sleep-good { color: var(--green); border-color: rgba(0,255,135,.2); background: rgba(0,255,135,.04); }
+  .sleep-ok   { color: var(--gold);  border-color: rgba(255,215,0,.2);  background: rgba(255,215,0,.04); }
+  .sleep-red  { color: var(--red);   border-color: rgba(255,71,87,.2);   background: rgba(255,71,87,.04); }
+  .dc-body { padding: 10px 13px 13px; }
+  .di { font-family: 'DM Mono', monospace; font-size: 9.5px; color: var(--label); padding: 4px 0; border-bottom: 1px solid rgba(30,45,61,.5); line-height: 1.4; display: flex; align-items: flex-start; gap: 5px; }
+  .di:last-child { border-bottom: none; }
+  .di .ic { flex-shrink: 0; color: var(--muted); }
+  .hi { color: var(--text); } .gr { color: var(--green); } .ac { color: var(--accent); }
+  .rd { color: var(--red); }  .gd { color: var(--gold); }  .mu { color: var(--muted); }
+  .or { color: var(--orange); }
+  .hr-mini { margin-top: 8px; }
+  .hr-mini-label { font-family: 'DM Mono', monospace; font-size: 7.5px; color: var(--muted); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 5px; }
+  .hr-zone-row { display: flex; height: 5px; gap: 1px; border-radius: 2px; overflow: hidden; }
+  .hz { height: 100%; border-radius: 1px; }
+  .hz1{background:#3A7BD5;} .hz2{background:#00E5FF;} .hz3{background:#FFD700;} .hz4{background:#FF8C42;} .hz5{background:#FF4757;}
+
+  .detail-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 12px; }
+  .card { background: var(--surface); border: 1px solid var(--border); padding: 22px; animation: fadeUp .5s ease both; transition: border-color .2s, transform .2s; }
+  .card:hover { border-color: rgba(0,229,255,.1); transform: translateY(-2px); }
+  .card-ttl { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 3px; color: var(--muted); text-transform: uppercase; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .ct-dot { width: 6px; height: 6px; flex-shrink: 0; }
+  .mrow { display: flex; justify-content: space-between; align-items: baseline; padding: 7px 0; border-bottom: 1px solid var(--border); }
+  .mrow:last-child { border-bottom: none; }
+  .mk  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); }
+  .mv  { font-family: 'Bebas Neue', sans-serif; font-size: 19px; letter-spacing: 1px; color: var(--text); }
+  .mu2 { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--accent); margin-left: 2px; }
+
+  .insight-box { padding: 9px 11px; border: 1px solid rgba(0,229,255,.12); background: rgba(0,229,255,.03); margin-top: 10px; }
+  .ib-label { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--accent); letter-spacing: 2px; margin-bottom: 3px; }
+  .ib-text  { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--label); line-height: 1.6; }
+  .ib-text span { color: var(--text); }
+
+  .assess-item { display: flex; align-items: flex-start; gap: 8px; padding: 7px 0; border-bottom: 1px solid var(--border); font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.4; }
+  .assess-item:last-child { border-bottom: none; }
+  .assess-item.good::before { content: '✔'; color: var(--green); flex-shrink: 0; }
+  .assess-item.warn::before { content: '△'; color: var(--gold); flex-shrink: 0; }
+  .assess-item.note::before { content: '→'; color: var(--accent); flex-shrink: 0; }
+  .assess-item.crit::before { content: '⚠'; color: var(--red); flex-shrink: 0; }
+  .assess-item.smart::before { content: '◉'; color: var(--accent); flex-shrink: 0; }
+
+  .hrv-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; margin: 10px 0; }
+  .hrv-col { text-align: center; }
+  .hrv-bar-wrap { height: 50px; display: flex; align-items: flex-end; justify-content: center; }
+  .hrv-bar { width: 18px; border-radius: 2px 2px 0 0; transition: height 1s ease; }
+  .hrv-val { font-family: 'Bebas Neue', monospace; font-size: 13px; letter-spacing: 1px; margin-top: 3px; }
+  .hrv-day { font-family: 'DM Mono', monospace; font-size: 7px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; margin-top: 2px; }
+
+  .identity { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); padding: 22px 28px; margin-bottom: 14px; animation: fadeUp .5s .5s ease both; position: relative; overflow: hidden; }
+  .identity::after { content: '🐺'; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 72px; opacity: .05; pointer-events: none; }
+  .id-lbl { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; }
+  .id-lines { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 5px; }
+  .id-line  { font-family: 'Bebas Neue', sans-serif; font-size: 17px; letter-spacing: 3px; color: var(--muted); transition: color .2s; }
+  .id-line:hover { color: var(--text); }
+  .id-line.hl { color: var(--accent); }
+
+  .footer { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .footer-l { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); letter-spacing: 2px; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); padding: 3px 8px; border: 1px solid var(--border); letter-spacing: 1px; cursor: default; transition: all .2s; }
+  .tag:hover { color: var(--accent); border-color: rgba(0,229,255,.25); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 1100px) { .week-grid { grid-template-columns: repeat(4,1fr); } .detail-grid { grid-template-columns: 1fr 1fr; } .summary-strip { grid-template-columns: repeat(4,1fr); } }
+  @media (max-width: 720px)  { .week-grid { grid-template-columns: repeat(2,1fr); } .detail-grid { grid-template-columns: 1fr; } .hdr { flex-direction: column; gap: 16px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HEADER -->
+  <div class="hdr">
+    <div>
+      <div class="hdr-eyebrow"><span class="cd"></span>Completed · Sydney Build W10 · Phase 3: Re-entry W2 · Recovery Bridge</div>
+      <div class="hdr-title">WEEK<br>REPORT</div>
+      <div class="hdr-sub">W23 · Sydney Build W10 · RE-ENTRY / RECOVERY BRIDGE</div>
+      <div class="hdr-block">Sydney Build <span>W10</span> · Phase 3: Specific Peak · <span>Re-entry after vaccine disruption</span> · Goal <span>1:15:00 · 03·07·2026 · 26 days at close</span></div>
+    </div>
+    <div class="hdr-right">
+      <div class="week-badge">W23</div>
+      <div class="week-range">2026·06·01 → 2026·06·07</div>
+      <div class="week-year">26 days to Sydney · Iron Viking Gym</div>
+      <div class="done-badge"><span class="cd"></span>Grade B− · Recovery Bridge</div>
+    </div>
+  </div>
+
+  <!-- SUMMARY STRIP -->
+  <div class="summary-strip">
+    <div class="ss"><div class="sv" style="color:var(--gold);">2<span class="su">/7</span></div><div class="sl">Training Days</div></div>
+    <div class="ss"><div class="sv" style="color:var(--muted);">50</div><div class="sl">WB Lock (×3 missed)</div></div>
+    <div class="ss"><div class="sv" style="color:var(--accent);">108<span class="su">bpm</span></div><div class="sl">Best Bike HR</div></div>
+    <div class="ss"><div class="sv" style="color:var(--red);">0:00</div><div class="sl">Zone 3+ (Wed bike)</div></div>
+    <div class="ss"><div class="sv" style="color:var(--red);">25<span class="su">ms</span></div><div class="sl">HRV Min (Thu)</div></div>
+    <div class="ss"><div class="sv" style="color:var(--gold);">7h49</div><div class="sl">Sleep Avg (6d)</div></div>
+    <div class="ss"><div class="sv" style="color:var(--red);">26</div><div class="sl">Days to Sydney</div></div>
+  </div>
+
+  <!-- CONTEXT BANNER -->
+  <div class="ctx-banner">
+    <div class="ctx-label">◉ W23 Context — Re-entry After Vaccine Disruption</div>
+    <div class="ctx-text">This was not a Phase 3 peak week. W22 ended with vaccine disruption, HRV 37 ms, left calf night cramp, and sinus symptoms. <span>W23 objective was controlled re-entry — not to chase missed work.</span> System did not allow HYROX quality: HRV stayed suppressed (34–40 ms daily), sleeping HR remained 56–59 bpm, and chronic sinus/headache limited Friday–Sunday. <span>The correct call was made each day.</span> Two easy bike sessions preserved aerobic rhythm. No new calf cramp events.</div>
+  </div>
+
+  <!-- SINUS BANNER -->
+  <div class="sinus-banner">
+    <div class="sb2-label">Chronic Odontogenic Sinus — Active Fri–Sun W23</div>
+    <div class="sb2-text">Left-sided pattern: temple / behind-ear / under-eye / eye watering. Nasal rinse helps. Paracetamol used Fri–Sat. <span>Sinus alone does not block training when system markers are clean.</span> This week: sinus combined with suppressed HRV, elevated sleeping HR, and weak HR dip = compound stressor. <span>Correct classification: Yellow-Red Fri through Sun.</span></div>
+  </div>
+
+  <!-- SLEEP BANNER -->
+  <div class="sleep-banner">
+    <div>
+      <div class="sb-label">Sleep Arc W23 — Improved Quantity, Incomplete Recovery</div>
+      <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--label);">Best: <span style="color:var(--text);">Tue 8h25 / Sat 8h17</span> · Worst: <span style="color:var(--red);">Sun 6h35</span> · HR dip worst: <span style="color:var(--red);">Sat 8%</span> · HRV range: <span style="color:var(--text);">25–44 ms sleeping</span></div>
+    </div>
+    <div class="sleep-arc">
+      <div class="sleep-day"><div class="sd-score" style="color:var(--muted);">—</div><div class="sd-label">MON<br>no data</div></div>
+      <div class="sleep-arrow">→</div>
+      <div class="sleep-day"><div class="sd-score" style="color:var(--green);">8h25</div><div class="sd-label">TUE<br>HRV 31↓</div></div>
+      <div class="sleep-arrow">→</div>
+      <div class="sleep-day"><div class="sd-score" style="color:var(--green);">8h00</div><div class="sd-label">WED<br>HRV 44↑</div></div>
+      <div class="sleep-arrow">→</div>
+      <div class="sleep-day"><div class="sd-score" style="color:var(--gold);">7h40</div><div class="sd-label">THU<br>HRV 25↓</div></div>
+      <div class="sleep-arrow">→</div>
+      <div class="sleep-day"><div class="sd-score" style="color:var(--gold);">7h55</div><div class="sd-label">FRI<br>sinus</div></div>
+      <div class="sleep-arrow">→</div>
+      <div class="sleep-day"><div class="sd-score" style="color:var(--gold);">8h17</div><div class="sd-label">SAT<br>HRV 32↓</div></div>
+      <div class="sleep-arrow">→</div>
+      <div class="sleep-day"><div class="sd-score" style="color:var(--red);">6h35</div><div class="sd-label">SUN<br>HRV 31↓</div></div>
+    </div>
+  </div>
+
+  <!-- WEEK CARDS -->
+  <div class="section-lbl" style="animation:fadeUp .5s .12s ease both;">📆 Week Execution — W23 · 2026·06·01 → 2026·06·07</div>
+  <div class="week-grid">
+
+    <!-- MON 01 -->
+    <div class="dc walk-day">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">06</span><span class="dot">·</span><span class="dd">01</span></div>
+        <div class="dc-abbr">MON</div>
+        <div class="dc-tag">Recovery — No Data</div>
+        <div class="status-chip chip-smart">◉ Recovery Context</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">—</span><span>Post-W22 recovery monitoring</span></div>
+        <div class="di"><span class="ic">—</span><span class="mu">Sleep / HRV data not provided</span></div>
+        <div class="di"><span class="ic">✔</span><span>Treated as recovery context — correct</span></div>
+      </div>
+    </div>
+
+    <!-- TUE 02 — RED-YELLOW -->
+    <div class="dc done done-red">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">06</span><span class="dot">·</span><span class="dd">02</span></div>
+        <div class="dc-abbr">TUE</div>
+        <div class="dc-tag">Red-Yellow 🔴</div>
+        <div class="status-chip chip-smart">◉ Grade A — Correct</div>
+        <div class="sleep-chip sleep-good">😴 8h25 · HRV 31 ms</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">—</span><span>Sleep <span class="hi">8h25</span> but quality poor</span></div>
+        <div class="di"><span class="ic">—</span><span>Daily HRV <span class="rd">34.3 ms / -22%</span></span></div>
+        <div class="di"><span class="ic">—</span><span>Sleeping HRV <span class="rd">31 ms</span> · HR dip <span class="rd">11%</span></span></div>
+        <div class="di"><span class="ic">✔</span><span>No training — volume does not equal readiness</span></div>
+      </div>
+    </div>
+
+    <!-- WED 03 — BEST SESSION -->
+    <div class="dc done done-green">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">06</span><span class="dot">·</span><span class="dd">03</span></div>
+        <div class="dc-abbr">WED</div>
+        <div class="dc-tag">Bike Re-entry ★ Best</div>
+        <div class="status-chip chip-done">✓ Grade A</div>
+        <div class="sleep-chip sleep-good">😴 8h00 · HRV 44 ms</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">🚴</span><span>Indoor Cycle <span class="gr">52:21</span> · avg HR 108</span></div>
+        <div class="di"><span class="ic">—</span><span>Active cal: <span class="hi">519</span> · total: 614</span></div>
+        <div class="di"><span class="ic">—</span><span>Zone 1: <span class="gr">50:56</span> · Zone 2: 1:22</span></div>
+        <div class="di"><span class="ic">✔</span><span class="gr">Zone 3+: 0:00 — perfect re-entry</span></div>
+        <div class="hr-mini">
+          <div class="hr-mini-label">HR Zones</div>
+          <div class="hr-zone-row">
+            <div class="hz hz1" style="width:98%;"></div>
+            <div class="hz hz2" style="width:2%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- THU 04 — BIKE -->
+    <div class="dc done done-gold">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">06</span><span class="dot">·</span><span class="dd">04</span></div>
+        <div class="dc-abbr">THU</div>
+        <div class="dc-tag">Bike Yellow</div>
+        <div class="status-chip chip-yellow">△ Grade B+/A−</div>
+        <div class="sleep-chip sleep-ok">😴 7h40 · HRV 25 ms slp</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">🚴</span><span>Indoor Cycle <span class="hi">43:33</span> · avg HR 113</span></div>
+        <div class="di"><span class="ic">—</span><span>Active cal: <span class="hi">456</span> · effort 4/Moderate</span></div>
+        <div class="di"><span class="ic">—</span><span>Z1 <span class="hi">40:40</span> · Z2 2:12 · <span class="or">Z3 0:28 / Z4 0:11</span></span></div>
+        <div class="di"><span class="ic">△</span><span class="or">Slightly stronger than ideal for Yellow</span></div>
+        <div class="hr-mini">
+          <div class="hr-mini-label">HR Zones</div>
+          <div class="hr-zone-row">
+            <div class="hz hz1" style="width:93%;"></div>
+            <div class="hz hz2" style="width:5%;"></div>
+            <div class="hz hz3" style="width:1%;"></div>
+            <div class="hz hz4" style="width:1%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FRI 05 — RECOVERY -->
+    <div class="dc walk-day done">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">06</span><span class="dot">·</span><span class="dd">05</span></div>
+        <div class="dc-abbr">FRI</div>
+        <div class="dc-tag">Sinus Recovery</div>
+        <div class="status-chip chip-smart">◉ Grade A — Correct</div>
+        <div class="sleep-chip sleep-ok">😴 7h55 · quick HRV 33 ms</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">🤧</span><span>Sinus headache active — <span class="or">L-temple / under-eye</span></span></div>
+        <div class="di"><span class="ic">—</span><span>Quick HRV <span class="rd">33 ms</span> · daily HRV -14%</span></div>
+        <div class="di"><span class="ic">—</span><span>Nasal rinse + paracetamol</span></div>
+        <div class="di"><span class="ic">✔</span><span>Rest day — headache + HRV suppressed both confirmed</span></div>
+      </div>
+    </div>
+
+    <!-- SAT 06 — WALK MAX -->
+    <div class="dc walk-day done">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">06</span><span class="dot">·</span><span class="dd">06</span></div>
+        <div class="dc-abbr">SAT</div>
+        <div class="dc-tag">Probe Gate Failed</div>
+        <div class="status-chip chip-smart">◉ Grade A — Walk Max</div>
+        <div class="sleep-chip sleep-ok">😴 8h17 · HRV 32 ms / dip 8%</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">❌</span><span>Probe gate: HRV <span class="rd">32 ms</span> / dip <span class="rd">8%</span></span></div>
+        <div class="di"><span class="ic">—</span><span>Quick HRV 63 ms — did not override base</span></div>
+        <div class="di"><span class="ic">—</span><span>Headache still present</span></div>
+        <div class="di"><span class="ic">✔</span><span>Walk max only — correct decision</span></div>
+      </div>
+    </div>
+
+    <!-- SUN 07 — RECOVERY -->
+    <div class="dc walk-day done">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">06</span><span class="dot">·</span><span class="dd">07</span></div>
+        <div class="dc-abbr">SUN</div>
+        <div class="dc-tag">Recovery Close</div>
+        <div class="status-chip chip-smart">◉ Grade A — Correct</div>
+        <div class="sleep-chip sleep-red">😴 6h35 · HRV 31 ms</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">—</span><span>Sleep only <span class="rd">6h35</span> (late onset)</span></div>
+        <div class="di"><span class="ic">—</span><span>Quick HRV <span class="rd">31 ms</span> · daily HRV -19%</span></div>
+        <div class="di"><span class="ic">—</span><span>SpO2 <span class="gr">97%</span> · resp 16.7 brpm (stable)</span></div>
+        <div class="di"><span class="ic">✔</span><span>Recovery only — W24 starts fresh, not desperate</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- DEEP DIVE -->
+  <div class="section-lbl" style="animation:fadeUp .5s .28s ease both;">📊 Session Deep Dive</div>
+
+  <div class="detail-grid">
+
+    <!-- Wed Bike Best -->
+    <div class="card" style="animation-delay:.30s;border-top:2px solid var(--green);">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--green);"></span>Wed 06·03 — Indoor Cycle · Best Session W23</div>
+      <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--muted);letter-spacing:2px;margin-bottom:8px;text-transform:uppercase;">Perfect Re-Entry · 0:00 Zone 3+</div>
+      <div class="mrow"><span class="mk">Duration</span><span class="mv" style="color:var(--green);">52:21</span></div>
+      <div class="mrow"><span class="mk">Avg HR</span><span class="mv">108<span class="mu2">bpm</span></span></div>
+      <div class="mrow"><span class="mk">Active cal</span><span class="mv">519<span class="mu2">kcal</span></span></div>
+      <div class="mrow"><span class="mk">Effort</span><span class="mv">3<span class="mu2">/ Easy</span></span></div>
+      <div class="mrow"><span class="mk">Zone 1</span><span class="mv" style="color:var(--green);">50:56</span></div>
+      <div class="mrow"><span class="mk">Zone 3+</span><span class="mv" style="color:var(--green);">0:00</span></div>
+      <div class="insight-box">
+        <div class="ib-label">Best Controlled Re-Entry of Phase 3</div>
+        <div class="ib-text">50:56 of Zone 1 with <span>0:00 Zone 3+</span> confirms the session stayed exactly in the re-entry lane. HR drop from 108 to 99 at 1 min, 84 at 2 min — aerobic base intact. The ideal re-entry stimulus: circulation, rhythm, no overreach.</div>
+      </div>
+    </div>
+
+    <!-- Thu Bike -->
+    <div class="card" style="animation-delay:.34s;border-top:2px solid var(--gold);">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--gold);"></span>Thu 06·04 — Indoor Cycle · Yellow Day</div>
+      <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--muted);letter-spacing:2px;margin-bottom:8px;text-transform:uppercase;">Mostly Controlled · Minor Spikes</div>
+      <div class="mrow"><span class="mk">Duration</span><span class="mv">43:33</span></div>
+      <div class="mrow"><span class="mk">Avg HR</span><span class="mv">113<span class="mu2">bpm</span></span></div>
+      <div class="mrow"><span class="mk">Active cal</span><span class="mv">456<span class="mu2">kcal</span></span></div>
+      <div class="mrow"><span class="mk">Effort</span><span class="mv" style="color:var(--orange);">4<span class="mu2">/ Moderate</span></span></div>
+      <div class="mrow"><span class="mk">Zone 3</span><span class="mv" style="color:var(--orange);">0:28</span></div>
+      <div class="mrow"><span class="mk">Zone 4</span><span class="mv" style="color:var(--orange);">0:11</span></div>
+      <div class="insight-box">
+        <div class="ib-label">Acceptable — Slightly Over Yellow Ideal</div>
+        <div class="ib-text">Effort 4/Moderate and brief Zone 3/4 spikes were above ideal for a Yellow day. <span>Avg HR 113 bpm still controlled.</span> Session did not create harm but was not as clean as Wednesday. Lesson: on Yellow, park the effort at 3 / Easy.</div>
+      </div>
+    </div>
+
+    <!-- HRV Week Overview -->
+    <div class="card" style="animation-delay:.38s;border-top:2px solid var(--red);">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--red);"></span>HRV Pattern W23 — Suppressed Throughout</div>
+      <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--muted);letter-spacing:2px;margin-bottom:10px;text-transform:uppercase;">Daily HRV — % vs 30-day baseline</div>
+      <div class="hrv-grid">
+        <div class="hrv-col"><div class="hrv-bar-wrap"><div class="hrv-bar" style="height:0%;background:var(--muted);"></div></div><div class="hrv-val" style="color:var(--muted);">—</div><div class="hrv-day">MON</div></div>
+        <div class="hrv-col"><div class="hrv-bar-wrap"><div class="hrv-bar" style="height:55%;background:var(--red);"></div></div><div class="hrv-val" style="color:var(--red);">34.3</div><div class="hrv-day">TUE -22%</div></div>
+        <div class="hrv-col"><div class="hrv-bar-wrap"><div class="hrv-bar" style="height:65%;background:var(--gold);"></div></div><div class="hrv-val" style="color:var(--gold);">36.3</div><div class="hrv-day">WED -18%</div></div>
+        <div class="hrv-col"><div class="hrv-bar-wrap"><div class="hrv-bar" style="height:75%;background:var(--gold);"></div></div><div class="hrv-val" style="color:var(--gold);">40</div><div class="hrv-day">THU -9%</div></div>
+        <div class="hrv-col"><div class="hrv-bar-wrap"><div class="hrv-bar" style="height:68%;background:var(--red);"></div></div><div class="hrv-val" style="color:var(--red);">37.3</div><div class="hrv-day">FRI -14%</div></div>
+        <div class="hrv-col"><div class="hrv-bar-wrap"><div class="hrv-bar" style="height:72%;background:var(--red);"></div></div><div class="hrv-val" style="color:var(--red);">38.7</div><div class="hrv-day">SAT -11%</div></div>
+      </div>
+      <div style="margin-top:10px;font-family:'DM Mono',monospace;font-size:8.5px;color:var(--label);line-height:1.5;">HRV never reached baseline (≥45 ms target) all week. Quick HRV sometimes showed spikes (Thu 81 ms, Sat 63 ms) but <span style="color:var(--text);">24h HRV and sleeping HRV stayed consistently suppressed</span>. Sleeping HR: 56–59 bpm. HR dip: 8–19%.</div>
+    </div>
+
+  </div>
+
+  <!-- ASSESSMENT -->
+  <div class="detail-grid">
+    <div class="card" style="grid-column:1/-1;animation-delay:.44s;border-top:2px solid var(--gold);">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--gold);"></span>W23 Assessment · Recovery Bridge · Grade B− · System Protected</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+        <div>
+          <div class="assess-item good">No panic training forced: <span style="color:var(--text);">suppressed HRV and headache correctly overrode training intent each day</span></div>
+          <div class="assess-item good">Wednesday re-entry was excellent: <span style="color:var(--text);">52:21 indoor cycle, avg HR 108 bpm, 0:00 Zone 3+</span></div>
+          <div class="assess-item good">Sleep quantity improved: <span style="color:var(--text);">7h40–8h25 most nights (vs W22 disruption)</span></div>
+          <div class="assess-item good">No new calf cramp events: <span style="color:var(--text);">W22 night-cramp did not re-escalate in W23</span></div>
+          <div class="assess-item good">Sinus pattern managed: <span style="color:var(--text);">correctly identified as compound stressor, not used as excuse to quit</span></div>
+        </div>
+        <div>
+          <div class="assess-item crit">Three consecutive WB probes missed — <span style="color:var(--text);">WB lock still at 50 from W21 (May 23). W24 Saturday is last probe slot before taper.</span></div>
+          <div class="assess-item crit">HRV never reached baseline all week — <span style="color:var(--text);">autonomic system not fully recovered at W23 close</span></div>
+          <div class="assess-item warn">No HYROX-specific quality: <span style="color:var(--text);">no running quality, no WB sets, no BBJ, no lunges, no sled since W21</span></div>
+          <div class="assess-item warn">Sleeping HR stayed elevated: <span style="color:var(--text);">56–59 bpm all week — suggests active background stress</span></div>
+          <div class="assess-item note">W24: <span style="color:var(--accent);">Last real build week. WB probe Saturday mandatory. BBJ/lunge restart if calf clears. Race in 25 days at W24 start.</span></div>
+          <div class="assess-item smart"><span style="color:var(--accent);">The build is disrupted but not broken. Two disrupted weeks delayed one probe cycle. W24 returns to execution.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IDENTITY -->
+  <div class="identity">
+    <div class="id-lbl">🐺 Wolf Identity</div>
+    <div class="id-lines">
+      <div class="id-line">Protection is not defeat.</div>
+      <div class="id-line">The system held.</div>
+      <div class="id-line hl">W24 is the week that matters.</div>
+      <div class="id-line hl">One probe. One build. Race ready.</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-l">W23 COMPLETED · 2026·06·01 → 2026·06·07 · 26 DAYS TO SYDNEY &nbsp;//&nbsp; YARO &nbsp;//&nbsp; SYDNEY BUILD W10 · RECOVERY BRIDGE · GRADE B−</div>
+    <div class="tags">
+      <div class="tag">#RecoveryBridge</div>
+      <div class="tag">#NoProbe</div>
+      <div class="tag">#HRVSuppressed</div>
+      <div class="tag">#SinusManaged</div>
+      <div class="tag">#W24LastBuild</div>
+      <div class="tag">#Sydney26days</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

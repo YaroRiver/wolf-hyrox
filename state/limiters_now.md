@@ -2,33 +2,31 @@
 
 > **High-frequency file. Updated whenever active limiter or risk changes. Overwrite, do not append.**
 
-**Last updated:** 2026-06-03 (Wednesday — W22 close-out, W23 Wed re-entry done)
+**Last updated:** 2026-06-08 (Monday — W23 close-out, W24 plan generated)
 
 ---
 
 ## PRIMARY LIMITER
 
-### BBJ pace/distance — RACE-COMPLETION GAP
-- **Status:** Active. Race target ~1:55-2:00/m; current ~4.0 sec/m = 2× gap.
-- **Session exposure W21:** 90m (30m×3 Thu) + 80m (20m×4 Sat) — 80-90m continuous not yet achieved
-- **W22:** No BBJ (vaccine disruption week)
-- **W23:** BBJ blocked until left calf confirms ≤ 0/10 within session (night cramp W22 Sat)
-- **Gate to restart BBJ:** Calf 0/10 confirmed in Thursday W23 session before adding BBJ
-- **W23 Sat probe:** Add BBJ 20m in rounds ONLY if calf confirms 0/10 in Round 1
-- **Phase 3 focus:** continuous distance progression 40+40m → 60m → 80m; close pace gap toward 1:55-2:00/m
+### Wall Ball ceiling — LAST PROBE SLOT BEFORE TAPER
+- **Status:** CRITICAL. Lock at 50 clean (W21 Sat 2026-05-23). Three consecutive missed probes (W22 vaccine / W23 sinus+HRV). Race in 25 days.
+- **W24 Sat probe:** Floor 55 / Target 60 / Stretch 70 clean under fragment fatigue
+- **Gate (ALL required):** Sleep ≥ 7h30 + Sleeping HRV ≥ 45 ms + Daily HRV within 15% baseline + HR dip ≥ 18% + Calf ≤ 1/10 + Sinus clear + No overnight cramp
+- **Race strategy:** Break-pattern confirmed — 45 open + 35 + remainder = 100. NOT unbroken.
+- **If probe missed again:** Race with 50 lock — break-pattern still executes, but final station will be harder.
+- **Trajectory:** 30 (W18) → 40 (W19) → 50 (W20/W21) → [60 W24 Sat target]
 
 ---
 
 ## SECONDARY LIMITER
 
-### Wall Ball ceiling under fatigue
-- **Current lock:** 50 clean single-set under full HYROX fatigue (W21 Sat 2026-05-23)
-- **W22 probe:** Not completed — vaccine disruption week
-- **W23 Sat target:** 60 clean (floor 55, stretch 65) — first attempt post-W22
-- **Tuesday W23 rhythm confirmation:** 30+30 reps @ 9 kg in 1:09/1:05 — rhythm intact
-- **Trajectory:** 30 (W18) → 40 (W19) → 50 (W20/W21) → [55–60 W23 Sat pending]
-- **Race strategy (PATCH 4):** Conservative open 40-45, then break pattern 35+35+remainder. NOT unbroken 100.
-- **Stop rule:** Clean technical failure. No ugly reps past the line.
+### BBJ pace/distance — RACE-COMPLETION GAP
+- **Status:** Active. Race target ~2.0–2.5 sec/m; current ~4.0 sec/m = 2× gap.
+- **W21 exposure:** 90m (30m×3 Thu) + 80m (20m×4 Sat)
+- **W22–W23:** No BBJ (calf protection)
+- **W24 gate to restart:** Calf 0/10 confirmed on Monday waking + throughout Tuesday session
+- **W24 target:** 20–40m touches in rounds (Tuesday and Thursday) — not a probe, just contact
+- **Phase 3 final focus:** Restore contact before taper. Pace gap cannot be closed in 1 week but exposure reduces race shock.
 
 ---
 
@@ -37,10 +35,9 @@
 ### Lunge distance
 - **Current:** 80m @ 28+28kg fragmented under fatigue (W21 Sat)
 - **Race standard:** 100m @ 30kg sandbag
-- **Gap:** 20m distance + 2kg load + continuous (vs fragmented)
-- **W22–W23:** No lunges (calf protection protocol)
-- **Return gate:** Left calf ≤ 0/10 with no string sensation → restart with light load
-- **W24 target:** 90-100m + sandbag-specific rehearsal
+- **W22–W23:** No lunges (calf protection)
+- **Return gate:** Calf ≤ 0/10 confirmed in Tuesday session
+- **W24 target:** 3 × 20m bodyweight restart Tuesday → 60m continuous if clean → sandbag contact Thursday
 
 ---
 
@@ -48,55 +45,45 @@
 
 ### Risk 1: Left Calf — Night Cramp (ELEVATED — PRIMARY GATE)
 - **Event:** Left calf night cramp Saturday W22 (2026-05-30)
-- **Residual:** String/tension ~3/10 initially post-cramp
-- **Current status:** Monitoring in W23. Must confirm ≤ 1/10 before any impact work.
-- **Gate before BBJ/lunges/fast running:** Calf 0/10, no string, no overnight cramp sensation
+- **W23 update:** No new cramp events. No formal calf-rating data provided.
+- **Current status:** Unknown until W24 Monday waking. Must confirm ≤ 1/10 before BBJ, lunges, fast running.
 - **Protocol:** ≥ 3/10 = Yellow modification; ≥ 4/10 = Red, no high-impact. Cramp overnight = Red, full rest.
-- **B12 context:** Next injection ~2026-06-14. Calf sensitivity may be elevated in the 2-week window before B12.
+- **B12 context:** Next injection ~2026-07-02. Calf sensitivity may increase in the 2–3 weeks before injection (from ~Jun 18 W25 onward). Watch carefully in taper.
 
-### Risk 2: HRV — Still Suppressed
-- **Latest readings:**
-  - Sunday W22: 37 ms sleeping
-  - Tuesday W23: 31 ms sleeping / 34.3 ms daily (-22%)
-  - Wednesday W23: 44 ms sleeping / 36.3 ms daily (-18%)
-- **Direction:** Improving but not at baseline
-- **Gate for quality:** Sleeping HRV ≥ 45 ms + Daily HRV within 15% baseline
-- **Gate for probe:** Sleeping HRV ≥ 45 ms + Daily HRV within 10% baseline + HR dip ≥ 18%
-- **If HRV stays suppressed Thursday:** Extend recovery, push probe to next week
+### Risk 2: HRV — Still Suppressed at W23 Close
+- **Latest readings (W23 Sunday):**
+  - Sleeping HRV: 36 ms
+  - Daily HRV: 34.8 ms / -19%
+  - Quick HRV: 31 ms
+  - Sleeping HR: 58 bpm
+- **Direction:** Volatile — not consistently improving
+- **Gate for quality:** Sleeping HRV ≥ 40 ms + Daily HRV within 20% baseline (relaxed gate for W24 Mon)
+- **Gate for probe:** Sleeping HRV ≥ 45 ms + Daily HRV within 15% baseline + HR dip ≥ 18% (Saturday gate)
 
-### Risk 3: Sleep / 3-Day Target
-- **Pattern W22–W23:** 3-day sleep target never reached green (peaked at 84% Wednesday W23)
-- **7-day rhythm:** 58–59% — chronically below 70% target
-- **Improving signal:** Bed onset improving — 9:45 pm Wednesday W23 (vs 1:00 am Saturday W21)
-- **Phase 3 requirement:** Sleep onset ≤ 22:00 → 7h30+ nights must become the norm
+### Risk 3: Sleep Onset Discipline
+- **Pattern W22–W23:** 3-day sleep target chronically under target. 7-day rhythm 58–68%.
+- **W24 requirement:** Bed onset ≤ 22:00 every night. Non-negotiable. Sleep is the only free performance lever left before race.
+- **Phase 4 requirement:** Sleep is the primary recovery tool during taper. Any late-night onset in W25–W26 directly costs race performance.
 
-### Risk 4: Sinus — Post-Vaccine (Monitoring)
-- **W22:** Active sinus symptoms Wed–Sat (post-vaccine)
-- **W23 so far:** No active sinus data provided through Wednesday
-- **Protocol:** Sinus must be clear before quality work. Active sinus = Yellow at best.
+### Risk 4: Sinus — Active at W23 Close
+- **W23 Fri–Sun:** Headache still present Sunday W23.
+- **W24 Mon:** Confirm clear before approving running quality.
+- **Protocol:** Active sinus headache = no running quality. Mild/managed = Yellow at best.
 
-### Risk 5: B12 Window
-- **Last injection:** 2026-05-14
-- **Next injection:** ~2026-06-14 (11 days from now)
-- **Sensitivity window:** Calf/Achilles zone may become more sensitive in the 2 weeks before B12
-- **Action:** Watch calf response carefully through W23 and into W24
+### Risk 5: Race-Time Crunch
+- **Days to race:** 25 (W24 Mon)
+- **Real build days remaining:** 6 (Mon–Sat W24)
+- **Taper starts:** Monday W25 (Jun 15)
+- **Implication:** Every session this week has to count. No wasted days. But also: no panic training that injures before taper.
 
 ---
 
-## NOT LIMITERS (confirmed Phase 2 close)
+## NOT LIMITERS (confirmed)
 
-- **Sled push:** 246kg (race 202kg = +22% margin) — retired from active chase
-- **Sled pull:** 206kg × 20m / 1:05 (race 153kg = +35% margin) — retired from active chase
+- **Sled push:** 246 kg (race 202 kg = +22% margin) — retired from active chase
+- **Sled pull:** 206 kg × 20m / 1:05 (race 153 kg = +35% margin) — retired from active chase
 - **CV capacity:** VO₂max 58, HR recovery excellent
 - **Absolute strength:** above race needs
-
----
-
-## LATEST VICTORIES (W22 context)
-
-- **WB rhythm intact:** Tuesday W22 30+30 reps @ 9 kg in 1:09/1:05 despite vaccine week
-- **No collapse:** System held through week-long vaccine disruption without fitness regression
-- **Restraint discipline:** Correct decision not to force Saturday probe with calf cramp active
 
 ---
 
