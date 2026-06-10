@@ -2,7 +2,7 @@
 
 > **High-frequency file. Updated whenever active limiter or risk changes. Overwrite, do not append.**
 
-**Last updated:** 2026-06-08 (Monday — W23 close-out, W24 plan generated)
+**Last updated:** 2026-06-10 (Wednesday — 3-day block logged; illness watch active)
 
 ---
 
@@ -25,8 +25,10 @@
 - **W21 exposure:** 90m (30m×3 Thu) + 80m (20m×4 Sat)
 - **W22–W23:** No BBJ (calf protection)
 - **W24 gate to restart:** Calf 0/10 confirmed on Monday waking + throughout Tuesday session
-- **W24 target:** 20–40m touches in rounds (Tuesday and Thursday) — not a probe, just contact
-- **Phase 3 final focus:** Restore contact before taper. Pace gap cannot be closed in 1 week but exposure reduces race shock.
+- **W24 original target:** 20–40m touches in rounds (Tuesday and Thursday) — not a probe, just contact
+- **W24 update (2026-06-10):** Tuesday blocked by RED. Thursday conditional on illness gates opening. If Thursday blocked → restart moves to W25.
+- **W25 gate:** BBJ touch in Thursday W25 if calf 0/10 all week + HRV not Red. 2 × 20m, full rest, stop at first calf signal.
+- **Phase 3 final focus:** Even a single 20m touch before taper reduces race shock. Minimum requirement.
 
 ---
 
@@ -36,8 +38,9 @@
 - **Current:** 80m @ 28+28kg fragmented under fatigue (W21 Sat)
 - **Race standard:** 100m @ 30kg sandbag
 - **W22–W23:** No lunges (calf protection)
-- **Return gate:** Calf ≤ 0/10 confirmed in Tuesday session
-- **W24 target:** 3 × 20m bodyweight restart Tuesday → 60m continuous if clean → sandbag contact Thursday
+- **Return gate:** Calf ≤ 0/10 confirmed
+- **W24 original target:** 3 × 20m bodyweight restart Tuesday → 60m continuous if clean
+- **W24 update (2026-06-10):** Tuesday blocked by RED. If illness clears → Thursday conditional entry (20m BW only). If not → W25 Saturday mini simulation.
 
 ---
 
@@ -70,11 +73,20 @@
 - **W24 Mon:** Confirm clear before approving running quality.
 - **Protocol:** Active sinus headache = no running quality. Mild/managed = Yellow at best.
 
-### Risk 5: Race-Time Crunch
-- **Days to race:** 25 (W24 Mon)
-- **Real build days remaining:** 6 (Mon–Sat W24)
+### Risk 5: Upper Respiratory / Sick-Entry Watch — NEW (2026-06-10)
+- **Event:** Post-nasal drip, mucus, blocked nose, cold sensation, flu-like fatigue reported Wednesday W24
+- **Temperature:** 36.3°C axillary / 36.5°C infrared — normal. No fever.
+- **Chest:** Clear — no cough, no shortness of breath, no chest tightness
+- **HRV context:** Quick HRV 22 ms Wednesday — may be partly respiratory activation, not just training absorption
+- **Protocol:** No training until symptoms reducing + Quick HRV improving + temperature stays normal
+- **Watch trigger:** Chest cough or temperature ≥ 37.5°C → full rest + medical review before any session
+- **BBJ / lunge restart:** Deferred. Were planned for W24 Tue–Thu. Now conditional on illness clearing — earliest restart is Thursday if ALL gates open, more likely W25.
+
+### Risk 6: Race-Time Crunch
+- **Days to race:** 23 (W24 Wed)
+- **Real build days remaining:** 3 (Thu–Sat W24, if gates open)
 - **Taper starts:** Monday W25 (Jun 15)
-- **Implication:** Every session this week has to count. No wasted days. But also: no panic training that injures before taper.
+- **Implication:** W24 Thu + Sat are now the only remaining build opportunities this week. No panic training. No session that costs 3 recovery days.
 
 ---
 

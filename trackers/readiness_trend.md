@@ -109,6 +109,8 @@
 | Date | Day | Sleep h | Restful % | HRV ms | HRV %vs baseline | Calves L | Calves R | Body feel | Notes |
 |---|---|---|---|---|---|---|---|---|---|
 | 2026-06-08 | MON | 8h00 | 51% (4h05) | 48 sleeping / 41.8 daily / 41.4 24h | -3% daily | 0/10 | 0/10 | 7/10 improving | Sleeping HR 58; HR dip 9%; quick HRV 40; sinus 0.5/10; Yellow-Green; short re-entry fragment |
+| 2026-06-09 | TUE | 7h45 | 67% (5h10) | 29 sleeping / 24 daily / 31.4 24h | -44% daily | 0/10 | 0/10 | suppressed | Sleeping HR 60; HR dip 15%; disruption 10min; SpO2 96%; resp 16.9 brpm; quick HRV 31→36 volatile; RED — HRV absorption after Monday quality; walk + activation only |
+| 2026-06-10 | WED | 8h10 | 60% (4h55) | 26 sleeping / 29.2 daily / 28.9 24h | -31% daily | 0/10 | 0/10 | 4/10 fatigued | Sleeping HR 58; HR dip 16%; disruption 25min; SpO2 97%; quick HRV 22 ms (lowest 3-day block); temp 36.3°C axillary / 36.5°C infrared — normal; post-nasal drip + mucus + cold sensation; RED / sick-entry watch; no training |
 
 ---
 

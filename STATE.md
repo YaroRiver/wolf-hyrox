@@ -5,16 +5,16 @@
 ---
 
 ## TIME ANCHOR
-- **Last updated:** 2026-06-08 (Monday, Melbourne)
+- **Last updated:** 2026-06-10 (Wednesday, Melbourne)
 - **Race day:** 2026-07-03 (Friday) — HYROX Sydney
-- **Days to race:** 25 (as of 2026-06-08)
-- **Sydney Build Day:** 71 (Monday 2026-06-08)
+- **Days to race:** 23 (as of 2026-06-10)
+- **Sydney Build Day:** 73 (Wednesday 2026-06-10)
 - **Sydney Build Week:** 11
 - **Annual Week:** 24 (2026-06-08 → 2026-06-14)
 - **Phase:** Phase 3 — RACE SPECIFICITY (Week 3 of 3 — FINAL BUILD WEEK)
 - **W22 STATUS:** COMPLETE — Vaccine Disruption / Recovery Protection Week (Grade B)
 - **W23 STATUS:** COMPLETE — Recovery/Re-entry Week (Grade B-). Two bike sessions only. No WB probe, no running quality, no BBJ, no lunges. WB lock unchanged at 50 (W21). Probe deferred to W24 Sat.
-- **W24 STATUS:** IN PROGRESS — Last real build week. Phase 4 taper starts W25 (2026-06-15).
+- **W24 STATUS:** IN PROGRESS — Mon: Yellow-Green re-entry fragment (Grade A). Tue: RED absorption walk. Wed: RED / sick-entry watch (upper respiratory activation, HRV Quick 22 ms). BBJ/lunge restart deferred. Thu gate still open if symptoms reduce + HRV improves.
 
 ---
 
@@ -115,5 +115,7 @@ Conditional:
 
 ---
 
-**This file last fully refreshed:** 2026-06-08 (Monday — W23 close-out complete; W24 plan generated; probe deferred to W24 Sat)
+**Active illness watch:** Upper respiratory activation Wednesday 2026-06-10. Post-nasal drip + mucus + cold sensation + HRV Quick 22 ms. Temperature normal (36.3°C / 36.5°C). No fever, no chest symptoms. Thursday gate conditional on symptoms reducing.
+
+**This file last fully refreshed:** 2026-06-10 (Wednesday — 3-day block Mon–Wed logged; illness watch added)
 **Next mandatory refresh:** Sunday 2026-06-14 (W24 close-out + W25 taper plan generation)
