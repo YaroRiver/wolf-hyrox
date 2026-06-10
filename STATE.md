@@ -86,9 +86,18 @@ NOT limiters: sled (confirmed), CV capacity (VO₂max 58), absolute strength.
 ---
 
 ## PENDING DECISIONS
-1. **Ski Erg / Row Erg / Farmers Carry** — brief baseline contact in Thursday W24 simulation (no more deferral; last opportunity before taper)
-2. **Monday W24** — gate decision based on morning readiness (HRV, calf, sinus) — submit readiness data
-3. **Saturday W24** — probe gate decision based on full week recovery arc
+1. **Thursday W24 2026-06-11** — gate opens if: no fever, no chest cough, mucus reducing, Quick HRV improved from 22 ms, calf 0–1/10. Session: reduced HYROX touch (sled 2–3×10m + optional 2×20 WB). No BBJ/lunges/run while respiratory active.
+2. **Saturday W24 2026-06-13** — WB probe: floor 50 / target 60 / stretch 70 clean under fragment fatigue. Gate: all illness signs resolved + HRV not Red.
+
+## CONFIRMED PLAN ADDITIONS (athlete confirmed 2026-06-10)
+
+Three additions to the 24-day plan confirmed by athlete:
+
+**ADD 1 — W25 Thursday 2026-06-18:** After WB sets, add BBJ: 2 × 20m at comfortable pace, full rest between, stop at first calf signal. Gate: calf 0/10 entire W25 week so far + HRV not Red. Purpose: restore pattern before race, not a performance test.
+
+**ADD 2 — W25 Saturday 2026-06-20 mini simulation:** Lunges 20m BW (no sandbag) in Round 2 as default station touch if calf 0/10 all week. (Currently written as option — upgrade to default.)
+
+**ADD 3 — W26 Tuesday 2026-06-23 confidence touch:** After sled work, add Ski Erg 1 × 2:00 easy pace + Row Erg 1 × 2:00 easy pace. Orientation only — no target, no load. Purpose: remove station surprise at race.
 
 ---
 
