@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SYDNEY BUILD W24 · COMPLETED // YARO 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #080C10; --surface: #0E1419; --surface2: #141B22;
+    --border: #1E2D3D; --accent: #00E5FF; --red: #FF4757;
+    --gold: #FFD700; --green: #00FF87; --text: #E8EDF2;
+    --muted: #5A6A7A; --label: #8A9BAB; --orange: #FF8C42;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; min-height: 100vh; overflow-x: hidden; }
+  body::before { content: ''; position: fixed; inset: 0; background-image: linear-gradient(rgba(0,229,255,0.022) 1px, transparent 1px), linear-gradient(90deg, rgba(0,229,255,0.022) 1px, transparent 1px); background-size: 40px 40px; pointer-events: none; z-index: 0; }
+  .wrap { max-width: 1300px; margin: 0 auto; padding: 36px 24px; position: relative; z-index: 1; }
+
+  .hdr { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 28px; padding-bottom: 24px; border-bottom: 1px solid var(--border); animation: fadeUp .5s ease both; }
+  .hdr-eyebrow { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 4px; color: var(--gold); text-transform: uppercase; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+  .cd { width: 5px; height: 5px; border-radius: 50%; background: var(--gold); }
+  .hdr-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(52px, 8vw, 88px); line-height: .88; letter-spacing: 4px; }
+  .hdr-sub   { font-family: 'Bebas Neue', sans-serif; font-size: clamp(16px, 2.2vw, 24px); letter-spacing: 6px; color: var(--muted); margin-top: 4px; }
+  .hdr-block { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); letter-spacing: 1px; margin-top: 8px; }
+  .hdr-block span { color: var(--accent); }
+  .hdr-right { text-align: right; }
+  .week-badge { font-family: 'Bebas Neue', sans-serif; font-size: 56px; color: var(--gold); letter-spacing: 3px; line-height: 1; }
+  .week-range { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--text); letter-spacing: 2px; margin-top: 2px; }
+  .week-year  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 2px; margin-bottom: 10px; }
+  .done-badge { display: inline-flex; align-items: center; gap: 6px; font-family: 'DM Mono', monospace; font-size: 9px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; padding: 5px 12px; border: 1px solid rgba(255,215,0,.25); background: rgba(255,215,0,.05); }
+
+  .summary-strip { display: grid; grid-template-columns: repeat(7, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-bottom: 20px; animation: fadeUp .5s .06s ease both; }
+  .ss { background: var(--surface); padding: 14px 16px; text-align: center; transition: background .2s; }
+  .ss:hover { background: var(--surface2); }
+  .ss .sv { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 2px; line-height: 1; }
+  .ss .su { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--accent); margin-left: 2px; }
+  .ss .sl { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-top: 4px; }
+
+  .ctx-banner { background: var(--surface); border: 1px solid rgba(0,229,255,.18); border-left: 3px solid var(--accent); padding: 14px 22px; margin-bottom: 14px; animation: fadeUp .5s .07s ease both; }
+  .ctx-label { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--accent); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 5px; }
+  .ctx-text  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.6; }
+  .ctx-text span { color: var(--text); }
+
+  .sinus-banner { background: var(--surface); border: 1px solid rgba(255,140,66,.2); border-left: 3px solid var(--orange); padding: 12px 22px; margin-bottom: 14px; animation: fadeUp .5s .08s ease both; }
+  .sb2-label { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--orange); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 4px; }
+  .sb2-text  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.6; }
+  .sb2-text span { color: var(--text); }
+
+  .sleep-banner { background: var(--surface); border: 1px solid rgba(0,229,255,.12); border-left: 3px solid var(--accent); padding: 14px 22px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; animation: fadeUp .5s .10s ease both; flex-wrap: wrap; gap: 12px; }
+  .sb-label { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--accent); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 4px; }
+  .sleep-arc { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .sleep-day .sd-score { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 1px; line-height: 1; }
+  .sleep-day .sd-label { font-family: 'DM Mono', monospace; font-size: 7px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; margin-top: 2px; text-align: center; }
+  .sleep-arrow { color: var(--border); font-family: 'DM Mono', monospace; font-size: 12px; }
+
+  .section-lbl { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 4px; color: var(--muted); text-transform: uppercase; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+  .section-lbl::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  .week-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; margin-bottom: 24px; }
+  .dc { background: var(--surface); border: 1px solid var(--border); border-top: 3px solid transparent; transition: transform .2s; animation: fadeUp .5s ease both; overflow: hidden; }
+  .dc.done:hover { transform: translateY(-3px); }
+  .dc.done-green { border-top-color: var(--green); }
+  .dc.done-gold  { border-top-color: var(--gold); }
+  .dc.done-red   { border-top-color: var(--red); }
+  .dc.done-blue  { border-top-color: var(--accent); }
+  .dc.walk-day   { border-top-color: var(--muted); }
+  .dc:nth-child(1){animation-delay:.12s} .dc:nth-child(2){animation-delay:.17s}
+  .dc:nth-child(3){animation-delay:.22s} .dc:nth-child(4){animation-delay:.27s}
+  .dc:nth-child(5){animation-delay:.32s} .dc:nth-child(6){animation-delay:.37s}
+  .dc:nth-child(7){animation-delay:.42s}
+  .dc-head { padding: 12px 13px 10px; border-bottom: 1px solid var(--border); }
+  .dc-iso { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 1px; margin-bottom: 4px; }
+  .dc-iso .yr { color: var(--muted); } .dc-iso .dot { color: var(--border); margin: 0 2px; }
+  .dc-iso .mo { color: var(--label); } .dc-iso .dd { color: var(--text); font-weight: 500; }
+  .dc-abbr { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 3px; line-height: 1; }
+  .done-green .dc-abbr { color: var(--green); }
+  .done-gold  .dc-abbr { color: var(--gold); }
+  .done-red   .dc-abbr { color: var(--red); }
+  .done-blue  .dc-abbr { color: var(--accent); }
+  .walk-day   .dc-abbr { color: var(--muted); }
+  .dc-tag { display: inline-block; margin-top: 6px; font-family: 'DM Mono', monospace; font-size: 7px; letter-spacing: 1.5px; padding: 2px 7px; text-transform: uppercase; }
+  .done-green .dc-tag { background: rgba(0,255,135,.07); color: var(--green); }
+  .done-gold  .dc-tag { background: rgba(255,215,0,.07); color: var(--gold); }
+  .done-red   .dc-tag { background: rgba(255,71,87,.07);  color: var(--red); }
+  .done-blue  .dc-tag { background: rgba(0,229,255,.07);  color: var(--accent); }
+  .walk-day   .dc-tag { background: rgba(90,106,122,.08); color: var(--muted); }
+  .status-chip { display: inline-block; margin-top: 7px; font-family: 'DM Mono', monospace; font-size: 7px; padding: 2px 6px; letter-spacing: 1px; border: 1px solid; }
+  .chip-done   { color: var(--green); border-color: rgba(0,255,135,.25); background: rgba(0,255,135,.04); }
+  .chip-yellow { color: var(--gold);  border-color: rgba(255,215,0,.25);  background: rgba(255,215,0,.04); }
+  .chip-smart  { color: var(--accent); border-color: rgba(0,229,255,.2); background: rgba(0,229,255,.04); }
+  .chip-red    { color: var(--red); border-color: rgba(255,71,87,.25); background: rgba(255,71,87,.04); }
+  .sleep-chip { display: inline-block; margin-top: 5px; font-family: 'DM Mono', monospace; font-size: 7px; padding: 1px 6px; letter-spacing: 1px; border: 1px solid; }
+  .sleep-good { color: var(--green); border-color: rgba(0,255,135,.2); background: rgba(0,255,135,.04); }
+  .sleep-ok   { color: var(--gold);  border-color: rgba(255,215,0,.2);  background: rgba(255,215,0,.04); }
+  .sleep-red  { color: var(--red);   border-color: rgba(255,71,87,.2);   background: rgba(255,71,87,.04); }
+  .dc-body { padding: 10px 13px 13px; }
+  .di { font-family: 'DM Mono', monospace; font-size: 9.5px; color: var(--label); padding: 4px 0; border-bottom: 1px solid rgba(30,45,61,.5); line-height: 1.4; display: flex; align-items: flex-start; gap: 5px; }
+  .di:last-child { border-bottom: none; }
+  .di .ic { flex-shrink: 0; color: var(--muted); }
+  .hi { color: var(--text); } .gr { color: var(--green); } .ac { color: var(--accent); }
+  .rd { color: var(--red); }  .gd { color: var(--gold); }  .mu { color: var(--muted); }
+  .or { color: var(--orange); }
+  .hr-mini { margin-top: 8px; }
+  .hr-mini-label { font-family: 'DM Mono', monospace; font-size: 7.5px; color: var(--muted); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 5px; }
+  .hr-zone-row { display: flex; height: 5px; gap: 1px; border-radius: 2px; overflow: hidden; }
+  .hz { height: 100%; border-radius: 1px; }
+  .hz1{background:#3A7BD5;} .hz2{background:#00E5FF;} .hz3{background:#FFD700;} .hz4{background:#FF8C42;} .hz5{background:#FF4757;}
+
+  .detail-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 12px; }
+  .card { background: var(--surface); border: 1px solid var(--border); padding: 22px; animation: fadeUp .5s ease both; transition: border-color .2s, transform .2s; }
+  .card:hover { border-color: rgba(0,229,255,.1); transform: translateY(-2px); }
+  .card-ttl { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 3px; color: var(--muted); text-transform: uppercase; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .ct-dot { width: 6px; height: 6px; flex-shrink: 0; }
+  .mrow { display: flex; justify-content: space-between; align-items: baseline; padding: 7px 0; border-bottom: 1px solid var(--border); }
+  .mrow:last-child { border-bottom: none; }
+  .mk  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); }
+  .mv  { font-family: 'Bebas Neue', sans-serif; font-size: 19px; letter-spacing: 1px; color: var(--text); }
+  .mu2 { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--accent); margin-left: 2px; }
+
+  .insight-box { padding: 9px 11px; border: 1px solid rgba(0,229,255,.12); background: rgba(0,229,255,.03); margin-top: 10px; }
+  .ib-label { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--accent); letter-spacing: 2px; margin-bottom: 3px; }
+  .ib-text  { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--label); line-height: 1.6; }
+  .ib-text span { color: var(--text); }
+
+  .assess-item { display: flex; align-items: flex-start; gap: 8px; padding: 7px 0; border-bottom: 1px solid var(--border); font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.4; }
+  .assess-item:last-child { border-bottom: none; }
+  .assess-item.good::before { content: '✔'; color: var(--green); flex-shrink: 0; }
+  .assess-item.warn::before { content: '△'; color: var(--gold); flex-shrink: 0; }
+  .assess-item.note::before { content: '→'; color: var(--accent); flex-shrink: 0; }
+  .assess-item.crit::before { content: '⚠'; color: var(--red); flex-shrink: 0; }
+  .assess-item.smart::before { content: '◉'; color: var(--accent); flex-shrink: 0; }
+
+  .hrv-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; margin: 10px 0; }
+  .hrv-col { text-align: center; }
+  .hrv-bar-wrap { height: 50px; display: flex; align-items: flex-end; justify-content: center; }
+  .hrv-bar { width: 18px; border-radius: 2px 2px 0 0; transition: height 1s ease; }
+  .hrv-val { font-family: 'Bebas Neue', monospace; font-size: 13px; letter-spacing: 1px; margin-top: 3px; }
+  .hrv-day { font-family: 'DM Mono', monospace; font-size: 7px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; margin-top: 2px; }
+
+  .identity { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); padding: 22px 28px; margin-bottom: 14px; animation: fadeUp .5s .5s ease both; position: relative; overflow: hidden; }
+  .identity::after { content: '🐺'; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 72px; opacity: .05; pointer-events: none; }
+  .id-lbl { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; }
+  .id-lines { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 5px; }
+  .id-line  { font-family: 'Bebas Neue', sans-serif; font-size: 17px; letter-spacing: 3px; color: var(--muted); transition: color .2s; }
+  .id-line:hover { color: var(--text); }
+  .id-line.hl { color: var(--red); }
+  .id-line.hl2 { color: var(--gold); }
+
+  .footer { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .footer-l { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); letter-spacing: 2px; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); padding: 3px 8px; border: 1px solid var(--border); letter-spacing: 1px; cursor: default; transition: all .2s; }
+  .tag:hover { color: var(--accent); border-color: rgba(0,229,255,.25); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 1100px) { .week-grid { grid-template-columns: repeat(4,1fr); } .detail-grid { grid-template-columns: 1fr 1fr; } .summary-strip { grid-template-columns: repeat(4,1fr); } }
+  @media (max-width: 720px)  { .week-grid { grid-template-columns: repeat(2,1fr); } .detail-grid { grid-template-columns: 1fr; } .hdr { flex-direction: column; gap: 16px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HEADER -->
+  <div class="hdr">
+    <div>
+      <div class="hdr-eyebrow"><span class="cd"></span>Completed · Sydney Build W11 · Phase 3 Final · Recovery Crisis</div>
+      <div class="hdr-title">WEEK<br>REPORT</div>
+      <div class="hdr-sub">W24 · Sydney Build W11 · RECOVERY CRISIS</div>
+      <div class="hdr-block">Sydney Build <span>W11</span> · Phase 3: Specific Peak (Final) · <span>Respiratory activation Wed · HRV suppressed Thu–Sat</span> · Goal <span>1:15:00 · 03·07·2026 · 19 days at close</span></div>
+    </div>
+    <div class="hdr-right">
+      <div class="week-badge">W24</div>
+      <div class="week-range">2026·06·08 → 2026·06·14</div>
+      <div class="week-year">19 days to Sydney · Iron Viking Gym</div>
+      <div class="done-badge"><span class="cd"></span>Grade C+ · Recovery Crisis</div>
+    </div>
+  </div>
+
+  <!-- SUMMARY STRIP -->
+  <div class="summary-strip">
+    <div class="ss"><div class="sv" style="color:var(--red);">1<span class="su">/7</span></div><div class="sl">Quality Sessions</div></div>
+    <div class="ss"><div class="sv" style="color:var(--red);">50</div><div class="sl">WB Lock (4× missed)</div></div>
+    <div class="ss"><div class="sv" style="color:var(--accent);">78<span class="su">bpm</span></div><div class="sl">Sat Walk Avg HR</div></div>
+    <div class="ss"><div class="sv" style="color:var(--green);">56<span class="su">bpm</span></div><div class="sl">Sleeping HR Sun ↓</div></div>
+    <div class="ss"><div class="sv" style="color:var(--red);">21<span class="su">ms</span></div><div class="sl">HRV Min (Thu night)</div></div>
+    <div class="ss"><div class="sv" style="color:var(--gold);">7h40</div><div class="sl">Sleep Avg (7d)</div></div>
+    <div class="ss"><div class="sv" style="color:var(--red);">19</div><div class="sl">Days to Sydney</div></div>
+  </div>
+
+  <!-- CONTEXT BANNER -->
+  <div class="ctx-banner">
+    <div class="ctx-label">◉ W24 Context — Recovery Crisis After Respiratory Activation</div>
+    <div class="ctx-text">W24 was planned as the last real build week: WB probe Saturday (floor 55/target 60/stretch 70), BBJ restart, lunge restart, running quality Mon + Thu. <span>Monday re-entry fragment executed correctly.</span> Wednesday brought upper respiratory activation: post-nasal drip, mucus, cold sensation, Quick HRV crashed to 22 ms. The system went into protection mode Thu–Sat. <span>No quality was forced during respiratory activation — the correct call.</span> Sunday sleeping HR dropped to 56 bpm (best of the block) — recovery direction confirmed. W25 starts with athlete directive: go regardless. Physical gates only.</div>
+  </div>
+
+  <!-- RESPIRATORY BANNER -->
+  <div class="sinus-banner">
+    <div class="sb2-label">Upper Respiratory Activation — Wed 2026-06-10 → Resolving Sun</div>
+    <div class="sb2-text">Post-nasal drip + mucus + blocked nose + cold sensation. Temperature: <span>36.3–36.5°C — normal throughout.</span> No fever, no chest symptoms. HRV Quick 22 ms (Wed) was lowest reading of the block. <span>SpO2 improved 96% (Fri) → 98% (Sun).</span> Sleeping HR improved 60 bpm (Thu/Fri) → 59 bpm (Sat) → 56 bpm (Sun). Symptoms resolving by Sunday close. W25 cleared.</div>
+  </div>
+
+  <!-- SLEEP BANNER -->
+  <div class="sleep-banner">
+    <div>
+      <div class="sb-label">Sleep Arc W24 — Quantity OK, Quality Suppressed → Resolving</div>
+      <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--label);">Best duration: <span style="color:var(--text);">Wed 8h10</span> · Worst disruption: <span style="color:var(--red);">Wed 25 min / 4.9%</span> · Sleeping HRV: <span style="color:var(--red);">21–48 ms range</span> · Sleeping HR: <span style="color:var(--text);">56–60 bpm</span></div>
+    </div>
+    <div class="sleep-arc">
+      <div class="sleep-day"><div class="sd-score" style="color:var(--green);">8h00</div><div class="sd-label">MON<br>HRV 48↑</div></div>
+      <div class="sleep-arrow">→</div>
+      <div class="sleep-day"><div class="sd-score" style="color:var(--gold);">7h45</div><div class="sd-label">TUE<br>HRV 29↓</div></div>
+      <div class="sleep-arrow">→</div>
+      <div class="sleep-day"><div class="sd-score" style="color:var(--green);">8h10</div><div class="sd-label">WED<br>HRV 26↓↓</div></div>
+      <div class="sleep-arrow">→</div>
+      <div class="sleep-day"><div class="sd-score" style="color:var(--gold);">7h15</div><div class="sd-label">THU<br>HRV 21↓↓</div></div>
+      <div class="sleep-arrow">→</div>
+      <div class="sleep-day"><div class="sd-score" style="color:var(--gold);">7h40</div><div class="sd-label">FRI<br>HRV 23↑</div></div>
+      <div class="sleep-arrow">→</div>
+      <div class="sleep-day"><div class="sd-score" style="color:var(--gold);">7h20</div><div class="sd-label">SAT<br>HRV 29↑</div></div>
+      <div class="sleep-arrow">→</div>
+      <div class="sleep-day"><div class="sd-score" style="color:var(--gold);">7h35</div><div class="sd-label">SUN<br>HR 56↓✓</div></div>
+    </div>
+  </div>
+
+  <!-- WEEK CARDS -->
+  <div class="section-lbl" style="animation:fadeUp .5s .12s ease both;">📆 Week Execution — W24 · 2026·06·08 → 2026·06·14</div>
+  <div class="week-grid">
+
+    <!-- MON 08 — Re-entry fragment -->
+    <div class="dc done done-green">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">06</span><span class="dot">·</span><span class="dd">08</span></div>
+        <div class="dc-abbr">MON</div>
+        <div class="dc-tag">Re-entry Fragment ★</div>
+        <div class="status-chip chip-done">✓ Grade A</div>
+        <div class="sleep-chip sleep-good">😴 8h00 · HRV 48 ms slp</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">🏃</span><span>Run <span class="gr">2.7 km</span> · R1 Z1 / R2 5:43/km HR 136</span></div>
+        <div class="di"><span class="ic">🏋️</span><span>BW squats 2×50 (WB substitute — outdoors)</span></div>
+        <div class="di"><span class="ic">—</span><span>HR peak ~146 bpm (borderline cap ✓)</span></div>
+        <div class="di"><span class="ic">✔</span><span class="gr">No BBJ/sled/probe · calf 0/10 ✓</span></div>
+      </div>
+    </div>
+
+    <!-- TUE 09 — RED absorption -->
+    <div class="dc done done-red">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">06</span><span class="dot">·</span><span class="dd">09</span></div>
+        <div class="dc-abbr">TUE</div>
+        <div class="dc-tag">Red Absorption 🔴</div>
+        <div class="status-chip chip-smart">◉ Grade A — Correct</div>
+        <div class="sleep-chip sleep-ok">😴 7h45 · HRV 29 ms / -44%</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">—</span><span>Daily HRV <span class="rd">-44%</span> — absorption after Mon quality</span></div>
+        <div class="di"><span class="ic">🚶</span><span>Walk 4.02 km · avg HR <span class="hi">92 bpm</span> · Z1</span></div>
+        <div class="di"><span class="ic">💪</span><span>Activation 6:14 · avg HR 99 bpm · Z1</span></div>
+        <div class="di"><span class="ic">✔</span><span>No gym — correct absorption protocol</span></div>
+        <div class="hr-mini">
+          <div class="hr-mini-label">Walk HR Zones</div>
+          <div class="hr-zone-row"><div class="hz hz1" style="width:100%;"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WED 10 — Sick-entry watch -->
+    <div class="dc done done-red">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">06</span><span class="dot">·</span><span class="dd">10</span></div>
+        <div class="dc-abbr">WED</div>
+        <div class="dc-tag">Sick-Entry Watch 🔴</div>
+        <div class="status-chip chip-red">⚠ RED — Respiratory</div>
+        <div class="sleep-chip sleep-good">😴 8h10 · HRV 22 ms Quick</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">🤧</span><span>Post-nasal drip · mucus · cold sensation</span></div>
+        <div class="di"><span class="ic">—</span><span>Quick HRV <span class="rd">22 ms</span> (lowest of block)</span></div>
+        <div class="di"><span class="ic">—</span><span>Temp <span class="gr">36.3°C</span> — fever gate passed</span></div>
+        <div class="di"><span class="ic">✔</span><span>Full rest — correct call</span></div>
+      </div>
+    </div>
+
+    <!-- THU 11 — Red no training -->
+    <div class="dc done done-red">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">06</span><span class="dot">·</span><span class="dd">11</span></div>
+        <div class="dc-abbr">THU</div>
+        <div class="dc-tag">Red — No Training 🔴</div>
+        <div class="status-chip chip-red">⚠ RED</div>
+        <div class="sleep-chip sleep-ok">😴 7h15 · HRV 21 ms slp</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">—</span><span>Sleeping HRV <span class="rd">21 ms</span> — block minimum</span></div>
+        <div class="di"><span class="ic">—</span><span>Quick HRV volatile: <span class="rd">21</span> → <span class="gd">43 ms</span></span></div>
+        <div class="di"><span class="ic">—</span><span>Sleeping HR <span class="rd">60 bpm</span> · HR dip 12%</span></div>
+        <div class="di"><span class="ic">✔</span><span>HYROX touch gate not met — rest correct</span></div>
+      </div>
+    </div>
+
+    <!-- FRI 12 — Reset -->
+    <div class="dc walk-day done">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">06</span><span class="dot">·</span><span class="dd">12</span></div>
+        <div class="dc-abbr">FRI</div>
+        <div class="dc-tag">Reset Day</div>
+        <div class="status-chip chip-smart">◉ Grade A — Correct</div>
+        <div class="sleep-chip sleep-ok">😴 7h40 · daily HRV -18%</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">📈</span><span>Daily HRV improving: <span class="gd">-18%</span> (vs -32% Thu)</span></div>
+        <div class="di"><span class="ic">—</span><span>Quick HRV 36 ms · 24h HRV 34.5 ms</span></div>
+        <div class="di"><span class="ic">—</span><span>Sleeping HR still <span class="or">60 bpm</span> · dip 12%</span></div>
+        <div class="di"><span class="ic">✔</span><span>Reset day — no session — protect Saturday</span></div>
+      </div>
+    </div>
+
+    <!-- SAT 13 — Walk only -->
+    <div class="dc walk-day done">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">06</span><span class="dot">·</span><span class="dd">13</span></div>
+        <div class="dc-abbr">SAT</div>
+        <div class="dc-tag">Probe Gate Failed</div>
+        <div class="status-chip chip-smart">◉ Grade A — Walk Max</div>
+        <div class="sleep-chip sleep-ok">😴 7h20 · HRV 29 ms slp</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">❌</span><span>WB probe gate: HRV <span class="rd">29 ms</span> / dip <span class="rd">12%</span></span></div>
+        <div class="di"><span class="ic">🚶</span><span>Walk <span class="hi">44:37</span> · 3.22 km · avg HR <span class="gr">78 bpm</span></span></div>
+        <div class="di"><span class="ic">—</span><span>Zone 1 <span class="gr">44:32/44:37</span> · post HR 61 bpm</span></div>
+        <div class="di"><span class="ic">✔</span><span>Correct — 4th missed probe, no harm done</span></div>
+        <div class="hr-mini">
+          <div class="hr-mini-label">Walk HR Zones</div>
+          <div class="hr-zone-row"><div class="hz hz1" style="width:100%;"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUN 14 — Close-out -->
+    <div class="dc done done-gold">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">06</span><span class="dot">·</span><span class="dd">14</span></div>
+        <div class="dc-abbr">SUN</div>
+        <div class="dc-tag">Recovery Close-out ✓</div>
+        <div class="status-chip chip-smart">◉ Recovery Confirmed</div>
+        <div class="sleep-chip sleep-ok">😴 7h35 · HR 56 bpm ↓</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">✔</span><span>Sleeping HR <span class="gr">56 bpm</span> — best of W24</span></div>
+        <div class="di"><span class="ic">✔</span><span>SpO2 <span class="gr">98%</span> — respiratory resolving</span></div>
+        <div class="di"><span class="ic">✔</span><span>Disruption <span class="gr">5 min</span> — down from 20 min</span></div>
+        <div class="di"><span class="ic">→</span><span class="ac">W25 taper starts Mon — athlete directive: GO</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- DEEP DIVE -->
+  <div class="section-lbl" style="animation:fadeUp .5s .28s ease both;">📊 Session Deep Dive</div>
+
+  <div class="detail-grid">
+
+    <!-- Mon Re-entry -->
+    <div class="card" style="animation-delay:.30s;border-top:2px solid var(--green);">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--green);"></span>Mon 06·08 — Re-entry Fragment · Best Session W24</div>
+      <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--muted);letter-spacing:2px;margin-bottom:8px;text-transform:uppercase;">2.7 km Run + 100 BW Squats · 2 Rounds</div>
+      <div class="mrow"><span class="mk">Run distance</span><span class="mv" style="color:var(--green);">2.7<span class="mu2">km</span></span></div>
+      <div class="mrow"><span class="mk">R1 avg HR</span><span class="mv">111<span class="mu2">bpm Z1</span></span></div>
+      <div class="mrow"><span class="mk">R2 pace</span><span class="mv">5:43<span class="mu2">/km</span></span></div>
+      <div class="mrow"><span class="mk">R2 HR peak</span><span class="mv" style="color:var(--gold);">~146<span class="mu2">bpm</span></span></div>
+      <div class="mrow"><span class="mk">BW squats</span><span class="mv">2×50<span class="mu2">reps</span></span></div>
+      <div class="mrow"><span class="mk">Calf status</span><span class="mv" style="color:var(--green);">0/10</span></div>
+      <div class="insight-box">
+        <div class="ib-label">Correct Re-entry Execution</div>
+        <div class="ib-text">R2 HR peaked at 146 at 5:43/km pace. At <span>race pace 4:15–4:30/km</span>, race HR will be sustained Zone 3–4. The gap is the work to close in W25 Thursday run quality. System handled re-entry cleanly.</div>
+      </div>
+    </div>
+
+    <!-- Sat Walk -->
+    <div class="card" style="animation-delay:.34s;border-top:2px solid var(--muted);">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--muted);"></span>Sat 06·13 — Recovery Walk · Probe Gate Not Met</div>
+      <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--muted);letter-spacing:2px;margin-bottom:8px;text-transform:uppercase;">Pure Zone 1 · Zero Cardiovascular Debt</div>
+      <div class="mrow"><span class="mk">Duration</span><span class="mv">44:37</span></div>
+      <div class="mrow"><span class="mk">Distance</span><span class="mv">3.22<span class="mu2">km</span></span></div>
+      <div class="mrow"><span class="mk">Avg HR</span><span class="mv" style="color:var(--green);">78<span class="mu2">bpm</span></span></div>
+      <div class="mrow"><span class="mk">Zone 1</span><span class="mv" style="color:var(--green);">44:32</span></div>
+      <div class="mrow"><span class="mk">Post HR 1 min</span><span class="mv" style="color:var(--green);">61<span class="mu2">bpm</span></span></div>
+      <div class="mrow"><span class="mk">Grade</span><span class="mv" style="color:var(--green);">A</span></div>
+      <div class="insight-box">
+        <div class="ib-label">Walk Performed Its Function</div>
+        <div class="ib-text">44:32 of 44:37 in Zone 1. Post-walk HR to <span>61 bpm in 1 minute</span>. Zero cardiovascular cost. Recovery circulation without load — exactly the correct Saturday execution given gate failure.</div>
+      </div>
+    </div>
+
+    <!-- HRV Pattern -->
+    <div class="card" style="animation-delay:.38s;border-top:2px solid var(--red);">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--red);"></span>HRV Pattern W24 — Suppressed → Gradually Resolving</div>
+      <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--muted);letter-spacing:2px;margin-bottom:10px;text-transform:uppercase;">Sleeping HRV — 7 Days</div>
+      <div class="hrv-grid">
+        <div class="hrv-col"><div class="hrv-bar-wrap"><div class="hrv-bar" style="height:100%;background:var(--green);"></div></div><div class="hrv-val" style="color:var(--green);">48</div><div class="hrv-day">MON</div></div>
+        <div class="hrv-col"><div class="hrv-bar-wrap"><div class="hrv-bar" style="height:60%;background:var(--red);"></div></div><div class="hrv-val" style="color:var(--red);">29</div><div class="hrv-day">TUE</div></div>
+        <div class="hrv-col"><div class="hrv-bar-wrap"><div class="hrv-bar" style="height:54%;background:var(--red);"></div></div><div class="hrv-val" style="color:var(--red);">26</div><div class="hrv-day">WED</div></div>
+        <div class="hrv-col"><div class="hrv-bar-wrap"><div class="hrv-bar" style="height:44%;background:var(--red);"></div></div><div class="hrv-val" style="color:var(--red);">21</div><div class="hrv-day">THU</div></div>
+        <div class="hrv-col"><div class="hrv-bar-wrap"><div class="hrv-bar" style="height:48%;background:var(--red);"></div></div><div class="hrv-val" style="color:var(--red);">23</div><div class="hrv-day">FRI</div></div>
+        <div class="hrv-col"><div class="hrv-bar-wrap"><div class="hrv-bar" style="height:60%;background:var(--gold);"></div></div><div class="hrv-val" style="color:var(--gold);">29</div><div class="hrv-day">SAT</div></div>
+        <div class="hrv-col"><div class="hrv-bar-wrap"><div class="hrv-bar" style="height:60%;background:var(--gold);"></div></div><div class="hrv-val" style="color:var(--gold);">29</div><div class="hrv-day">SUN</div></div>
+      </div>
+      <div style="margin-top:10px;font-family:'DM Mono',monospace;font-size:8.5px;color:var(--label);line-height:1.5;">Never reached baseline (≥45 ms) all week. Sleeping HR: <span style="color:var(--text);">58–60 bpm Mon–Fri → 59 Sat → 56 Sun</span>. Sunday sleeping HR 56 bpm + SpO2 98% = recovery direction confirmed.</div>
+    </div>
+
+  </div>
+
+  <!-- ASSESSMENT -->
+  <div class="detail-grid">
+    <div class="card" style="grid-column:1/-1;animation-delay:.44s;border-top:2px solid var(--red);">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--red);"></span>W24 Assessment · Recovery Crisis · Grade C+ · System Protected</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+        <div>
+          <div class="assess-item good">Monday re-entry executed cleanly: <span style="color:var(--text);">2.7 km run + 100 BW squats, HR cap respected, calf 0/10</span></div>
+          <div class="assess-item good">WB probe decision correct each time gate failed: <span style="color:var(--text);">no failed probe to compound recovery deficit</span></div>
+          <div class="assess-item good">Saturday walk was clean recovery stimulus: <span style="color:var(--text);">avg HR 78 bpm, full Zone 1, post-walk HR 61 bpm in 1 min</span></div>
+          <div class="assess-item good">Sunday sleeping HR 56 bpm: <span style="color:var(--text);">first clear recovery signal — SpO2 98%, disruption 5 min</span></div>
+          <div class="assess-item good">Respiratory activation managed correctly: <span style="color:var(--text);">no fever, no chest symptoms, resolved by Sunday</span></div>
+        </div>
+        <div>
+          <div class="assess-item crit">Four consecutive WB probes missed — <span style="color:var(--text);">WB lock still at 50 from W21 (May 23). W25 Saturday is the LAST probe slot.</span></div>
+          <div class="assess-item crit">No HYROX-specific quality after Monday — <span style="color:var(--text);">sled, BBJ, lunges absent for 3+ weeks total since W21</span></div>
+          <div class="assess-item warn">Sleeping HRV never reached Green territory: <span style="color:var(--text);">21–48 ms range, gate (45 ms) met only Monday night</span></div>
+          <div class="assess-item warn">Sleep onset remained late: <span style="color:var(--text);">12:45 am Saturday, 1:00 am Sunday — must correct W25</span></div>
+          <div class="assess-item note">W25 Athlete Directive: <span style="color:var(--accent);">Execute the agreed plan regardless of HRV. Physical safety gates only. Three weeks is enough. W25 goes.</span></div>
+          <div class="assess-item smart"><span style="color:var(--accent);">The damage from forcing quality during respiratory activation would have been worse than 4 missed probe sessions. The body made the right call. Now it's time to execute.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IDENTITY -->
+  <div class="identity">
+    <div class="id-lbl">🐺 Wolf Identity</div>
+    <div class="id-lines">
+      <div class="id-line">Three weeks.</div>
+      <div class="id-line hl">Enough waiting.</div>
+      <div class="id-line hl2">W25 is the week that decides the race.</div>
+      <div class="id-line hl">One probe. One week. Execute.</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-l">W24 COMPLETED · 2026·06·08 → 2026·06·14 · 19 DAYS TO SYDNEY &nbsp;//&nbsp; YARO &nbsp;//&nbsp; SYDNEY BUILD W11 · RECOVERY CRISIS · GRADE C+</div>
+    <div class="tags">
+      <div class="tag">#RecoveryCrisis</div>
+      <div class="tag">#FourMissedProbes</div>
+      <div class="tag">#HRVSuppressed</div>
+      <div class="tag">#RespiratoryActivation</div>
+      <div class="tag">#W25LastChance</div>
+      <div class="tag">#Sydney19days</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
