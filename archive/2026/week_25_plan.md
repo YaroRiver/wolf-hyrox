@@ -59,7 +59,7 @@ W24 delivered 1 of 3 planned quality sessions (Monday re-entry fragment only). R
 ---
 
 ### TUE 2026-06-16 · Day 79 · 17 days to race
-**Sled exposure + run quality**
+**Sled exposure + run quality + WB pattern primer**
 
 **Gate:** Calf 0/10 · no fever · warm-up clean after 10 min
 
@@ -68,13 +68,14 @@ W24 delivered 1 of 3 planned quality sessions (Monday re-entry fragment only). R
 - Sled push: 2 × 15m @ 180–202 kg · full rest between (3–4 min)
 - Sled pull: 2 × 15m @ 140–153 kg · full rest between (3–4 min)
 - Run: 2 × 400m @ 4:30–4:45/km · full recovery between (3 min walk)
+- **WB pattern primer: 2 × 15 reps @ 9 kg · easy tempo · rest 2 min between** — not a fatigue set, restore movement groove 4 days before probe
 - Cool-down: walk 5 min
 
-**Purpose:** Restore sled contact after 3 weeks. Reactivate run quality. Sled loads are below race ceiling — this is a touch, not a max test.
+**Purpose:** Restore sled contact. Reactivate run quality. WB pattern primer primes the movement groove before Saturday — 2×15 easy is 90 sec of work, negligible load, high groove benefit.
 
-**Hard rules:** Sled stop rule = stall or form breakdown. Run stop rule = pace drift > 15 sec/km OR HR > 160. No BBJ, no lunges, no WB fatigue set.
+**Hard rules:** Sled stop = stall or form breakdown. Run stop = pace drift > 15 sec/km OR HR > 160. WB primer stop = any calf signal. No BBJ, no lunges.
 
-**If calf signal at any point:** Stop sled immediately, substitute easy bike 15 min.
+**If calf signal at any point:** Stop sled or WB immediately, substitute easy bike 15 min.
 
 ---
 
@@ -98,7 +99,7 @@ W24 delivered 1 of 3 planned quality sessions (Monday re-entry fragment only). R
 - Warm-up: bike 8 min + dynamic mobility
 - Run: 4 × 400m @ 4:20–4:35/km · full recovery between (3–4 min walk)
 - WB: 3 × 20 reps @ 9 kg · rest 2 min between sets
-- **BBJ restart:** 2 × 20m at comfortable, controlled pace · full rest between (3–4 min) · stop at first calf signal (even 0.5/10)
+- **BBJ restart:** 2 × 30m at comfortable, controlled pace · full rest between (3–4 min) · stop at first calf signal (even 0.5/10) · if calf uncertain at 20m — stop there, session still complete
 
 **Purpose:** Race-pace run reactivation. WB rhythm maintenance. BBJ pattern restored — 20m is orientation, not distance test.
 

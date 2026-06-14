@@ -19,9 +19,9 @@ TIME ANCHOR (verified 2026-06-14 Sunday Melbourne)
 | Day | Date | Type | Gate |
 |---|---|---|---|
 | MON | 06-15 | Easy aerobic re-entry | No fever · calf 0/10 · warm-up check |
-| **TUE** | **06-16** | **Sled push/pull + run 2×400m** | Calf 0/10 · no fever |
+| **TUE** | **06-16** | **Sled push/pull + run 2×400m + WB 2×15 primer** | Calf 0/10 · no fever |
 | WED | 06-17 | Recovery walk / easy bike | Recovery only |
-| **THU** | **06-18** | **4×400m race-pace + WB 3×20 + BBJ 2×20m ★** | Calf 0/10 · no fever |
+| **THU** | **06-18** | **4×400m race-pace + WB 3×20 + BBJ 2×30m ★** | Calf 0/10 · no fever |
 | FRI | 06-19 | Rest / walk | Protect Saturday |
 | **SAT** | **06-20** | **WB PROBE 60 + lunges 20m BW ★** | Calf 0/10 all week · no fever · warm-up clean |
 | SUN | 06-21 | Absorption + W25 close-out | Walk + mobility |
