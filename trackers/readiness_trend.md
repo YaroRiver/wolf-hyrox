@@ -111,6 +111,14 @@
 | 2026-06-08 | MON | 8h00 | 51% (4h05) | 48 sleeping / 41.8 daily / 41.4 24h | -3% daily | 0/10 | 0/10 | 7/10 improving | Sleeping HR 58; HR dip 9%; quick HRV 40; sinus 0.5/10; Yellow-Green; short re-entry fragment |
 | 2026-06-09 | TUE | 7h45 | 67% (5h10) | 29 sleeping / 24 daily / 31.4 24h | -44% daily | 0/10 | 0/10 | suppressed | Sleeping HR 60; HR dip 15%; disruption 10min; SpO2 96%; resp 16.9 brpm; quick HRV 31→36 volatile; RED — HRV absorption after Monday quality; walk + activation only |
 | 2026-06-10 | WED | 8h10 | 60% (4h55) | 26 sleeping / 29.2 daily / 28.9 24h | -31% daily | 0/10 | 0/10 | 4/10 fatigued | Sleeping HR 58; HR dip 16%; disruption 25min; SpO2 97%; quick HRV 22 ms (lowest 3-day block); temp 36.3°C axillary / 36.5°C infrared — normal; post-nasal drip + mucus + cold sensation; RED / sick-entry watch; no training |
+| 2026-06-11 | THU | 7h15 | 63% (4h35) | 21 sleeping / 28.7 daily (later) | -52% early / -32% later | 0/10 | 0/10 | Red/Yellow-Red | Sleeping HR 60; HR dip 12%; disruption 5min; quick HRV 21→43 volatile (overnight suppressed); respiratory/sinus still active; no training |
+| 2026-06-12 | FRI | 7h40 | 66% (5h05) | 23 sleeping / 34.7 daily | -18% daily | 0/10 | 0/10 | Yellow-Red→Yellow | Sleeping HR 60; HR dip 12%; disruption 20min; SpO2 96%; resp 16.3 brpm; quick HRV 36ms; 24h HRV 34.5ms; daily HRV improving directionally; no training |
+| 2026-06-13 | SAT | 7h20 | — | 29 sleeping | — | 0/10 | 0/10 | Yellow-Red | Sleeping HR 59; HR dip 12%; disruption 20min; SpO2 95%; 3-day target 81% under; WB probe gate not met (sleeping HRV 29ms, HR dip 12%); walk 44:37 avg HR 78 full Zone 1 |
+| 2026-06-14 | SUN | 7h35 | — | 29 sleeping | — | 0/10 | 0/10 | Yellow→recovering | Sleeping HR 56 (best of block); HR dip 14%; disruption 5min; SpO2 98%; 3-day target 84%; no training; close-out day; recovery direction confirmed |
+
+## W24 7-day summary
+
+| W24 summary | ~7h40 avg | ~60% avg restful (logged days) | 21–48 ms sleeping range | — | 0/10 all week | 0/10 all week | 1 Yellow-Green / 3 RED / 2 Yellow-Red / 1 Yellow |
 
 ---
 

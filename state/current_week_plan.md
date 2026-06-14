@@ -1,48 +1,48 @@
-# Current Week Plan — W24 (Sydney Build Week 11, Phase 3 Week 3 — FINAL BUILD WEEK)
+# Current Week Plan — W25 (Sydney Build Week 12, Phase 4 — TAPER WEEK 1)
 
 ```
-TIME ANCHOR (verified 2026-06-08 Monday Melbourne)
-- Date: 2026-06-08 (Monday)
-- Build Day 71 · Build Week 11 · Annual Week 24
-- Phase 3 — RACE SPECIFICITY: Final Week
-- Phase 4 — TAPER starts Monday 2026-06-15
-- Days to race: 25
+TIME ANCHOR (verified 2026-06-14 Sunday Melbourne)
+- Date: 2026-06-14 (Sunday) — W25 starts Monday 2026-06-15
+- Build Day 78 starts Monday · Build Week 12 · Annual Week 25
+- Phase 4 — TAPER WEEK 1
+- Days to race: 18 (from Monday)
 ```
 
-**Full W24 plan:** `archive/2026/week_24_plan.md`
+> **Athlete directive (2026-06-14):** No HRV gating this week. Go by feel. Physical safety gates only.
+
+**Full W25 plan:** `archive/2026/week_25_plan.md`
 
 ---
 
-## W24 WEEK STRUCTURE (summary)
+## W25 WEEK STRUCTURE (summary)
 
 | Day | Date | Type | Gate |
 |---|---|---|---|
-| **MON** | **06-08** | **Re-entry quality touch** | Submit readiness → Green: run + WB fragment; Yellow: easy bike; Red: walk |
-| **TUE** | **06-09** | **Lower quality: sled + lunges + run** | Calf ≤ 1/10 → sled race loads + lunge restart + short run quality + BBJ touch |
-| WED | 06-10 | Recovery / easy aerobic | Easy bike 25–35 min, HR 100–125 only |
-| **THU** | **06-11** | **HYROX 3-round simulation** | Green: 3 rounds run + WB + BBJ/lunges; Yellow: 2 rounds |
-| FRI | 06-12 | Aerobic reset | Protect Saturday. No intensity. |
-| **SAT** | **06-13** | **WB PROBE SESSION** | ALL gates: Sleep ≥ 7h30 + HRV ≥ 45 ms + Daily within 15% + HR dip ≥ 18% + Calf ≤ 1/10 + Sinus clear |
-| SUN | 06-14 | Recovery + close-out | Walk + mobility + generate W25 taper plan |
+| MON | 06-15 | Easy aerobic re-entry | No fever · calf 0/10 · warm-up check |
+| **TUE** | **06-16** | **Sled push/pull + run 2×400m** | Calf 0/10 · no fever |
+| WED | 06-17 | Recovery walk / easy bike | Recovery only |
+| **THU** | **06-18** | **4×400m race-pace + WB 3×20 + BBJ 2×20m ★** | Calf 0/10 · no fever |
+| FRI | 06-19 | Rest / walk | Protect Saturday |
+| **SAT** | **06-20** | **WB PROBE 60 + lunges 20m BW ★** | Calf 0/10 all week · no fever · warm-up clean |
+| SUN | 06-21 | Absorption + W25 close-out | Walk + mobility |
 
-## PROBE (Saturday 2026-06-13)
-- Race fragment: 3 rounds (run 500m + WB 30)
-- Final entry: 1.0 km run @ 5:00–5:10/km
-- WB probe: floor 55 / target 60 / stretch 70 clean
-- Stop rule: clean technical failure only — no ugly reps past the line
+## PROBE (Saturday 2026-06-20)
 
-## HRV GATE SYSTEM (this week)
-| Zone | HRV | Action |
-|---|---|---|
-| GREEN | Sleeping HRV ≥ 45 ms + Daily within 10% + HR dip ≥ 18% | Full quality / probe eligible |
-| YELLOW | Sleeping HRV 38–45 ms + Daily 10–20% below + HR dip 12–18% | Controlled quality only, no probe |
-| RED | Sleeping HRV < 38 ms OR Daily > 20% below OR HR dip < 12% | Recovery only — walk + mobility |
+- **Race fragment:** 3 rounds (500m run + WB 25 each) + 1 km entry run
+- **WB probe:** floor 55 · target 60 · stretch 70
+- **Stop rule:** clean technical failure only — no ugly reps past the line
+- **Lunges:** 1 × 20m BW (no sandbag) after WB — gate: calf 0/10 confirmed in session
 
-## CALF GATE (applies every session)
-- 0/10: Full session approved
-- 1/10: Proceed with caution — no BBJ, no lunges
-- 2/10: Bike only or walk — no impact
-- ≥ 3/10: Walk + mobility only — Yellow day regardless of HRV
-- ≥ 4/10: Red day — no training
-- Any string sensation: treat as 2/10 minimum
-- Overnight cramp: Red day, full rest
+## PHYSICAL SAFETY GATE SYSTEM (W25)
+
+HRV gating suspended per athlete directive. Physical gates only:
+
+| Condition | Action |
+|---|---|
+| Calf ≥ 4/10 | Red — full rest |
+| Calf 2–3/10 | Bike only |
+| Calf 1/10 | Proceed, no BBJ/lunges |
+| Calf 0/10 | Full session |
+| Cardiac signal | Immediate abort — no exception |
+| Fever ≥ 37.5°C | Full rest |
+| Chest cough | Full rest |

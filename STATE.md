@@ -5,16 +5,17 @@
 ---
 
 ## TIME ANCHOR
-- **Last updated:** 2026-06-10 (Wednesday, Melbourne)
+- **Last updated:** 2026-06-14 (Sunday, Melbourne)
 - **Race day:** 2026-07-03 (Friday) — HYROX Sydney
-- **Days to race:** 23 (as of 2026-06-10)
-- **Sydney Build Day:** 73 (Wednesday 2026-06-10)
-- **Sydney Build Week:** 11
-- **Annual Week:** 24 (2026-06-08 → 2026-06-14)
-- **Phase:** Phase 3 — RACE SPECIFICITY (Week 3 of 3 — FINAL BUILD WEEK)
+- **Days to race:** 19 (as of 2026-06-14)
+- **Sydney Build Day:** 77 (Sunday 2026-06-14) · Build Day 78 starts Monday
+- **Sydney Build Week:** 12 (W25 starts 2026-06-15)
+- **Annual Week:** 25 (2026-06-15 → 2026-06-21)
+- **Phase:** Phase 4 — TAPER (Week 1 of 2)
 - **W22 STATUS:** COMPLETE — Vaccine Disruption / Recovery Protection Week (Grade B)
-- **W23 STATUS:** COMPLETE — Recovery/Re-entry Week (Grade B-). Two bike sessions only. No WB probe, no running quality, no BBJ, no lunges. WB lock unchanged at 50 (W21). Probe deferred to W24 Sat.
-- **W24 STATUS:** IN PROGRESS — Mon: Yellow-Green re-entry fragment (Grade A). Tue: RED absorption walk. Wed: RED / sick-entry watch (upper respiratory activation, HRV Quick 22 ms). BBJ/lunge restart deferred. Thu gate still open if symptoms reduce + HRV improves.
+- **W23 STATUS:** COMPLETE — Recovery/Re-entry Week (Grade B-). Two bike sessions only. No WB probe, no running quality, no BBJ, no lunges. WB lock unchanged at 50 (W21). Probe deferred.
+- **W24 STATUS:** COMPLETE — Recovery Crisis / Respiratory Activation (Grade C+). Monday re-entry fragment only (Grade A). Respiratory/sinus activation Wed. HRV suppressed Thu–Sat. WB probe missed 3rd consecutive time (gate not met). Walk only Sat. Sunday sleeping HR 56 bpm — recovery direction confirmed. W25 starts with athlete directive: no HRV gating, go maximum.
+- **W25 STATUS:** IN PROGRESS — Taper Week 1. Athlete directive: no HRV gating, physical safety gates only. Last working week.
 
 ---
 
@@ -34,70 +35,78 @@
 
 | Capacity | Lock |
 |---|---|
-| **Wall Ball** | 50 clean single-set under full HYROX fatigue (W21 Sat 2026-05-23). Race strategy: break-pattern (45 open + 35 + remainder). W24 Sat probe target: 60 clean (floor 55 / stretch 70). Three consecutive missed probes: W22 vaccine, W23 sinus/HRV. |
+| **Wall Ball** | 50 clean single-set under full HYROX fatigue (W21 Sat 2026-05-23). Race strategy: break-pattern (45 open + 35 + remainder). **W25 Sat probe target: 60 clean (floor 55 / stretch 70). Four consecutive missed probes: W22 vaccine, W23 sinus/HRV, W24 respiratory + HRV.** This is the last probe slot. |
 | **VO₂max** | 58 (PR W21 Mon 2026-05-18) |
 | **Sled push** | 246 kg overshoot (race 202 kg, +22%) — confirmed, retired from chase |
 | **Sled pull** | 206 kg × 20 m / 1:05 PR (race 153 kg, +35%) — confirmed |
-| **Run** | 4:19/km @ HR147 Yellow (W21 Mon); 4:55/km controlled (W22 Tue 2-round format). No quality running since W22 Tue. Restore this week. |
-| **BBJ** | 80–90m session exposure W21; ~4.0 sec/m. No BBJ since W21 (calf cramp caution W22–W23). Restart this week if calf clears. |
-| **Lunges** | 80m @ 28+28kg under fatigue (W21 Sat); race 100m @ 30kg sandbag. No lunges since W21. Restart this week if calf clears. |
-| **Tissue** | Left calf night cramp Saturday W22 (2026-05-30). No new cramp in W23. Status on W24 Mon waking: confirm ≤ 1/10 before any impact work. |
+| **Run** | 4:19/km @ HR147 Yellow (W21 Mon); last quality run W24 Mon (5:43/km fragment). Reactivate Tue W25. |
+| **BBJ** | 80–90m session exposure W21; ~4.0 sec/m. No BBJ since W21 (3 weeks). Restart Thu W25 — 2×20m pattern restoration only. |
+| **Lunges** | 80m @ 28+28kg under fatigue (W21 Sat); race 100m @ 30kg sandbag. No lunges since W21 (3 weeks). Restart Sat W25 — 20m BW, no sandbag. |
+| **Tissue** | Left calf night cramp Saturday W22 (2026-05-30). No new cramp in W23 or W24. Status: 0/10 as of W24 Sunday close-out. |
 
 ---
 
 ## ACTIVE LIMITER & RISKS
 
-**Priority limiter order (Phase 3 W3 — final week):**
-1. **Wall Ball ceiling** — locked at 50 (W21); three missed probes; W24 Sat probe floor 55 / target 60 / stretch 70. This is the most time-sensitive limiter — last probe slot before taper.
-2. **BBJ pace/distance** — biggest race-completion gap (~4.0 sec/m vs ~2.0 sec/m target). Blocked by calf. Need restart contact this week.
-3. **Lunge distance** — 80m → need 100m + sandbag specificity. Blocked by calf. Restart 60m this week.
-4. **Untracked stations** — Ski/Row/Farmers no baselines. Brief contact in Thursday simulation reduces race surprise.
+**Priority limiter order (Phase 4 W1 — Taper Week 1):**
+1. **Wall Ball ceiling** — locked at 50 (W21); four missed probes; W25 Sat probe floor 55 / target 60 / stretch 70. **This is the last probe before race.** No second chance.
+2. **BBJ pace/distance** — 3 weeks without contact (~4.0 sec/m vs ~2.0 sec/m target). Restart Thu W25.
+3. **Lunge distance** — 80m lock; 3 weeks without contact. Restart Sat W25 (20m BW first touch).
+4. **Run pace** — last quality run was W24 Mon fragment (5:43/km). Restore race-pace Tuesday W25.
 
-NOT limiters: sled (confirmed), CV capacity (VO₂max 58), absolute strength.
+NOT limiters: sled (confirmed, retiring from progression), CV capacity (VO₂max 58), absolute strength.
 
 **Active watch flags:**
-- **Calf:** Left calf night cramp Saturday W22 (2026-05-30). No new cramp in W23. Must confirm ≤ 1/10 on Monday W24 morning before approving any BBJ, lunges, or fast running. This is the primary gate for the entire week.
-- **HRV:** Suppressed throughout W23. Sunday W23: Daily HRV 34.8 ms / -19%. Saturday W23: Daily HRV 38.7 ms / -11%. Trend: slightly improving but not at baseline. Target ≥ 45 ms for quality sessions.
-- **Sleep:** 7-day rhythm 66% (Sunday W23). 3-day target under target at week close. Sleep onset must be ≤ 22:00 every night W24 — non-negotiable for race readiness.
-- **Sinus:** Headache active through W23 Sat–Sun. Confirm clear on Monday W24 before running quality.
-- **B12:** Last 2026-06-02; next ~2026-07-02. Calf sensitivity may increase in the 2–3 weeks before injection. Watch calf response from W25 onward.
+- **Calf:** No night cramp since W22 Sat. 0/10 on W24 Sun close-out. Primary gate for BBJ and lunges restart.
+- **HRV:** Suspended as training gate per athlete directive (2026-06-14). Still logged for tracking.
+- **Sleep:** Still below target (3-day target 84% on W24 Sun). Sleep onset must be ≤ 22:30 every night W25.
+- **Respiratory:** Upper respiratory symptoms improving. SpO2 98% Sunday, sleeping HR 56 bpm. Confirm clear by Monday morning.
+- **B12:** Last 2026-06-02; next ~2026-07-02. Calf sensitivity watch from this point.
 
 **Reference:** `state/limiters_now.md`
 
 ---
 
 ## ACTIVE PROBE TARGET
-- **Saturday 2026-06-13 (W24):** WB ceiling push — floor 55 / target 60 / stretch 70 clean under fragment
-- **Gate (ALL required):** Sleep ≥ 7h30 + Sleeping HRV ≥ 45 ms + Daily HRV within 15% baseline + HR dip ≥ 18% + Calf ≤ 1/10 + Sinus clear + No overnight cramp
+- **Saturday 2026-06-20 (W25):** WB ceiling push — floor 55 / target 60 / stretch 70 clean under race-pace fragment
+- **Gate:** Calf 0/10 · no fever · warm-up clean — HRV gating suspended per athlete directive
 - **Stop rule:** Clean technical failure ONLY — no ugly reps past the line (lesson W21 Sat)
-- **BBJ in rounds:** Only if calf confirms 0/10 within session after Tuesday and Thursday confirmation
-- **If gate not met:** Yellow rhythm session only (25–30 reps × 2 rounds), no probe
+- **Post-WB:** Lunges 1×20m BW (no sandbag) — gate: calf 0/10 confirmed in session
 - **Reference:** `trackers/probe_log.md`
 
 ---
 
 ## CALENDAR (race horizon)
 
-- **W24 (06-08→06-14):** LAST REAL BUILD WEEK — Phase 3 final. WB probe Sat (floor 55/target 60/stretch 70). BBJ restart. Lunge restart. Running quality Mon + Thu. Enter taper Sun.
-- **W25 (06-15→06-21):** Phase 4 Taper Week 1 — volume -40%, intensity preserved. WB skill touch 50 fresh. Short run quality 2–3 × 1km.
-- **W26 (06-22→06-28):** Phase 4 Taper Week 2 — volume -60%. WB skill touch 30 fresh. Sharpness only.
-- **W27 (06-29→07-03):** Race Week — travel Mon, shakeout Tue, off Wed, strides Thu, RACE Fri 2026-07-03.
+- **W25 (06-15→06-21):** Phase 4 Taper Week 1 — LAST WORKING WEEK. WB probe Sat (floor 55/target 60/stretch 70). BBJ restart Thu. Lunge restart Sat. Sled Tue. Run quality Tue + Thu.
+- **W26 (06-22→06-28):** Phase 4 Taper Week 2 — volume -60%. WB skill touch 30 fresh. Sled confidence + Ski/Row orientation Tue ★. Sharpness only.
+- **W27 (06-29→07-03):** Race Week — shakeout Mon, final activation Tue, off Wed, pre-race shakeout Thu, RACE Fri 2026-07-03.
 
 ---
 
-## PENDING DECISIONS
-1. **Thursday W24 2026-06-11** — gate opens if: no fever, no chest cough, mucus reducing, Quick HRV improved from 22 ms, calf 0–1/10. Session: reduced HYROX touch (sled 2–3×10m + optional 2×20 WB). No BBJ/lunges/run while respiratory active.
-2. **Saturday W24 2026-06-13** — WB probe: floor 50 / target 60 / stretch 70 clean under fragment fatigue. Gate: all illness signs resolved + HRV not Red.
-
 ## CONFIRMED PLAN ADDITIONS (athlete confirmed 2026-06-10)
 
-Three additions to the 24-day plan confirmed by athlete:
+Three additions to the final plan confirmed by athlete:
 
-**ADD 1 — W25 Thursday 2026-06-18:** After WB sets, add BBJ: 2 × 20m at comfortable pace, full rest between, stop at first calf signal. Gate: calf 0/10 entire W25 week so far + HRV not Red. Purpose: restore pattern before race, not a performance test.
+**ADD 1 — W25 Thursday 2026-06-18:** After WB sets, add BBJ: 2 × 20m at comfortable pace, full rest between, stop at first calf signal. Gate: calf 0/10 · no fever. Purpose: restore pattern before race.
 
-**ADD 2 — W25 Saturday 2026-06-20 mini simulation:** Lunges 20m BW (no sandbag) in Round 2 as default station touch if calf 0/10 all week. (Currently written as option — upgrade to default.)
+**ADD 2 — W25 Saturday 2026-06-20:** Lunges 20m BW (no sandbag) after WB probe, gate: calf 0/10 confirmed in session.
 
-**ADD 3 — W26 Tuesday 2026-06-23 confidence touch:** After sled work, add Ski Erg 1 × 2:00 easy pace + Row Erg 1 × 2:00 easy pace. Orientation only — no target, no load. Purpose: remove station surprise at race.
+**ADD 3 — W26 Tuesday 2026-06-23:** Ski Erg 1 × 2:00 easy + Row Erg 1 × 2:00 easy. Orientation only. Purpose: remove station surprise at race.
+
+---
+
+## W25 ATHLETE DIRECTIVE (confirmed 2026-06-14)
+
+**HRV gating suspended for W25.** Athlete decision: three weeks of missed quality is not sustainable with 19 days to race. W25 executes the agreed plan by feel.
+
+Physical safety gates remain non-negotiable:
+- Calf ≥ 4/10 = stop session
+- Cardiac signal = immediate abort
+- Fever ≥ 37.5°C = full rest
+- Chest cough = full rest
+
+HRV and sleep data continue to be logged for tracking but do not determine training go/no-go this week.
 
 ---
 
@@ -124,7 +133,6 @@ Conditional:
 
 ---
 
-**Active illness watch:** Upper respiratory activation Wednesday 2026-06-10. Post-nasal drip + mucus + cold sensation + HRV Quick 22 ms. Temperature normal (36.3°C / 36.5°C). No fever, no chest symptoms. Thursday gate conditional on symptoms reducing.
-
-**This file last fully refreshed:** 2026-06-10 (Wednesday — 3-day block Mon–Wed logged; illness watch added)
-**Next mandatory refresh:** Sunday 2026-06-14 (W24 close-out + W25 taper plan generation)
+**W24 close-out completed:** 2026-06-14 (Sunday)
+**This file last fully refreshed:** 2026-06-14 (Sunday — W24 close-out + W25 plan activated)
+**Next mandatory refresh:** Sunday 2026-06-21 (W25 close-out + W26 plan generation)

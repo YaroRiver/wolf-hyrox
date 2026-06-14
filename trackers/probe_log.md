@@ -26,16 +26,16 @@
 
 ---
 
+| 16 | 2026-05-30 | WB ceiling push | W22 SAT Phase 3 W1 | 50 | 55 | **CANCELLED** | Vaccine side-effects + HRV gate not met + left calf night cramp | Lock held at 50 |
+| 17 | 2026-06-06 | WB ceiling push | W23 SAT Phase 3 W2 | 55 | 60 | **CANCELLED** | Sinus headache active + HRV not meeting gate (sleeping HRV ~32ms, HR dip 8%) | Lock held at 50 |
+| 18 | 2026-06-13 | WB ceiling push | W24 SAT Phase 3 W3 | 55 | 60 | **CANCELLED** | Gate not met: sleeping HRV 29ms (gate 45ms), HR dip 12% (gate 18%), 3-day sleep target 81% under, respiratory activation still context | Lock held at 50; easy walk 44:37 completed |
+
 ## Pending Probes
 
 | Date | Element | Format | Floor | Target | Status |
 |---|---|---|---|---|---|
-| 2026-05-23 | WB consolidation under harder fatigue | W21 SAT 4-round + 1.03km entry | 50 | 50 clean | **COMPLETED — 50 clean confirmed** (see probe #15 above) |
-| 2026-05-30 | WB ceiling push | W22 SAT Phase 3 W1 — **CONDITIONAL** (vaccine + HRV gate) | 50 | 55 | 60 stretch | PLANNED — gate: HRV ≥ 45 + no vaccine fatigue + immune clear + calves ≤ 1/10 |
-| 2026-06-06 | WB 80 under fragment | W23 SAT Phase 3 W2 | 60 | 80 | PLANNED |
-| 2026-06-13 | WB 100 attempt / race sim | W24 SAT Phase 3 W3 | 80 | 100 | PLANNED |
-| 2026-06-20 | Skill touch | W25 SAT Phase 4 W1 (taper) | — | 50 fresh | PLANNED |
-| 2026-06-27 | Skill touch | W26 SAT Phase 4 W2 (taper) | — | 30 fresh | PLANNED |
+| 2026-06-20 | **WB ceiling push — LAST PROBE SLOT** | W25 SAT race-pace fragment (3×500m run+WB25) + 1km entry | 55 | **60** (stretch 70) | PLANNED — gate: calf 0/10 · no fever · warm-up clean. HRV gating suspended per athlete directive |
+| 2026-06-27 | Skill touch (taper) | W26 SAT Phase 4 W2 | — | 30 fresh | PLANNED |
 | 2026-07-03 | **RACE** | HYROX Sydney | — | 100 UB | TARGET |
 
 ---
@@ -43,7 +43,9 @@
 ## Probe Trajectory Summary
 
 ### Wall Ball Clean Line (under fragment fatigue)
-30 (W18) → 40 (W19) → **50 (W20, under deeper fatigue)** → **50 CONFIRMED (W21, full Option A fatigue)** → 55 (W22 conditional) → 60 (Phase 3 W2) → 80 (Phase 3 W3) → 100 (Phase 3 W4) → 100 UB (race)
+30 (W18) → 40 (W19) → **50 (W20, under deeper fatigue)** → **50 CONFIRMED (W21, full Option A fatigue)** → ~~55 W22~~ (cancelled: vaccine) → ~~60 W23~~ (cancelled: sinus/HRV) → ~~60 W24~~ (cancelled: respiratory activation) → **60 W25 SAT 2026-06-20 (LAST PROBE SLOT)** → 30 skill touch W26 → 100 UB (race)
+
+**Critical note:** W25 Sat probe is the last ceiling push before race. If 60 is achieved, race strategy of 45+35+remainder is confirmed viable. If not achieved, lock remains 50 — race strategy adjusted to 35+35+remainder.
 
 **Trajectory note:** W20 accelerated by ~1 week. W21 consolidation confirmed the lock — per-set ceiling now broken (35×3=105 Thu). Race strategy locked: break pattern, not unbroken 100.
 
