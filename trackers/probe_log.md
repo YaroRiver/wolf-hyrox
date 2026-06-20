@@ -30,13 +30,16 @@
 | 17 | 2026-06-06 | WB ceiling push | W23 SAT Phase 3 W2 | 55 | 60 | **CANCELLED** | Sinus headache active + HRV not meeting gate (sleeping HRV ~32ms, HR dip 8%) | Lock held at 50 |
 | 18 | 2026-06-13 | WB ceiling push | W24 SAT Phase 3 W3 | 55 | 60 | **CANCELLED** | Gate not met: sleeping HRV 29ms (gate 45ms), HR dip 12% (gate 18%), 3-day sleep target 81% under, respiratory activation still context | Lock held at 50; easy walk 44:37 completed |
 
+| 19 | 2026-06-20 | WB ceiling push — LAST PROBE SLOT | W25 SAT — 3× (~600m run @ 4:33/km + WB 25) + 638m entry run @ 5:05/km + max set | 55 | 60 (stretch 70) | **50 reps / 2:07 (clean technical stop)** | Clean stop at 50; further reps would have become ugly; floor 55 not reached; runs were faster than planned (4:33 vs 5:00–5:15/km) — burned fatigue budget; HR at 160 entering final WB | Lock held at **50**; 5th consecutive missed ceiling (W22 vaccine / W23 sinus / W24 respiratory / W25 probe attempt); **WB ceiling confirmed at 50 under fatigue. Race strategy adjusted: 35–40 open + 20–25 + remainder.** |
+
+---
+
 ## Pending Probes
 
 | Date | Element | Format | Floor | Target | Status |
 |---|---|---|---|---|---|
-| 2026-06-20 | **WB ceiling push — LAST PROBE SLOT** | W25 SAT race-pace fragment (3×500m run+WB25) + 1km entry | 55 | **60** (stretch 70) | PLANNED — gate: calf 0/10 · no fever · warm-up clean. HRV gating suspended per athlete directive |
-| 2026-06-27 | Skill touch (taper) | W26 SAT Phase 4 W2 | — | 30 fresh | PLANNED |
-| 2026-07-03 | **RACE** | HYROX Sydney | — | 100 UB | TARGET |
+| 2026-06-27 | WB skill touch (taper) | W26 SAT — 30 reps fresh (NOT a ceiling probe) | — | 30 rhythm | PLANNED |
+| 2026-07-03 | **RACE** | HYROX Sydney | — | 100 reps break-pattern | TARGET — strategy: 35–40 open + 20–25 + remainder |
 
 ---
 
