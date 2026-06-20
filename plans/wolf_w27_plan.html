@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HYROX SYDNEY 2026 · RACE WEEK W27 // YARO 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #080C10; --surface: #0E1419; --surface2: #141B22;
+    --border: #1E2D3D; --accent: #00E5FF; --red: #FF4757;
+    --gold: #FFD700; --green: #00FF87; --text: #E8EDF2;
+    --muted: #5A6A7A; --label: #8A9BAB; --orange: #FF8C42;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; min-height: 100vh; overflow-x: hidden; }
+  body::before { content: ''; position: fixed; inset: 0; background-image: linear-gradient(rgba(0,229,255,0.022) 1px, transparent 1px), linear-gradient(90deg, rgba(0,229,255,0.022) 1px, transparent 1px); background-size: 40px 40px; pointer-events: none; z-index: 0; }
+  .wrap { max-width: 1300px; margin: 0 auto; padding: 36px 24px; position: relative; z-index: 1; }
+
+  .hdr { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 28px; padding-bottom: 24px; border-bottom: 1px solid var(--border); animation: fadeUp .5s ease both; }
+  .hdr-eyebrow { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 4px; color: var(--red); text-transform: uppercase; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+  .cd-red { width: 5px; height: 5px; border-radius: 50%; background: var(--red); animation: pulse 1.5s ease infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(1.4)} }
+  .hdr-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(52px, 8vw, 88px); line-height: .88; letter-spacing: 4px; }
+  .hdr-sub   { font-family: 'Bebas Neue', sans-serif; font-size: clamp(16px, 2.2vw, 24px); letter-spacing: 6px; color: var(--red); margin-top: 4px; }
+  .hdr-block { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); letter-spacing: 1px; margin-top: 8px; }
+  .hdr-block span { color: var(--accent); }
+  .hdr-right { text-align: right; }
+  .week-badge { font-family: 'Bebas Neue', sans-serif; font-size: 56px; color: var(--red); letter-spacing: 3px; line-height: 1; }
+  .week-range { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--text); letter-spacing: 2px; margin-top: 2px; }
+  .week-year  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 2px; margin-bottom: 10px; }
+  .race-badge { display: inline-flex; align-items: center; gap: 6px; font-family: 'DM Mono', monospace; font-size: 9px; color: var(--red); letter-spacing: 2px; text-transform: uppercase; padding: 5px 12px; border: 1px solid rgba(255,71,87,.35); background: rgba(255,71,87,.06); }
+
+  .phase-bar { display: flex; align-items: center; gap: 0; margin-bottom: 20px; animation: fadeUp .5s .04s ease both; overflow-x: auto; }
+  .pb { font-family: 'DM Mono', monospace; font-size: 8px; padding: 7px 14px; letter-spacing: 1.5px; text-transform: uppercase; white-space: nowrap; }
+  .pb-done  { background: rgba(0,255,135,.04); color: var(--muted); border: 1px solid var(--border); }
+  .pb-now   { background: rgba(255,71,87,.08); color: var(--red); border: 1px solid rgba(255,71,87,.3); font-weight: bold; }
+  .pb-arrow { color: var(--border); font-size: 10px; padding: 0 2px; }
+
+  .race-countdown { background: linear-gradient(135deg, rgba(255,71,87,.06) 0%, rgba(255,71,87,.02) 100%); border: 1px solid rgba(255,71,87,.25); border-left: 3px solid var(--red); padding: 18px 24px; margin-bottom: 14px; animation: fadeUp .5s .06s ease both; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+  .rc-label { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--red); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 4px; }
+  .rc-text  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.6; }
+  .rc-text span { color: var(--text); }
+  .rc-count { text-align: center; }
+  .rc-number { font-family: 'Bebas Neue', sans-serif; font-size: 88px; color: var(--red); letter-spacing: 4px; line-height: 1; }
+  .rc-unit   { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 4px; text-transform: uppercase; }
+
+  .strategy-banner { background: rgba(255,215,0,.04); border: 1px solid rgba(255,215,0,.2); border-left: 3px solid var(--gold); padding: 14px 22px; margin-bottom: 14px; animation: fadeUp .5s .08s ease both; }
+  .sb-label { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 6px; }
+  .strategy-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .strategy-block { text-align: center; }
+  .strategy-block .sv { font-family: 'Bebas Neue', sans-serif; font-size: 32px; letter-spacing: 2px; color: var(--gold); line-height: 1; }
+  .strategy-block .sl { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-top: 2px; }
+  .strategy-arrow { font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: var(--border); }
+  .strategy-note  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.5; }
+  .strategy-note span { color: var(--text); }
+
+  .section-lbl { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 4px; color: var(--muted); text-transform: uppercase; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+  .section-lbl::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  /* 5-column grid for race week */
+  .week-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 24px; }
+  .dc { background: var(--surface); border: 1px solid var(--border); border-top: 3px solid transparent; transition: transform .2s; animation: fadeUp .5s ease both; overflow: hidden; }
+  .dc:hover { transform: translateY(-3px); }
+  .dc.day-travel { border-top-color: var(--muted); }
+  .dc.day-shake  { border-top-color: var(--accent); }
+  .dc.day-off    { border-top-color: var(--border); }
+  .dc.day-checkin{ border-top-color: var(--gold); }
+  .dc.day-race   { border-top-color: var(--red); border: 2px solid rgba(255,71,87,.4); background: linear-gradient(135deg, rgba(255,71,87,.04) 0%, var(--surface) 60%); }
+  .dc:nth-child(1){animation-delay:.12s} .dc:nth-child(2){animation-delay:.18s}
+  .dc:nth-child(3){animation-delay:.24s} .dc:nth-child(4){animation-delay:.30s}
+  .dc:nth-child(5){animation-delay:.36s}
+  .dc-head { padding: 12px 13px 10px; border-bottom: 1px solid var(--border); }
+  .dc-iso { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 1px; margin-bottom: 4px; }
+  .dc-iso .yr { color: var(--muted); } .dc-iso .dot { color: var(--border); margin: 0 2px; }
+  .dc-iso .mo { color: var(--label); } .dc-iso .dd { color: var(--text); font-weight: 500; }
+  .dc-abbr { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 3px; line-height: 1; }
+  .day-travel .dc-abbr { color: var(--muted); }
+  .day-shake  .dc-abbr { color: var(--accent); }
+  .day-off    .dc-abbr { color: var(--border); }
+  .day-checkin.dc-abbr { color: var(--gold); }
+  .day-checkin .dc-abbr { color: var(--gold); }
+  .day-race   .dc-abbr { color: var(--red); }
+  .dc-tag { display: inline-block; margin-top: 6px; font-family: 'DM Mono', monospace; font-size: 7px; letter-spacing: 1.5px; padding: 2px 7px; text-transform: uppercase; }
+  .day-travel .dc-tag { background: rgba(90,106,122,.08); color: var(--muted); }
+  .day-shake  .dc-tag { background: rgba(0,229,255,.07); color: var(--accent); }
+  .day-off    .dc-tag { background: rgba(30,45,61,.3);   color: var(--muted); }
+  .day-checkin .dc-tag { background: rgba(255,215,0,.07); color: var(--gold); }
+  .day-race   .dc-tag { background: rgba(255,71,87,.1);  color: var(--red); }
+  .dc-body { padding: 10px 13px 13px; }
+  .di { font-family: 'DM Mono', monospace; font-size: 9.5px; color: var(--label); padding: 4px 0; border-bottom: 1px solid rgba(30,45,61,.5); line-height: 1.4; display: flex; align-items: flex-start; gap: 5px; }
+  .di:last-child { border-bottom: none; }
+  .di .ic { flex-shrink: 0; color: var(--muted); }
+  .hi { color: var(--text); } .gr { color: var(--green); } .ac { color: var(--accent); }
+  .rd { color: var(--red); }  .gd { color: var(--gold); }  .mu { color: var(--muted); }
+
+  .detail-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 12px; }
+  .card { background: var(--surface); border: 1px solid var(--border); padding: 22px; animation: fadeUp .5s ease both; transition: border-color .2s, transform .2s; }
+  .card:hover { border-color: rgba(0,229,255,.1); transform: translateY(-2px); }
+  .card-ttl { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 3px; color: var(--muted); text-transform: uppercase; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .ct-dot { width: 6px; height: 6px; flex-shrink: 0; }
+  .mrow { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 0; border-bottom: 1px solid var(--border); }
+  .mrow:last-child { border-bottom: none; }
+  .mk  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); }
+  .mv  { font-family: 'Bebas Neue', sans-serif; font-size: 19px; letter-spacing: 1px; color: var(--text); }
+  .mu2 { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--accent); margin-left: 2px; }
+
+  .station-table { width: 100%; border-collapse: collapse; font-family: 'DM Mono', monospace; font-size: 9.5px; }
+  .station-table th { background: var(--surface2); color: var(--muted); padding: 5px 8px; border: 1px solid var(--border); text-align: left; letter-spacing: 1px; font-size: 8px; text-transform: uppercase; }
+  .station-table td { padding: 5px 8px; border: 1px solid var(--border); color: var(--label); }
+  .station-table tr:hover td { background: var(--surface2); }
+  .station-table .td-station { color: var(--text); }
+  .station-table .td-load { color: var(--accent); }
+  .station-table .td-time { color: var(--gold); font-family: 'Bebas Neue', sans-serif; font-size: 16px; letter-spacing: 1px; }
+  .station-table .td-total { color: var(--green); font-family: 'Bebas Neue', sans-serif; font-size: 16px; letter-spacing: 1px; }
+  .station-table tr.total-row td { background: rgba(0,255,135,.04); color: var(--green); border-top: 1px solid rgba(0,255,135,.2); }
+
+  .wb-break { display: flex; align-items: center; gap: 12px; justify-content: center; padding: 16px 0; flex-wrap: wrap; }
+  .wb-chunk { text-align: center; }
+  .wb-chunk .wc-reps { font-family: 'Bebas Neue', sans-serif; font-size: 40px; color: var(--gold); letter-spacing: 2px; line-height: 1; }
+  .wb-chunk .wc-label { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; }
+  .wb-sep { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--border); }
+  .wb-break-notes { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--label); line-height: 1.7; padding-top: 8px; border-top: 1px solid var(--border); }
+  .wb-break-notes span { color: var(--text); }
+
+  .identity { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--red); padding: 22px 28px; margin-bottom: 14px; animation: fadeUp .5s .55s ease both; position: relative; overflow: hidden; }
+  .identity::after { content: '🐺'; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 72px; opacity: .05; pointer-events: none; }
+  .id-lbl { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; }
+  .id-lines { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 5px; }
+  .id-line  { font-family: 'Bebas Neue', sans-serif; font-size: 17px; letter-spacing: 3px; color: var(--muted); transition: color .2s; }
+  .id-line:hover { color: var(--text); }
+  .id-line.hl  { color: var(--red); }
+  .id-line.hl2 { color: var(--gold); }
+  .id-line.hl3 { color: var(--green); }
+
+  .footer { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .footer-l { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); letter-spacing: 2px; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); padding: 3px 8px; border: 1px solid var(--border); letter-spacing: 1px; cursor: default; transition: all .2s; }
+  .tag:hover { color: var(--red); border-color: rgba(255,71,87,.25); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 1100px) { .week-grid { grid-template-columns: repeat(3,1fr); } .detail-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 720px)  { .week-grid { grid-template-columns: 1fr 1fr; } .detail-grid { grid-template-columns: 1fr; } .hdr { flex-direction: column; gap: 16px; } .rc-number { font-size: 60px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HEADER -->
+  <div class="hdr">
+    <div>
+      <div class="hdr-eyebrow"><span class="cd-red"></span>Race Week · HYROX Sydney 2026 · Pro Men 45–49</div>
+      <div class="hdr-title">RACE<br>WEEK</div>
+      <div class="hdr-sub">W27 · FRIDAY 03·07·2026 · 1:15:00</div>
+      <div class="hdr-block">Sydney Build <span>W14</span> · Phase 4: Race Week · <span>Training complete · Bank full · Race is execution</span> · Target <span>1:15:00 · HYROX Sydney · 03·07·2026</span></div>
+    </div>
+    <div class="hdr-right">
+      <div class="week-badge">W27</div>
+      <div class="week-range">2026·06·29 → 2026·07·03</div>
+      <div class="week-year">RACE DAY FRI 03·07 · Sydney</div>
+      <div class="race-badge"><span class="cd-red"></span>RACE FRIDAY · 1:15:00 TARGET</div>
+    </div>
+  </div>
+
+  <!-- PHASE BAR -->
+  <div class="phase-bar">
+    <div class="pb pb-done">P1 Stabilize</div><div class="pb-arrow">›</div>
+    <div class="pb pb-done">P2 Build</div><div class="pb-arrow">›</div>
+    <div class="pb pb-done">P3 Peak</div><div class="pb-arrow">›</div>
+    <div class="pb pb-done">W25 Taper W1</div><div class="pb-arrow">›</div>
+    <div class="pb pb-done">W26 Taper W2</div><div class="pb-arrow">›</div>
+    <div class="pb pb-now">★ W27 RACE WEEK ← NOW</div>
+  </div>
+
+  <!-- RACE COUNTDOWN -->
+  <div class="race-countdown">
+    <div>
+      <div class="rc-label">⚡ HYROX Sydney 2026 — Race Day</div>
+      <div class="rc-text">Training is banked. Every session from Build Day 1 through Taper Week 2 is in the account. <span>The race is not training. The race is collection.</span> This week has one job: arrive at the start line rested, sharp, and ready to execute the plan. <span>No new fitness possible. No new ceiling. Execute what you built.</span></div>
+    </div>
+    <div class="rc-count">
+      <div class="rc-number">5</div>
+      <div class="rc-unit">Days to Race</div>
+    </div>
+  </div>
+
+  <!-- WB RACE STRATEGY -->
+  <div class="strategy-banner">
+    <div class="sb-label">WB Race Strategy — Locked · Final Station · 100 Reps</div>
+    <div class="strategy-row">
+      <div class="strategy-block"><div class="sv">35-40</div><div class="sl">Open set</div></div>
+      <div class="strategy-arrow">→</div>
+      <div class="strategy-block"><div class="sv" style="color:var(--muted);font-size:20px;">STAND</div><div class="sl">Brief reset</div></div>
+      <div class="strategy-arrow">→</div>
+      <div class="strategy-block"><div class="sv">20-25</div><div class="sl">Second set</div></div>
+      <div class="strategy-arrow">→</div>
+      <div class="strategy-block"><div class="sv" style="color:var(--muted);font-size:20px;">STAND</div><div class="sl">Brief reset</div></div>
+      <div class="strategy-arrow">→</div>
+      <div class="strategy-block"><div class="sv" style="color:var(--green);">FINISH</div><div class="sl">Remainder</div></div>
+      <div style="flex:1;min-width:200px;">
+        <div class="strategy-note">Target time: <span>≤ 5:15</span> for 100 reps.<br>Stop at form breakdown — not at fatigue.<br>Exhale UP. Eyes on top edge. <span>2.1 sec/rep.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WEEK CARDS -->
+  <div class="section-lbl" style="animation:fadeUp .5s .12s ease both;">📆 Race Week — W27 · 2026·06·29 → 2026·07·03</div>
+  <div class="week-grid">
+
+    <!-- MON 29 — Travel -->
+    <div class="dc day-travel">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">06</span><span class="dot">·</span><span class="dd">29</span></div>
+        <div class="dc-abbr">MON</div>
+        <div class="dc-tag">Travel Day</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">✈</span><span>Melbourne → Sydney · arrive early</span></div>
+        <div class="di"><span class="ic">🏨</span><span>Hotel check-in · room selection: legs-up access</span></div>
+        <div class="di"><span class="ic">🚶</span><span>10–15 min walk to explore venue area only</span></div>
+        <div class="di"><span class="ic">🍽</span><span>Nutrition normal · hydration priority</span></div>
+        <div class="di"><span class="ic">😴</span><span class="gr">22:00 bedtime hard — Day 1 anchors the week</span></div>
+      </div>
+    </div>
+
+    <!-- TUE 30 — Shakeout -->
+    <div class="dc day-shake">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">06</span><span class="dot">·</span><span class="dd">30</span></div>
+        <div class="dc-abbr">TUE</div>
+        <div class="dc-tag">Shakeout + Strides</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">🏃</span><span>Easy jog <span class="hi">10–12 min</span> · HR ≤ 130</span></div>
+        <div class="di"><span class="ic">💨</span><span>4 strides × <span class="hi">80–100m</span> · race feel</span></div>
+        <div class="di"><span class="ic">💆</span><span>Mobility 10 min · hips + calves</span></div>
+        <div class="di"><span class="ic">—</span><span class="mu">Total ~30 min max · feel over pace</span></div>
+        <div class="di"><span class="ic">😴</span><span class="gr">22:00 bedtime — protect Wednesday rest</span></div>
+      </div>
+    </div>
+
+    <!-- WED 01 — Complete OFF -->
+    <div class="dc day-off">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">01</span></div>
+        <div class="dc-abbr">WED</div>
+        <div class="dc-tag">OFF — Rest</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">😴</span><span class="gr">Complete off — no gym, no run, no effort</span></div>
+        <div class="di"><span class="ic">🚶</span><span>Slow walk 15–20 min only if restless</span></div>
+        <div class="di"><span class="ic">🍽</span><span>Nutrition: normal carb, no loading</span></div>
+        <div class="di"><span class="ic">🧘</span><span>Mindset: race plan review · mental rehearsal</span></div>
+      </div>
+    </div>
+
+    <!-- THU 02 — Check-in + Activation -->
+    <div class="dc day-checkin">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">02</span></div>
+        <div class="dc-abbr">THU</div>
+        <div class="dc-tag">Check-in + Strides</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">📋</span><span>HYROX race registration + athlete check-in</span></div>
+        <div class="di"><span class="ic">💉</span><span class="gd">B12 injection scheduled — final dose (next race day)</span></div>
+        <div class="di"><span class="ic">🏃</span><span>4 strides × <span class="hi">80–100m</span> · race feel sharp</span></div>
+        <div class="di"><span class="ic">—</span><span>Activation only — 15 min total</span></div>
+        <div class="di"><span class="ic">😴</span><span class="gr">Early sleep — race day is tomorrow</span></div>
+      </div>
+    </div>
+
+    <!-- FRI 03 — RACE -->
+    <div class="dc day-race">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">03</span></div>
+        <div class="dc-abbr">FRI</div>
+        <div class="dc-tag">★ RACE DAY</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">⏰</span><span>Wake 4–5h before wave start</span></div>
+        <div class="di"><span class="ic">🥣</span><span>Breakfast: tested meal 2–3h pre-race</span></div>
+        <div class="di"><span class="ic">💪</span><span>Warm-up 20 min incl. 2–3 WB throws</span></div>
+        <div class="di"><span class="ic">🏁</span><span class="rd">RACE START — target 1:15:00</span></div>
+        <div class="di"><span class="ic">🏀</span><span class="gd">WB: 35–40 open · stand · 20–25 · finish</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- DETAIL CARDS -->
+  <div class="section-lbl" style="animation:fadeUp .5s .28s ease both;">🏁 Race Execution Plan</div>
+
+  <div class="detail-grid">
+
+    <!-- Station breakdown -->
+    <div class="card" style="animation-delay:.30s;border-top:2px solid var(--red);grid-column:1/3;">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--red);"></span>Station-by-Station Race Plan · HYROX Sydney 2026-07-03 · Target 1:15:00</div>
+      <table class="station-table">
+        <thead>
+          <tr><th>#</th><th>Station / Run</th><th>Load / Distance</th><th>Target</th><th>Cumulative</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>R1</td><td class="td-station">Run 1</td><td class="td-load">1000m</td><td class="td-time">4:30</td><td class="td-total">4:30</td></tr>
+          <tr><td>S1</td><td class="td-station">Ski Erg</td><td class="td-load">1000m</td><td class="td-time">4:10</td><td class="td-total">8:40</td></tr>
+          <tr><td>R2</td><td class="td-station">Run 2</td><td class="td-load">1000m</td><td class="td-time">4:00</td><td class="td-total">12:40</td></tr>
+          <tr><td>S2</td><td class="td-station">Sled Push</td><td class="td-load">202 kg × 50m</td><td class="td-time">1:30</td><td class="td-total">14:10</td></tr>
+          <tr><td>R3</td><td class="td-station">Run 3</td><td class="td-load">1000m</td><td class="td-time">4:00</td><td class="td-total">18:10</td></tr>
+          <tr><td>S3</td><td class="td-station">Sled Pull</td><td class="td-load">153 kg × 50m</td><td class="td-time">1:30</td><td class="td-total">19:40</td></tr>
+          <tr><td>R4</td><td class="td-station">Run 4</td><td class="td-load">1000m</td><td class="td-time">4:00</td><td class="td-total">23:40</td></tr>
+          <tr><td>S4</td><td class="td-station">Burpee Broad Jump</td><td class="td-load">80m</td><td class="td-time">4:40</td><td class="td-total">28:20</td></tr>
+          <tr><td>R5</td><td class="td-station">Run 5</td><td class="td-load">1000m</td><td class="td-time">4:00</td><td class="td-total">32:20</td></tr>
+          <tr><td>S5</td><td class="td-station">Row Erg</td><td class="td-load">1000m</td><td class="td-time">4:10</td><td class="td-total">36:30</td></tr>
+          <tr><td>R6</td><td class="td-station">Run 6</td><td class="td-load">1000m</td><td class="td-time">4:00</td><td class="td-total">40:30</td></tr>
+          <tr><td>S6</td><td class="td-station">Farmer Carry</td><td class="td-load">200m @ 32 kg ea</td><td class="td-time">1:40</td><td class="td-total">42:10</td></tr>
+          <tr><td>R7</td><td class="td-station">Run 7</td><td class="td-load">1000m</td><td class="td-time">4:00</td><td class="td-total">46:10</td></tr>
+          <tr><td>S7</td><td class="td-station">Lunges</td><td class="td-load">100m @ 30 kg sandbag</td><td class="td-time">4:00</td><td class="td-total">50:10</td></tr>
+          <tr><td>R8</td><td class="td-station">Run 8</td><td class="td-load">1000m</td><td class="td-time">4:00</td><td class="td-total">54:10</td></tr>
+          <tr><td>S8</td><td class="td-station">Wall Ball</td><td class="td-load">100 reps @ 9 kg</td><td class="td-time">5:15</td><td class="td-total">59:25</td></tr>
+          <tr><td>+</td><td class="td-station">Transitions (est.)</td><td class="td-load">—</td><td class="td-time">4:00</td><td class="td-total">63:25</td></tr>
+          <tr class="total-row"><td colspan="4"><strong>ESTIMATED TOTAL · buffer to 1:15:00</strong></td><td class="td-total" style="font-size:22px;">63:25</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- WB Break plan -->
+    <div class="card" style="animation-delay:.34s;border-top:2px solid var(--gold);">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--gold);"></span>WB Race Execution · 100 Reps · Station 8</div>
+      <div class="wb-break">
+        <div class="wb-chunk"><div class="wc-reps">35</div><div class="wc-label">Open set<br>conservative</div></div>
+        <div class="wb-sep">|</div>
+        <div class="wb-chunk"><div class="wc-reps" style="color:var(--muted);font-size:28px;">REST</div><div class="wc-label">Brief stand<br>5–8 sec</div></div>
+        <div class="wb-sep">|</div>
+        <div class="wb-chunk"><div class="wc-reps">25</div><div class="wc-label">Second set<br>controlled</div></div>
+        <div class="wb-sep">|</div>
+        <div class="wb-chunk"><div class="wc-reps" style="color:var(--muted);font-size:28px;">REST</div><div class="wc-label">Brief stand<br>5–8 sec</div></div>
+        <div class="wb-sep">|</div>
+        <div class="wb-chunk"><div class="wc-reps" style="color:var(--green);">40</div><div class="wc-label">Remainder<br>finish</div></div>
+      </div>
+      <div class="wb-break-notes">
+        · Open conservatively — <span>do not chase 50 unbroken</span><br>
+        · Stop on proactive break, not technical failure<br>
+        · Exhale UP with throw · inhale DOWN in squat<br>
+        · Eyes fixed on <span>top edge of target</span> throughout<br>
+        · <span>2.1 sec/rep</span> rhythm — not sprint, not slow<br>
+        · Total target: <span>≤ 5:15</span> for all 100 reps<br>
+        · WB lock confirmed at 50 under full fatigue (W21, W25)
+      </div>
+    </div>
+
+  </div>
+
+  <!-- RUN PACING CARD -->
+  <div class="detail-grid" style="grid-template-columns:1fr;">
+    <div class="card" style="animation-delay:.40s;border-top:2px solid var(--accent);">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--accent);"></span>Run Pacing Strategy — 8 × 1km · Do Not Surge Run 1</div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
+        <div>
+          <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">Run 1 · Conservative</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--gold);letter-spacing:2px;">4:30</div>
+          <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--label);">/km target<br>HR ceiling 155<br>Do NOT go below 4:15</div>
+        </div>
+        <div>
+          <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">Runs 2–7 · Steady</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--accent);letter-spacing:2px;">4:00</div>
+          <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--label);">/km target<br>Sustainable HR<br>Rhythm over pace</div>
+        </div>
+        <div>
+          <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">Run 8 · Final</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--green);letter-spacing:2px;">PUSH</div>
+          <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--label);">Give what's left<br>WB follows — HR<br>does not matter now</div>
+        </div>
+        <div>
+          <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">Key Rule</div>
+          <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--label);line-height:1.6;">Compromised run pace confirmed at <span style="color:var(--text);">~5:13/km post-sled</span> (W25). Race pacing discipline is the lever. <span style="color:var(--gold);">Do not surge Run 1.</span> Budget is finite. Spend it at the end, not the start.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IDENTITY -->
+  <div class="identity">
+    <div class="id-lbl">🐺 Wolf Identity</div>
+    <div class="id-lines">
+      <div class="id-line hl">Friday.</div>
+      <div class="id-line hl2">Training is banked. Race is collection.</div>
+      <div class="id-line hl3">1:15:00.</div>
+      <div class="id-line hl">Run. Execute. Finish.</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-l">W27 RACE WEEK · 2026·06·29 → 2026·07·03 · RACE DAY FRI 03·07 &nbsp;//&nbsp; YARO &nbsp;//&nbsp; HYROX SYDNEY 2026 · PRO MEN 45–49 · TARGET 1:15:00</div>
+    <div class="tags">
+      <div class="tag">#RaceWeek</div>
+      <div class="tag">#HYROXSydney</div>
+      <div class="tag">#1h15Target</div>
+      <div class="tag">#WB35plus25plusR</div>
+      <div class="tag">#ProMen4549</div>
+      <div class="tag">#03072026</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
