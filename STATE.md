@@ -83,7 +83,7 @@ NOT limiters: sled (confirmed race-ready), WB chunks (strong and repeatable), CV
 - **W25 (06-15→06-21):** COMPLETE — Grade B+. WB probe 50 under fatigue (ceiling confirmed). BBJ restarted. Run speed present. Calves clean. Race strategy adjusted.
 - **W26 (06-22→06-28):** Phase 4 Taper Week 2 — sharpness only. Lunge restart Mon. **Ski Erg + Row Erg orientation Tue ★★★ (critical).** Final HYROX touch Thu. WB skill touch 30 Sat. Sun: walk + travel prep (staying Melbourne).
 - **W27 (06-29→07-03):** Race Week — **ACTUAL TRAVEL: Thu 2 Jul (MEL→SYD 13:00, Jetstar JQ514).** Mon–Wed: shakeout + rest in Melbourne. Thu: B12 injection AM + fly Sydney + hotel check-in. **RACE Fri 2026-07-03.**
-- **Travel confirmed:** Jetstar JQ514 MEL→SYD Thu 2 Jul 13:00–14:25 (ref ZJKYQL). Return JQ609 SYD→AVV Sat 4 Jul 14:30 (ref CJ6RXI). Hotel: Wake Up! Sydney Central 509 Pitt St, check-in Thu 2 Jul from 14:00, check-out Sat 4 Jul by 10:00. **⚠ Age limit 18–40 on booked room — athlete must call hotel (+61 2 9288 7888) to confirm acceptance.** Full detail: `state/sydney_trip.md`
+- **Travel confirmed:** Jetstar JQ514 MEL→SYD Thu 2 Jul 13:00–14:25 (ref ZJKYQL). Return JQ609 SYD→AVV Sat 4 Jul 14:30 (ref CJ6RXI). **Hotel: Rydges Camperdown** · 9 Missenden Rd, Camperdown · check-in Thu 2 Jul from 15:00, check-out Sat 4 Jul by 11:00 (Trip.com ref 1658112619606433). Full detail: `state/sydney_trip.md`
 
 ---
 
