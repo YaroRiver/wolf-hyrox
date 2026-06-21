@@ -12,7 +12,7 @@
 | Outbound | Thu 2 Jul | MEL → SYD | 13:00 → 14:25 | Jetstar JQ514 | ZJKYQL |
 | Return | Sat 4 Jul | SYD → **AVV** (Avalon) | 14:30 → 16:05 | Jetstar JQ609 | CJ6RXI |
 
-**⚠ Return lands at Avalon (AVV), not Tullamarine. ~55 km from CBD. Separate transport needed.**
+**⚠ Return lands at Avalon (AVV), not Tullamarine. SkyBus to Southern Cross — see Section E below.**
 
 ---
 
@@ -43,7 +43,7 @@ Previous booking (Wake Up! Sydney Central) cancelled due to 18–40 age restrict
 | Wed 1 Jul | **Melbourne** | Full rest · legs up · 22:00 sleep |
 | Thu 2 Jul | **MEL → SYD** | B12 injection AM (Melbourne) · 13:00 flight · arrive 14:25 · Uber to Rydges Camperdown (~15:00) · check-in 15:00 · settle + walk neighbourhood · light meal · race expo/reg evening if available · 22:00 sleep |
 | Fri 3 Jul | **Sydney** | RACE DAY — HYROX Sydney — TARGET 1:15:00 |
-| Sat 4 Jul | **SYD → AVV** | Hotel check-out before 11:00 · buffer time · Uber to SYD ~12:30 · 14:30 flight AVV · Avalon transport needed |
+| Sat 4 Jul | **SYD → AVV** | Hotel check-out before 11:00 · buffer time · Uber to SYD ~12:30 · 14:30 flight AVV · **SkyBus AVV → Southern Cross ~16:35** |
 
 ---
 
@@ -106,6 +106,27 @@ Previous booking (Wake Up! Sydney Central) cancelled due to 18–40 age restrict
 - 11:00–12:00 — buffer time (explore/coffee/eat, or rest in hotel lobby)
 - 12:30 — depart hotel for airport
 - 13:00 — arrive SYD domestic terminal (1.5h before 14:30 flight)
+
+### E. AVALON AIRPORT → MELBOURNE (Sat 4 Jul, land 16:05)
+
+| Option | Route | Time | Cost |
+|---|---|---|---|
+| **SkyBus (recommended)** | AVV terminal (kerbside) → Werribee → Southern Cross Station | ~30 min | ~$21 |
+| Uber/taxi | AVV → Moorabbin / home | ~50–60 min | ~$80–100 |
+
+**SkyBus details:**
+- No booking needed — buy ticket online, via SkyBus app, or at airport before boarding
+- Stop is kerbside directly outside the terminal
+- Timed to meet arriving flights — bus should be waiting for JQ609
+- Arrives Southern Cross Station ~16:35–16:45
+- From Southern Cross: train/tram/Uber home
+
+**Timeline:**
+- 16:05 — land AVV
+- 16:15–16:20 — bags + exit terminal
+- 16:25 — board SkyBus
+- ~16:55 — arrive Southern Cross Station
+- 17:15–17:30 — home (depending on onward transport)
 
 ---
 
@@ -171,6 +192,6 @@ Previous booking (Wake Up! Sydney Central) cancelled due to 18–40 age restrict
 ## OPEN ACTION ITEMS
 
 1. ~~**Hotel age limit** — RESOLVED. Wake Up! cancelled. Rydges Camperdown booked (no age restriction).~~
-2. **Avalon transport** — book shuttle/ride AVV → home after Sat 4 Jul 16:05 arrival
+2. ~~**Avalon transport** — RESOLVED. SkyBus AVV → Southern Cross, ~$21, no booking needed, meets flights.~~
 3. **HYROX wave time** — confirm Pro Men 45–49 start time (drives wake time + all race day timings above)
 4. **Opal card or tap-on** — ensure credit card is tap-enabled for Sydney trains/buses, or buy Opal at airport
