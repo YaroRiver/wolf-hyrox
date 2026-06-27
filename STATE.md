@@ -70,18 +70,16 @@ NOT limiters: sled (confirmed race-ready), WB chunks (strong and repeatable), CV
 ---
 
 ## ACTIVE PROBE TARGET
-- **Saturday 2026-06-27 (W26):** WB skill touch — 30 reps fresh (NOT a ceiling probe)
-- **Purpose:** Lock in WB breathing rhythm and groove before race week
-- **Stop rule:** Stop at 30. No deviation.
-- **Gate:** Calf 0/10 · no fever
-- **Next ceiling attempt:** RACE DAY 2026-07-03 (100 reps break-pattern strategy)
+- **W26 Sat 2026-06-27:** WB skill touch COMPLETE — 20 reps @ 9kg / 45s · 2.25 sec/rep · BBJ 30m/1:14 · lunges BW 39s · run 3×400m alive
+- **Next ceiling attempt:** RACE DAY 2026-07-03 · strategy: 35–40 + 20–25 + remainder · ≤5:15 total
+- **Race wave confirmed:** 18:40 HYROX MEN PRO · Bib 184047
 
 ---
 
 ## CALENDAR (race horizon)
 
 - **W25 (06-15→06-21):** COMPLETE — Grade B+. WB probe 50 under fatigue (ceiling confirmed). BBJ restarted. Run speed present. Calves clean. Race strategy adjusted.
-- **W26 (06-22→06-28):** Phase 4 Taper Week 2 — sharpness only. Lunge restart Mon. **Ski Erg + Row Erg orientation Tue ★★★ (critical).** Final HYROX touch Thu. WB skill touch 30 Sat. Sun: walk + travel prep (staying Melbourne).
+- **W26 (06-22→06-28):** COMPLETE (Sat session done, Sun close-out pending). Grade A-. Ski 4:19 / Row 4:16 confirmed Tue. WB 40 reps/1:30 Thu + 20 reps/45s Sat (2.25 sec/rep locked). BBJ 30m/1:14 confirmed Sat. Run 3×400m (4:34/5:13/4:33). Lunges BW touched. Left leg managed at 0–2/10 all week. **Sun 28 Jun: close-out required → archive W26 + create W27 current_week.**
 - **W27 (06-29→07-03):** Race Week — **ACTUAL TRAVEL: Thu 2 Jul (MEL→SYD 13:00, Jetstar JQ514).** Mon–Wed: shakeout + rest in Melbourne. Thu: B12 injection AM + fly Sydney + hotel check-in. **RACE Fri 2026-07-03.**
 - **Travel confirmed:** Jetstar JQ514 MEL→SYD Thu 2 Jul 13:00–14:25 (ref ZJKYQL). Return JQ609 SYD→AVV Sat 4 Jul 14:30 (ref CJ6RXI). **Hotel: Rydges Camperdown** · 9 Missenden Rd, Camperdown · check-in Thu 2 Jul from 15:00, check-out Sat 4 Jul by 11:00 (Trip.com ref 1658112619606433). Full detail: `state/sydney_trip.md`
 
@@ -93,7 +91,7 @@ NOT limiters: sled (confirmed race-ready), WB chunks (strong and repeatable), CV
 
 **ADD 2 — W25 Saturday 2026-06-20:** Lunges 20m BW → SKIPPED (probe focus, correct decision). **Carried to W26 Monday 2026-06-22.**
 
-**ADD 3 — W26 Tuesday 2026-06-23:** Ski Erg 1×2:00 easy + Row Erg 1×2:00 easy. Upgraded to 3×1:30–2:00 per station for better orientation. **PENDING — this session is the week's priority.**
+**ADD 3 — W26 Tuesday 2026-06-23:** Ski Erg 1000m/4:19 + Row Erg ~1000m/4:16 + Sled Push 215kg + Sled Pull 180kg/1:00 ✓ COMPLETE
 
 ---
 
@@ -121,5 +119,7 @@ Conditional:
 ---
 
 **W25 close-out completed:** 2026-06-21 (Sunday)
-**This file last fully refreshed:** 2026-06-21 (Sunday — W25 close-out + W26 plan activated)
+**W26 Saturday session logged:** 2026-06-27
+**This file last partially refreshed:** 2026-06-27 (W26 Sat session + W27 plan published)
 **Next mandatory refresh:** Sunday 2026-06-28 (W26 close-out + final STATE sync before race week)
+**Race wave confirmed:** 18:40 HYROX MEN PRO · Bib 184047 · 2026-06-27
