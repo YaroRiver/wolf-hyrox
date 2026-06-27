@@ -150,6 +150,28 @@
 
 ---
 
+## W25 (2026-06-15 to 2026-06-21) — Taper Week 1
+
+| Date | Day | Sleep h | Restful % | HRV ms | HRV %vs baseline | Calves L | Calves R | Body feel | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-06-15 | MON | 8h00 | — | — | — | 0/10 | 0/10 | — | W25 Mon data not extracted |
+| 2026-06-20 | SAT | 10h45 | — | — | — | 0/10 | 0/10 | Green | W25 WB probe 50 clean · 2:07 under 3-round fatigue · calves clean all week |
+| 2026-06-21 | SUN | — | — | — | — | 0/10 | 0/10 | — | W25 close-out |
+
+---
+
+## W26 (2026-06-22 to 2026-06-28) — Taper Week 2
+
+| Date | Day | Sleep h | Restful % | HRV ms | HRV %vs baseline | Calves L | Calves R | Body feel | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-06-23 | TUE | 8h15 | — | 28 sleeping / 29.1 daily | -21% | — | — | Yellow-Green | 3-day target 100%; SpO2 95%; Ski 4:19 + Row 4:16 + Sled Push 215kg + Sled Pull 180kg/1:00 |
+| 2026-06-24 | WED | 7h20 | — | 35 sleeping / 36 daily | -3% | 2/10 | 0/10 | Yellow | HR dip 24%; SpO2 96%; calf/Achilles 2/10 + back of thigh pulling 2/10; home activation only |
+| 2026-06-25 | THU | 8h00 | 59% | 35 sleeping / 32.2 daily | -12% | 2/10 | 0/10 | Yellow-Green | HR dip 17%; SpO2 96%; resp 16.7 brpm; leg signal 2/10 → reduced plan; WB 40@9kg/1:30 + push-ups |
+| 2026-06-26 | FRI | — | — | 42 sleeping / 41.5 daily | +15% | 0/10 | 0/10 | Green-recovery | Sleep window/duration not captured; HR dip 23%; SpO2 96%; recovery walk 4.15km avg HR 91 |
+| 2026-06-27 | SAT | 9h25 | 64% | 39.4 daily / 36.8 24h / 33 morning | +10% | 0/10 | 0/10 | GREEN-YELLOW | 3-day target 102%; HR dip 23%; 7-day rhythm 76%; run 3×400m (4:34/5:13/4:33) + WB 20@9kg + lunges BW + BBJ 30m/1:14 |
+
+---
+
 ## Append Protocol
 
 After every Sunday close-out and after every morning readiness gate:
