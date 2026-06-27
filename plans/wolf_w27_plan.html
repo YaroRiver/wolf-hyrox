@@ -33,8 +33,8 @@
 
   .phase-bar { display: flex; align-items: center; gap: 0; margin-bottom: 20px; animation: fadeUp .5s .04s ease both; overflow-x: auto; }
   .pb { font-family: 'DM Mono', monospace; font-size: 8px; padding: 7px 14px; letter-spacing: 1.5px; text-transform: uppercase; white-space: nowrap; }
-  .pb-done  { background: rgba(0,255,135,.04); color: var(--muted); border: 1px solid var(--border); }
-  .pb-now   { background: rgba(255,71,87,.08); color: var(--red); border: 1px solid rgba(255,71,87,.3); font-weight: bold; }
+  .pb-done { background: rgba(0,255,135,.04); color: var(--muted); border: 1px solid var(--border); }
+  .pb-now  { background: rgba(255,71,87,.08); color: var(--red); border: 1px solid rgba(255,71,87,.3); font-weight: bold; }
   .pb-arrow { color: var(--border); font-size: 10px; padding: 0 2px; }
 
   .race-countdown { background: linear-gradient(135deg, rgba(255,71,87,.06) 0%, rgba(255,71,87,.02) 100%); border: 1px solid rgba(255,71,87,.25); border-left: 3px solid var(--red); padding: 18px 24px; margin-bottom: 14px; animation: fadeUp .5s .06s ease both; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
@@ -58,15 +58,13 @@
   .section-lbl { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 4px; color: var(--muted); text-transform: uppercase; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
   .section-lbl::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 
-  /* 5-column grid for race week */
   .week-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 24px; }
   .dc { background: var(--surface); border: 1px solid var(--border); border-top: 3px solid transparent; transition: transform .2s; animation: fadeUp .5s ease both; overflow: hidden; }
   .dc:hover { transform: translateY(-3px); }
-  .dc.day-travel { border-top-color: var(--muted); }
-  .dc.day-shake  { border-top-color: var(--accent); }
-  .dc.day-off    { border-top-color: var(--border); }
-  .dc.day-checkin{ border-top-color: var(--gold); }
-  .dc.day-race   { border-top-color: var(--red); border: 2px solid rgba(255,71,87,.4); background: linear-gradient(135deg, rgba(255,71,87,.04) 0%, var(--surface) 60%); }
+  .dc.day-mel   { border-top-color: var(--accent); }
+  .dc.day-rest  { border-top-color: var(--border); }
+  .dc.day-travel{ border-top-color: var(--orange); }
+  .dc.day-race  { border-top-color: var(--red); border: 2px solid rgba(255,71,87,.4); background: linear-gradient(135deg, rgba(255,71,87,.04) 0%, var(--surface) 60%); }
   .dc:nth-child(1){animation-delay:.12s} .dc:nth-child(2){animation-delay:.18s}
   .dc:nth-child(3){animation-delay:.24s} .dc:nth-child(4){animation-delay:.30s}
   .dc:nth-child(5){animation-delay:.36s}
@@ -75,59 +73,84 @@
   .dc-iso .yr { color: var(--muted); } .dc-iso .dot { color: var(--border); margin: 0 2px; }
   .dc-iso .mo { color: var(--label); } .dc-iso .dd { color: var(--text); font-weight: 500; }
   .dc-abbr { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 3px; line-height: 1; }
-  .day-travel .dc-abbr { color: var(--muted); }
-  .day-shake  .dc-abbr { color: var(--accent); }
-  .day-off    .dc-abbr { color: var(--border); }
-  .day-checkin.dc-abbr { color: var(--gold); }
-  .day-checkin .dc-abbr { color: var(--gold); }
-  .day-race   .dc-abbr { color: var(--red); }
+  .day-mel   .dc-abbr { color: var(--accent); }
+  .day-rest  .dc-abbr { color: var(--border); }
+  .day-travel .dc-abbr { color: var(--orange); }
+  .day-race  .dc-abbr { color: var(--red); }
   .dc-tag { display: inline-block; margin-top: 6px; font-family: 'DM Mono', monospace; font-size: 7px; letter-spacing: 1.5px; padding: 2px 7px; text-transform: uppercase; }
-  .day-travel .dc-tag { background: rgba(90,106,122,.08); color: var(--muted); }
-  .day-shake  .dc-tag { background: rgba(0,229,255,.07); color: var(--accent); }
-  .day-off    .dc-tag { background: rgba(30,45,61,.3);   color: var(--muted); }
-  .day-checkin .dc-tag { background: rgba(255,215,0,.07); color: var(--gold); }
-  .day-race   .dc-tag { background: rgba(255,71,87,.1);  color: var(--red); }
+  .day-mel   .dc-tag { background: rgba(0,229,255,.07); color: var(--accent); }
+  .day-rest  .dc-tag { background: rgba(30,45,61,.3); color: var(--muted); }
+  .day-travel .dc-tag { background: rgba(255,140,66,.08); color: var(--orange); }
+  .day-race  .dc-tag { background: rgba(255,71,87,.1); color: var(--red); }
   .dc-body { padding: 10px 13px 13px; }
   .di { font-family: 'DM Mono', monospace; font-size: 9.5px; color: var(--label); padding: 4px 0; border-bottom: 1px solid rgba(30,45,61,.5); line-height: 1.4; display: flex; align-items: flex-start; gap: 5px; }
   .di:last-child { border-bottom: none; }
   .di .ic { flex-shrink: 0; color: var(--muted); }
   .hi { color: var(--text); } .gr { color: var(--green); } .ac { color: var(--accent); }
-  .rd { color: var(--red); }  .gd { color: var(--gold); }  .mu { color: var(--muted); }
+  .rd { color: var(--red); } .gd { color: var(--gold); } .mu { color: var(--muted); } .or { color: var(--orange); }
 
-  .detail-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 12px; }
   .card { background: var(--surface); border: 1px solid var(--border); padding: 22px; animation: fadeUp .5s ease both; transition: border-color .2s, transform .2s; }
-  .card:hover { border-color: rgba(0,229,255,.1); transform: translateY(-2px); }
+  .card:hover { border-color: rgba(0,229,255,.08); transform: translateY(-2px); }
   .card-ttl { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 3px; color: var(--muted); text-transform: uppercase; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
   .ct-dot { width: 6px; height: 6px; flex-shrink: 0; }
-  .mrow { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 0; border-bottom: 1px solid var(--border); }
-  .mrow:last-child { border-bottom: none; }
-  .mk  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); }
-  .mv  { font-family: 'Bebas Neue', sans-serif; font-size: 19px; letter-spacing: 1px; color: var(--text); }
-  .mu2 { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--accent); margin-left: 2px; }
 
   .station-table { width: 100%; border-collapse: collapse; font-family: 'DM Mono', monospace; font-size: 9.5px; }
   .station-table th { background: var(--surface2); color: var(--muted); padding: 5px 8px; border: 1px solid var(--border); text-align: left; letter-spacing: 1px; font-size: 8px; text-transform: uppercase; }
-  .station-table td { padding: 5px 8px; border: 1px solid var(--border); color: var(--label); }
+  .station-table td { padding: 5px 8px; border: 1px solid var(--border); color: var(--label); vertical-align: top; }
   .station-table tr:hover td { background: var(--surface2); }
-  .station-table .td-station { color: var(--text); }
-  .station-table .td-load { color: var(--accent); }
-  .station-table .td-time { color: var(--gold); font-family: 'Bebas Neue', sans-serif; font-size: 16px; letter-spacing: 1px; }
-  .station-table .td-total { color: var(--green); font-family: 'Bebas Neue', sans-serif; font-size: 16px; letter-spacing: 1px; }
-  .station-table tr.total-row td { background: rgba(0,255,135,.04); color: var(--green); border-top: 1px solid rgba(0,255,135,.2); }
+  .td-station { color: var(--text); }
+  .td-load { color: var(--accent); }
+  .td-time { color: var(--gold); font-family: 'Bebas Neue', sans-serif; font-size: 16px; letter-spacing: 1px; }
+  .td-total { color: var(--green); font-family: 'Bebas Neue', sans-serif; font-size: 15px; letter-spacing: 1px; }
+  .td-cue { color: var(--label); font-size: 8.5px; line-height: 1.45; }
+  .station-table tr.run-row td { background: rgba(0,229,255,.015); }
+  .station-table tr.flag-row td { background: rgba(255,71,87,.025); }
+  .station-table tr.total-row td { background: rgba(0,255,135,.04); border-top: 1px solid rgba(0,255,135,.2); }
 
   .wb-break { display: flex; align-items: center; gap: 12px; justify-content: center; padding: 16px 0; flex-wrap: wrap; }
   .wb-chunk { text-align: center; }
-  .wb-chunk .wc-reps { font-family: 'Bebas Neue', sans-serif; font-size: 40px; color: var(--gold); letter-spacing: 2px; line-height: 1; }
-  .wb-chunk .wc-label { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; }
+  .wc-reps { font-family: 'Bebas Neue', sans-serif; font-size: 40px; color: var(--gold); letter-spacing: 2px; line-height: 1; }
+  .wc-label { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; }
   .wb-sep { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--border); }
-  .wb-break-notes { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--label); line-height: 1.7; padding-top: 8px; border-top: 1px solid var(--border); }
-  .wb-break-notes span { color: var(--text); }
+  .wb-notes { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--label); line-height: 1.7; padding-top: 8px; border-top: 1px solid var(--border); }
+  .wb-notes span { color: var(--text); }
+
+  .mrow { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 0; border-bottom: 1px solid var(--border); gap: 8px; }
+  .mrow:last-child { border-bottom: none; }
+  .mk { font-family: 'DM Mono', monospace; font-size: 9.5px; color: var(--label); flex-shrink: 0; }
+  .mv { font-family: 'DM Mono', monospace; font-size: 9.5px; color: var(--text); text-align: right; line-height: 1.4; }
+
+  .exec-grid { display: grid; grid-template-columns: 1fr 1fr; }
+  .exec-row { padding: 10px 14px; border-bottom: 1px solid var(--border); display: flex; gap: 12px; align-items: flex-start; }
+  .exec-row:nth-child(odd) { border-right: 1px solid var(--border); }
+  .exec-row:nth-last-child(-n+2) { border-bottom: none; }
+  .exec-id { font-family: 'Bebas Neue', sans-serif; font-size: 20px; color: var(--muted); min-width: 28px; letter-spacing: 1px; line-height: 1.2; margin-top: 1px; }
+  .exec-name { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--text); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 3px; }
+  .exec-cue { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--label); line-height: 1.55; }
+  .exec-cue .hi { color: var(--accent); }
+  .exec-cue .warn { color: var(--red); font-weight: bold; }
+  .exec-cue .gd { color: var(--gold); }
+
+  .nt-row { display: flex; gap: 14px; padding: 7px 0; border-bottom: 1px solid rgba(30,45,61,.5); align-items: flex-start; }
+  .nt-row:last-child { border-bottom: none; }
+  .nt-time { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--gold); min-width: 48px; letter-spacing: 1px; line-height: 1.1; }
+  .nt-lbl { font-family: 'DM Mono', monospace; font-size: 8.5px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 2px; }
+  .nt-detail { font-family: 'DM Mono', monospace; font-size: 9.5px; color: var(--label); line-height: 1.4; }
+  .nt-detail span { color: var(--text); }
+  .nt-detail .ref { color: var(--muted); font-size: 8.5px; }
+
+  .tl-half { display: grid; grid-template-columns: 1fr 1fr; }
+  .tl-row { display: flex; gap: 12px; padding: 7px 13px; border-bottom: 1px solid rgba(30,45,61,.5); align-items: flex-start; }
+  .tl-row:last-child { border-bottom: none; }
+  .tl-time { font-family: 'Bebas Neue', sans-serif; font-size: 17px; color: var(--gold); min-width: 46px; letter-spacing: 1px; line-height: 1.2; }
+  .tl-content { font-family: 'DM Mono', monospace; font-size: 9.5px; color: var(--label); line-height: 1.4; }
+  .tl-content span { color: var(--text); }
 
   .identity { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--red); padding: 22px 28px; margin-bottom: 14px; animation: fadeUp .5s .55s ease both; position: relative; overflow: hidden; }
   .identity::after { content: '🐺'; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 72px; opacity: .05; pointer-events: none; }
   .id-lbl { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; }
   .id-lines { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 5px; }
-  .id-line  { font-family: 'Bebas Neue', sans-serif; font-size: 17px; letter-spacing: 3px; color: var(--muted); transition: color .2s; }
+  .id-line { font-family: 'Bebas Neue', sans-serif; font-size: 17px; letter-spacing: 3px; color: var(--muted); transition: color .2s; }
   .id-line:hover { color: var(--text); }
   .id-line.hl  { color: var(--red); }
   .id-line.hl2 { color: var(--gold); }
@@ -140,8 +163,8 @@
   .tag:hover { color: var(--red); border-color: rgba(255,71,87,.25); }
 
   @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
-  @media (max-width: 1100px) { .week-grid { grid-template-columns: repeat(3,1fr); } .detail-grid { grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 720px)  { .week-grid { grid-template-columns: 1fr 1fr; } .detail-grid { grid-template-columns: 1fr; } .hdr { flex-direction: column; gap: 16px; } .rc-number { font-size: 60px; } }
+  @media (max-width: 1100px) { .week-grid { grid-template-columns: repeat(3,1fr); } .exec-grid { grid-template-columns: 1fr; } .exec-row:nth-child(odd) { border-right: none; } .exec-row:nth-last-child(-n+2) { border-bottom: 1px solid var(--border); } .exec-row:last-child { border-bottom: none; } .tl-half { grid-template-columns: 1fr; } }
+  @media (max-width: 720px) { .week-grid { grid-template-columns: 1fr 1fr; } .hdr { flex-direction: column; gap: 16px; } .rc-number { font-size: 60px; } .station-table th:last-child, .station-table td:last-child { display: none; } }
 </style>
 </head>
 <body>
@@ -152,14 +175,14 @@
     <div>
       <div class="hdr-eyebrow"><span class="cd-red"></span>Race Week · HYROX Sydney 2026 · Pro Men 45–49</div>
       <div class="hdr-title">RACE<br>WEEK</div>
-      <div class="hdr-sub">W27 · FRIDAY 03·07·2026 · 1:15:00</div>
-      <div class="hdr-block">Sydney Build <span>W14</span> · Phase 4: Race Week · <span>Training complete · Bank full · Race is execution</span> · Target <span>1:15:00 · HYROX Sydney · 03·07·2026</span></div>
+      <div class="hdr-sub">W27 · FRIDAY 03·07·2026 · 18:40 WAVE · 1:15:00</div>
+      <div class="hdr-block">Bib <span>184047</span> · Sydney Build <span>W14</span> · Phase 4: Race Week · <span>Training complete · Bank full · Race is execution</span> · Target <span>1:15:00 · HYROX Sydney · 03·07·2026</span></div>
     </div>
     <div class="hdr-right">
       <div class="week-badge">W27</div>
       <div class="week-range">2026·06·29 → 2026·07·03</div>
       <div class="week-year">RACE DAY FRI 03·07 · Sydney</div>
-      <div class="race-badge"><span class="cd-red"></span>RACE FRIDAY · 1:15:00 TARGET</div>
+      <div class="race-badge"><span class="cd-red"></span>WAVE 18:40 · BIB 184047 · TARGET 1:15:00</div>
     </div>
   </div>
 
@@ -176,102 +199,103 @@
   <!-- RACE COUNTDOWN -->
   <div class="race-countdown">
     <div>
-      <div class="rc-label">⚡ HYROX Sydney 2026 — Race Day</div>
-      <div class="rc-text">Training is banked. Every session from Build Day 1 through Taper Week 2 is in the account. <span>The race is not training. The race is collection.</span> This week has one job: arrive at the start line rested, sharp, and ready to execute the plan. <span>No new fitness possible. No new ceiling. Execute what you built.</span></div>
+      <div class="rc-label">⚡ HYROX Sydney 2026 — Wave 18:40 · Pro Men 45–49 · Bib 184047</div>
+      <div class="rc-text">Training is banked. Every session from Build Day 1 through Taper Week 2 is in the account. <span>The race is not training. The race is collection.</span> This week has one job: arrive at the start line rested, sharp, and ready to execute. <span>No new fitness possible. No new ceiling. Execute what you built.</span></div>
     </div>
     <div class="rc-count">
-      <div class="rc-number">5</div>
+      <div class="rc-number">6</div>
       <div class="rc-unit">Days to Race</div>
     </div>
   </div>
 
-  <!-- WB RACE STRATEGY -->
+  <!-- WB RACE STRATEGY BANNER -->
   <div class="strategy-banner">
-    <div class="sb-label">WB Race Strategy — Locked · Final Station · 100 Reps</div>
+    <div class="sb-label">WB Race Strategy — Locked · Final Station · 100 Reps · Rate 2.25 sec/rep confirmed W26</div>
     <div class="strategy-row">
       <div class="strategy-block"><div class="sv">35-40</div><div class="sl">Open set</div></div>
       <div class="strategy-arrow">→</div>
-      <div class="strategy-block"><div class="sv" style="color:var(--muted);font-size:20px;">STAND</div><div class="sl">Brief reset</div></div>
+      <div class="strategy-block"><div class="sv" style="color:var(--muted);font-size:20px;">STAND</div><div class="sl">5–8 sec reset</div></div>
       <div class="strategy-arrow">→</div>
       <div class="strategy-block"><div class="sv">20-25</div><div class="sl">Second set</div></div>
       <div class="strategy-arrow">→</div>
-      <div class="strategy-block"><div class="sv" style="color:var(--muted);font-size:20px;">STAND</div><div class="sl">Brief reset</div></div>
+      <div class="strategy-block"><div class="sv" style="color:var(--muted);font-size:20px;">STAND</div><div class="sl">5–8 sec reset</div></div>
       <div class="strategy-arrow">→</div>
       <div class="strategy-block"><div class="sv" style="color:var(--green);">FINISH</div><div class="sl">Remainder</div></div>
       <div style="flex:1;min-width:200px;">
-        <div class="strategy-note">Target time: <span>≤ 5:15</span> for 100 reps.<br>Stop at form breakdown — not at fatigue.<br>Exhale UP. Eyes on top edge. <span>2.1 sec/rep.</span></div>
+        <div class="strategy-note">Target: <span>≤ 5:15</span> for 100 reps. Rate: <span>2.25 sec/rep</span> — confirmed W26 Thu + Sat.<br>Proactive break beats technical failure. Exhale UP. Eyes on top edge.</div>
       </div>
     </div>
   </div>
 
-  <!-- WEEK CARDS -->
+  <!-- WEEK GRID -->
   <div class="section-lbl" style="animation:fadeUp .5s .12s ease both;">📆 Race Week — W27 · 2026·06·29 → 2026·07·03</div>
   <div class="week-grid">
 
-    <!-- MON 29 — Travel -->
-    <div class="dc day-travel">
+    <!-- MON 29 — Melbourne Activation -->
+    <div class="dc day-mel">
       <div class="dc-head">
         <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">06</span><span class="dot">·</span><span class="dd">29</span></div>
         <div class="dc-abbr">MON</div>
-        <div class="dc-tag">Travel Day</div>
-      </div>
-      <div class="dc-body">
-        <div class="di"><span class="ic">✈</span><span>Melbourne → Sydney · arrive early</span></div>
-        <div class="di"><span class="ic">🏨</span><span>Hotel check-in · room selection: legs-up access</span></div>
-        <div class="di"><span class="ic">🚶</span><span>10–15 min walk to explore venue area only</span></div>
-        <div class="di"><span class="ic">🍽</span><span>Nutrition normal · hydration priority</span></div>
-        <div class="di"><span class="ic">😴</span><span class="gr">22:00 bedtime hard — Day 1 anchors the week</span></div>
-      </div>
-    </div>
-
-    <!-- TUE 30 — Shakeout -->
-    <div class="dc day-shake">
-      <div class="dc-head">
-        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">06</span><span class="dot">·</span><span class="dd">30</span></div>
-        <div class="dc-abbr">TUE</div>
-        <div class="dc-tag">Shakeout + Strides</div>
+        <div class="dc-tag">Melbourne — Activation</div>
       </div>
       <div class="dc-body">
         <div class="di"><span class="ic">🏃</span><span>Easy jog <span class="hi">10–12 min</span> · HR ≤ 130</span></div>
         <div class="di"><span class="ic">💨</span><span>4 strides × <span class="hi">80–100m</span> · race feel</span></div>
-        <div class="di"><span class="ic">💆</span><span>Mobility 10 min · hips + calves</span></div>
-        <div class="di"><span class="ic">—</span><span class="mu">Total ~30 min max · feel over pace</span></div>
-        <div class="di"><span class="ic">😴</span><span class="gr">22:00 bedtime — protect Wednesday rest</span></div>
+        <div class="di"><span class="ic">🏀</span><span>WB <span class="hi">10 reps</span> @ 9kg · rhythm check only</span></div>
+        <div class="di"><span class="ic">💆</span><span>Mobility 8 min · hips + calves</span></div>
+        <div class="di"><span class="ic">😴</span><span class="gr">22:00 bedtime · last full sleep window</span></div>
       </div>
     </div>
 
-    <!-- WED 01 — Complete OFF -->
-    <div class="dc day-off">
+    <!-- TUE 30 — Melbourne Final Touch -->
+    <div class="dc day-mel">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">06</span><span class="dot">·</span><span class="dd">30</span></div>
+        <div class="dc-abbr">TUE</div>
+        <div class="dc-tag">Melbourne — Final Touch</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">🏃</span><span>Easy jog 8–10 min · HR ≤ 125</span></div>
+        <div class="di"><span class="ic">💨</span><span>2–3 strides × 60–80m · sharpness only</span></div>
+        <div class="di"><span class="ic">—</span><span class="mu">No WB · no stations · feel over numbers</span></div>
+        <div class="di"><span class="ic">💆</span><span>Mobility 8 min · full body light</span></div>
+        <div class="di"><span class="ic">😴</span><span class="gr">21:30 bedtime · banking sleep before travel</span></div>
+      </div>
+    </div>
+
+    <!-- WED 01 — Melbourne Complete REST -->
+    <div class="dc day-rest">
       <div class="dc-head">
         <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">01</span></div>
         <div class="dc-abbr">WED</div>
-        <div class="dc-tag">OFF — Rest</div>
+        <div class="dc-tag">Melbourne — Complete REST</div>
       </div>
       <div class="dc-body">
-        <div class="di"><span class="ic">😴</span><span class="gr">Complete off — no gym, no run, no effort</span></div>
-        <div class="di"><span class="ic">🚶</span><span>Slow walk 15–20 min only if restless</span></div>
-        <div class="di"><span class="ic">🍽</span><span>Nutrition: normal carb, no loading</span></div>
-        <div class="di"><span class="ic">🧘</span><span>Mindset: race plan review · mental rehearsal</span></div>
+        <div class="di"><span class="ic">😴</span><span class="gr">No training — no gym — no run</span></div>
+        <div class="di"><span class="ic">🚶</span><span>Walk 20 min max · blood flow only</span></div>
+        <div class="di"><span class="ic">🍽</span><span>Carb load: rice + pasta + lean protein</span></div>
+        <div class="di"><span class="ic">💊</span><span>Hydralyte + Toppin × 2 · sodium protocol starts</span></div>
+        <div class="di"><span class="ic">😴</span><span class="gr">21:00 bedtime · flight tomorrow</span></div>
       </div>
     </div>
 
-    <!-- THU 02 — Check-in + Activation -->
-    <div class="dc day-checkin">
+    <!-- THU 02 — TRAVEL DAY -->
+    <div class="dc day-travel">
       <div class="dc-head">
         <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">02</span></div>
         <div class="dc-abbr">THU</div>
-        <div class="dc-tag">Check-in + Strides</div>
+        <div class="dc-tag">Travel — MEL → SYD</div>
       </div>
       <div class="dc-body">
-        <div class="di"><span class="ic">📋</span><span>HYROX race registration + athlete check-in</span></div>
-        <div class="di"><span class="ic">💉</span><span class="gd">B12 injection scheduled — final dose (next race day)</span></div>
-        <div class="di"><span class="ic">🏃</span><span>4 strides × <span class="hi">80–100m</span> · race feel sharp</span></div>
-        <div class="di"><span class="ic">—</span><span>Activation only — 15 min total</span></div>
-        <div class="di"><span class="ic">😴</span><span class="gr">Early sleep — race day is tomorrow</span></div>
+        <div class="di"><span class="ic">💉</span><span class="gd">B12 injection AM · at home before airport</span></div>
+        <div class="di"><span class="ic">✈</span><span><span class="or">JQ514</span> MEL <span class="hi">13:00</span> → SYD <span class="hi">14:25</span> · ref ZJKYQL</span></div>
+        <div class="di"><span class="ic">🏨</span><span>Rydges Camperdown · check-in after <span class="hi">15:00</span></span></div>
+        <div class="di"><span class="ic">🚶</span><span>Walk 15 min near hotel · legs alive only</span></div>
+        <div class="di"><span class="ic">😴</span><span class="rd">21:00 bed HARD — race in &lt;24h</span></div>
       </div>
     </div>
 
-    <!-- FRI 03 — RACE -->
+    <!-- FRI 03 — RACE DAY -->
     <div class="dc day-race">
       <div class="dc-head">
         <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">03</span></div>
@@ -279,102 +303,209 @@
         <div class="dc-tag">★ RACE DAY</div>
       </div>
       <div class="dc-body">
-        <div class="di"><span class="ic">⏰</span><span>Wake 4–5h before wave start</span></div>
-        <div class="di"><span class="ic">🥣</span><span>Breakfast: tested meal 2–3h pre-race</span></div>
-        <div class="di"><span class="ic">💪</span><span>Warm-up 20 min incl. 2–3 WB throws</span></div>
-        <div class="di"><span class="ic">🏁</span><span class="rd">RACE START — target 1:15:00</span></div>
-        <div class="di"><span class="ic">🏀</span><span class="gd">WB: 35–40 open · stand · 20–25 · finish</span></div>
+        <div class="di"><span class="ic">⏰</span><span>Wake ~12:30 · natural · race at 18:40</span></div>
+        <div class="di"><span class="ic">🥣</span><span>Meal 13:00 · rice + protein + salt + 500ml water</span></div>
+        <div class="di"><span class="ic">🚗</span><span>Leave hotel 15:30 · Uber to venue</span></div>
+        <div class="di"><span class="ic">💪</span><span>Warm-up 18:10 · jog + strides + 2 WB throws</span></div>
+        <div class="di"><span class="ic">🏁</span><span class="rd">WAVE 18:40 · BIB 184047 · 1:15:00</span></div>
       </div>
     </div>
 
   </div>
 
-  <!-- DETAIL CARDS -->
-  <div class="section-lbl" style="animation:fadeUp .5s .28s ease both;">🏁 Race Execution Plan</div>
+  <!-- STATION PLAN + WB BREAK -->
+  <div class="section-lbl" style="animation:fadeUp .5s .28s ease both;">🏁 Race Execution Plan · Projected 1:06:00 · Buffer 9:00 to 1:15</div>
 
-  <div class="detail-grid">
+  <div style="display:grid;grid-template-columns:2fr 1fr;gap:12px;margin-bottom:12px;">
 
-    <!-- Station breakdown -->
-    <div class="card" style="animation-delay:.30s;border-top:2px solid var(--red);grid-column:1/3;">
-      <div class="card-ttl"><span class="ct-dot" style="background:var(--red);"></span>Station-by-Station Race Plan · HYROX Sydney 2026-07-03 · Target 1:15:00</div>
+    <!-- Station timing table -->
+    <div class="card" style="animation-delay:.30s;border-top:2px solid var(--red);padding:18px;">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--red);"></span>Station-by-Station · Target 1:15:00 · Wave 18:40 · Bib 184047</div>
       <table class="station-table">
         <thead>
-          <tr><th>#</th><th>Station / Run</th><th>Load / Distance</th><th>Target</th><th>Cumulative</th></tr>
+          <tr><th>#</th><th>Station / Run</th><th>Load</th><th>Target</th><th>Cumul.</th><th>Key Cue</th></tr>
         </thead>
         <tbody>
-          <tr><td>R1</td><td class="td-station">Run 1</td><td class="td-load">1000m</td><td class="td-time">4:30</td><td class="td-total">4:30</td></tr>
-          <tr><td>S1</td><td class="td-station">Ski Erg</td><td class="td-load">1000m</td><td class="td-time">4:10</td><td class="td-total">8:40</td></tr>
-          <tr><td>R2</td><td class="td-station">Run 2</td><td class="td-load">1000m</td><td class="td-time">4:00</td><td class="td-total">12:40</td></tr>
-          <tr><td>S2</td><td class="td-station">Sled Push</td><td class="td-load">202 kg × 50m</td><td class="td-time">1:30</td><td class="td-total">14:10</td></tr>
-          <tr><td>R3</td><td class="td-station">Run 3</td><td class="td-load">1000m</td><td class="td-time">4:00</td><td class="td-total">18:10</td></tr>
-          <tr><td>S3</td><td class="td-station">Sled Pull</td><td class="td-load">153 kg × 50m</td><td class="td-time">1:30</td><td class="td-total">19:40</td></tr>
-          <tr><td>R4</td><td class="td-station">Run 4</td><td class="td-load">1000m</td><td class="td-time">4:00</td><td class="td-total">23:40</td></tr>
-          <tr><td>S4</td><td class="td-station">Burpee Broad Jump</td><td class="td-load">80m</td><td class="td-time">4:40</td><td class="td-total">28:20</td></tr>
-          <tr><td>R5</td><td class="td-station">Run 5</td><td class="td-load">1000m</td><td class="td-time">4:00</td><td class="td-total">32:20</td></tr>
-          <tr><td>S5</td><td class="td-station">Row Erg</td><td class="td-load">1000m</td><td class="td-time">4:10</td><td class="td-total">36:30</td></tr>
-          <tr><td>R6</td><td class="td-station">Run 6</td><td class="td-load">1000m</td><td class="td-time">4:00</td><td class="td-total">40:30</td></tr>
-          <tr><td>S6</td><td class="td-station">Farmer Carry</td><td class="td-load">200m @ 32 kg ea</td><td class="td-time">1:40</td><td class="td-total">42:10</td></tr>
-          <tr><td>R7</td><td class="td-station">Run 7</td><td class="td-load">1000m</td><td class="td-time">4:00</td><td class="td-total">46:10</td></tr>
-          <tr><td>S7</td><td class="td-station">Lunges</td><td class="td-load">100m @ 30 kg sandbag</td><td class="td-time">4:00</td><td class="td-total">50:10</td></tr>
-          <tr><td>R8</td><td class="td-station">Run 8</td><td class="td-load">1000m</td><td class="td-time">4:00</td><td class="td-total">54:10</td></tr>
-          <tr><td>S8</td><td class="td-station">Wall Ball</td><td class="td-load">100 reps @ 9 kg</td><td class="td-time">5:15</td><td class="td-total">59:25</td></tr>
-          <tr><td>+</td><td class="td-station">Transitions (est.)</td><td class="td-load">—</td><td class="td-time">4:00</td><td class="td-total">63:25</td></tr>
-          <tr class="total-row"><td colspan="4"><strong>ESTIMATED TOTAL · buffer to 1:15:00</strong></td><td class="td-total" style="font-size:22px;">63:25</td></tr>
+          <tr class="run-row"><td>R1</td><td class="td-station">Run 1</td><td class="td-load">1000m</td><td class="td-time">4:30</td><td class="td-total">4:30</td><td class="td-cue">HOLD BACK · wave excitement kills back half · HR ceiling 150 · do not go below 4:15</td></tr>
+          <tr><td>S1</td><td class="td-station">Ski Erg</td><td class="td-load">1000m</td><td class="td-time">4:15</td><td class="td-total">8:45</td><td class="td-cue">2:05/500m first half · push second · trained 4:19 fresh</td></tr>
+          <tr class="run-row"><td>R2</td><td class="td-station">Run 2</td><td class="td-load">1000m</td><td class="td-time">4:10</td><td class="td-total">12:55</td><td class="td-cue">HR elevated from Ski · first 200m: wait · settle 200–700m</td></tr>
+          <tr><td>S2</td><td class="td-station">Sled Push</td><td class="td-load">202kg × 50m</td><td class="td-time">1:20</td><td class="td-total">14:15</td><td class="td-cue">Low angle · heel drive · trained 215kg — race load is lighter</td></tr>
+          <tr class="run-row"><td>R3</td><td class="td-station">Run 3</td><td class="td-load">1000m</td><td class="td-time">4:10</td><td class="td-total">18:25</td><td class="td-cue">Breathing reset after sled · rhythm by 300m</td></tr>
+          <tr><td>S3</td><td class="td-station">Sled Pull</td><td class="td-load">153kg × 50m</td><td class="td-time">1:25</td><td class="td-total">19:50</td><td class="td-cue">Arms as chains · leg drive · trained 180kg — race load lighter</td></tr>
+          <tr class="run-row"><td>R4</td><td class="td-station">Run 4</td><td class="td-load">1000m</td><td class="td-time">4:15</td><td class="td-total">24:05</td><td class="td-cue">25 min mark · maintain form · cadence over pace</td></tr>
+          <tr><td>S4</td><td class="td-station">Burpee Broad Jump</td><td class="td-load">80m</td><td class="td-time">4:20</td><td class="td-total">28:25</td><td class="td-cue">Quiet landing · flat foot NOT toes · shorter jumps · Achilles watch</td></tr>
+          <tr class="run-row"><td>R5</td><td class="td-station">Run 5</td><td class="td-load">1000m</td><td class="td-time">4:10</td><td class="td-total">32:35</td><td class="td-cue">Mid-race · discipline here earns the back half</td></tr>
+          <tr><td>S5</td><td class="td-station">Row Erg</td><td class="td-load">1000m</td><td class="td-time">4:20</td><td class="td-total">36:55</td><td class="td-cue">2:05–2:10/500m · catch-drive-finish · trained 4:16 fresh</td></tr>
+          <tr class="run-row"><td>R6</td><td class="td-station">Run 6</td><td class="td-load">1000m</td><td class="td-time">4:25</td><td class="td-total">41:20</td><td class="td-cue">Late race · legs heavy · shorten stride · cadence first</td></tr>
+          <tr class="flag-row"><td>S6</td><td class="td-station">Farmer Carry ⚠</td><td class="td-load">200m × 32kg ea</td><td class="td-time">2:00</td><td class="td-total">43:20</td><td class="td-cue">UNTRAINED · walk steady · grip reset at 100m mark · protect hands</td></tr>
+          <tr class="run-row"><td>R7</td><td class="td-station">Run 7</td><td class="td-load">1000m</td><td class="td-time">4:25</td><td class="td-total">47:45</td><td class="td-cue">Pre-lunges · arrive controlled · do NOT empty tank here</td></tr>
+          <tr class="flag-row"><td>S7</td><td class="td-station">Lunges ⚠</td><td class="td-load">100m × 30kg</td><td class="td-time">5:00</td><td class="td-total">52:45</td><td class="td-cue">6-WEEK GAP · first 20m calibrate weight · calf-aware · if Achilles fires: shorten stride, do not stop</td></tr>
+          <tr class="run-row"><td>R8</td><td class="td-station">Run 8</td><td class="td-load">1000m</td><td class="td-time">4:00</td><td class="td-total">56:45</td><td class="td-cue">EVERYTHING LEFT · WB follows · build from 300m · HR irrelevant</td></tr>
+          <tr><td>S8</td><td class="td-station">Wall Ball</td><td class="td-load">100 reps × 9kg</td><td class="td-time">5:15</td><td class="td-total">1:02:00</td><td class="td-cue">35-40 → stand → 20-25 → stand → finish · 2.25 sec/rep · exhale UP</td></tr>
+          <tr><td>+</td><td class="td-station">Transitions × 16</td><td class="td-load">entry / exit</td><td class="td-time">4:00</td><td class="td-total">1:06:00</td><td class="td-cue">Walk last 10m into station · walk first 10m out · 15 sec avg per transition</td></tr>
+          <tr class="total-row"><td colspan="4"><strong>PROJECTED TOTAL · 9:00 buffer to 1:15:00</strong></td><td class="td-total" style="font-size:20px;color:var(--green);">1:06:00</td><td class="td-cue" style="color:var(--red);">⚠ S6+S7 are wildcard — if both slip +3 min buffer narrows to 6:00</td></tr>
         </tbody>
       </table>
     </div>
 
-    <!-- WB Break plan -->
-    <div class="card" style="animation-delay:.34s;border-top:2px solid var(--gold);">
-      <div class="card-ttl"><span class="ct-dot" style="background:var(--gold);"></span>WB Race Execution · 100 Reps · Station 8</div>
-      <div class="wb-break">
-        <div class="wb-chunk"><div class="wc-reps">35</div><div class="wc-label">Open set<br>conservative</div></div>
-        <div class="wb-sep">|</div>
-        <div class="wb-chunk"><div class="wc-reps" style="color:var(--muted);font-size:28px;">REST</div><div class="wc-label">Brief stand<br>5–8 sec</div></div>
-        <div class="wb-sep">|</div>
-        <div class="wb-chunk"><div class="wc-reps">25</div><div class="wc-label">Second set<br>controlled</div></div>
-        <div class="wb-sep">|</div>
-        <div class="wb-chunk"><div class="wc-reps" style="color:var(--muted);font-size:28px;">REST</div><div class="wc-label">Brief stand<br>5–8 sec</div></div>
-        <div class="wb-sep">|</div>
-        <div class="wb-chunk"><div class="wc-reps" style="color:var(--green);">40</div><div class="wc-label">Remainder<br>finish</div></div>
+    <!-- WB Break Plan -->
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <div class="card" style="animation-delay:.34s;border-top:2px solid var(--gold);">
+        <div class="card-ttl"><span class="ct-dot" style="background:var(--gold);"></span>WB · 100 Reps · Station 8</div>
+        <div class="wb-break">
+          <div class="wb-chunk"><div class="wc-reps">35</div><div class="wc-label">Open<br>conservative</div></div>
+          <div class="wb-sep">|</div>
+          <div class="wb-chunk"><div class="wc-reps" style="color:var(--muted);font-size:26px;">REST</div><div class="wc-label">5–8 sec<br>stand</div></div>
+          <div class="wb-sep">|</div>
+          <div class="wb-chunk"><div class="wc-reps">25</div><div class="wc-label">Second<br>set</div></div>
+          <div class="wb-sep">|</div>
+          <div class="wb-chunk"><div class="wc-reps" style="color:var(--muted);font-size:26px;">REST</div><div class="wc-label">5–8 sec<br>stand</div></div>
+          <div class="wb-sep">|</div>
+          <div class="wb-chunk"><div class="wc-reps" style="color:var(--green);">40</div><div class="wc-label">Finish<br>remainder</div></div>
+        </div>
+        <div class="wb-notes">
+          · Do not chase 50 unbroken — <span>proactive break beats technical failure</span><br>
+          · Exhale UP with throw · inhale DOWN in squat<br>
+          · Eyes on <span>top edge of target</span> throughout<br>
+          · <span>2.25 sec/rep</span> — confirmed W26 Thu 40 reps + Sat 20 reps<br>
+          · Target: <span>≤ 5:15</span> · WB lock: 50 clean under fatigue (W21, W25)
+        </div>
       </div>
-      <div class="wb-break-notes">
-        · Open conservatively — <span>do not chase 50 unbroken</span><br>
-        · Stop on proactive break, not technical failure<br>
-        · Exhale UP with throw · inhale DOWN in squat<br>
-        · Eyes fixed on <span>top edge of target</span> throughout<br>
-        · <span>2.1 sec/rep</span> rhythm — not sprint, not slow<br>
-        · Total target: <span>≤ 5:15</span> for all 100 reps<br>
-        · WB lock confirmed at 50 under full fatigue (W21, W25)
+
+      <!-- Run Pacing within each km -->
+      <div class="card" style="animation-delay:.36s;border-top:2px solid var(--accent);">
+        <div class="card-ttl"><span class="ct-dot" style="background:var(--accent);"></span>Run Pacing — Within Each 1km</div>
+        <div class="mrow"><span class="mk">R1 · 0–200m</span><span class="mv" style="color:var(--red);">HOLD · no surging from wave</span></div>
+        <div class="mrow"><span class="mk">R1 · 200–1000m</span><span class="mv">4:30/km · settle breathing</span></div>
+        <div class="mrow"><span class="mk">R2–R5 · 0–200m</span><span class="mv" style="color:var(--muted);">HR elevated from station · wait</span></div>
+        <div class="mrow"><span class="mk">R2–R5 · 200–800m</span><span class="mv" style="color:var(--accent);">Find 4:10–4:15 target</span></div>
+        <div class="mrow"><span class="mk">R2–R5 · 800–1000m</span><span class="mv">Maintain · controlled station entry</span></div>
+        <div class="mrow"><span class="mk">R6–R7 · full 1km</span><span class="mv" style="color:var(--muted);">Shorten stride · cadence over pace</span></div>
+        <div class="mrow"><span class="mk">R8 · 0–300m</span><span class="mv">Start controlled · build pace</span></div>
+        <div class="mrow"><span class="mk">R8 · 300–1000m</span><span class="mv" style="color:var(--green);">EVERYTHING LEFT · WB is next</span></div>
       </div>
     </div>
 
   </div>
 
-  <!-- RUN PACING CARD -->
-  <div class="detail-grid" style="grid-template-columns:1fr;">
-    <div class="card" style="animation-delay:.40s;border-top:2px solid var(--accent);">
-      <div class="card-ttl"><span class="ct-dot" style="background:var(--accent);"></span>Run Pacing Strategy — 8 × 1km · Do Not Surge Run 1</div>
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
+  <!-- STATION EXECUTION NOTES -->
+  <div class="section-lbl" style="animation:fadeUp .5s .38s ease both;">⚙ Station Execution Notes</div>
+  <div class="card" style="padding:0;animation-delay:.40s;border-top:2px solid var(--surface2);margin-bottom:12px;">
+    <div class="exec-grid">
+      <div class="exec-row">
+        <div class="exec-id">S1</div>
         <div>
-          <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">Run 1 · Conservative</div>
-          <div style="font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--gold);letter-spacing:2px;">4:30</div>
-          <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--label);">/km target<br>HR ceiling 155<br>Do NOT go below 4:15</div>
+          <div class="exec-name">Ski Erg · 1000m</div>
+          <div class="exec-cue">Walk last 10m · grab handles · set rhythm immediately · <span class="hi">2:05/500m first 500m</span> · push second half · drive hips back · pull through hip crease · 3 pulls per exhale · do not sprint early</div>
         </div>
+      </div>
+      <div class="exec-row">
+        <div class="exec-id">S2</div>
         <div>
-          <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">Runs 2–7 · Steady</div>
-          <div style="font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--accent);letter-spacing:2px;">4:00</div>
-          <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--label);">/km target<br>Sustainable HR<br>Rhythm over pace</div>
+          <div class="exec-name">Sled Push · 202kg × 50m</div>
+          <div class="exec-cue">Low body angle immediately · heels drive · short powerful steps · no looking up · exhale per step · <span class="hi">lighter than 215kg training load</span> — should feel fast · smooth turnover</div>
         </div>
+      </div>
+      <div class="exec-row">
+        <div class="exec-id">S3</div>
         <div>
-          <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">Run 8 · Final</div>
-          <div style="font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--green);letter-spacing:2px;">PUSH</div>
-          <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--label);">Give what's left<br>WB follows — HR<br>does not matter now</div>
+          <div class="exec-name">Sled Pull · 153kg × 50m</div>
+          <div class="exec-cue">Face sled · arms as rigid chains · <span class="hi">drive with legs not arms</span> · step back rhythmically · grip firm not death-grip · <span class="hi">lighter than 180kg training weight</span> — pace should feel controlled</div>
         </div>
+      </div>
+      <div class="exec-row">
+        <div class="exec-id">S4</div>
         <div>
-          <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">Key Rule</div>
-          <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--label);line-height:1.6;">Compromised run pace confirmed at <span style="color:var(--text);">~5:13/km post-sled</span> (W25). Race pacing discipline is the lever. <span style="color:var(--gold);">Do not surge Run 1.</span> Budget is finite. Spend it at the end, not the start.</div>
+          <div class="exec-name">BBJ · 80m</div>
+          <div class="exec-cue"><span class="warn">Achilles watch</span> · <span class="hi">quiet landing — flat foot, not toes</span> · shorter jumps preferred over longer · breathing steady · do NOT rush · confirmed 30m/1:14 today · no sprint jumping</div>
         </div>
+      </div>
+      <div class="exec-row">
+        <div class="exec-id">S5</div>
+        <div>
+          <div class="exec-name">Row Erg · 1000m</div>
+          <div class="exec-cue">Settle first 200m at <span class="hi">2:10/500m</span> · push last 300m · catch-drive-finish · lean back on finish · trained 4:16 fresh → expect 4:20 mid-race · do not go out too hard</div>
+        </div>
+      </div>
+      <div class="exec-row">
+        <div class="exec-id">S6</div>
+        <div>
+          <div class="exec-name">Farmer Carry · 200m × 32kg ea · <span class="warn">UNTRAINED</span></div>
+          <div class="exec-cue"><span class="warn">Zero training data on this station</span> · pick up clean · stand tall · <span class="hi">brief 2-sec grip reset at 100m</span> if hands failing · walk steady pace, do not run · protect hands and grip for WB to follow</div>
+        </div>
+      </div>
+      <div class="exec-row">
+        <div class="exec-id">S7</div>
+        <div>
+          <div class="exec-name">Lunges · 100m × 30kg sandbag · <span class="warn">6-WEEK GAP</span></div>
+          <div class="exec-cue"><span class="warn">Last weighted lunge W21 — 6 weeks ago</span> · <span class="hi">first 20m: calibrate weight and stride</span> · steady rhythm after · <span class="gd">if left Achilles fires: shorten stride, do NOT stop</span> · most time-variable station in plan</div>
+        </div>
+      </div>
+      <div class="exec-row">
+        <div class="exec-id">S8</div>
+        <div>
+          <div class="exec-name">Wall Ball · 100 reps × 9kg</div>
+          <div class="exec-cue">Brief 3-sec settle on arrival · <span class="hi">35-40 open → 5-sec stand → 20-25 → 5-sec stand → finish</span> · <span class="gd">2.25 sec/rep</span> confirmed W26 Thu + Sat · exhale up · eyes top edge · proactive break beats failure</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRAVEL + NUTRITION -->
+  <div class="section-lbl" style="animation:fadeUp .5s .42s ease both;">✈ Thu 2 Jul Travel · Nutrition Protocol</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;">
+
+    <!-- Travel Day Timeline -->
+    <div class="card" style="animation-delay:.44s;border-top:2px solid var(--orange);padding:20px;">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--orange);"></span>Thu 2 Jul — Travel Day Timeline</div>
+      <div style="display:flex;flex-direction:column;">
+        <div class="nt-row"><div class="nt-time">08:00</div><div><div class="nt-lbl">B12 Injection</div><div class="nt-detail">At home before leaving · <span>calf sensitivity watch 24–48h post</span></div></div></div>
+        <div class="nt-row"><div class="nt-time">10:00</div><div><div class="nt-lbl">Depart for Airport</div><div class="nt-detail">MEL Tullamarine · 2h before 13:00 departure · pre-book Uber</div></div></div>
+        <div class="nt-row"><div class="nt-time">12:00</div><div><div class="nt-lbl">Airport · Check-in</div><div class="nt-detail">Jetstar domestic · security · gate · light walk only</div></div></div>
+        <div class="nt-row"><div class="nt-time" style="color:var(--orange);">13:00</div><div><div class="nt-lbl">JQ514 Departs Melbourne</div><div class="nt-detail"><span>Jetstar JQ514 · MEL → SYD · ref ZJKYQL</span></div></div></div>
+        <div class="nt-row"><div class="nt-time">14:25</div><div><div class="nt-lbl">Arrives Sydney</div><div class="nt-detail">Kingsford Smith · Uber to hotel ~20 min ~$35</div></div></div>
+        <div class="nt-row"><div class="nt-time">15:00</div><div><div class="nt-lbl">Check-in Rydges Camperdown</div><div class="nt-detail"><span>9 Missenden Rd, Camperdown NSW 2050</span><br><span class="ref">Trip.com 1658112619606433 · PIN 7503 · Superior Queen · +61 2 9516 1522</span></div></div></div>
+        <div class="nt-row"><div class="nt-time">16:00</div><div><div class="nt-lbl">Walk + Settle</div><div class="nt-detail">15 min walk nearby · legs alive · locate food options</div></div></div>
+        <div class="nt-row"><div class="nt-time">18:00</div><div><div class="nt-lbl">Pre-Race Dinner</div><div class="nt-detail"><span>White rice + chicken + salt</span> · nothing new · normal serving · 500ml water</div></div></div>
+        <div class="nt-row"><div class="nt-time" style="color:var(--red);">21:00</div><div><div class="nt-lbl" style="color:var(--red);">BED — HARD STOP</div><div class="nt-detail">Race wave 18:40 tomorrow · phone off · no screens · race plan reviewed</div></div></div>
+      </div>
+    </div>
+
+    <!-- Nutrition Protocol -->
+    <div class="card" style="animation-delay:.46s;border-top:2px solid var(--green);padding:20px;">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--green);"></span>Race Day Nutrition Protocol · Wave 18:40</div>
+      <div style="display:flex;flex-direction:column;">
+        <div class="nt-row"><div class="nt-time">13:00</div><div><div class="nt-lbl">Pre-Race Meal (T−5h30)</div><div class="nt-detail"><span>White rice + lean protein + salt</span> · 100–150g carbs · low fat · no new food · 500ml water</div></div></div>
+        <div class="nt-row"><div class="nt-time">17:00</div><div><div class="nt-lbl">Arrive Venue</div><div class="nt-detail">Check-in · walk course · locate WB wall · locate transitions · sip water only</div></div></div>
+        <div class="nt-row"><div class="nt-time">17:10</div><div><div class="nt-lbl">Endura Gel (T−90min)</div><div class="nt-detail"><span>26g carbs · 8.5mg caffeine · 14mg sodium</span> · carb top-up + early caffeine prime</div></div></div>
+        <div class="nt-row"><div class="nt-time" style="color:var(--green);">17:40</div><div><div class="nt-lbl">Revvies Blue 100mg (T−60min)</div><div class="nt-detail"><span>100mg caffeine · Arctic Charge · MAIN CAFFEINE DOSE</span><br>Peaks at ~18:40 — wave start · take with 200ml water</div></div></div>
+        <div class="nt-row"><div class="nt-time">18:00</div><div><div class="nt-lbl">Sodium Load (T−40min)</div><div class="nt-detail"><span>2× Toppin Salt (472mg Na)</span> + <span>Hydralyte 2 tabs/200ml (276mg Na + 156mg K)</span></div></div></div>
+        <div class="nt-row"><div class="nt-time">18:10</div><div><div class="nt-lbl">Warm-Up Start (T−30min)</div><div class="nt-detail">8 min easy jog · 4 strides × 80m · 2 WB throws for feel · light mobility</div></div></div>
+        <div class="nt-row"><div class="nt-time">18:25</div><div><div class="nt-lbl">Optional: Revvies Red 40mg</div><div class="nt-detail">Only if feeling flat · <span>skip if already sharp</span> · no extra water now</div></div></div>
+        <div class="nt-row"><div class="nt-time" style="color:var(--red);">18:40</div><div><div class="nt-lbl" style="color:var(--red);">WAVE START</div><div class="nt-detail"><span>Total caffeine: 109–149mg · sodium: ~750mg pre-race</span><br>In-race: water sips at aid stations only · no in-race fueling for 1:15</div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RACE DAY FULL TIMELINE -->
+  <div class="section-lbl" style="animation:fadeUp .5s .48s ease both;">⏱ Race Day · Fri 3 Jul · Full Timeline</div>
+  <div class="card" style="animation-delay:.50s;border-top:2px solid var(--red);padding:0;margin-bottom:14px;">
+    <div class="tl-half">
+      <div style="border-right:1px solid var(--border);">
+        <div class="tl-row"><div class="tl-time">12:30</div><div class="tl-content"><span>Wake naturally</span> · light walk · 6h+ before wave</div></div>
+        <div class="tl-row"><div class="tl-time">13:00</div><div class="tl-content"><span>Pre-race meal</span> · rice + protein + salt · 500ml water · nothing new</div></div>
+        <div class="tl-row"><div class="tl-time">15:00</div><div class="tl-content">Gear check · bib 184047 · chip · shoes · bag · Uber booked</div></div>
+        <div class="tl-row"><div class="tl-time">15:30</div><div class="tl-content"><span>Leave hotel</span> · Uber to Sydney Showground · 9 Missenden Rd → Olympic Park</div></div>
+        <div class="tl-row"><div class="tl-time">16:00</div><div class="tl-content"><span>Arrive venue</span> · Sydney Showground, The Dome · Olympic Park Station T7 if train</div></div>
+        <div class="tl-row"><div class="tl-time">16:30</div><div class="tl-content">Walk course · locate WB wall · locate each transition · visualise flow</div></div>
+      </div>
+      <div>
+        <div class="tl-row"><div class="tl-time">17:10</div><div class="tl-content"><span>Endura gel</span> · 26g carbs + caffeine · with water</div></div>
+        <div class="tl-row"><div class="tl-time">17:40</div><div class="tl-content"><span>Revvies Blue 100mg</span> · main caffeine · peaks at 18:40</div></div>
+        <div class="tl-row"><div class="tl-time">18:00</div><div class="tl-content"><span>Toppin × 2 + Hydralyte</span> · sodium loaded · sip water only</div></div>
+        <div class="tl-row"><div class="tl-time" style="color:var(--accent);">18:10</div><div class="tl-content"><span style="color:var(--accent);">Warm-up</span> · 8 min jog + 4 strides × 80m + 2 WB throws + mobility</div></div>
+        <div class="tl-row"><div class="tl-time">18:30</div><div class="tl-content">Start corral · mental race plan review · breathe · no new decisions</div></div>
+        <div class="tl-row" style="background:rgba(255,71,87,.04);"><div class="tl-time" style="color:var(--red);font-size:22px;">18:40</div><div class="tl-content"><span style="color:var(--red);">★ WAVE START · BIB 184047 · RUN 1 AT 4:30 · DO NOT SURGE</span></div></div>
       </div>
     </div>
   </div>
@@ -383,22 +514,25 @@
   <div class="identity">
     <div class="id-lbl">🐺 Wolf Identity</div>
     <div class="id-lines">
-      <div class="id-line hl">Friday.</div>
+      <div class="id-line hl">Friday. 18:40. Bib 184047.</div>
       <div class="id-line hl2">Training is banked. Race is collection.</div>
-      <div class="id-line hl3">1:15:00.</div>
-      <div class="id-line hl">Run. Execute. Finish.</div>
+      <div class="id-line hl3">Run 1 controlled. Every run after: rhythm.</div>
+      <div class="id-line hl">WB: 35-40 · stand · 20-25 · finish.</div>
+      <div class="id-line hl2">S6 + S7: steady pace. No ego.</div>
+      <div class="id-line hl">1:15:00.</div>
     </div>
   </div>
 
   <!-- FOOTER -->
   <div class="footer">
-    <div class="footer-l">W27 RACE WEEK · 2026·06·29 → 2026·07·03 · RACE DAY FRI 03·07 &nbsp;//&nbsp; YARO &nbsp;//&nbsp; HYROX SYDNEY 2026 · PRO MEN 45–49 · TARGET 1:15:00</div>
+    <div class="footer-l">W27 RACE WEEK · 2026·06·29 → 2026·07·03 · WAVE 18:40 · BIB 184047 &nbsp;//&nbsp; YARO &nbsp;//&nbsp; HYROX SYDNEY 2026 · PRO MEN 45–49 · TARGET 1:15:00</div>
     <div class="tags">
       <div class="tag">#RaceWeek</div>
       <div class="tag">#HYROXSydney</div>
       <div class="tag">#1h15Target</div>
+      <div class="tag">#Wave1840</div>
+      <div class="tag">#Bib184047</div>
       <div class="tag">#WB35plus25plusR</div>
-      <div class="tag">#ProMen4549</div>
       <div class="tag">#03072026</div>
     </div>
   </div>
