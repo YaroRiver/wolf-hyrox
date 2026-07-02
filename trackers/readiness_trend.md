@@ -169,6 +169,10 @@
 | 2026-06-25 | THU | 8h00 | 59% | 35 sleeping / 32.2 daily | -12% | 2/10 | 0/10 | Yellow-Green | HR dip 17%; SpO2 96%; resp 16.7 brpm; leg signal 2/10 → reduced plan; WB 40@9kg/1:30 + push-ups |
 | 2026-06-26 | FRI | — | — | 42 sleeping / 41.5 daily | +15% | 0/10 | 0/10 | Green-recovery | Sleep window/duration not captured; HR dip 23%; SpO2 96%; recovery walk 4.15km avg HR 91 |
 | 2026-06-27 | SAT | 9h25 | 64% | 39.4 daily / 36.8 24h / 33 morning | +10% | 0/10 | 0/10 | GREEN-YELLOW | 3-day target 102%; HR dip 23%; 7-day rhythm 76%; run 3×400m (4:34/5:13/4:33) + WB 20@9kg + lunges BW + BBJ 30m/1:14 |
+| 2026-06-29 | MON | ~7h52 | 56% | 41 sleeping / 37.2 daily | +5% | 0/10 | 0/10 | YELLOW | Sickness watch; no training; B12 injection; chill/heat waves; no fever (36.5–36.6°C); HR dip 23%; SpO2 96%; resp 16.8 brpm |
+| 2026-06-30 | TUE | 8h18 | 63% | 48 sleeping / 58.7 morning / 47.3 later | +64% morning | 0/10 | 0/10 | GREEN | 3-day target 101%; HR dip 22%; symptoms improved; gym avoided; home micro-touch 40min HR 95 avg; Z1 dominant |
+| 2026-07-01 | WED | 7h30 | 63% | 66 sleeping / 57.2 daily / 50.7 24h | +58% | 0/10 | 0/10 | GREEN-YELLOW | HR dip 24%; 7-day rhythm 74%; underfueled by afternoon; packing day; proposed final home touch (eat first) |
+| 2026-07-02 | THU | — | — | — | — | 0/10 | 0/10 | — | Travel day · MEL→SYD JQ514 13:00 · no training · race tomorrow |
 
 ---
 

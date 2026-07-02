@@ -1,211 +1,164 @@
-# WEEK W26 — 2026-06-22 (Mon) → 2026-06-28 (Sun)
-## Annual Week 26 · Sydney Build Week 13 · Phase 4 — TAPER WEEK 2
-## Build Days 85–91 · Days to race: 11 → 5
+# WEEK W27 — 2026-06-29 (Mon) → 2026-07-03 (Fri) RACE DAY
+## Annual Week 27 · Sydney Build Week 14 · Phase 4 — RACE WEEK
+## Build Days 92–96 · Days to race: 4 → 0
 
 ---
 
-> **W26 directive:** Volume -60% from peak. Intensity preserved. No ceiling probes. Sharpness and skill only. Ski Erg + Row Erg orientation Tuesday is non-negotiable. Lunges restart Monday. Final HYROX touch Thursday. WB skill touch 30 Saturday. Race strategy is locked: 35–40 + 20–25 + remainder.
-
-<!-- Daily entries appended below by /morning and /session workflows -->
+> **W27 directive:** Race preservation only. No capacity work. No gym exposure. Sleep and carbs are the performance tools. Travel Thu 2 Jul MEL→SYD JQ514 13:00. Race Fri 3 Jul 18:40 HYROX MEN PRO · Bib 184047.
 
 ---
 
-## TUE SESSION DATA — 2026-06-23
+## MON SESSION DATA — 2026-06-29
 
-**Type:** Ski + Row + Sled confidence day (ADD 3 — non-negotiable orientation)
+**Type:** Rest / Sickness watch
 
-**Sleep:** 22:00→06:25 · 8h15 · HR dip 19% · sleeping HRV 28ms · daily HRV 29.1ms (-21%) · SpO2 95%
+**Sleep:**
+- Restful: 4h35 / 56%
+- Restless: 3h17 / 44%
+- Sleeping HR dip: 23%
+- 7-day sleep rhythm: 75%
+- Avg sleeping HR: 53 bpm
+- Sleep disruption: 2.0% / 10 min
+- Avg sleeping HRV: 41 ms
+- Avg sleeping blood oxygen: 96%
+- Respiratory rate: 16.8 brpm
+- Daily HRV: 37.2 ms / +5% vs 30-day avg
 
-**Ski Erg:** 1000m / 4:19 / split 2:01/500m / stroke rate 35 s/m
-**Row Erg:** ~1000m (1012m displayed) / 4:16 / split 2:04.9/500m
-**Sled Push:** 215kg × 20m × 2 — set 1: 38.25s / set 2: 29s
-**Sled Pull:** 180kg × 20m / 1:00
-**Warm-up:** Indoor Cycle 11:10 avg HR 112 + Mixed Cardio 15:17 avg HR 130
+**Symptoms:** Felt tired. Possible sickness onset. 30-min nap helped. Chill/heat waves during day. Voice slightly dropped. Nose cold/active. Mild chest/thoracic sensation. No confirmed fever (manual thermometer ~36.5–36.6°C corrected).
 
-**Athlete feedback:** Ski/Row felt like relearning rhythm. Belt/technique needed refresh. Ear pressure during work. Felt much better after than before.
+**Training:** None — sickness watch, race preservation.
 
-**Coaching verdict:** Grade A- — Ski alive. Row alive. Sled Push strong. Sled Pull usable.
+**Recovery actions:** Went home · warmed up · nasal rinse · shower · B12 injection · magnesium · paracetamol at night.
 
----
-
-## WED SESSION DATA — 2026-06-24
-
-**Type:** Leg protection / home activation
-
-**Sleep:** 22:40→06:10 · 7h20 · HR dip 24% · sleeping HRV 35ms · daily HRV 36ms (-3%) · SpO2 96%
-
-**Body signal:** Left lower calf/Achilles ~2/10 · back of thigh/above-knee pulling ~2/10 · "string pulling" sensation · not calf belly · no sharp pain
-
-**Work completed (home):** 3×10 push-ups from floor · small mobility/movement · no lower-body load · no BBJ · no lunges · no run
-
-**Coaching verdict:** Grade A — Correct decision. Leg stayed quiet because no extra load added.
+**Coach verdict:** Yellow. No training was the correct call.
 
 ---
 
-## THU SESSION DATA — 2026-06-25
+## MON SESSION REPORT — 2026-06-29
 
-**Type:** Reduced confidence session — WB + push capacity
+**Execution summary:** No session. Full sickness watch protocol activated.
 
-**Sleep:** 22:00→06:15 · 8h00 · restful 4h45/59% · HR dip 17% · sleeping HRV 35ms · daily HRV 32.2ms (-12%) · SpO2 96% · resp 16.7 brpm
+**Key data:** HRV +5% vs baseline — system not fully collapsed despite subjective symptoms. Sleeping SpO2 96% and HR 53 bpm indicate no systemic collapse. Symptoms pattern suggests early immune activation, not confirmed viral illness.
 
-**Body signal before training:** Left calf/under-knee/above-knee/tendon 2/10 → removed: run sharp pickups, lunges, BBJ, sled
+**Decision:** Sydney race plan alive. No cancellation. Observe Tuesday.
 
-**Wall Balls:** 40 reps @ 9kg / 1:30 (stop at 40)
-**Push-ups:** set 1 20 reps / 32s · set 2 15 reps / 27s
-**Indoor Run warm-up:** 10:35 / 874m / 12:08/km avg / HR 99
-**Indoor Cycle (warm-up):** 49 cal easy
-
-**Coaching verdict:** Grade A — Most important result: 40 WB @ 9kg in 1:30. Push capacity confirmed.
+**Principle:** Preserve the race. Inaction on this day is the highest-value action.
 
 ---
 
-## FRI SESSION DATA — 2026-06-26
+## TUE SESSION DATA — 2026-06-30
 
-**Type:** Recovery walk / system reset
+**Type:** Home micro-touch / gym avoided
 
-**Sleep:** Sleeping HR dip 23% · 7-day rhythm 72% · sleeping HR 56 · disruption 3.3%/15min · sleeping HRV 42ms · daily HRV 41.5ms (+15%) · 24h HRV 39.3ms · SpO2 96%
-*(Sleep window/duration: not visible in submitted screenshot)*
+**Sleep:**
+- Window: 21:32 → 06:15
+- Total sleep: 8h18
+- 3-day sleep target: 101%
+- Restful sleep: 5h15 / 63%
+- Restless: 3h03 / 37%
+- Sleeping HR dip: 22%
+- 7-day sleep rhythm: 74%
+- Avg sleeping HR: 53 bpm
+- Sleep disruption: 4.8% / 25 min
+- Avg sleeping HRV: 48 ms
+- Morning HRV: 58.7 ms (+64% vs 30-day avg) · later: 47.3 ms (+33%) · evening: 54 ms
 
-**Outdoor Walk:** 18:38→19:23 · 44:59 · 4.15km · avg pace 10:50/km · avg HR 91 · elevation 9m · Albert Park
+**Subjective:** Morning — better than Monday night. Left sinus slightly active. Not blocked. Wanted more sleep. No fever. Day — stayed warm (extra layers), drank lemon water, 30-min nap in car. Much better by evening.
 
-**Coaching verdict:** Grade A — Pure recovery support. HR stayed very low. Blood flow without station load. No leg escalation.
+**Decision:** Avoid gym. Home training only. No jump-heavy work. No capacity test.
 
----
+**Workout logged:**
+- Functional Strength Training: 19:27→20:07 / 40:06 / active cal 260 / total cal 333
+- Avg HR: 95 bpm / Effort: 2 / Easy
+- Zones: Z1 36:56 / Z2 02:03 / Z3 00:10 / Z4 0 / Z5 0
+- Post-workout HR: finish 81 → 1min 78 → 2min 81 bpm
+- Content: warm-up/movement, home activation, overhead squat/thruster pattern, chair as load (~10kg), push/movement touch. No gym exposure.
 
-## SAT MORNING READINESS — 2026-06-27
+**Response:** Felt better after session. No crash. HR calm.
 
-**Sleep:** 23:00→08:35 · 9h25 · restful 6h00/64% · restless 3h25/36% · HR dip 23% · 7-day rhythm 76% · daily HRV 39.4ms (+10%) · 24h HRV 36.8ms · morning HRV 33ms · 3-day target 102%
-
-**Readiness verdict:** GREEN-YELLOW — Good sleep. HRV acceptable. Leg required control gate before training.
-
-**Calibrated plan:** Mini-touch. Gate on left leg after 5min walk. 0–1/10: full plan. 2/10: run + WB, choose one of lunges or BBJ. 3/10 or limp: walk only.
-
----
-
-# SAT SESSION DATA — 2026-06-27
-
-**Session type:** Mini-touch / confidence restoration
-**Session time:** ~15:32–16:57 Melbourne
-**Total logged workout time:** ~75 min 27 sec
-**Total movement distance:** ~5.65 km
-
-## Block 1 — Indoor Run Warm-up
-
-| Metric | Value |
-|---|---:|
-| Time | 15:32→15:40 |
-| Duration | 8:35 |
-| Distance | 1.26 km |
-| Avg pace | 6:47/km |
-| Avg HR | 113 bpm |
-| Avg cadence | 156 spm |
-
-## Block 2 — Indoor Run Aerobic
-
-| Metric | Value |
-|---|---:|
-| Time | 15:43→15:57 |
-| Duration | 13:51 |
-| Distance | 2.03 km |
-| Avg pace | 6:49/km |
-| Avg HR | 136 bpm |
-| Avg cadence | 158 spm |
-
-## Block 3 — Functional Strength / Prep
-
-| Metric | Value |
-|---|---:|
-| Duration | 11:29 |
-| Avg HR | 94 bpm |
-
-## Block 4 — 4×400m Intervals
-
-| Interval | Distance | Time | Pace | HR | Cadence |
-|---|---:|---:|---:|---:|---:|
-| Work 1 | 400m | 1:49 | 4:34/km | 135 | 174 |
-| Recovery 1 | 162m | 1:59 | 12:13/km | 130 | 100 |
-| Work 2 | 400m | 2:05 | 5:13/km | 144 | 169 |
-| Recovery 2 | 169m | 1:59 | 11:43/km | 129 | 103 |
-| Work 3 | 400m | 1:49 | 4:33/km | 141 | 172 |
-| Recovery 3 | 164m | 1:59 | 12:04/km | 130 | 99 |
-
-Avg HR 133 · Max Zone 4 · Zero Zone 5 · Cadence on work reps 169–174 spm
-
-## Block 5 — Functional Strength / Stations
-
-| Station | Result |
-|---|---:|
-| Wall Balls | 20 reps @ 9kg / 45 sec |
-| Lunges | completed / 39 sec (BW) |
-| BBJ | 30m / 1:14 |
-
-Avg HR 121 · Duration 16:34
-
-## Block 6 — Cooldown Walk
-
-| Metric | Value |
-|---|---:|
-| Duration | 13:05 |
-| Distance | 661m |
-| Avg pace | 19:48/km |
-| Avg HR | 94 bpm |
+**Coach verdict:** Green. Correct final touch.
 
 ---
 
-# SAT SESSION REPORT — 2026-06-27
+## TUE SESSION REPORT — 2026-06-30
 
-## Execution Summary
+**Execution summary:** Home micro-touch completed. All zones stayed low. HR response controlled. Activation achieved without systemic load.
 
-Session exceeded the original mini-touch plan in run volume but stayed within controlled bounds for all stations. All four planned touch points completed: run, Wall Balls, lunges, BBJ. No hard stop, no limping, no forced abort.
+**Key data:** HRV morning 58.7 ms (+64%) — strongest reading in weeks. Confirms Monday was immune activation, not collapse. 8h18 sleep window. System recovering.
 
-## Key Data Interpreted
+**Comparison to plan:** Gym avoided (correct given sickness risk 3 days before travel). Home substitution delivered rhythm touch without gym exposure.
 
-**Run:** 3 working 400m reps — 4:34 / 5:13 / 4:33/km. Middle rep softened (5:13) then recovered to 4:33. HR peaked 144, no Zone 5. Cadence on work reps 169–174 spm — mechanically sound. W25 baseline was 4:03–4:26/km fresh; today under moderate fatigue from prior aerobic block, paces are appropriate. Run rhythm confirmed alive.
+**Lesson:** The body showed its recovery direction with Tuesday HRV. Preservation strategy is working.
 
-**Wall Balls:** 20 reps @ 9kg in 45 sec = 2.25 sec/rep. This matches Thursday's rate (40 reps / 1:30 = 2.25 sec/rep). Rhythm and rate consistent. Race plan chunks (35–40 open + 20–25 + remainder) remain credible.
+**Principle:** No more proof tests. Sydney plan alive.
 
-**BBJ:** 30m in 1:14 = ~2.47 sec/m. W25 Thu baseline was 1:11/1:07 for 30m (~2.37/2.23 sec/m). Today slightly slower — expected at 6 days out on a touch session with accumulated run load. Station is alive. This was the highest psychological fear station. It answered.
+---
 
-**Lunges:** 39 sec BW. No distance specified. Conservative and correct. No weighted attempt.
+## WED SESSION DATA — 2026-07-01
 
-## Comparison to Plan
+**Type:** Packing / logistics / proposed final home touch
 
-| Element | Planned | Executed |
-|---|---|---|
-| WB | 20+optional 10 = 30 reps | 20 reps — stopped correctly |
-| Run | 10min easy + 2×300m | Full aerobic block + 3×400m |
-| Lunges | 20m BW | Touched (39 sec BW) |
-| BBJ | 10–15m controlled | 30m / 1:14 — stronger than planned |
-| Push-ups | 10+10 | Not recorded (may have been in Block 3) |
+**Sleep:**
+- Window: 22:25 → 06:10
+- Total sleep: 7h30
+- 3-day sleep target: 95%
+- Restful sleep: 4h45 / 63%
+- Restless: 2h45 / 37%
+- Sleeping HR dip: 24%
+- 7-day sleep rhythm: 74%
+- Avg sleeping HR: 55 bpm
+- Sleep disruption: 3.2% / 15 min
+- Avg sleeping HRV: 66 ms
+- Daily HRV: 57.2 ms (+58% vs 30-day avg) / 24h HRV: 50.7 ms / morning midday: 40 ms
 
-Run volume exceeded the plan. This added extra stress 6 days out. All stations were touched at or above plan. WB was conservatively stopped at 20 — correct.
+**Nutrition note:** Underfueled by afternoon (at work ~16:45; last proper meal ~10:00; birthday cake + milk + coffee at 12:00).
 
-## Lesson / Insight
+**Coach verdict:** Green-yellow, closer to green. HRV strong. Sleeping HR stable. System recovered vs Monday. Caution: underfueled + travel tomorrow + race Friday.
 
-The week's fear was accumulating: left leg uncertainty, no BBJ since W25, no lunges since W21. Today resolved those fears with real data. BBJ 30m is the key win — it broke the psychological block on the station most likely to cause hesitation at race start. WB rhythm held at 2.25 sec/rep across two sessions this week (Thu + Sat). Rate is stable. Race strategy is supported.
+**Proposed final home touch (planned after food):**
+- Eat first: carbs + protein + salt + water
+- Warm-up: march/walk 5min + mobility 5min
+- Run substitute: fast march + high-knee walk + fast feet (no jump)
+- WB pattern: 5 warm-up + 12 clean (chair/backpack ~8–10kg)
+- Push: 8 + 6 push-ups
+- BBJ: 5+5 step-back burpees (slow, no jump)
+- Cooldown: walk 10min + breathing 2min
+- Status: planned but not yet confirmed complete at time of report
 
-The run stress is the only flag. The body ran 3×400m sub-5:15 after a 22-minute aerobic block — that is more than a "touch." Absorption overnight and Sunday morning will be the verdict on whether this was fine or slightly too much.
+**Packing tasks locked:** All gear, documents, fuel, health items listed and packed tonight.
 
-## Tonight's Priority
+---
 
-**Leg response is the only metric that matters tonight.** Left Achilles, under-knee, posterior thigh. First morning steps tomorrow are the diagnostic.
+## THU AM — 2026-07-02 (TRAVEL DAY)
 
-Watch flags:
-- Achilles tightness
-- Below-calf pulling
-- Back-of-thigh pulling
-- Under-knee discomfort
-- Altered walking
-- Morning first steps
+**Plan:** Work 06:00→09:00. Leave Moorabbin at 09:00. Home ~09:20–09:35. Bag grab, food, water. Airport target: 11:15–11:30 (hard latest 11:45). Flight JQ514 MEL→SYD 13:00→14:25.
 
-## Tomorrow Decision Gate
+**Hotel:** Rydges Camperdown · 9 Missenden Rd · check-in from 15:00.
 
-| Morning leg signal | Sunday plan |
-|---|---|
-| 0–1/10 | 40–60 min easy walk + 8–10 min mobility. No run. |
-| 2/10 | 30–40 min easy walk only. Gentle mobility. No run/BBJ/lunges. |
-| 3/10 or limp | Rest. Short walks only. Race preservation mode. |
+**No training. Travel day only.**
 
-## Today's Principle
+---
 
-The work is done. The win now is absorption.
+## RACE STRATEGY — LOCKED (as of 2026-06-27)
+
+**Wave:** 18:40 HYROX MEN PRO · Bib 184047
+
+**Wall Balls:** Open 35–40 clean → pause 10–15 sec → second block 20–25 → short pause → finish clean chunks. No ugly reps.
+
+**Lap counting:** 2 rings RIGHT at run start → after lap 1: 1 ring LEFT → after lap 2: 2nd ring LEFT → 2 rings LEFT = enter station.
+
+**Pre-start:** Banana (~60–90 min before) + coffee (~45–60 min before) + water. Salt tablet with water only.
+
+**Gels:** Lighter citrus/isotonic main. Caramel biscuit backup only.
+
+**Beetroot juice:** Optional purchase in Sydney Thu. Optional serve Fri ~2–3h before race.
+
+**Sled:** Push 202kg / Pull 153kg (both confirmed at race load with margin).
+
+**Run:** Do not surge Run 1. Controlled pace discipline. Compromised-run gap is known and managed.
+
+**BBJ:** 80m comfortable pace. No sprint.
+
+**Lunges:** 100m @ 30kg sandbag. Calf watch.
+
+**Ski/Row:** ~4:00–4:20 for 1000m. Rhythm confirmed W26 Tue.

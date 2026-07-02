@@ -5,18 +5,19 @@
 ---
 
 ## TIME ANCHOR
-- **Last updated:** 2026-06-21 (Sunday, Melbourne — W25 close-out)
+- **Last updated:** 2026-07-02 (Thursday, Melbourne/Sydney — Race Week W27, travel day)
 - **Race day:** 2026-07-03 (Friday) — HYROX Sydney
-- **Days to race:** 12 (as of 2026-06-21 Sunday)
-- **Sydney Build Day:** 84 (Sunday 2026-06-21) · Build Day 85 starts Monday
-- **Sydney Build Week:** 13 (W26 starts 2026-06-22)
-- **Annual Week:** 26 (2026-06-22 → 2026-06-28)
-- **Phase:** Phase 4 — TAPER (Week 2 of 2)
+- **Days to race:** 1
+- **Sydney Build Day:** 95 (Thu 2026-07-02) · Race = Build Day 96
+- **Sydney Build Week:** 14 (W27 starts 2026-06-29)
+- **Annual Week:** 27 (2026-06-29 → 2026-07-03)
+- **Phase:** Phase 4 — RACE WEEK
 - **W22 STATUS:** COMPLETE — Vaccine Disruption / Recovery Protection Week (Grade B)
 - **W23 STATUS:** COMPLETE — Recovery/Re-entry Week (Grade B-). Two bike sessions only. No WB probe, no running quality, no BBJ, no lunges. WB lock unchanged at 50 (W21). Probe deferred.
 - **W24 STATUS:** COMPLETE — Recovery Crisis / Respiratory Activation (Grade C+). Monday re-entry fragment only (Grade A). Respiratory/sinus activation Wed. HRV suppressed Thu–Sat. WB probe missed 3rd consecutive time (gate not met). Walk only Sat. Sunday sleeping HR 56 bpm — recovery direction confirmed.
 - **W25 STATUS:** COMPLETE — Taper Week 1. Grade B+. WB probe 50 clean / 2:07 under 3-round race fragment fatigue (ceiling confirmed; floor 55 / target 60 not reached — 5th consecutive missed ceiling probe). BBJ restarted 2×30m. Run speed present: 4×400m to 4:03/km. Sled confirmed at race load. Calves 0/10 all week. Race strategy adjusted: 35–40 + 20–25 + remainder.
-- **W26 STATUS:** IN PROGRESS — Taper Week 2. Sharpness only. Ski/Row orientation Tue critical. Lunge restart Mon. Final HYROX touch Thu. WB skill touch 30 Sat.
+- **W26 STATUS:** COMPLETE — Taper Week 2. Grade A-. Ski 4:19 + Row 4:16 confirmed Tue. WB 40@9kg/1:30 Thu + 20 reps/45s Sat (2.25 sec/rep rate locked). BBJ 30m/1:14 Sat. Lunges BW touched. Run 3×400m (4:34/5:13/4:33). Left leg 0–2/10 managed. All limiters resolved.
+- **W27 STATUS:** IN PROGRESS — Race Week. Mon sickness-watch (no training, B12 done). Tue home micro-touch (HRV +64%, recovery confirmed). Wed packing/logistics. Thu travel MEL→SYD JQ514 13:00. **RACE FRI 3 JUL 18:40.**
 
 ---
 
@@ -26,7 +27,7 @@
 - **HR recovery:** 160→99 bpm in 2 min (excellent)
 - **Race target:** 1:15:00 HYROX Sydney 2026-07-03
 - **Gym:** Iron Viking, Moorabbin (Australia)
-- **Medical:** Pernicious anemia, B12 monthly (last 2026-06-02, next ~2026-07-02); chronic calf-Achilles-soleus zone; cardiac event W13 resolved
+- **Medical:** Pernicious anemia, B12 monthly (last 2026-06-29, next ~2026-07-29); chronic calf-Achilles-soleus zone; cardiac event W13 resolved
 - **2025 Melbourne baseline:** 1:33:44, rank #603, Pro M 45-49. Gap to target: 18:44.
 - **Detailed profile:** `reference/athlete_profile.md`
 
@@ -71,6 +72,9 @@ NOT limiters: sled (confirmed race-ready), WB chunks (strong and repeatable), CV
 
 ## ACTIVE PROBE TARGET
 - **W26 Sat 2026-06-27:** WB skill touch COMPLETE — 20 reps @ 9kg / 45s · 2.25 sec/rep · BBJ 30m/1:14 · lunges BW 39s · run 3×400m alive
+- **W27 Mon 2026-06-29:** Sickness watch / rest. B12 injection done. HRV +5%. No fever. Preserved.
+- **W27 Tue 2026-06-30:** Home micro-touch. HRV 58.7ms (+64%) — recovery confirmed. 8h18 sleep. Sydney plan alive.
+- **W27 Wed 2026-07-01:** Packing day. HRV 57.2ms (+58%). 7h30 sleep. System green. Travel prep complete.
 - **Next ceiling attempt:** RACE DAY 2026-07-03 · strategy: 35–40 + 20–25 + remainder · ≤5:15 total
 - **Race wave confirmed:** 18:40 HYROX MEN PRO · Bib 184047
 
@@ -79,8 +83,8 @@ NOT limiters: sled (confirmed race-ready), WB chunks (strong and repeatable), CV
 ## CALENDAR (race horizon)
 
 - **W25 (06-15→06-21):** COMPLETE — Grade B+. WB probe 50 under fatigue (ceiling confirmed). BBJ restarted. Run speed present. Calves clean. Race strategy adjusted.
-- **W26 (06-22→06-28):** COMPLETE (Sat session done, Sun close-out pending). Grade A-. Ski 4:19 / Row 4:16 confirmed Tue. WB 40 reps/1:30 Thu + 20 reps/45s Sat (2.25 sec/rep locked). BBJ 30m/1:14 confirmed Sat. Run 3×400m (4:34/5:13/4:33). Lunges BW touched. Left leg managed at 0–2/10 all week. **Sun 28 Jun: close-out required → archive W26 + create W27 current_week.**
-- **W27 (06-29→07-03):** Race Week — **ACTUAL TRAVEL: Thu 2 Jul (MEL→SYD 13:00, Jetstar JQ514).** Mon–Wed: shakeout + rest in Melbourne. Thu: B12 injection AM + fly Sydney + hotel check-in. **RACE Fri 2026-07-03.**
+- **W26 (06-22→06-28):** COMPLETE — Grade A-. Ski 4:19 / Row 4:16 confirmed Tue. WB 40 reps/1:30 Thu + 20 reps/45s Sat (2.25 sec/rep locked). BBJ 30m/1:14 confirmed Sat. Run 3×400m (4:34/5:13/4:33). Lunges BW touched. Left leg managed 0–2/10 all week. **W26 archived 2026-07-02.**
+- **W27 (06-29→07-03):** RACE WEEK IN PROGRESS. Mon sickness-watch + B12 done. Tue home micro-touch (HRV recovery confirmed). Wed packing. **Thu 2 Jul: travel MEL→SYD JQ514 13:00. RACE Fri 3 Jul 18:40.**
 - **Travel confirmed:** Jetstar JQ514 MEL→SYD Thu 2 Jul 13:00–14:25 (ref ZJKYQL). Return JQ609 SYD→AVV Sat 4 Jul 14:30 (ref CJ6RXI). **Hotel: Rydges Camperdown** · 9 Missenden Rd, Camperdown · check-in Thu 2 Jul from 15:00, check-out Sat 4 Jul by 11:00 (Trip.com ref 1658112619606433). Full detail: `state/sydney_trip.md`
 
 ---
@@ -119,7 +123,8 @@ Conditional:
 ---
 
 **W25 close-out completed:** 2026-06-21 (Sunday)
-**W26 Saturday session logged:** 2026-06-27
-**This file last partially refreshed:** 2026-06-27 (W26 Sat session + W27 plan published)
-**Next mandatory refresh:** Sunday 2026-06-28 (W26 close-out + final STATE sync before race week)
+**W26 close-out completed:** 2026-07-02 (archived to archive/2026/week_26_report.md)
+**W27 current_week.md created:** 2026-07-02 (Mon 29 Jun → Wed 1 Jul data loaded)
+**This file last refreshed:** 2026-07-02 09:55 AEST (Thu travel day — full W27 sync)
+**Next mandatory refresh:** Post-race 2026-07-03 (race result + STATE final update)
 **Race wave confirmed:** 18:40 HYROX MEN PRO · Bib 184047 · 2026-06-27
