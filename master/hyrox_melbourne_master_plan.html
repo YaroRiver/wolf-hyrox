@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HYROX MELBOURNE MASTER PLAN · HOME GROUND // YARO 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #080C10; --surface: #0E1419; --surface2: #141B22;
+    --border: #1E2D3D; --accent: #00E5FF; --red: #FF4757;
+    --gold: #FFD700; --green: #00FF87; --text: #E8EDF2;
+    --muted: #5A6A7A; --label: #8A9BAB; --orange: #FF8C42; --purple: #A855F7;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; min-height: 100vh; overflow-x: hidden; }
+  body::before { content: ''; position: fixed; inset: 0; background-image: linear-gradient(rgba(0,255,135,0.018) 1px, transparent 1px), linear-gradient(90deg, rgba(0,255,135,0.018) 1px, transparent 1px); background-size: 40px 40px; pointer-events: none; z-index: 0; }
+  .wrap { max-width: 1360px; margin: 0 auto; padding: 36px 24px; position: relative; z-index: 1; }
+
+  /* HEADER */
+  .hdr { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; padding-bottom: 24px; border-bottom: 1px solid var(--border); animation: fadeUp .5s ease both; flex-wrap: wrap; gap: 16px; }
+  .hdr-eyebrow { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 4px; color: var(--green); text-transform: uppercase; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+  .ld { width: 5px; height: 5px; border-radius: 50%; background: var(--green); animation: pulse 2s ease-in-out infinite; }
+  .hdr-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(44px, 6.4vw, 76px); line-height: .88; letter-spacing: 4px; }
+  .hdr-sub   { font-family: 'Bebas Neue', sans-serif; font-size: clamp(14px, 1.8vw, 20px); letter-spacing: 5px; color: var(--muted); margin-top: 4px; }
+  .hdr-meta  { margin-top: 10px; display: flex; gap: 18px; flex-wrap: wrap; }
+  .hdr-meta-item { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); letter-spacing: 1px; }
+  .hdr-meta-item span { color: var(--text); }
+  .hdr-right { text-align: right; }
+  .target-time { font-family: 'Bebas Neue', sans-serif; font-size: 60px; color: var(--gold); letter-spacing: 3px; line-height: 1; }
+  .target-label { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 4px; text-align: right; }
+  .division-badge { display: inline-block; margin-top: 6px; font-family: 'DM Mono', monospace; font-size: 9px; color: var(--green); letter-spacing: 2px; padding: 4px 12px; border: 1px solid rgba(0,255,135,.25); background: rgba(0,255,135,.05); text-transform: uppercase; }
+
+  /* TIME ANCHOR / DATE BANNER */
+  .anchor-banner { background: var(--surface); border: 1px solid rgba(0,229,255,.15); border-left: 3px solid var(--accent); padding: 14px 22px; margin-bottom: 14px; animation: fadeUp .5s .05s ease both; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .ab-icon { font-size: 20px; flex-shrink: 0; }
+  .ab-label { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--accent); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 4px; }
+  .ab-text  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.65; }
+  .ab-text span { color: var(--text); }
+
+  .date-warn { background: rgba(255,215,0,.03); border: 1px solid rgba(255,215,0,.18); border-left: 3px solid var(--gold); padding: 12px 22px; margin-bottom: 20px; animation: fadeUp .5s .06s ease both; }
+  .dw-label { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 5px; }
+  .dw-text  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.6; }
+  .dw-text span { color: var(--text); }
+
+  /* KPI STRIP */
+  .kpi-strip { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-bottom: 20px; animation: fadeUp .5s .07s ease both; }
+  .kpi { background: var(--surface); padding: 16px 18px; position: relative; overflow: hidden; transition: background .2s; }
+  .kpi:hover { background: var(--surface2); }
+  .kpi::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 2px; }
+  .kpi:nth-child(1)::before { background: var(--green); }
+  .kpi:nth-child(2)::before { background: var(--gold); }
+  .kpi:nth-child(3)::before { background: var(--red); }
+  .kpi:nth-child(4)::before { background: var(--accent); }
+  .kpi:nth-child(5)::before { background: var(--purple); }
+  .kpi-num  { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); letter-spacing: 2px; margin-bottom: 6px; }
+  .kpi-val  { font-family: 'Bebas Neue', sans-serif; font-size: 26px; letter-spacing: 2px; line-height: 1; margin-bottom: 4px; }
+  .kpi:nth-child(1) .kpi-val { color: var(--green); }
+  .kpi:nth-child(2) .kpi-val { color: var(--gold); }
+  .kpi:nth-child(3) .kpi-val { color: var(--red); }
+  .kpi:nth-child(4) .kpi-val { color: var(--accent); }
+  .kpi:nth-child(5) .kpi-val { color: var(--purple); }
+  .kpi-desc { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); letter-spacing: 1px; line-height: 1.5; }
+
+  /* NAV */
+  .jumpnav { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 24px; animation: fadeUp .5s .08s ease both; }
+  .jumpnav a { font-family: 'DM Mono', monospace; font-size: 8.5px; letter-spacing: 1px; color: var(--label); text-decoration: none; padding: 5px 10px; border: 1px solid var(--border); background: var(--surface); transition: all .2s; }
+  .jumpnav a:hover { color: var(--green); border-color: rgba(0,255,135,.3); }
+
+  /* SECTION LABEL */
+  .section-lbl { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 4px; color: var(--muted); text-transform: uppercase; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; scroll-margin-top: 20px; }
+  .section-lbl::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  /* CARD */
+  .card { background: var(--surface); border: 1px solid var(--border); padding: 22px; animation: fadeUp .5s ease both; transition: border-color .2s, transform .2s; margin-bottom: 12px; }
+  .card:hover { border-color: rgba(0,255,135,.08); }
+  .card-ttl { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 3px; color: var(--muted); text-transform: uppercase; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+  .ct-dot { width: 6px; height: 6px; flex-shrink: 0; }
+  .card-body { font-family: 'DM Mono', monospace; font-size: 10.5px; color: var(--label); line-height: 1.75; }
+  .card-body span { color: var(--text); }
+  .card-body b { color: var(--gold); font-weight: 500; }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+
+  /* GENERIC TABLE */
+  table.dtable { width: 100%; border-collapse: collapse; font-family: 'DM Mono', monospace; font-size: 10px; margin-bottom: 8px; }
+  table.dtable th { text-align: left; padding: 7px 10px; color: var(--muted); letter-spacing: 1.5px; text-transform: uppercase; font-size: 8px; border-bottom: 1px solid var(--border); background: var(--surface2); }
+  table.dtable td { padding: 7px 10px; border-bottom: 1px solid rgba(30,45,61,.5); color: var(--label); vertical-align: top; }
+  table.dtable tr:hover td { background: var(--surface2); }
+  .table-wrap { overflow-x: auto; margin-bottom: 20px; }
+  .grade { font-weight: 600; padding: 1px 6px; letter-spacing: 1px; font-size: 9px; }
+  .grade-E { color: var(--green); background: rgba(0,255,135,.07); }
+  .grade-I { color: var(--accent); background: rgba(0,229,255,.07); }
+  .grade-A { color: var(--gold); background: rgba(255,215,0,.07); }
+  .grade-M { color: var(--red); background: rgba(255,71,87,.07); }
+
+  /* ASSESS ITEM */
+  .assess-item { display: flex; align-items: flex-start; gap: 8px; padding: 7px 0; border-bottom: 1px solid var(--border); font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.5; }
+  .assess-item:last-child { border-bottom: none; }
+  .assess-item span { color: var(--text); }
+  .assess-item.good::before { content: '✔'; color: var(--green); flex-shrink: 0; }
+  .assess-item.warn::before { content: '△'; color: var(--gold); flex-shrink: 0; }
+  .assess-item.note::before { content: '→'; color: var(--accent); flex-shrink: 0; }
+  .assess-item.crit::before { content: '⚠'; color: var(--red); flex-shrink: 0; }
+  .assess-item.num { counter-increment: item; }
+
+  /* GOAL LADDER */
+  .goal-ladder { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 16px; }
+  .goal-card { background: var(--surface); border: 1px solid var(--border); border-top: 3px solid; padding: 18px; }
+  .goal-card.c { border-top-color: var(--muted); }
+  .goal-card.b { border-top-color: var(--gold); background: linear-gradient(135deg, rgba(255,215,0,.04) 0%, var(--surface) 60%); }
+  .goal-card.a { border-top-color: var(--purple); }
+  .goal-label { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px; }
+  .goal-card.c .goal-label { color: var(--muted); }
+  .goal-card.b .goal-label { color: var(--gold); }
+  .goal-card.a .goal-label { color: var(--purple); }
+  .goal-time { font-family: 'Bebas Neue', sans-serif; font-size: 40px; letter-spacing: 2px; line-height: 1; margin-bottom: 8px; }
+  .goal-card.c .goal-time { color: var(--muted); }
+  .goal-card.b .goal-time { color: var(--gold); }
+  .goal-card.a .goal-time { color: var(--purple); }
+  .goal-desc { font-family: 'DM Mono', monospace; font-size: 9.5px; color: var(--label); line-height: 1.6; }
+  .goal-desc span { color: var(--text); }
+
+  /* PHASE TABLE */
+  .phase-row td { padding: 10px; }
+  .phase-name { color: var(--text); font-weight: 600; }
+
+  /* WEEK CARD (first 4 weeks) */
+  .wk-card { background: var(--surface); border: 1px solid var(--border); border-top: 3px solid var(--accent); padding: 18px; margin-bottom: 12px; }
+  .wk-card.deload { border-top-color: var(--gold); }
+  .wk-card.recover { border-top-color: var(--muted); }
+  .wk-hd { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; }
+  .wk-num { font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: var(--accent); letter-spacing: 2px; }
+  .wk-card.deload .wk-num { color: var(--gold); }
+  .wk-card.recover .wk-num { color: var(--muted); }
+  .wk-dates { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); }
+  .wk-name { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--label); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+  .wk-days { display: flex; flex-direction: column; gap: 3px; }
+  .wk-day { font-family: 'DM Mono', monospace; font-size: 9.5px; color: var(--label); line-height: 1.5; display: flex; gap: 8px; }
+  .wk-day b { color: var(--text); min-width: 32px; flex-shrink: 0; }
+  .wk-principle { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--border); font-family: 'DM Mono', monospace; font-size: 9.5px; color: var(--green); font-style: italic; }
+
+  /* SESSION LIBRARY CARD */
+  .sess-card { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); padding: 14px 16px; margin-bottom: 8px; }
+  .sess-name { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 5px; }
+  .sess-name b { color: var(--accent); }
+  .sess-desc { font-family: 'DM Mono', monospace; font-size: 9.5px; color: var(--label); line-height: 1.6; }
+
+  /* IDENTITY */
+  .identity { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--green); padding: 22px 28px; margin-bottom: 14px; animation: fadeUp .5s .5s ease both; position: relative; overflow: hidden; }
+  .identity::after { content: '🐺'; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 72px; opacity: .05; pointer-events: none; }
+  .id-lbl { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; }
+  .id-lines { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 5px; }
+  .id-line { font-family: 'Bebas Neue', sans-serif; font-size: 16px; letter-spacing: 2px; color: var(--muted); transition: color .2s; }
+  .id-line:hover { color: var(--text); }
+  .id-line.hl { color: var(--green); }
+  .id-line.hl2 { color: var(--gold); }
+  .id-line.hl3 { color: var(--purple); }
+
+  .footer { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .footer-l { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); letter-spacing: 2px; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); padding: 3px 8px; border: 1px solid var(--border); letter-spacing: 1px; cursor: default; transition: all .2s; }
+  .tag:hover { color: var(--green); border-color: rgba(0,255,135,.25); }
+
+  ol.numbered { list-style: none; counter-reset: item; font-family: 'DM Mono', monospace; font-size: 10.5px; color: var(--label); line-height: 1.7; }
+  ol.numbered li { counter-increment: item; padding: 6px 0 6px 26px; position: relative; border-bottom: 1px solid var(--border); }
+  ol.numbered li:last-child { border-bottom: none; }
+  ol.numbered li::before { content: counter(item); position: absolute; left: 0; top: 6px; color: var(--gold); font-weight: 600; }
+  ol.numbered li span { color: var(--text); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+  @media (max-width: 1100px) { .grid2, .grid3, .goal-ladder { grid-template-columns: 1fr; } .kpi-strip { grid-template-columns: repeat(2,1fr); } }
+  @media (max-width: 720px) { .hdr { flex-direction: column; } table.dtable { font-size: 8.5px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HEADER -->
+  <div class="hdr">
+    <div>
+      <div class="hdr-eyebrow"><span class="ld"></span>Master Plan · HYROX Melbourne · Pro Men 45–49</div>
+      <div class="hdr-title">HOME<br>GROUND</div>
+      <div class="hdr-sub">HYROX MELBOURNE 2026 · 23-WEEK BUILD</div>
+      <div class="hdr-meta">
+        <div class="hdr-meta-item">Athlete <span>Yaro (Yaroslav Andrushchenko) · 46 · 196cm/84kg</span></div>
+        <div class="hdr-meta-item">Prior race <span>Sydney 2026-07-03 — 1:48:24, DQ Wall Balls</span></div>
+        <div class="hdr-meta-item">Build window <span>W28 (Jul 6) → W50 (race)</span></div>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="target-label">Goal Ladder</div>
+      <div class="target-time">C·B·A</div>
+      <div class="division-badge">Gate-Decided, Not Assumed</div>
+    </div>
+  </div>
+
+  <!-- TIME ANCHOR -->
+  <div class="anchor-banner">
+    <div class="ab-icon">🕐</div>
+    <div>
+      <div class="ab-label">Time Anchor — Planning Date</div>
+      <div class="ab-text">Planned <span>Saturday 2026-07-04</span>, Day 1 post-race. Planning anchor for race week: <span>Saturday 2026-12-12</span> (Annual Week 50). Current phase: <span>Phase 0 — Recovery &amp; Clearance</span> (W28 protocol already active).</div>
+    </div>
+  </div>
+
+  <!-- DATE WARNING -->
+  <div class="date-warn">
+    <div class="dw-label">⚠ Race Date — Unconfirmed, Tolerant By Design</div>
+    <div class="dw-text">HYROX Melbourne 2026 shows "Date coming soon" as of 2026-07-04. 2025 ran 11–14 Dec at MCEC; aggregators project 9–13 Dec 2026, with one listing suggesting 19–20 Dec. <span>This plan anchors on Saturday 2026-12-12</span> and tolerates a ±1 week shift by sliding the taper only — the build structure never changes. <b>Action: check hyrox.com weekly; re-anchor the moment the date publishes.</b></div>
+  </div>
+
+  <!-- KPI STRIP -->
+  <div class="kpi-strip">
+    <div class="kpi"><div class="kpi-num">01</div><div class="kpi-val">23 wks</div><div class="kpi-desc">Full build window, W28→W50</div></div>
+    <div class="kpi"><div class="kpi-num">02</div><div class="kpi-val">#1 ×2</div><div class="kpi-desc">Sled push + pull already race-proven</div></div>
+    <div class="kpi"><div class="kpi-num">03</div><div class="kpi-val">50→100</div><div class="kpi-desc">Wall Ball gap — the one thing that must close</div></div>
+    <div class="kpi"><div class="kpi-num">04</div><div class="kpi-val">11 probes</div><div class="kpi-desc">WB ceiling slots — Sydney had 1 window, lost to illness</div></div>
+    <div class="kpi"><div class="kpi-num">05</div><div class="kpi-val">3 sims</div><div class="kpi-desc">Full 8-station race simulations, 2 required</div></div>
+  </div>
+
+  <!-- JUMP NAV -->
+  <div class="jumpnav">
+    <a href="#diagnosis">Diagnosis</a><a href="#evidence">Evidence Table</a><a href="#profile">Current Profile</a>
+    <a href="#limiters">Limiters</a><a href="#opportunities">Opportunities</a><a href="#risk">Risk</a>
+    <a href="#goal">Goal Reality Check</a><a href="#macrocycle">Macrocycle</a><a href="#weekly">Weekly Model</a>
+    <a href="#sessions">Session Library</a><a href="#progression">Progression Rules</a><a href="#kpi">KPI Dashboard</a>
+    <a href="#recovery">Recovery System</a><a href="#first4">First 4 Weeks</a><a href="#rules">Non-Negotiables</a><a href="#missing">Missing Data</a>
+  </div>
+
+  <!-- 1. DIAGNOSIS -->
+  <div class="section-lbl" id="diagnosis">🩺 Athlete Diagnosis</div>
+  <div class="card" style="border-top:2px solid var(--green);">
+    <div class="card-body">
+      A 46-year-old, 196 cm / 84 kg Pro-division athlete with a strength profile that is <span>finished</span> and an endurance-integration profile that is <span>unfinished</span>. Every directly-trained quality moved fast and hard: Sled Push 204→245 kg in eight weeks, WB clean line 30→50 in three Saturdays, VO₂max +5 points in nine weeks. Every quality left untouched stayed exactly where it was — WB above 50 under fatigue never appeared because it was never trained; running past 10 km continuous never appeared because it was never trained. <b>The pattern cuts both ways: it built the sleds into weapons and it is why the race ended at the one station whose ceiling was never pushed.</b><br><br>
+      Sydney's 1:48:24 DQ is a bad results line and a clean diagnostic. Raced four days after respiratory illness onset, on HRV-rebound clearance that measured autonomic recovery and said nothing about respiratory function. Avg HR 154, 84+ minutes in Zone 4/5 — full effort. High heart rate with collapsing pace is the signature of impaired oxygen delivery, not motivation loss. The Wall Ball DQ happened at exactly the station whose 50→100 gap was never closed, under fatigue deeper than anything ever simulated.<br><br>
+      The structural failure: Phase 3 of the Sydney build carried 100% of the WB ceiling work in one 3-week block, and illness consumed all three weeks. <span>A plan that concentrates its most important unresolved capacity into one late, short, unrepeatable window is fragile by design.</span> December corrects this structurally — the highest-risk capacity gets the longest runway and the most redundancy.<br><br>
+      Two behavioral patterns matter for how this plan is written. You overshoot prescribed intensity when fresh (probe entries at 4:41/km against a 4:55–5:10 plan, fragment runs at 4:33 against 5:00–5:15) — overshooting entries burns the fatigue budget the session needed elsewhere. You execute discipline when the rule is explicit and binary (the W21 "stop at clean failure" lesson applied perfectly at W25; the W16 HRV-27 cancellation was correct and self-initiated). <b>You respond to hard rules; you drift under vague guidance.</b> This plan uses hard numeric caps everywhere.
+    </div>
+  </div>
+
+  <!-- 2. EVIDENCE TABLE -->
+  <div class="section-lbl" id="evidence">📎 Evidence Table — Every Claim Graded</div>
+  <div class="card-body" style="font-family:'DM Mono',monospace;font-size:9.5px;color:var(--label);margin-bottom:10px;">
+    <span class="grade grade-E">E</span> direct evidence &nbsp; <span class="grade grade-I">I</span> inference from evidence &nbsp; <span class="grade grade-A">A</span> assumption / athlete-supplied, unverified &nbsp; <span class="grade grade-M">M</span> data missing
+  </div>
+  <div class="table-wrap">
+    <table class="dtable">
+      <tr><th>#</th><th>Claim</th><th>Grade</th><th>Source</th></tr>
+      <tr><td>1</td><td>Sled Push race-proven: 202kg/50m/1:37, #1 in field</td><td><span class="grade grade-E">E</span></td><td>Sydney splits</td></tr>
+      <tr><td>2</td><td>Sled Pull race-proven: 153kg/50m/2:36, #1 in field</td><td><span class="grade grade-E">E</span></td><td>Sydney splits</td></tr>
+      <tr><td>3</td><td>Farmers Carry race-proven: 1:35, rank 64</td><td><span class="grade grade-E">E</span></td><td>Sydney splits</td></tr>
+      <tr><td>4</td><td>Ski/Row durable with near-zero training (4:21/5:03 race)</td><td><span class="grade grade-E">E</span></td><td>Sydney splits + W26 orientation</td></tr>
+      <tr><td>5</td><td>WB ceiling = 50 clean, partial (3–4 round) fatigue only</td><td><span class="grade grade-E">E</span></td><td>probe_log rows 14, 15, 19</td></tr>
+      <tr><td>6</td><td>WB never tested above 50 under fatigue in 14 weeks; 5 consecutive missed ceiling probes</td><td><span class="grade grade-E">E</span></td><td>probe_log rows 16–19</td></tr>
+      <tr><td>7</td><td>WB limiter = quad fatigue + entry lactate (shoulders/rate fine, 2.25s/rep locked)</td><td><span class="grade grade-E">E</span></td><td>W12 SUN analysis, W26 rate lock</td></tr>
+      <tr><td>8</td><td>WB DQ mechanism = technical breakdown under fatigue</td><td><span class="grade grade-I">I</span></td><td>comparison doc §5 — no judge note exists</td></tr>
+      <tr><td>9</td><td>Fresh running: 4:17/km avg 5×1km; 4:09 best km</td><td><span class="grade grade-E">E</span></td><td>run_tracker</td></tr>
+      <tr><td>10</td><td>Compromised running: 5:13/km after sled fatigue (trained worst case)</td><td><span class="grade grade-E">E</span></td><td>run_tracker / STATE</td></tr>
+      <tr><td>11</td><td>Race run collapse (7:16–8:33/km) driven primarily by illness</td><td><span class="grade grade-I">I</span></td><td>HR signature + illness timeline; never stress-tested clean</td></tr>
+      <tr><td>12</td><td>Longest run ever logged: 10.03km @ 5:14/km (W13)</td><td><span class="grade grade-E">E</span></td><td>run_tracker</td></tr>
+      <tr><td>13</td><td>Weekly run volume in Sydney build: ~15–20km typical</td><td><span class="grade grade-I">I</span></td><td>summing run_tracker rows per week</td></tr>
+      <tr><td>14</td><td>VO₂max 58 (W21)</td><td><span class="grade grade-E">E</span> stale</td><td>profile — predates 3 illness episodes + race</td></tr>
+      <tr><td>15</td><td>Current VO₂max</td><td><span class="grade grade-M">M</span></td><td>retest required; athlete guess ~56 is a guess</td></tr>
+      <tr><td>16</td><td>HRV chronically suppressed W22–W26 (21–48ms); adequate performance inside this range</td><td><span class="grade grade-E">E</span></td><td>readiness_trend</td></tr>
+      <tr><td>17</td><td>Sleep onset primary problem; chronic debt (6h54 avg W17–W20)</td><td><span class="grade grade-E">E</span></td><td>readiness_trend</td></tr>
+      <tr><td>18</td><td>Pernicious anemia, monthly B12; calves respond to injection timing; late-month = risk window</td><td><span class="grade grade-E">E</span></td><td>medical.md</td></tr>
+      <tr><td>19</td><td>Chronic calf-Achilles-soleus watch; night cramp W22; clean W25–W26</td><td><span class="grade grade-E">E</span></td><td>medical + readiness</td></tr>
+      <tr><td>20</td><td>Cardiac sensation event W13, resolved, no recurrence in 14+ weeks</td><td><span class="grade grade-E">E</span></td><td>medical.md</td></tr>
+      <tr><td>21</td><td>Melbourne 2025 baseline 1:33:44 with Run 6+7 anomalies (14:19 + 21:18)</td><td><span class="grade grade-E">E</span></td><td>comparison doc</td></tr>
+      <tr><td>22</td><td>Melbourne "watch time ~1:21" (~12min of the 1:33 was stoppage)</td><td><span class="grade grade-A">A</span></td><td>athlete-supplied, unverified — <b>not in system trackers, confirm source</b></td></tr>
+      <tr><td>23</td><td>Underfueling documented in Sydney race week</td><td><span class="grade grade-E">E</span></td><td>W27 Wednesday note</td></tr>
+      <tr><td>24</td><td>Melbourne 2026 race date</td><td><span class="grade grade-M">M</span></td><td>official page "Date coming soon"; anchor 2026-12-12 assumed</td></tr>
+      <tr><td>25</td><td>Strength base: 80kg bench 4×6, +20kg pull-ups, 64–70kg KB lunges</td><td><span class="grade grade-E">E</span> stale</td><td>Brisbane-era, unretested</td></tr>
+      <tr><td>26</td><td>Weight 84–85kg current</td><td><span class="grade grade-A">A</span></td><td>84kg on file; post-race weight unverified</td></tr>
+    </table>
+  </div>
+
+  <!-- 3. CURRENT PROFILE -->
+  <div class="section-lbl" id="profile">📊 Current Performance Profile (as of 2026-07-04)</div>
+  <div class="table-wrap">
+    <table class="dtable">
+      <tr><th>Capacity</th><th>Status</th><th>Number</th></tr>
+      <tr><td class="phase-name">Sled Push</td><td><span style="color:var(--green);">Weapon, race-proven</span></td><td>245kg working · race 1:37 (#1)</td></tr>
+      <tr><td class="phase-name">Sled Pull</td><td><span style="color:var(--green);">Weapon, race-proven</span></td><td>204kg working · race 2:36 (#1)</td></tr>
+      <tr><td class="phase-name">Farmers Carry</td><td><span style="color:var(--green);">Strong, race-proven</span></td><td>race 1:35 (top 15%)</td></tr>
+      <tr><td class="phase-name">Ski / Row Erg</td><td><span style="color:var(--green);">Durable, low-maintenance</span></td><td>4:19/4:16 training; 4:21/5:03 race</td></tr>
+      <tr><td class="phase-name">Sandbag Lunge</td><td><span style="color:var(--green);">Solid, race-proven</span></td><td>race 5:12; capacity far above race load</td></tr>
+      <tr><td class="phase-name">BBJ</td><td><span style="color:var(--accent);">Functional — pacing discipline is the fix</span></td><td>race 5:30; 20m format resolved</td></tr>
+      <tr><td class="phase-name">Wall Balls</td><td><span style="color:var(--red);font-weight:600;">The unresolved gap</span></td><td>50 clean partial fatigue; 100 required</td></tr>
+      <tr><td class="phase-name">Running — fresh</td><td><span style="color:var(--green);">Strong</span></td><td>4:17/km × 5×1km</td></tr>
+      <tr><td class="phase-name">Running — compromised</td><td><span style="color:var(--gold);">Known gap, trained worst 5:13/km</span></td><td>race value contaminated by illness</td></tr>
+      <tr><td class="phase-name">Running — durability</td><td><span style="color:var(--red);font-weight:600;">Undertrained</span></td><td>longest ever 10km; weekly volume ~15–20km</td></tr>
+      <tr><td class="phase-name">Aerobic engine</td><td><span style="color:var(--gold);">Presumptively strong, unverified</span></td><td>VO₂max 58 stale; retest W31</td></tr>
+      <tr><td class="phase-name">Recovery system</td><td><span style="color:var(--orange);">Fragile under stacked stressors</span></td><td>sleep-onset problem; volatile HRV; B12-cycle sensitive</td></tr>
+      <tr><td class="phase-name">Health this year</td><td><span style="color:var(--red);">3 illness episodes in 6 weeks + race-week illness</span></td><td>immune load is a planning variable now</td></tr>
+    </table>
+  </div>
+
+  <!-- 4. LIMITERS -->
+  <div class="grid2">
+    <div>
+      <div class="section-lbl" id="limiters">🚧 Main Limiters (ranked)</div>
+      <div class="card" style="border-top:2px solid var(--red);">
+        <div class="assess-item crit"><span>Wall Balls under full 8-station fatigue.</span> 50 demonstrated, 100 required, zero exposure above 50 in 14 weeks. Ended Sydney; decides Melbourne. Chain: quad endurance → entry lactate tolerance → technical standard-holding under fatigue.</div>
+        <div class="assess-item crit"><span>Running durability.</span> ~8km of quality running inside a ~100-min effort required; one 10km run ever logged, ~15–20km weeks typical. Illness explains the magnitude of Sydney's collapse, not why the base was this thin underneath it.</div>
+        <div class="assess-item warn"><span>The health–planning interface.</span> 3 illness episodes in 6 weeks, a vaccine reaction at the critical phase entry, a race started 4 days post-onset, no go/no-go protocol existed.</div>
+        <div class="assess-item warn"><span>Fueling execution.</span> Documented underfueling race week; no in-race fueling record. Fixed by full rehearsal in every simulation.</div>
+        <div class="assess-item note"><span>Intensity-overshoot habit.</span> Entry runs faster than prescribed burn the very session's budget. Fixed with hard caps.</div>
+      </div>
+      <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--muted);margin-top:-6px;">De-listed as limiters: sleds, carry, ergs, lunge load capacity, WB rep-rate, grip, raw run speed, effort/willingness.</div>
+    </div>
+    <div>
+      <div class="section-lbl" id="opportunities">🎯 Main Opportunities</div>
+      <div class="card" style="border-top:2px solid var(--green);">
+        <div class="assess-item good"><span>The 1:15 components already exist — on different days.</span> Melbourne's clean legs + Sydney's station times while sick + a completed WB set arithmetically assemble a 1:15–1:18 race. Nothing new to invent — integrate onto one healthy day.</div>
+        <div class="assess-item good"><span>23 weeks, home city, no travel.</span> Sydney was 14 weeks + flight + evening wave after travel. Melbourne deletes the single largest uncontrolled stressor for free.</div>
+        <div class="assess-item good"><span>Winter base season.</span> Jul–Sep Melbourne weather is ideal for the durability build, and it lands at exactly the right calendar point.</div>
+        <div class="assess-item good"><span>A proven operating system.</span> G/Y/R gates, Saturday probe institution, append-only trackers, stop-at-clean-failure discipline — validated under fire, needs amendment not reinvention.</div>
+        <div class="assess-item good"><span>Adaptation speed is a documented trait.</span> Every directly-trained quality moved fast. Applied to WB ceiling and run volume with an 11-probe runway, the same trait closes both gaps.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. RISK -->
+  <div class="section-lbl" id="risk">⚠ Risk Analysis</div>
+  <div class="table-wrap">
+    <table class="dtable">
+      <tr><th>Risk</th><th>Likelihood</th><th>Impact</th><th>Mitigation</th></tr>
+      <tr><td>Illness consumes a key block again</td><td style="color:var(--red);">High</td><td style="color:var(--red);">High</td><td>WB work spread across 12 weeks / 11 probes; 3 sims where 2 suffice; vaccine in W33 deload, 15+ wks from race; binary illness rules (§13)</td></tr>
+      <tr><td>Calf/Achilles flare under raised volume</td><td style="color:var(--gold);">Med-High</td><td style="color:var(--red);">High</td><td>Volume ramps ≤10%/wk; eccentric calf protocol 2×/wk from W30; B12-cycle-aware scheduling</td></tr>
+      <tr><td>Race date shifts from 2026-12-12 anchor</td><td style="color:var(--gold);">Medium</td><td>Low-Med</td><td>Taper slides ±1 week; weekly date check</td></tr>
+      <tr><td>Sleep-onset problem erodes the build</td><td style="color:var(--gold);">Medium</td><td>Medium</td><td>22:00 device-off rule; sleep #1 gate unchanged; 2 nights &lt;7h = auto-Yellow</td></tr>
+      <tr><td>WB DQ mechanism misdiagnosed (judging vs technique)</td><td>Low-Med</td><td>Medium</td><td>Retrieve judge note (§16); train the standard explicitly regardless — monthly video review</td></tr>
+      <tr><td>Cardiac sensation recurs</td><td style="color:var(--green);">Low</td><td style="color:var(--red);">Very High</td><td>Rule unchanged: any palpitation = immediate abort + physician before next quality session</td></tr>
+      <tr><td>Overtraining from enthusiasm in a 23-week runway</td><td style="color:var(--gold);">Medium</td><td>Medium</td><td>3:1 load:deload rhythm; sled capped at maintenance; one probe/week hard</td></tr>
+      <tr><td>Weight drift on higher run volume</td><td style="color:var(--gold);">Medium</td><td>Medium</td><td>Fuel for the volume; weekly weight in KPI dashboard; &lt;82.5kg triggers nutrition review</td></tr>
+    </table>
+  </div>
+
+  <!-- 6. GOAL REALITY CHECK -->
+  <div class="section-lbl" id="goal">🏁 Race Goal Reality Check</div>
+  <div class="card" style="border-top:2px solid var(--gold);">
+    <div class="card-body"><b>Direct answer:</b> 1:15 in December is arithmetically live and evidentially unproven. It is the stretch target, and it must be earned at Gate 3, never assumed.<br><br>
+    Station budget from proven times (Sydney, while sick): Ski 4:21 + Push 1:37 + Pull 2:36 + BBJ ~5:00 + Row ~4:45 + FC 1:35 + Lunge 5:12 + WB ~5:45 ≈ <span>31–33 min</span>. Roxzone ~3 min (rank #4 Melbourne transitions). A 75-min finish leaves <span>~39–40 min for 8 running legs ≈ 4:50–5:00/leg average</span>. Melbourne 2025's clean legs, untrained, already averaged near that. 1:15 requires: Sydney's stations + Melbourne's running + a completed WB set + a healthy body — simultaneously.</div>
+  </div>
+  <div class="table-wrap">
+    <table class="dtable">
+      <tr><th>Component</th><th>1:15 Requires</th><th>Proven</th><th>Verdict</th></tr>
+      <tr><td>Stations 1–7</td><td>~26–27 min</td><td>~26 min, race-tested, sick</td><td style="color:var(--green);">✅ Banked</td></tr>
+      <tr><td>Wall Balls</td><td>100 reps, ≤6:00, valid</td><td>50 clean, partial fatigue</td><td style="color:var(--red);">❌ The gap</td></tr>
+      <tr><td>Running 8 legs</td><td>~4:50–5:00/leg under fatigue</td><td>~36min clean legs, once, 2025, unrepeated</td><td style="color:var(--gold);">⚠ Plausible, unproven</td></tr>
+      <tr><td>Health on the day</td><td>Clean</td><td>Failed twice this year at exactly this point</td><td style="color:var(--gold);">⚠ Protocol now exists (§13)</td></tr>
+    </table>
+  </div>
+  <div class="goal-ladder">
+    <div class="goal-card c">
+      <div class="goal-label">Goal C · Floor</div>
+      <div class="goal-time">&lt;1:28</div>
+      <div class="goal-desc">Any conditions. Valid finish, <span>no DQ</span>. This alone erases the Sydney line.</div>
+    </div>
+    <div class="goal-card b">
+      <div class="goal-label">Goal B · Primary</div>
+      <div class="goal-time">1:19–1:22</div>
+      <div class="goal-desc">High-confidence. Requires <span>WB 100 with ≤3 breaks</span> in SIM-3 and compromised legs <span>≤5:15 avg</span>. The race plan is written for B.</div>
+    </div>
+    <div class="goal-card a">
+      <div class="goal-label">Goal A · Stretch</div>
+      <div class="goal-time">1:15–1:17</div>
+      <div class="goal-desc">Conditional. Unlocks only if SIM-3 (W46) delivers <span>WB 100 ≤2 breaks all-clean</span>, sim legs <span>≤5:00 avg</span>, and <span>zero illness in the prior 14 days</span>. All three on paper → race A-pace from Run 4. Any missing → race B, no renegotiation.</div>
+    </div>
+  </div>
+  <div class="card-body" style="font-family:'DM Mono',monospace;font-size:10px;color:var(--label);">A clean 1:20 in December is the correct staircase step toward 1:15 at a 2027 race. A reckless 1:15 attempt that reproduces Sydney is a step backward. <span style="color:var(--text);">Stress is required. Chaos is not allowed.</span></div>
+
+  <!-- 7. MACROCYCLE -->
+  <div class="section-lbl" id="macrocycle" style="margin-top:20px;">🗓 Full Macrocycle — W28 (2026-07-06) → W50 (2026-12-12)</div>
+  <div class="card-body" style="margin-bottom:10px;">Design principles, each traceable to a Sydney failure: <span>front-load the highest-risk capacity</span> (WB probes begin W35, run 12 weeks); <span>redundancy over precision</span> (3 sim slots, 2 required); <span>volume before intensity</span> (5 base weeks before WB ceiling work resumes); <span>3:1 rhythm</span> (every 4th week deloads, scheduled not earned).</div>
+  <div class="table-wrap">
+    <table class="dtable">
+      <tr><th>Phase</th><th>Weeks</th><th>Dates</th><th>Name</th><th>One Job</th></tr>
+      <tr class="phase-row"><td>0</td><td>W28–W29</td><td>Jul 6 – Jul 19</td><td class="phase-name">Recovery &amp; Clearance</td><td>Health restored, gates cleared, baselines retested</td></tr>
+      <tr class="phase-row"><td>1</td><td>W30–W34</td><td>Jul 20 – Aug 23</td><td class="phase-name">Foundation</td><td>Run volume 25→38km/wk; WB technique+volume rebuilt; VO₂max measured; strength touch restored</td></tr>
+      <tr class="phase-row"><td>2</td><td>W35–W40</td><td>Aug 24 – Oct 4</td><td class="phase-name">Build</td><td>Threshold + compromised running; WB ceiling 50→70 under fragment fatigue; half-sim W40</td></tr>
+      <tr class="phase-row"><td>3</td><td>W41–W46</td><td>Oct 5 – Nov 15</td><td class="phase-name">Race-Specific Peak</td><td>Full 8-station sims ×3; WB 80→100 under true race fatigue; pacing+fueling rehearsed</td></tr>
+      <tr class="phase-row"><td>4</td><td>W47–W49</td><td>Nov 16 – Dec 6</td><td class="phase-name">Taper</td><td>Volume −40/−55/−65%; intensity preserved; illness firewall</td></tr>
+      <tr class="phase-row" style="background:rgba(0,255,135,.03);"><td>R</td><td>W50</td><td>Dec 7 – Dec 13</td><td class="phase-name" style="color:var(--green);">Race Week</td><td style="color:var(--green);">HYROX Melbourne (anchor Sat Dec 12)</td></tr>
+    </table>
+  </div>
+
+  <div class="grid2">
+    <div class="card" style="border-top:2px solid var(--muted);">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--muted);"></span>Phase 0 — Recovery &amp; Clearance</div>
+      <div class="card-body">W28 executes the written recovery protocol unchanged: six binary gates, zero run/WB/sled/jump until all clear — exists because the athlete raced hard while sick and flew home same day. W29 is graded reactivation: 3 easy runs (20–35min Z1–Z2), 2 mobility/eccentric-calf sessions, one light strength touch, zero stations. Target: restoration only. Proof: sleeping HR ≤56, symptoms zero 7+ days, calves 0–2/10, sleep ≥7h on 5/7 nights. Any gate failure extends Phase 0 whole weeks; Phase 1 compresses.</div>
+    </div>
+    <div class="card" style="border-top:2px solid var(--accent);">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--accent);"></span>Phase 1 — Foundation</div>
+      <div class="card-body">Exists because run durability is the cheapest large gain available and winter is its season. Targets: volume 25→38km, long run 60→80min, WB movement quality at volume (125–150 reps/session, zero ceiling chasing), fresh VO₂max (W31), sled maintained not chased. <b>W33 deload carries the flu vaccine</b> — placed in the lowest-cost week, 15 weeks from race. W34 closes with Gate 1. Proof: 35+km absorbed calves ≤2/10, long run 75–80min, WB 5×25 all ≤1:05 clean, VO₂max on paper.</div>
+    </div>
+    <div class="card" style="border-top:2px solid var(--gold);">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--gold);"></span>Phase 2 — Build</div>
+      <div class="card-body">Converts base into HYROX-specific capacity; opens the WB ceiling early — the direct structural correction of Sydney's fatal flaw. Targets: threshold 4:15–4:20, compromised running 4:40→4:30/km, WB clean line 50→70 via Saturday probes (+5/probe), leg-endurance work attacking the quad-fatigue sub-limiter. W38 deloads. W40 closes with the <b>half-simulation</b> (stations 1–4 + race-pace runs, then WB probe 60–70 under that fatigue) and Gate 2. Two consecutive missed probes with green health = programming change, not a bigger jump.</div>
+    </div>
+    <div class="card" style="border-top:2px solid var(--red);">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--red);"></span>Phase 3 — Race-Specific Peak</div>
+      <div class="card-body">Does what Sydney never did once: full 8-station race fatigue, repeatedly, WB 100 at the end. <b>SIM-1 (W42):</b> 90% pace, WB 100 liberal breaks (40+30+30), full fueling rehearsal. <b>SIM-2 (W44):</b> 92–95%, WB ≤3 breaks, evening start rehearsed. <b>SIM-3 (W46):</b> dress rehearsal 90–93%, WB ≤2 breaks — this is <b>Gate 3</b>, the A/B decision. Only 2 of 3 sims must land for Goal B. If SIM-1 WB collapses below 80, W43 converts from light week to WB-focused block.</div>
+    </div>
+  </div>
+  <div class="card" style="border-top:2px solid var(--green);">
+    <div class="card-ttl"><span class="ct-dot" style="background:var(--green);"></span>Phase 4 — Taper</div>
+    <div class="card-body">Volume −40% (W47), −55% (W48), −65% (W49); intensity preserved 85–90% in short touches. WB skill touches only (40 fresh W47, 30 W48, 20 W49) — <span>defends the ceiling already built, never chases a new one.</span> Illness firewall maximal: crowd avoidance where practical, sleep 22:00 hard, fueling full, zero probes after W46. If the race lands 19–20 Dec, W47 becomes a 4th specific week and the taper shifts whole.</div>
+  </div>
+
+  <!-- 8. WEEKLY MODEL -->
+  <div class="section-lbl" id="weekly">📆 Weekly Training Model (Phases 1–3 Template)</div>
+  <div class="table-wrap">
+    <table class="dtable">
+      <tr><th>Day</th><th>Session</th><th>Purpose</th><th>Hard Cap</th></tr>
+      <tr><td class="phase-name">MON</td><td>Run Quality</td><td>Threshold / speed economy (5×1km class)</td><td>HR ≤152; pace per phase</td></tr>
+      <tr><td class="phase-name">TUE</td><td>Lower Strength + Sled Maintenance</td><td>Leg endurance (front squat/step-up) + 1 race-style sled exposure</td><td>Sled ≤20min, load ≤204kg, no PRs</td></tr>
+      <tr><td class="phase-name">WED</td><td>Upper + Z2 Bridge</td><td>Strength touch + 25–35min Z2; calf eccentrics</td><td>Drops first on Yellow</td></tr>
+      <tr><td class="phase-name">THU</td><td>Compromised / HYROX Rhythm</td><td>Station→run couplets — the race-integration engine</td><td>Entry pace caps; BBJ 30m R1 ≥1:50</td></tr>
+      <tr><td class="phase-name">FRI</td><td>Aerobic Reset</td><td>35–45min Z2, HR 120–132</td><td>Zero Z3</td></tr>
+      <tr><td class="phase-name">SAT</td><td>Fragment + Probe</td><td>The probe institution, unchanged: one probe max</td><td>Entry run cap written on the plan</td></tr>
+      <tr><td class="phase-name">SUN</td><td>Long Run</td><td>60–90min progressive Z2 — the durability builder, new to this build</td><td>Last 15min may drift to Z3, never above</td></tr>
+    </table>
+  </div>
+  <div class="card-body">Masters overlay (46y/o): the three high-CNS days (MON, THU, SAT) stay 48h apart — never trade days in a way that stacks two. Two full quality days/week max in Phase 1, three from Phase 2.</div>
+
+  <!-- 9. SESSION LIBRARY -->
+  <div class="section-lbl" id="sessions" style="margin-top:16px;">📚 Key Session Library</div>
+  <div class="grid2">
+    <div>
+      <div class="sess-card"><div class="sess-name"><b>R1</b> · Threshold Repeats (MON)</div><div class="sess-desc">5×1km. P1: 4:35–4:45/km. P2: 4:20–4:30→4:15–4:20. P3: 4:10–4:20. Rest 2:00 jog. HR cap 152. Yellow: 4 reps, cap 145.</div></div>
+      <div class="sess-card"><div class="sess-name"><b>R2</b> · Long Run (SUN)</div><div class="sess-desc">Progressive Z2. P1: 60→80min. P2: 75–90min, last 10min marathon-effort. P3: 70–80min with 3×5min at race pace. Missable only on Red.</div></div>
+      <div class="sess-card"><div class="sess-name"><b>R3</b> · Compromised Intervals (THU core, P2–3)</div><div class="sess-desc">3–4 rounds [station block → 1km run]: (a) sled push 152kg 50m + 20 lunges, (b) 15 BBJ + 25 WB, (c) row 500m + carry 100m. Run target P2 4:40→4:30, P3 4:25–4:35. The KPI that decides Goal A lives here.</div></div>
+      <div class="sess-card"><div class="sess-name"><b>W1</b> · WB Volume/Technique (P1 SAT+TUE)</div><div class="sess-desc">5×25 @ 9kg, full standard, every rep to 3.05m, sets ≤1:05, rest 2:00. Monthly video review vs. judging standard.</div></div>
+    </div>
+    <div>
+      <div class="sess-card"><div class="sess-name"><b>W2</b> · WB Ceiling Probe (P2 SAT)</div><div class="sess-desc">Fragment (3×~600m @ 5:00–5:15 capped + 25 WB) → 1km entry @ 5:00–5:10 → single max clean set. Floor = lock, target = lock+5. Ladder: 55(W35)→60(W36)→65(W37)→deload→70(W39).</div></div>
+      <div class="sess-card"><div class="sess-name"><b>W3</b> · WB Race-Dose (P3 sims)</div><div class="sess-desc">100 reps at planned break pattern under full 8-station fatigue. Patterns rehearsed, never improvised: SIM-1 40+30+30, SIM-2 45+30+25, SIM-3 race pattern from SIM-2 data.</div></div>
+      <div class="sess-card"><div class="sess-name"><b>S1</b> · Sled Maintenance (TUE)</div><div class="sess-desc">2×18m push @ 180–204kg + 2×18m pull @ 164–184kg, race rhythm, ≤20min. One heavy refresher every 4th week. The chase is over; it was won.</div></div>
+      <div class="sess-card"><div class="sess-name"><b>L1</b> · Leg Endurance (TUE core)</div><div class="sess-desc">Front squat 4×10–12 moderate, DB step-ups 3×20, walking lunges 28+28kg 2×20m, calf eccentrics 3×15. Targets the quad-fatigue sub-limiter under WB.</div></div>
+      <div class="sess-card"><div class="sess-name"><b>F1</b> · Full Simulation (P3 SAT ×3)</div><div class="sess-desc">All 8 stations at race loads, runs 500–800m at race pace (gym-adjusted), full fueling protocol, full timing, WB 100 finish. The session Sydney never had.</div></div>
+      <div class="sess-card"><div class="sess-name"><b>B1</b> · BBJ Discipline (THU rotation)</div><div class="sess-desc">2×30m, R1 hard floor 1:50–2:00. The W20 lesson (1:34 R1 → 2:06 R2 collapse) is a permanent pacing rule now.</div></div>
+    </div>
+  </div>
+
+  <!-- 10. PROGRESSION RULES -->
+  <div class="section-lbl" id="progression" style="margin-top:8px;">📈 Progression Rules</div>
+  <div class="card">
+    <ol class="numbered">
+      <li>Run volume: <span>+10%/week max</span>; deload weeks −40%. Long run +10min per step, held two weeks before the next.</li>
+      <li>Run pace: a tier advances only after two clean sessions at the current tier (pace held, HR under cap, no calf signal).</li>
+      <li>WB ceiling: <span>+5 reps per successful probe.</span> Missed probe → same target next slot. Two consecutive misses with green health → programming change, never a bigger jump.</li>
+      <li>WB density (Phase 3): progression is fewer/shorter breaks at 100 total, never more than 100.</li>
+      <li>Sled: progression is rest reduction only. <span>Load frozen ≤204kg</span> until after Melbourne.</li>
+      <li>Compromised pace: −5 sec/km per two-week block, only when current pace holds across all rounds without drift &gt;10s.</li>
+      <li>Strength: maintenance doses (2×/wk); loads 80–85% of Brisbane-era numbers; zero strength PR attempts this build.</li>
+      <li>Everything: <span>technique &gt; number, always.</span> A clean 65 outranks an ugly 72. The rep before the first ugly rep is the result.</li>
+    </ol>
+  </div>
+
+  <!-- 11. KPI DASHBOARD -->
+  <div class="section-lbl" id="kpi">📋 Testing / KPI Dashboard</div>
+  <div class="table-wrap">
+    <table class="dtable">
+      <tr><th>KPI</th><th>Baseline (Jul 4)</th><th>Gate 1 (W34)</th><th>Gate 2 (W40)</th><th>Gate 3 (W46)</th><th>Race Req (B/A)</th></tr>
+      <tr><td>VO₂max</td><td>stale 58 / est. 56</td><td>measured (≥55)</td><td>≥57</td><td>≥58</td><td>—</td></tr>
+      <tr><td>5×1km avg</td><td>4:17 (May)</td><td>4:30–4:40</td><td>4:18–4:22</td><td>4:12–4:18</td><td>—</td></tr>
+      <tr><td>Compromised 1km</td><td>5:13</td><td>—</td><td>≤4:35</td><td>≤4:28</td><td>≤5:15 avg / ≤5:00 avg</td></tr>
+      <tr><td>Long run</td><td>10km once ever</td><td>75–80min</td><td>85–90min</td><td>80min w/ race-pace inserts</td><td>—</td></tr>
+      <tr><td>Weekly run volume</td><td>~15–20km</td><td>35–38km</td><td>38–42km</td><td>40–45km peak</td><td>—</td></tr>
+      <tr><td>WB clean lock (fragment)</td><td>50</td><td>50 (technique)</td><td>≥65</td><td>—</td><td>—</td></tr>
+      <tr><td>WB under full sim</td><td>never tested</td><td>—</td><td>60–70 (half-sim)</td><td style="color:var(--gold);font-weight:600;">100, ≤3br/≤2br</td><td>100 valid</td></tr>
+      <tr><td>Sled push race-style</td><td>1:37 race</td><td>maintained</td><td>maintained</td><td>maintained</td><td>≤1:45</td></tr>
+      <tr><td>Sleeping HR</td><td>56 post-race</td><td>≤55</td><td>≤55</td><td>≤54</td><td>baseline ±2 race week</td></tr>
+      <tr><td>Sleep 7-day avg</td><td>6h54 (W17–20 era)</td><td>≥7h00</td><td>≥7h10</td><td>≥7h15</td><td>≥7h30 race week</td></tr>
+      <tr><td>Weight</td><td>84kg (assumed)</td><td>83.5–85</td><td>83.5–85</td><td>83.5–85</td><td>≥83</td></tr>
+      <tr><td>Calves</td><td>0/10</td><td>≤2/10 under volume</td><td>≤2/10</td><td>≤2/10</td><td>0–1/10</td></tr>
+    </table>
+  </div>
+  <div class="card-body">Testing days: VO₂max field test W31 MON and W40 MON; all other KPIs fall out of normal sessions and gates. Probe log, trackers, and STATE.md continue append-only, unchanged.</div>
+
+  <!-- 12. RECOVERY DECISION SYSTEM -->
+  <div class="section-lbl" id="recovery" style="margin-top:16px;">🛡 Recovery Decision System — 4 Amendments</div>
+  <div class="card-body" style="margin-bottom:10px;">The Sydney-build G/Y/R system carries forward intact — it worked; every correct cancellation in the record came from it. Four amendments, each purchased with Sydney evidence.</div>
+  <div class="grid2">
+    <div class="card" style="border-top:2px solid var(--accent);">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--accent);"></span>Amendment 1 — Sleeping HR Joins HRV</div>
+      <div class="card-body">W22–W26 proved HRV runs chronically suppressed (21–48ms) while performance stays adequate; HRV alone over-blocks and, worse, its rebound falsely cleared Sydney. New gate pair: sleeping HRV trend <span>and</span> sleeping HR vs. ~53–56 baseline. Sleeping HR ≥+4 = Yellow regardless of HRV; ≥+7 = Red.</div>
+    </div>
+    <div class="card" style="border-top:2px solid var(--red);">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--red);"></span>Amendment 2 — Illness Rules, Binary</div>
+      <div class="card-body">Below-neck symptom (cough, chest, wheeze) → zero training until 72h fully clear, then 3-day graded return. Above-neck only → Z1–Z2 permitted, zero quality/probes. Fever → 7 days min before quality work. <b>Race go/no-go:</b> any respiratory illness onset within 7 days of race day caps the race at training pace or withdraws it — decided on paper before race week, never by feel. This is the direct price of Sydney.</div>
+    </div>
+    <div class="card" style="border-top:2px solid var(--gold);">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--gold);"></span>Amendment 3 — B12-Cycle Scheduling</div>
+      <div class="card-body">Injections ~end of month (next ~Jul 29). 5 days before each is a known calf-risk window: long runs shorten, Saturday probes downgrade to build sessions. Calendar: ~Jul 29, Aug 29, Sep 29, Oct 29, Nov 27 (pulled forward so race day sits ~2 weeks post-injection — the demonstrated best window).</div>
+    </div>
+    <div class="card" style="border-top:2px solid var(--muted);">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--muted);"></span>Amendment 4 — Cut Rules, Consolidated</div>
+      <div class="card-body">Drop one tier if: HR over cap rep 2–3; calf &gt;3/10; pace drift &gt;15s/km; WB set &gt;1:08 fragments; BBJ R2 &gt;2:10 (30m). Stop entirely if: calf 4/10; sharp pain; cardiac sensation; two consecutive technical failures; subjective "wrong." Hierarchy unchanged: cardiac → cramp/acute calf → sleep → HRV+sleeping-HR → calves → body feel → in-session data → athlete intent last.</div>
+    </div>
+  </div>
+
+  <!-- 13. FIRST 4 WEEKS -->
+  <div class="section-lbl" id="first4">🔬 First 4 Weeks In Detail</div>
+  <div class="wk-card recover">
+    <div class="wk-hd"><div class="wk-num">W28</div><div class="wk-dates">Jul 6–12 · Recovery</div></div>
+    <div class="wk-name">Execute the already-written recovery protocol exactly</div>
+    <div class="card-body">Six binary gates. Earliest run touch Sat Jul 11, conditional. Nothing in this master plan overrides `11_recovery_week_28_plan.md` this week.</div>
+  </div>
+  <div class="wk-card recover">
+    <div class="wk-hd"><div class="wk-num">W29</div><div class="wk-dates">Jul 13–19 · Reactivation</div></div>
+    <div class="wk-name">Entry condition: all six W28 gates cleared, or this week repeats W28</div>
+    <div class="wk-days">
+      <div class="wk-day"><b>MON</b>Walk 40min + mobility + calf eccentrics 3×12</div>
+      <div class="wk-day"><b>TUE</b>Run 20min Z1–Z2 (HR ≤135), no strides</div>
+      <div class="wk-day"><b>WED</b>Full-body strength @ 60% + 15min bike Z1</div>
+      <div class="wk-day"><b>THU</b>Run 25min Z2 + calf eccentrics</div>
+      <div class="wk-day"><b>FRI</b>Rest or 30min walk</div>
+      <div class="wk-day"><b>SAT</b>Run 30–35min Z2, last 10min free-feel under HR 140</div>
+      <div class="wk-day"><b>SUN</b>Walk + week review; confirm Phase 1 entry</div>
+    </div>
+    <div class="wk-principle">Zero: WB, sled, BBJ, lunges, intensity. Rebuild the baseline dataset the amended gates need.</div>
+  </div>
+  <div class="wk-card">
+    <div class="wk-hd"><div class="wk-num">W30</div><div class="wk-dates">Jul 20–26 · Foundation 1</div></div>
+    <div class="wk-name">Run volume ≈ 25km</div>
+    <div class="wk-days">
+      <div class="wk-day"><b>MON</b>4×1km @ 4:40–4:50, rest 2:00, HR ≤148 — humble re-entry tier</div>
+      <div class="wk-day"><b>TUE</b>L1 leg endurance @ 70% + sled maintenance (push 180kg, pull 164kg ×2×18m)</div>
+      <div class="wk-day"><b>WED</b>Upper touch (bench 4×8@60kg, pull-ups 4×6 BW, dips 3×8) + 25min Z2 bike</div>
+      <div class="wk-day"><b>THU</b>Couplet intro — 3×[500m row + 800m run @ 5:00–5:10] + WB technique 3×15</div>
+      <div class="wk-day"><b>FRI</b>35min Z2 run, HR 120–132</div>
+      <div class="wk-day"><b>SAT</b>WB volume — 5×20 @ 9kg, sets ≤55s, rest 2:00, full standard; film one set</div>
+      <div class="wk-day"><b>SUN</b>Long run 60min Z2</div>
+    </div>
+    <div class="wk-principle">The base is built at paces that feel like an insult.</div>
+  </div>
+  <div class="wk-card">
+    <div class="wk-hd"><div class="wk-num">W31</div><div class="wk-dates">Jul 27–Aug 2 · Foundation 2</div></div>
+    <div class="wk-name">Run volume ≈ 28km · B12 injection ~Jul 29 (WED)</div>
+    <div class="wk-days">
+      <div class="wk-day"><b>MON</b><span style="color:var(--gold);">VO₂max field test</span> + 3×1km @ 4:40 floater — replaces the stale 58</div>
+      <div class="wk-day"><b>TUE</b>L1 @ 75% + sled maintenance</div>
+      <div class="wk-day"><b>WED</b>Upper + 30min Z2 — B12 day, nothing heavy</div>
+      <div class="wk-day"><b>THU</b>3×[15 BBJ @ ≥1:55/30m + 800m @ 5:00] — BBJ discipline returns</div>
+      <div class="wk-day"><b>FRI</b>35–40min Z2</div>
+      <div class="wk-day"><b>SAT</b>WB 5×25, sets ≤1:05, rest 2:00 (125 total); video vs. standard</div>
+      <div class="wk-day"><b>SUN</b>Long run 65min</div>
+    </div>
+    <div class="wk-principle">Measure before you plan; the number replaces the guess.</div>
+  </div>
+  <div class="wk-card">
+    <div class="wk-hd"><div class="wk-num">W32</div><div class="wk-dates">Aug 3–9 · Foundation 3</div></div>
+    <div class="wk-name">Run volume ≈ 31km</div>
+    <div class="wk-days">
+      <div class="wk-day"><b>MON</b>5×1km @ 4:35–4:45, HR ≤150</div>
+      <div class="wk-day"><b>TUE</b>L1 @ 80% + sled maintenance + 2×20m lunges 28+28kg</div>
+      <div class="wk-day"><b>WED</b>Upper + 30min Z2 + eccentrics</div>
+      <div class="wk-day"><b>THU</b>3×[sled push 152kg 20m + 1km @ 4:50–5:00] — first true compromised touch</div>
+      <div class="wk-day"><b>FRI</b>40min Z2</div>
+      <div class="wk-day"><b>SAT</b>WB 5×25 + finisher 2×15 after 400m @ 5:15 — first fatigue-adjacent WB since race</div>
+      <div class="wk-day"><b>SUN</b>Long run 70min</div>
+    </div>
+    <div class="wk-principle">Volume climbs; nothing else does.</div>
+  </div>
+  <div class="wk-card deload">
+    <div class="wk-hd"><div class="wk-num">W33</div><div class="wk-dates">Aug 10–16 · Deload + Vaccine</div></div>
+    <div class="wk-name">Run volume ≈ 19km (−40%)</div>
+    <div class="wk-days">
+      <div class="wk-day"><b>MON</b>3×1km @ 4:45, easy</div>
+      <div class="wk-day"><b>TUE</b>Mobility + light sled rhythm 2 sets</div>
+      <div class="wk-day"><b>WED</b><span style="color:var(--gold);">Flu vaccine, morning.</span> Rest of day off. Thu–Fri auto-Yellow floor regardless of markers.</div>
+      <div class="wk-day"><b>THU</b>Walk or 25min Z1 by feel</div>
+      <div class="wk-day"><b>FRI</b>30min Z2 if clean; rest if any vaccine reaction</div>
+      <div class="wk-day"><b>SAT</b>WB technique 4×15 fresh, standard focus, zero fatigue</div>
+      <div class="wk-day"><b>SUN</b>Long run 50min easy</div>
+    </div>
+    <div class="wk-principle">The cheapest week buys the most expensive insurance.</div>
+  </div>
+  <div class="card-body">(W34 closes Phase 1 with the consolidation week and Gate 1; issues at the W33 Sunday close-out per standard workflow.)</div>
+
+  <!-- 14. NON-NEGOTIABLES -->
+  <div class="section-lbl" id="rules" style="margin-top:16px;">🔒 Non-Negotiable Rules</div>
+  <div class="card" style="border-top:2px solid var(--red);">
+    <ol class="numbered">
+      <li><span>No racing or race-pace efforts within 7 days of respiratory illness onset.</span> The written go/no-go rule decides; feel does not. Sydney's tuition, paid once, never paid again.</li>
+      <li>The Sunday long run exists every week (Red days excepted) — the cheapest fix to the most expensive limiter.</li>
+      <li>Entry-pace caps are absolute. Probe/sim entry runs at the written pace, ±5s/km. Three documented instances say this rule needs to exist in writing.</li>
+      <li>Sled loads frozen ≤204kg until after Melbourne. The station is won; every kg chased there is stolen from WB and running.</li>
+      <li>One probe per week, stop at clean failure, ugly reps count zero. Unchanged and permanent.</li>
+      <li>22:00 bedtime, devices down. Sleep sits atop the decision hierarchy; it has to sit atop the evening too.</li>
+      <li>Deloads execute as scheduled. Feeling strong in a deload week is the deload working.</li>
+      <li>Vaccine W33, B12 per the §13 calendar. Immune and hematological logistics are training decisions now.</li>
+      <li>Any cardiac sensation = immediate abort + physician review before the next quality session. Unchanged.</li>
+      <li>Full fueling protocol in every simulation. W27's underfueled Wednesday retires as its final unrehearsed appearance.</li>
+      <li><span>Push hard:</span> WB ceiling probes on green days, compromised-run intervals, long-run progression, the three simulations. <span>Protect:</span> sleep, calves in the pre-B12 window, deload weeks, race week itself.</li>
+    </ol>
+  </div>
+
+  <!-- 15. MISSING DATA -->
+  <div class="section-lbl" id="missing">❓ Missing Data Needed From Athlete</div>
+  <div class="card" style="border-top:2px solid var(--gold);">
+    <ol class="numbered">
+      <li><span>The Wall Balls DQ mechanism.</span> No-rep warnings, judge wording, which rep range, pulled vs. timed out. Check the HYROX result email / athlete portal for a judge note.</li>
+      <li><span>Melbourne 2026 official date</span> — the moment it publishes.</li>
+      <li><span>Fresh VO₂max</span> — produced by the plan itself at W31 MON; conservative tier used until then.</li>
+      <li><span>Current weight</span>, first morning after W28 gates clear.</li>
+      <li><span>Blood panel</span> at the GP visit that should happen W29–W30 anyway (cardiac-history mention + race clearance): B12, ferritin/iron, vitamin D.</li>
+      <li><span>Sydney in-race fueling record</span> — what was actually taken and when, best recollection.</li>
+      <li><span>Melbourne 2025 Run 6/7</span> — confirm the ~12min stoppage claim (evidence table #22). It materially changes the Goal A arithmetic.</li>
+      <li><span>Sleep-onset intervention decision</span> — pattern documented across 14 weeks, never formally attempted. Start: fixed 22:00 anchor + morning light + caffeine cutoff 13:00; GP conversation if onset latency stays &gt;30min after 4 weeks.</li>
+      <li><span>Wave-time preference</span> for Melbourne registration — book the earliest available Pro wave; evening wave was a documented Sydney stressor.</li>
+    </ol>
+  </div>
+
+  <!-- IDENTITY -->
+  <div class="identity">
+    <div class="id-lbl">🐺 Wolf Identity</div>
+    <div class="id-lines">
+      <div class="id-line hl">Home ground. No flight. No excuse.</div>
+      <div class="id-line hl2">The stress goes where the gap is.</div>
+      <div class="id-line hl3">Chaos goes nowhere.</div>
+      <div class="id-line hl">Stress is required. Chaos is not allowed.</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-l">HOME GROUND · HYROX MELBOURNE MASTER PLAN · W28 → W50 (2026-07-06 → 2026-12-12*) &nbsp;//&nbsp; YARO &nbsp;//&nbsp; PRO MEN 45–49 · *DATE UNCONFIRMED</div>
+    <div class="tags">
+      <div class="tag">#HomeGround</div>
+      <div class="tag">#HYROXMelbourne2026</div>
+      <div class="tag">#WBGap50to100</div>
+      <div class="tag">#GoalLadderCBA</div>
+      <div class="tag">#DateTBC</div>
+      <div class="tag">#SupersedesSydneyPlan</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
