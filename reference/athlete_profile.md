@@ -29,6 +29,35 @@
   - Transitions ×8: ≤15 sec each
   - Total station time: ~38–42 min
 
+---
+
+## RACE RESULT — HYROX Sydney 2026-07-03 (RECORDED 2026-07-04)
+
+**Result:** 1:48:24 · **DISQUALIFIED at Wall Balls (final station)** · Bib 184047 · Wave 18:40
+
+**Context:** Raced 4 days after first reporting respiratory/sinus illness (flagged 2026-06-29, marked HRV-recovered by 2026-07-01, never confirmed fully cleared). Watch data: avg HR 154, max 172, 1:07:51 in Zone 4 + 16:14 in Zone 5 across the ~1:50 effort — a high-output, high-effort race, not a passive fade.
+
+Full source-tagged breakdown, station-by-station comparison to the 2025 Melbourne baseline, and root-cause analysis: `analytics/race_comparison_melbourne_vs_sydney_2026.md`.
+
+### Post-Sydney Capability Profile — What Is Confirmed vs What Broke
+
+**Confirmed race-ready under real competition pressure (no further doubt):**
+- **Sled Push:** ranked #1 in the entire field (1:37 at Sydney vs 3:45 at Melbourne baseline) — the 245 kg training working-load fully transferred
+- **Sled Pull:** ranked #1 in the entire field (2:36 at Sydney vs 6:01 at Melbourne baseline) — same conclusion
+- **Farmers Carry:** top 15% of field (rank 64) — grip and carry strength confirmed
+- **Ski Erg / Row Erg:** held steady vs Melbourne baseline despite only one dedicated training exposure in the entire 14-week build — durable, low-maintenance stations for this athlete
+- **Sandbag Lunge:** slight improvement vs Melbourne, calf-managed throughout
+- **Aerobic engine / effort capacity:** VO₂max 58 (build PR), and Sydney HR data confirms the athlete can sustain 84+ minutes in Zone 4/5 — the engine works; it was not an effort or motivation failure
+
+**Not yet proven — this is where the next block has to focus:**
+- **Wall Balls under full 8-station race fatigue.** Best-ever demonstrated capacity across the entire build was 50 clean reps, and only under a partial 3–4 round fragment simulation — never a full 8-station, ~7 km fatigue load, and never at the 100-rep race requirement. The gap between 50 (demonstrated) and 100 (required) was never closed in 14 weeks, and Phase 3 (the phase specifically designed to close it, W22–W24) was lost entirely to illness disruption. The Sydney DQ happened at exactly this station, under exactly this untested condition.
+- **Running under extreme accumulated fatigue.** Training had already identified a "compromised pace" limiter (~5:13/km after sled fatigue, vs 4:15–4:25 target) and planned to manage it with pacing discipline rather than fix it outright. Sydney's actual collapse (7:16–8:33/km through the middle of the race, 13:18 on the final run) was far larger than that trained worst case — consistent with the athlete's own account of racing while still sick, but this magnitude of gap has never been stress-tested clean (i.e. without illness) at full race distance.
+- **Illness-adjacent race-day decision-making.** No protocol currently exists in this system for "how close to a respiratory illness is too close to race hard for 100+ minutes." This is a genuine gap to design before the next target race, not just a one-off bad-luck event.
+
+### What This Changes About the Athlete Profile
+
+This is not a fitness ceiling problem. The demonstrated capacities (VO₂max 58, sled loads well above race requirement, WB technique and rate when fresh or lightly fatigued) are all consistent with a sub-1:20 HYROX in clean health. The Sydney result is best read as **the wrong day, raced anyway, with one station (WB) that had a genuine, never-closed capacity gap underneath it.** The next block's real work is: (1) close the WB 50→100 gap under true full-race fatigue simulation, with enough weeks that a repeat of the W22–W24 illness pattern doesn't consume the only phase built for it, and (2) build an explicit go/no-go protocol for racing through illness, because "HRV rebounded" was not sufficient signal that the body was ready for a 108-minute Zone 4/5 effort.
+
 ## Training Base
 - **Primary gym:** Iron Viking Gym, Moorabbin (Australia)
 - **Gym sled track:** 18 m (key context — gym working loads measured at this distance)

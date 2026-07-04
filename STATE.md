@@ -5,19 +5,19 @@
 ---
 
 ## TIME ANCHOR
-- **Last updated:** 2026-07-02 (Thursday, Melbourne/Sydney — Race Week W27, travel day)
-- **Race day:** 2026-07-03 (Friday) — HYROX Sydney
-- **Days to race:** 1
-- **Sydney Build Day:** 95 (Thu 2026-07-02) · Race = Build Day 96
-- **Sydney Build Week:** 14 (W27 starts 2026-06-29)
-- **Annual Week:** 27 (2026-06-29 → 2026-07-03)
-- **Phase:** Phase 4 — RACE WEEK
+- **Last updated:** 2026-07-04 (Saturday, Melbourne — post-race, athlete returned)
+- **Race day:** 2026-07-03 (Friday) — HYROX Sydney — **COMPLETE**
+- **Race result:** 1:48:24 — **DISQUALIFIED at Wall Balls (final station)**
+- **Sydney Build Day:** 96 (Fri 2026-07-03, race day — final build day)
+- **Sydney Build Week:** 14 (W27, closed at race)
+- **Annual Week:** 27 (2026-06-29 → 2026-07-03) — CLOSED. Now in post-race recovery window (Sat 4 – Sun 5 Jul) ahead of W28.
+- **Phase:** Phase 4 (Race Week) — **CLOSED**. **Phase 5 — Post-Race Recovery** now open (undefined until this update; see `reference/master_plan.md`).
 - **W22 STATUS:** COMPLETE — Vaccine Disruption / Recovery Protection Week (Grade B)
 - **W23 STATUS:** COMPLETE — Recovery/Re-entry Week (Grade B-). Two bike sessions only. No WB probe, no running quality, no BBJ, no lunges. WB lock unchanged at 50 (W21). Probe deferred.
 - **W24 STATUS:** COMPLETE — Recovery Crisis / Respiratory Activation (Grade C+). Monday re-entry fragment only (Grade A). Respiratory/sinus activation Wed. HRV suppressed Thu–Sat. WB probe missed 3rd consecutive time (gate not met). Walk only Sat. Sunday sleeping HR 56 bpm — recovery direction confirmed.
 - **W25 STATUS:** COMPLETE — Taper Week 1. Grade B+. WB probe 50 clean / 2:07 under 3-round race fragment fatigue (ceiling confirmed; floor 55 / target 60 not reached — 5th consecutive missed ceiling probe). BBJ restarted 2×30m. Run speed present: 4×400m to 4:03/km. Sled confirmed at race load. Calves 0/10 all week. Race strategy adjusted: 35–40 + 20–25 + remainder.
 - **W26 STATUS:** COMPLETE — Taper Week 2. Grade A-. Ski 4:19 + Row 4:16 confirmed Tue. WB 40@9kg/1:30 Thu + 20 reps/45s Sat (2.25 sec/rep rate locked). BBJ 30m/1:14 Sat. Lunges BW touched. Run 3×400m (4:34/5:13/4:33). Left leg 0–2/10 managed. All limiters resolved.
-- **W27 STATUS:** IN PROGRESS — Race Week. Mon sickness-watch (no training, B12 done). Tue home micro-touch (HRV +64%, recovery confirmed). Wed packing/logistics. Thu travel MEL→SYD JQ514 13:00. **RACE FRI 3 JUL 18:40.**
+- **W27 STATUS:** COMPLETE — Race Week. Mon sickness-watch (no training, B12 done). Tue home micro-touch (HRV +64%, recovery confirmed). Wed packing/logistics. Thu travel MEL→SYD JQ514 13:00. **RACE FRI 3 JUL 18:40 — 1:48:24, DQ at Wall Balls.** Sat 4 Jul: returned home, post-race data logged. Full deep-dive: `analytics/race_comparison_melbourne_vs_sydney_2026.md`. Recovery program: `archive/2026/week_28_plan.md`.
 
 ---
 
@@ -29,6 +29,7 @@
 - **Gym:** Iron Viking, Moorabbin (Australia)
 - **Medical:** Pernicious anemia, B12 monthly (last 2026-06-29, next ~2026-07-29); chronic calf-Achilles-soleus zone; cardiac event W13 resolved
 - **2025 Melbourne baseline:** 1:33:44, rank #603, Pro M 45-49. Gap to target: 18:44.
+- **2026 Sydney race:** 1:48:24, DQ at Wall Balls (final station). 14:40 slower than Melbourne baseline, first DQ of career. Sled Push and Sled Pull both ranked #1 in field. Run collapsed progressively from Run 2 onward. See `analytics/race_comparison_melbourne_vs_sydney_2026.md` for full breakdown.
 - **Detailed profile:** `reference/athlete_profile.md`
 
 ---
@@ -75,7 +76,8 @@ NOT limiters: sled (confirmed race-ready), WB chunks (strong and repeatable), CV
 - **W27 Mon 2026-06-29:** Sickness watch / rest. B12 injection done. HRV +5%. No fever. Preserved.
 - **W27 Tue 2026-06-30:** Home micro-touch. HRV 58.7ms (+64%) — recovery confirmed. 8h18 sleep. Sydney plan alive.
 - **W27 Wed 2026-07-01:** Packing day. HRV 57.2ms (+58%). 7h30 sleep. System green. Travel prep complete.
-- **Next ceiling attempt:** RACE DAY 2026-07-03 · strategy: 35–40 + 20–25 + remainder · ≤5:15 total
+- **W27 Fri 2026-07-03 RACE DAY RESULT:** 1:48:24, DQ at Wall Balls. Splits: Run1 3:58, Ski 4:21, Run2 7:40, Sled Push 1:37 (rank #1), Run3 7:16, Sled Pull 2:36 (rank #1), Run4 7:42, BBJ 5:30, Run5 8:09, Row 5:03, Run6 8:22, Farmers Carry 1:35 (rank #64), Run7 8:33, Sandbag Lunge 5:12, Run8 13:18, Wall Balls 7:55 (DQ). Watch HR: avg 154, max 172, Z4 1:07:51 + Z5 16:14. WB ceiling (50 clean, never tested above under full fatigue) was exposed for the first time at 100 reps under a running load far beyond any trained benchmark — DQ mechanism not confirmed by athlete (no judge note available); technical breakdown under fatigue is the leading hypothesis. Full analysis: `analytics/race_comparison_melbourne_vs_sydney_2026.md`.
+- **No further probes.** Season closed. Next actions: recovery week (`archive/2026/week_28_plan.md`), then re-analysis for next block.
 - **Race wave confirmed:** 18:40 HYROX MEN PRO · Bib 184047
 
 ---
@@ -84,7 +86,8 @@ NOT limiters: sled (confirmed race-ready), WB chunks (strong and repeatable), CV
 
 - **W25 (06-15→06-21):** COMPLETE — Grade B+. WB probe 50 under fatigue (ceiling confirmed). BBJ restarted. Run speed present. Calves clean. Race strategy adjusted.
 - **W26 (06-22→06-28):** COMPLETE — Grade A-. Ski 4:19 / Row 4:16 confirmed Tue. WB 40 reps/1:30 Thu + 20 reps/45s Sat (2.25 sec/rep locked). BBJ 30m/1:14 confirmed Sat. Run 3×400m (4:34/5:13/4:33). Lunges BW touched. Left leg managed 0–2/10 all week. **W26 archived 2026-07-02.**
-- **W27 (06-29→07-03):** RACE WEEK IN PROGRESS. Mon sickness-watch + B12 done. Tue home micro-touch (HRV recovery confirmed). Wed packing. **Thu 2 Jul: travel MEL→SYD JQ514 13:00. RACE Fri 3 Jul 18:40.**
+- **W27 (06-29→07-03):** RACE WEEK COMPLETE. Mon sickness-watch + B12 done. Tue home micro-touch (HRV recovery confirmed). Wed packing. Thu 2 Jul travel MEL→SYD JQ514 13:00. **RACE Fri 3 Jul 18:40 — 1:48:24, DQ at Wall Balls.** Sat 4 Jul: return flight, athlete home.
+- **Post-race (07-04→07-05):** Recovery window before W28 opens. Formal Sunday close-out (archive current_week.md → week_27_report.md, generate week_28 current files) still pending — scheduled for Sun 2026-07-05 per standard workflow. Recovery program already drafted ahead of schedule at athlete's request: `archive/2026/week_28_plan.md`.
 - **Travel confirmed:** Jetstar JQ514 MEL→SYD Thu 2 Jul 13:00–14:25 (ref ZJKYQL). Return JQ609 SYD→AVV Sat 4 Jul 14:30 (ref CJ6RXI). **Hotel: Rydges Camperdown** · 9 Missenden Rd, Camperdown · check-in Thu 2 Jul from 15:00, check-out Sat 4 Jul by 11:00 (Trip.com ref 1658112619606433). Full detail: `state/sydney_trip.md`
 
 ---
@@ -125,6 +128,8 @@ Conditional:
 **W25 close-out completed:** 2026-06-21 (Sunday)
 **W26 close-out completed:** 2026-07-02 (archived to archive/2026/week_26_report.md)
 **W27 current_week.md created:** 2026-07-02 (Mon 29 Jun → Wed 1 Jul data loaded)
-**This file last refreshed:** 2026-07-02 09:55 AEST (Thu travel day — full W27 sync)
-**Next mandatory refresh:** Post-race 2026-07-03 (race result + STATE final update)
+**Race day + post-race data appended:** 2026-07-04 (Saturday)
+**This file last refreshed:** 2026-07-04 19:31 AEST (Saturday — post-race full sync, DQ result recorded)
+**Next mandatory refresh:** Sunday 2026-07-05 formal W27 close-out (archive current_week.md → week_27_report.md, open week_28 current files)
 **Race wave confirmed:** 18:40 HYROX MEN PRO · Bib 184047 · 2026-06-27
+**Race result confirmed:** 1:48:24, DQ at Wall Balls · 2026-07-03

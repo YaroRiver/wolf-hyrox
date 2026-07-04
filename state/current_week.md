@@ -139,6 +139,72 @@
 
 ---
 
+## FRI RACE DAY DATA — 2026-07-03 · HYROX SYDNEY
+
+**Event:** HYROX Sydney · Pro Men 45–49 · Bib 184047 · Wave 18:40 · Sydney Olympic Park
+
+**Official result:** Finish time **1:48:24** · Status: **DISQUALIFIED at Wall Balls (final station)**
+
+**Watch data (Apple Watch — Mixed Cardio, 18:40–20:30):**
+- Workout time: 1:50:32
+- Active calories: 1,622 · Total calories: 1,823
+- Avg HR: 154 bpm · Max HR: 172 bpm
+- HR zones: Z1 1:31 · Z2 4:58 · Z3 19:57 · Z4 1:07:51 · Z5 16:14
+- Post-workout HR: 110 → 122 → 119 bpm (1–2 min)
+
+**Splits (station timing app):**
+
+| Segment | Time | Field rank |
+|---|---|---|
+| Run 1 | 3:58 | 429 |
+| Ski Erg | 4:21 | 401 |
+| Run 2 | 7:40 | 554 |
+| Sled Push | 1:37 | **1** |
+| Run 3 | 7:16 | 551 |
+| Sled Pull | 2:36 | **1** |
+| Run 4 | 7:42 | 556 |
+| Burpee Broad Jump | 5:30 | 471 |
+| Run 5 | 8:09 | 554 |
+| Row Erg | 5:03 | 532 |
+| Run 6 | 8:22 | 556 |
+| Farmers Carry | 1:35 | 64 |
+| Run 7 | 8:33 | 553 |
+| Sandbag Lunge | 5:12 | 329 |
+| Run 8 | 13:18 | 552 |
+| Wall Balls | 7:55 | 443 (DQ) |
+
+Avg Run: 08:07. Roxzone total not captured on available screenshot (DQ likely truncated final transition).
+
+**Subjective / context:** Athlete reports having raced while sick (respiratory/sinus symptoms first flagged Mon 2026-06-29, marked resolved by Wed 2026-07-01 in readiness data). Athlete attributes the run collapse directly to this illness.
+
+**Coach verdict:** Data logged verbatim. Full causal analysis in `analytics/race_comparison_melbourne_vs_sydney_2026.md`.
+
+---
+
+## FRI RACE DAY REPORT — 2026-07-03
+
+**Execution summary:** Race started on wave. Sled Push and Sled Pull both delivered field-leading times (rank 1 in a field of 500+). Running degraded progressively from Run 2 onward (7:16–8:33/km through Runs 2–7), then collapsed severely on Run 8 (13:18). Wall Balls — the final station — ended in disqualification rather than a recorded rep count or time-to-completion.
+
+**Key data:** Avg HR 154 with 1:07:51 in Zone 4 and 16:14 in Zone 5 — this was a high-effort, high-output physiological state throughout, not a passive fade. The pace collapse happened despite the body working hard, which points to reduced running economy/capacity rather than reduced effort.
+
+**Comparison to plan:** Race strategy called for controlled early runs (4:10–4:15/km) and WB break-pattern 35–40 + 20–25 + remainder. Neither the pacing model nor the WB ceiling (locked at 50 clean, never tested at 100 under full 8-station fatigue) survived contact with the actual fatigue accumulated by Run 8.
+
+**Lesson:** Full breakdown pending — see dedicated comparison document. Preliminary: sled work is fully race-proven; running and WB execution under extreme fatigue are the open questions.
+
+**Principle:** The body that trains at 50 does not automatically survive 100.
+
+---
+
+## SAT POST-RACE — 2026-07-04
+
+**Type:** Return travel (SYD→AVV), no training
+
+**Status:** Athlete returned home from Sydney. Race data reviewed. Deep comparative analysis (Melbourne 2025-12-13 vs Sydney 2026-07-03) and post-race recovery program requested and produced same day.
+
+**Coach verdict:** Recovery window open. No training decision made yet pending full data review — see `archive/2026/week_28_plan.md`.
+
+---
+
 ## RACE STRATEGY — LOCKED (as of 2026-06-27)
 
 **Wave:** 18:40 HYROX MEN PRO · Bib 184047
