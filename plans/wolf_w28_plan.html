@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHASE 5 · POST-RACE RECOVERY W28 // YARO 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #080C10; --surface: #0E1419; --surface2: #141B22;
+    --border: #1E2D3D; --accent: #00E5FF; --red: #FF4757;
+    --gold: #FFD700; --green: #00FF87; --text: #E8EDF2;
+    --muted: #5A6A7A; --label: #8A9BAB; --orange: #FF8C42;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; min-height: 100vh; overflow-x: hidden; }
+  body::before { content: ''; position: fixed; inset: 0; background-image: linear-gradient(rgba(0,255,135,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(0,255,135,0.02) 1px, transparent 1px); background-size: 40px 40px; pointer-events: none; z-index: 0; }
+  .wrap { max-width: 1300px; margin: 0 auto; padding: 36px 24px; position: relative; z-index: 1; }
+
+  .hdr { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 28px; padding-bottom: 24px; border-bottom: 1px solid var(--border); animation: fadeUp .5s ease both; flex-wrap: wrap; gap: 16px; }
+  .hdr-eyebrow { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 4px; color: var(--green); text-transform: uppercase; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+  .cd-gr { width: 5px; height: 5px; border-radius: 50%; background: var(--green); animation: pulse 1.5s ease infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(1.4)} }
+  .hdr-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(52px, 8vw, 88px); line-height: .88; letter-spacing: 4px; }
+  .hdr-sub   { font-family: 'Bebas Neue', sans-serif; font-size: clamp(16px, 2.2vw, 24px); letter-spacing: 6px; color: var(--green); margin-top: 4px; }
+  .hdr-block { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); letter-spacing: 1px; margin-top: 8px; max-width: 660px; line-height: 1.6; }
+  .hdr-block span { color: var(--accent); }
+  .hdr-right { text-align: right; }
+  .week-badge { font-family: 'Bebas Neue', sans-serif; font-size: 56px; color: var(--green); letter-spacing: 3px; line-height: 1; }
+  .week-range { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--text); letter-spacing: 2px; margin-top: 2px; }
+  .week-year  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 2px; margin-bottom: 10px; }
+  .phase-badge { display: inline-flex; align-items: center; gap: 6px; font-family: 'DM Mono', monospace; font-size: 9px; color: var(--green); letter-spacing: 2px; text-transform: uppercase; padding: 5px 12px; border: 1px solid rgba(0,255,135,.3); background: rgba(0,255,135,.06); }
+
+  .phase-bar { display: flex; align-items: center; gap: 0; margin-bottom: 20px; animation: fadeUp .5s .04s ease both; overflow-x: auto; }
+  .pb { font-family: 'DM Mono', monospace; font-size: 8px; padding: 7px 14px; letter-spacing: 1.5px; text-transform: uppercase; white-space: nowrap; }
+  .pb-done { background: rgba(0,255,135,.04); color: var(--muted); border: 1px solid var(--border); }
+  .pb-now  { background: rgba(0,255,135,.08); color: var(--green); border: 1px solid rgba(0,255,135,.3); font-weight: bold; }
+  .pb-arrow { color: var(--border); font-size: 10px; padding: 0 2px; }
+
+  .why-banner { background: linear-gradient(135deg, rgba(0,229,255,.05) 0%, rgba(0,229,255,.015) 100%); border: 1px solid rgba(0,229,255,.2); border-left: 3px solid var(--accent); padding: 18px 24px; margin-bottom: 14px; animation: fadeUp .5s .06s ease both; }
+  .why-label { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--accent); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 6px; }
+  .why-text  { font-family: 'DM Mono', monospace; font-size: 10.5px; color: var(--label); line-height: 1.7; }
+  .why-text span { color: var(--text); }
+
+  .gate-banner { background: rgba(255,71,87,.03); border: 1px solid rgba(255,71,87,.18); border-left: 3px solid var(--red); padding: 16px 22px; margin-bottom: 20px; animation: fadeUp .5s .08s ease both; }
+  .gate-label { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--red); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; }
+  .gate-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .gate-item { font-family: 'DM Mono', monospace; font-size: 9.5px; color: var(--label); line-height: 1.5; padding: 8px 10px; background: var(--surface); border: 1px solid var(--border); }
+  .gate-item b { color: var(--text); }
+  .gate-note { font-family: 'DM Mono', monospace; font-size: 9.5px; color: var(--label); margin-top: 10px; line-height: 1.6; }
+  .gate-note span { color: var(--gold); }
+
+  .section-lbl { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 4px; color: var(--muted); text-transform: uppercase; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+  .section-lbl::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  .week-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 24px; }
+  .dc { background: var(--surface); border: 1px solid var(--border); border-top: 3px solid transparent; transition: transform .2s; animation: fadeUp .5s ease both; overflow: hidden; }
+  .dc:hover { transform: translateY(-3px); }
+  .dc.day-rest   { border-top-color: var(--muted); }
+  .dc.day-gate   { border-top-color: var(--accent); }
+  .dc.day-touch  { border-top-color: var(--green); }
+  .dc.day-decide { border-top-color: var(--gold); border: 2px solid rgba(255,215,0,.35); background: linear-gradient(135deg, rgba(255,215,0,.03) 0%, var(--surface) 60%); }
+  .dc:nth-child(1){animation-delay:.10s} .dc:nth-child(2){animation-delay:.14s}
+  .dc:nth-child(3){animation-delay:.18s} .dc:nth-child(4){animation-delay:.22s}
+  .dc:nth-child(5){animation-delay:.26s} .dc:nth-child(6){animation-delay:.30s}
+  .dc:nth-child(7){animation-delay:.34s} .dc:nth-child(8){animation-delay:.38s}
+  .dc:nth-child(9){animation-delay:.42s}
+  .dc-head { padding: 12px 13px 10px; border-bottom: 1px solid var(--border); }
+  .dc-iso { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 1px; margin-bottom: 4px; }
+  .dc-iso .yr { color: var(--muted); } .dc-iso .dot { color: var(--border); margin: 0 2px; }
+  .dc-iso .mo { color: var(--label); } .dc-iso .dd { color: var(--text); font-weight: 500; }
+  .dc-abbr { font-family: 'Bebas Neue', sans-serif; font-size: 26px; letter-spacing: 3px; line-height: 1; }
+  .day-rest   .dc-abbr { color: var(--muted); }
+  .day-gate   .dc-abbr { color: var(--accent); }
+  .day-touch  .dc-abbr { color: var(--green); }
+  .day-decide .dc-abbr { color: var(--gold); }
+  .dc-tag { display: inline-block; margin-top: 6px; font-family: 'DM Mono', monospace; font-size: 7px; letter-spacing: 1.5px; padding: 2px 7px; text-transform: uppercase; }
+  .day-rest   .dc-tag { background: rgba(90,106,122,.08); color: var(--muted); }
+  .day-gate   .dc-tag { background: rgba(0,229,255,.07); color: var(--accent); }
+  .day-touch  .dc-tag { background: rgba(0,255,135,.07); color: var(--green); }
+  .day-decide .dc-tag { background: rgba(255,215,0,.08); color: var(--gold); }
+  .dc-body { padding: 10px 13px 13px; }
+  .di { font-family: 'DM Mono', monospace; font-size: 9.5px; color: var(--label); padding: 4px 0; border-bottom: 1px solid rgba(30,45,61,.5); line-height: 1.4; display: flex; align-items: flex-start; gap: 5px; }
+  .di:last-child { border-bottom: none; }
+  .di .ic { flex-shrink: 0; color: var(--muted); }
+  .hi { color: var(--text); } .gr { color: var(--green); } .ac { color: var(--accent); }
+  .rd { color: var(--red); } .gd { color: var(--gold); } .mu { color: var(--muted); } .or { color: var(--orange); }
+
+  .card { background: var(--surface); border: 1px solid var(--border); padding: 22px; animation: fadeUp .5s ease both; transition: border-color .2s, transform .2s; }
+  .card:hover { border-color: rgba(0,255,135,.1); transform: translateY(-2px); }
+  .card-ttl { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 3px; color: var(--muted); text-transform: uppercase; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .ct-dot { width: 6px; height: 6px; flex-shrink: 0; }
+
+  .assess-item { display: flex; align-items: flex-start; gap: 8px; padding: 7px 0; border-bottom: 1px solid var(--border); font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.4; }
+  .assess-item:last-child { border-bottom: none; }
+  .assess-item.good::before { content: '✔'; color: var(--green); flex-shrink: 0; }
+  .assess-item.warn::before { content: '△'; color: var(--gold); flex-shrink: 0; }
+  .assess-item.note::before { content: '→'; color: var(--accent); flex-shrink: 0; }
+  .assess-item.crit::before { content: '⚠'; color: var(--red); flex-shrink: 0; }
+
+  .identity { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--green); padding: 22px 28px; margin-bottom: 14px; animation: fadeUp .5s .55s ease both; position: relative; overflow: hidden; }
+  .identity::after { content: '🐺'; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 72px; opacity: .05; pointer-events: none; }
+  .id-lbl { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; }
+  .id-lines { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 5px; }
+  .id-line { font-family: 'Bebas Neue', sans-serif; font-size: 17px; letter-spacing: 3px; color: var(--muted); transition: color .2s; }
+  .id-line:hover { color: var(--text); }
+  .id-line.hl  { color: var(--green); }
+  .id-line.hl2 { color: var(--gold); }
+  .id-line.hl3 { color: var(--accent); }
+
+  .footer { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .footer-l { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); letter-spacing: 2px; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); padding: 3px 8px; border: 1px solid var(--border); letter-spacing: 1px; cursor: default; transition: all .2s; }
+  .tag:hover { color: var(--green); border-color: rgba(0,255,135,.25); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 1100px) { .week-grid { grid-template-columns: repeat(3,1fr); } .gate-list { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 720px) { .week-grid { grid-template-columns: 1fr 1fr; } .hdr { flex-direction: column; gap: 16px; } .gate-list { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HEADER -->
+  <div class="hdr">
+    <div>
+      <div class="hdr-eyebrow"><span class="cd-gr"></span>Phase 5 · Post-Race Recovery · Pro Men 45–49</div>
+      <div class="hdr-title">RECOVERY<br>WEEK</div>
+      <div class="hdr-sub">W28 · HEALTH RESTORATION · NOT A TRAINING WEEK</div>
+      <div class="hdr-block">Sydney race (2026-07-03, 1:48:24, DQ at Wall Balls) was raced four days after respiratory illness onset, with 1:07:51 in HR Zone 4 and 16:14 in Zone 5 across the effort. <span>This week's only job is getting the body back to baseline — clean of illness, clean of joint pain, sleep restored.</span> No probes, no capacity targets, no season riding on this week. Full recovery protocol: `archive/2026/week_28_plan.md`.</div>
+    </div>
+    <div class="hdr-right">
+      <div class="week-badge">W28</div>
+      <div class="week-range">2026·07·06 → 2026·07·12</div>
+      <div class="week-year">+ immediate window Sat 07·04 → Sun 07·05</div>
+      <div class="phase-badge"><span class="cd-gr"></span>PHASE 5 · POST-RACE RECOVERY</div>
+    </div>
+  </div>
+
+  <!-- PHASE BAR -->
+  <div class="phase-bar">
+    <div class="pb pb-done">P1 Stabilize</div><div class="pb-arrow">›</div>
+    <div class="pb pb-done">P2 Build</div><div class="pb-arrow">›</div>
+    <div class="pb pb-done">P3 Peak</div><div class="pb-arrow">›</div>
+    <div class="pb pb-done">P4 Taper + Race Week</div><div class="pb-arrow">›</div>
+    <div class="pb pb-done">Race Fri 03·07 — 1:48:24 DQ</div><div class="pb-arrow">›</div>
+    <div class="pb pb-now">★ P5 RECOVERY ← NOW</div>
+  </div>
+
+  <!-- WHY BANNER -->
+  <div class="why-banner">
+    <div class="why-label">⚡ Why This Week Is Structured This Way — The Open Window</div>
+    <div class="why-text">Hard endurance efforts transiently suppress immune function for roughly 24–72 hours afterward — the "open window" effect. This athlete raced hard (avg HR 154, max 172) four days after first reporting respiratory/sinus symptoms, then flew home the same day. <span>Layering any training load onto that combination is how a manageable post-race fatigue turns into a second illness or a lingering one.</span> A Wall Ball disqualification under heavy fatigue also implies a technical/form breakdown — shoulders, forearms, and the chronic calf/Achilles zone all took repetitive load under a compromised pattern in the final station, on top of 8 km of increasingly labored running. This is not a body to reload within days.</div>
+  </div>
+
+  <!-- GATES -->
+  <div class="gate-banner">
+    <div class="gate-label">⛔ Hard Gates — ALL Must Be True Before Any Run / WB / Sled / Jump Work Resumes</div>
+    <div class="gate-list">
+      <div class="gate-item"><b>1.</b> No respiratory symptoms for 72 consecutive hours</div>
+      <div class="gate-item"><b>2.</b> No fever at any point in that window</div>
+      <div class="gate-item"><b>3.</b> Sleeping HRV trending back toward the 41–66 ms pre-race range — a trend, not one good morning</div>
+      <div class="gate-item"><b>4.</b> Sleeping HR back at/below normal ~53–56 bpm baseline</div>
+      <div class="gate-item"><b>5.</b> No calf, Achilles, under-knee, or shoulder pain at rest or light movement</div>
+      <div class="gate-item"><b>6.</b> Sleep ≥ 7h00 for at least 2 of the prior 3 nights</div>
+    </div>
+    <div class="gate-note">If any gate fails: <span>another rest day, not a modified session.</span> This is binary — cleared or not yet — not a Yellow/Red calibration.</div>
+  </div>
+
+  <!-- DAY GRID -->
+  <div class="section-lbl" style="animation:fadeUp .5s .12s ease both;">📆 Immediate Window + W28 · 2026·07·04 → 2026·07·12</div>
+  <div class="week-grid">
+
+    <!-- SAT 04 -->
+    <div class="dc day-rest">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">04</span></div>
+        <div class="dc-abbr">SAT</div>
+        <div class="dc-tag">Return Travel</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">✈</span><span>SYD → home. Hydrate on the flight.</span></div>
+        <div class="di"><span class="ic">🍽</span><span>Real meal on arrival — protein + carbs + veg</span></div>
+        <div class="di"><span class="ic">😴</span><span class="gr">Sleep as early as reasonable</span></div>
+        <div class="di"><span class="ic">✔</span><span class="mu">No training. Not a discussion point.</span></div>
+      </div>
+    </div>
+
+    <!-- SUN 05 -->
+    <div class="dc day-rest">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">05</span></div>
+        <div class="dc-abbr">SUN</div>
+        <div class="dc-tag">Rest / Close-out</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">🚶</span><span>Optional easy walk 20–30 min, conversational only</span></div>
+        <div class="di"><span class="ic">📋</span><span>Morning readiness logged: sleep, HRV, HR, calves, symptoms</span></div>
+        <div class="di"><span class="ic">🗂</span><span>Formal W27 close-out (archive current_week.md)</span></div>
+        <div class="di"><span class="ic">🍽</span><span class="gr">Eat to repair — not a deficit week</span></div>
+      </div>
+    </div>
+
+    <!-- MON 06 -->
+    <div class="dc day-rest">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">06</span></div>
+        <div class="dc-abbr">MON</div>
+        <div class="dc-tag">Rest / Mobility</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">💆</span><span>Rest, or gentle mobility 10–15 min, unloaded only</span></div>
+        <div class="di"><span class="ic">⛔</span><span class="or">Gate check — expected: not yet cleared (Day 3)</span></div>
+        <div class="di"><span class="ic">💉</span><span class="mu">B12: last 06-29, next due ~07-29 — no action needed</span></div>
+      </div>
+    </div>
+
+    <!-- TUE 07 -->
+    <div class="dc day-gate">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">07</span></div>
+        <div class="dc-abbr">TUE</div>
+        <div class="dc-tag">Conditional Touch</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">✔</span><span>If all 6 gates met: 20 min easy Z1 walk/bike + 10 min mobility</span></div>
+        <div class="di"><span class="ic">✖</span><span class="mu">If any gate fails: rest again</span></div>
+        <div class="di"><span class="ic">⚠</span><span class="rd">No running, jumping, carries, or wall balls</span></div>
+      </div>
+    </div>
+
+    <!-- WED 08 -->
+    <div class="dc day-gate">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">08</span></div>
+        <div class="dc-abbr">WED</div>
+        <div class="dc-tag">Reassess</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">✔</span><span>Rest, or repeat Tuesday's light touch — same gating</span></div>
+        <div class="di"><span class="ic">📈</span><span>Check sleep + HRV trend across the week so far</span></div>
+        <div class="di"><span class="ic">⚠</span><span class="or">Flat or worsening trend → extend full rest, don't push</span></div>
+      </div>
+    </div>
+
+    <!-- THU 09 -->
+    <div class="dc day-touch">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">09</span></div>
+        <div class="dc-abbr">THU</div>
+        <div class="dc-tag">Aerobic Touch</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">✔</span><span>If gates hold + no negative response so far: <span class="gr">25–30 min Z1–Z2 non-impact</span> (bike/incline walk/swim)</span></div>
+        <div class="di"><span class="ic">⚠</span><span class="rd">Still no running, WB, sled, or jumping</span></div>
+      </div>
+    </div>
+
+    <!-- FRI 10 -->
+    <div class="dc day-rest">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">10</span></div>
+        <div class="dc-abbr">FRI</div>
+        <div class="dc-tag">Protect the Weekend</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">💆</span><span>Rest or mobility only</span></div>
+        <div class="di"><span class="ic">✖</span><span class="mu">Do not front-load to "prove" readiness</span></div>
+      </div>
+    </div>
+
+    <!-- SAT 11 -->
+    <div class="dc day-touch">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">11</span></div>
+        <div class="dc-abbr">SAT</div>
+        <div class="dc-tag">Conditional Run Touch</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">✔</span><span>Earliest possible easy run: <span class="gr">15–20 min, flat, Z1–Z2</span>, HR capped conservatively</span></div>
+        <div class="di"><span class="ic">⚠</span><span class="or">Stop immediately at any calf/Achilles signal</span></div>
+        <div class="di"><span class="ic">✖</span><span class="mu">This is conditional, not scheduled — any doubt means walk, not run</span></div>
+      </div>
+    </div>
+
+    <!-- SUN 12 -->
+    <div class="dc day-decide">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">12</span></div>
+        <div class="dc-abbr">SUN</div>
+        <div class="dc-tag">Week Review</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">🚶</span><span>Recovery walk or rest</span></div>
+        <div class="di"><span class="ic">📊</span><span class="gd">Full week review — decide next block with fresh data, not race-day emotion</span></div>
+        <div class="di"><span class="ic">🤝</span><span class="ac">Possible second opinion / outside model input on next-block strategy</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- WHAT'S DELIBERATELY EXCLUDED -->
+  <div class="section-lbl" style="animation:fadeUp .5s .3s ease both;">🚫 What This Week Deliberately Does Not Include</div>
+  <div class="card" style="margin-bottom:20px;border-top:2px solid var(--red);">
+    <div class="assess-item crit">No Wall Ball testing of any kind — <span style="color:var(--text);">the 100-rep gap needs a real off-season training cycle, not a rushed retest</span></div>
+    <div class="assess-item note">No sled work — <span style="color:var(--text);">already proven (#1 in the field, twice). Nothing to gain touching it this week</span></div>
+    <div class="assess-item note">No running quality, intervals, or pace work — <span style="color:var(--text);">the only permitted running is the conditional Saturday touch, as a health check, not a fitness session</span></div>
+    <div class="assess-item warn">No HRV-gated Yellow/Red calibration in the usual sense — <span style="color:var(--text);">the gates above are stricter and binary on purpose; the cost of guessing wrong (a second illness, a lingering injury) outweighs the cost of losing a training week</span></div>
+  </div>
+
+  <!-- IDENTITY -->
+  <div class="identity">
+    <div class="id-lbl">🐺 Wolf Identity</div>
+    <div class="id-lines">
+      <div class="id-line hl">The race is over.</div>
+      <div class="id-line hl2">The only competition this week is against re-injuring or re-infecting a body that gave everything while sick.</div>
+      <div class="id-line hl3">Recovery done right is not lost time.</div>
+      <div class="id-line hl">It is the first correct decision of the next block.</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-l">PHASE 5 · RECOVERY WEEK W28 · 2026·07·06 → 2026·07·12 &nbsp;//&nbsp; YARO &nbsp;//&nbsp; HYROX SYDNEY 2026 CLOSED · PRO MEN 45–49</div>
+    <div class="tags">
+      <div class="tag">#RecoveryWeek</div>
+      <div class="tag">#Phase5</div>
+      <div class="tag">#OpenWindow</div>
+      <div class="tag">#GatedReturn</div>
+      <div class="tag">#NotATrainingWeek</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

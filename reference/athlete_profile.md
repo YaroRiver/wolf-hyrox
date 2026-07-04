@@ -12,10 +12,10 @@
 - **Height:** 196 cm
 - **Weight:** 84 kg
 - **BMI:** 21.9 (optimal for functional sport)
-- **VO₂max:** 57 ml/kg/min (PR W18; +6% across Sydney build)
-  - Progression: 53 (W12) → 54 (W13) → 56 (W17) → **57 (W18)**
-  - Reference: 90th percentile masculine 45–49 (Cooper Clinic data)
-- **HR recovery:** 160→99 bpm in 2 min (≈30 bpm/min — excellent)
+- **VO₂max:** 58 ml/kg/min — **last measured W21 (2026-05-18), pre-illness-cascade.** Not retested since. This number predates three separate illness disruptions (W22 vaccine reaction, W23 sinus/HRV suppression, W24 respiratory crisis) and the race-week illness + hard Sydney effort. **No confirmed current value exists.** The athlete's own expectation is that it has dropped (he estimates ~56) — this is a reasonable hypothesis given the illness load, but it is a guess, not a measurement, and is recorded here as such rather than as fact. Retest recommended once Phase 5 recovery gates (see `archive/2026/week_28_plan.md`) are cleared.
+  - Progression: 53 (W12) → 54 (W13) → 56 (W17) → 57 (W18) → **58 (W21 — last known)**
+  - Reference: 90th percentile masculine 45–49 (Cooper Clinic data), at the W21 measurement
+- **HR recovery:** 160→99 bpm in 2 min (≈30 bpm/min — excellent), last confirmed pre-illness cascade
 
 ## Race Goal
 - **Event:** HYROX Sydney 2026
@@ -56,7 +56,29 @@ Full source-tagged breakdown, station-by-station comparison to the 2025 Melbourn
 
 ### What This Changes About the Athlete Profile
 
-This is not a fitness ceiling problem. The demonstrated capacities (VO₂max 58, sled loads well above race requirement, WB technique and rate when fresh or lightly fatigued) are all consistent with a sub-1:20 HYROX in clean health. The Sydney result is best read as **the wrong day, raced anyway, with one station (WB) that had a genuine, never-closed capacity gap underneath it.** The next block's real work is: (1) close the WB 50→100 gap under true full-race fatigue simulation, with enough weeks that a repeat of the W22–W24 illness pattern doesn't consume the only phase built for it, and (2) build an explicit go/no-go protocol for racing through illness, because "HRV rebounded" was not sufficient signal that the body was ready for a 108-minute Zone 4/5 effort.
+This is not a fitness ceiling problem. The demonstrated capacities (VO₂max 58 as of W21, sled loads well above race requirement, WB technique and rate when fresh or lightly fatigued) are all consistent with a sub-1:20 HYROX in clean health. The Sydney result is best read as **the wrong day, raced anyway, with one station (WB) that had a genuine, never-closed capacity gap underneath it.** The next block's real work is: (1) close the WB 50→100 gap under true full-race fatigue simulation, with enough weeks that a repeat of the W22–W24 illness pattern doesn't consume the only phase built for it, and (2) build an explicit go/no-go protocol for racing through illness, because "HRV rebounded" was not sufficient signal that the body was ready for a 108-minute Zone 4/5 effort.
+
+### Current HYROX Capability Snapshot (as of 2026-07-04)
+
+One table, every station, what this athlete can actually do right now. "Race-tested" means proven under real competition fatigue on 2026-07-03; "Training-tested" means demonstrated in session but never under full 8-station race fatigue; "Stale" means the number predates the illness cascade and has not been reconfirmed.
+
+| Station / Capacity | Best demonstrated | Status | Notes |
+|---|---|---|---|
+| **Sled Push** | 245 kg working (gym) · 202 kg race-distance in **1:37** | **Race-tested — #1 in field** | Fully proven. No further work needed at current race loads. |
+| **Sled Pull** | 204 kg working (gym) · 153 kg race-distance in **2:36** | **Race-tested — #1 in field** | Fully proven. Same conclusion as push. |
+| **Farmers Carry** | 64 kg unbroken 350 m (training) · race 200 m in **1:35** (rank 64) | **Race-tested — top 15%** | Grip and carry strength confirmed under fatigue. |
+| **Ski Erg** | 1000 m in 4:19 (one training exposure) · race 4:21 | **Race-tested — stable** | No degradation despite almost no dedicated training. Durable station. |
+| **Row Erg** | 1000 m in 4:16 (training) · race 5:03 | **Race-tested — stable** | Held steady; slower than Ski relatively but not a concern. |
+| **Sandbag Lunge** | 100 m @ 30 kg (race) in 5:12 (rank 329) | **Race-tested — solid mid-pack** | Slight improvement vs Melbourne; calf-managed throughout. |
+| **Burpee Broad Jump** | 30 m in 1:07–1:11 (training, restarted W25) · race 80 m in 5:30 | **Race-tested — functional** | Comparable to Melbourne; technique held under fatigue. |
+| **Wall Balls** | 50 clean reps under partial (3–4 round) fatigue — **never tested at 100 under full 8-station fatigue** | **Training-tested only — DQ'd in race** | The one real capability gap. 14 weeks never closed the 50→100 gap; Phase 3 (built for this) was lost to illness. This is the priority for the next block. |
+| **Running — fresh** | 4:09/km best rep, 4:17/km 5×1km average | **Training-tested — strong** | Raw speed is real and unquestioned. |
+| **Running — compromised (post-station fatigue, training)** | ~5:13/km after sled fatigue (vs 4:15–4:25 target) | **Training-tested — known gap, managed by pacing** | Never fully closed in training; race collapse (7:16–8:33/km, 13:18 final leg) went far beyond even this worst case — illness-linked, per athlete's account. |
+| **VO₂max / aerobic engine** | 58 ml/kg/min | **Stale — last measured W21, pre-illness** | Not retested since three illness disruptions and the race. Athlete estimates a drop (~56); unconfirmed, treat as unknown until retested post-recovery. |
+| **HR recovery** | 160→99 bpm in 2 min | **Stale — pre-illness measurement** | Historically excellent; not retested post-race. |
+| **Bench / Pull-ups / Dips / KB Lunges** | 80 kg 4×6 bench · +20 kg pull-ups · +30 kg dips · 70 kg KB lunges 3×20–24 | **Training-tested, Brisbane-era** | Strength base solid; not race-relevant capacities, not recently retested. |
+
+**Bottom line for "what I can do right now":** every loaded/carried/erg station is race-proven at or above requirement. The engine (VO₂max, HR recovery) is presumptively strong but unverified since illness — this needs a fresh test, not an assumption, before the next block is planned around it. The only genuine unresolved capability question is Wall Balls under full race fatigue, and secondarily, running economy under a fatigue load beyond anything previously tested clean of illness.
 
 ## Training Base
 - **Primary gym:** Iron Viking Gym, Moorabbin (Australia)
