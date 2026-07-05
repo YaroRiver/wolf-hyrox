@@ -92,6 +92,8 @@ Athlete drafted a full checkup request to his GP, to be actioned as part of Phas
 - Likely autonomic imbalance from accumulated training stress, not structural
 - No recurrence in W14–W20
 
+**Pattern detail clarified (athlete, 2026-07-05) — resting HR correlation:** the "jolt" sensations (skipped-beat feeling) began during a period of heavy training volume + work load, coinciding with VO₂max testing, when resting heart rate dropped to roughly **42–43 bpm**. Athlete was frightened by this. By contrast, during the post-vaccine illness period, resting HR rose to around **64 bpm** (elevated from athletic baseline) and, per the athlete's own account, **zero jolt episodes occurred** for the entire duration of that higher-resting-HR illness window. Pattern as reported: lower resting HR (deep athletic bradycardia, ~42–43) correlates with jolt episodes; higher resting HR (~64, illness-elevated) correlates with none. Flagged explicitly for the GP/cardiac referral (see "Planned GP Checkup" above) — this is exactly the kind of pattern a resting ECG/Holter or stress test is meant to characterize (e.g. bradycardia-associated ectopy is a recognized, often benign finding in endurance athletes, but should not be assumed without the actual test).
+
 **Coaching rules:**
 - Mention to physician before race for clearance (flagged in W13 assessment)
 - If any palpitation sensation returns → immediate session abort, walk-only recovery, no return to quality until clean
