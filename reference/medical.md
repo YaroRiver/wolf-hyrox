@@ -78,6 +78,8 @@ Athlete drafted a full checkup request to his GP, to be actioned as part of Phas
 
 **Coaching rule:** no maximal-effort testing (VO₂max field test, hard sim work) until GP/cardiac clearance is back, regardless of how W28/W29 recovery gates read otherwise.
 
+**Cramp detail clarified (athlete, 2026-07-05):** the full-body cramping did not happen during the race or immediately at the finish line — it happened afterward, at rest. Athlete lay down post-race and the cramps arrived as a wave (calves/thighs/adductors/groin, per above), resolved by getting up and moving again, and did not recur afterward. Pattern: rest-onset, wave-like, movement-responsive, single episode, non-recurring. Worth mentioning to the GP as post-exertional rest cramping, not active in-race cramping.
+
 ---
 
 ## Cardiac History (Brisbane Build, W13)
