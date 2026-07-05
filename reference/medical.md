@@ -58,6 +58,28 @@
 
 ---
 
+## Planned GP Checkup (2026-07-05, pre-Melbourne-block baseline)
+
+Athlete drafted a full checkup request to his GP, to be actioned as part of Phase 0 (`reference/master_plan_melbourne_draft_v1.md` §6, W29 "Rule 0"). Full requested panel, for reference when results come back:
+
+- **General/iron:** FBC, iron studies, ferritin, transferrin/saturation
+- **B12/pernicious anaemia:** active B12 (holotranscobalamin), serum B12, serum folate, MMA, homocysteine, intrinsic factor antibodies, parietal cell antibodies
+- **Kidney/electrolytes:** UEC, eGFR, sodium, potassium, chloride, bicarbonate, calcium, phosphate, magnesium, uric acid
+- **Liver/protein:** LFT (ALT/AST/ALP/GGT/bilirubin), albumin, total protein
+- **Muscle/inflammation:** creatine kinase (CK), hs-CRP, ESR
+- **Metabolic:** fasting glucose, HbA1c, lipid profile
+- **Vitamins/hormones:** vitamin D, TSH, free T4, free T3, morning cortisol, total/free testosterone, SHBG
+- **Cardiac:** resting 12-lead ECG, referral for echocardiogram, referral for exercise stress test/stress ECG
+- **GI (B12-history driven):** discuss gastroscopy/colonoscopy referral
+
+**New symptom details surfaced in this request (not previously logged in this file):**
+- **Post-race cramping was full-body, not calf-only:** strong cramps after finishing Sydney, in calves, thighs, and adductors/groin. Previously this file only tracked calf/Achilles — the thigh/adductor/groin involvement is new information and broadens the post-race cramp picture beyond the calf-only framing.
+- **Cardiac "jolts":** athlete describes occasionally noticing brief unusual heart sensations ("jolts"), alongside a low resting heart rate (athletic bradycardia). This is being raised with the GP directly, ahead of any maximal VO₂max testing or hard training resumption. Distinct from, but relevant context alongside, the W13 cardiac event below.
+
+**Coaching rule:** no maximal-effort testing (VO₂max field test, hard sim work) until GP/cardiac clearance is back, regardless of how W28/W29 recovery gates read otherwise.
+
+---
+
 ## Cardiac History (Brisbane Build, W13)
 
 **Event:** 2026-03-27 (W13 FRI) — irregular heartbeat sensations during pre-session warm-up
