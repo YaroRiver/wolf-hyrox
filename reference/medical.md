@@ -28,7 +28,9 @@
 
 ---
 
-## Calf Status — Chronic Watch
+## Calf Status — Load-Sensitivity Watch
+
+**Athlete correction (2026-07-05):** this is not a diagnosed chronic condition. It is an overreach strain — calf/Achilles/soleus pain appeared when training volume/intensity was pushed hard, consistent with the athlete's general pattern of self-directed overload. Framed here as a load-sensitivity watch, not a standing chronic injury. The history below (real, tracked signals) is kept for context; treat it as "how this athlete's calves respond under accumulated load," not as an ongoing diagnosis.
 
 **History:**
 - W17 onward: intermittent calf tightness during running and BBJ
@@ -51,6 +53,8 @@
 - Under-knee pulling during warm-up → Red, abort session
 
 **Daily tracking:** required in current_week.md morning readiness blocks
+
+**Adductors added as a watch-item (athlete request, 2026-07-05):** no adductor issue is on record to date — this is a new signal to track going forward, alongside calves, particularly post-loaded-carry and post-lunge sessions and during the post-Sydney recovery window. Same rating scale and hard rules apply until a distinct pattern (if any) emerges.
 
 ---
 

@@ -155,3 +155,15 @@ This file is a complete, source-tagged record intended to be handed to another m
 - `trackers/wb_tracker.md`, `trackers/run_tracker.md` — full historical station data
 
 No forward strategy or next-block plan is proposed in this document by design — it is a diagnostic record, not a plan. The recovery program (`archive/2026/week_28_plan.md`) covers only the immediate 7–10 days. Full next-block strategy is a separate, later decision the athlete has indicated he wants to make deliberately, potentially with another model's input.
+
+---
+
+## 9. CORRECTION ADDENDUM (2026-07-05, athlete testimony — resolves §7 questions 1 and 2)
+
+This section corrects working hypotheses in §5 and §6 above. The original text is left in place for the record; treat this section as authoritative where it conflicts.
+
+**§7 Q1 resolved — the Sydney DQ cause.** Wall Balls were completed in full: 100 reps, judges praised the execution. The disqualification was for a **navigational/course error** — running the wrong (inner) loop on Run 8, the final run immediately before the Wall Balls station. Pre-race briefing had explicitly warned that an incorrect loop is an automatic DQ, no exception. The race app records the DQ against "Wall Balls" only because that is where the ruling landed / the race ended for scoring purposes — it is not evidence of a WB-station failure. **This reverses §5's "plausible, not confirmed" hypothesis #2** ("WB DQ was likely a technical breakdown under fatigue"): WB capacity at 100 reps under full 8-station race fatigue is now a confirmed, race-proven result. The only remaining WB gap is speed (7:55 race vs 5:00 target), not capacity.
+
+**§7 Q2 resolved — Melbourne 2025 Run 6 (14:19) and Run 7 (21:18).** These were **lap-count penalties**, not a stoppage or GPS/mechanical anomaly. The athlete missed laps on the course at Melbourne 2025 and received time penalties (~11 minutes added across the two legs) rather than a disqualification — Melbourne's rule structure penalized the same category of error (course/lap navigation) that later caused the Sydney DQ outright. Read together, this is the same failure mode (navigation under fatigue) appearing at both races, penalized at Melbourne and disqualifying at Sydney. This was **not** a WB-related event at either race — the "Runs 6 and 7 carried penalties" framing that appeared in an external draft plan was a confusion between the two races' data, now resolved by direct comparison of both race screenshots.
+
+**Downstream effect on diagnosis:** the Sydney limiter ranking in §3/§6 of this document (WB capacity gap listed as a top limiter) is superseded. Wall Balls moves from a **capacity** limiter to a **speed** limiter. **Navigation-under-fatigue** (lap/loop-counting while depleted) becomes a first-class, confirmed limiter — cheap to fix, and now evidenced at two consecutive races.

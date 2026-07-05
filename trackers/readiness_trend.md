@@ -173,6 +173,7 @@
 | 2026-06-30 | TUE | 8h18 | 63% | 48 sleeping / 58.7 morning / 47.3 later | +64% morning | 0/10 | 0/10 | GREEN | 3-day target 101%; HR dip 22%; symptoms improved; gym avoided; home micro-touch 40min HR 95 avg; Z1 dominant |
 | 2026-07-01 | WED | 7h30 | 63% | 66 sleeping / 57.2 daily / 50.7 24h | +58% | 0/10 | 0/10 | GREEN-YELLOW | HR dip 24%; 7-day rhythm 74%; underfueled by afternoon; packing day; proposed final home touch (eat first) |
 | 2026-07-02 | THU | — | — | — | — | 0/10 | 0/10 | — | Travel day · MEL→SYD JQ514 13:00 · no training · race tomorrow |
+| 2026-07-05 | SUN | 8h13 | 64% | 48 sleeping / 46.8 daily | +27% | not provided | not provided | not provided | Day 3 post-race (W28 recovery). Sleeping HR 53 bpm; HR dip 16%; SpO2 96%; disruption 3.9%/20min; 7-day rhythm 60%; 3-day sleep target 115%. No calf/adductor/symptom rating given — gate not fully scorable yet. |
 
 ---
 

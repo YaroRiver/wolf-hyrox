@@ -33,7 +33,9 @@
 
 ## RACE RESULT — HYROX Sydney 2026-07-03 (RECORDED 2026-07-04)
 
-**Result:** 1:48:24 · **DISQUALIFIED at Wall Balls (final station)** · Bib 184047 · Wave 18:40
+**Result:** 1:48:24 · **DISQUALIFIED** (ruling recorded at Wall Balls station, but see correction below — cause was navigational, not WB) · Bib 184047 · Wave 18:40
+
+**CORRECTION (athlete testimony, 2026-07-05):** Wall Balls were completed in full — 100 reps, judges praised the execution. The DQ was for running the wrong (inner) loop on Run 8, the final run before the Wall Balls station — pre-race briefing had warned that an incorrect loop is an automatic DQ. This reverses the working hypothesis below ("WB technical breakdown") — WB capacity at 100 reps under full race fatigue is now confirmed, race-proven. The only remaining WB gap is speed (7:55 race vs 5:00 target).
 
 **Context:** Raced 4 days after first reporting respiratory/sinus illness (flagged 2026-06-29, marked HRV-recovered by 2026-07-01, never confirmed fully cleared). Watch data: avg HR 154, max 172, 1:07:51 in Zone 4 + 16:14 in Zone 5 across the ~1:50 effort — a high-output, high-effort race, not a passive fade.
 
@@ -49,9 +51,13 @@ Full source-tagged breakdown, station-by-station comparison to the 2025 Melbourn
 - **Sandbag Lunge:** slight improvement vs Melbourne, calf-managed throughout
 - **Aerobic engine / effort capacity:** VO₂max 58 (build PR), and Sydney HR data confirms the athlete can sustain 84+ minutes in Zone 4/5 — the engine works; it was not an effort or motivation failure
 
-**Not yet proven — this is where the next block has to focus:**
-- **Wall Balls under full 8-station race fatigue.** Best-ever demonstrated capacity across the entire build was 50 clean reps, and only under a partial 3–4 round fragment simulation — never a full 8-station, ~7 km fatigue load, and never at the 100-rep race requirement. The gap between 50 (demonstrated) and 100 (required) was never closed in 14 weeks, and Phase 3 (the phase specifically designed to close it, W22–W24) was lost entirely to illness disruption. The Sydney DQ happened at exactly this station, under exactly this untested condition.
+**Confirmed 2026-07-05 (corrects the paragraph below as originally written):** Wall Balls at 100 reps under full 8-station race fatigue were completed clean at Sydney — judges praised the execution. This was training-tested only up to 50 clean reps under partial fragment fatigue before the race; the race itself is now the confirmed proof at full distance. WB is no longer a capacity question. The remaining gap is speed: 7:55 race time vs a 5:00 target.
+
+**Historically framed as "not yet proven" (superseded by the correction above, kept for record):**
+- ~~Wall Balls under full 8-station race fatigue.~~ Best-ever demonstrated capacity across the entire build was 50 clean reps, and only under a partial 3–4 round fragment simulation — never a full 8-station, ~7 km fatigue load, and never at the 100-rep race requirement. The gap between 50 (demonstrated) and 100 (required) was believed unclosed; the Sydney result proves it was in fact closed — the DQ was unrelated to WB (navigational error, see correction above).
 - **Running under extreme accumulated fatigue.** Training had already identified a "compromised pace" limiter (~5:13/km after sled fatigue, vs 4:15–4:25 target) and planned to manage it with pacing discipline rather than fix it outright. Sydney's actual collapse (7:16–8:33/km through the middle of the race, 13:18 on the final run) was far larger than that trained worst case — consistent with the athlete's own account of racing while still sick, but this magnitude of gap has never been stress-tested clean (i.e. without illness) at full race distance.
+
+**Correction (athlete, 2026-07-05):** the athlete has a real distance-running history — periods of ~80 km/week (15 km × 5 days) — but this predates the Brisbane/Sydney builds by an unconfirmed but clearly long margin ("давно," pre-dating the tracked system entirely) and is not current, retained fitness. Do not program the next block assuming that base is still there. All volume/pace targets below use the tracked-system baseline (Feb–Jul 2026: ~15–20 km/week typical, longest continuous run logged 10.03 km). The historical background is relevant only as a soft signal that this athlete may re-acquire running fitness and movement economy faster than a true lifetime-novice runner would — not as a basis for a more aggressive ramp than the current data supports.
 - **Illness-adjacent race-day decision-making.** No protocol currently exists in this system for "how close to a respiratory illness is too close to race hard for 100+ minutes." This is a genuine gap to design before the next target race, not just a one-off bad-luck event.
 
 ### What This Changes About the Athlete Profile

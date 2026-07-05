@@ -205,6 +205,33 @@ Avg Run: 08:07. Roxzone total not captured on available screenshot (DQ likely tr
 
 ---
 
+## SUN POST-RACE READINESS — 2026-07-05 (Day 3 post-race, W28 recovery gate check)
+
+**Type:** Recovery day, no training (per `archive/2026/week_28_plan.md`, gates not yet expected to clear this early)
+
+**Sleep (SleepWatch, window 12:02am–8:35am):**
+- Total sleep: 8h13m (goal met)
+- 3-day sleep target: 115% (over target)
+- Restful: 6h25 / 64% · Restless: 3h33 / 36%
+- Sleeping HR dip: 16%
+- Avg sleeping HR: 53 bpm
+- Sleep disruption: 3.9% / 20 min
+- Avg sleeping HRV: 48 ms (sleeping avg) · Daily HRV: 46.8 ms (+27% vs 30-day avg)
+- Avg sleeping blood oxygen: 96%
+- 7-day sleep rhythm: 60%
+
+**Calves / adductors / symptoms:** Data not provided this session (no rating given).
+
+**Read against the six W28 gates:** sleeping HR 53 bpm and O₂ 96% are consistent with the pre-race baseline range and show no residual respiratory suppression. HRV recovering (+27% vs 30-day avg, up from the Jul 4 dip). Sleep volume and restful % both strong. Gates 1 (no respiratory symptoms 72h), 2 (no fever), 5 (no calf/Achilles/shoulder pain), and 6 (sleep ≥7h, 2 of 3 nights) cannot be fully scored without symptom/calf input — do not assume clear.
+
+**Coach verdict:** Directionally clean recovery signal, day 3 of the W28 protocol. Not yet a full gate pass — awaiting explicit symptom/calf/adductor status.
+
+**Subjective update, same day (afternoon):** Breathing/lungs clear ("все чуто"). No leg pain. No cramps. Mild DOMS ("легка крепатурка") in quadriceps — especially near the knee — and glutes. Athlete's own words: "не важкі, легкі" (light, not heavy). Athlete reports feeling able to run today but is unsure whether he should.
+
+**Coach verdict on today's run question: no.** This is Day 3 post-race. The W28 protocol's earliest conditional run touch is Saturday 2026-07-11, and only if every gate has held clean for the preceding several days — not Day 3. Quad/glute DOMS near the knee is the expected signature of the Sandbag Lunge + 8 km of fatigued running under full race load, not a red flag by itself, but it is exactly the kind of tissue signal the six-gate protocol exists to let settle before loading again. Feeling capable on Day 3 after a 108-minute, avg-HR-154 effort raced four days into an illness is the same pattern that produced the Sydney outcome — the plan holds regardless of how good today feels. Today: rest or an easy 20–30 min walk only, per the existing W28 plan. No run until the Saturday conditional check, and only if it holds clean.
+
+---
+
 ## RACE STRATEGY — LOCKED (as of 2026-06-27)
 
 **Wave:** 18:40 HYROX MEN PRO · Bib 184047

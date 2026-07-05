@@ -29,7 +29,7 @@
 - **Gym:** Iron Viking, Moorabbin (Australia)
 - **Medical:** Pernicious anemia, B12 monthly (last 2026-06-29, next ~2026-07-29); chronic calf-Achilles-soleus zone; cardiac event W13 resolved
 - **2025 Melbourne baseline:** 1:33:44, rank #603, Pro M 45-49. Gap to target: 18:44.
-- **2026 Sydney race:** 1:48:24, DQ at Wall Balls (final station). 14:40 slower than Melbourne baseline, first DQ of career. Sled Push and Sled Pull both ranked #1 in field. Run collapsed progressively from Run 2 onward. See `analytics/race_comparison_melbourne_vs_sydney_2026.md` for full breakdown.
+- **2026 Sydney race:** 1:48:24, DQ for a navigational error (wrong inner loop on Run 8, confirmed by athlete 2026-07-05) — not a Wall Balls failure; WB 100 reps completed clean, judges praised the work. 14:40 slower than Melbourne baseline, first DQ of career. Sled Push and Sled Pull both ranked #1 in field. Run collapsed progressively from Run 2 onward. See `analytics/race_comparison_melbourne_vs_sydney_2026.md` for full breakdown.
 - **Detailed profile:** `reference/athlete_profile.md`
 
 ---
@@ -38,7 +38,7 @@
 
 | Capacity | Lock |
 |---|---|
-| **Wall Ball** | 50 clean single-set under full HYROX fatigue (W21 Sat 2026-05-23, re-confirmed W25 Sat 2026-06-20). **Race strategy: break-pattern 35–40 open + 20–25 + remainder (≤5:15 total). No unbroken 60+ attempt.** Ceiling probes closed. W26 Sat: skill touch 30 fresh only. |
+| **Wall Ball** | **CAPACITY CONFIRMED 2026-07-05 (athlete correction):** 100 reps completed clean at Sydney under full 8-station race fatigue, praised by judges — the WB station itself was not the DQ cause (see Active Limiter note below). Capacity is proven at race distance; remaining gap is **speed only** — race time 7:55, target 5:00. Pre-correction training data (50 clean single-set under partial fragment fatigue, W21 Sat 2026-05-23 / W25 Sat 2026-06-20) stands as the training-tested benchmark below full race load. |
 | **VO₂max** | 58 (PR W21 Mon 2026-05-18) |
 | **Sled push** | 246 kg overshoot (race 202 kg, +22%) — confirmed, retired from chase. W25 Tue confirmed 204 kg × 20m in 44–45 sec. |
 | **Sled pull** | 206 kg × 20 m / 1:05 PR (race 153 kg, +35%) — confirmed. W25 Tue: 186 kg × 20m in 1:20–1:25. |
@@ -76,7 +76,8 @@ NOT limiters: sled (confirmed race-ready), WB chunks (strong and repeatable), CV
 - **W27 Mon 2026-06-29:** Sickness watch / rest. B12 injection done. HRV +5%. No fever. Preserved.
 - **W27 Tue 2026-06-30:** Home micro-touch. HRV 58.7ms (+64%) — recovery confirmed. 8h18 sleep. Sydney plan alive.
 - **W27 Wed 2026-07-01:** Packing day. HRV 57.2ms (+58%). 7h30 sleep. System green. Travel prep complete.
-- **W27 Fri 2026-07-03 RACE DAY RESULT:** 1:48:24, DQ at Wall Balls. Splits: Run1 3:58, Ski 4:21, Run2 7:40, Sled Push 1:37 (rank #1), Run3 7:16, Sled Pull 2:36 (rank #1), Run4 7:42, BBJ 5:30, Run5 8:09, Row 5:03, Run6 8:22, Farmers Carry 1:35 (rank #64), Run7 8:33, Sandbag Lunge 5:12, Run8 13:18, Wall Balls 7:55 (DQ). Watch HR: avg 154, max 172, Z4 1:07:51 + Z5 16:14. WB ceiling (50 clean, never tested above under full fatigue) was exposed for the first time at 100 reps under a running load far beyond any trained benchmark — DQ mechanism not confirmed by athlete (no judge note available); technical breakdown under fatigue is the leading hypothesis. Full analysis: `analytics/race_comparison_melbourne_vs_sydney_2026.md`.
+- **W27 Fri 2026-07-03 RACE DAY RESULT:** 1:48:24, DQ at Wall Balls (station where the app recorded the ruling — not the cause). Splits: Run1 3:58, Ski 4:21, Run2 7:40, Sled Push 1:37 (rank #1), Run3 7:16, Sled Pull 2:36 (rank #1), Run4 7:42, BBJ 5:30, Run5 8:09, Row 5:03, Run6 8:22, Farmers Carry 1:35 (rank #64), Run7 8:33, Sandbag Lunge 5:12, Run8 13:18, Wall Balls 7:55 (DQ). Watch HR: avg 154, max 172, Z4 1:07:51 + Z5 16:14.
+- **DQ MECHANISM — CONFIRMED 2026-07-05 (athlete testimony, corrects the prior "technical breakdown" hypothesis):** Wall Balls were completed in full — 100 reps, judges praised the execution. The disqualification was for a **navigational/course error**: running the wrong (inner) loop on Run 8, the final run immediately before the Wall Balls station. Pre-race briefing had warned that an incorrect loop = automatic DQ, no exception. This is a course-discipline failure under extreme accumulated fatigue, not a WB capacity or technical-standard failure. WB capacity at 100 reps under full 8-station race fatigue is now a **confirmed, race-proven result** — the remaining WB gap is speed only (7:55 race time vs 5:00 target), not capacity. Full analysis (to be corrected): `analytics/race_comparison_melbourne_vs_sydney_2026.md`.
 - **No further probes.** Season closed. Next actions: recovery week (`archive/2026/week_28_plan.md`), then re-analysis for next block.
 - **Race wave confirmed:** 18:40 HYROX MEN PRO · Bib 184047
 
