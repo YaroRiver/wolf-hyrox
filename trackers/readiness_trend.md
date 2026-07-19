@@ -177,6 +177,24 @@
 
 ---
 
+---
+
+## W29 (2026-07-13 to 2026-07-19) — Medical Assessment / Controlled Return Week
+
+*Backfilled 2026-07-19 from athlete's external tracking (weekly report supplied for W28/W29 gap — see `archive/2026/week_29_report.md`). W28 (07-06→07-12) has no comparable daily dataset; see `archive/2026/week_28_report.md` for what is known.*
+
+| Date | Day | Sleep h | Restful % | HRV ms | HRV %vs baseline | Calves L | Calves R | Body feel | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-07-13 | MON | 7h35 | 65% | 31 sleeping / 35.7 daily | -6% | not provided | not provided | — | Full-body home functional strength 36:28, avg HR 110, no Z4/5; sinus congestion, headache prior day (nasal rinse helped) |
+| 2026-07-14 | TUE | 8h05 | 70% | 32 sleeping / 32.2 daily | -14% | not provided | not provided | — | No training (correct call); mild throat/chest phlegm; sleep good but HRV still suppressed |
+| 2026-07-15 | WED | ~8h00 | — | 48 sleeping / 43.7 daily | +15% | not provided | not provided | — | No training; HRV rebound (sleeping HR 56→52); sneezing, still "not 100%"; cold factory work environment |
+| 2026-07-16 | THU | not provided | — | not provided | — | — | — | — | Medical review day: Holter reported normal (athlete-reported); bloods reviewed (see `reference/medical.md`); stress echo booked for 2026-07-27 |
+| 2026-07-17 | FRI | not provided | — | not provided | — | — | — | — | Data gap — no screenshots supplied |
+| 2026-07-18 | SAT | 9h31 | 54% | 43 sleeping / 43.2 daily | +14% | not provided | not provided | — | First controlled return run: 5.03km/30:26/6:03 per km, avg HR 138, peak ~160, Z4 2:34/Z5 0:00, no surge; + 10:37 recovery walk |
+| 2026-07-19 | SUN | 7h15 | 53% | 44 sleeping / 37.2 daily | -2% | not provided | not provided | — | Post-run check, no overnight crash; late bedtime (up messaging til ~01:30) flagged by athlete as the negative; afternoon isolated HRV 26ms (not a readiness marker) |
+
+---
+
 ## Append Protocol
 
 After every Sunday close-out and after every morning readiness gate:

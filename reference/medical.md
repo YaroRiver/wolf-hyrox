@@ -78,6 +78,25 @@ Athlete drafted a full checkup request to his GP, to be actioned as part of Phas
 
 **Coaching rule:** no maximal-effort testing (VO₂max field test, hard sim work) until GP/cardiac clearance is back, regardless of how W28/W29 recovery gates read otherwise.
 
+## GP Checkup Results (2026-07-16 review of 2026-07-11 bloods) + Holter + Stress Echo Booking
+
+**Holter monitor:** Athlete reports (verbal, from GP, 2026-07-16) — normal, no significant rhythm abnormality found during the monitoring period. **Not yet seen as a written report** — logged as athlete testimony, not a verified document. A Holter captures ambulatory/resting rhythm; it does not capture exercise-induced arrhythmia or ischemia, which is exactly what the "jolt" pattern (correlated with deep athletic bradycardia ~42–43 bpm during heavy training) needs ruled out.
+
+**Cardiac stress test — booked, not yet done:** Transthoracic/Stress Echocardiogram, Victoria Heart, Windsor VIC, **Monday 2026-07-27, 16:00**. This is the actual clearance gate for exercise-induced cardiac response. **The coaching rule above stays in force until this test is done and reviewed — a normal Holter does not satisfy it.**
+
+**Bloods (verified from pathology report, collected 2026-07-11, referred by Dr Ilona Jakab):**
+- HbA1c 4.9% (30 mmol/mol) — excellent, no diabetes signal.
+- FBC/Hct/RBC/platelets/white cells/ESR — all normal, no anaemia, no inflammatory pattern.
+- CRP <1 — no systemic inflammation.
+- Vitamin D 134 nmol/L — strong.
+- Folate 29.0 nmol/L — strong.
+- B12 768 pmol/L (H, ref 163–740) — mildly elevated, consistent with monthly B12 injection therapy, not a concern.
+- TSH 2.69 mU/L — normal, euthyroid.
+- Liver panel (bilirubin, ALP, GGT, ALT, AST, albumin) — all normal.
+- Electrolytes/kidney: Sodium 146 (H, ref 135–145), Bicarbonate 19 (L, ref 20–32), Urea 8.4 (H, ref 3.0–8.0), eGFR 81 (>59, acceptable but not >90 as in the 2025-03 baseline) — mild deviations, plausibly hydration/pre-analytical; report itself notes eGFR 60–90 can be normal if stable over time. **Follow-up item, not urgent.**
+- **Glucose discordance (new, not flagged in athlete's own summary):** same draw shows two glucose values — Serum glucose (fasting) 6.3 mmol/L (H, ref 3.6–6.0) vs Plasma glucose (fasting) 5.0 mmol/L (normal). These should track together; a same-draw discordance this size is unusual. Given HbA1c 4.9% is excellent, this is very unlikely to indicate real dysglycaemia — most likely a pre-analytical/assay artifact — but **raise directly with the GP** rather than dismiss silently, since it wasn't in the athlete's own report summary.
+- Lipids: Total cholesterol 5.7 (H, target <4.0 per report's own high-risk guideline), LDL 3.9 (H, target <2.5), Cholesterol/HDL ratio 4.8 (H, target <4.5 or better), Non-HDL 4.5 (H, target <3.3). HDL itself is good (1.19, >1.00 target). **Follow-up item for GP discussion** — not race-blocking, but worth addressing over the Melbourne block (diet, and physician's read on personal cardiovascular risk given the broader cardiac workup already underway).
+
 **Cramp detail clarified (athlete, 2026-07-05):** the full-body cramping did not happen during the race or immediately at the finish line — it happened afterward, at rest. Athlete lay down post-race and the cramps arrived as a wave (calves/thighs/adductors/groin, per above), resolved by getting up and moving again, and did not recur afterward. Pattern: rest-onset, wave-like, movement-responsive, single episode, non-recurring. Worth mentioning to the GP as post-exertional rest cramping, not active in-race cramping.
 
 ---

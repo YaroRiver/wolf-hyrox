@@ -2,57 +2,48 @@
 
 > **High-frequency file. Updated whenever active limiter or risk changes. Overwrite, do not append.**
 
-**Last updated:** 2026-07-02 (Thu — Race Week W27, travel day)
+**Last updated:** 2026-07-19 (Sunday — post-race gap sync, W30 planning)
 
 ---
 
 ## PRIMARY LIMITER
 
-### Health preservation — sickness-watch resolved
-- **Status:** Resolved by Tue 30 Jun. HRV 58.7ms (+64%) Tuesday morning. No fever confirmed across W27 Mon–Wed. System returned to green trend by Wednesday (sleeping HRV 66ms, daily HRV 57.2ms +58%).
-- **Current:** Race-day body is available. No active illness. Managed by home-only training, warmth, nasal rinse, sleep.
-- **Remaining risk:** Any re-exposure at airport/plane today (Thu). Mask available. Hand sanitiser available.
+### Cardiac clearance pending — stress echo not yet done
+- **Status:** Holter monitor reported normal by GP (2026-07-16, athlete-reported verbally — not yet a written report on file). Bloods reviewed same day, broadly healthy. **The actual clearance test — Transthoracic/Stress Echocardiogram — is booked for Monday 2026-07-27, 16:00, Victoria Heart, Windsor. Not yet done.**
+- **Why this still gates training:** A Holter captures resting/ambulatory rhythm only. The "jolt" (skipped-beat) sensations the athlete has reported are specifically linked to periods of deep athletic bradycardia (~42–43 bpm resting) during heavy training load — exactly the exercise-induced pattern a Holter cannot rule out and a stress echo is designed to test.
+- **Coaching rule (unchanged, `reference/medical.md`):** No maximal-effort testing — VO₂max field test, hard sim work, WB/sled/BBJ ceiling probes, sprint work — until the stress echo result is back and reviewed. This holds through all of W30 (2026-07-20 → 2026-07-26), regardless of how good the athlete feels.
+- **Hard rule 13 unchanged:** any palpitation/jolt sensation → immediate abort, no exception.
 
 ---
 
 ## SECONDARY LIMITER
 
-### Left calf / Achilles / under-knee — RACE WATCH
-- **Status:** 0/10 W27 Mon–Wed. No night cramp since W22 Sat (2026-05-30). B12 injection done Mon 29 Jun.
-- **Race gate:** If left leg ≥ 4/10 at any point pre-race → escalate to medical. If 2–3/10 at start → do not sprint Run 1, pace conservatively.
-- **High-risk stations:** Lunges (100m @ 30kg) · BBJ (80m) · Run pace sustained over 1 lap.
+### Sleep timing / bedtime discipline
+- **Status:** Flagged by the athlete himself (2026-07-19) — stayed up messaging until ~01:30 the prior night, called it a rhythm disruption. Sleep volume has generally been adequate to strong (7h15–9h31 across W29), but bedtime consistency is the recurring weakness (7-day sleep rhythm 53–60% across W29, well below the 73–76% seen during the Sydney taper).
+- **This is the long-standing pattern flagged in CLAUDE.md** — sleep-onset discipline as primary weakness, not a new issue.
 
 ---
 
-## ACTIVE RISKS
+## TERTIARY WATCH ITEMS
 
-### Risk 1: Mental execution under fatigue
-- **Lap counting:** Ring system locked. 2 rings RIGHT start → move to LEFT after each lap.
-- **WB:** No unbroken 60+ attempt. Break-pattern discipline even if feeling strong.
-- **First run:** Do not surge. Race time 18:40 — body will be warm from arena heat. Calm start protects everything.
+### Respiratory/sinus illness — trending resolved, not yet fully confirmed clean
+- Congestion/headache/throat irritation present Mon–Wed W29 (07-13→07-15). No symptoms reported Thu onward. No recurrence after Saturday's run. Treat as resolved but keep watching for 72h-clean confirmation before assuming zero residual risk.
 
-### Risk 2: Fueling — race is at 18:40
-- **Pre-race meal timing:** Large carb meal ~4–5h before (13:30–14:30). Banana + coffee ritual 60–90 min before start (~17:00–17:10). No solid food within 45 min of start.
-- **During race:** Lighter citrus gel preferred. Salt tablet with water only. No homemade capsule.
-- **Underfueling risk:** Race starts late. Don't starve since lunch.
+### Calf / Achilles / adductor
+- No rating provided for any day in W29 (data gap in the source reports). Given return to impact/loaded work resumes this week, **explicit daily calf rating should resume** — existing hard rules apply (0–2/10 Green, 2.5–3.5/10 Yellow, ≥4/10 or night cramp Red).
 
-### Risk 3: Overcorrection
-- **No last-minute testing.** No new supplements. No heavy pre-race activation. No max WB sets. Preserve what is confirmed.
+### Medical follow-ups (non-urgent, raise with GP)
+- Lipids elevated: total cholesterol 5.7, LDL 3.9, chol/HDL ratio 4.8, non-HDL 4.5 (all above the lab's own high-risk targets).
+- Glucose discordance: same-draw serum glucose 6.3 (H) vs plasma glucose 5.0 (normal), against an excellent HbA1c 4.9% — likely artifact, not flagged in the athlete's own report, worth mentioning to the GP directly.
 
 ---
 
-## NOT LIMITERS (race-ready confirmed)
+## NOT LIMITERS (currently)
 
-- **WB rate:** 2.25 sec/rep across two W26 sessions — race chunks credible (35–40 + 20–25 + remainder)
-- **BBJ:** 30m/1:14 (2.47 sec/m) confirmed W26 Sat — alive
-- **Lunges:** BW touched W26 Sat — pattern alive; calves held
-- **Sled Push:** 215kg W26 Tue — race load 202kg margin confirmed
-- **Sled Pull:** 180kg/1:00 W26 Tue — race load 153kg margin confirmed
-- **Ski Erg:** 4:19/1000m W26 Tue — alive
-- **Row Erg:** 4:16/1000m W26 Tue — alive
-- **CV capacity:** VO₂max 58, HR recovery excellent
-- **Calves:** 0/10 all W27 Mon–Wed
-- **HRV trend:** +58% vs baseline on race week Wed — best reading in weeks
+- **B12/anaemia:** bloods clean, B12 mildly high (supplementation-consistent), no anaemia.
+- **Thyroid, liver, inflammation (CRP/ESR):** all normal.
+- **Vitamin D, folate:** strong.
+- **Sled, WB capacity, running economy (fresh-state):** last tested at Sydney — proven, not re-litigated this week; irrelevant until training intensity resumes post-clearance.
 
 ---
 
