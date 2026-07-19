@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHASE 0 · RECOVERY GAP W28 · COMPLETED // YARO 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #080C10; --surface: #0E1419; --surface2: #141B22;
+    --border: #1E2D3D; --accent: #00E5FF; --red: #FF4757;
+    --gold: #FFD700; --green: #00FF87; --text: #E8EDF2;
+    --muted: #5A6A7A; --label: #8A9BAB; --orange: #FF8C42;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; min-height: 100vh; overflow-x: hidden; }
+  body::before { content: ''; position: fixed; inset: 0; background-image: linear-gradient(rgba(0,229,255,0.022) 1px, transparent 1px), linear-gradient(90deg, rgba(0,229,255,0.022) 1px, transparent 1px); background-size: 40px 40px; pointer-events: none; z-index: 0; }
+  .wrap { max-width: 1300px; margin: 0 auto; padding: 36px 24px; position: relative; z-index: 1; }
+
+  .hdr { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 28px; padding-bottom: 24px; border-bottom: 1px solid var(--border); animation: fadeUp .5s ease both; }
+  .hdr-eyebrow { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 4px; color: var(--muted); text-transform: uppercase; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+  .cd { width: 5px; height: 5px; border-radius: 50%; background: var(--muted); animation: pulse 2s ease-in-out infinite; }
+  .hdr-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(52px, 8vw, 88px); line-height: .88; letter-spacing: 4px; }
+  .hdr-sub   { font-family: 'Bebas Neue', sans-serif; font-size: clamp(16px, 2.2vw, 24px); letter-spacing: 6px; color: var(--muted); margin-top: 4px; }
+  .hdr-block { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); letter-spacing: 1px; margin-top: 8px; }
+  .hdr-block span { color: var(--accent); }
+  .hdr-right { text-align: right; }
+  .week-badge { font-family: 'Bebas Neue', sans-serif; font-size: 56px; color: var(--muted); letter-spacing: 3px; line-height: 1; }
+  .week-range { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--text); letter-spacing: 2px; margin-top: 2px; }
+  .week-year  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 2px; margin-bottom: 10px; }
+  .done-badge { display: inline-flex; align-items: center; gap: 6px; font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; padding: 5px 12px; border: 1px solid var(--border); background: var(--surface); }
+
+  .correction-banner { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--muted); padding: 14px 22px; margin-bottom: 20px; animation: fadeUp .5s .07s ease both; }
+  .cb-label { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 5px; }
+  .cb-text  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.7; }
+  .cb-text span { color: var(--text); }
+
+  .section-lbl { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 4px; color: var(--muted); text-transform: uppercase; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+  .section-lbl::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  .week-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; margin-bottom: 24px; }
+  .dc { background: var(--surface); border: 1px solid var(--border); border-top: 3px solid transparent; transition: transform .2s; animation: fadeUp .5s ease both; overflow: hidden; }
+  .dc.walk-day   { border-top-color: var(--muted); }
+  .dc.done-gold  { border-top-color: var(--gold); }
+  .dc:nth-child(1){animation-delay:.12s} .dc:nth-child(2){animation-delay:.17s}
+  .dc:nth-child(3){animation-delay:.22s} .dc:nth-child(4){animation-delay:.27s}
+  .dc:nth-child(5){animation-delay:.32s} .dc:nth-child(6){animation-delay:.37s}
+  .dc:nth-child(7){animation-delay:.42s}
+  .dc-head { padding: 12px 13px 10px; border-bottom: 1px solid var(--border); }
+  .dc-iso { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 1px; margin-bottom: 4px; }
+  .dc-iso .yr { color: var(--muted); } .dc-iso .dot { color: var(--border); margin: 0 2px; }
+  .dc-iso .mo { color: var(--label); } .dc-iso .dd { color: var(--text); font-weight: 500; }
+  .dc-abbr { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 3px; line-height: 1; }
+  .walk-day   .dc-abbr { color: var(--muted); }
+  .done-gold  .dc-abbr { color: var(--gold); }
+  .dc-tag { display: inline-block; margin-top: 6px; font-family: 'DM Mono', monospace; font-size: 7px; letter-spacing: 1.5px; padding: 2px 7px; text-transform: uppercase; }
+  .walk-day   .dc-tag { background: rgba(90,106,122,.08); color: var(--muted); }
+  .done-gold  .dc-tag { background: rgba(255,215,0,.07); color: var(--gold); }
+  .dc-body { padding: 10px 13px 13px; }
+  .di { font-family: 'DM Mono', monospace; font-size: 9.5px; color: var(--label); padding: 4px 0; border-bottom: 1px solid rgba(30,45,61,.5); line-height: 1.4; display: flex; align-items: flex-start; gap: 5px; }
+  .di:last-child { border-bottom: none; }
+  .di .ic { flex-shrink: 0; color: var(--muted); }
+  .hi { color: var(--text); } .gr { color: var(--green); } .ac { color: var(--accent); }
+  .rd { color: var(--red); }  .gd { color: var(--gold); }  .mu { color: var(--muted); }
+
+  .detail-grid { display: grid; grid-template-columns: repeat(1, 1fr); gap: 12px; margin-bottom: 12px; }
+  .card { background: var(--surface); border: 1px solid var(--border); padding: 22px; animation: fadeUp .5s ease both; }
+  .card-ttl { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 3px; color: var(--muted); text-transform: uppercase; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .ct-dot { width: 6px; height: 6px; flex-shrink: 0; }
+
+  .assess-item { display: flex; align-items: flex-start; gap: 8px; padding: 7px 0; border-bottom: 1px solid var(--border); font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.4; }
+  .assess-item:last-child { border-bottom: none; }
+  .assess-item.good::before { content: '✔'; color: var(--green); flex-shrink: 0; }
+  .assess-item.warn::before { content: '△'; color: var(--gold); flex-shrink: 0; }
+  .assess-item.note::before { content: '→'; color: var(--accent); flex-shrink: 0; }
+
+  .identity { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); padding: 22px 28px; margin-bottom: 14px; animation: fadeUp .5s .5s ease both; position: relative; overflow: hidden; }
+  .identity::after { content: '🐺'; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 72px; opacity: .05; pointer-events: none; }
+  .id-lbl { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; }
+  .id-lines { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 5px; }
+  .id-line  { font-family: 'Bebas Neue', sans-serif; font-size: 17px; letter-spacing: 3px; color: var(--muted); }
+  .id-line.hl { color: var(--accent); }
+
+  .footer { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .footer-l { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); letter-spacing: 2px; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); padding: 3px 8px; border: 1px solid var(--border); letter-spacing: 1px; }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes pulse  { 0%, 100% { opacity: 1; } 50% { opacity: .3; } }
+  @media (max-width: 1100px) { .week-grid { grid-template-columns: repeat(4,1fr); } }
+  @media (max-width: 720px)  { .week-grid { grid-template-columns: repeat(2,1fr); } .hdr { flex-direction: column; gap: 16px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HEADER -->
+  <div class="hdr">
+    <div>
+      <div class="hdr-eyebrow"><span class="cd"></span>Completed · Phase 0 — Recovery &amp; Clearance · Data Gap Week</div>
+      <div class="hdr-title">WEEK<br>REPORT</div>
+      <div class="hdr-sub">W28 · Post-Race Recovery Week</div>
+      <div class="hdr-block">2026·07·06 → 2026·07·12 · <span>No daily log kept this week</span></div>
+    </div>
+    <div class="hdr-right">
+      <div class="week-badge">W28</div>
+      <div class="week-range">2026·07·06 → 2026·07·12</div>
+      <div class="week-year">Governed by archive/2026/week_28_plan.md</div>
+      <div class="done-badge">Data Gap — Archived for History</div>
+    </div>
+  </div>
+
+  <!-- NOTE BANNER -->
+  <div class="correction-banner">
+    <div class="cb-label">Data Gap Notice</div>
+    <div class="cb-text">System logging lapsed after the 2026-07-05 post-race entry and did not resume until a 2026-07-19 backfill. This week was governed by <span>archive/2026/week_28_plan.md</span> (six binary recovery gates, zero run/WB/sled/jump work) but no daily entries were captured. This page exists for historical continuity only — nothing below is invented.</div>
+  </div>
+
+  <!-- WEEK CARDS -->
+  <div class="section-lbl">📆 Week Record — W28 · 2026·07·06 → 2026·07·12</div>
+  <div class="week-grid">
+
+    <div class="dc walk-day"><div class="dc-head"><div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">06</span></div><div class="dc-abbr">MON</div><div class="dc-tag">Data Not Provided</div></div><div class="dc-body"><div class="di"><span class="ic">—</span><span class="mu">No daily entry logged</span></div></div></div>
+
+    <div class="dc walk-day"><div class="dc-head"><div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">07</span></div><div class="dc-abbr">TUE</div><div class="dc-tag">Data Not Provided</div></div><div class="dc-body"><div class="di"><span class="ic">—</span><span class="mu">No daily entry logged</span></div></div></div>
+
+    <div class="dc walk-day"><div class="dc-head"><div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">08</span></div><div class="dc-abbr">WED</div><div class="dc-tag">Data Not Provided</div></div><div class="dc-body"><div class="di"><span class="ic">—</span><span class="mu">No daily entry logged</span></div></div></div>
+
+    <div class="dc walk-day"><div class="dc-head"><div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">09</span></div><div class="dc-abbr">THU</div><div class="dc-tag">Data Not Provided</div></div><div class="dc-body"><div class="di"><span class="ic">—</span><span class="mu">No daily entry logged</span></div></div></div>
+
+    <div class="dc walk-day"><div class="dc-head"><div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">10</span></div><div class="dc-abbr">FRI</div><div class="dc-tag">Data Not Provided</div></div><div class="dc-body"><div class="di"><span class="ic">—</span><span class="mu">No daily entry logged</span></div></div></div>
+
+    <div class="dc done-gold">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">11</span></div>
+        <div class="dc-abbr">SAT</div>
+        <div class="dc-tag">Bloods Drawn</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">🩸</span><span>Full blood panel <span class="hi">Melbourne Pathology</span>, fasting 08:49</span></div>
+        <div class="di"><span class="ic">—</span><span class="mu">Results reviewed the following week (W29 Thu)</span></div>
+      </div>
+    </div>
+
+    <div class="dc walk-day"><div class="dc-head"><div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">07</span><span class="dot">·</span><span class="dd">12</span></div><div class="dc-abbr">SUN</div><div class="dc-tag">Data Not Provided</div></div><div class="dc-body"><div class="di"><span class="ic">—</span><span class="mu">No daily entry logged</span></div></div></div>
+
+  </div>
+
+  <!-- ASSESSMENT -->
+  <div class="detail-grid">
+    <div class="card" style="border-top:2px solid var(--muted);">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--muted);"></span>W28 Assessment</div>
+      <div class="assess-item note">Known: full blood panel drawn <span style="color:var(--text);">Sat 07-11</span> — results in W29</div>
+      <div class="assess-item warn">Logging lapsed this week — no daily readiness/session data captured</div>
+      <div class="assess-item note">Inferred (not verified): rest/low-load week consistent with the W28 protocol, given W29 Monday still showed active sinus/respiratory symptoms</div>
+      <div class="assess-item note">Recommendation applied going forward: resume daily <span style="color:var(--accent);">/morning</span> and <span style="color:var(--accent);">/session</span> logging rather than relying on retrospective backfill</div>
+    </div>
+  </div>
+
+  <!-- IDENTITY -->
+  <div class="identity">
+    <div class="id-lbl">🐺 Wolf Identity</div>
+    <div class="id-lines">
+      <div class="id-line">We do not chase races.</div>
+      <div class="id-line">We build capacity.</div>
+      <div class="id-line hl">We hunt numbers.</div>
+      <div class="id-line hl">We earn the flight.</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-l">W28 COMPLETED (DATA GAP) · 2026·07·06 → 2026·07·12 &nbsp;//&nbsp; YARO &nbsp;//&nbsp; PHASE 0 — RECOVERY &amp; CLEARANCE</div>
+    <div class="tags">
+      <div class="tag">#PostRace</div>
+      <div class="tag">#DataGap</div>
+      <div class="tag">#Recovery</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
