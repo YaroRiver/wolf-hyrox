@@ -24,6 +24,8 @@ TIME ANCHOR (verified 2026-07-19 Sunday Melbourne — W27/W28/W29 backfill + syn
 
 **Cooldown:** 8 min easy walk
 
+**Navigation drill (new, zero-cost, start now):** if the loop has any lap/turn structure, count laps out loud every time, even on an easy solo run. This is the twice-confirmed failure pattern (Melbourne 2025 penalty, Sydney DQ) — cheapest fix available, costs no intensity, no reason to wait for cardiac clearance to start building the habit.
+
 **Hard rule:** no rep under 2:55. Any jolt → stop, walk it out, session ends.
 
 ---
@@ -89,6 +91,8 @@ Not a HYROX simulation — this is the one day that can't survive contact with t
 - Pace irrelevant — do not chase a number
 
 **Cooldown:** 8 min walk
+
+**Navigation drill:** same as Monday — count laps aloud if the route loops.
 
 **Hard rule:** treat this as the "if fatigued" version every time this week, regardless of how you feel — no tempo push.
 
