@@ -195,6 +195,28 @@
 
 ---
 
+## W30 (2026-07-20 to 2026-07-26) — Phase 0→1 Bridge, Capped Return (cap not held Tue–Thu, Sat)
+
+*Backfilled 2026-07-26 from athlete's external tracking (`W30_daily_reports_2026-07-20_to_2026-07-26.md`) — see `state/current_week.md` for full plan-vs-actual per day.*
+
+| Date | Day | Sleep h | Restful % | HRV ms | HRV %vs baseline | Calves L | Calves R | Body feel | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-07-20 | MON | 7h50 | — (restless elevated) | 32 | below baseline | not provided | not provided | illness-onset | No training — shin ache, low-back pull, sinus symptoms; correct Red call |
+| 2026-07-21 | TUE | 7h50 | 66% (5h10) | 39 sleeping | — | not provided | not provided | back/knee/leg pain pre, "alive" post | Lower-body return; walking lunges loaded 28kg/hand (plan specified bodyweight) |
+| 2026-07-22 | WED | 8h03 | — | 33 SleepWatch / 27.5 Athlytic | -29% | not provided | not provided | strength "not fully returned," moderately fatigued | Upper return; bench 70kg near-failure, weighted pull-ups/dips +20kg — heavier than capped plan |
+| 2026-07-23 | THU | 8h30 (+nap) | — | 37.5 daily / 33.3 24h | -4% | not provided | not provided | — | HYROX bridge; R1-R3 faster than 4:30-4:40 cap, Z5 1:02, watch rated 7/Hard |
+| 2026-07-24 | FRI | 7h35 | — | not provided | — | not provided | not provided | — | Progressive aerobic run 5.04km, zero Z4/5 — cap respected |
+| 2026-07-25 | SAT | 8h35 | 63% (5h25) | 35 sleeping / 32.6 daily | -17% | not provided | not provided | — | GRIND class (external), 21:28 combined Z4-Z5, avg HR 153 — hardest session of week, ~44h before stress echo |
+| 2026-07-26 | SUN | 12h05 (incl. nap) | 58% (7h00) | 43 sleeping / 51.7 daily | +31% | not provided | not provided | — | Extended sleep, no training, strong HRV rebound |
+
+## W30 7-day summary
+
+| W30 summary | ~8h39 avg | ~60% avg (days provided) | 27.5–51.7 ms daily range | — | no data any day | no data any day | 0 Green / 3 plan-compliant days (Mon/Fri/Sun) / 4 cap-exceeded days (Tue/Wed/Thu/Sat) |
+
+**Note:** No calf/Achilles rating provided on any day for the second consecutive week (also missing W29) — flagged again in `state/limiters_now.md`.
+
+---
+
 ## Append Protocol
 
 After every Sunday close-out and after every morning readiness gate:
