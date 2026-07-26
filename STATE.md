@@ -5,13 +5,13 @@
 ---
 
 ## TIME ANCHOR
-- **Last updated:** 2026-07-19 (Sunday, Melbourne — two-week gap sync: W27 formally closed, W28/W29 backfilled, W30 opened)
+- **Last updated:** 2026-07-26 (Sunday, Melbourne — W30 close-out: full week backfilled, cap-compliance flagged, W31 opened)
 - **Race day:** 2026-07-03 (Friday) — HYROX Sydney — **COMPLETE**
 - **Race result:** 1:48:24 — **DISQUALIFIED — navigational error, wrong loop on Run 8** (corrected 2026-07-05; not a Wall Balls failure — see below)
 - **Sydney Build Day:** 96 (Fri 2026-07-03, race day — final build day)
 - **Sydney Build Week:** 14 (W27, closed at race)
-- **Annual Week:** 30 (2026-07-20 → 2026-07-26) — current. W27 archived 2026-07-19 (late). W28 (2026-07-06→07-12) has no daily report — logging lapsed; see `archive/2026/week_28_report.md`. W29 (2026-07-13→07-19) backfilled from athlete's external tracking — see `archive/2026/week_29_report.md`.
-- **Phase:** Phase 0 — Recovery & Clearance (Melbourne draft plan), **extended**. Draft plan originally scoped this phase to W28–W29 (Jul 6–19); it has not closed on schedule because the actual clearance event — cardiac stress echocardiogram — is booked for **2026-07-27**, inside W31. W30 is a bridge week: full return to gym frequency, capped intensity, no maximal-effort work until the stress echo clears.
+- **Annual Week:** 31 (2026-07-27 → 2026-08-02) — current. W27 archived 2026-07-19 (late). W28 (2026-07-06→07-12) has no daily report — logging lapsed; see `archive/2026/week_28_report.md`. W29 (2026-07-13→07-19) backfilled from athlete's external tracking — see `archive/2026/week_29_report.md`. W30 (2026-07-20→07-26) backfilled from athlete's external tracking, Grade C+ — see `archive/2026/week_30_report.md`.
+- **Phase:** Phase 0 — Recovery & Clearance (Melbourne draft plan), **closing this week**. Draft plan originally scoped this phase to W28–W29 (Jul 6–19); it ran long because the actual clearance event — cardiac stress echocardiogram — is booked for **2026-07-27 (Monday, W31)**. W31 opens Phase 1 (Foundation) from Tuesday, contingent on a clear echo result. W30 was intended as a bridge week (capped intensity) but the athlete trained at full intensity from Tuesday onward regardless of the cap — see W30 report for the compliance flag. No cardiac jolt/palpitation reported at any point.
 - **W22 STATUS:** COMPLETE — Vaccine Disruption / Recovery Protection Week (Grade B)
 - **W23 STATUS:** COMPLETE — Recovery/Re-entry Week (Grade B-). Two bike sessions only. No WB probe, no running quality, no BBJ, no lunges. WB lock unchanged at 50 (W21). Probe deferred.
 - **W24 STATUS:** COMPLETE — Recovery Crisis / Respiratory Activation (Grade C+). Monday re-entry fragment only (Grade A). Respiratory/sinus activation Wed. HRV suppressed Thu–Sat. WB probe missed 3rd consecutive time (gate not met). Walk only Sat. Sunday sleeping HR 56 bpm — recovery direction confirmed.
@@ -20,6 +20,7 @@
 - **W27 STATUS:** COMPLETE (archived 2026-07-19, late). Race Week. Mon sickness-watch (no training, B12 done). Tue home micro-touch (HRV +64%, recovery confirmed). Wed packing/logistics. Thu travel MEL→SYD JQ514 13:00. **RACE FRI 3 JUL 18:40 — 1:48:24, DQ navigational (Run 8 wrong loop) — WB 100 reps completed clean.** Sat 4 Jul: returned home, post-race data logged. Full deep-dive: `analytics/race_comparison_melbourne_vs_sydney_2026.md`. Report: `archive/2026/week_27_report.md`.
 - **W28 STATUS:** DATA GAP. No daily report — see `archive/2026/week_28_report.md`. Known: full blood panel drawn Sat 07-11. Recovery-week directive (`archive/2026/week_28_plan.md`) presumed followed in substance based on symptom trajectory, not verified day-by-day.
 - **W29 STATUS:** COMPLETE (Grade A-, backfilled). Medical-assessment + controlled-return week. Mon full-body home strength (moderate). Tue/Wed deliberate rest through residual sinus symptoms. Thu medical review: **Holter reported normal** (verbal), bloods broadly healthy (see `reference/medical.md`), **cardiac stress echo booked 2026-07-27**. Fri data gap. Sat first controlled return run (5.03km/30:26, avg HR 138, no crash). Sun stable recovery check. Report: `archive/2026/week_29_report.md`.
+- **W30 STATUS:** COMPLETE (Grade C+, backfilled 2026-07-26). Phase 0/1 bridge week — plan called for capped intensity pending the stress echo; athlete trained past the cap from Tuesday onward (loaded lunges, near-failure bench/weighted pull-ups/dips, faster-than-capped HYROX interval with real Zone 5, and a full external GRIND class Saturday — 21:28 combined Zone 4-5, ~44h before the echo). Mon illness rest (A), Fri aerobic cap respected (A-), Sun pre-echo rest (A) all matched plan. **No cardiac jolt/palpitation reported any day.** Athlete has stated intent to train at full volume regardless of echo outcome; coaching position (cardiac signal overrides athlete intent, per `reference/decision_rules.md`) held in chat, discussed at length, not resolved by agreement — athlete disputes the framing. Calf/Achilles rating gap now spans two consecutive weeks (W29+W30). Report: `archive/2026/week_30_report.md`.
 
 ---
 
@@ -96,6 +97,8 @@ NOT limiters: sled, WB capacity (both proven at Sydney), CV base fitness, B12/an
 
 ## CALENDAR (race horizon)
 
+- **W31 (07-27→08-02):** CURRENT. Mon: cardiac stress echocardiogram, 16:00, Victoria Heart, Windsor — the actual Phase 0 exit gate. If clear, Phase 1 (Foundation) opens Tuesday at full working loads per `reference/master_plan_melbourne_draft_v1.md`. Plan: `state/current_week_plan.md`.
+- **W30 (07-20→07-26):** COMPLETE — Grade C+. See W30 STATUS above and `archive/2026/week_30_report.md`.
 - **W25 (06-15→06-21):** COMPLETE — Grade B+. WB probe 50 under fatigue (ceiling confirmed). BBJ restarted. Run speed present. Calves clean. Race strategy adjusted.
 - **W26 (06-22→06-28):** COMPLETE — Grade A-. Ski 4:19 / Row 4:16 confirmed Tue. WB 40 reps/1:30 Thu + 20 reps/45s Sat (2.25 sec/rep locked). BBJ 30m/1:14 confirmed Sat. Run 3×400m (4:34/5:13/4:33). Lunges BW touched. Left leg managed 0–2/10 all week. **W26 archived 2026-07-02.**
 - **W27 (06-29→07-03):** RACE WEEK COMPLETE. Mon sickness-watch + B12 done. Tue home micro-touch (HRV recovery confirmed). Wed packing. Thu 2 Jul travel MEL→SYD JQ514 13:00. **RACE Fri 3 Jul 18:40 — 1:48:24, DQ at Wall Balls.** Sat 4 Jul: return flight, athlete home.
@@ -142,9 +145,10 @@ Conditional:
 **W27 close-out completed:** 2026-07-19 (late — archived to archive/2026/week_27_report.md)
 **W28:** data gap, no daily report — `archive/2026/week_28_report.md`
 **W29 close-out completed:** 2026-07-19 (backfilled from athlete's external tracking — `archive/2026/week_29_report.md`)
-**W30 opened:** 2026-07-19 (`state/current_week.md`, `state/current_week_plan.md`)
-**This file last refreshed:** 2026-07-19 16:35 AEST (Sunday — two-week gap sync: W27 archived, W28/W29 backfilled, medical/cardiac state updated, W30 opened)
-**Next mandatory refresh:** Sunday 2026-07-26 formal W30 close-out (archive current_week.md → week_30_report.md, open W31 current files) — W31 also contains the 2026-07-27 stress echo, the actual cardiac clearance event
+**W30 close-out completed:** 2026-07-26 (backfilled from athlete's external tracking — `archive/2026/week_30_report.md`)
+**W31 opened:** 2026-07-26 (`state/current_week.md`, `state/current_week_plan.md`, `archive/2026/week_31_plan.md`)
+**This file last refreshed:** 2026-07-26 18:06 AEST (Sunday — W30 close-out: full week backfilled, cap-compliance flagged ahead of stress echo, W31 opened)
+**Next mandatory refresh:** immediately after the 2026-07-27 16:00 stress echo result is known — determines whether Phase 1 opens as drafted in `state/current_week_plan.md` or W31 reverts to Phase 0 protocol; formal Sunday close-out otherwise due 2026-08-02
 **Race wave confirmed:** 18:40 HYROX MEN PRO · Bib 184047 · 2026-06-27
 **Race result confirmed:** 1:48:24, DQ navigational (Run 8 wrong loop, not Wall Balls) · 2026-07-03
-**Cardiac stress echo booked:** 2026-07-27, 16:00, Victoria Heart Windsor — pending
+**Cardiac stress echo:** 2026-07-27, 16:00, Victoria Heart Windsor — TOMORROW, pending
