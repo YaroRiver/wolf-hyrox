@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PERSONAL RECORDS · PROGRESS BOARD // YARO 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #080C10; --surface: #0E1419; --surface2: #141B22;
+    --border: #1E2D3D; --accent: #00E5FF; --red: #FF4757;
+    --gold: #FFD700; --green: #00FF87; --text: #E8EDF2;
+    --muted: #5A6A7A; --label: #8A9BAB; --orange: #FF8C42;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; min-height: 100vh; overflow-x: hidden; }
+  body::before { content: ''; position: fixed; inset: 0; background-image: linear-gradient(rgba(0,229,255,0.022) 1px, transparent 1px), linear-gradient(90deg, rgba(0,229,255,0.022) 1px, transparent 1px); background-size: 40px 40px; pointer-events: none; z-index: 0; }
+  .wrap { max-width: 1300px; margin: 0 auto; padding: 36px 24px; position: relative; z-index: 1; }
+
+  .hdr { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 28px; padding-bottom: 24px; border-bottom: 1px solid var(--border); animation: fadeUp .5s ease both; }
+  .hdr-eyebrow { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 4px; color: var(--gold); text-transform: uppercase; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+  .cd { width: 5px; height: 5px; border-radius: 50%; background: var(--gold); animation: pulse 2s ease-in-out infinite; }
+  .hdr-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(52px, 8vw, 88px); line-height: .88; letter-spacing: 4px; }
+  .hdr-sub   { font-family: 'Bebas Neue', sans-serif; font-size: clamp(16px, 2.2vw, 24px); letter-spacing: 6px; color: var(--muted); margin-top: 4px; }
+  .hdr-block { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); letter-spacing: 1px; margin-top: 8px; }
+  .hdr-block span { color: var(--accent); }
+  .hdr-right { text-align: right; }
+  .updated-badge { display: inline-flex; align-items: center; gap: 6px; font-family: 'DM Mono', monospace; font-size: 9px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; padding: 5px 12px; border: 1px solid rgba(255,215,0,.25); background: rgba(255,215,0,.05); }
+
+  .summary-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-bottom: 24px; animation: fadeUp .5s .06s ease both; }
+  .ss { background: var(--surface); padding: 16px; text-align: center; transition: background .2s; }
+  .ss:hover { background: var(--surface2); }
+  .ss .sv { font-family: 'Bebas Neue', sans-serif; font-size: 26px; letter-spacing: 2px; line-height: 1; }
+  .ss .su { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--accent); margin-left: 2px; }
+  .ss .sl { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-top: 5px; }
+  .ss .sd { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); margin-top: 3px; }
+
+  .section-lbl { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 4px; color: var(--muted); text-transform: uppercase; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+  .section-lbl::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  .prog-card { background: var(--surface); border: 1px solid var(--border); padding: 20px 22px; margin-bottom: 12px; animation: fadeUp .5s ease both; }
+  .prog-ttl { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 2px; color: var(--label); text-transform: uppercase; margin-bottom: 12px; display: flex; justify-content: space-between; }
+  .prog-ttl .now { color: var(--green); }
+  .prog-row { display: flex; align-items: center; gap: 10px; padding: 5px 0; }
+  .prog-lbl { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); width: 90px; flex-shrink: 0; }
+  .prog-bar-bg { flex: 1; height: 8px; background: var(--border); border-radius: 3px; overflow: hidden; }
+  .prog-bar-fill { height: 100%; border-radius: 3px; transition: width 1.4s cubic-bezier(.4,0,.2,1); }
+  .prog-val { font-family: 'Bebas Neue', sans-serif; font-size: 16px; width: 64px; text-align: right; flex-shrink: 0; }
+
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 24px; }
+  .card { background: var(--surface); border: 1px solid var(--border); padding: 20px; animation: fadeUp .5s ease both; transition: border-color .2s, transform .2s; }
+  .card:hover { border-color: rgba(0,229,255,.1); transform: translateY(-2px); }
+  .card-ttl { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 3px; color: var(--muted); text-transform: uppercase; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .ct-dot { width: 6px; height: 6px; flex-shrink: 0; border-radius: 50%; }
+  .rec-main { font-family: 'Bebas Neue', sans-serif; font-size: 30px; letter-spacing: 1px; color: var(--text); line-height: 1; margin-bottom: 4px; }
+  .rec-date { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); margin-bottom: 10px; }
+  .rec-note { font-family: 'DM Mono', monospace; font-size: 9.5px; color: var(--label); line-height: 1.6; }
+  .rec-note span { color: var(--text); }
+  .trend-tag { display: inline-flex; align-items: center; gap: 4px; font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 1px; padding: 3px 8px; border: 1px solid; margin-top: 10px; text-transform: uppercase; }
+  .trend-up { color: var(--green); border-color: rgba(0,255,135,.25); background: rgba(0,255,135,.05); }
+  .trend-flat { color: var(--accent); border-color: rgba(0,229,255,.25); background: rgba(0,229,255,.05); }
+  .trend-stale { color: var(--gold); border-color: rgba(255,215,0,.25); background: rgba(255,215,0,.05); }
+
+  .race-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+  .race-table th { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; padding: 8px 10px; border-bottom: 1px solid var(--border); text-align: left; }
+  .race-table td { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); padding: 10px; border-bottom: 1px solid rgba(30,45,61,.5); vertical-align: top; }
+  .race-table tr:last-child td { border-bottom: none; }
+  .race-table .hi { color: var(--text); font-family: 'Bebas Neue', sans-serif; font-size: 16px; letter-spacing: 1px; }
+  .race-table .rd { color: var(--red); } .race-table .gr { color: var(--green); } .race-table .gd { color: var(--gold); }
+
+  .identity { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--gold); padding: 22px 28px; margin-top: 14px; margin-bottom: 14px; animation: fadeUp .5s .5s ease both; position: relative; overflow: hidden; }
+  .identity::after { content: '🐺'; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 72px; opacity: .05; pointer-events: none; }
+  .id-lbl { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; }
+  .id-lines { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 5px; }
+  .id-line  { font-family: 'Bebas Neue', sans-serif; font-size: 17px; letter-spacing: 3px; color: var(--muted); transition: color .2s; }
+  .id-line:hover { color: var(--text); }
+  .id-line.hl { color: var(--gold); }
+
+  .footer { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .footer-l { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); letter-spacing: 2px; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); padding: 3px 8px; border: 1px solid var(--border); letter-spacing: 1px; cursor: default; transition: all .2s; }
+  .tag:hover { color: var(--gold); border-color: rgba(255,215,0,.25); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes pulse  { 0%, 100% { opacity: 1; } 50% { opacity: .3; } }
+  @media (max-width: 1000px) { .grid3 { grid-template-columns: 1fr 1fr; } .summary-strip { grid-template-columns: repeat(2,1fr); } }
+  @media (max-width: 650px)  { .grid3 { grid-template-columns: 1fr; } .hdr { flex-direction: column; gap: 16px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HEADER -->
+  <div class="hdr">
+    <div>
+      <div class="hdr-eyebrow"><span class="cd"></span>Progress Board · Updated Every Lock Change</div>
+      <div class="hdr-title">PERSONAL<br>RECORDS</div>
+      <div class="hdr-sub">Where I Am Right Now</div>
+      <div class="hdr-block">Brisbane → Sydney → Melbourne builds · <span>every PR, every lock, one page</span></div>
+    </div>
+    <div class="hdr-right">
+      <div class="updated-badge"><span class="cd"></span>Updated 2026·08·02</div>
+    </div>
+  </div>
+
+  <!-- SUMMARY STRIP -->
+  <div class="summary-strip">
+    <div class="ss"><div class="sv" style="color:var(--gold);">58</div><div class="sl">VO₂max PR</div><div class="sd">2026-05-18 · stale, retest due</div></div>
+    <div class="ss"><div class="sv" style="color:var(--green);">252<span class="su">kg</span></div><div class="sl">Sled Push (compromised)</div><div class="sd">2026-08-01</div></div>
+    <div class="ss"><div class="sv" style="color:var(--green);">100</div><div class="sl">WB reps, race-proven</div><div class="sd">2026-07-03 &amp; 2026-08-01</div></div>
+    <div class="ss"><div class="sv" style="color:var(--accent);">2:42</div><div class="sl">Fastest compromised 600m</div><div class="sd">2026-08-01</div></div>
+  </div>
+
+  <!-- PROGRESSION BARS -->
+  <div class="section-lbl">📈 Headline Progressions</div>
+
+  <div class="prog-card" style="animation-delay:.08s;">
+    <div class="prog-ttl"><span>VO₂max (ml/kg/min)</span><span class="now">58 current — stale since 2026-05-18</span></div>
+    <div class="prog-row"><div class="prog-lbl">W17 baseline</div><div class="prog-bar-bg"><div class="prog-bar-fill" style="width:0%;background:var(--muted);" data-w="86%;"></div></div><div class="prog-val" style="color:var(--muted);">54</div></div>
+    <div class="prog-row"><div class="prog-lbl">W18</div><div class="prog-bar-bg"><div class="prog-bar-fill" style="width:0%;background:var(--label);" data-w="89%;"></div></div><div class="prog-val" style="color:var(--label);">56</div></div>
+    <div class="prog-row"><div class="prog-lbl">W18 (later)</div><div class="prog-bar-bg"><div class="prog-bar-fill" style="width:0%;background:var(--accent);" data-w="90%;"></div></div><div class="prog-val" style="color:var(--accent);">57</div></div>
+    <div class="prog-row"><div class="prog-lbl">W21 PR</div><div class="prog-bar-bg"><div class="prog-bar-fill" style="width:0%;background:var(--green);" data-w="100%;"></div></div><div class="prog-val" style="color:var(--green);">58 ★</div></div>
+  </div>
+
+  <div class="prog-card" style="animation-delay:.12s;">
+    <div class="prog-ttl"><span>Sled Push working load (kg)</span><span class="now">252 compromised-conditions reference — 245 frozen working load</span></div>
+    <div class="prog-row"><div class="prog-lbl">Brisbane</div><div class="prog-bar-bg"><div class="prog-bar-fill" style="width:0%;background:var(--muted);" data-w="81%;"></div></div><div class="prog-val" style="color:var(--muted);">204</div></div>
+    <div class="prog-row"><div class="prog-lbl">W12</div><div class="prog-bar-bg"><div class="prog-bar-fill" style="width:0%;background:var(--label);" data-w="87%;"></div></div><div class="prog-val" style="color:var(--label);">220</div></div>
+    <div class="prog-row"><div class="prog-lbl">W13</div><div class="prog-bar-bg"><div class="prog-bar-fill" style="width:0%;background:var(--gold);" data-w="89%;"></div></div><div class="prog-val" style="color:var(--gold);">225</div></div>
+    <div class="prog-row"><div class="prog-lbl">W14</div><div class="prog-bar-bg"><div class="prog-bar-fill" style="width:0%;background:var(--accent);" data-w="95%;"></div></div><div class="prog-val" style="color:var(--accent);">240</div></div>
+    <div class="prog-row"><div class="prog-lbl">W17 working</div><div class="prog-bar-bg"><div class="prog-bar-fill" style="width:0%;background:var(--accent);" data-w="97%;"></div></div><div class="prog-val" style="color:var(--accent);">245</div></div>
+    <div class="prog-row"><div class="prog-lbl">W31 compromised</div><div class="prog-bar-bg"><div class="prog-bar-fill" style="width:0%;background:var(--green);" data-w="100%;"></div></div><div class="prog-val" style="color:var(--green);">252 ★</div></div>
+  </div>
+
+  <div class="prog-card" style="animation-delay:.16s;">
+    <div class="prog-ttl"><span>Wall Ball clean line under fatigue (reps)</span><span class="now">100 race-proven &amp; training-reconfirmed</span></div>
+    <div class="prog-row"><div class="prog-lbl">W18</div><div class="prog-bar-bg"><div class="prog-bar-fill" style="width:0%;background:var(--muted);" data-w="30%;"></div></div><div class="prog-val" style="color:var(--muted);">30</div></div>
+    <div class="prog-row"><div class="prog-lbl">W19</div><div class="prog-bar-bg"><div class="prog-bar-fill" style="width:0%;background:var(--label);" data-w="40%;"></div></div><div class="prog-val" style="color:var(--label);">40</div></div>
+    <div class="prog-row"><div class="prog-lbl">W20-W25</div><div class="prog-bar-bg"><div class="prog-bar-fill" style="width:0%;background:var(--gold);" data-w="50%;"></div></div><div class="prog-val" style="color:var(--gold);">50</div></div>
+    <div class="prog-row"><div class="prog-lbl">Race 07·03</div><div class="prog-bar-bg"><div class="prog-bar-fill" style="width:0%;background:var(--accent);" data-w="100%;"></div></div><div class="prog-val" style="color:var(--accent);">100</div></div>
+    <div class="prog-row"><div class="prog-lbl">W31 training</div><div class="prog-bar-bg"><div class="prog-bar-fill" style="width:0%;background:var(--green);" data-w="100%;"></div></div><div class="prog-val" style="color:var(--green);">100 ★</div></div>
+  </div>
+
+  <!-- STATION CARDS -->
+  <div class="section-lbl" style="margin-top:24px;">🏆 Station-by-Station</div>
+  <div class="grid3">
+
+    <div class="card" style="animation-delay:.20s;">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--green);"></span>Wall Ball</div>
+      <div class="rec-main">100 reps</div>
+      <div class="rec-date">Race 2026-07-03 · Training-reconfirmed 2026-08-01</div>
+      <div class="rec-note">Race: 7:55, judges praised execution. Training: 4×25 @ 59/59/61/61s within a real compromised block — 2 sec total drift. Best density: 5×20 @ 47/47/47/46/46s.</div>
+      <div class="trend-tag trend-flat">→ capacity proven twice, speed unsolved</div>
+    </div>
+
+    <div class="card" style="animation-delay:.23s;">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--gold);"></span>Sled Push</div>
+      <div class="rec-main">252 kg</div>
+      <div class="rec-date">2026-08-01 (compromised) · 245kg working (2026-04-21)</div>
+      <div class="rec-note">4×20m, 39/43/48/50 sec — self-directed overload under real fatigue. Working load frozen at 245kg, exceeds race requirement by 60%+.</div>
+      <div class="trend-tag trend-up">↑ new reference under fatigue</div>
+    </div>
+
+    <div class="card" style="animation-delay:.26s;">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--accent);"></span>Sled Pull</div>
+      <div class="rec-main">1:07</div>
+      <div class="rec-date">2026-07-28 · best set of a 1:32→1:11→1:07 arc</div>
+      <div class="rec-note">185kg working reference. Best set-to-set efficiency improvement since W20 (2026-05-12: 1:33/1:17/1:11).</div>
+      <div class="trend-tag trend-up">↑ best efficiency arc to date</div>
+    </div>
+
+    <div class="card" style="animation-delay:.29s;">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--red);"></span>Running — Compromised</div>
+      <div class="rec-main">2:42</div>
+      <div class="rec-date">2026-08-01 · 600m, rounds 1–2 of 4</div>
+      <div class="rec-note">Fell to 3:07/3:10 by rounds 3-4 (+28 sec) — current #1 limiter: quad/compromised-running durability, not raw speed.</div>
+      <div class="trend-tag trend-flat">→ active development priority</div>
+    </div>
+
+    <div class="card" style="animation-delay:.32s;">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--muted);"></span>Running — Fresh</div>
+      <div class="rec-main">4:09/km</div>
+      <div class="rec-date">2026-03-09 (Brisbane W11) · 1km rep</div>
+      <div class="rec-note">Best 800m: 4:16/km (W17). Longest continuous run logged: 10.03km (W13). VO₂max 58 same era.</div>
+      <div class="trend-tag trend-stale">△ not retested since W21</div>
+    </div>
+
+    <div class="card" style="animation-delay:.35s;">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--green);"></span>Farmer Carry</div>
+      <div class="rec-main">64 kg × 300m</div>
+      <div class="rec-date">Sydney build · unbroken</div>
+      <div class="rec-note">Current working reference: 32+32kg × 300m / 2:46 (2026-07-29, cramped final 100m, resolved). Not a limiter — maintenance station only.</div>
+      <div class="trend-tag trend-flat">→ proven, past race requirement</div>
+    </div>
+
+    <div class="card" style="animation-delay:.38s;">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--gold);"></span>Walking Lunges</div>
+      <div class="rec-main">80m @ 28+28kg</div>
+      <div class="rec-date">2026-05-23 (W21 Sat) · under race fatigue</div>
+      <div class="rec-note">Current working reference: 28+28kg × 3×30m (2026-07-28). Race target 100m @ 30kg sandbag — well within demonstrated capacity.</div>
+      <div class="trend-tag trend-flat">→ proven, maintenance mode</div>
+    </div>
+
+    <div class="card" style="animation-delay:.41s;">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--orange);"></span>Burpee Broad Jumps</div>
+      <div class="rec-main">105 reps</div>
+      <div class="rec-date">2026-05-21 (W21 Thu) · 35×3 unbroken</div>
+      <div class="rec-note">Breakthrough per-set ceiling. Last touched 2026-06-27 (30m/1:14). Not trained since W26 — needs a weekly touch back into rotation.</div>
+      <div class="trend-tag trend-stale">△ dormant since W26</div>
+    </div>
+
+    <div class="card" style="animation-delay:.44s;">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--muted);"></span>Ski / Row Erg</div>
+      <div class="rec-main">4:19 / 4:16</div>
+      <div class="rec-date">2026-06-23 (W26) · 1000m each</div>
+      <div class="rec-note">Orientation only, both stations untouched since. Race targets: Ski ~4:00-4:20, Row ~3:50-4:20 for 1000m.</div>
+      <div class="trend-tag trend-stale">△ untouched since W26</div>
+    </div>
+
+  </div>
+
+  <!-- RACE RESULTS -->
+  <div class="section-lbl">🏁 Race Results</div>
+  <div class="card" style="margin-bottom:14px;">
+    <table class="race-table">
+      <tr><th>Race</th><th>Date</th><th>Result</th><th>Notes</th></tr>
+      <tr>
+        <td>HYROX Melbourne 2025</td>
+        <td>2025-12-13</td>
+        <td class="hi">1:33:44</td>
+        <td>Rank #603, Pro M 45-49. Runs 6/7 carried ~11min lap-count penalties (confirmed, not a stoppage).</td>
+      </tr>
+      <tr>
+        <td>HYROX Sydney 2026</td>
+        <td>2026-07-03</td>
+        <td class="hi rd">1:48:24 DQ</td>
+        <td>Navigational (wrong loop, Run 8). WB 100 reps completed clean, judges praised it. Sled Push &amp; Pull both ranked <span class="gr">#1</span> in field.</td>
+      </tr>
+      <tr>
+        <td>HYROX Melbourne 2026</td>
+        <td>9–13 Dec 2026 (MCEC South Wharf, Pro Men provisionally Fri 11 Dec AM)</td>
+        <td class="hi gd">target 1:15:00</td>
+        <td>Current build target — Phase 1: Foundation live, Build Week 5 of 23.</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- IDENTITY -->
+  <div class="identity">
+    <div class="id-lbl">🐺 Wolf Identity</div>
+    <div class="id-lines">
+      <div class="id-line">We do not chase races.</div>
+      <div class="id-line">We build capacity.</div>
+      <div class="id-line hl">We hunt numbers.</div>
+      <div class="id-line hl">We earn the flight.</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-l">PERSONAL RECORDS · UPDATED 2026·08·02 &nbsp;//&nbsp; YARO &nbsp;//&nbsp; SOURCE: reference/records.md</div>
+    <div class="tags">
+      <div class="tag">#VO2max58</div>
+      <div class="tag">#Sled252kg</div>
+      <div class="tag">#WB100Proven</div>
+      <div class="tag">#QuadDurability</div>
+      <div class="tag">#Melbourne2026</div>
+    </div>
+  </div>
+
+</div>
+<script>
+  window.addEventListener('load', () => {
+    document.querySelectorAll('.prog-bar-fill').forEach(el => {
+      const w = el.getAttribute('data-w');
+      setTimeout(() => { el.style.width = w; }, 200);
+    });
+  });
+</script>
+</body>
+</html>

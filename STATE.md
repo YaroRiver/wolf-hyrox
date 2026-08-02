@@ -28,7 +28,7 @@
 - **Yaro · 46 (47 on 2026-08-11) · Pro Men 45–49 · 196 cm · 84 kg · BMI 21.9**
 - **VO₂max:** 58 ml/kg/min (PR 2026-05-18 W21 Mon, stale — retest due per `reference/master_plan.md`)
 - **HR recovery:** 160→99 bpm in 2 min (excellent)
-- **Race target:** 1:15:00 HYROX Melbourne, anchored Sat 2026-12-12 (per `reference/master_plan.md`; official date still to be confirmed — check weekly)
+- **Race target:** 1:15:00 HYROX Melbourne, **confirmed race window 9–13 Dec 2026, MCEC South Wharf** (verified hyrox.com, 2026-08-02) — Pro Men provisionally **Friday 11 Dec, morning wave**. Per `reference/master_plan.md`.
 - **Gym:** Iron Viking, Moorabbin (Australia)
 - **Medical:** Pernicious anemia, B12 monthly (last 2026-06-29, next ~2026-07-29); chronic calf-Achilles-soleus zone; cardiac event W13 resolved
 - **2025 Melbourne baseline:** 1:33:44, rank #603, Pro M 45-49. Gap to target: 18:44.

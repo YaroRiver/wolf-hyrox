@@ -14,7 +14,7 @@ This plan is now the fixed reference for the build. Numbers within it still upda
 ```
 Athlete: Yaro (Yaroslav Andrushchenko) · 46 → 47 (11 Aug 2026) · Pro Men 45–49 · 196 cm / 84 kg
 Prior race: HYROX Sydney 2026-07-03 — 1:48:24, DQ (navigational error, Run 8 wrong loop — WB completed clean, see §1)
-Target race: HYROX Melbourne — anchored Saturday 2026-12-12 (second week of December; official date still "coming soon" — check weekly)
+Target race: HYROX Melbourne — confirmed race window 9–13 Dec 2026, MCEC South Wharf (verified hyrox.com, 2026-08-02). Pro Men provisionally Friday 11 Dec, morning wave — confirm exact wave time closer to the block.
 Build window: W28 (2026-07-06) → W50 (race week) — 23 weeks
 Current phase: Phase 1 — Foundation, Build Week 5 of 23 (W32, opened 2026-08-02). Phase 0 (Recovery & Clearance) closed clean at W31.
 ```
@@ -101,7 +101,7 @@ Race is executed for B in all cases; A changes pacing from Run 4 onward, only on
 | 2 | W35–W40 | Aug 24 – Oct 4 | Build | Threshold progression; compromised-run ladder; WB density/rate under partial then full fatigue; half-sim W40 | W38 |
 | 3 | W41–W46 | Oct 5 – Nov 15 | Race-Specific Peak | 3 full sims, WB rate under full fatigue every week, navigation rehearsed live, race pacing/fueling | W43 (light) |
 | 4 | W47–W49 | Nov 16 – Dec 6 | Taper | −40/−55/−65% volume; intensity 85–90%; illness firewall | — |
-| R | W50 | Dec 7 – Dec 13 | Race Week | HYROX Melbourne, **Sat 2026-12-12** (assumed; slide taper only if the official date shifts) | — |
+| R | W50 | Dec 7 – Dec 13 | Race Week | HYROX Melbourne, MCEC South Wharf, **Pro Men provisionally Fri 11 Dec, morning wave** (confirmed window 9–13 Dec; slide taper only if the wave/date shifts) | — |
 
 **Status: W28-W31 complete (Phase 0 closed clean, Phase 1 underway). W32 = Build Week 5 of 23, opening now.**
 
@@ -115,7 +115,7 @@ Race is executed for B in all cases; A changes pacing from Run 4 onward, only on
 
 **Phase 2 (W35–W40).** Threshold restored on constant weekly progression (4:35→4:15); compromised-run ladder (5:05→4:45, one rung every two clean sessions); WB density/rate work moves from partial-fatigue rehearsal to full 8-station fatigue by W38–W40, targeting sub-6:00 for 100 reps; navigation drills move from isolated runs to full HYROX-rhythm rehearsals under fatigue. W38 deloads. W40 = half-simulation (stations 1–4 + race-pace legs, then WB 100 under that fatigue, full lap-count rehearsal) + Gate 2.
 
-**Phase 3 (W41–W46).** WB rate under full 8-station fatigue, touched almost every week, driving toward the 5:00 target. **SIM-1 (W42):** full format @90%, WB target ≤5:45, full fueling + lap-count rehearsal live. **SIM-2 (W44):** @92–95%, WB ≤5:15, evening-start rehearsed (matches Sydney's 18:40 wave risk). **SIM-3 (W46):** dress rehearsal @90–93%, WB ≤5:00 — this is **Gate 3**, the A/B decision. W41 loading, W43 light, W45 sharpen.
+**Phase 3 (W41–W46).** WB rate under full 8-station fatigue, touched almost every week, driving toward the 5:00 target. **SIM-1 (W42):** full format @90%, WB target ≤5:45, full fueling + lap-count rehearsal live. **SIM-2 (W44):** @92–95%, WB ≤5:15, **morning-start rehearsed** (matches the Pro Men provisional Fri-morning wave — opposite risk profile from Sydney's 18:40 evening wave: early fueling/wake timing becomes the rehearsal target, not late-day fatigue). **SIM-3 (W46):** dress rehearsal @90–93%, WB ≤5:00 — this is **Gate 3**, the A/B decision. W41 loading, W43 light, W45 sharpen.
 
 **Phase 4 (W47–W49).** Volume −40/−55/−65%; WB skill touches at race weight, chasing nothing new — defending the rate already built; short race-pace touches; zero probes; illness firewall maximal; course walk to pre-load the navigation workstream with real course knowledge.
 
@@ -128,7 +128,7 @@ Race is executed for B in all cases; A changes pacing from Run 4 onward, only on
 | MON | Run Quality (threshold/economy) | pace moves weekly | HR ≤152 |
 | TUE | Lower Strength + Sled + WB density | leg endurance + WB rate; sled/carry/grip overload lane open | sled/carry: athlete-driven load, per §4 |
 | WED | Upper + Z2 bridge + eccentrics | strength touch, calf tissue | drops first on Yellow; **keep Farmer Carry here light or move it, given the W31 Tue→Wed accumulation flag** |
-| THU | Compromised couplets (station→run) | compromised load/pace moves weekly | navigation drill embedded — **this is the session purpose-built for the #1 limiter; protect it from being replaced by a different run, as happened W31** |
+| THU | Compromised couplets (station→run) *or* fresh-quality run | compromised load/pace moves weekly | navigation drill embedded on couplet weeks. **W32 exception (Meso-block Week 1 — Consolidate):** Thursday runs as a fresh, unfatigued 6×600m corridor session instead — stacking a second compromised-fatigue day three days before Saturday's compromised block would train the same stimulus twice. A fresh run rehearsing the identical pacing discipline (restraint on rep 1, flat by the end) serves the same limiter from a complementary angle. Revisit at each block's close; couplets format is the default, not permanently retired. |
 | FRI | Aerobic Reset Z2 | economy | zero Z3 |
 | SAT | WB whole-output rate work + leg micro-dose | the race-deciding session | one probe/week max; **fresh-state rate work, not a fatigue-fragment day — that exposure is scheduled for Phase 3, per W31's Saturday deviation note in §4** |
 | SUN | Long Run | distance moves weekly, +3/+2 km rule | 90-min ceiling; **run this genuinely easy (Z1-Z2) — W31 Sunday ran hot (Z3) and looked identical to Thursday's session** |
@@ -180,9 +180,11 @@ Daily G/Y/R carried forward with amendments: sleeping-HR co-gate (≥+4 baseline
 
 **New (W31): heavy-leg-day → Farmer Carry accumulation.** Build at least one rest/upper-only day of separation between a heavy lower-body session and Farmer Carry — stacking them produced the build's one transient quad cramp this month.
 
-**B12 / pernicious anemia:** monthly, typically from the 1st. Athlete confirms up to ~3 days of flexibility either side. For race week: suggest shifting the December dose to **~Nov 29–30** so race day (Dec 12) lands ~12–13 days post-injection — close to the best-observed calf window. Confirm exact date closer to the block.
+**B12 / pernicious anemia:** monthly, typically from the 1st. Athlete confirms up to ~3 days of flexibility either side. For race week: suggest shifting the December dose to **~Nov 29–30** so race day (Fri 11 Dec) lands ~11–12 days post-injection — close to the best-observed calf window. Confirm exact date closer to the block.
 
 **Cardiac: RESOLVED 2026-08-02.** Stress echocardiogram normal, combined with normal Holter — both legs of the cardiac workup clear. **Permanent rule, unaffected by any test result: any palpitation sensation → immediate abort, no exception, no quality until physician-cleared if it recurs.**
+
+**Night-HR flag — distinct from the resolved cardiac clearance, stays live.** The stress echo tests the heart's response to load; it does not characterize nocturnal/resting rhythm on its own terms beyond what the Holter already covered. If sleeping HR trends back into the ~48–50 bpm band across several consecutive nights — the pattern that co-occurred with the W13 (May) jolt episode — that is an independent signal to contact the GP/cardiologist directly, regardless of how recently the stress echo cleared. The clinician decides on any further test (e.g. a repeat Holter); this plan does not prescribe one. Track sleeping HR in `trackers/readiness_trend.md` as training load rises through the block.
 
 **Sleep-onset:** 22:00 device cutoff, log onset latency. Two nights <7h = auto-Yellow. **W31: 7-day rhythm improved to 80% by Sunday (from 53-60% in W29) — directionally better, not resolved. Subjective fatigue overrode acceptable sleep numbers twice in W31 (Wed, Thu) — trust the subjective read over the dashboard when they disagree.**
 
@@ -234,7 +236,7 @@ Gate verdicts written at the Sunday close-out of the gate week.
 
 ## 15. OPEN ITEMS
 
-1. Melbourne 2026 official race date — weekly hyrox.com check; this plan anchors Sat 2026-12-12 and tolerates a ±1 week shift by sliding the taper only.
+1. **RESOLVED 2026-08-02:** Melbourne 2026 official race window confirmed via hyrox.com — 9–13 Dec 2026, MCEC South Wharf, Pro Men provisionally Friday 11 Dec morning wave. Still confirm the exact wave time closer to the block; this plan tolerates a ±1 week shift by sliding the taper only if that changes.
 2. Post-recovery weight tracking — first stable reading logged.
 3. Confirm exact December B12 injection date (~Nov 29–30 suggested, §11) once the block is closer.
 4. Wave preference at Melbourne registration — earliest Pro wave, to avoid repeating the Sydney evening-wave fueling risk.

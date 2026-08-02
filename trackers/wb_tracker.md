@@ -91,7 +91,7 @@
 ## Race Target
 
 - **HYROX Sydney 2026-07-03 (complete):** 100 reps @ 9 kg completed clean under full race fatigue, 7:55 — capacity proven, speed unsolved.
-- **HYROX Melbourne 2026-12-12 (current target):** 100 reps @ 9 kg, target 5:00 (floor 5:30, stretch 4:45) — per `reference/master_plan.md` §8. Capacity is not the open question; rate and repeatability under fatigue are.
+- **HYROX Melbourne, Pro Men provisionally Fri 11 Dec 2026 morning (window 9–13 Dec, MCEC South Wharf, confirmed hyrox.com):** 100 reps @ 9 kg, target 5:00 (floor 5:30, stretch 4:45) — per `reference/master_plan.md` §8. Capacity is not the open question; rate and repeatability under fatigue are.
 
 ---
 

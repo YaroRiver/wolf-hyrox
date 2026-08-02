@@ -1,114 +1,151 @@
 # WEEK W32 — 2026-08-03 (Mon) → 2026-08-09 (Sun)
-## Annual Week 32 · Phase 1 — Foundation, Build Week 5 of 23 · Melbourne ~125–131 days out
+## Annual Week 32 · Phase 1 — Foundation, Build Week 5 of 23 · Meso-block: Week 1 of 4 — Consolidate
 
-> **W32 directive:** First week under the promoted `reference/master_plan.md`. Weekly template adopts the athlete's own self-authored progress framework (`08_HYROX_Melbourne_Progress_Framework_W31_Forward.md`, supplied 2026-08-02) as the working structure — it is well-built and matches what actually motivates and works for this athlete — with three corrections carried over from the W31 coaching review:
+> **Revision note (2026-08-02):** This plan replaces an earlier same-day draft. The athlete supplied an independently-generated v2 plan for comparison; the coaching review adopted it near-verbatim because it correctly identifies **W32 as Week 1 (Consolidate)** of the athlete's own 4-week progression block (the earlier draft mislabeled W32 as "Week 2 — Density," which actually belongs to W33) and because it holds strictly to the plan's own "one variable moves" rule — this week's single moving variable is **compromised-run repeatability**, nothing else. Full comparison discussed in chat 2026-08-02.
 >
-> 1. **Thursday's compromised-couplets/navigation slot is protected this week** — it didn't happen in W31 and is the session purpose-built for the current #1 limiter (compromised-running/quad durability). Don't let it get replaced by a different run again.
-> 2. **Wednesday's Farmer Carry is capped shorter** (2×150m, not a continuous 300m) after last week's quad cramp on the final 100m — same load, reduced single-effort distance, explicit stop-at-first-twinge rule.
-> 3. **Sunday's long run must be run genuinely easy** (true Z1–Z2) — W31's Sunday ran hot (Z3, avg HR142) and duplicated Thursday's session instead of being distinct recovery-pace work.
->
-> Per the athlete's own 4-week progression block (file 08 §11), this is **Week 2 — Density**: same Saturday four-round structure as W31, same numbers, but fix the transition-rest drift (W31 walk recovery expanded 60→70→80→95 sec across rounds) and reduce WB density rest during Tuesday's session. One variable moves — per the plan's own rule, don't stack a load increase on top of a rest-reduction in the same week.
+> **Race window confirmed 2026-08-02 (hyrox.com):** HYROX Melbourne, 9–13 Dec 2026, MCEC South Wharf. Pro Men provisionally **Friday 11 Dec, morning wave** — this replaces the prior Sat-2026-12-12 placeholder anchor throughout `reference/master_plan.md` and `STATE.md`. Confirm exact wave time closer to the block.
 
 ---
 
-## MONDAY 08-03 — Recovery / Reset
+## THE ONE VARIABLE
 
-Full rest, or an easy 20–30 min walk/bike if you want to move. Mobility + calf/Achilles eccentrics. No forced quality after Saturday's hard block — this is deliberately the cheapest day of the week.
+W32 moves exactly one training variable: **compromised-run repeatability**.
 
----
+Open the Saturday 600 m runs at **2:50–2:55** and hold all four inside a **10-second band**. Every other station holds at its W31 working level. Density loads in W33. Volume loads in W34.
 
-## TUESDAY 08-04 — Lower Body + Sled + WB Density (rest reduction)
-
-**Leg Extension:** 64 kg · 3×15 · 60s rest (repeat W31 — consolidate)
-
-**Leg Press:** 80 kg · 3×8 (repeat)
-
-**Bulgarian Split Squat:** 17.5 kg each hand · 3×10 each leg (repeat — load holds flat, WB rest is this week's one moving variable)
-
-**Walking Lunges:** 28+28 kg · 3×30 m (repeat)
-
-**Sled Push:** 210–215 kg · 3×20 m (repeat working range)
-
-**Sled Pull:** 185 kg · 3×20 m — target: tighten the first-set inefficiency (W31 was 1:32→1:11→1:07; aim to bring set 1 closer to 1:20)
-
-**Wall Ball Density:** 5×20 @ 9kg, **rest cut 60s → 45s** (W31 was 47/47/47/46/46 @ 60s rest — hold that same pace at the shorter rest; if times blow out past ~52–55 sec, that's the signal this rest cut was too much too soon)
+The genuine skill this week is restraint on the first run. A controlled R1 produces a flat R4. Winning the Saturday means R4 matches R1.
 
 ---
 
-## WEDNESDAY 08-05 — Upper + Farmer (capped) + Eccentrics
+## WHAT W32 HOLDS (from W31)
 
-**Bench Press:** 65kg×8, 70kg×8, 75kg×8, 75kg×6 (repeat W31 ramp — it worked)
+- Sled Push heavy: 252 kg × 20 m × 4
+- Wall Balls: 25 per round, and 5 × 20 density at **60 s rest** (the 45 s cut is loaded for W33 — don't stack it on top of this week's run variable)
+- Walking Lunges: 28 + 28 kg, 3 × 30 m
+- Farmer Carry: 32 + 32 kg, 300 m total (split 2 × 150 m this week)
+- Sled Pull: 185 kg, 3 × 20 m
+- Bench top set: 75 × 8
 
-**Weighted Pull-ups:** +20kg · 3×6 — **hard cue, re-emphasized: stop 2 reps shy of failure.** Last week's set trended into failure (6/5+1ecc/3+3ecc) on a day already reading Yellow — if reps 4–5 feel like a grind, stop the set there, don't push to the eccentric-only rep.
-
-**Weighted Dips:** +20kg · 3×6 — same cue.
-
-**One-arm DB Row:** 30–32kg · 3×10 each arm.
-
-**Farmer Carry:** 32+32kg · **2×150m** (capped shorter than W31's 300m continuous, same load) · full recovery between efforts · **stop immediately at the first quad twinge, don't push through it this week.**
-
-**Calf Eccentrics:** 2 sets × 2 variations.
+**Held out of W32:** Burpee Broad Jumps. The quad is the #3 limiter and cramped once in W31 (Farmer Carry). BBJ (plyometric quad load) reintroduces in W33/W34 once the base is consolidated.
 
 ---
 
-## THURSDAY 08-06 — Compromised Couplets + Navigation (protected slot)
+## DAILY STRUCTURE
 
-**3 rounds:**
-1. Run 600–700m, open conservatively — **target 2:50–2:55/round**, not a fast first rep (per the athlete's own running progression ladder: hold all repetitions within 10 sec of each other, success = last round close to first, not first round fastest)
-2. Wall Balls 25 @ 9kg
-3. Walking recovery 60–90 sec
+### Monday 3 Aug — Recovery / Reset
 
-**Navigation drill:** count laps aloud continuously through all 3 rounds — same discipline that held clean on Saturday.
+- Easy movement: 30–45 min walk or easy spin.
+- Calf + Achilles eccentrics: 3 × 15, 2 variations.
+- Mobility: hips, ankles, T-spine.
+- Sleep onset **21:30** — the highest-leverage recovery lever this week.
+- **STOP:** no quality work today.
 
-**Hard rule:** this session exists specifically to build the quality Saturday's data showed is missing — running that holds together after station fatigue. If it turns into "just go for a run," it isn't doing its job. Log all 3 round times and the drift between first and last.
+### Tuesday 4 Aug — Lower Body + Sleds + Wall Ball Density
+
+- Warm-up: 1.2 km easy, nasal.
+- **Strength (hold):** Leg Extension 64 × 3×15 · Leg Press 80 × 3×8 · BSS 17.5/hand × 3×10 each leg · Walking Lunges 28+28 × 3×30 m · Lying Leg Curl 54 × 3×12.
+- **Sled Push (speed day):** 210–220 kg, 4 × 20 m, fast continuous steps, 45–60 s rest. Clean turnover.
+- **Sled Pull:** 185 kg, 3 × 20 m. Standardise the rope layout and start on every set. Progression target (tracked across weeks): sets 2–3 inside **10 s** of each other, with set 1 closing toward them as rope handling tightens. Log rope resets and start delay.
+- **Wall Balls (hold density):** 5 × 20 @ 9 kg, **60 s rest**. Hold 60 s — the 45 s cut is loaded for W33, and holding it now makes that jump land clean.
+- Cooldown: 5 min easy spin.
+- **STOP:** end sled pull on technique breakdown, a symptom, or a pre-cramp signal. A slow first set from rope setup is not a stop signal. End lunges at the first pre-cramp signal.
+
+### Wednesday 5 Aug — Upper Body + Farmer + Eccentrics
+
+- **Pre-session:** hydrate and take electrolytes — a direct answer to the W31 farmer cramp.
+- Warm-up: 1.1 km easy run, nasal.
+- **Calf Eccentrics:** 3 × 15, 2 variations.
+- **Bench Press:** build to **75 × 8** (confirm it a second time — advancement needs two clean exposures per `reference/master_plan.md`'s own gate), back-off 75 × 6.
+- **Weighted Pull-ups +20 kg:** 3 sets, quality reps plus eccentrics — stop 2 reps shy of failure (W31's set trended into failure; hold the line this week).
+- **Weighted Dips +20 kg:** 3 × 6.
+- **One-arm DB Row 30 kg:** 3 × 10 each arm.
+- **Chin-ups** BW 3 × 6 · **Weighted V-ups** 20 kg 3 × 15.
+- **Farmer Carry:** 32 + 32 kg, **2 × 150 m, 90–120 s rest**. Merge into 300 m continuous only when the quad reads fully clean after the first 150 m. This holds total distance at 300 m and lifts the continuous-carry load off a pre-fatigued quad the day before the Thursday run — the right trade on a maintenance station in a consolidation week. **HARD RULE:** at the first pre-cramp signal, stop, drop to a knee, stretch, log the preceding work.
+- **STOP:** farmer ends at pre-cramp; upper work ends when bar speed collapses.
+
+### Thursday 6 Aug — Fresh Quality Run
+
+This is the fresh-quality exposure, and it rehearses the exact discipline Saturday needs. (Deliberately not a compromised-couplets session this week — see note below.)
+
+- Warm-up: 10–12 min easy, nasal, plus 3 strides.
+- **Main:** 6 × 600 m, corridor **2:42–2:50**, recovery 90 s easy jog.
+  - R1 sits at the slow end of the corridor.
+  - Success = R5 and R6 inside the corridor with clean mechanics.
+  - Pace and mechanics govern the reps; nasal breathing governs the warm-up and recoveries.
+- Cooldown: 8–10 min easy, nasal.
+- **STOP:** end the reps when two consecutive reps leave the corridor or cadence degrades. Five clean reps complete the session.
+- **Readiness note:** on a heavy-quad or Yellow day, trim to 4 × 600 m or convert to easy aerobic. Thursday is the supporting run; Saturday is the benchmark and holds priority.
+
+**Why Thursday moves off the master plan's standard "compromised couplets" template this week:** stacking a second compromised-fatigue session (station + run) three days before Saturday's compromised block would train the same stimulus twice and blur which day is actually driving adaptation. A fresh, unfatigued run that rehearses the identical pacing discipline (restraint on rep 1, flat by the end) trains the specific skill Saturday needs from a different, complementary angle. Revisit this choice at W34's close if the couplets format is needed back in rotation.
+
+### Friday 7 Aug — Rest (default)
+
+- **Default: full rest.** The week already carries heavy Tuesday legs, Wednesday farmer, the Thursday run, and the Saturday block.
+- Easy engine only on a genuine Green state: Z1–Z2, nasal, **25–30 min maximum**.
+- No station density.
+- Purpose: arrive functional on Saturday.
+- Sleep onset **21:30**.
+
+### Saturday 8 Aug — HYROX Development Block
+
+- Warm-up: 1.25 km easy + 120 kg sled technique pass + dynamic prep.
+- **Main block, 4 rounds:**
+
+| Round | Run 600 m | Sled Push | Wall Balls | Walk recovery |
+|---|---|---|---|---|
+| R1 | open 2:50–2:55 | 252 kg × 20 m | 25 @ 9 kg | ≤75 s |
+| R2 | hold band | 252 kg × 20 m | 25 @ 9 kg | ≤75 s |
+| R3 | hold band | 252 kg × 20 m | 25 @ 9 kg | ≤75 s |
+| R4 | hold band | 252 kg × 20 m | 25 @ 9 kg | ≤75 s |
+
+- **Run:** open 2:50–2:55, hold all four inside a 10-second band.
+- **Sled Push:** 252 kg × 20 m, held. Final pass ≤ 50 s, clean mechanics.
+- **Wall Balls:** 25 @ 9 kg, held.
+- **Walking recovery:** cap at 60–75 s and hold it flat across all four rounds (W31 expanded to 95 s — hold it level this week).
+- **Navigation:** call "Round N, two loops" aloud each round. Zero loop errors = pass.
+- **Round 5:** off the table this week. Four rounds with flat run splits is the target.
+- **STOP:** close after the current round when **two consecutive** runs leave the band, or cadence and mechanics visibly degrade, or a single run shows a clear mechanics collapse. Any cardiac sensation ends the session at once. A lone drift from a fumbled turn or a watch mis-tap is noise, not a stop.
+
+### Sunday 9 Aug — Recovery Aerobic / Week Close
+
+- 8 km controlled, nasal the whole way, ~5:30/km, HR low-to-mid 140s.
+- Run with reserve. Hold ~5:30 — the 5:10 ceiling stays parked.
+- **STOP:** keep it aerobic. No finishing surge.
+- **Log the two-week review dashboard (W31–W32) tonight** — this is the every-second-Sunday update per `reference/master_plan.md` §14.
 
 ---
 
-## FRIDAY 08-07 — Aerobic Reset
+## W32 TARGETS (pass / fail)
 
-35–40 min Z2, HR 124–134, hard ceiling 138. Zero Z3.
+- [ ] Saturday: four 600 m runs inside a 10-second band, opened at 2:50–2:55
+- [ ] Saturday: walking recovery held ≤ 75 s across all four rounds
+- [ ] Saturday: 252 kg × 20 m × 4 clean, final pass ≤ 50 s
+- [ ] Thursday: 6 × 600 m with R5–R6 inside the corridor
+- [ ] Sled Pull: three 20 m sets inside 10 s
+- [ ] Wednesday farmer: 300 m completed cramp-free, or a clean pre-cramp stop
+- [ ] Navigation: zero loop errors Saturday
+- [ ] Sleep onset ≤ 21:45 on ≥ 4 nights
 
-**Hard rule:** recovery infrastructure for Saturday, not a session to make harder.
+## KPIs TO LOG
 
----
-
-## SATURDAY 08-08 — WEEK 2: DENSITY (same 4 rounds, fix the rest drift)
-
-**Same structure as W31:** 4 rounds of [Run 600m / Sled Push 252kg×20m / Wall Balls 25@9kg / walking recovery].
-
-**This week's one moving variable:** hold the walking recovery flat, don't let it expand round to round. W31 drifted 60→70→80→95 sec; target ≤70 sec every round this time, even if that means the run/sled/WB times drift slightly more than last week. The goal per the athlete's own framework: make the fourth round look like the first, not prove the first round is fastest.
-
-**Leg micro-dose:** walking lunges bodyweight 2×20m, before or after the main block.
-
-**Hard rule:** hold load and distance identical to W31 (252kg, 20m, 25 WB) — this week trains recovery discipline, not a bigger number. One variable moves.
+Run first-to-last drift (Thu and Sat) · quad heaviness entering each Saturday run · recovery-time drift · cadence stability · calf 0–10 (spot checks) · any cardiac sensation.
 
 ---
 
-## SUNDAY 08-09 — Long Run, genuinely easy
+## READINESS MODIFICATION
 
-45–50 min continuous, **true Z1–Z2, HR ceiling 134–140.** Walk-jog if needed to hold the ceiling — the point this week is contrast with Thursday, not a repeat of it. W31's Sunday ran the same pace/HR/effort as Thursday (both ~8km, ~142 avg HR) — this week needs to feel obviously different: slower, easier, genuinely restorative.
+- **Green:** full plan plus the one headline variable.
+- **Yellow:** hold the movement pattern, cut volume 20–30%, no ceiling test.
+- **Red:** recovery only, no station density.
 
-**Hard rule:** if pace wants to drift under 5:45/km to hold the HR ceiling, that's fine — the zone is the target, not the distance.
+Subjective state overrides a good app score. A long sleep or high HRV does not erase broken sleep, illness symptoms, or a cramp warning.
+
+## SAFETY LINE (standing)
+
+Any unusual cardiac sensation means an immediate stop. If a symptom returns, or the night-HR flag reappears (the 48–50 bpm band across several nights that maps to the May W13 episode), that is the signal to contact the GP or cardiologist — the clinician decides on a Holter, the plan does not prescribe the test. **The normal stress-echo (2026-07-27) covers the response to load; it does not address night rhythm, so the night-HR flag stays live independent of that clearance.**
 
 ---
 
-## GATE SYSTEM (W32)
+## WORKING PRINCIPLE — W32
 
-| Condition | Action |
-|---|---|
-| Any jolt / palpitation / cardiac sensation | Immediate abort, no exception — permanent rule |
-| Calf ≥ 4/10 or night cramp | Red — full rest |
-| Calf 2.5–3.5/10 | Yellow — reduce impact/load |
-| Any quad twinge during Farmer Carry | Stop the effort immediately, don't push through |
-| Sleep < 6h00 | Red for that day's session |
-| Two consecutive nights < 7h00 | Automatic Yellow |
-
-## ACTION ITEMS (non-training)
-
-1. **Rate Thursday's and Saturday's round-to-round drift explicitly** — these two sessions are now the primary limiter-tracking data source.
-2. **Keep daily calf/Achilles rating going** — the gap closed in W31, don't let it reopen.
-3. **Farmer Carry: report the first sign of quad tightness immediately**, don't wait for a full cramp signal like last week.
-
-## PRINCIPLE
-
-Week 2 of the athlete's own progression block: the target isn't a bigger number, it's the fourth round looking like the first. Everything that already works (sled, WB, strength) holds flat this week on purpose, so the one thing that's actually being trained — recovery discipline under repeated fatigue — isn't hidden behind a new PR.
+**The fourth round earns the week. Restraint on the first run is the skill under training.**

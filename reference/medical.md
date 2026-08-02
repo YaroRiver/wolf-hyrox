@@ -56,6 +56,8 @@
 
 **Adductors added as a watch-item (athlete request, 2026-07-05):** no adductor issue is on record to date — this is a new signal to track going forward, alongside calves, particularly post-loaded-carry and post-lunge sessions and during the post-Sydney recovery window. Same rating scale and hard rules apply until a distinct pattern (if any) emerges.
 
+**Quadriceps cramp, Farmer Carry, W31 Wed 2026-07-29:** cramp during the final 100m of a 300m carry, following a heavy-leg day (Tue) with only one night of recovery between. Resolved in ~3 minutes (stop, knee down, stretch), no recurrence. Two-part fix adopted from W32: (1) cap the single carry effort to 2×150m rather than continuous 300m until the quad reads clean, and (2) hydrate + take electrolytes pre-session as a direct answer to the cramp mechanism, not just a distance/load adjustment.
+
 ---
 
 ## Planned GP Checkup (2026-07-05, pre-Melbourne-block baseline)
@@ -89,6 +91,8 @@ Athlete drafted a full checkup request to his GP, to be actioned as part of Phas
 **Result:** Normal ("echo v normi" — athlete verbal report, 2026-08-02, six days after the 2026-07-27 test). **Not yet seen as a written report** — same caveat as the Holter above: logged as athlete testimony pending the formal document.
 
 **Coaching implication:** This was the standing clearance gate for maximal-effort work (VO₂max field test, hard sim work, WB/sled/BBJ ceiling probes, sprint work) held since W28. With a normal result, that specific restriction lifts. The permanent rule is unchanged and does not depend on this or any test: any jolt/palpitation sensation → immediate abort, no exception.
+
+**Night-HR flag — a distinct, still-open signal (added 2026-08-02).** The stress echo characterizes exercise-induced cardiac response; it says nothing new about resting/nocturnal rhythm beyond what the Holter already covered. The W13 (May) jolt episode co-occurred with sleeping HR in the ~42–43 bpm range; a separate, related band to watch is ~48–50 bpm across several consecutive nights. If sleeping HR trends into that band as training load rises through the Melbourne build, that is an independent trigger to contact the GP/cardiologist directly — not something the stress-echo result overrides or a coaching decision to make alone. See `reference/master_plan.md` §11 and `trackers/readiness_trend.md` for ongoing tracking.
 
 **Bloods (verified from pathology report, collected 2026-07-11, referred by Dr Ilona Jakab):**
 - HbA1c 4.9% (30 mmol/mol) — excellent, no diabetes signal.

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WEEK 1: CONSOLIDATE · PHASE 1 FOUNDATION · W32 // YARO 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #080C10; --surface: #0E1419; --surface2: #141B22;
+    --border: #1E2D3D; --accent: #00E5FF; --red: #FF4757;
+    --gold: #FFD700; --green: #00FF87; --text: #E8EDF2;
+    --muted: #5A6A7A; --label: #8A9BAB; --orange: #FF8C42;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; min-height: 100vh; overflow-x: hidden; }
+  body::before { content: ''; position: fixed; inset: 0; background-image: linear-gradient(rgba(0,229,255,0.022) 1px, transparent 1px), linear-gradient(90deg, rgba(0,229,255,0.022) 1px, transparent 1px); background-size: 40px 40px; pointer-events: none; z-index: 0; }
+  .wrap { max-width: 1300px; margin: 0 auto; padding: 36px 24px; position: relative; z-index: 1; }
+
+  .hdr { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 28px; padding-bottom: 24px; border-bottom: 1px solid var(--border); animation: fadeUp .5s ease both; }
+  .eyebrow { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 4px; color: var(--accent); text-transform: uppercase; margin-bottom: 6px; }
+  .title    { font-family: 'Bebas Neue', sans-serif; font-size: clamp(52px, 8vw, 88px); line-height: .88; letter-spacing: 4px; }
+  .subtitle { font-family: 'Bebas Neue', sans-serif; font-size: clamp(16px, 2.2vw, 24px); letter-spacing: 5px; color: var(--muted); margin-top: 4px; }
+  .block-info { margin-top: 10px; font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); letter-spacing: 1px; }
+  .block-info span { color: var(--accent); }
+  .hdr-right { text-align: right; }
+  .week-badge { font-family: 'Bebas Neue', sans-serif; font-size: 56px; color: var(--accent); letter-spacing: 3px; line-height: 1; }
+  .week-range { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--text); letter-spacing: 2px; margin-top: 2px; }
+  .week-year  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 2px; margin-bottom: 10px; }
+  .live-badge { display: inline-flex; align-items: center; gap: 6px; font-family: 'DM Mono', monospace; font-size: 9px; color: var(--accent); letter-spacing: 2px; text-transform: uppercase; padding: 5px 12px; border: 1px solid rgba(0,229,255,.2); background: rgba(0,229,255,.04); }
+  .ld { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); animation: pulse 2s ease-in-out infinite; }
+
+  .correction-banner { background: var(--surface); border: 1px solid rgba(0,229,255,.2); border-left: 3px solid var(--accent); padding: 14px 22px; margin-bottom: 14px; animation: fadeUp .5s .06s ease both; }
+  .cb-label { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--accent); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 5px; }
+  .cb-text  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.7; }
+  .cb-text span { color: var(--text); }
+
+  .new-banner { background: var(--surface); border: 1px solid rgba(255,215,0,.15); border-left: 3px solid var(--gold); padding: 12px 22px; margin-bottom: 20px; animation: fadeUp .5s .08s ease both; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .nb-label { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 3px; }
+  .nb-text  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.5; }
+  .nb-text span { color: var(--text); }
+  .nb-tags  { display: flex; gap: 6px; flex-wrap: wrap; margin-left: auto; }
+  .nb-tag   { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--gold); padding: 3px 8px; border: 1px solid rgba(255,215,0,.2); background: rgba(255,215,0,.05); letter-spacing: 1px; }
+
+  .obj-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-bottom: 20px; animation: fadeUp .5s .12s ease both; }
+  .obj { background: var(--surface); padding: 14px 16px; position: relative; overflow: hidden; transition: background .2s; }
+  .obj:hover { background: var(--surface2); }
+  .obj::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 100%; }
+  .obj:nth-child(1)::before { background: var(--red); }
+  .obj:nth-child(2)::before { background: var(--green); }
+  .obj:nth-child(3)::before { background: var(--accent); }
+  .obj:nth-child(4)::before { background: var(--gold); }
+  .obj-num  { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 2px; margin-bottom: 4px; }
+  .obj-text { font-family: 'DM Mono', monospace; font-size: 9.5px; color: var(--label); line-height: 1.5; }
+  .obj-text .hi { color: var(--text); }
+
+  .mindset { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); padding: 13px 22px; margin-bottom: 20px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; animation: fadeUp .5s .14s ease both; position: relative; overflow: hidden; }
+  .mindset::after { content: '🐺'; position: absolute; right: 16px; top: 50%; transform: translateY(-50%); font-size: 44px; opacity: .06; pointer-events: none; }
+  .mw { font-family: 'Bebas Neue', sans-serif; font-size: 18px; letter-spacing: 4px; color: var(--muted); transition: color .2s; }
+  .mw:hover { color: var(--text); }
+  .mw.hi { color: var(--accent); }
+  .msep { color: var(--border); font-size: 13px; }
+
+  .section-lbl { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 4px; color: var(--muted); text-transform: uppercase; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+  .section-lbl::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  .week-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; margin-bottom: 24px; }
+  .dc { background: var(--surface); border: 1px solid var(--border); border-top: 3px solid transparent; transition: transform .2s; animation: fadeUp .5s ease both; overflow: hidden; }
+  .dc:hover { transform: translateY(-3px); }
+  .dc.mon { border-top-color: var(--muted); }
+  .dc.tue { border-top-color: var(--gold); }
+  .dc.wed { border-top-color: var(--accent); }
+  .dc.thu { border-top-color: var(--green); }
+  .dc.fri { border-top-color: var(--muted); }
+  .dc.sat { border-top-color: var(--red); }
+  .dc.sun { border-top-color: var(--accent); }
+  .dc:nth-child(1){animation-delay:.14s} .dc:nth-child(2){animation-delay:.19s}
+  .dc:nth-child(3){animation-delay:.24s} .dc:nth-child(4){animation-delay:.29s}
+  .dc:nth-child(5){animation-delay:.34s} .dc:nth-child(6){animation-delay:.39s}
+  .dc:nth-child(7){animation-delay:.44s}
+
+  .dc-head { padding: 12px 13px 10px; border-bottom: 1px solid var(--border); }
+  .dc-iso { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 1px; margin-bottom: 4px; }
+  .dc-iso .yr { color: var(--muted); } .dc-iso .dot { color: var(--border); margin: 0 2px; }
+  .dc-iso .mo { color: var(--label); } .dc-iso .dd { color: var(--text); font-weight: 500; }
+  .dc-abbr { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 3px; line-height: 1; }
+  .mon .dc-abbr { color: var(--muted); }
+  .tue .dc-abbr { color: var(--gold); }
+  .wed .dc-abbr { color: var(--accent); }
+  .thu .dc-abbr { color: var(--green); }
+  .fri .dc-abbr { color: var(--muted); }
+  .sat .dc-abbr { color: var(--red); }
+  .sun .dc-abbr { color: var(--accent); }
+
+  .dc-tag { display: inline-block; margin-top: 6px; font-family: 'DM Mono', monospace; font-size: 7px; letter-spacing: 1.5px; padding: 2px 7px; text-transform: uppercase; }
+  .mon .dc-tag { background: rgba(90,106,122,.08); color: var(--muted); }
+  .tue .dc-tag { background: rgba(255,215,0,.07); color: var(--gold); }
+  .wed .dc-tag { background: rgba(0,229,255,.07); color: var(--accent); }
+  .thu .dc-tag { background: rgba(0,255,135,.07); color: var(--green); }
+  .fri .dc-tag { background: rgba(90,106,122,.08); color: var(--muted); }
+  .sat .dc-tag { background: rgba(255,71,87,.07); color: var(--red); }
+  .sun .dc-tag { background: rgba(0,229,255,.07); color: var(--accent); }
+
+  .dc-body { padding: 10px 13px 13px; }
+  .di { font-family: 'DM Mono', monospace; font-size: 9.5px; color: var(--label); padding: 4px 0; border-bottom: 1px solid rgba(30,45,61,.5); line-height: 1.4; display: flex; align-items: flex-start; gap: 5px; }
+  .di:last-child { border-bottom: none; }
+  .di .ic { flex-shrink: 0; color: var(--muted); }
+  .hi { color: var(--text); } .gr { color: var(--green); } .ac { color: var(--accent); }
+  .rd { color: var(--red); }  .gd { color: var(--gold); }  .mu { color: var(--muted); }
+  .or { color: var(--orange); }
+
+  .di-section { font-family: 'DM Mono', monospace; font-size: 7.5px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; padding: 6px 0 2px; border-bottom: 1px solid rgba(30,45,61,.5); display: block; }
+
+  .opt-box { margin-top: 7px; padding: 6px 9px; font-family: 'DM Mono', monospace; font-size: 8px; line-height: 1.6; border: 1px solid; }
+  .opt-green { color: var(--green); border-color: rgba(0,255,135,.2); background: rgba(0,255,135,.03); }
+  .opt-gold  { color: var(--gold);  border-color: rgba(255,215,0,.2);  background: rgba(255,215,0,.03); }
+  .opt-red   { color: var(--red);   border-color: rgba(255,71,87,.15);  background: rgba(255,71,87,.03); }
+  .opt-label { letter-spacing: 2px; text-transform: uppercase; margin-bottom: 2px; font-size: 7px; display: block; }
+
+  .bottom-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 14px; }
+  .card { background: var(--surface); border: 1px solid var(--border); padding: 22px; animation: fadeUp .5s ease both; transition: border-color .2s, transform .2s; }
+  .card:hover { border-color: rgba(0,229,255,.1); transform: translateY(-2px); }
+  .card-ttl { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 3px; color: var(--muted); text-transform: uppercase; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .ct-dot { width: 6px; height: 6px; flex-shrink: 0; }
+
+  .ex-row { padding: 8px 0; border-bottom: 1px solid var(--border); display: grid; grid-template-columns: 1fr auto auto; gap: 8px; align-items: center; }
+  .ex-row:last-child { border-bottom: none; }
+  .er-name   { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.3; }
+  .er-weight { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--text); letter-spacing: 1px; text-align: right; }
+  .er-weight .wu { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--accent); }
+  .er-scheme { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); text-align: right; }
+
+  .success-item { display: flex; align-items: flex-start; gap: 8px; padding: 7px 0; border-bottom: 1px solid var(--border); font-family: 'DM Mono', monospace; font-size: 10px; color: var(--label); line-height: 1.4; }
+  .success-item:last-child { border-bottom: none; }
+  .success-item::before { content: '→'; color: var(--accent); flex-shrink: 0; }
+
+  .identity { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); padding: 22px 28px; margin-bottom: 14px; animation: fadeUp .5s .5s ease both; position: relative; overflow: hidden; }
+  .identity::after { content: '🐺'; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 72px; opacity: .05; pointer-events: none; }
+  .id-lbl { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; }
+  .id-lines { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 5px; }
+  .id-line  { font-family: 'Bebas Neue', sans-serif; font-size: 17px; letter-spacing: 3px; color: var(--muted); transition: color .2s; }
+  .id-line:hover { color: var(--text); }
+  .id-line.hl { color: var(--accent); }
+
+  .footer { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .footer-l { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--muted); letter-spacing: 2px; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag { font-family: 'DM Mono', monospace; font-size: 8px; color: var(--muted); padding: 3px 8px; border: 1px solid var(--border); letter-spacing: 1px; transition: all .2s; cursor: default; }
+  .tag:hover { color: var(--accent); border-color: rgba(0,229,255,.3); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes pulse  { 0%, 100% { opacity: 1; } 50% { opacity: .3; } }
+
+  @media (max-width: 1100px) { .week-grid { grid-template-columns: repeat(4,1fr); } .bottom-grid { grid-template-columns: 1fr 1fr; } .obj-strip { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 750px)  { .week-grid { grid-template-columns: repeat(2,1fr); } .bottom-grid { grid-template-columns: 1fr; } .hdr { flex-direction: column; gap: 16px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HEADER -->
+  <div class="hdr">
+    <div>
+      <div class="eyebrow">🐺 Phase 1: Foundation · Build Week 5 of 23 · Meso-block Week 1 of 4</div>
+      <div class="title">WEEK<br>THIRTY-TWO</div>
+      <div class="subtitle">Week 1: Consolidate — One Variable Moves</div>
+      <div class="block-info">Revised same-day (2026-08-02) from an athlete-supplied v2 plan, adopted over the coaching draft — it correctly reads W32 as <span>Week 1 (Consolidate)</span>, not Week 2, and holds strictly to <span>one moving variable: compromised-run repeatability</span>.</div>
+    </div>
+    <div class="hdr-right">
+      <div class="week-badge">W32</div>
+      <div class="week-range">2026·08·03 → 2026·08·09</div>
+      <div class="week-year">Melbourne 9–13 Dec · Pro Men Fri 11 Dec AM (confirmed)</div>
+      <div class="live-badge"><span class="ld"></span>Phase 1 · Build Week 5</div>
+    </div>
+  </div>
+
+  <!-- RACE WINDOW BANNER -->
+  <div class="correction-banner">
+    <div class="cb-label">✔ Race Window Confirmed — hyrox.com, 2026-08-02</div>
+    <div class="cb-text">HYROX Melbourne: <span>9–13 December 2026, MCEC South Wharf</span>. Pro Men provisionally <span>Friday 11 December, morning wave</span> — replaces the earlier Sat-2026-12-12 placeholder anchor. Confirm exact wave time closer to the block. This flips the fueling-rehearsal risk profile from Sydney's evening wave to an early-morning one — see `reference/master_plan.md` SIM-2 note.</div>
+  </div>
+
+  <!-- ONE VARIABLE BANNER -->
+  <div class="new-banner">
+    <div style="font-size:20px;flex-shrink:0;">🎯</div>
+    <div>
+      <div class="nb-label">One Variable Moves — Everything Else Holds</div>
+      <div class="nb-text">Saturday's 600m runs open at <span>2:50–2:55</span> and hold inside a <span>10-second band</span>. Sled (252kg), Wall Balls (25/round, 60s density rest), Farmer Carry (2×150m), Sled Pull (185kg) all hold at W31's level. <span>WB rest cut to 45s is loaded for W33</span> — not stacked onto this week's run variable. BBJ held out this week (quad watch item after W31's cramp).</div>
+    </div>
+    <div class="nb-tags">
+      <div class="nb-tag">Run: 10s band</div>
+      <div class="nb-tag">WB: hold 60s</div>
+      <div class="nb-tag">BBJ: held out</div>
+    </div>
+  </div>
+
+  <!-- OBJECTIVES -->
+  <div class="obj-strip">
+    <div class="obj">
+      <div class="obj-num">OBJ 01</div>
+      <div class="obj-text">Saturday: <span class="hi">four 600m runs inside a 10-sec band</span>, opened 2:50–2:55</div>
+    </div>
+    <div class="obj">
+      <div class="obj-num">OBJ 02</div>
+      <div class="obj-text">Thursday: <span class="hi">6×600m fresh-quality run</span> rehearses the same restraint discipline</div>
+    </div>
+    <div class="obj">
+      <div class="obj-num">OBJ 03</div>
+      <div class="obj-text">Wednesday: <span class="hi">Farmer Carry 2×150m</span> + electrolytes — direct answer to W31's cramp</div>
+    </div>
+    <div class="obj">
+      <div class="obj-num">OBJ 04</div>
+      <div class="obj-text">Sled Pull: <span class="hi">rope handling + start delay</span> — close set 1 toward sets 2–3</div>
+    </div>
+  </div>
+
+  <!-- MINDSET -->
+  <div class="mindset">
+    <div class="mw hi">Fourth round earns the week.</div>
+    <div class="msep">·</div>
+    <div class="mw hi">Restraint on the first run.</div>
+    <div class="msep">·</div>
+    <div class="mw">One variable moves.</div>
+    <div class="msep">·</div>
+    <div class="mw">Cardiac rule never expires.</div>
+  </div>
+
+  <!-- WEEK GRID -->
+  <div class="section-lbl">📆 Week Structure — W32 · Week 1: Consolidate</div>
+  <div class="week-grid">
+
+    <!-- MON 03 -->
+    <div class="dc mon">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">08</span><span class="dot">·</span><span class="dd">03</span></div>
+        <div class="dc-abbr">MON</div>
+        <div class="dc-tag">Recovery / Reset</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">✗</span><span class="mu">Easy movement 30–45min walk/spin</span></div>
+        <div class="di"><span class="ic">—</span><span>Calf + Achilles eccentrics 3×15 ×2</span></div>
+        <div class="di"><span class="ic">😴</span><span>Sleep onset <span class="ac">21:30</span> — highest-leverage lever this week</span></div>
+      </div>
+    </div>
+
+    <!-- TUE 04 -->
+    <div class="dc tue">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">08</span><span class="dot">·</span><span class="dd">04</span></div>
+        <div class="dc-abbr">TUE</div>
+        <div class="dc-tag">Lower + Sled + WB Density</div>
+      </div>
+      <div class="dc-body">
+        <span class="di-section">Strength (hold)</span>
+        <div class="di"><span class="ic">—</span><span>Leg Ext <span class="gd">64kg·3×15</span> · Leg Press <span class="gd">80kg·3×8</span></span></div>
+        <div class="di"><span class="ic">—</span><span>BSS <span class="gd">17.5kg·3×10</span>ea · Lunges <span class="gd">28+28kg·3×30m</span></span></div>
+        <span class="di-section">Sled (speed day)</span>
+        <div class="di"><span class="ic">🛷</span><span>Push <span class="rd">210–220kg·4×20m</span> fast, 45–60s rest</span></div>
+        <div class="di"><span class="ic">🛷</span><span>Pull <span class="rd">185kg·3×20m</span> — rope layout + start standardised</span></div>
+        <span class="di-section">WB (hold density)</span>
+        <div class="di"><span class="ic">🏀</span><span>5×20 @9kg, <span class="ac">60s rest held</span> — 45s cut is W33</span></div>
+      </div>
+    </div>
+
+    <!-- WED 05 -->
+    <div class="dc wed">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">08</span><span class="dot">·</span><span class="dd">05</span></div>
+        <div class="dc-abbr">WED</div>
+        <div class="dc-tag">Upper + Farmer (Capped)</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">💧</span><span class="ac">Pre-session: hydrate + electrolytes</span></div>
+        <div class="di"><span class="ic">—</span><span>Bench build to <span class="gr">75×8</span> (2nd clean exposure), back-off 75×6</span></div>
+        <div class="di"><span class="ic">—</span><span>Pull-ups +20kg · Dips +20kg — <span class="or">stop 2 shy of failure</span></span></div>
+        <span class="di-section">Farmer Carry — Capped</span>
+        <div class="di"><span class="ic">🏋</span><span>32+32kg · <span class="ac">2×150m</span>, 90–120s rest</span></div>
+        <div class="opt-box opt-red" style="margin-top:6px;">
+          <span class="opt-label">Hard Rule</span>
+          First pre-cramp signal → stop, knee down, stretch, log preceding work
+        </div>
+      </div>
+    </div>
+
+    <!-- THU 06 -->
+    <div class="dc thu">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">08</span><span class="dot">·</span><span class="dd">06</span></div>
+        <div class="dc-abbr">THU</div>
+        <div class="dc-tag">Fresh Quality Run</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">🏃</span><span><span class="gr">6×600m</span>, corridor <span class="gr">2:42–2:50</span>, 90s jog recovery</span></div>
+        <div class="di"><span class="ic">—</span><span>R1 slow end of corridor · success = R5/R6 inside it, clean mechanics</span></div>
+        <div class="di"><span class="ic">→</span><span class="mu">Rehearses Saturday's exact restraint discipline — not a couplets day this week</span></div>
+      </div>
+    </div>
+
+    <!-- FRI 07 -->
+    <div class="dc fri">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">08</span><span class="dot">·</span><span class="dd">07</span></div>
+        <div class="dc-abbr">FRI</div>
+        <div class="dc-tag">Rest (Default)</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">✗</span><span class="mu">Default: full rest — week already carries Tue/Wed/Thu/Sat load</span></div>
+        <div class="di"><span class="ic">—</span><span>Green only: Z1-Z2 nasal, <span class="hi">25-30min max</span></span></div>
+      </div>
+    </div>
+
+    <!-- SAT 08 -->
+    <div class="dc sat">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">08</span><span class="dot">·</span><span class="dd">08</span></div>
+        <div class="dc-abbr">SAT</div>
+        <div class="dc-tag">HYROX Development Block</div>
+      </div>
+      <div class="dc-body">
+        <span class="di-section">4 Rounds</span>
+        <div class="di"><span class="ic">🏃</span><span>Run 600m, open <span class="rd">2:50–2:55</span>, hold 10s band</span></div>
+        <div class="di"><span class="ic">🛷</span><span>Sled <span class="rd">252kg×20m</span> held, final ≤50s</span></div>
+        <div class="di"><span class="ic">🏀</span><span>WB 25@9kg held · walk ≤<span class="ac">75s</span>, flat</span></div>
+        <div class="di"><span class="ic">🧭</span><span class="gr">"Round N, two loops" aloud — zero errors = pass</span></div>
+        <div class="opt-box opt-red" style="margin-top:4px;">
+          <span class="opt-label">Round 5</span>
+          Off the table — flat splits across 4 rounds is the target
+        </div>
+      </div>
+    </div>
+
+    <!-- SUN 09 -->
+    <div class="dc sun">
+      <div class="dc-head">
+        <div class="dc-iso"><span class="yr">2026</span><span class="dot">·</span><span class="mo">08</span><span class="dot">·</span><span class="dd">09</span></div>
+        <div class="dc-abbr">SUN</div>
+        <div class="dc-tag">Recovery Aerobic</div>
+      </div>
+      <div class="dc-body">
+        <div class="di"><span class="ic">🏃</span><span>8km controlled, nasal, <span class="ac">~5:30/km</span>, HR low-mid 140s</span></div>
+        <div class="di"><span class="ic">—</span><span>Run with reserve — 5:10 ceiling stays parked</span></div>
+        <div class="di"><span class="ic">📋</span><span class="mu">Log the W31–W32 two-week review dashboard tonight</span></div>
+        <div class="di" style="padding:10px 0 0;font-size:20px;justify-content:center;border:none;opacity:.3;">🌙</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM CARDS -->
+  <div class="bottom-grid">
+
+    <div class="card" style="animation-delay:.46s;">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--gold);"></span>Tue 08·04 — Lower + Sled Detail</div>
+      <div class="ex-row"><div class="er-name">Leg Extension</div><div class="er-weight">64<span class="wu">kg</span></div><div class="er-scheme">3×15</div></div>
+      <div class="ex-row"><div class="er-name">Leg Press</div><div class="er-weight">80<span class="wu">kg</span></div><div class="er-scheme">3×8</div></div>
+      <div class="ex-row"><div class="er-name">Bulgarian SS</div><div class="er-weight">17.5<span class="wu">kg</span></div><div class="er-scheme">3×10 ea</div></div>
+      <div class="ex-row"><div class="er-name">Walking Lunges</div><div class="er-weight">28<span class="wu">kg</span></div><div class="er-scheme">3×30m</div></div>
+      <div class="ex-row"><div class="er-name">Sled Push (speed)</div><div class="er-weight">210–220<span class="wu">kg</span></div><div class="er-scheme">4×20m·45-60s</div></div>
+      <div class="ex-row"><div class="er-name">Sled Pull</div><div class="er-weight">185<span class="wu">kg</span></div><div class="er-scheme">3×20m</div></div>
+      <div style="margin-top:12px;padding:9px 11px;border:1px solid rgba(255,215,0,.12);background:rgba(255,215,0,.03);">
+        <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--gold);letter-spacing:2px;margin-bottom:3px;">Sled Pull Target</div>
+        <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--label);">Sets 2–3 inside <span style="color:var(--text);">10s</span> of each other; set 1 closes in as rope handling tightens. Log rope resets + start delay.</div>
+      </div>
+    </div>
+
+    <div class="card" style="animation-delay:.50s;">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--green);"></span>Thu Corridor + Sat Band Targets</div>
+      <div style="font-family:'DM Mono',monospace;font-size:8px;color:var(--green);letter-spacing:2px;margin-bottom:10px;text-transform:uppercase;">🏃 Thu 6×600m</div>
+      <div class="ex-row"><div class="er-name">Corridor</div><div class="er-weight" style="font-size:14px;color:var(--green);">2:42–2:50</div><div class="er-scheme">R5-R6 inside</div></div>
+      <div class="ex-row"><div class="er-name">Recovery</div><div class="er-weight" style="font-size:14px;">90s</div><div class="er-scheme">easy jog</div></div>
+      <div style="margin:14px 0 10px;font-family:'DM Mono',monospace;font-size:8px;color:var(--red);letter-spacing:2px;text-transform:uppercase;">🛷 Sat 4×600m Band</div>
+      <div class="ex-row"><div class="er-name">Open</div><div class="er-weight" style="font-size:14px;color:var(--red);">2:50–2:55</div><div class="er-scheme">10s band</div></div>
+      <div class="ex-row"><div class="er-name">Walk recovery</div><div class="er-weight" style="font-size:14px;">≤75s</div><div class="er-scheme">W31: 60-95s</div></div>
+    </div>
+
+    <div class="card" style="animation-delay:.54s;">
+      <div class="card-ttl"><span class="ct-dot" style="background:var(--accent);"></span>W32 Targets (Pass/Fail)</div>
+      <div class="success-item">Saturday: <span style="color:var(--text);">4×600m inside a 10-sec band</span>, opened 2:50-2:55</div>
+      <div class="success-item">Saturday: walking recovery <span style="color:var(--text);">≤75s all 4 rounds</span></div>
+      <div class="success-item">Thursday: <span style="color:var(--text);">R5-R6 inside the corridor</span></div>
+      <div class="success-item">Wednesday farmer: <span style="color:var(--text);">300m cramp-free</span> or clean pre-cramp stop</div>
+      <div class="success-item">Sleep onset <span style="color:var(--text);">≤21:45 on ≥4 nights</span></div>
+    </div>
+
+  </div>
+
+  <!-- IDENTITY -->
+  <div class="identity">
+    <div class="id-lbl">🐺 Wolf Identity</div>
+    <div class="id-lines">
+      <div class="id-line">We do not chase races.</div>
+      <div class="id-line">We build capacity.</div>
+      <div class="id-line hl">We hunt numbers.</div>
+      <div class="id-line hl">We earn the flight.</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-l">W32 · 2026·08·03 → 2026·08·09 &nbsp;//&nbsp; YARO &nbsp;//&nbsp; PHASE 1: FOUNDATION · BUILD WEEK 5 OF 23 · WEEK 1: CONSOLIDATE</div>
+    <div class="tags">
+      <div class="tag">#Phase1Foundation</div>
+      <div class="tag">#Week1Consolidate</div>
+      <div class="tag">#OneVariable</div>
+      <div class="tag">#MelbourneConfirmed</div>
+      <div class="tag">#RunRepeatability</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
