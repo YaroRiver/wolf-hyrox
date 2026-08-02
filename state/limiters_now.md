@@ -46,8 +46,10 @@
 ### Calf / Achilles / adductor — data gap closed
 - Explicit rating resumed: ~1/10 pre-session Saturday, 0/10 post; 0/10 confirmed Sunday. No escalation despite a genuinely heavy week (252kg sled, loaded lunges, farmer carry, 200 WB reps). Existing hard rules remain active (0–2/10 Green, 2.5–3.5/10 Yellow, ≥4/10 or night cramp Red) — keep rating daily, but this is no longer an open data gap.
 
-### Navigation-under-fatigue — validated, downgrade from open risk to maintained practice
-- Saturday's 4-round compromised block held zero navigation errors with continuous loop-counting under real accumulated fatigue — direct evidence against the Sydney DQ failure mode. Keep the drill permanent (per `reference/master_plan.md` §10), but this is no longer an unresolved risk — it's a working habit that held under load.
+### Navigation-under-fatigue — corrected 2026-08-02: two distinct failure modes, only one addressed so far
+- Saturday's 4-round compromised block held zero navigation errors with continuous loop-counting under real accumulated fatigue — real evidence the counting/attention habit holds under load.
+- **Correction (athlete, 2026-08-02):** the Sydney DQ was not a counting failure — all laps were counted correctly. The actual failure was running the habitual path on Run 8 despite a course-specific briefing instruction (immediate right turn) that differed from the pattern used on the prior seven runs — an autopilot/habit-override failure under fatigue. Melbourne 2025's penalty was the counting-type failure (panicked, forgot to re-enter a loop) — a different mechanism.
+- **Practical read:** the counting drill (kept permanent, cheap, real value) addresses the Melbourne-2025 mechanism. It does not and cannot address the Sydney mechanism — no training-room drill replicates a spread-out, multi-station venue with course-specific turn instructions. **The load-bearing fix is an in-person course walk/recon before race day** — this remains untested/unavailable until real venue access closer to race week. Keep flagged as an open item, not resolved.
 
 ### Medical follow-ups (non-urgent, raise with GP)
 - Lipids elevated: total cholesterol 5.7, LDL 3.9, chol/HDL ratio 4.8, non-HDL 4.5 (all above the lab's own high-risk targets).

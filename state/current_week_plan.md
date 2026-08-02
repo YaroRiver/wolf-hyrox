@@ -2,12 +2,14 @@
 
 ```
 TIME ANCHOR (verified 2026-08-02 Sunday Melbourne — W31 close-out, plan revised same day)
-- Annual Week 32 · Phase 1 — Foundation, Build Week 5 of 23
+- Annual Week 32 · Phase I — Consolidate and recalibrate (Week 1 of 4), Build Week 5 of 23
 - Meso-block: Week 1 of 4 — Consolidate
 - Race window confirmed (hyrox.com, 2026-08-02): 9–13 Dec 2026, MCEC South Wharf. Pro Men provisionally Fri 11 Dec, morning wave.
 ```
 
 > **Revision note:** replaces an earlier same-day draft. Adopted a v2 plan the athlete supplied for comparison — it correctly identifies W32 as **Week 1 (Consolidate)** of the 4-week block (the earlier draft mislabeled it "Week 2 — Density") and holds strictly to the plan's own one-variable rule: this week moves **compromised-run repeatability** only. Full detail: `archive/2026/week_32_plan.md`.
+>
+> **Second same-day revision:** `reference/master_plan.md` itself was replaced with an athlete-supplied 19-week macrocycle (phases now labeled I–V; current phase is **Phase I — Consolidate and recalibrate**, not "Phase 1 — Foundation"). Two corrections applied: running volume is no longer ramp-rate-capped by a formula or age reasoning — recovery provision is the guardrail (see master plan Rule 5); and the navigation-under-fatigue fix was corrected — the Sydney DQ was a habitual-path override on a course-specific instruction, not a lap-counting failure, so the primary fix is an in-person course walk, not the counting drill (see master plan §10).
 
 ---
 

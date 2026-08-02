@@ -35,7 +35,9 @@
 
 **Result:** 1:48:24 · **DISQUALIFIED** (ruling recorded at Wall Balls station, but see correction below — cause was navigational, not WB) · Bib 184047 · Wave 18:40
 
-**CORRECTION (athlete testimony, 2026-07-05):** Wall Balls were completed in full — 100 reps, judges praised the execution. The DQ was for running the wrong (inner) loop on Run 8, the final run before the Wall Balls station — pre-race briefing had warned that an incorrect loop is an automatic DQ. This reverses the working hypothesis below ("WB technical breakdown") — WB capacity at 100 reps under full race fatigue is now confirmed, race-proven. The only remaining WB gap is speed (7:55 race vs 5:00 target).
+**CORRECTION (athlete testimony, 2026-07-05):** Wall Balls were completed in full — 100 reps, judges praised the execution. The DQ was for a navigational/course error on Run 8, the final run before the Wall Balls station. This reverses the working hypothesis below ("WB technical breakdown") — WB capacity at 100 reps under full race fatigue is now confirmed, race-proven. The only remaining WB gap is speed (7:55 race vs 5:00 target).
+
+**PRECISION CORRECTION (athlete, 2026-08-02):** Not a lap-counting error — the athlete counted correctly all race. On Run 8, the course briefing specified a different turn (immediate right) than the pattern run on the previous seven runs; under fatigue-driven autopilot, the habitual path was run instead of the briefed exception. Distinct from Melbourne 2025's penalty, which *was* a counting/panic-type failure (forgot to re-enter a loop). Full detail: `STATE.md` ACTIVE PROBE TARGET section, `reference/master_plan.md` §10.
 
 **Context:** Raced 4 days after first reporting respiratory/sinus illness (flagged 2026-06-29, marked HRV-recovered by 2026-07-01, never confirmed fully cleared). Watch data: avg HR 154, max 172, 1:07:51 in Zone 4 + 16:14 in Zone 5 across the ~1:50 effort — a high-output, high-effort race, not a passive fade.
 

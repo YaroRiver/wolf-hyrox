@@ -1,5 +1,5 @@
 # WEEK W32 — 2026-08-03 (Mon) → 2026-08-09 (Sun)
-## Annual Week 32 · Phase 1 — Foundation, Build Week 5 of 23 · Meso-block: Week 1 of 4 — Consolidate
+## Annual Week 32 · Phase I — Consolidate and Recalibrate, Build Week 5 of 23 · Week 1 of 4
 
 > **Revision note (2026-08-02):** This plan replaces an earlier same-day draft. The athlete supplied an independently-generated v2 plan for comparison; the coaching review adopted it near-verbatim because it correctly identifies **W32 as Week 1 (Consolidate)** of the athlete's own 4-week progression block (the earlier draft mislabeled W32 as "Week 2 — Density," which actually belongs to W33) and because it holds strictly to the plan's own "one variable moves" rule — this week's single moving variable is **compromised-run repeatability**, nothing else. Full comparison discussed in chat 2026-08-02.
 >
