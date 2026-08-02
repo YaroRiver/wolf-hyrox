@@ -3,7 +3,7 @@
 > **Revised 2026-08-02 (second revision same day).** Structure adopted from an athlete-supplied 19-week macrocycle (`HYROX_Melbourne_2026_19_Week_Master_Plan.md`, v1.0, 2026-08-02), compared against the previously-promoted draft and found stronger on several concrete points: running-volume peak better calibrated to real tracked data, more gradual 4-gate simulation progression, explicit governing rules (2 hard days/week, deload every 4th week, strength reps-in-reserve), and an honest "current data gaps" accounting. Merged back in from the prior version: the navigation-under-fatigue workstream (corrected per athlete clarification below), B12 timing, fueling protocol, KPI dashboard, and the Overload Method doctrine — extended, per athlete direction, to running volume as well.
 >
 > **Two corrections applied on adoption (athlete direction, 2026-08-02):**
-> 1. **Running volume is not capped for age.** The incoming plan's Rule 5 partially justified conservative running growth by citing the athlete's age. The athlete rejected this explicitly: running volume is not to be limited on account of age. The governing mechanism is **recovery provision, not a ramp-rate formula** — heavier weeks get more rest, not a slower preset climb. See Rule 5 below (rewritten) and §14.
+> 1. **Running volume is not capped for age.** The incoming plan's Rule 5 partially justified conservative running growth by citing the athlete's age. The athlete rejected this explicitly: running volume is not to be limited on account of age. The governing mechanism is **sleep, not a ramp-rate formula** — heavier weeks earn more sleep, not a slower preset climb. (Precision correction, same day: the athlete specified sleep, not "rest" generally.) See Rule 5 below (rewritten) and §14.
 > 2. **The Sydney DQ was not a lap-counting failure.** Corrected mechanism, per direct athlete account: all laps were counted correctly. The actual failure was running the habitual path on Run 8 despite a course briefing that specified a different turn there — an autopilot/habit-override failure under fatigue, not an attention/counting failure. Melbourne 2025's penalty *was* a counting-type failure (different mechanism). This changes what actually fixes the Sydney-type risk — see §10 below (rewritten).
 
 ```
@@ -83,14 +83,14 @@ Tuesday lower strength is controlled and generally kept below metabolic failure.
 - Main lifts stop with approximately 1–3 reps in reserve.
 - Explosive or plyometric work is never loaded heavily when the calf or quad is symptomatic.
 
-### Rule 5 — Running volume is an open overload lane, governed by recovery, not by age (rewritten 2026-08-02)
+### Rule 5 — Running volume is an open overload lane, governed by sleep, not by age (rewritten 2026-08-02, precision-corrected same day)
 Running volume is **not** artificially capped because of the athlete's age. Every station where the athlete has been given an explicit overload lane (sled, carry, grip, WB volume fresh) became a weapon because the athlete pushed past prescription — running gets the same lane now, on direct athlete instruction.
 
-**The governing mechanism is recovery, not a ramp-rate formula.** A week that carries a real jump in running volume or intensity earns a corresponding increase in rest — a genuine extra rest day, lower density elsewhere that week, or pulling a deload forward — rather than being pre-throttled by a fixed +X km/week ceiling. The weekly volume figures in §6 below are a **default trajectory, not a hard ceiling** — they can run higher when recovery is actually supporting it.
+**The governing mechanism is sleep, not a ramp-rate formula.** (Athlete's own correction: not "more rest" generally — specifically more sleep.) A week that carries a real jump in running volume or intensity earns a corresponding increase in sleep — more time in bed, an earlier bedtime, protecting sleep the way the load itself is protected — rather than being pre-throttled by a fixed +X km/week ceiling. The weekly volume figures in §6 below are a **default trajectory, not a hard ceiling** — they can run higher when sleep is actually supporting it.
 
 **What actually stops progression is real signal, not a formula:**
 - Calf/Achilles rating ≥ 2.5/10, or any pain that changes mechanics.
-- Sleep collapse or two consecutive nights < 7h.
+- Sleep collapse or two consecutive nights < 7h — this is the primary brake, not a secondary one.
 - HRV/sleeping-HR trending the wrong direction alongside rising load.
 - Subjective state says no, regardless of what the plan says (Rule 8).
 
@@ -463,9 +463,9 @@ The plan is working if, across the blocks:
 
 ## 15. THE OVERLOAD METHOD (organizing principle, extended to running 2026-08-02)
 
-**Principle:** on every station, the athlete's instinct to push past the written prescription is the proven mechanism behind every real PR in this build — sled push 204→245→252kg, sled pull to 204kg working, farmer carry 64kg×300m unbroken past a lighter prescription, Wall Ball volume past 150 in a session. **As of 2026-08-02, this is no longer scoped to exclude running volume** — the athlete rejected the age-based exception explicitly. Running now runs on the same principle as everything else: push it, and let recovery (Rule 5) be the real guardrail, not a preset ceiling.
+**Principle:** on every station, the athlete's instinct to push past the written prescription is the proven mechanism behind every real PR in this build — sled push 204→245→252kg, sled pull to 204kg working, farmer carry 64kg×300m unbroken past a lighter prescription, Wall Ball volume past 150 in a session. **As of 2026-08-02, this is no longer scoped to exclude running volume** — the athlete rejected the age-based exception explicitly. Running now runs on the same principle as everything else: push it, and let sleep (Rule 5) be the real guardrail, not a preset ceiling.
 
-**Where the plan still states a real guardrail (not a cap, a signal):** technical/form breakdown, an actual pain signal, or the recovery markers in Rule 5 and §9. Nowhere in this plan is a station artificially held back because of the athlete's age.
+**Where the plan still states a real guardrail (not a cap, a signal):** technical/form breakdown, an actual pain signal, or the sleep/HRV/calf markers in Rule 5 and §9. Nowhere in this plan is a station artificially held back because of the athlete's age.
 
 ---
 
@@ -473,7 +473,7 @@ The plan is working if, across the blocks:
 
 1. No race-pace efforts within 7 days of respiratory illness onset; written go/no-go decides, feel does not.
 2. Sunday long run exists every week (Red excepted).
-3. **Running volume has no ramp-rate ceiling** (revised 2026-08-02) — recovery provision is the guardrail, per Rule 5. The weekly figures in §6 are a default trajectory, not a hard cap.
+3. **Running volume has no ramp-rate ceiling** (revised 2026-08-02) — sleep is the guardrail, per Rule 5, not a formula or a generic "more rest." The weekly figures in §6 are a default trajectory, not a hard cap.
 4. Sled frozen at proven working loads (245kg) for load-chasing purposes — compromised-conditions touches (e.g. 252kg) are diagnostic, not a new baseline to keep pushing from.
 5. WB full-fatigue rehearsal continues — capacity proven twice, rate/repeatability is the open question, not attempted at max every week.
 6. One variable moves per week (Rule 1).
