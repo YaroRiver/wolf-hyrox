@@ -34,12 +34,17 @@
 
 ---
 
+| 20 | 2026-08-01 | Sled push compromised load + compromised-running diagnostic | W31 SAT — 4 rounds (600m run + Sled Push + 25 WB), self-directed, ahead of Phase 1 schedule (plan called for fresh-state WB rate work, not a fatigue-fragment day) | 245 kg (written cap) | — | **252 kg × 4 × 20 m, 39/43/48/50 sec.** Run splits 2:42/2:42/3:07/3:10 — surfaced the compromised-running/quad-durability limiter. WB 100 @ 59/59/61/61 (2 sec drift). Navigation zero errors. | Technical decline in Round 4 (not sled failure) — athlete correctly stopped before optional Round 5 | Sled compromised working reference 252 kg logged (frozen — no further load chase per plan); **new limiter identified: compromised-running/quad durability**, promoted to primary limiter in `state/limiters_now.md`. Note: this session combined a sled overload with a running/fatigue diagnostic on the same day — multi-axis by hard rule 11; happened organically, not planned as a dual probe |
+
+---
+
 ## Pending Probes
 
 | Date | Element | Format | Floor | Target | Status |
 |---|---|---|---|---|---|
-| 2026-06-27 | WB skill touch (taper) | W26 SAT — 30 reps fresh (NOT a ceiling probe) | — | 30 rhythm | PLANNED |
-| 2026-07-03 | **RACE** | HYROX Sydney | — | 100 reps break-pattern | TARGET — strategy: 35–40 open + 20–25 + remainder |
+| 2026-06-27 | WB skill touch (taper) | W26 SAT — 30 reps fresh (NOT a ceiling probe) | — | 30 rhythm | COMPLETE |
+| 2026-07-03 | **RACE** | HYROX Sydney | — | 100 reps break-pattern | **COMPLETE — 100 reps clean / 7:55, DQ navigational (Run 8), not WB** |
+| — | (Sydney build closed; Melbourne build probe slots resume per `reference/master_plan.md`) | | | | |
 
 ---
 

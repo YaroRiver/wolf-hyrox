@@ -20,6 +20,8 @@
 | 2026-04-21 | W17 TUE | Sydney W4 | **245 kg PR** | 3×18 m fresh | 50 / 51 / 53 sec | New working PR; first 245 confirmed |
 | 2026-04-28 | W18 TUE | Sydney W5 | 240 kg | 3×18 m | 50 / 49 / 42 sec | S3 best time; calf near-cramp signal after |
 | 2026-05-12 | W20 TUE | Sydney W7 | 240 kg | 3×18 m Yellow | 53 / 47 / 46 sec | Calf-protected day; clean despite Yellow |
+| 2026-07-28 | W31 TUE | Melbourne Phase 1 W1 | 210 kg | 3×20 m | 40 / 33 / 32 sec | Post-cardiac-clearance return; lighter than the 245 kg overload-lane ceiling but +1 set vs plan; clean progressive |
+| 2026-08-01 | W31 SAT | Melbourne Phase 1 W1 | **252 kg (new working reference)** | 4×20 m compromised (600m run + sled + 25 WB per round) | 39 / 43 / 48 / 50 sec | Self-directed overload, 7 kg above the written 245 kg cap; progressive controlled decline (+11 sec R1→R4, ~28%); no stall, no calf signal; correctly stopped before optional R5 (technique, not sled) |
 
 ---
 
@@ -39,7 +41,8 @@
 - **Working load (gym 18 m):** **245 kg** (W17 TUE 2026-04-21)
 - **Working load fresh 20 m:** 240 kg (W14 TUE 2026-03-31 PR)
 - **Race-distance 40 m:** 204 kg / 1:22 (Brisbane W11 THU)
-- **Progression rule:** reduce rest before adding weight; next probe direction = rest tightening at 245 kg
+- **Compromised working load (Melbourne build):** 252 kg × 4 × 20 m, 39/43/48/50 sec (W31 SAT 2026-08-01) — self-directed overload past the written 245 kg cap, held together across 4 rounds under real running/WB fatigue
+- **Progression rule (Melbourne build, per `reference/master_plan_melbourne_draft_v1.md` §4):** sled frozen at proven working loads — already >20% above race requirement, no further load-chase needed; progression target is reducing time drift and transition cost, not adding weight
 
 ---
 

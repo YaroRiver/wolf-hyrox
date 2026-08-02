@@ -20,6 +20,7 @@
 | 2026-05-16 | W20 SAT | Sydney W7 Phase 2 W4 | 28+28 kg | 22 m × 4 (race-fragment) | R4 ~1:02; slightly longer than planned 20m; no calf breakdown; clean |
 | 2026-05-19 | W21 TUE | Sydney W8 Phase 2 W5 | 32+32 kg | 30 m × 2 (skipped 3rd, calves 3/2 post) | splits 1:28/1:11; strength block; calf escalation after — session shortened |
 | 2026-05-23 | W21 SAT | Sydney W8 Phase 2 W5 | 28+28 kg | 20 m × 4 (80m total, race-fragment) | splits 48/37/36/37 sec; under HYROX fatigue, settled after R1; calf 2/10 post (no escalation) |
+| 2026-07-28 | W31 TUE | Melbourne Phase 1 W1 | 28+28 kg | 30 m × 3 | Post-cardiac-clearance return; lighter than the 30+30kg plan number but longer distance (30m vs 20m); clean, no calf signal |
 
 ---
 
@@ -43,6 +44,7 @@
 | 2026-03-03 | W10 TUE | 45 kg | 3 × 8 each | Clean |
 | 2026-03-10 | W11 TUE | 45 kg | 3 × 10 each | Volume up |
 | 2026-04-21 | W17 TUE | 50 kg | 3 × 8 each | Stable |
+| 2026-07-28 | W31 TUE | 17.5 kg each hand | 3 × 10 each leg | Melbourne build re-entry; lighter than historical 45–50kg peak, volume-first restart |
 
 ---
 

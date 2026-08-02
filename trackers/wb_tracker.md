@@ -26,6 +26,9 @@
 | 2026-05-21 | W21 THU | Sydney W8 Phase 2 W5 | 3-round rhythm [600m + BBJ 30m + WB 35] | 35×3 = **105 unbroken under fatigue** @ 9kg; splits 1:22/1:19/1:18 (faster each round) | **105** | BREAKTHROUGH: per-set ceiling progression proven; 25-rep stagnation broken; YELLOW-GREEN |
 | 2026-05-23 | W21 SAT | Sydney W8 Phase 2 W5 | 4-round fragment + 1.03km entry + probe | 25×4 = 100 @ 9kg (61/56/56/56) + **probe 50 clean** +5 ugly = 55 in 2:16; probe HR avg 155, Z5 1:45 | **150** | OFFICIAL: 50 clean single-set under full HYROX fatigue confirmed; lesson: stop at clean failure, no ugly reps; GREEN-YELLOW |
 | 2026-06-20 | W25 SAT | Sydney W12 Phase 4 W1 | 3-round race fragment (~600m @ 4:33/km + WB 25 ×3) + 638m entry @ 5:05/km + probe | **50 reps / 2:07 (clean technical stop)** | 125 (75 primer + 50 probe) | Entry runs faster than planned (4:33 vs 5:00–5:15/km) — burned fatigue budget; HR 160 entering final set; correct stop at 50 (lesson W21 applied); floor 55 NOT reached; LOCK HELD AT 50; 5th consecutive missed ceiling probe; WB 25-rep chunks strong (58/56/56 through fatigue); race strategy adjusted to break pattern |
+| 2026-07-03 | RACE | HYROX Sydney | Final station, full 8-station race fatigue | **100 reps completed clean** (7:55) | 100 | Judges praised execution; DQ was a Run 8 navigational error, not a WB failure (corrected 2026-07-05). Capacity proven at race distance — remaining gap is speed only |
+| 2026-07-28 | W31 TUE | Melbourne Phase 1 W1 | 5×20 density, 60s rest | 100 total, near-zero drift | 100 | 47/47/47/46/46 sec — dialed in, matches the density-progression target exactly |
+| 2026-08-01 | W31 SAT | Melbourne Phase 1 W1 | 4×25 within compromised 4-round block (600m run + 252kg sled + 25 WB per round) | 100 total, 2 sec drift | 100 | 59/59/61/61 sec — essentially unbreakable under real running/sled fatigue; WB was not the limiting station this session (running was) |
 
 ---
 
@@ -87,10 +90,8 @@
 
 ## Race Target
 
-- **HYROX Sydney 2026-07-03:** 100 reps @ 9 kg as final station
-- **Ideal:** 70+ UB then small break to finish (~5:00–5:30 total)
-- **Realistic:** 50+50 with 20 sec reset (~5:30–6:00 total)
-- **Both options fit 1:15:00 target**
+- **HYROX Sydney 2026-07-03 (complete):** 100 reps @ 9 kg completed clean under full race fatigue, 7:55 — capacity proven, speed unsolved.
+- **HYROX Melbourne 2026-12-12 (current target):** 100 reps @ 9 kg, target 5:00 (floor 5:30, stretch 4:45) — per `reference/master_plan.md` §8. Capacity is not the open question; rate and repeatability under fatigue are.
 
 ---
 

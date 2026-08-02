@@ -217,6 +217,28 @@
 
 ---
 
+## W31 (2026-07-27 to 2026-08-02) — Phase 0 → Phase 1, Cardiac Clearance Week
+
+*Backfilled 2026-08-02 from athlete-supplied report pack `HYROX_W31_Reports_2026-07-27_to_2026-08-02` — see `archive/2026/week_31_report.md` for full plan-vs-actual per day.*
+
+| Date | Day | Sleep h | Restful % | HRV ms | HRV %vs baseline | Calves L | Calves R | Body feel | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-07-27 | MON | 8h10 | 52% | 46 sleeping / 43.2 daily | +9% | not provided | not provided | felt well, more possible | **Stress echocardiogram — RESULT NORMAL.** Combined with normal Holter, cardiac clearance limiter resolved |
+| 2026-07-28 | TUE | 7h40 | 65% | 30 sleeping / 38.2 daily | -3% | not provided | not provided | — | Lower + sled + WB density; sled lighter than plan but more volume; WB 100@47/47/47/46/46 dialed in |
+| 2026-07-29 | WED | 8h11 | — | 61 morning / 49 evening | — | not provided | not provided | very low energy, forced effort, Yellow | Upper + farmer carry; pull-ups trended toward failure (cue violation); quad cramp final 100m of farmer carry, resolved ~3min; Tue→Wed heavy-leg accumulation flag |
+| 2026-07-30 | THU | 7h55 | 55% | 57 sleeping / 43.4 daily | +9% | not provided | not provided | severely fatigued AM, strong PM after 2nd sleep block | 8.03km progressive run replaced prescribed compromised-couplets+navigation session; strong finish 4:49/km |
+| 2026-07-31 | FRI | 7h45 | 62% | 64 sleeping / 49.6 daily | +25% | not provided | not provided | — | Full rest (plan called for easy Z2); 2nd written clinic confirmation of normal test result |
+| 2026-08-01 | SAT | 9h01 | — | 60 sleeping / 59.5 daily | +48% | ~1/10 | not provided | Green at start | 4-round 252kg sled + 600m run + WB block (self-directed, ahead of Phase 3 schedule); limiter identified: quad/compromised-running durability; navigation zero errors |
+| 2026-08-02 | SUN | 9h35 | 59% | 45 sleeping / 44.9 daily | +12% | 0/10 | 0/10 | reserve held | 8.02km controlled run, nasal breathing; zone target missed (Z3 not Z1-Z2); week close |
+
+## W31 7-day summary
+
+| W31 summary | ~8h20 avg | ~58% avg | 30–64 ms sleeping range | 0–1/10 (2 of 7 days rated, data gap otherwise closed) | 1 A (Mon) / 2 A- (Tue, Fri) / 1 B- (Wed) / 1 B (Thu) / 1 B+ (Sat) / 1 B+ (Sun) | **Cardiac clearance resolved.** New primary limiter identified: compromised-running/quad durability (confirmed two independent ways: Saturday's session + athlete's own progress framework doc). Written plan replaced (not adjusted) on 3 of 7 days (Wed partial, Thu, Sat) — same self-directed-override pattern as W30, lower risk this time, no adverse outcome. |
+
+**Note:** Calf/Achilles rating gap (open since W29) is now closed — 0/10 confirmed Sat and Sun; other days not rated but no symptom volunteered.
+
+---
+
 ## Append Protocol
 
 After every Sunday close-out and after every morning readiness gate:

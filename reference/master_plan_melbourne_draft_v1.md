@@ -1,7 +1,9 @@
 # MASTER PLAN — HYROX MELBOURNE, DECEMBER 2026
-## Draft v1 for athlete review — not yet adopted as `reference/master_plan.md`
+## Draft v1 — SUPERSEDED 2026-08-02, promoted to `reference/master_plan.md`
 
-> **Status: DRAFT — working plan, not yet "sacred."** Built 2026-07-05 from corrected race data (athlete testimony + race-app screenshots), supersedes the corrected sections of `analytics/race_comparison_melbourne_vs_sydney_2026.md` and the previously committed `master/hyrox_melbourne_master_plan.html` ("HOME GROUND"). Do not commit, publish to Portal, or fold into `reference/master_plan.md` / `STATE.md` until the athlete confirms this draft in chat.
+> **Status: PROMOTED.** This draft was adopted as the live `reference/master_plan.md` at the W31 Sunday close-out (2026-08-02) — validation gate met (stress echo normal + clean W29/W31 reactivation probes). Kept here as the historical source document; do not edit or use for current planning — read `reference/master_plan.md` instead.
+
+> Built 2026-07-05 from corrected race data (athlete testimony + race-app screenshots), superseded the corrected sections of `analytics/race_comparison_melbourne_vs_sydney_2026.md` and the previously committed `master/hyrox_melbourne_master_plan.html` ("HOME GROUND").
 
 ### VALIDATION GATE — what turns this draft into the fixed master plan
 

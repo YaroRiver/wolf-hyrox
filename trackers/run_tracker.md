@@ -11,6 +11,12 @@
 | 2026-05-16 W20 SAT | Sydney W7 | 2:04 @ HR 122 | 1:50 @ HR 147 | 1:59 @ HR 144 | 2:04 @ HR 144 | Controlled; HR stayed sub-cap; created fatigue without burning probe |
 | 2026-05-23 W21 SAT | Sydney W8 | 0:58 @ HR ? | 0:54 @ HR ? | 0:48 @ HR ? | 0:49 @ HR ? | 4×400m within HYROX round structure; settled after R1; no HR cap breach |
 
+## Race-Fragment 600m Runs (within Sled Push + WB compromised block)
+
+| Date | Week | R1 | R2 | R3 | R4 | Notes |
+|---|---|---|---|---|---|---|
+| 2026-08-01 W31 SAT | Melbourne Phase 1 W1 | 2:42 / 4:30/km | 2:42 / 4:30/km | 3:07 / 5:12/km | 3:10 / 5:17/km | First controlled 4-round compromised block post-Sydney; R1/R2 held flat, R3/R4 fell 25–28 sec — **limiter identified: quad/compromised-running durability, not raw speed or WB capacity.** Full context: `archive/2026/week_31_report.md` |
+
 ## Race-Entry 1 km Runs (post-fragment, pre-probe)
 
 | Date | Distance | Time | Avg Pace | Avg HR | Notes |
@@ -61,6 +67,8 @@
 | 2026-04-19 | W16 SUN | 6.08 km | — | 6:03/km | — | Yellow recovery |
 | 2026-04-26 | W17 SUN | 4.28 km walk | 48:59 | 11:26/km | — | Walk only; correct |
 | 2026-05-03 | W18 SUN | 5.39 km walk | 58:50 | 10:55/km | — | HRV 34 → walk only |
+| 2026-07-30 | W31 THU | 8.03 km | 43:49 | 5:27/km | 142 | Progressive, opened 6:44/km building to 4:49/km final full km @ HR159; avg power 274W; rescued by unplanned second sleep block after a "physically broken" morning |
+| 2026-08-02 | W31 SUN | 8.02 km | 44:17 | 5:31/km | 142 | Nasal-breathing throughout, ran with reserve (~5:10/km felt available); planned as easy Z1–Z2 long run but zones ran hot (32min in Z3) — near-identical profile to Thursday's run, not yet a distinct easy long run |
 
 ---
 

@@ -5,13 +5,12 @@
 ---
 
 ## TIME ANCHOR
-- **Last updated:** 2026-07-26 (Sunday, Melbourne — W30 close-out: full week backfilled, cap-compliance flagged, W31 opened)
+- **Last updated:** 2026-08-02 (Sunday, Melbourne — W31 close-out: cardiac clearance confirmed, master plan promoted, W32 opened)
 - **Race day:** 2026-07-03 (Friday) — HYROX Sydney — **COMPLETE**
 - **Race result:** 1:48:24 — **DISQUALIFIED — navigational error, wrong loop on Run 8** (corrected 2026-07-05; not a Wall Balls failure — see below)
-- **Sydney Build Day:** 96 (Fri 2026-07-03, race day — final build day)
-- **Sydney Build Week:** 14 (W27, closed at race)
-- **Annual Week:** 31 (2026-07-27 → 2026-08-02) — current. W27 archived 2026-07-19 (late). W28 (2026-07-06→07-12) has no daily report — logging lapsed; see `archive/2026/week_28_report.md`. W29 (2026-07-13→07-19) backfilled from athlete's external tracking — see `archive/2026/week_29_report.md`. W30 (2026-07-20→07-26) backfilled from athlete's external tracking, Grade C+ — see `archive/2026/week_30_report.md`.
-- **Phase:** Phase 0 — Recovery & Clearance (Melbourne draft plan), **closing this week**. Draft plan originally scoped this phase to W28–W29 (Jul 6–19); it ran long because the actual clearance event — cardiac stress echocardiogram — is booked for **2026-07-27 (Monday, W31)**. W31 opens Phase 1 (Foundation) from Tuesday, contingent on a clear echo result. W30 was intended as a bridge week (capped intensity) but the athlete trained at full intensity from Tuesday onward regardless of the cap — see W30 report for the compliance flag. No cardiac jolt/palpitation reported at any point.
+- **Melbourne Build Week:** 4 of 23 (W31, per `reference/master_plan.md` W28–W50 build window) — closed. W32 opens Build Week 5.
+- **Annual Week:** 32 (2026-08-03 → 08-09) — current. W27 archived 2026-07-19 (late). W28 (2026-07-06→07-12) has no daily report — logging lapsed; see `archive/2026/week_28_report.md`. W29 (2026-07-13→07-19) backfilled — see `archive/2026/week_29_report.md`. W30 (2026-07-20→07-26) backfilled, Grade C+ — see `archive/2026/week_30_report.md`. W31 (2026-07-27→08-02) backfilled, Grade A- — see `archive/2026/week_31_report.md`.
+- **Phase:** Phase 1 — Foundation (per `reference/master_plan.md`, promoted from draft 2026-08-02), Build Week 5 of 23 starting. Phase 0 (Recovery & Clearance) closed this week: stress echocardiogram (2026-07-27) result normal, combined with normal Holter (2026-07-16) — cardiac clearance limiter fully resolved. New primary limiter: compromised-running/quad durability under repeated station fatigue (identified W31 Sat, confirmed two independent ways). No cardiac jolt/palpitation reported at any point since the W13 event.
 - **W22 STATUS:** COMPLETE — Vaccine Disruption / Recovery Protection Week (Grade B)
 - **W23 STATUS:** COMPLETE — Recovery/Re-entry Week (Grade B-). Two bike sessions only. No WB probe, no running quality, no BBJ, no lunges. WB lock unchanged at 50 (W21). Probe deferred.
 - **W24 STATUS:** COMPLETE — Recovery Crisis / Respiratory Activation (Grade C+). Monday re-entry fragment only (Grade A). Respiratory/sinus activation Wed. HRV suppressed Thu–Sat. WB probe missed 3rd consecutive time (gate not met). Walk only Sat. Sunday sleeping HR 56 bpm — recovery direction confirmed.
@@ -21,14 +20,15 @@
 - **W28 STATUS:** DATA GAP. No daily report — see `archive/2026/week_28_report.md`. Known: full blood panel drawn Sat 07-11. Recovery-week directive (`archive/2026/week_28_plan.md`) presumed followed in substance based on symptom trajectory, not verified day-by-day.
 - **W29 STATUS:** COMPLETE (Grade A-, backfilled). Medical-assessment + controlled-return week. Mon full-body home strength (moderate). Tue/Wed deliberate rest through residual sinus symptoms. Thu medical review: **Holter reported normal** (verbal), bloods broadly healthy (see `reference/medical.md`), **cardiac stress echo booked 2026-07-27**. Fri data gap. Sat first controlled return run (5.03km/30:26, avg HR 138, no crash). Sun stable recovery check. Report: `archive/2026/week_29_report.md`.
 - **W30 STATUS:** COMPLETE (Grade C+, backfilled 2026-07-26). Phase 0/1 bridge week — plan called for capped intensity pending the stress echo; athlete trained past the cap from Tuesday onward (loaded lunges, near-failure bench/weighted pull-ups/dips, faster-than-capped HYROX interval with real Zone 5, and a full external GRIND class Saturday — 21:28 combined Zone 4-5, ~44h before the echo). Mon illness rest (A), Fri aerobic cap respected (A-), Sun pre-echo rest (A) all matched plan. **No cardiac jolt/palpitation reported any day.** Athlete has stated intent to train at full volume regardless of echo outcome; coaching position (cardiac signal overrides athlete intent, per `reference/decision_rules.md`) held in chat, discussed at length, not resolved by agreement — athlete disputes the framing. Calf/Achilles rating gap now spans two consecutive weeks (W29+W30). Report: `archive/2026/week_30_report.md`.
+- **W31 STATUS:** COMPLETE (Grade A-, backfilled 2026-08-02). Cardiac clearance week. Mon: stress echocardiogram, **result normal** — cardiac limiter resolved. Tue: lower+sled+WB density, WB 100@9kg 47/47/47/46/46 dialed in, sled lighter-load-more-volume variant, sled pull best efficiency arc since W20 (1:32→1:07). Wed: upper+farmer carry under real fatigue (Yellow) — pull-ups trended toward failure (cue violation), quad cramp final 100m of farmer carry (resolved ~3min); Tue→Wed heavy-leg accumulation flagged. Thu: prescribed compromised-couplets+navigation session replaced by an 8.03km progressive run (strong finish 4:49/km) — rescued by an unplanned second sleep block after a "physically broken" morning. Fri: full rest (plan called for easy Z2); 2nd written clinic confirmation of normal test result. Sat: self-directed 4-round 252kg sled + 600m run + WB block, five phases ahead of the plan's own schedule for this fatigue-depth work — excellent execution (WB 100@59/59/61/61, navigation zero errors under fatigue) and the week's headline finding: **compromised-running/quad durability confirmed as the new primary limiter** (R1/R2 held 2:42, R3/R4 fell to 3:07/3:10), independently confirmed by the athlete's own written progress framework. Sun: 8.02km controlled run, calf 0/10, but zone target missed (Z3 not Z1-Z2) — near-identical to Thursday's run rather than a distinct easy long run. Week totals: 23km running, 200 WB reps, sled 210-252kg, navigation drill clean. **Master plan promoted from draft** — see `reference/master_plan.md`. Report: `archive/2026/week_31_report.md`.
 
 ---
 
 ## ATHLETE SNAPSHOT
-- **Yaro · 46 · Pro Men 45–49 · 196 cm · 84 kg · BMI 21.9**
-- **VO₂max:** 58 ml/kg/min (PR 2026-05-18 W21 Mon)
+- **Yaro · 46 (47 on 2026-08-11) · Pro Men 45–49 · 196 cm · 84 kg · BMI 21.9**
+- **VO₂max:** 58 ml/kg/min (PR 2026-05-18 W21 Mon, stale — retest due per `reference/master_plan.md`)
 - **HR recovery:** 160→99 bpm in 2 min (excellent)
-- **Race target:** 1:15:00 HYROX Sydney 2026-07-03
+- **Race target:** 1:15:00 HYROX Melbourne, anchored Sat 2026-12-12 (per `reference/master_plan.md`; official date still to be confirmed — check weekly)
 - **Gym:** Iron Viking, Moorabbin (Australia)
 - **Medical:** Pernicious anemia, B12 monthly (last 2026-06-29, next ~2026-07-29); chronic calf-Achilles-soleus zone; cardiac event W13 resolved
 - **2025 Melbourne baseline:** 1:33:44, rank #603, Pro M 45-49. Gap to target: 18:44.
@@ -41,16 +41,17 @@
 
 | Capacity | Lock |
 |---|---|
-| **Wall Ball** | **CAPACITY CONFIRMED 2026-07-05 (athlete correction):** 100 reps completed clean at Sydney under full 8-station race fatigue, praised by judges — the WB station itself was not the DQ cause (see Active Limiter note below). Capacity is proven at race distance; remaining gap is **speed only** — race time 7:55, target 5:00. Pre-correction training data (50 clean single-set under partial fragment fatigue, W21 Sat 2026-05-23 / W25 Sat 2026-06-20) stands as the training-tested benchmark below full race load. |
-| **VO₂max** | 58 (PR W21 Mon 2026-05-18) |
-| **Sled push** | 246 kg overshoot (race 202 kg, +22%) — confirmed, retired from chase. W25 Tue confirmed 204 kg × 20m in 44–45 sec. |
-| **Sled pull** | 206 kg × 20 m / 1:05 PR (race 153 kg, +35%) — confirmed. W25 Tue: 186 kg × 20m in 1:20–1:25. |
-| **Run** | 4:19/km @ HR147 Yellow (W21 Mon); W25 Thu fresh: 4×400m 4:26→4:03/km (progressive); W25 Tue compromised: 5:13/km after sled. Compromised run gap is real — managed with race pacing discipline. |
-| **BBJ** | Restarted W25 Thu: 2×30m (1:11 / 1:07) · ~2.4 sec/m. W26 Thu touch planned. Race: 80m @ comfortable pace. |
-| **Lunges** | 80m @ 28+28kg under fatigue (W21 Sat); race 100m @ 30kg sandbag. No lunges since W21. W25 Sat skipped (probe focus). Restart Mon W26 (1×20m BW) + Sat W26 (1×20m BW). |
-| **Ski Erg** | **NOT TRAINED.** Orientation Tuesday W26 (ADD 3). Race target: ~4:00–4:20 for 1000m. |
-| **Row Erg** | **NOT TRAINED.** Orientation Tuesday W26 (ADD 3). Race target: ~3:50–4:20 for 1000m. |
-| **Tissue** | Left calf night cramp Saturday W22 (2026-05-30). No new cramp W23, W24, or W25. Status: 0/10 all of W25. |
+| **Wall Ball** | **CAPACITY CONFIRMED:** 100 reps completed clean at Sydney under full 8-station race fatigue (2026-07-03). **Reconfirmed W31 (2026-08-01):** 100 reps @ 9kg / 59-59-61-61 sec (2 sec drift) within a real compromised 4-round block — WB was not the limiting station. Also W31 Tue: 5×20 density, 47/47/47/46/46, dialed in. Capacity is proven twice now; remaining gap is **speed/repeatability** — target 5:00 for 100 under full fatigue (floor 5:30) per `reference/master_plan.md` §8. |
+| **VO₂max** | 58 (PR W21 Mon 2026-05-18) — stale, retest due in Melbourne build |
+| **Sled push** | Working load 245 kg (proven, frozen — no chase, exceeds race req by >20%). **Compromised reference (W31 Sat 2026-08-01): 252 kg × 4 × 20m, 39/43/48/50 sec** — self-directed overload past the 245kg cap, held together under real fatigue. |
+| **Sled pull** | Working load 204 kg (proven, frozen). **Re-entry W31 Tue (2026-07-28): 185 kg × 3 × 20m, 1:32/1:11/1:07** — best efficiency arc since W20. |
+| **Run** | **W31 Sat compromised 600m splits: 2:42/2:42/3:07/3:10** — clean signal that compromised-running/quad durability, not raw speed, is the current limiter (see Active Limiter). **W31 Thu/Sun: two 8km runs at 5:27-5:31/km, avg HR142** — Thu progressive (finished 4:49/km), Sun held with reserve (nasal breathing) but ran hotter than the intended Z1-Z2 long-run zone. |
+| **Farmer Carry** | **Proven strength, not a limiter.** W31 Wed: 32+32kg × 300m / 2:46 (cramped final 100m after Tue heavy-leg day, resolved ~3min). Historical best: 64kg × 300m unbroken. |
+| **BBJ** | Restarted W25 Thu: 2×30m (1:11 / 1:07) · ~2.4 sec/m. Not trained W31 — needs a weekly touch per `reference/master_plan.md` §7. Race: 80m @ comfortable pace. |
+| **Lunges** | **W31 Tue (2026-07-28): 28+28kg × 3×30m** (lighter load, longer distance than historical 30+30kg×20m peak) — clean re-entry, no calf signal. Historical peak: 80m @ 28+28kg under fatigue (W21 Sat). |
+| **Ski Erg** | **NOT TRAINED since W26 orientation.** Race target: ~4:00–4:20 for 1000m. |
+| **Row Erg** | **NOT TRAINED since W26 orientation.** Race target: ~3:50–4:20 for 1000m. |
+| **Tissue** | Calf: 0/10 confirmed W31 Sat/Sun, no escalation despite a heavy week (252kg sled, loaded lunges, farmer carry, 200 WB reps). Quad: cramp W31 Wed (farmer carry, Tue-heavy-leg accumulation), heavy load W31 Sat R2 onward (no cramp) — see Active Limiter. |
 
 ---
 
@@ -59,13 +60,15 @@
 *(Sydney-build limiter list below is historical — kept for record. Current limiters are tracked in `state/limiters_now.md`, summarized here.)*
 
 **Current priority limiter order (as of W31 close-out, 2026-08-02):**
-1. **Sleep timing / bedtime discipline.** Long-standing pattern (CLAUDE.md). Re-flagged by the athlete 2026-07-19 after a late night. 7-day sleep rhythm only 53–60% across W29 vs 73–76% during the Sydney taper.
-2. **Respiratory/sinus symptoms** — present Mon–Wed W29, none reported since; treat as trending resolved, not yet fully confirmed.
-3. **Calf/Achilles/adductor watch** — no daily rating captured through W29–W30 (data gap); resume explicit daily rating.
+1. **Compromised-running / quad durability under repeated station fatigue.** New primary limiter, identified W31 Sat (2026-08-01) and independently confirmed by the athlete's own progress framework doc. Sled and WB both hold near-flat under fatigue; running fades 25–28 sec by Round 3-4 as the quads load. Development priority order per `reference/master_plan.md` §2: running first, then WB density, then quad durability/lunges, then BBJ, then sled pull, then sled push, then farmer carry.
+2. **Heavy-leg-day accumulation.** New watch item, 2026-08-02. Tue heavy-leg day stacked against Wed Farmer Carry produced the week's one real flag (quad cramp, near-failure pull-up set). Build a rest/upper-only buffer day between heavy-leg work and farmer carry.
+3. **Sleep timing / bedtime discipline.** Long-standing pattern (CLAUDE.md). 7-day rhythm improved to 80% by W31 Sunday (from 53–60% in W29) — directionally better, not resolved. Subjective fatigue overrode acceptable sleep numbers twice in W31 (Wed, Thu) — trust the subjective read when it disagrees with the dashboard.
 
 **RESOLVED 2026-08-02:** Cardiac clearance. Stress echocardiogram (2026-07-27) result: normal (athlete-reported). Holter (2026-07-16) also normal. Both legs of the cardiac workup clear — the restriction on maximal-effort work held since W28 is lifted. Permanent rule unchanged: any jolt/palpitation → immediate abort, no exception. See `reference/medical.md`.
 
-NOT limiters: sled, WB capacity (both proven at Sydney), CV base fitness, B12/anaemia/thyroid/liver/inflammation (bloods clean 07-11).
+**RESOLVED 2026-08-02:** Respiratory/sinus symptoms — no recurrence since early W29, now confirmed clean through a full hard training week. **RESOLVED 2026-08-02:** Calf/Achilles data gap — explicit rating resumed (0/10 Sat/Sun), no longer an open gap. **VALIDATED 2026-08-02:** Navigation-under-fatigue drill — zero errors under real accumulated fatigue (W31 Sat), downgraded from open risk to a maintained permanent practice.
+
+NOT limiters: sled push/pull, WB capacity, Farmer Carry (all proven, reconfirmed under real fatigue W31), CV base fitness, B12/anaemia/thyroid/liver/inflammation (bloods clean 07-11).
 
 **Medical follow-ups (non-urgent, raise with GP):** lipids elevated (cholesterol 5.7, LDL 3.9, chol/HDL 4.8, non-HDL 4.5); same-draw glucose discordance (serum 6.3 H vs plasma 5.0, against excellent HbA1c 4.9%).
 
@@ -90,15 +93,17 @@ NOT limiters: sled, WB capacity (both proven at Sydney), CV base fitness, B12/an
 - **Race wave confirmed:** 18:40 HYROX MEN PRO · Bib 184047
 - **2026-07-16:** Holter monitor reported normal (verbal, GP). Bloods reviewed, broadly healthy (see `reference/medical.md`). Cardiac stress echocardiogram booked **2026-07-27, 16:00, Victoria Heart, Windsor** — this is the actual clearance gate; coaching rule (no maximal-effort work) holds until it's done and reviewed.
 - **2026-07-18:** First controlled return-to-run post-race: 5.03km/30:26/6:03 per km, avg HR 138, no overnight crash. Confirms aerobic base tolerates easy load; says nothing about clearance for high-intensity/maximal work.
-- **Phase 0 → Phase 1 promotion tracking (per `reference/master_plan_melbourne_draft_v1.md` validation gate):** needs three clean training probes across W29–early W30. Probe 1: Sat 07-18 run, clean. Probes 2–3: this week's (W30) sessions, pending. If W30 lands clean, the draft plan can be promoted to `reference/master_plan.md` at Sunday close-out — pending athlete confirmation. **Phase 1 (Foundation — real run-volume ramp, WB rate work, navigation drills, leg endurance restoration) does not start on volume/intensity until the 2026-07-27 stress echo clears** — the draft's own W29 assumption of "GP cardiac clearance" did not complete on schedule (Holter only; stress echo is the actual gate), so Phase 0 is extended by exactly this slip, not open-ended.
-- **New standing design constraint for all future phases:** the athlete's "jolt" cardiac sensations tracked with periods of heavy training load driving resting HR into deep bradycardia (~42–43 bpm). Independent of the 07-27 stress echo result, monitor resting HR trend as training load rises through the Melbourne build — a rapid drop into that range alongside rising load is an early-warning signal to back off, not just a curiosity to note.
-- **Navigation-under-fatigue drill started early (2026-07-19), at zero training cost:** count laps aloud on any looped run route, starting this week — doesn't require cardiac clearance to begin, addresses the confirmed twice-occurring failure pattern (Melbourne 2025 penalty, Sydney DQ).
+- **Phase 0 → Phase 1 promotion — COMPLETE 2026-08-02.** Validation gate met: W29 reactivation probes clean, stress echo (2026-07-27) normal, W31 full week of real Foundation-phase training landed with no adverse cardiac/injury outcome. `reference/master_plan_melbourne_draft_v1.md` promoted to `reference/master_plan.md` at this Sunday close-out. Phase 1 (Foundation) is now the live phase, Build Week 5 of 23 opening W32.
+- **New standing design constraint for all future phases:** the athlete's "jolt" cardiac sensations tracked with periods of heavy training load driving resting HR into deep bradycardia (~42–43 bpm). Now that the stress echo has cleared this pattern medically, still monitor resting HR trend as training load rises through the Melbourne build — a rapid drop into that range alongside rising load remains an early-warning signal to back off, not just a curiosity to note.
+- **Navigation-under-fatigue drill — VALIDATED 2026-08-02.** W31 Sat: zero navigation errors, continuous loop-counting held under real accumulated 4-round fatigue — direct evidence against the Sydney DQ failure mode. Keep permanent per `reference/master_plan.md` §10.
+- **W31 Sat (2026-08-01) — headline finding:** compromised-running/quad durability confirmed as the new primary limiter. 4-round block (600m run / 252kg sled / 25 WB): R1/R2 held 2:42 flat, R3/R4 fell to 3:07/3:10, while sled (11 sec drift) and WB (2 sec drift) barely moved. Independently confirmed by athlete's own written progress framework doc. Full detail: `archive/2026/week_31_report.md`, `state/limiters_now.md`.
 
 ---
 
 ## CALENDAR (race horizon)
 
-- **W31 (07-27→08-02):** CURRENT. Mon: cardiac stress echocardiogram, 16:00, Victoria Heart, Windsor — the actual Phase 0 exit gate. If clear, Phase 1 (Foundation) opens Tuesday at full working loads per `reference/master_plan_melbourne_draft_v1.md`. Plan: `state/current_week_plan.md`.
+- **W32 (08-03→08-09):** CURRENT. Build Week 5 of 23, Phase 1 (Foundation). Plan: `state/current_week_plan.md` / `archive/2026/week_32_plan.md`.
+- **W31 (07-27→08-02):** COMPLETE — Grade A-. Cardiac clearance confirmed (stress echo normal). New primary limiter identified (compromised-running/quad durability). Master plan promoted from draft. See W31 STATUS above and `archive/2026/week_31_report.md`.
 - **W30 (07-20→07-26):** COMPLETE — Grade C+. See W30 STATUS above and `archive/2026/week_30_report.md`.
 - **W25 (06-15→06-21):** COMPLETE — Grade B+. WB probe 50 under fatigue (ceiling confirmed). BBJ restarted. Run speed present. Calves clean. Race strategy adjusted.
 - **W26 (06-22→06-28):** COMPLETE — Grade A-. Ski 4:19 / Row 4:16 confirmed Tue. WB 40 reps/1:30 Thu + 20 reps/45s Sat (2.25 sec/rep locked). BBJ 30m/1:14 confirmed Sat. Run 3×400m (4:34/5:13/4:33). Lunges BW touched. Left leg managed 0–2/10 all week. **W26 archived 2026-07-02.**
@@ -147,9 +152,11 @@ Conditional:
 **W28:** data gap, no daily report — `archive/2026/week_28_report.md`
 **W29 close-out completed:** 2026-07-19 (backfilled from athlete's external tracking — `archive/2026/week_29_report.md`)
 **W30 close-out completed:** 2026-07-26 (backfilled from athlete's external tracking — `archive/2026/week_30_report.md`)
-**W31 opened:** 2026-07-26 (`state/current_week.md`, `state/current_week_plan.md`, `archive/2026/week_31_plan.md`)
-**This file last refreshed:** 2026-08-02 (Sunday — stress echo result in: normal, cardiac limiter resolved; full W31 close-out pending rest of week's session data)
-**Next mandatory refresh:** at W31 formal Sunday close-out once full week's session data is in
-**Race wave confirmed:** 18:40 HYROX MEN PRO · Bib 184047 · 2026-06-27
+**W31 close-out completed:** 2026-08-02 (backfilled from athlete's report pack — `archive/2026/week_31_report.md`)
+**W32 opened:** 2026-08-02 (`state/current_week.md`, `state/current_week_plan.md`, `archive/2026/week_32_plan.md`)
+**Master plan promoted:** 2026-08-02 — `reference/master_plan_melbourne_draft_v1.md` → `reference/master_plan.md`, validation gate met (echo clear + clean W29/W31 reactivation)
+**This file last refreshed:** 2026-08-02 (Sunday — W31 close-out complete)
+**Next mandatory refresh:** W32 Sunday close-out (2026-08-09) or on any lock/limiter change before then
+**Race wave confirmed:** 18:40 HYROX MEN PRO · Bib 184047 · 2026-06-27 (Sydney, complete)
 **Race result confirmed:** 1:48:24, DQ navigational (Run 8 wrong loop, not Wall Balls) · 2026-07-03
-**Cardiac stress echo:** 2026-07-27, 16:00, Victoria Heart Windsor — RESULT: normal (athlete-reported, 2026-08-02)
+**Cardiac stress echo:** 2026-07-27, 16:00, Victoria Heart Windsor — RESULT: normal (athlete-reported, 2026-08-02) — cardiac clearance limiter resolved

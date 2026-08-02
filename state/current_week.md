@@ -1,7 +1,7 @@
-# WEEK W31 — 2026-07-27 (Mon) → 2026-08-02 (Sun)
-## Annual Week 31 · Phase 0 → Phase 1 (Foundation opens, pending stress echo)
+# WEEK W32 — 2026-08-03 (Mon) → 2026-08-09 (Sun)
+## Annual Week 32 · Phase 1 — Foundation, Build Week 5 of 23
 
-> **W31 directive:** Monday is the cardiac stress echocardiogram (16:00, Victoria Heart, Windsor) — the actual clearance gate. If clear, Phase 1 (Foundation) opens for real from Tuesday: full working loads, sled/carry/grip/WB-volume overload lanes unrestricted per `reference/master_plan_melbourne_draft_v1.md` §4. Any cardiac sensation on any day, echo result notwithstanding, is a permanent immediate-abort rule — not tied to clearance status. Full session-by-session plan: `state/current_week_plan.md`.
+> **W32 directive:** First week under the promoted `reference/master_plan.md`. Weekly template adopts the athlete's own progress framework doc as the working structure, with three corrections from the W31 review: protected Thursday couplets/navigation slot, capped Farmer Carry (2×150m) after last week's quad cramp, and a genuinely easy Sunday long run. Per the athlete's own 4-week block, this is Week 2 — Density. Full session-by-session plan: `state/current_week_plan.md`.
 
 <!-- Daily entries appended below by /morning and /session workflows -->
 
