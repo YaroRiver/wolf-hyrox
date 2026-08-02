@@ -58,11 +58,12 @@
 
 *(Sydney-build limiter list below is historical — kept for record. Current limiters are tracked in `state/limiters_now.md`, summarized here.)*
 
-**Current priority limiter order (Phase 0 — Recovery & Clearance, W30):**
-1. **Cardiac clearance pending.** Holter normal (verbal, 2026-07-16) but the definitive test — stress echocardiogram — is booked 2026-07-27, not yet done. No maximal-effort work of any kind until it clears. Any jolt/palpitation → immediate abort, no exception.
-2. **Sleep timing / bedtime discipline.** Long-standing pattern (CLAUDE.md). Re-flagged by the athlete 2026-07-19 after a late night. 7-day sleep rhythm only 53–60% across W29 vs 73–76% during the Sydney taper.
-3. **Respiratory/sinus symptoms** — present Mon–Wed W29, none reported since; treat as trending resolved, not yet fully confirmed.
-4. **Calf/Achilles/adductor watch** — no daily rating captured through W29 (data gap); resume explicit daily rating now that impact/loaded work returns in W30.
+**Current priority limiter order (as of W31 close-out, 2026-08-02):**
+1. **Sleep timing / bedtime discipline.** Long-standing pattern (CLAUDE.md). Re-flagged by the athlete 2026-07-19 after a late night. 7-day sleep rhythm only 53–60% across W29 vs 73–76% during the Sydney taper.
+2. **Respiratory/sinus symptoms** — present Mon–Wed W29, none reported since; treat as trending resolved, not yet fully confirmed.
+3. **Calf/Achilles/adductor watch** — no daily rating captured through W29–W30 (data gap); resume explicit daily rating.
+
+**RESOLVED 2026-08-02:** Cardiac clearance. Stress echocardiogram (2026-07-27) result: normal (athlete-reported). Holter (2026-07-16) also normal. Both legs of the cardiac workup clear — the restriction on maximal-effort work held since W28 is lifted. Permanent rule unchanged: any jolt/palpitation → immediate abort, no exception. See `reference/medical.md`.
 
 NOT limiters: sled, WB capacity (both proven at Sydney), CV base fitness, B12/anaemia/thyroid/liver/inflammation (bloods clean 07-11).
 
@@ -147,8 +148,8 @@ Conditional:
 **W29 close-out completed:** 2026-07-19 (backfilled from athlete's external tracking — `archive/2026/week_29_report.md`)
 **W30 close-out completed:** 2026-07-26 (backfilled from athlete's external tracking — `archive/2026/week_30_report.md`)
 **W31 opened:** 2026-07-26 (`state/current_week.md`, `state/current_week_plan.md`, `archive/2026/week_31_plan.md`)
-**This file last refreshed:** 2026-07-26 18:06 AEST (Sunday — W30 close-out: full week backfilled, cap-compliance flagged ahead of stress echo, W31 opened)
-**Next mandatory refresh:** immediately after the 2026-07-27 16:00 stress echo result is known — determines whether Phase 1 opens as drafted in `state/current_week_plan.md` or W31 reverts to Phase 0 protocol; formal Sunday close-out otherwise due 2026-08-02
+**This file last refreshed:** 2026-08-02 (Sunday — stress echo result in: normal, cardiac limiter resolved; full W31 close-out pending rest of week's session data)
+**Next mandatory refresh:** at W31 formal Sunday close-out once full week's session data is in
 **Race wave confirmed:** 18:40 HYROX MEN PRO · Bib 184047 · 2026-06-27
 **Race result confirmed:** 1:48:24, DQ navigational (Run 8 wrong loop, not Wall Balls) · 2026-07-03
-**Cardiac stress echo:** 2026-07-27, 16:00, Victoria Heart Windsor — TOMORROW, pending
+**Cardiac stress echo:** 2026-07-27, 16:00, Victoria Heart Windsor — RESULT: normal (athlete-reported, 2026-08-02)

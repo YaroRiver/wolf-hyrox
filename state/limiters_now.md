@@ -2,22 +2,19 @@
 
 > **High-frequency file. Updated whenever active limiter or risk changes. Overwrite, do not append.**
 
-**Last updated:** 2026-07-26 (Sunday — W30 backfilled, cap-compliance flag added ahead of stress echo)
+**Last updated:** 2026-08-02 (Sunday — stress echo result in: normal. Cardiac clearance limiter resolved.)
+
+---
+
+## RESOLVED — Cardiac clearance (was primary limiter, resolved 2026-08-02)
+
+**Stress echocardiogram result: normal** (athlete-reported verbal, 2026-08-02, test done 2026-07-27). Holter (2026-07-16) was also normal. Both legs of the cardiac workup are now clear. The standing restriction on maximal-effort work (VO₂max field test, hard sim work, WB/sled/BBJ ceiling probes, sprint work) — held since W28 pending this result — is lifted. Full detail: `reference/medical.md`.
+
+**This does not touch the permanent rule:** any jolt/palpitation sensation → immediate abort, no exception, regardless of test results. Also unresolved: the W30 compliance flag showed the athlete training past prescribed caps before this result was known — worth naming, now that the result happened to come back clean, so "it worked out" doesn't get read as "the cap didn't matter."
 
 ---
 
 ## PRIMARY LIMITER
-
-### Cardiac clearance pending — stress echo tomorrow, not yet done
-- **Status:** Holter monitor reported normal by GP (2026-07-16, athlete-reported verbally — not yet a written report on file). Bloods reviewed same day, broadly healthy. **The actual clearance test — Transthoracic/Stress Echocardiogram — is booked for Monday 2026-07-27, 16:00, Victoria Heart, Windsor. Not yet done.**
-- **Why this still gates training:** A Holter captures resting/ambulatory rhythm only. The "jolt" (skipped-beat) sensations the athlete has reported are specifically linked to periods of deep athletic bradycardia (~42–43 bpm resting) during heavy training load — exactly the exercise-induced pattern a Holter cannot rule out and a stress echo is designed to test.
-- **Coaching rule (unchanged, `reference/medical.md`):** No maximal-effort testing — VO₂max field test, hard sim work, WB/sled/BBJ ceiling probes, sprint work — until the stress echo result is back and reviewed.
-- **Hard rule 13 unchanged:** any palpitation/jolt sensation → immediate abort, no exception.
-- **W30 compliance flag (new, 2026-07-26):** The written cap was not held Tue–Thu or Sat. Saturday 2026-07-25 in particular was a full external GRIND class — 21:28 combined minutes in Zone 4–5, average HR 153 — the hardest session logged since before the race, landing ~44 hours before tomorrow's stress echo. **No jolt/palpitation was reported on any day this week** — that specific signal stayed clean — but the athlete has stated intent to return to full training volume regardless of tomorrow's result. Worth surfacing this week's actual load to whoever reads the stress echo, since recent heavy training and fatigue state are relevant context for interpreting an exercise-stress test. Full day-by-day detail: `state/current_week.md`.
-
----
-
-## SECONDARY LIMITER
 
 ### Sleep timing / bedtime discipline
 - **Status:** Flagged by the athlete himself (2026-07-19) — stayed up messaging until ~01:30 the prior night, called it a rhythm disruption. Sleep volume has generally been adequate to strong (7h15–9h31 across W29), but bedtime consistency is the recurring weakness (7-day sleep rhythm 53–60% across W29, well below the 73–76% seen during the Sydney taper).

@@ -84,6 +84,12 @@ Athlete drafted a full checkup request to his GP, to be actioned as part of Phas
 
 **Cardiac stress test — booked, not yet done:** Transthoracic/Stress Echocardiogram, Victoria Heart, Windsor VIC, **Monday 2026-07-27, 16:00**. This is the actual clearance gate for exercise-induced cardiac response. **The coaching rule above stays in force until this test is done and reviewed — a normal Holter does not satisfy it.**
 
+## Stress Echocardiogram Result (2026-08-02, athlete-reported)
+
+**Result:** Normal ("echo v normi" — athlete verbal report, 2026-08-02, six days after the 2026-07-27 test). **Not yet seen as a written report** — same caveat as the Holter above: logged as athlete testimony pending the formal document.
+
+**Coaching implication:** This was the standing clearance gate for maximal-effort work (VO₂max field test, hard sim work, WB/sled/BBJ ceiling probes, sprint work) held since W28. With a normal result, that specific restriction lifts. The permanent rule is unchanged and does not depend on this or any test: any jolt/palpitation sensation → immediate abort, no exception.
+
 **Bloods (verified from pathology report, collected 2026-07-11, referred by Dr Ilona Jakab):**
 - HbA1c 4.9% (30 mmol/mol) — excellent, no diabetes signal.
 - FBC/Hct/RBC/platelets/white cells/ESR — all normal, no anaemia, no inflammatory pattern.
