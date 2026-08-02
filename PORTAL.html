@@ -316,10 +316,16 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    min-width: 0; /* prevent long unbreakable strings anywhere in this grid column from expanding the whole 1fr track (was pushing columns 3/5 to 266-284px vs 234-240px elsewhere) */
   }
 
   .week-pair .nc {
     flex: 1;
+    min-width: 0;
+  }
+
+  .week-pair .nc-desc {
+    overflow-wrap: anywhere; /* the actual long unbreakable tokens (e.g. "compromised-running/quad") live in nc-desc, not titles */
   }
 
   /* ── WEEK BADGE inside card (large) ── */
