@@ -239,6 +239,28 @@
 
 ---
 
+## W32 (2026-08-03 to 2026-08-09) — Phase I Week 1, Consolidate (headline variable untested)
+
+*Backfilled 2026-08-09 from athlete-supplied daily report pack (six MD files, 2026-08-03 to 08-09) — see `state/current_week.md` (W32 archive) for full plan-vs-actual per day.*
+
+| Date | Day | Sleep h | Restful % | HRV ms | HRV %vs baseline | Calves L | Calves R | Body feel | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-03 | MON | not provided | — | not provided | — | not provided | not provided | — | No data supplied — recovery/reset presumed followed, not verified |
+| 2026-08-04 | TUE | 8h45 | 52% | 59 sleeping / 53.9 daily | +35% | not provided | not provided | Green | Lower+sled+WB Grade A; every prescribed load exceeded (BSS, sled push, sled pull); WB 100@44/44/45/46/45 new best |
+| 2026-08-05 | WED | 8h10 (+25min nap) | — | 50 sleeping / 48.3 daily | +20% | not provided | not provided | Green-Yellow | Upper+farmer Grade A-; Farmer Carry 300m/2:36.40 PR; pull-ups drifted past "stop 2 shy" cue (2nd week running) |
+| 2026-08-06 | THU | 8h15 | 60% | 46 sleeping | — | not provided | not provided | Green, leg-load watch | Fresh run Grade B+; 4 recorded 600m at 2:18–2:24 vs 2:42–2:50 corridor (pacing failure); posteromedial distal-calf "string" signal, stopped immediately |
+| 2026-08-07 | FRI | not provided | — | not provided | — | 0/10 (Thu signal, evening check) | not provided | — | Rest day; unplanned cosmetic procedure ~16:00 (spontaneous, sister's birthday gift, athlete tried to decline) |
+| 2026-08-08 | SAT | 8h09 | — | not provided (readiness score 5.27) | — | 0/10 | 0/10 | — | Planned HYROX block withheld — <24h post-procedure; calf signal fully resolved |
+| 2026-08-09 | SUN | 12h25 | 59% | 54 sleeping / 51 daily | +23% | 0/10 | 0/10 | headache, sinus active | Planned 8km run withheld — active sinus symptoms + headache + heavy sleep fragmentation (20%); 7-day rhythm fell to 56% |
+
+## W32 7-day summary
+
+| W32 summary | ~9h29 avg (5 of 7 days provided, skewed by Sunday's 12h25) | ~57% avg (4 days provided) | 46–59 ms sleeping range | 0/10 all days rated | 1 A (Tue) / 1 A- (Wed) / 1 B+ (Thu) / 2 Recovery-A/OFF (Sat, Sun) | Headline variable (compromised-run corridor) untested — Saturday block never ran. New tertiary watch item: posteromedial distal-calf "string" (Thu, resolved 0/10 by Sat). Pull-up failure-adjacent pattern confirmed 2nd week running. |
+
+**Note:** 7-day sleep rhythm fell from 81% (W31 Thu peak) to 56% (W32 Sun) — a real regression on the standing secondary limiter, not just a data gap.
+
+---
+
 ## Append Protocol
 
 After every Sunday close-out and after every morning readiness gate:

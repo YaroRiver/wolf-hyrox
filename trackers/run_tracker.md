@@ -17,6 +17,14 @@
 |---|---|---|---|---|---|---|
 | 2026-08-01 W31 SAT | Melbourne Phase 1 W1 | 2:42 / 4:30/km | 2:42 / 4:30/km | 3:07 / 5:12/km | 3:10 / 5:17/km | First controlled 4-round compromised block post-Sydney; R1/R2 held flat, R3/R4 fell 25–28 sec — **limiter identified: quad/compromised-running durability, not raw speed or WB capacity.** Full context: `archive/2026/week_31_report.md` |
 
+## Fresh 600m Repeats (Thursday — Quality, not compromised)
+
+| Date | Week | Prescribed corridor | Recorded reps | Times | Notes |
+|---|---|---|---|---|---|
+| 2026-08-06 W32 THU | Melbourne Phase I W2 | 2:42–2:50 | 4 of 5 completed (1st rep lost to watch fault) | 2:23 / 2:18 / 2:22 / 2:24 | **Ran 18–32 sec faster than the prescribed corridor** — pacing-discipline failure, not a fitness limit; 6 sec total spread shows excellent repeatability at the wrong target. Avg HR 149, peak ~166, well-organised recovery. Session stopped after 5 reps on a posteromedial distal-calf "string" signal (resolved 0/10 by Sat). Full context: `state/current_week.md` (W32 archive) |
+
+---
+
 ## Race-Entry 1 km Runs (post-fragment, pre-probe)
 
 | Date | Distance | Time | Avg Pace | Avg HR | Notes |

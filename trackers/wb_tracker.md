@@ -29,6 +29,7 @@
 | 2026-07-03 | RACE | HYROX Sydney | Final station, full 8-station race fatigue | **100 reps completed clean** (7:55) | 100 | Judges praised execution; DQ was a Run 8 navigational error, not a WB failure (corrected 2026-07-05). Capacity proven at race distance — remaining gap is speed only |
 | 2026-07-28 | W31 TUE | Melbourne Phase 1 W1 | 5×20 density, 60s rest | 100 total, near-zero drift | 100 | 47/47/47/46/46 sec — dialed in, matches the density-progression target exactly |
 | 2026-08-01 | W31 SAT | Melbourne Phase 1 W1 | 4×25 within compromised 4-round block (600m run + 252kg sled + 25 WB per round) | 100 total, 2 sec drift | 100 | 59/59/61/61 sec — essentially unbreakable under real running/sled fatigue; WB was not the limiting station this session (running was) |
+| 2026-08-04 | W32 TUE | Melbourne Phase I W2 | 5×20 density, 60s rest, after heavy legs + 4 sled push + 3 sled pull | 100 total, 2 sec drift | 100 | **44/44/45/46/45 sec — new best density set**, faster than W31's 47/47/47/46/46; set 5 recovered 1 sec after set 4, no late collapse |
 
 ---
 
@@ -85,6 +86,7 @@
 - **Best round under fatigue (stability):** 1:01/1:01/1:02/1:01 over 4 rounds (W20 SAT 2026-05-16)
 - **Best round under fatigue (2-round):** 1:00 / 1:00 (W20 THU 2026-05-14)
 - **Latest clean probe lock:** **50 reps / 1:59 (W20 SAT 2026-05-16, under deeper fatigue than W19)**
+- **Best density set (5×20, 60s rest):** 44/44/45/46/45 sec (W32 TUE 2026-08-04) — improves on W31's 47/47/47/46/46
 
 ---
 
