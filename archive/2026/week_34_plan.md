@@ -1,123 +1,335 @@
 # WEEK W34 PLAN — 2026-08-17 (Mon) → 2026-08-23 (Sun)
 ## Annual Week 34 · T−16 · Build Week 7 of 23 · Phase I — Consolidate and recalibrate, Week 3 of 4
 
-```
-TIME ANCHOR (verified 2026-08-16 Sunday Melbourne — W33 close-out)
-- Annual Week 34 · T−16 (weeks to race week, T−0 = W50) · Build Week 7 of 23 · Phase I, Week 3 of 4
-- Race: HYROX Melbourne, Pro Men 45–49 · window 9–13 Dec 2026, MCEC South Wharf · Pro Men provisionally Fri 11 Dec · Countdown 116 days
+```text
+TIME ANCHOR
+- Annual Week 34 · T−16 · Build Week 7 of 23
+- Phase I — Consolidate and Recalibrate, Week 3 of 4
+- Race: HYROX Melbourne 2026 · working race date Fri 11 Dec 2026
+- Countdown at Monday start: 116 days
 ```
 
-**Source:** `reference/master_plan.md` §6 (W34 · 17–23 Aug — Lunge durability + aerobic volume) and §7 (Walking Lunges progression order), read against the W33 close-out findings in `archive/2026/week_33_report.md` and `state/limiters_now.md`.
-
-> **Revision note (2026-08-16, generated same day as this plan):** the athlete pushed a master-plan amendment directly to the remote repo on 2026-08-15 (merged into this close-out after this plan's first draft) that reframes W33 Saturday's fast running. Rather than reading ~2:39–2:55/600m as pure pacing failure, it sets a **provisional candidate compromised race pace of 4:25–4:35/km**, explicitly unvalidated until it survives a heavy-sled→run test (staged W39) and a lunge→run test (staged W43). The Thursday and Saturday sessions below are adjusted accordingly: Thursday keeps building the fresh-pace data set that feeds Gate 1's threshold benchmark (W35) rather than being scored strictly pass/fail against the old 2:42–2:55 corridor; Saturday's run+sandbag-lunge pairing is read as informal preview data toward the formal W43 lunge→run validation, not a discipline test. The execution-discipline findings from W33 (treadmill not used, BBJ fused into a diagnostic block) remain valid regardless — this reframing is about the pace target, not about whether written sessions get executed as written.
+> **Adoption note (2026-08-16):** this plan is the athlete's own draft (`W34_Weekly_Plan_2026-08-17_to_2026-08-23.md`), adopted after comparison against a first Claude-generated draft. The athlete's version is stronger on several concrete points: a true recovery Monday after W33's hard Fri–Sat–Sun finish (the first draft had Monday running again); Friday's easy run restored (the master plan's §7 weekly structure calls for "1 optional easy run/warm-up volume," which the first draft dropped); Saturday fully isolates the new sandbag-lunge variable from any pace-discipline test — a single controlled 1km run deliberately *below* the candidate pace, rather than re-running the 2:50–2:55 corridor in parallel (the first draft risked repeating W33's own BBJ/corridor-fusion mistake); a concrete pace-alert mechanism on Sunday (~5:20/km ceiling) directly targeting the exact overrun that happened W33 Sunday; one exact treadmill speed on Thursday instead of a band; and an explicit running-volume reconciliation against the master plan's 28–30km band. **One change applied on adoption:** Wednesday's weighted pull-up instruction is upgraded from "stop 1–2 reps in reserve" (the athlete's original wording) to the fixed pre-committed rep target + hard stop mechanism — the reps-in-reserve cue has already failed three consecutive weeks (W31, W32, W33) per `archive/2026/week_33_report.md`, through both a soft and an explicit hard-rule form.
 
 ---
 
 ## HEADLINE VARIABLE
 
-**Master plan's own W34 mission:** transfer heavy lunge strength toward race-specific continuity — heavy DB lunges stay as strength maintenance, and race-style sandbag-lunge technique is added at 50–75m after controlled running. BBJ stays low-to-moderate volume (no new stimulus needed — W33 already answered the reintroduction question). Sunday's aerobic run extends modestly. Running volume default: 28–30km.
+**Lunge durability + aerobic volume**
 
-**Carried forward, unresolved:** the compromised-run corridor test (2:50–2:55 opening, held inside a band) has not run cleanly for three consecutive weeks (W31, W32, W33). This week keeps it on Thursday, alone — no second new stimulus fused into that session, learning directly from W33's mistake of fusing BBJ into Saturday's diagnostic.
+Master-plan mission:
+- heavy dumbbell lunges remain as strength maintenance;
+- introduce **50–75 m total at 30 kg race-style sandbag load after controlled running**;
+- keep BBJ at low-to-moderate volume;
+- extend Sunday aerobic durability modestly;
+- planned running volume: **28–30 km**.
 
-**Data gap, flagged, not invented:** there is no established training reference for race-spec sandbag-lunge weight (per `reference/master_plan.md` §2, this is an open data gap — "current 100m race-load sandbag-lunge benchmark" not yet re-established post-Sydney). Use the available 30kg training sandbag (standing item from W33) and log the actual race-rulebook weight for correction once confirmed — do not assume it matches the 30kg training implement.
-
----
-
-## THE STRUCTURAL FIX, CONTINUED
-
-W33's own structural fix (treadmill-enforced Thursday pace) was not executed — the session moved outdoors in practice despite being written on paper. Writing "treadmill" again is not sufficient on its own. This week:
-
-- **Thursday's treadmill session gets confirmed the day before**, not decided in the moment. If gym access or a treadmill isn't actually going to happen, that becomes Wednesday's problem to solve, not Thursday's excuse.
-- **Weighted pull-ups move from a rule to a mechanism.** Three straight weeks of "stop 2 shy" / "no assisted negatives" being overridden means the instruction layer has been tested to failure. This week: **fixed rep target per set, decided before the set starts, and the set ends at that number — not "stop N shy of failure," a hard stop at a pre-committed number** (e.g., +20kg × 4, three times, full stop, no negotiation once the bar starts moving). Fewer clean reps this week is an acceptable trade for closing a three-week-old pattern.
-- **Saturday's new stimulus (sandbag lunges) stays isolated from BBJ**, learning directly from W33's diagnostic-contamination mistake. If BBJ appears this week at all, it goes on a separate, low-fatigue day (Monday), not fused into Saturday's compromised block.
+The first 50 m sandbag block is a **baseline**, not a maximal test.
 
 ---
 
-## DAILY STRUCTURE
+## W33 → W34 HANDOFF
 
-### Monday 18 Aug — Easy aerobic + optional light BBJ touch
-- Gate Zero first (chronic sinus baseline only, per standing health gate — stop for fever, worsening symptoms, or a headache that limits normal function).
-- **5–6 km, nasal the whole way, ~5:30/km.** W33's Monday and Sunday both ran materially faster than written — the target this week is genuinely holding the pace, not just logging the distance.
-- **Optional: BBJ 2×20m, low volume, only if the run stayed easy and the lower leg is silent.** Per master plan, BBJ this week is low-to-moderate volume only — no new fatigue-block integration.
-- Calf/lower-leg eccentrics if the leg has stayed silent through the run.
-- Sleep onset 21:30.
+W33 closed with several useful signals:
 
-### Tuesday 19 Aug — Lower + Sleds + Wall Ball density
-- Warm-up 1.2 km easy.
-- **Strength, controlled, no set to failure:** Leg Ext 62kg × 3×15–20 (last week's 3×20 was tolerated well) · Leg Press 80kg × 3×8–10 · BSS 22.5+22.5kg × 3×10 ea (holding W33's level) · Walking Lunges 28+28kg × 3×25–30m.
-- **Sled Push 224–227kg, 4×20m** — maintenance, hold W33's level, no load chase.
-- **Sled Pull 204kg, 3×20m** — return to full working load (W33 ran 192kg, reduced ahead of the illness that surfaced that evening); target inside the 1:20/1:11/1:10 arc already proven at this load.
-- **Wall Balls — race pattern, 25/25/25/25 @ 9kg, 45s rest.** Target: match or beat the new 6:18 baseline (64/60/59/60) set W33 Tuesday.
-- **STOP:** technique breakdown, pre-cramp signal, any lower-leg sensation.
+- documented running volume: ~24.6 km;
+- Sunday: 10.02 km in 51:53, 5:10/km average;
+- km 6–10: 4:52 / 4:57 / 4:52 / 4:55 / 4:45;
+- nasal-only breathing throughout Sunday, reserve reported at finish;
+- BBJ safely reintroduced with zero reported quad collapse;
+- Wall Balls remained stable under hybrid fatigue;
+- lower-leg focal "string" was silent in the hard Saturday block and Sunday run;
+- Thursday and Saturday confirmed that raw running speed is ahead of pace-control discipline.
 
-### Wednesday 20 Aug — Upper body (no farmer carry — spacing)
-- **No farmer carry** — last touch 13 Aug (Thursday W33); 7–10 day spacing rule holds until ~20–23 Aug at the earliest.
-- Bench 75kg × 8, then 75kg × 8×3 (matching Thursday W33's strong result — approaching the 80kg×3×6 historical peak).
-- **Weighted Pull-ups: fixed target, decided before the set — e.g. +20kg × 4, three sets, hard stop at 4. No negotiation once the set starts, no assisted or negative reps.** This replaces the "stop N shy" language that has failed three weeks running.
-- Weighted Dips +20kg × 3×8 (matching W33 Thursday's clean result, approaching +25×8×3 peak) · One-arm Row 35kg × 3×10 ea · Close-grip Pulldown 47kg × 3×10 · Weighted V-ups 20kg × 3×15.
-- Easy Z2 ~3km + calf eccentrics.
-
-### Thursday 21 Aug — Fresh Quality Run (treadmill, confirmed Wednesday)
-- **Confirm treadmill access Wednesday evening — not decided Thursday afternoon.**
-- Warm-up 10–12 min easy + 3 strides.
-- **5×600m at 2:53–3:05 per 600m, 90s easy recovery.** Same corridor as W32/W33 — but the objective this week is executing a written number reliably (the discipline question), not proving or disproving a specific pace target. The 4:25–4:35/km candidate compromised pace (set 2026-08-15) isn't decided at Gate 1 until W35's threshold benchmark and the staged W39/W43 validation tests — this session just needs to demonstrate the athlete can hit a number he committed to before starting, on the treadmill, for real.
-- Cooldown 8–10 min easy.
-- **STOP:** two consecutive reps off the set speed, cadence degrading, or any lower-leg sensation.
-
-### Friday 22 Aug — Rest
-- Full rest. Non-negotiable.
-- Sleep onset 21:30.
-- Calendar check for anything that could compromise Saturday — surface it now, not on the day.
-
-### Saturday 23 Aug — Sandbag Lunge Introduction + Compromised Run (isolated from BBJ)
-- Warm-up 1.25km easy + dynamic prep.
-- **4 rounds: 600m run (open 2:50–2:55, hold band) → 50–75m sandbag lunge @ 30kg training load → ≤90s walk recovery. No Wall Balls, no BBJ, no sled — one new variable (sandbag lunges) against the one carried-over variable (corridor pace), same discipline that W33's plan intended for its own Saturday before BBJ ended up fused in anyway.** Read this session's run splits as informal preview data toward the formal W43 lunge→run validation test (100m race-load sandbag lunge → 1km run) — not a pass/fail read against either pace target.
-- **Navigation:** call "Round N, two loops" aloud each round — permanent low-cost habit, addresses the Melbourne-2025 counting failure mode.
-- **STOP:** close after the current round if two consecutive runs leave the band, sandbag mechanics break down, or any lower-leg/quad/cardiac sensation appears.
-
-### Sunday 24 Aug — Aerobic Durability / Week Close
-- 8–10km controlled, nasal throughout, ~5:30/km — genuinely, this time; W33's Sunday ran 5:10/km against the same instruction.
-- Log the W34 close-out.
+Programming consequence:
+- Monday is a true recovery day after the stronger-than-written Sunday run.
+- Thursday keeps an external treadmill constraint.
+- Saturday progresses **only the lunge-specific variable**.
 
 ---
 
-## W34 TARGETS (pass / fail)
+## FIXED CONSTRAINTS
 
-- [ ] Thursday: five reps at the written treadmill corridor (2:53–3:05), zero above it, treadmill actually used
-- [ ] Saturday: four 600m runs inside a 10-second band, opened 2:50–2:55
-- [ ] Saturday: sandbag lunge 50–75m completed each round, no quad collapse, no lower-leg signal
-- [ ] Tuesday: Sled Pull 204kg back inside the 1:20/1:11/1:10 arc
-- [ ] Tuesday: WB race-pattern time ≤ 6:18 (match or beat the new baseline)
-- [ ] Wednesday: pull-ups executed at a fixed pre-committed target, zero assisted/negative reps
-- [ ] Monday + Sunday: both runs held at or slower than 5:30/km — the specific pattern broken every day it appeared in W33
-- [ ] Running volume 28–30km
-- [ ] Lower-leg silent all week
-
----
-
-## RECOVERY GATES (standing, per `reference/decision_rules.md`)
-
-- **Green:** sleep ≥7h00, restful ≥40%, HRV neutral/positive, calves ≤2/10, body feel ≥7/10 → full session as written.
-- **Yellow:** sleep 6h00–6h59, restful 30–39%, HRV 5–15% suppressed, calves 2.5–3.5/10 → reduce intensity 10–15%, no new PRs, technique focus.
-- **Red:** sleep <6h00, HRV <35ms or >20% suppressed, calves ≥4/10, any cardiac sensation, overnight cramp → aerobic only or full rest, no sled above 70%, no high-impact work.
-- **Permanent:** any jolt/palpitation sensation ends the session immediately, regardless of test history.
+1. **One headline variable:** race-style sandbag-lunge continuity.
+2. **Sled loads are maintenance.** No load chase.
+3. **Wall Balls are maintenance.** Keep the W33 4×25 / 45 s structure; do not reduce rest this week.
+4. **BBJ stays controlled.** Technique exposure only; no speed benchmark.
+5. **Candidate compromised pace 4:25–4:35/km remains provisional.** W34 is too early for heavy-sled→1 km or 100 m lunge→1 km validation.
+6. **Thursday pace is controlled mechanically by treadmill speed.**
+7. **Sunday is volume, not a progression test.**
+8. Any unusual cardiac sensation = immediate stop.
+9. Any focal lower-leg sensation that changes mechanics ends impact work.
 
 ---
 
-## STANDING ITEMS (carried from W33)
+# DAILY STRUCTURE
 
-- **Course walk, W50** — primary mitigation for the Sydney navigation failure mode.
-- **30kg sandbag** — now in use this week (Saturday); confirm actual race-rulebook sandbag weight for correction once known.
-- **Portal housekeeping:** `master/hyrox_melbourne_master_plan.html` still stale — full content regeneration open.
+## Monday 17 Aug — Recovery / Reset
+
+**Purpose:** absorb Saturday hybrid work + Sunday's 10 km progressive aerobic run.
+
+- Full rest from running and strength.
+- Optional 30–45 min easy walk or very easy spin.
+- Light mobility.
+- Calf/Achilles eccentrics only if the lower leg remains silent.
+- Eat normally for recovery; no deliberate calorie deficit.
+- Protect sleep.
+
+**Running:** 0 km.
 
 ---
 
-## SAFETY LINE (standing)
+## Tuesday 18 Aug — Lower Strength + Sled Maintenance + WB Maintenance
 
-Any unusual cardiac sensation means an immediate stop. A normal stress echo does not override a new symptom. If the night-HR flag reappears (48–50 bpm band across several consecutive nights), contact the GP or cardiologist.
+### Warm-up
+- **1.2 km easy**
+- short dynamic lower-body prep
+
+### Lower strength
+All work controlled; no set to failure.
+
+- Leg Extension — **62 kg · 3×20**
+- Leg Press — **80 kg · 3×10**
+- Bulgarian Split Squat — **22.5 + 22.5 kg · 3×10 each leg**
+- Heavy DB Walking Lunges — **28 + 28 kg · 2×25 m**
+- Leg Curl — **54 kg · 3×12**
+
+**Reason for 2 lunge sets:** heavy DB lunges remain present as strength maintenance while recovery budget is redirected toward Saturday's new 30 kg continuous sandbag exposure.
+
+### Sled Push — maintenance
+- **227 kg · 4×20 m**
+- 45–60 s rest
+- hold technique and repeatability
+- no load increase
+
+### Sled Pull — maintenance
+- **192 kg · 3×20 m**
+- 90–120 s rest
+- standardised rope layout and start
+- record times, no load chase
+
+### Wall Balls — maintenance
+- **25 / 25 / 25 / 25 @ 9 kg**
+- **45 s rest**
+- all sets unbroken if technique holds
+- log total time
+- **do not chase the W33 6:18 baseline**
+
+**STOP:** technique breakdown, focal lower-leg recurrence, pre-cramp signal, unusual cardiac sensation.
+
+**Planned running:** ~1.2 km.
 
 ---
 
-## WORKING PRINCIPLE — W34
+## Wednesday 19 Aug — Upper Strength + Easy Aerobic
 
-**The governor still hasn't been built — writing the same rule a fourth time won't build it. This week removes the choice mechanically wherever the choice has already been shown not to hold: the pull-up count is fixed before the set starts, the treadmill is booked before Thursday afternoon, and the new stimulus (sandbag lunges) stays alone in its own block instead of sharing one with the diagnostic that still hasn't been measured.**
+### Upper strength
+Historical exercise order is preserved.
+
+1. Bench Press — **75 kg · 3×8**
+2. **Weighted Pull-ups — +20 kg · fixed pre-committed target, 3 sets, hard stop at that number.**
+   - decide the target before the first set starts (e.g. 4 reps × 3)
+   - **no assisted or jump-assisted reps, no negatives, full stop — not a "reps in reserve" judgment call**
+   - this replaces the reps-in-reserve cue, which has been overridden three consecutive weeks (W31, W32, W33) despite escalating from a soft cue to an explicit written hard rule
+   - log clean total
+3. Weighted Dips — **+20 kg · 3×8**
+4. One-arm DB Row — **35 kg · 3×10 each**
+5. Close-grip Front Lat Pulldown — **47 kg · 3×10**
+6. Weighted V-ups — **20 kg · 3×15**
+
+### Easy aerobic
+- **3.0 km**
+- nasal / Z1–Z2
+- conversational effort
+- no pace target
+
+**Farmer Carry:** omitted this week to preserve recovery budget around the first specific sandbag-lunge exposure.
+
+**Planned running:** 3.0 km.
+
+---
+
+## Thursday 20 Aug — Fresh Run Quality / Pace-Control Retry
+
+**Purpose:** keep fresh run quality while training the governor, not the engine.
+
+### Warm-up
+- **1.5 km easy**
+- 3 short strides
+
+### Main set
+**5 × 600 m treadmill**
+
+- treadmill speed: **12.3 km/h**
+- equivalent pace: ~**4:53/km**
+- rep time: ~**2:56 per 600 m**
+- recovery: **90 s easy walk/jog**
+- same speed for every rep
+
+### Rule
+**Zero overspeed.**
+
+The successful session is five boring, repeatable reps at the written speed.
+
+### Cooldown
+- **1.0–1.5 km easy**
+
+**STOP:** any focal lower-leg sensation, cadence/mechanics deterioration, unusual cardiac symptom.
+
+**Expected running including recovery movement:** ~6.0–6.5 km.
+
+---
+
+## Friday 21 Aug — Easy Engine
+
+**Green only.**
+
+- **3.0–3.5 km easy**
+- nasal throughout
+- Z1–low Z2
+- relaxed stride
+- no stations
+- no strides
+- no finishing increase
+
+**Yellow:** full rest.
+
+This run exists to support W34's aerobic-volume objective without creating another quality day.
+
+**Planned running:** 3.0–3.5 km.
+
+---
+
+## Saturday 22 Aug — W34 Headline Session: Sandbag Lunge Continuity
+
+### Purpose
+Establish the first clean race-style 30 kg sandbag-lunge baseline after controlled running.
+
+This is **not** the later Phase III 100 m lunge→1 km validation.
+
+### Warm-up
+- **1.5 km easy**
+- dynamic hip / quad / ankle prep
+- several unloaded lunge steps
+
+### Primary block
+
+1. **1.0 km controlled run**
+   - target: **5:00–5:10/km**
+   - external pace alert recommended
+   - deliberately below the provisional 4:25–4:35/km candidate compromised pace
+
+2. **Immediately → 50 m Sandbag Lunges @ 30 kg**
+   - continuous if technique remains clean
+   - race-style execution
+   - record:
+     - total time
+     - first 25 m split
+     - second 25 m split
+     - any pause
+     - step count if practical
+     - RPE
+     - quad / calf / lower-leg response
+
+### Extension
+After **3–5 min full recovery**:
+
+- if the 50 m baseline was clean and continuous: **+25 m @ 30 kg technique-only**
+- if the 50 m required a pause or mechanics degraded: no extension
+
+This gives **50–75 m total race-load exposure**, matching the W34 master-plan mission without turning the first exposure into a 100 m test.
+
+### BBJ maintenance
+After full recovery:
+
+- **2×20 m controlled**
+- equal technique
+- no speed target
+- stop on shortening jump length or calf/quad warning
+
+### Cooldown
+- **1.0 km easy**
+
+### W34 Saturday success
+- 50 m @ 30 kg completed with race-style mechanics
+- no quad collapse
+- no focal lower-leg signal
+- useful baseline recorded
+- optional 25 m added only if earned by the first 50 m
+
+**Expected running:** ~3.5 km.
+
+---
+
+## Sunday 23 Aug — Aerobic Durability / Week Close
+
+**Target:** **11 km**
+
+- first 2 km: **5:35–5:50/km**
+- remaining distance: approximately **5:25–5:40/km**
+- nasal breathing as the intensity-control technique
+- no finishing surge
+- use a fast-pace alert around **5:20/km** to stop the run becoming another progression session
+
+The goal is to extend duration modestly from W33 while preserving control.
+
+**Planned running:** 11 km.
+
+---
+
+# RUNNING VOLUME PLAN
+
+Approximate planned W34 running:
+
+- Mon: 0
+- Tue: 1.2 km
+- Wed: 3.0 km
+- Thu: ~6.0–6.5 km
+- Fri: 3.0–3.5 km
+- Sat: ~3.5 km
+- Sun: 11.0 km
+
+**Expected total: ~27.7–28.7 km**, depending on treadmill recovery distance and Friday route.
+
+If the Thursday recovery/cooldown distance lands short, Friday may extend toward **4.0 km** to place the week securely inside the master-plan **28–30 km** band.
+
+No distance is added late in the week to repair a missed target if readiness turns Yellow.
+
+---
+
+# W34 PASS / FAIL
+
+- [ ] Monday executed as recovery/reset
+- [ ] Tuesday heavy DB lunges retained as maintenance, no failure
+- [ ] Sled Push/Pull held at maintenance loads, zero load chase
+- [ ] WB 4×25 @ 45 s maintained unbroken with stable technique
+- [ ] Thursday 5×600 completed at **12.3 km/h**, zero overspeed
+- [ ] Wednesday pull-ups: fixed pre-committed target hit, zero assisted/negative reps
+- [ ] Saturday **50 m @ 30 kg Sandbag Lunges** completed after controlled 1 km run
+- [ ] Optional +25 m added only after a clean 50 m baseline
+- [ ] BBJ 2×20 m controlled, no collapse
+- [ ] Sunday 11 km controlled, no finishing surge, pace alert respected
+- [ ] Weekly running volume lands approximately **28–30 km**
+- [ ] Lower leg remains mechanically silent
+- [ ] No recurrence of systemic illness-like fatigue
+- [ ] No unusual cardiac symptoms
+
+---
+
+# WHAT W34 DOES NOT TEST
+
+W34 does not decide the Melbourne race pace.
+
+The following remain future validations in the master plan:
+
+1. **Heavy Sled Push / Pull → 800 m–1 km** at the provisional candidate pace.
+2. **100 m race-load Sandbag Lunges → 1 km** at the provisional candidate pace.
+3. Comparable early-to-late 1 km drift toward **≤8–10 s** during the Race-Specific Peak.
+
+W34's job is to build the missing bridge: **heavy lunge strength → clean race-load continuity**.
+
+---
+
+# WORKING PRINCIPLE — W34
+
+> **Make 30 kg feel ordinary before asking 100 m to feel fast. Build continuity first; then test what running costs after it.**
