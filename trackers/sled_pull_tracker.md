@@ -22,6 +22,7 @@
 | 2026-05-12 | W20 TUE | Sydney W7 | 204 kg | 3×18 m Yellow | 1:33 / 1:17 / 1:11 | S2–S3 went faster than planned |
 | 2026-07-28 | W31 TUE | Melbourne Phase 1 W1 | 185 kg | 3×20 m | 1:32 / 1:11 / 1:07 | Post-cardiac-clearance return; lighter than 204 kg working load but best efficiency arc since W20 — 25 sec drop S1→S3 |
 | 2026-08-04 | W32 TUE | Melbourne Phase I W2 | **204 kg** | 3×20 m | 1:20 / 1:11 / 1:10 | Full working load returned; Set2→Set3 diff 1 sec; Set1→Set3 spread only 10 sec — tightest arc yet recorded at 204 kg (vs 25 sec spread at the lighter 185 kg load, W31) |
+| 2026-08-11 | W33 TUE | Melbourne Phase I W2 | 192 kg | 3×20 m | 1:32 / 1:12 / 1:01 | Below the 204kg plan/working load — reduced ahead of an emerging illness; final set 1:01 the fastest single set recorded at any load to date; 31 sec Set1→Set3 drop, strongest progressive arc yet. Not a working-load PR (load was reduced), but confirms efficiency continuing to improve |
 
 ---
 

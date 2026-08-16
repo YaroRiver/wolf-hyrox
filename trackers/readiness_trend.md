@@ -261,6 +261,28 @@
 
 ---
 
+## W33 (2026-08-10 to 2026-08-16) — Phase I Week 2, Consolidate (BBJ reintroduced, corridor still unmeasured)
+
+*Backfilled 2026-08-16 from athlete-supplied daily report pack (five MD files + manifest, 2026-08-10 to 08-16) — see `archive/2026/week_33_report.md` for full plan-vs-actual per day.*
+
+| Date | Day | Sleep h | Restful % | HRV ms | HRV %vs baseline | Calves L | Calves R | Body feel | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-10 | MON | not provided (naps only: ~30min + power nap) | — | not provided | — | 1/10 (lower-leg "string", post-run) | 1/10 | — | Run Grade A-/B; progressive 6.03km, finished Z4; BBJ re-entry planned but not executed |
+| 2026-08-11 | TUE | 8h00 | not provided | 58 sleeping / 71 daily | +66% | 0/10 | 0/10 | Green readiness, C+ systemic (yawning/sleepiness mid-session, early illness onset in hindsight) | Lower+sled+WB Grade A; WB new 25/25/25/25@45s baseline 6:18; sled pull 192kg 1:32/1:12/1:01; birthday |
+| 2026-08-12 | WED | not provided | — | not provided | — | not provided | not provided | Illness (night sweats, sinus, fatigue) | Full rest — acute systemic flare, correct call |
+| 2026-08-13 | THU | not provided (watch failure) | — | ~146 self-reported (unverified device context) | — | 0/10 | 0/10 | Energy returned after 2 power naps | Run+upper+farmer combined Grade C overall; 5×600m 25-43s over corridor, outdoors not treadmill; pull-up hard rule broken 3rd week |
+| 2026-08-14 | FRI | not provided | — | not provided | — | not provided | not provided | — | Rest day, no report filed |
+| 2026-08-15 | SAT | 11h50 total (9h40 night + 2h10 nap) | 54% | 50 sleeping | — | 0/10 | 0/10 | Recovered, ready | BBJ reintroduction Grade A-; headline objective achieved, zero quad collapse; WB 100@4:04 under hybrid fatigue |
+| 2026-08-16 | SUN | 9h10 total (7h40 + 90min nap) | 66% | 42.6-48.7 daily / 42 sleeping | +9% | 0/10 | 0/10 | Reserve at finish, nasal breathing | 10.02km close, 5:10/km avg, PASS; W33 documented volume ~24.6km |
+
+## W33 7-day summary
+
+| W33 summary | ~9h00 avg (3 of 7 days with full sleep data: Tue/Sat/Sun; Mon/Wed/Thu/Fri not fully provided) | ~60% avg (2 of 7 days provided: Sat/Sun) | 33–71 ms verified range (Tue-Sun; Thu's 146 self-reported and unverified, excluded) | 1/10 Mon, 0/10 every day after | 1 A-/B (Mon) / 1 A/C+ (Tue) / 1 Recovery-A/OFF (Wed) / 1 mixed A-D/C (Thu) / 1 N/A (Fri) / 1 A- (Sat) / 1 PASS (Sun) | **BBJ safely reintroduced — W33 headline objective achieved, zero quad collapse.** Compromised-run corridor test unmeasured for a 3rd consecutive week (W31→W32→W33); the W32 structural fix (treadmill enforcement) was not applied Thursday. Pull-up hard-rule broken a 3rd straight week. Lower-leg "string" trending toward resolved (1 isolated recurrence, silent since). |
+
+**Note:** Monday's planned standalone BBJ re-entry did not happen; BBJ debuted Saturday instead, fused into the same block as the corridor retest — contrary to the plan's explicit 2026-08-09 design decision to keep the two threads separate.
+
+---
+
 ## Append Protocol
 
 After every Sunday close-out and after every morning readiness gate:

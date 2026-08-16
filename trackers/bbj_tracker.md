@@ -28,6 +28,7 @@
 | 2026-05-02 W18 SAT | Sydney W5 | 20 m | 4 rounds within fragment | Controlled, no fade noted |
 | 2026-05-09 W19 SAT | Sydney W6 | 20 m | 4 rounds within fragment | Calf-controlled; clean |
 | 2026-05-16 W20 SAT | Sydney W7 | 20 m | 4 rounds within fragment | **R4 1:27; mild calf awareness, athlete slowed correctly, NO cramp/pulling; NO R1→R2 fade pattern (race-distance format)** |
+| 2026-08-15 W33 SAT | Melbourne Phase I W2 | 20 m | 4 rounds within [600m run + BBJ + 25 WB] hybrid block | **REINTRODUCTION after dormant since 2026-06-27 (W26): 0:56 / 0:54 / 0:59 / ~1:10 (corrected, ~15s watch glitch on R4).** Deliberately submaximal — used to regulate breathing between fast 600m runs, not a fatigue-curve test. Zero quad collapse, zero pre-cramp, zero lower-leg "string" across all 4 rounds. W33 headline objective achieved; not yet a valid race-specific fatigue result (see `state/current_week.md` W33 Sat entry for the planned follow-up sequence: sled push → run → sled pull → run → BBJ) |
 
 ---
 

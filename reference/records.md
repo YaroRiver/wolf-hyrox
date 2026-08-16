@@ -2,7 +2,7 @@
 
 > **Curated current-state summary, overwritten as new records happen — not an append-only log.** For full history, see the detail link under each station. This file answers one question fast: "where am I right now, and how did I get here." Displayed at the start of every session (`CLAUDE.md` FIRST ACTION protocol).
 
-**Last updated:** 2026-08-09 (W32 close-out)
+**Last updated:** 2026-08-16 (W33 close-out)
 
 ---
 
@@ -12,16 +12,17 @@
 |---|---|---|---|
 | VO₂max | **58 ml/kg/min** | 2026-05-18 (W21) | ↑ stale — retest due in Melbourne build |
 | Wall Ball 100 (full fatigue) | **race-proven clean**, 7:55; reconfirmed 2026-08-01 under compromised fatigue | 2026-07-03 / 2026-08-01 | → capacity proven twice, speed unsolved (target 5:00) |
+| Wall Ball race-pattern (25/25/25/25, 45s rest) | **6:18 fresh** (2026-08-11); **4:04 (100 reps) under hybrid run+BBJ fatigue** (2026-08-15) | 2026-08-11 / 2026-08-15 | ↑ new format, new 45s ladder rung; near-identical pace fresh vs under hybrid fatigue |
 | Sled Push (working) | **245 kg** | 2026-04-21 (W17) | → frozen, exceeds race req by 20%+ |
 | Sled Push (compromised, self-directed) | **252 kg × 4 × 20m** | 2026-08-01 (W31) | ↑ new reference under fatigue |
 | Sled Pull (working) | **204 kg** | multiple, W16–W20 | → frozen |
 | Sled Pull (best 3-set arc, working load) | **204kg: 1:20 → 1:11 → 1:10** | 2026-08-04 (W32) | ↑ tightest Set1→Set3 spread yet (10s) at full working load |
-| Fastest compromised 600m (post-sled/WB) | **2:42** | 2026-08-01 (W31) | new — R1/R2 of 4; fell to 3:07/3:10 by R3/R4. **Corridor test (2:42–2:50) still unresolved — W32 attempt ran 2:18–2:24, 18–32s too fast** |
+| Fastest compromised 600m (post-sled/WB) | **2:42** | 2026-08-01 (W31) | new — R1/R2 of 4; fell to 3:07/3:10 by R3/R4. **Corridor test (2:42–2:50) unresolved for a 3rd consecutive week — W32 ran 2:18–2:24, W33 Thu ran 2:22–2:28 (treadmill fix not applied) and W33 Sat ran 2:39–2:55 (BBJ fused into the block)** |
 | Fastest 1km (fresh) | **4:09/km** | 2026-03-09 (Brisbane W11) | historical peak, not retested since |
 | Farmer Carry (unbroken) | **64 kg (32+32) × 300m** | pre-race, Sydney build | historical peak |
 | Farmer Carry (current working) | **32+32 kg × 300m / 2:36.40** | 2026-08-05 (W32) | ↑ PR, cramp-free, 9.6s faster than W31's 2:46 |
 | Walking Lunges (fatigue) | **80m @ 28+28kg** | 2026-05-23 (W21 Sat) | historical peak |
-| BBJ (per-set ceiling) | **35×3 = 105 unbroken** | 2026-05-21 (W21 Thu) | breakthrough, not retested since W26 |
+| BBJ (per-set ceiling) | **35×3 = 105 unbroken** | 2026-05-21 (W21 Thu) | breakthrough, not retested since W26; **reintroduced 2026-08-15 (W33) after 7-week dormancy — 4×20m controlled, zero quad collapse, headline objective met** |
 
 ---
 
@@ -30,7 +31,8 @@
 ### Wall Ball
 - **Race-proven capacity:** 100 reps clean under full 8-station race fatigue, HYROX Sydney, 2026-07-03. Time 7:55 (judges praised execution — DQ was navigational, not WB).
 - **Training-reconfirmed:** 100 reps (4×25) @ 59/59/61/61 sec within a real 4-round compromised block, 2026-08-01 (W31) — 2 sec total drift.
-- **Best density set:** 5×20 @ 60s rest, **44/44/45/46/45 sec**, 2026-08-04 (W32) — improves on W31's 47/47/47/46/46, after a heavy leg+sled session.
+- **Best density set (5×20/60s rest format):** 44/44/45/46/45 sec, 2026-08-04 (W32) — improves on W31's 47/47/47/46/46, after a heavy leg+sled session.
+- **Race-pattern format (4×25/45s rest, replaces the 5×20/60s format):** **64/60/59/60 sec, block total 6:18**, fresh state, 2026-08-11 (W33) — new baseline, establishes the 45s ladder rung. Reconfirmed under hybrid run+BBJ fatigue (no sled) 2026-08-15: 64/59/58/63 sec, 4:04 total work time, R4 as strong as R1.
 - **Best single-set ceiling under fatigue (training):** 50 clean, W20/W21/W25 (multiple confirmations, 2026-05 to 2026-06).
 - **Open target:** 100 reps in 5:00 under full fatigue (floor 5:30). Full history: `trackers/wb_tracker.md`.
 
@@ -38,12 +40,14 @@
 - **Working load:** 245 kg, confirmed 2026-04-21 (W17), frozen — exceeds race requirement (~152kg) by >60%.
 - **Compromised-conditions reference:** 252 kg × 4 × 20m, 39/43/48/50 sec, 2026-08-01 (W31) — self-directed overload past the working-load cap, held together under real fatigue.
 - **Fresh 20m PR:** 240 kg / 44 sec, 2026-03-31 (W14).
+- **W33 touch (2026-08-11):** 227kg × 4 × 20m, 35/33/34/33 sec — 2s spread, no fade, clean maintenance execution ahead of a session that later revealed early illness onset.
 - Full history: `trackers/sled_push_tracker.md`.
 
 ### Sled Pull
 - **Working load:** 204 kg, confirmed W16–W20, frozen.
 - **Best 3-set arc at working load (204kg):** **1:20 → 1:11 → 1:10, 2026-08-04 (W32)** — 10 sec Set1→Set3 spread, best yet at the full working load; rope-handling/first-set delay closing fast.
 - **Lighter-load efficiency touch:** 185 kg × 3 × 20m, 1:32 → 1:11 → 1:07, 2026-07-28 (W31) — re-entry reference, superseded by the W32 working-load result above.
+- **Reduced-load touch:** 192 kg × 3 × 20m, 1:32 → 1:12 → 1:01, 2026-08-11 (W33) — below the 204kg working load (reduced ahead of an emerging illness), but the fastest single set (1:01) recorded at any load to date.
 - **Prior best 3-set arc (working load):** 1:33/1:17/1:11, 2026-05-12 (W20).
 - Full history: `trackers/sled_pull_tracker.md`.
 
@@ -52,13 +56,15 @@
 - **Fastest 800m (fresh):** 4:16/km, 2026-04-20 (W17).
 - **Fastest compromised 600m (post-station fatigue):** 2:42, 2026-08-01 (W31) — held for 2 rounds, then fell to 3:07/3:10 by rounds 3-4. Current #1 limiter: quad/compromised-running durability, not raw speed.
 - **Fresh 600m corridor test (W32 Thu, 2026-08-06):** target was 2:42–2:50; actual 4 recorded reps 2:23/2:18/2:22/2:24 — ran 18–32s too fast, a pacing-discipline miss, not a fitness ceiling. Session stopped early on a posteromedial calf signal (resolved). The controlled-corridor objective remains **unmeasured**, carried into W33 with a treadmill-enforced pace.
-- **Longest continuous run logged:** 10.03km, 2026-03-29 (W13).
+- **Corridor retest attempts, W33:** Thu 2026-08-13 ran outdoors (not treadmill) — 2:24/2:28/2:22/2:28/2:27, 25–43s too fast, the planned structural fix wasn't applied. Sat 2026-08-15 fused BBJ into the corridor-retest block (against the plan's design) — normalised 2:55/2:40/2:39/2:45, only R1 near target. **Corridor objective unmeasured for a 3rd consecutive week.**
+- **Longest continuous run logged:** 10.03km, 2026-03-29 (W13). 10.02km, 2026-08-16 (W33 Sun), 5:10/km avg, nasal-breathing throughout with reserve.
 - **VO₂max:** 58 ml/kg/min PR, 2026-05-18 (W21) — stale, due for retest.
 - Full history: `trackers/run_tracker.md`.
 
 ### Farmer Carry
 - **Historical peak (unbroken):** 64kg (32+32) × 300m unbroken, Sydney build.
 - **Current working reference:** 32+32kg × 300m / **2:36.40**, 2026-08-05 (W32) — PR, cramp-free, 9.6s faster than W31's 2:46. Executed straight to 300m unbroken, skipping the prescribed staged 2×150m approach.
+- **Off-plan touch, W33 Thu (2026-08-13):** 32+32kg × 300m / 2:51 — +14.6s vs the PR, deliberate slowdown on a bilateral calf pre-cramp signal near the finish, stacked onto a run+upper-body session and against this week's explicit no-farmer-carry plan (7-10 day spacing rule). Not a capacity loss — accumulated-fatigue context, good judgment on the slowdown.
 - Not a limiter — maintenance station only.
 
 ### Walking Lunges
@@ -68,7 +74,7 @@
 
 ### Burpee Broad Jumps (BBJ)
 - **Breakthrough per-set ceiling:** 35 reps × 3 rounds = 105 unbroken under fatigue, 2026-05-21 (W21 Thu).
-- **Last touched:** 2026-06-27 (W26), 30m/1:14. Not trained since — needs a weekly touch.
+- **Reintroduced 2026-08-15 (W33)** after dormant since 2026-06-27 (W26): 4×20m within a hybrid [run+BBJ+WB] block — 0:56/0:54/0:59/~1:10, deliberately submaximal (breathing regulation, not a time trial). Zero quad collapse, zero lower-leg signal — W33's headline objective. Not yet a race-specific fatigue result; planned next step is BBJ after a sled-push/run/sled-pull sequence.
 - Full history: `trackers/bbj_tracker.md`.
 
 ### Ski Erg / Row Erg

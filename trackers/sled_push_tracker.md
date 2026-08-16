@@ -23,6 +23,7 @@
 | 2026-07-28 | W31 TUE | Melbourne Phase 1 W1 | 210 kg | 3×20 m | 40 / 33 / 32 sec | Post-cardiac-clearance return; lighter than the 245 kg overload-lane ceiling but +1 set vs plan; clean progressive |
 | 2026-08-01 | W31 SAT | Melbourne Phase 1 W1 | **252 kg (new working reference)** | 4×20 m compromised (600m run + sled + 25 WB per round) | 39 / 43 / 48 / 50 sec | Self-directed overload, 7 kg above the written 245 kg cap; progressive controlled decline (+11 sec R1→R4, ~28%); no stall, no calf signal; correctly stopped before optional R5 (technique, not sled) |
 | 2026-08-04 | W32 TUE | Melbourne Phase I W2 | 224 kg | 4×20 m | 32 / 35 / 38 / 37 sec | Above the 210–220 kg prescription; final set recovered 1 sec vs Set 3, retained force production; held ahead of the heavy Wed farmer carry |
+| 2026-08-11 | W33 TUE | Melbourne Phase I W2 | 227 kg | 4×20 m | 35 / 33 / 34 / 33 sec | Slightly above the 224kg plan; 2 sec spread, no fade, final set 2 sec faster than Set 1 — clean maintenance-load execution ahead of a session that later revealed early illness onset |
 
 ---
 

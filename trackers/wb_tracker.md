@@ -30,6 +30,8 @@
 | 2026-07-28 | W31 TUE | Melbourne Phase 1 W1 | 5×20 density, 60s rest | 100 total, near-zero drift | 100 | 47/47/47/46/46 sec — dialed in, matches the density-progression target exactly |
 | 2026-08-01 | W31 SAT | Melbourne Phase 1 W1 | 4×25 within compromised 4-round block (600m run + 252kg sled + 25 WB per round) | 100 total, 2 sec drift | 100 | 59/59/61/61 sec — essentially unbreakable under real running/sled fatigue; WB was not the limiting station this session (running was) |
 | 2026-08-04 | W32 TUE | Melbourne Phase I W2 | 5×20 density, 60s rest, after heavy legs + 4 sled push + 3 sled pull | 100 total, 2 sec drift | 100 | **44/44/45/46/45 sec — new best density set**, faster than W31's 47/47/47/46/46; set 5 recovered 1 sec after set 4, no late collapse |
+| 2026-08-11 | W33 TUE | Melbourne Phase I W2 | 4×25 race-pattern, 45s rest, fresh state after full lower+sled session | 100 total, 5 sec spread | 100 | **New format: 25/25/25/25@9kg/45s rest = 64/60/59/60 sec, block total 6:18 (work 4:03 + rest 2:15)** — replaces the 5×20/60s-rest density format with the actual race break structure; establishes the 45-second WB ladder rung |
+| 2026-08-15 | W33 SAT | Melbourne Phase I W2 | 4×25 within a hybrid block (600m run + 20m BBJ + 25 WB per round, no sled) | 100 total, 6 sec spread | 100 | **64/59/58/63 sec — first WB data inside a BBJ-fused fatigue block**; R4 held as strong as R1; total work time 4:04, almost identical to Tuesday's fresh-state 4:03 despite hybrid run+BBJ fatigue — WB was not the limiter |
 
 ---
 
