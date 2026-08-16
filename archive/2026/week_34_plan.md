@@ -9,6 +9,8 @@ TIME ANCHOR (verified 2026-08-16 Sunday Melbourne — W33 close-out)
 
 **Source:** `reference/master_plan.md` §6 (W34 · 17–23 Aug — Lunge durability + aerobic volume) and §7 (Walking Lunges progression order), read against the W33 close-out findings in `archive/2026/week_33_report.md` and `state/limiters_now.md`.
 
+> **Revision note (2026-08-16, generated same day as this plan):** the athlete pushed a master-plan amendment directly to the remote repo on 2026-08-15 (merged into this close-out after this plan's first draft) that reframes W33 Saturday's fast running. Rather than reading ~2:39–2:55/600m as pure pacing failure, it sets a **provisional candidate compromised race pace of 4:25–4:35/km**, explicitly unvalidated until it survives a heavy-sled→run test (staged W39) and a lunge→run test (staged W43). The Thursday and Saturday sessions below are adjusted accordingly: Thursday keeps building the fresh-pace data set that feeds Gate 1's threshold benchmark (W35) rather than being scored strictly pass/fail against the old 2:42–2:55 corridor; Saturday's run+sandbag-lunge pairing is read as informal preview data toward the formal W43 lunge→run validation, not a discipline test. The execution-discipline findings from W33 (treadmill not used, BBJ fused into a diagnostic block) remain valid regardless — this reframing is about the pace target, not about whether written sessions get executed as written.
+
 ---
 
 ## HEADLINE VARIABLE
@@ -58,7 +60,7 @@ W33's own structural fix (treadmill-enforced Thursday pace) was not executed —
 ### Thursday 21 Aug — Fresh Quality Run (treadmill, confirmed Wednesday)
 - **Confirm treadmill access Wednesday evening — not decided Thursday afternoon.**
 - Warm-up 10–12 min easy + 3 strides.
-- **5×600m at 2:53–3:05 per 600m, 90s easy recovery.** Same corridor as W32/W33 — the objective is still to execute a written number under fresh conditions before it's ever tested compromised. Third attempt; the belt holds the pace so willpower doesn't have to, if the belt actually gets used.
+- **5×600m at 2:53–3:05 per 600m, 90s easy recovery.** Same corridor as W32/W33 — but the objective this week is executing a written number reliably (the discipline question), not proving or disproving a specific pace target. The 4:25–4:35/km candidate compromised pace (set 2026-08-15) isn't decided at Gate 1 until W35's threshold benchmark and the staged W39/W43 validation tests — this session just needs to demonstrate the athlete can hit a number he committed to before starting, on the treadmill, for real.
 - Cooldown 8–10 min easy.
 - **STOP:** two consecutive reps off the set speed, cadence degrading, or any lower-leg sensation.
 
@@ -69,7 +71,7 @@ W33's own structural fix (treadmill-enforced Thursday pace) was not executed —
 
 ### Saturday 23 Aug — Sandbag Lunge Introduction + Compromised Run (isolated from BBJ)
 - Warm-up 1.25km easy + dynamic prep.
-- **4 rounds: 600m run (open 2:50–2:55, hold band) → 50–75m sandbag lunge @ 30kg training load → ≤90s walk recovery. No Wall Balls, no BBJ, no sled — one new variable (sandbag lunges) against the one carried-over variable (corridor pace), same discipline that W33's plan intended for its own Saturday before BBJ ended up fused in anyway.**
+- **4 rounds: 600m run (open 2:50–2:55, hold band) → 50–75m sandbag lunge @ 30kg training load → ≤90s walk recovery. No Wall Balls, no BBJ, no sled — one new variable (sandbag lunges) against the one carried-over variable (corridor pace), same discipline that W33's plan intended for its own Saturday before BBJ ended up fused in anyway.** Read this session's run splits as informal preview data toward the formal W43 lunge→run validation test (100m race-load sandbag lunge → 1km run) — not a pass/fail read against either pace target.
 - **Navigation:** call "Round N, two loops" aloud each round — permanent low-cost habit, addresses the Melbourne-2025 counting failure mode.
 - **STOP:** close after the current round if two consecutive runs leave the band, sandbag mechanics break down, or any lower-leg/quad/cardiac sensation appears.
 

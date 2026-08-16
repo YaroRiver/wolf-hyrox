@@ -8,6 +8,8 @@ TIME ANCHOR (verified 2026-08-16 Sunday Melbourne — W33 close-out)
 
 Full plan: `archive/2026/week_34_plan.md`. Generated at W33 close-out (2026-08-16) from `reference/master_plan.md` §6 (W34 mission: lunge durability + aerobic volume) read against the W33 close-out findings.
 
+> **Revision note (2026-08-16):** the athlete's 2026-08-15 master-plan amendment reframes W33 Saturday's fast running as the source of a **provisional candidate compromised race pace, 4:25–4:35/km** — not simply a pacing failure. That pace stays unvalidated until it survives staged heavy-sled→run (W39) and lunge→run (W43) tests. Thursday below keeps building fresh-pace data toward Gate 1 (W35); Saturday's run+sandbag-lunge pairing is informal preview data toward W43, not a pass/fail test. Execution-discipline findings from W33 (treadmill not used, BBJ fused into a diagnostic block) stand regardless.
+
 ---
 
 ## HEADLINE VARIABLE
@@ -54,7 +56,7 @@ Full plan: `archive/2026/week_34_plan.md`. Generated at W33 close-out (2026-08-1
 ### Thursday 21 Aug — Fresh Quality Run (treadmill, confirmed Wednesday)
 - Confirm treadmill access Wednesday evening.
 - Warm-up 10–12 min easy + 3 strides.
-- 5×600m at 2:53–3:05/600m, 90s easy recovery. Third attempt at this exact corridor.
+- 5×600m at 2:53–3:05/600m, 90s easy recovery. Third attempt at executing a committed number, not a test of the 4:25–4:35/km candidate pace (that's staged for W39/W43).
 - Cooldown 8–10 min easy.
 - STOP: two consecutive reps off the set speed, cadence degrading, or any lower-leg sensation.
 
