@@ -1,5 +1,7 @@
 # MASTER PLAN — HYROX MELBOURNE, DECEMBER 2026
 
+> **Revised 2026-08-15 — W33 strategic running amendment.** Added the Melbourne-2025 late-race run-decay baseline, the W33 candidate compromised pace, explicit sled→run and lunge→run validation steps, and a late-race run-drift KPI for Phase II–IV. The candidate pace is deliberately provisional until it survives 1 km after heavy stations; the fresh threshold target remains benchmark-driven at Gate 1 rather than being guessed in advance.
+>
 > **Revised 2026-08-02 (second revision same day).** Structure adopted from an athlete-supplied 19-week macrocycle (`HYROX_Melbourne_2026_19_Week_Master_Plan.md`, v1.0, 2026-08-02), compared against the previously-promoted draft and found stronger on several concrete points: running-volume peak better calibrated to real tracked data, more gradual 4-gate simulation progression, explicit governing rules (2 hard days/week, deload every 4th week, strength reps-in-reserve), and an honest "current data gaps" accounting. Merged back in from the prior version: the navigation-under-fatigue workstream (corrected per athlete clarification below), B12 timing, fueling protocol, KPI dashboard, and the Overload Method doctrine — extended, per athlete direction, to running volume as well.
 >
 > **Two corrections applied on adoption (athlete direction, 2026-08-02):**
@@ -11,7 +13,7 @@ Athlete: Yaro (Yaroslav Andrushchenko) · 46 → 47 (11 Aug 2026) · Pro Men 45�
 Prior race: HYROX Sydney 2026-07-03 — 1:48:24, DQ (navigational error, Run 8 — see §10 for corrected mechanism; WB completed clean)
 Target race: HYROX Melbourne — confirmed race window 9–13 Dec 2026, MCEC South Wharf (verified hyrox.com, 2026-08-02). Pro Men provisionally Friday 11 Dec, morning wave.
 Plan span: Monday 3 Aug 2026 (W32) → race week (W50) — 19 weeks from this revision; full build W28→W50 = 23 weeks (Phase 0, W28–31, closed clean 2026-08-02)
-Current phase: Phase I — Consolidate and recalibrate (W32–35), week 1 of 4
+Current phase: Phase I — Consolidate and recalibrate (W32–35), week 2 of 4
 ```
 
 ---
@@ -60,6 +62,22 @@ Weekly sessions may change with readiness, but the mesocycle objective does not 
 - Current 100 m race-load sandbag-lunge benchmark.
 - Current 80 m BBJ benchmark.
 - Current complete race-sequence cost.
+
+### W33 strategic running update — 2026-08-15
+
+**Melbourne 2025 comparable run-decay baseline:** the useful comparable sequence supplied by the athlete is Run 2 **4:01** → Run 3 **4:16** → Run 4 **4:29** → Run 5 **4:43**. That is a **42-second early-to-late drift from Run 2 to Run 5**. Run 1 and Run 6 are excluded from this physiological comparison because they are not cleanly comparable race-running segments in the supplied record; Run 6 is also contaminated by the known navigation/counting failure context.
+
+**W33 hybrid evidence:** Saturday 15 Aug produced approximately **2:55 / 2:40 / 2:39 / 2:45 per 600 m** across four hybrid rounds with controlled BBJ + 25 wall balls. This proves that **~4:25–4:35/km is currently available over 600 m under light-to-moderate hybrid fatigue**. It does **not** yet prove that the pace is sustainable for a full 1 km after a high-compression station.
+
+**Candidate compromised race pace:** **4:25–4:35/km**, provisional until validated under both of the following:
+1. **Heavy sled validation:** race-relevant heavy Sled Push / Sled Pull exposure → immediate 800 m–1 km run at candidate pace.
+2. **Late-race lunge validation:** 100 m race-load Sandbag Lunges → immediate 1 km run at candidate pace.
+
+**Phase II job:** establish the athlete's current clean threshold at Gate 1, raise time-at-threshold, then make 4:25–4:35/km metabolically affordable rather than merely achievable.
+
+**Phase III job:** preserve that pace after costlier stations and later in multi-station sequences.
+
+**Race-specific KPI:** move from the Melbourne-2025 decay pattern toward an **early-to-late comparable 1 km drift of ≤8–10 seconds** by the Race-Specific Peak. This is a target to earn through Gates 2–4, not an assumption that the athlete can already do it.
 
 ---
 
@@ -137,9 +155,9 @@ Controlled run, normally 8–12 km. No finishing surge. A work shift or other ex
 | Phase | Weeks | Dates | Main objective |
 |---|---:|---|---|
 | I. Consolidate and recalibrate | W32–W35 | 3–30 Aug | Flatten compromised running, reintroduce BBJ, establish current benchmarks |
-| II. Aerobic power and station economy | W36–W40 | 31 Aug–4 Oct | Raise threshold/VO2 support, improve pull/BBJ/lunge economy, complete half simulation |
-| III. Specific durability | W41–W45 | 5 Oct–8 Nov | Extend race-load work, develop 100-WB strategy, tolerate 6 km/6 stations |
-| IV. Race-specific peak | W46–W48 | 9–29 Nov | Execute target pacing under near-race sequence and fatigue |
+| II. Aerobic power and station economy | W36–W40 | 31 Aug–4 Oct | Raise threshold/VO2 support, validate candidate 4:25–4:35/km compromised pace after heavy stations, improve pull/BBJ/lunge economy, complete half simulation |
+| III. Specific durability | W41–W45 | 5 Oct–8 Nov | Extend race-load work, preserve 1 km pace after sled/lunge fatigue, develop 100-WB strategy, tolerate 6 km/6 stations |
+| IV. Race-specific peak | W46–W48 | 9–29 Nov | Execute target pacing under near-race sequence and fatigue; lock early-to-late run drift toward ≤8–10 s |
 | V. Taper and race | W49–W50 | 30 Nov–13 Dec | Remove fatigue while preserving intensity, then race |
 
 *(Phase 0 — Recovery & Clearance, W28–31 — closed clean 2026-08-02: stress echo normal, Holter normal, cardiac limiter resolved. Historical detail: `archive/2026/week_28_report.md` through `week_31_report.md`.)*
@@ -178,15 +196,16 @@ Controlled run, normally 8–12 km. No finishing surge. A work shift or other ex
 
 **Running volume (default):** 20–23 km.
 
-**Gate 1:** reset training paces and confirm whether the 1:15 target remains on-track or stretch.
+**Gate 1:** reset training paces, establish the current clean threshold reference, and confirm whether the 1:15 target remains on-track or stretch. Do not hard-code a 4:10–4:15/km LT2 target before this gate measures it.
 
 ---
 
 ### W36 · 31 Aug–6 Sep — Threshold foundation
 **Headline variable:** extend time near HYROX run intensity without station fatigue.
-- Thursday: threshold intervals or controlled 1 km repeats.
+- Thursday: threshold intervals or controlled 1 km repeats using Gate 1 paces.
 - Saturday: four-round block at fixed stations and stable run pace.
 - Sled pull receives setup standardization.
+- Candidate compromised pace **4:25–4:35/km remains provisional** until it survives 1 km after a heavy station.
 
 **Running volume (default):** 28–31 km.
 
@@ -207,6 +226,7 @@ Controlled run, normally 8–12 km. No finishing surge. A work shift or other ex
 ### W39 · 21–27 Sep — Longer compromised running
 **Headline variable:** move from 600 m control toward 800 m/1 km compromised repeatability.
 - Saturday uses 800 m or 1 km runs with fewer rounds. Station loads held. No simultaneous increase in station volume.
+- At least one quality exposure uses a **heavy sled station immediately before an 800 m–1 km run** to begin validating the candidate 4:25–4:35/km compromised pace.
 
 **Running volume (default):** 32–35 km.
 
@@ -218,13 +238,14 @@ Controlled run, normally 8–12 km. No finishing surge. A work shift or other ex
 
 **Running volume (default):** 24–27 km.
 
-**Gate 2:** quantify run drift, transition loss, quad response, and station bottleneck.
+**Gate 2:** quantify run drift, transition loss, quad response, station bottleneck, and the real cost of the candidate compromised pace after at least one high-compression station.
 
 ---
 
 ### W41 · 5–11 Oct — Station-to-run transition economy
 **Headline variable:** first 300–500 m after each station.
 - Short controlled station doses followed immediately by race-pace running. Focus on posture, cadence, avoiding an all-out first 100 m.
+- Include a dedicated **Sled Push / Sled Pull → 1 km run** exposure. The objective is to settle into the candidate pace without an early surge and without a late-kilometre collapse.
 
 **Running volume (default):** 31–34 km.
 
@@ -238,7 +259,9 @@ Candidate strategies tested under controlled fatigue: 60+20+20 · 50+30+20 · 40
 ### W43 · 19–25 Oct — Lunge + BBJ durability
 **Headline variable:** locomotion stations under fatigue.
 - Race-load sandbag lunges progress toward 100 m continuous.
+- Complete a **100 m race-load lunge → 1 km run** validation exposure when readiness is Green. This is the key late-race test for the candidate compromised pace.
 - BBJ total distance progresses toward 60–80 m, partitioned if needed.
+- A race-state BBJ test may use sled pre-fatigue before the BBJ sequence; BBJ timing is meaningful only when the pre-fatigue is explicit.
 - Heavy sled push held, not progressed.
 
 **Running volume (default):** 34–36 km.
@@ -246,10 +269,11 @@ Candidate strategies tested under controlled fatigue: 60+20+20 · 50+30+20 · 40
 ### W44 · 26 Oct–1 Nov — Six-round specific simulation
 **Headline variable:** hold pace and mechanics across 6 km / 6 stations.
 - Not a full race. Stations selected to include both current limiters and one strong station. Final two runs must remain controlled.
+- Compare early and late full-run segments directly; target **≤10–15 s drift across comparable runs** at this gate, with the long-term Race-Specific Peak target ≤8–10 s.
 
 **Running volume (default):** 34–37 km.
 
-**Gate 3:** assess realistic Melbourne pacing and update the target split model.
+**Gate 3:** assess realistic Melbourne pacing, late-race drift, and update the target split model.
 
 ### W45 · 2–8 Nov — Deload and technical reset
 **Headline variable:** absorb W41–W44.
@@ -264,6 +288,7 @@ Candidate strategies tested under controlled fatigue: 60+20+20 · 50+30+20 · 40
 - 1 km compromised runs become the main reference.
 - Sled push/pull, lunges, BBJ, wall balls use race-specific arrangement.
 - Strong opening prohibited; even pacing is the objective.
+- **4:25–4:35/km becomes an actual race-pace lock only if Gates 2–3 validate it.** Race-specific target: comparable early-to-late 1 km drift trends toward **≤8–10 s**.
 
 **Running volume (default):** 30–34 km.
 
@@ -274,7 +299,7 @@ Candidate strategies tested under controlled fatigue: 60+20+20 · 50+30+20 · 40
 
 **Running volume (default):** 32–35 km including rehearsal.
 
-**Gate 4:** final realistic 1:15 assessment and A/B/C race goals.
+**Gate 4:** final realistic 1:15 assessment and A/B/C race goals. Running verdict includes whether full-sequence early-to-late drift is inside the **≤8–10 s target band** or requires a more conservative opening pace.
 
 ### W48 · 23–29 Nov — Final specific sharpening
 **Headline variable:** quality without residual fatigue.
@@ -310,6 +335,12 @@ Weekly structure: 1 fresh quality run · 1 compromised run session · 1 aerobic 
 
 Progression order: flatten 600m splits → extend to 800m → extend to 1km → hold 1km pace after progressively costlier stations → hold pace late in 6-round and dress-rehearsal work.
 
+**Candidate compromised race pace (W33 evidence): 4:25–4:35/km.** This is a working hypothesis, not a race lock. It becomes a valid race pace only after two specific validations: **heavy sled → 1 km** and **100 m race-load lunges → 1 km**.
+
+**Threshold relationship:** Gate 1 establishes the clean threshold benchmark. Phase II raises time-at-threshold so the candidate compromised pace becomes metabolically affordable. No fixed 4:10–4:15/km LT2 target is assumed before the benchmark supports it.
+
+**Late-race durability KPI:** Melbourne 2025 comparable runs show **4:01 → 4:16 → 4:29 → 4:43** from Run 2 through Run 5, a 42-second drift. The Race-Specific Peak target is to reduce comparable early-to-late 1 km drift toward **≤8–10 seconds**, using a controlled opening pace rather than buying early speed with late-race debt.
+
 The target is not a heroic first run. The target is the smallest possible first-to-last drift.
 
 ### Sled Push — maintenance and efficiency
@@ -320,7 +351,7 @@ Progression tools, one at a time: shorter recovery · faster average pass · 30�
 Do not add weight merely to create novelty. Turf, sled, and friction differ by facility; time and mechanics are more transferable than kilograms alone.
 
 ### Sled Pull — development priority
-Progression order: standardize rope layout and start → reduce set-1 delay → keep later sets inside a narrow time band → extend continuous distance → place the pull before race-pace running.
+Progression order: standardize rope layout and start → reduce set-1 delay → keep later sets inside a narrow time band → extend continuous distance → place the pull before race-pace running → validate **Sled Push / Sled Pull → 1 km** at candidate compromised pace.
 
 Current reference: 185kg, 1:32→1:11→1:07 (W31 Tue) — best efficiency arc to date.
 
@@ -334,12 +365,16 @@ A maximal 100-rep attempt is not performed every week. Capacity is proven twice 
 ### Burpee Broad Jumps — reintroduced W33
 Progression order: 3×20m controlled → 2×30m equal pacing → 40m continuous → 60–80m total under moderate fatigue → race-distance execution in specific blocks.
 
+**Race-state BBJ validation:** BBJ time is interpreted as a performance test only when pre-fatigue is explicit. Preferred later-phase chain: **sled push → run → sled pull → run → BBJ** or an equivalent sequence that recreates the middle-race quad cost. Controlled BBJ used for breathing recovery are training exposure, not a fatigue-performance benchmark.
+
 Stop or reduce if jump length shortens sharply, landing mechanics degrade, or calf/quad rises above the agreed symptom threshold.
 
 ### Walking Lunges — convert strength to specificity
 Heavy dumbbell work is strength development, not a direct substitute for the 100m race station.
 
-Progression order: maintain heavy 20–30m sets → add race-style sandbag technique → 50–75m continuous → 100m continuous fresh → 100m under compromised conditions.
+Progression order: maintain heavy 20–30m sets → add race-style sandbag technique → 50–75m continuous → 100m continuous fresh → 100m under compromised conditions → **100m race-load lunges immediately into 1 km candidate-pace running**.
+
+The lunge→run exposure is a primary late-race validation because it tests whether the target pace survives the station most likely to create local quad debt before the final running leg and wall balls.
 
 ### Farmer Carry — maintenance
 Current ability exceeds race distance. Exposure every 7–10 days (Rule/§4 — not automatically weekly). Focus on turns, posture, grip, running transition. No need to extend distance every week.
@@ -357,13 +392,13 @@ From W41 onward, strength is maintained with lower volume and high technical qua
 
 ## 8. BENCHMARK GATES
 
-**Gate 1 — W35:** Fresh run benchmark. Current SkiErg or Row baseline. Review running volume tolerance and calf response.
+**Gate 1 — W35:** Fresh run benchmark. Current SkiErg or Row baseline. Review running volume tolerance and calf response. Establish the clean threshold reference used to prescribe Phase II; do not assume the threshold pace in advance.
 
-**Gate 2 — W40:** 4km/4-station controlled simulation. Measure run drift, station time, transition time, local-muscle response.
+**Gate 2 — W40:** 4km/4-station controlled simulation. Measure run drift, station time, transition time, local-muscle response, and whether the candidate 4:25–4:35/km pace remains affordable after a heavy station.
 
-**Gate 3 — W44:** 6km/6-station specific simulation. Build the first credible Melbourne split model.
+**Gate 3 — W44:** 6km/6-station specific simulation. Build the first credible Melbourne split model. Target comparable run drift **≤10–15 s**, with special attention to the late runs after high-compression stations.
 
-**Gate 4 — W47:** 80–90% dress rehearsal. Set race goals:
+**Gate 4 — W47:** 80–90% dress rehearsal. Validate or revise the candidate race pace and assess whether comparable early-to-late run drift reaches the **≤8–10 s Race-Specific Peak target**. Set race goals:
 - **A:** 1:15 target if gates support it.
 - **B:** realistic PB target.
 - **C:** technically clean race with no navigation or penalty loss.
@@ -436,13 +471,15 @@ Daily: eat for the volume, no deficit budget at 84 kg / 196 cm; weight <82.5 kg 
 The plan is working if, across the blocks:
 1. Compromised run drift falls.
 2. Final-round pace approaches first-round pace.
-3. Wall-ball total time falls without form degradation.
-4. BBJ and lunges stop causing disproportionate quad collapse.
-5. Sled-pull spread and setup time fall.
-6. Heavy sled push remains stable without consuming extra recovery.
-7. Weekly running volume rises without calf recurrence — rising because recovery supports it, not against a formula.
-8. Sleep and subjective readiness stabilize.
-9. Simulations become faster because transitions and pacing improve, not because the first half becomes reckless.
+3. The candidate 4:25–4:35/km compromised pace survives first heavy-sled validation, then the 100 m lunge→1 km validation.
+4. Comparable early-to-late 1 km drift moves from the Melbourne-2025 42-second decay toward **≤8–10 seconds** by the Race-Specific Peak.
+5. Wall-ball total time falls without form degradation.
+6. BBJ and lunges stop causing disproportionate quad collapse.
+7. Sled-pull spread and setup time fall.
+8. Heavy sled push remains stable without consuming extra recovery.
+9. Weekly running volume rises without calf recurrence — rising because recovery supports it, not against a formula.
+10. Sleep and subjective readiness stabilize.
+11. Simulations become faster because transitions and pacing improve, not because the first half becomes reckless.
 
 ---
 
@@ -452,6 +489,8 @@ The plan is working if, across the blocks:
 |---|---|---|---|---|---|---|
 | Weekly run volume | 23 km (W31 actual) | 20–23 km (post-deload) | 24–27 km (post-deload) | 34–37 km peak | 32–35 km | — |
 | Compromised 600m drift | 2:42→3:10 (28s, W31) | — | reduced | ≤10–15s across 4 | ≤10s | flat R4≈R1 |
+| Candidate compromised 1 km pace | W33: 4:25–4:35/km available over 600 m hybrid reps; not yet validated for 1 km after heavy stations | threshold benchmark sets context | heavy-sled validation | lunge→1 km validation + six-round integration | pace locked or revised | evidence-based race pace |
+| Comparable early→late run drift | Melbourne 2025 R2→R5: 4:01→4:43 (**42s**) | baseline retained | trend down | **≤10–15s** | **≤8–10s target** | smallest sustainable drift |
 | WB 100 — full/partial fatigue | 100 reps proven twice (race + W31) | — | strategy testing begins | partition chosen | ≤rehearsed target | fastest repeatable partition |
 | Navigation | Sydney DQ + Melbourne penalty (2 distinct mechanisms — §10) | — | — | — | course walk if venue allows | 0 errors, both mechanisms |
 | Sled Pull first-set efficiency | 1:32→1:11→1:07 (W31) | — | sets 2-3 inside 10s | set 1 closing in | — | — |
@@ -485,6 +524,7 @@ The plan is working if, across the blocks:
 12. Farmer Carry every 7–10 days, not automatically weekly (§4/§7/§11).
 13. **Course walk before race day is the primary navigation fix** (§10) — lap-counting is real but partial; don't over-credit it.
 14. Push hard, guardrail is real signal not age or a formula: sled/carry/grip loads, WB volume when fresh, compromised intervals, long-run progression, running volume generally, the sims. Hold the line only on: illness rules, cardiac rule, deload cadence, one-variable-per-week discipline.
+15. **Do not promote 4:25–4:35/km from candidate to race lock until it passes heavy-sled→1 km and 100 m lunge→1 km validation.** Early speed never outranks late-race drift.
 
 ---
 
@@ -510,12 +550,13 @@ The plan is based on the emerging HYROX literature plus established concurrent-t
 3. Course walk logistics — confirm venue access timing (ideally before W50, as early as possible once Melbourne 2026 logistics publish).
 4. VO₂max retest — stale since 2026-05-18, due at Gate 1 (W35).
 5. Current SkiErg/Row/sandbag-lunge/BBJ benchmarks — not yet re-established post-Sydney (§2 data gaps).
+6. Validate or reject the **4:25–4:35/km candidate compromised pace** through heavy-sled→1 km and 100 m race-load lunge→1 km tests before Race-Specific Peak.
 
 ---
 
 ## WORKING PRINCIPLE
 
-> **Build the fourth run, not the first. Maintain what is already strong. Progress one limiter at a time. Push hard where the guardrail is real signal, not a number picked in advance.**
+> **Build the fourth run, not the first. Maintain what is already strong. Progress one limiter at a time. Push hard where the guardrail is real signal, not a number picked in advance. Make race pace earn its name under heavy-station fatigue.**
 
 ---
 
@@ -530,3 +571,5 @@ This file updates only when:
 Day-to-day execution does not modify this file — that's `state/current_week.md` and the trackers.
 
 **Adopted (this revision):** 2026-08-02, from `HYROX_Melbourne_2026_19_Week_Master_Plan.md` (v1.0, 2026-08-02), merged with retained sections from the prior `reference/master_plan.md` (adopted 2026-08-02 earlier the same day from `master_plan_melbourne_draft_v1.md`, drafted 2026-07-05).
+
+**Strategic amendment:** 2026-08-15, based on W33 hybrid-run evidence and the athlete-supplied Melbourne-2025 run sequence.
