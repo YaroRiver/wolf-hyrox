@@ -283,6 +283,28 @@
 
 ---
 
+## W34 (2026-08-17 to 2026-08-23) — Phase I Week 3, Consolidate (lunge durability + aerobic volume)
+
+*Backfilled 2026-08-23 from athlete-supplied daily report pack (six MD files, 2026-08-18 to 08-23; no standalone Monday file) — see `archive/2026/week_34_report.md` for full plan-vs-actual per day.*
+
+| Date | Day | Sleep h | Restful % | HRV ms | HRV %vs baseline | Calves L | Calves R | Body feel | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-17 | MON | not provided | — | 34 sleeping (referenced retrospectively by Tue's report) | — | not provided | not provided | — | No standalone report filed; plan called for full recovery/reset |
+| 2026-08-18 | TUE | 8h35 | 59% | 56 sleeping | — | 0/10 (no string reported) | 0/10 | very hard session, legs/heart normal at finish | 3-day target 101%; sleeping HR 52bpm (17% dip); **brief skipped-beat cardiac sensations during post-exertion recovery — training continued, hard rule breached (see `state/limiters_now.md`)**; sled pull new efficiency reference 202kg/1:20/1:05/0:59; WB exact 6:18 repeat |
+| 2026-08-19 | WED | 7h55 | — | 85 sleeping / +37% daily vs 30-day | +37% | not provided | not provided | needed 2 naps despite strong HRV, residual respiratory symptoms | Autonomic strong, subjective recovery incomplete (Rule 8 correctly applied — lighter day); pull-up hard-stop mechanism succeeded for first time in 4 weeks (+20kg 5/5/5) |
+| 2026-08-20 | THU | 7h50 | 56% | 69 sleeping / +48% daily | +48% | 0/10 | 0/10 | some afternoon tiredness, fueled before running | 5×600m outdoor (treadmill mechanism failed 3rd week running) at 2:56–3:08, HR only 127–136 — pace now too easy, recalibration finding |
+| 2026-08-21 | FRI | 8h06 | 56% | 85 sleeping | — | not provided | not provided | strong recovery | 9.06km run, nearly triple the written 3.0–3.5km target, incl. a genuine 5km work block at ~5:13/km |
+| 2026-08-22 | SAT | 8h55 total (incl. nap) | 64% | 41.3 daily / -12% vs 30-day, post-nap spot 67 | -12% | not provided | not provided | Yellow-Green — "not fully fresh, enough for a structured session" | Headline session expanded same-day into a much larger hybrid (Farmer Carry + 2 runs + ~130m@30kg sandbag lunges, unmeasured + 100 WB); brief medial-quad/VMO episode at WB entry, resolved ~15s; BBJ not executed |
+| 2026-08-23 | SUN | 10h10 | 57% | 54 sleeping / +1% daily | +1% | not provided | 1/10 (distal soleus/calf) | Green-Yellow leaning Green | 5.03km easy run (plan was 11km, revised in-session); progressive and controlled, no late drift; Saturday's VMO episode fully resolved |
+
+## W34 7-day summary
+
+| W34 summary | ~8h32 avg (5 of 7 days with sleep data) | ~58% avg (5 of 7 days provided) | 34–85 ms sleeping range | 0–1/10, first fully clean week on the "string" signal (zero recurrence all week) | 1 A (Tue perf) / 1 A- (Wed) / 1 mixed A/F (Thu) / 1 mixed A/D (Fri) / 1 mixed A-/D (Sat) / 1 mixed A/adherence-flag (Sun) | **Cardiac protocol breach Tuesday — highest-priority open item, carried into W35 as a physician-contact requirement.** Weighted pull-up hard rule held clean for the first time in 4 weeks. Lower-leg "string" fully silent. BBJ untouched the entire week. Written-plan-vs-actual gap now 5 weeks running (W30→W34). |
+
+**Note:** 7-day sleep rhythm remained in the low-to-mid 50s% range (53% Tue) — the standing secondary limiter (sleep timing/bedtime discipline) is unchanged, not escalating and not resolved.
+
+---
+
 ## Append Protocol
 
 After every Sunday close-out and after every morning readiness gate:

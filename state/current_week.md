@@ -1,7 +1,7 @@
-# WEEK W34 — 2026-08-17 (Mon) → 2026-08-23 (Sun)
-## Annual Week 34 · Build Week 7 of 23 · Phase I — Consolidate and recalibrate (Week 3 of 4)
+# WEEK W35 — 2026-08-24 (Mon) → 2026-08-30 (Sun)
+## Annual Week 35 · T−15 · Phase I — Consolidate and recalibrate (Week 4 of 4 — Gate 1 week) · Build Week 8 of 23
 
-> **W34 directive (athlete's own draft, adopted 2026-08-16):** Master plan's mission — lunge durability + aerobic volume. Monday is a true recovery day (absorbing W33's hard Fri–Sat–Sun finish). Saturday introduces the first race-style sandbag-lunge baseline (50–75m @ 30kg) fully isolated from any pace test — a single controlled 1km run at 5:00–5:10/km, deliberately below the candidate compromised pace, rather than re-running the corridor in parallel. Thursday pins one exact treadmill speed (12.3km/h, ~2:56/600m), zero overspeed. Friday's easy run is restored (28–30km volume target). Sunday extends to 11km with a ~5:20/km pace-alert ceiling. Pull-up instruction upgraded to a fixed pre-committed rep target with a hard stop, replacing the reps-in-reserve cue that failed three straight weeks. Full plan: `state/current_week_plan.md` / `archive/2026/week_34_plan.md`.
+> **W35 directive:** Deload and calibration — measure, do not prove fitness. Gate 1 benchmark week: fresh 5km time trial (Thursday) + SkiErg 1000m (Saturday), running volume down to 20–23km. **Highest-priority carryover: physician contact needed regarding Tuesday 2026-08-18's cardiac event, before any hard session this week** — see `state/limiters_now.md` and `reference/medical.md`. Full plan: `state/current_week_plan.md` / `archive/2026/week_35_plan.md`.
 
 <!-- Daily entries appended below by /morning and /session workflows -->
 

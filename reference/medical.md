@@ -92,6 +92,16 @@ Athlete drafted a full checkup request to his GP, to be actioned as part of Phas
 
 **Coaching implication:** This was the standing clearance gate for maximal-effort work (VO₂max field test, hard sim work, WB/sled/BBJ ceiling probes, sprint work) held since W28. With a normal result, that specific restriction lifts. The permanent rule is unchanged and does not depend on this or any test: any jolt/palpitation sensation → immediate abort, no exception.
 
+## Cardiac Event — W34 Tuesday (2026-08-18), Recovery-Phase Palpitation
+
+**Event:** During a recovery period after exertion (sitting, HR falling toward ~90 bpm following a heavy lower-body/sled/WB session), the athlete reported a few brief "skipped beat" sensations. No shortness of breath, dizziness, or chest pain reported; no symptoms during the actual work sets; symptoms resolved spontaneously within seconds.
+
+**What happened next — this is the important part:** the athlete continued training and completed the remainder of the session. **This is a direct breach of two standing rules that both state "no exception":** CLAUDE.md hard rule 13 ("any palpitation = immediate abort") and master-plan non-negotiable rule 9 ("any cardiac sensation = immediate abort + physician review before next quality session"). No physician contact is documented before the subsequent Wednesday, Thursday, or Saturday quality sessions that week.
+
+**Distinct from the W13 pattern below:** the W13 event occurred during warm-up, at a time correlated with deep athletic bradycardia (~42–43 bpm resting). This W34 event occurred during post-exertion recovery specifically, with sleeping/session HR in a materially higher range (sleeping HR that week 52–56 bpm) — a different phase of the training cycle and a different resting-HR context. Whether this represents the same underlying pattern (bradycardia-associated ectopy, common and often benign in endurance athletes) or something distinct is exactly what a physician should characterize — it should not be assumed benign by pattern-matching to the prior cleared workup.
+
+**Standing coaching rule, restated:** prior clearance (normal stress echo, normal Holter) is reassuring context, not a substitute for stopping on a new symptom. **Physician contact is required before the next quality session** — this is carried into `state/limiters_now.md` and the W35 weekly plan as the week's top-priority open item, ahead of any performance content.
+
 **Night-HR flag — a distinct, still-open signal (added 2026-08-02).** The stress echo characterizes exercise-induced cardiac response; it says nothing new about resting/nocturnal rhythm beyond what the Holter already covered. The W13 (May) jolt episode co-occurred with sleeping HR in the ~42–43 bpm range; a separate, related band to watch is ~48–50 bpm across several consecutive nights. If sleeping HR trends into that band as training load rises through the Melbourne build, that is an independent trigger to contact the GP/cardiologist directly — not something the stress-echo result overrides or a coaching decision to make alone. See `reference/master_plan.md` §11 and `trackers/readiness_trend.md` for ongoing tracking.
 
 **Bloods (verified from pathology report, collected 2026-07-11, referred by Dr Ilona Jakab):**

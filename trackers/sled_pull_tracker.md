@@ -23,6 +23,7 @@
 | 2026-07-28 | W31 TUE | Melbourne Phase 1 W1 | 185 kg | 3×20 m | 1:32 / 1:11 / 1:07 | Post-cardiac-clearance return; lighter than 204 kg working load but best efficiency arc since W20 — 25 sec drop S1→S3 |
 | 2026-08-04 | W32 TUE | Melbourne Phase I W2 | **204 kg** | 3×20 m | 1:20 / 1:11 / 1:10 | Full working load returned; Set2→Set3 diff 1 sec; Set1→Set3 spread only 10 sec — tightest arc yet recorded at 204 kg (vs 25 sec spread at the lighter 185 kg load, W31) |
 | 2026-08-11 | W33 TUE | Melbourne Phase I W2 | 192 kg | 3×20 m | 1:32 / 1:12 / 1:01 | Below the 204kg plan/working load — reduced ahead of an emerging illness; final set 1:01 the fastest single set recorded at any load to date; 31 sec Set1→Set3 drop, strongest progressive arc yet. Not a working-load PR (load was reduced), but confirms efficiency continuing to improve |
+| 2026-08-18 | W34 TUE | Melbourne Phase I W3 | **202 kg** | 3×20 m | **1:20 / 1:05 / 0:59** | Essentially at the 204kg working load. **New efficiency reference — first sub-1:00 set recorded at working load**, matches the W32 204kg first-set time (1:20) then produces materially faster second/third sets. After a full heavy lower-body session (BSS, 90m walking lunges, 4 heavy sled pushes) — strong durability signal, not a fresh-state result |
 
 ---
 
@@ -45,6 +46,7 @@
 - **Race-distance reference:** 184 kg / 40 m / 3:00 (Brisbane)
 - **Melbourne build re-entry:** 185 kg / 3×20 m / 1:32→1:11→1:07 (W31 TUE 2026-07-28) — efficiency arc matches the best pre-Sydney data; rope-management/first-set inefficiency remains the target per athlete's own framework doc
 - **Melbourne build, working load returned:** 204 kg / 3×20 m / 1:20→1:11→1:10 (W32 TUE 2026-08-04) — best Set1→Set3 spread yet recorded at the 204 kg working load (10 sec); rope-handling/first-set delay closing fast
+- **Best absolute set time at working load:** 202 kg / 0:59 (W34 TUE 2026-08-18) — first sub-1:00 set at essentially the full working load, arc 1:20→1:05→0:59
 
 **Status:** sled pull is becoming a weapon (W20 TUE shows fastest efficiency to date)
 

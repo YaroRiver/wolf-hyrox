@@ -21,6 +21,15 @@
 | 2026-05-19 | W21 TUE | Sydney W8 Phase 2 W5 | 32+32 kg | 30 m × 2 (skipped 3rd, calves 3/2 post) | splits 1:28/1:11; strength block; calf escalation after — session shortened |
 | 2026-05-23 | W21 SAT | Sydney W8 Phase 2 W5 | 28+28 kg | 20 m × 4 (80m total, race-fragment) | splits 48/37/36/37 sec; under HYROX fatigue, settled after R1; calf 2/10 post (no escalation) |
 | 2026-07-28 | W31 TUE | Melbourne Phase 1 W1 | 28+28 kg | 30 m × 3 | Post-cardiac-clearance return; lighter than the 30+30kg plan number but longer distance (30m vs 20m); clean, no calf signal |
+| 2026-08-18 | W34 TUE | Melbourne Phase I W3 | 28+28 kg | 30 m × 3 (90m total) | Plan called for 2×25m maintenance volume; athlete restored the full historical 3-set structure instead — above written prescription, clean execution, no calf signal |
+
+---
+
+## Sandbag Lunges (race-load format — new 2026-08-22)
+
+| Date | Week | Block | Load | Distance | Time | Notes |
+|---|---|---|---|---|---|---|
+| 2026-08-22 | W34 SAT | Melbourne Phase I W3 | 30 kg sandbag | **~128–136 m (estimated)**, continuous | 6:05 | **First race-load continuous sandbag-lunge exposure of the Melbourne build.** Plan called for 50–75m as a deliberately light, non-maximal baseline; actual distance ran ~2.5× that and ~30% beyond the 100m race distance. Local muscular burn onset ~30th step; technique held; athlete reports capacity remained beyond the completed distance (no forced stop, no cramp). **Distance status: not physically measured — reconstructed post-hoc from Google Maps satellite imagery, ±5–10m uncertainty.** Standing rule from this session: any future distance test uses a physically measured lane before the session, not a post-hoc estimate. Followed immediately by a compromised run (mechanics held, cadence 178) and 100 Wall Balls (61/58/58/54) with one brief transient medial-quadriceps/VMO episode at the WB entry, resolved in ~15s. Full context: `archive/2026/week_34_report.md` |
 
 ---
 
@@ -64,6 +73,7 @@
 - **Working load (current):** 32+32 kg DB, 30 m × 2 (W20)
 - **Historical peak:** 70 kg KB, 3 × 20–24 (Brisbane W11)
 - **SAT primer:** 56 kg KB
+- **Sandbag race-load (current, unmeasured):** 30 kg × ~128–136 m continuous (W34 SAT 2026-08-22) — first exposure, exceeds 100m race distance under conservative estimate; distance requires physical verification before being treated as a firm benchmark
 
 ---
 

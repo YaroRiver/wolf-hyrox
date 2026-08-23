@@ -17,6 +17,7 @@
 |---|---|---|---|---|---|---|
 | 2026-08-01 W31 SAT | Melbourne Phase 1 W1 | 2:42 / 4:30/km | 2:42 / 4:30/km | 3:07 / 5:12/km | 3:10 / 5:17/km | First controlled 4-round compromised block post-Sydney; R1/R2 held flat, R3/R4 fell 25–28 sec — **limiter identified: quad/compromised-running durability, not raw speed or WB capacity.** Full context: `archive/2026/week_31_report.md` |
 | 2026-08-15 W33 SAT | Melbourne Phase I W2 | ~2:55 (norm.) | ~2:40 (norm.) | ~2:39 (norm.) | ~2:45 (norm.) | Block was Run+BBJ+WB (no sled) — BBJ fused into the corridor-retest block against the plan's explicit design to keep them separate. Only R1 near the 2:50–2:55 target; no fade R1→R4 (running not the limiter). Zero quad collapse, zero lower-leg signal. Corridor pace still not cleanly measured — 3rd week running. Full context: `archive/2026/week_33_report.md` |
+| 2026-08-22 W34 SAT | Melbourne Phase I W3 | Run1 ~4:46/km (GPS-contaminated ~1.29km/6:11) — Run2 ~4:53/km (GPS-contaminated ~1.26km/6:09), HR 155, cadence 178 | — | — | Not a designed corridor test this week (plan deliberately kept this session below the candidate compromised pace, "not a maximal test"). Both runs sandwiched a ~130m@30kg sandbag-lunge block, well beyond the planned 50–75m. GPS distance unreliable — mixed-activity recording. Running mechanics held (cadence 178) despite the much longer-than-planned lunge load between the two runs. Full context: `archive/2026/week_34_report.md` |
 
 ## Fresh 600m Repeats (Thursday — Quality, not compromised)
 
@@ -24,6 +25,7 @@
 |---|---|---|---|---|---|
 | 2026-08-06 W32 THU | Melbourne Phase I W2 | 2:42–2:50 | 4 of 5 completed (1st rep lost to watch fault) | 2:23 / 2:18 / 2:22 / 2:24 | **Ran 18–32 sec faster than the prescribed corridor** — pacing-discipline failure, not a fitness limit; 6 sec total spread shows excellent repeatability at the wrong target. Avg HR 149, peak ~166, well-organised recovery. Session stopped after 5 reps on a posteromedial distal-calf "string" signal (resolved 0/10 by Sat). Full context: `state/current_week.md` (W32 archive) |
 | 2026-08-13 W33 THU | Melbourne Phase I W2 | 2:53–3:05 (treadmill, target 2:55) | 5 of 5 completed (outdoor, not treadmill) | 2:24 / 2:28 / 2:22 / 2:28 / 2:27 | **Ran 25–43 sec faster than the prescribed corridor; the W32 structural fix (treadmill-enforced pace) was not applied** — session run outdoors. Avg 2:25.8, 6 sec spread, avg HR 146, zones Z4 8:01/Z5 1:31. Combined same evening with a full upper-body session + off-plan farmer carry. Corridor pace unmeasured for a 3rd consecutive week. Full context: `archive/2026/week_33_report.md` |
+| 2026-08-20 W34 THU | Melbourne Phase I W3 | 4:50–4:55/km (~2:54–2:57/600m, treadmill 12.3km/h) | 5 of 5 completed (outdoor, not treadmill — 3rd consecutive week) | 2:56 / 2:59 / 3:08 / 2:57 / 2:58 | **Ran essentially on the prescribed pace (unlike W32/W33's overspeed) but the treadmill mechanism itself still wasn't used.** Work HR only 127–136 bpm, nasal breathing throughout — the pace itself is now too easy for a quality stimulus. Rep 3's 3:08 was a pacing-control (GPS-oscillation) error, not fatigue. **Recalibration finding: fresh 600m quality target should move to ~4:20/km (2:36/rep)** — current prescription is stale. Full context: `archive/2026/week_34_report.md` |
 
 ---
 
@@ -64,6 +66,7 @@
 | 2026-05-01 | W18 FRI | 5.03 km | 29:17 | 5:49/km | 130 | Splits 5:43–5:54 |
 | 2026-05-08 | W19 FRI | 5.03 km | — | — | 123 | No Z3+ |
 | 2026-05-15 | W20 FRI | 5.04 km | — | 5:50/km | 127 | No Z3+; clean reset |
+| 2026-08-21 | W34 FRI | 9.06 km | 51:31 | 5:41/km | 135 | Plan called for 3.0–3.5km easy; actual was 2km easy + a genuine **5km steady work block at ~5:13/km (HR 136–148)** + 2km easy exit. Third day this week the written prescription was substantially exceeded. Positive engine signal (paces once costly now controlled), but not the "easy" day as written |
 
 ---
 
@@ -81,6 +84,7 @@
 | 2026-08-02 | W31 SUN | 8.02 km | 44:17 | 5:31/km | 142 | Nasal-breathing throughout, ran with reserve (~5:10/km felt available); planned as easy Z1–Z2 long run but zones ran hot (32min in Z3) — near-identical profile to Thursday's run, not yet a distinct easy long run |
 | 2026-08-10 | W33 MON | 6.03 km | 32:30 | 5:23/km | 140 | Progressive 6:01→4:51/km, finished in Z4 (155bpm); planned as easy (~5:30/km) but became a steady/upper-aerobic session. Posteromedial "string" recurred 1/10 post-run — first recurrence after 3 rest days |
 | 2026-08-16 | W33 SUN | 10.02 km | 51:53 | 5:10/km | 147 | Second half (km6–10) stable sub-5:00/km, 4:52→4:45; 25:33 in Z4. Nasal-breathing throughout with reserve at finish. Materially faster than the 5:30/km plan — same pacing-discipline pattern as the rest of W33. No lower-leg signal. W33 documented volume closes ~24.6km |
+| 2026-08-23 | W34 SUN | 5.03 km | 31:48 | 6:19/km | 124 | Plan called for 11km with a 5:20/km pace-alert ceiling; verbally revised in-session to 5–7km easy following Saturday's much larger-than-planned hybrid session — a defensible adaptive call, never written down beforehand. Genuinely progressive and controlled (6:59→5:53/km), HR stable 127–130 from km3, no late drift. W34 documented volume closes ~28.4km (running-only estimate; Saturday's segment distances are GPS-contaminated) |
 
 ---
 
