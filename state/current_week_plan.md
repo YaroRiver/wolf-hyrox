@@ -9,89 +9,95 @@ TIME ANCHOR
 - Countdown at Monday start: 109 days
 ```
 
-> **W35 mission (`reference/master_plan.md` §6):** Deload and calibration — measure, do not prove fitness. Volume reduction 25–35%. Fresh 5km controlled time trial or equivalent threshold benchmark. One current erg benchmark (SkiErg **or** Row, not both maximally). No maximal sled test. Running volume default 20–23km. **Gate 1** closes this week: reset training paces, establish the current clean threshold reference, confirm whether the 1:15 target remains on-track or stretch — write the gate verdict at Sunday close-out. Full detail and daily structure: `archive/2026/week_35_plan.md`.
+> **Adopted 2026-08-23** from the athlete's own draft (`HYROX_W35_FINAL_v3_2026-08-24_to_2026-08-30.md`), after comparison against two Claude-generated alternatives (a pure-deload draft, and a proposed acceleration pulling the heavy sled→run validation into this Saturday). The athlete's version resolves the tension better than either: it honors the master plan's "no maximal sled test" deload rule while still directly answering the stale-pace problem via a rigorous 5km negative-split benchmark and two properly separated, properly measured baselines. It also fixes W34's own two self-identified process failures (unmeasured lunge lane, contaminated Saturday hybrid chain). **One addition on adoption:** the athlete's draft didn't mention the W34 Tuesday cardiac event; physician contact is added back as an explicit precondition gating Thursday's and Saturday's benchmark sessions. Full plan: `archive/2026/week_35_plan.md`.
 
 ---
 
-## OPEN ITEM — HIGHEST PRIORITY
+## OPEN ITEM — HIGHEST PRIORITY, GATES THIS WEEK'S HARD SESSIONS
 
-**Tuesday 2026-08-18's cardiac event (brief skipped-beat sensations during post-exertion recovery) was not handled per the standing hard rule** — training continued to completion instead of stopping immediately, and no physician review is documented before any subsequent quality session. Per CLAUDE.md hard rule 13 and master-plan non-negotiable rule 9: physician contact **this week, before any hard session runs**. This sits above the performance plan below.
-
----
-
-## OTHER CARRYOVERS FROM W34
-
-1. BBJ untouched a full week since W33 reintroduction — one light controlled touch this week (Saturday).
-2. Thursday's treadmill-pace mechanism has failed 3 consecutive weeks — sidestepped this week via a single continuous 5km time trial (Gate 1 benchmark) instead of a paced interval set.
-3. Weighted pull-ups held their hard-stop rule cleanly for the first time (W34 Wed) — repeat the identical mechanism to confirm the pattern.
-4. Any future sandbag-lunge distance test must use a physically measured lane first (not required this week).
-5. Written-plan-vs-actual gap is five weeks running — this week's prescriptions are deliberately light; a deload week is the right context to actually hit them as written.
+**Physician contact regarding W34 Tuesday 2026-08-18's cardiac event has not been confirmed.** Contact GP/cardiologist Monday or Tuesday. **Thursday's 5km benchmark and Saturday's two benchmarks do not proceed until that contact is confirmed done** — postponed, not skipped, if it hasn't happened yet. Any new cardiac sensation this week = immediate stop, full stop, regardless of the plan.
 
 ---
 
-## FIXED CONSTRAINTS
+## HEADLINE VARIABLE
 
-1. Deload: total volume down 25–35% from W34 (~28km) → target band **20–23 km**.
-2. No maximal sled test this week — technique-only touches if included at all.
-3. One erg benchmark only, fresh: **SkiErg 1000m** (Row deferred).
-4. Thursday's 5km TT is the Gate 1 running benchmark — honest controlled effort, not a PR chase.
-5. BBJ: one controlled 2×20m touch, technique only.
-6. No new sandbag-lunge distance test — heavy DB lunges remain maintenance only.
-7. Any unusual cardiac sensation = immediate stop + physician contact before the next quality session. No exception.
-8. Any focal lower-leg sensation that changes mechanics ends impact work immediately.
+**Measure the clean engine first. Then Phase II measures what fatigue costs it.**
+
+Three benchmarks close Phase I: fresh controlled **5km running benchmark** (Thu), **1,000m SkiErg benchmark** (Sat), and a **fresh measured 100m Sandbag Lunge baseline @30kg** (Sat) — closing W34's unfinished lunge measurement. Still a deload: no hybrid gate, no 5×600 quality session, no threshold Sunday.
 
 ---
 
 # DAILY STRUCTURE
 
-## Monday 24 Aug — Recovery / Reset + Cardiac Follow-up
-Full rest. **Contact GP/cardiologist regarding Tuesday's episode today or tomorrow** — the week's actual priority action. Optional easy walk, light mobility, calf eccentrics if silent. Protect sleep. **Running:** 0 km.
+## Monday 24 Aug — Full Rest + Physician Contact
+**Contact GP/cardiologist regarding Tuesday's cardiac event — the day's actual priority.** No running, no strength. Optional 30–45min easy walk, light mobility. Check distal soleus/Achilles and VMO. Sleep priority. **Running: 0km.**
 
-## Tuesday 25 Aug — Lower Strength (reduced) + Sled Touch + WB Maintenance
-Leg Extension 55–60kg 3×15 · Leg Press 70–75kg 3×8 · BSS 20+20kg 3×8 ea · Heavy DB Lunges 28+28kg 2×25m (maintenance only) · Leg Curl 50kg 3×10 · Sled Push 210–220kg 3×20m technique touch · Sled Pull 190–200kg 3×20m technique touch · Wall Balls 25/25/25/25@9kg/45s, do not chase 6:18. **STOP:** any cardiac sensation, technique breakdown, focal lower-leg recurrence. **Running:** ~1.2 km.
+## Tuesday 25 Aug — Lower Deload + Sled Technique
+Warm-up 1.0–1.2km. Leg Extension 62kg 2×12 · Leg Press 80kg 2×8 · BSS 22.5+22.5kg 2×8 ea · Walking Lunges 28+28kg 1×30m · Leg Curl 54kg 2×10 — stop 2–3+ reps in reserve. Sled Push 232kg 2×20m/60s rest, no chase. Sled Pull 202kg 2×20m/2:00 rest, identical rope setup both sets — remove first-set penalty. WB 2×25@9kg/45s, technique only, no timing target. **Running: ~1.0–1.2km.**
 
-## Wednesday 26 Aug — Upper Strength + Farmer Carry (due) + Easy Aerobic
-Bench 75–78kg 3×6–8 · **Weighted Pull-ups +20kg, fixed pre-committed target (e.g. 5×3), hard stop, zero assisted/negative reps — repeat W34's mechanism exactly** · Weighted Dips +20kg 3×8 · One-arm DB Row 35kg 3×10 ea · Close-grip Lat Pulldown 47kg 3×10 · Weighted V-ups 20kg 3×15 · Farmer Carry 32+32kg×300m (due, 2×150m staged if any signal) · Easy aerobic 3.0km nasal Z1–Z2. **Running:** 3.0 km.
+## Wednesday 26 Aug — Upper Deload + Easy Run
+Bench 80kg 2×6 · **Weighted Pull-ups +20kg 2×5 clean, fixed pre-committed target, hard stop, zero assisted/negative reps — repeat W34's winning mechanism exactly** · Dips +20kg 2×8 · One-arm DB Row 35kg 2×10 ea · Close-grip Pulldown 47kg 2×10 · Weighted V-ups 20kg 2×12. No Farmer Carry this week (last touch 13 Aug — stretches to ~20 days, acceptable once, not twice running). Easy run 3km, HR 120–135, no pace test. **Running: 3km.**
 
-## Thursday 27 Aug — GATE 1 BENCHMARK: Fresh 5 km Time Trial
-Warm-up 1.5–2.0km easy + strides. **Main test: 5.0km continuous controlled hard effort (~90%)**, outdoors on a known flat loop (e.g. Albert Park lake loop) — sidesteps the failed treadmill-pacing mechanism by using a single continuous effort. Record time, km splits, HR, cadence, RPE. Cooldown 1.0–1.5km easy. **STOP:** any cardiac sensation, focal lower-leg sensation that changes mechanics. **Running:** ~7.5–8.5 km.
+## Thursday 27 Aug — GATE 1: 5km Controlled Negative-Split Benchmark
+**Gate condition: physician contact from Monday must be confirmed done first.** Warm-up 2km easy + 3×20s strides. **Benchmark rule: km1 must be the slowest km of the five; km5 must be faster than km1; no all-out final 200m** (a sprint finish invalidates the benchmark). Execution: km1 deliberately controlled → km2 settle → km3 build only if smooth → km4 hold/gently progress → km5 strongest controlled km, mechanically clean. Score: total time/avg pace (primary), negative-split size km1−km5 (secondary) — this prevents gaming the benchmark by jogging km1 artificially slow. Record: splits, HR/km, avg/peak HR, cadence, power, RPE, breathing, final-km mechanics. Cooldown 1km very easy. **Running: ~8km.**
 
-## Friday 28 Aug — Easy Engine
-**Green only:** 3.0km easy, nasal, Z1–low Z2. **Yellow:** full rest. **Running:** 3.0 km.
+## Friday 28 Aug — Full Rest + Lane Setup
+Full rest. **Mark and verify a 20m lane** for Saturday's lunge benchmark — no more post-hoc satellite estimates. No make-up work. Sleep priority. **Running: 0km.**
 
-## Saturday 29 Aug — Gate 1 Erg Benchmark + BBJ Touch
-10–15 min movement prep. **SkiErg 1000m — fresh, honest effort.** Full recovery. **BBJ 2×20m controlled, technique only** — stop on shortened jump length or calf/quad warning. Easy cooldown. **No sled today.** **Running:** minimal.
+## Saturday 29 Aug — Two Clean Baselines, Separated
+**Gate condition: physician contact from Monday must be confirmed done first.**
 
-## Sunday 30 Aug — Aerobic Close + Sunday Close-out + GATE 1 VERDICT
-7–8km easy, nasal, no finishing surge. At close-out, write the Gate 1 verdict: current clean threshold reference, SkiErg 1000m baseline, running-volume tolerance / calf response across the deload week, and whether 1:15:00 still reads on-track or stretch. Decides Phase I → Phase II (W36). **Running:** 7–8 km.
+**Session A — Fresh 100m Sandbag Lunge Baseline** (first, while lower body fresh): warm-up 8–10min easy walk/mobility + 6–8 unloaded lunges + 2–4 light loaded rehearsal steps. Benchmark: 100m Sandbag Lunges @30kg, measured 20m lane, 5×20m continuous if technique holds. Log: total time, 0–50m split, 50–100m split, each 20m split if practical, steps per 20m, burn-onset step, RPE, technique notes. **Stop:** any VMO pain/grab, focal knee pain, back pain, gait-changing lower-leg signal.
+
+**Minimum 3 hours separation** between benchmarks — normal food/fluids/easy movement in between. An 8–10min recovery after a hard SkiErg isn't truly fresh for a clean lunge baseline, and lunges immediately before SkiErg would contaminate the erg result.
+
+**Session B — SkiErg 1,000m Benchmark**: warm-up 8–10min easy + 3×10–15s progressive pulls. Benchmark: first 250m controlled, middle 500m hard sustainable, final 250m increase if technique holds. Log: total time, 250m splits if available, avg 500m split, stroke rate, avg/peak HR, RPE, technique notes. No Wall Balls after, no hybrid chain.
+
+*BBJ not scheduled this week — dormant a 2nd consecutive week since W33 Sat. Flagged for a repeat touch W36, not urgent enough to complicate this week's clean separation.*
+
+## Sunday 30 Aug — Easy Aerobic Close + Gate 1 Review
+Run 8km easy, ~5:45–6:15/km, HR 120–135, no finishing surge (reduce to 6–7km if Thu/Sat left unusual calf/soleus/VMO symptoms). **Gate 1 review at close-out:** 5km clean benchmark, fresh 100m lunge baseline, SkiErg 1,000m, lower-leg/VMO response, sleep/HRV trend, reset W36 run paces, decide whether the 4:25–4:35/km candidate compromised pace remains correctly placed, and confirm the physician follow-up on the cardiac event is closed (or carry it forward explicitly if not).
 
 ---
 
 # RUNNING VOLUME PLAN
 
-Mon 0 · Tue ~1.2 · Wed ~3.0 · Thu ~7.5–8.5 · Fri ~3.0 · Sat ~0 · Sun ~7–8
+Mon 0 · Tue ~1.0–1.2 · Wed 3 · Thu ~8 · Fri 0 · Sat 0 · Sun 8
 
-**Expected total: ~21.7–23.7 km** — inside the 20–23 km deload band.
+**Total: ~20–20.2km** (natural warm-up/cooldown variation may bring it to 21–22km) — inside the 20–23km deload band.
+
+---
+
+# WHAT MOVES TO W36+ (conditional on a clean Gate 1)
+
+- W36: 5×600 at the pace Gate 1 actually sets
+- W36/W37: measured 100m lunge → 1km compromised run, compared against Saturday's fresh baseline
+- W38: four-station simulation if drift data justify it
+- Transition rests progressively reduce as a formal progression variable
+
+*Note: this stages the lunge→run validation earlier than `reference/master_plan.md`'s original W43 slot — a legitimate acceleration, but conditional, not committed today. If W35's data supports it, log it as a formal master-plan amendment at that close-out, not quietly.*
 
 ---
 
 # W35 PASS / FAIL
 
-- [ ] Physician contact made regarding Tuesday's cardiac event, before any hard session
-- [ ] Monday executed as recovery/reset
-- [ ] Tuesday strength held at reduced deload volumes, no load chase
-- [ ] Farmer Carry reintroduced cleanly Wednesday
-- [ ] Wednesday pull-ups: fixed target hit again, zero assisted/negative reps (2nd consecutive clean week)
-- [ ] Thursday 5km TT completed as an honest, controlled effort
-- [ ] Saturday SkiErg 1000m completed fresh, honestly
-- [ ] BBJ 2×20m touch completed, no collapse
-- [ ] Sunday aerobic close completed within the pace-alert band
-- [ ] Weekly running volume lands inside 20–23 km
-- [ ] No cardiac sensation this week; if one occurs, session stops immediately and is reported same day
-- [ ] Gate 1 verdict written at Sunday close-out
+- [ ] Physician contact made regarding the W34 Tue cardiac event — before Thursday's or Saturday's benchmarks
+- [ ] Monday full rest
+- [ ] Tuesday loads held, volume cut
+- [ ] First Sled Pull setup standardised
+- [ ] Thursday 5km benchmark valid — km1 slowest, km5 faster, no final-200m sprint
+- [ ] Friday 20m lane physically marked
+- [ ] Saturday fresh 100m lunge baseline measured
+- [ ] Saturday SkiErg 1,000m benchmark measured
+- [ ] At least 3h separation between Saturday benchmarks
+- [ ] Weekly running ~20–23km
+- [ ] VMO quiet
+- [ ] Distal soleus/lower leg quiet
+- [ ] W36 paces derived from Gate 1
+- [ ] No cardiac sensation this week; if one occurs, immediate stop, reported same day
 
 ---
 
 # WORKING PRINCIPLE — W35
 
-> **Measure, don't prove. The number that matters this week is the clean one, not the impressive one — and the cardiac follow-up outranks every number on this page.**
+> **Measure the clean engine. Measure the clean lunge. Then Phase II measures what fatigue costs both. Cardiac clearance comes before any of it.**
