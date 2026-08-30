@@ -102,6 +102,30 @@ Athlete drafted a full checkup request to his GP, to be actioned as part of Phas
 
 **Standing coaching rule, restated:** prior clearance (normal stress echo, normal Holter) is reassuring context, not a substitute for stopping on a new symptom. **Physician contact is required before the next quality session** — this is carried into `state/limiters_now.md` and the W35 weekly plan as the week's top-priority open item, ahead of any performance content.
 
+## Cardiac Workup Closed — Athlete-Directed Policy Change (2026-08-30, W35 close-out)
+
+**Full workup completed:** treadmill exercise test, stress echocardiogram (2026-07-27), and Holter monitor (2026-07-16) — all three normal, physician-reviewed. Athlete reports paying for this workup directly and receiving a clear "nothing found" from the cardiologist, with the isolated skipped-beat sensations characterized as benign and consistent with the athlete's general pattern (recurrent, previously discussed, not escalating).
+
+**Athlete decision (explicit, repeated, final — not open for renegotiation on this basis):** isolated skipped-beat/ectopic sensations, on their own, no longer trigger an automatic training stop or a mandatory physician-contact requirement. The athlete has made an informed decision to continue training through isolated episodes given the completed clearance. CLAUDE.md hard rule 13 updated accordingly (2026-08-30).
+
+**What still triggers an immediate stop (athlete's own stated criteria, unchanged):**
+- Dizziness
+- Limb numbness or weakness
+- Chest pain
+- Shortness of breath
+- Any sensation that escalates beyond a brief isolated skip
+
+**What still triggers a physician visit (athlete's own stated criteria):**
+- Symptoms recur with distress, not just isolated
+- Episodes wake the athlete at night
+- Episodes begin to affect daily life or training capacity
+
+A single isolated episode, absent the above, is now logged here (date, time, training/recovery context, HR if known) for the ongoing medical record — not escalated as a standing open item.
+
+**W34 Tuesday event (2026-08-18) — retrospectively closed under this policy.** Training continued through that episode; per the policy above and the now-completed workup, this is not treated as an outstanding open item. No physician contact was made specifically in response to that single event, and per athlete direction, none is required.
+
+---
+
 **Night-HR flag — a distinct, still-open signal (added 2026-08-02).** The stress echo characterizes exercise-induced cardiac response; it says nothing new about resting/nocturnal rhythm beyond what the Holter already covered. The W13 (May) jolt episode co-occurred with sleeping HR in the ~42–43 bpm range; a separate, related band to watch is ~48–50 bpm across several consecutive nights. If sleeping HR trends into that band as training load rises through the Melbourne build, that is an independent trigger to contact the GP/cardiologist directly — not something the stress-echo result overrides or a coaching decision to make alone. See `reference/master_plan.md` §11 and `trackers/readiness_trend.md` for ongoing tracking.
 
 **Bloods (verified from pathology report, collected 2026-07-11, referred by Dr Ilona Jakab):**
@@ -133,10 +157,9 @@ Athlete drafted a full checkup request to his GP, to be actioned as part of Phas
 
 **Pattern detail clarified (athlete, 2026-07-05) — resting HR correlation:** the "jolt" sensations (skipped-beat feeling) began during a period of heavy training volume + work load, coinciding with VO₂max testing, when resting heart rate dropped to roughly **42–43 bpm**. Athlete was frightened by this. By contrast, during the post-vaccine illness period, resting HR rose to around **64 bpm** (elevated from athletic baseline) and, per the athlete's own account, **zero jolt episodes occurred** for the entire duration of that higher-resting-HR illness window. Pattern as reported: lower resting HR (deep athletic bradycardia, ~42–43) correlates with jolt episodes; higher resting HR (~64, illness-elevated) correlates with none. Flagged explicitly for the GP/cardiac referral (see "Planned GP Checkup" above) — this is exactly the kind of pattern a resting ECG/Holter or stress test is meant to characterize (e.g. bradycardia-associated ectopy is a recognized, often benign finding in endurance athletes, but should not be assumed without the actual test).
 
-**Coaching rules:**
-- Mention to physician before race for clearance (flagged in W13 assessment)
-- If any palpitation sensation returns → immediate session abort, walk-only recovery, no return to quality until clean
-- HRV pattern monitoring also serves as cardiac watch
+**Coaching rules (superseded 2026-08-30 — see "Cardiac Workup Closed" above for the current policy):**
+- ~~If any palpitation sensation returns → immediate session abort~~ — superseded; isolated episodes are now logged, not auto-aborted, following the completed treadmill/echo/Holter workup.
+- HRV pattern monitoring still serves as a general cardiac watch (unchanged).
 
 ---
 

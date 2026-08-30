@@ -193,7 +193,7 @@ These are read on demand:
 10. **If data is missing: state "Data not provided".** Never invent loads, times, dates, reps, sleep values, HRV, or subjective feedback.
 11. **One probe per session, default Saturday.** Multi-axis probes lose diagnostic value.
 12. **Decision hierarchy:** Sleep first, HRV second, quality third, ego last.
-13. **Cardiac signal:** any palpitation = immediate abort. No exception.
+13. **Cardiac signal (revised 2026-08-30, athlete-directed, full cardiac workup complete):** athlete has completed treadmill test, stress echocardiogram, and Holter monitor — all normal, physician-reviewed. Isolated brief skipped-beat/ectopic sensations, with no other symptom, are logged (date, time, load/rest context, HR) in `reference/medical.md` and training continues — not an automatic abort. **Hard abort triggers (unchanged, no exception):** dizziness, limb numbness/weakness, chest pain, shortness of breath, or any escalation beyond a brief isolated sensation. **Physician contact trigger:** symptoms recur with distress, wake the athlete at night, or begin to affect daily life or training — not a single isolated episode. Prior version of this rule (any palpitation = immediate abort, no exception) is superseded by athlete instruction; see `reference/medical.md` W35 entry for full context.
 14. **Calf rating ≥ 4/10:** Red day. No high-impact session.
 
 ---
