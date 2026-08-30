@@ -85,6 +85,27 @@
 | 2026-08-10 | W33 MON | 6.03 km | 32:30 | 5:23/km | 140 | Progressive 6:01→4:51/km, finished in Z4 (155bpm); planned as easy (~5:30/km) but became a steady/upper-aerobic session. Posteromedial "string" recurred 1/10 post-run — first recurrence after 3 rest days |
 | 2026-08-16 | W33 SUN | 10.02 km | 51:53 | 5:10/km | 147 | Second half (km6–10) stable sub-5:00/km, 4:52→4:45; 25:33 in Z4. Nasal-breathing throughout with reserve at finish. Materially faster than the 5:30/km plan — same pacing-discipline pattern as the rest of W33. No lower-leg signal. W33 documented volume closes ~24.6km |
 | 2026-08-23 | W34 SUN | 5.03 km | 31:48 | 6:19/km | 124 | Plan called for 11km with a 5:20/km pace-alert ceiling; verbally revised in-session to 5–7km easy following Saturday's much larger-than-planned hybrid session — a defensible adaptive call, never written down beforehand. Genuinely progressive and controlled (6:59→5:53/km), HR stable 127–130 from km3, no late drift. W34 documented volume closes ~28.4km (running-only estimate; Saturday's segment distances are GPS-contaminated) |
+| 2026-08-30 | W35 SUN | 8.03 km | 47:38 | 5:56/km | 131 | Splits 5:58/5:59/6:07/6:03/6:02/5:45/5:50/5:35 — final 3km progressed materially while HR stayed fixed at 136 (good aerobic control), but this was a protocol deviation (prescription was "no finishing surge"). Late bedtime, poor subjective sleep, GI bloating from high pre-run food intake. Closes W35 running volume. |
+
+---
+
+## W35 Gate 1 — Clean 5km Controlled Negative-Split Benchmark
+
+**Objective (Master Plan v2.3):** establish a clean, reproducible fresh-running baseline to replace the stale/failed corridor-test approach used W32–W34, and to set the reference point for all future compromised-running comparisons.
+
+| Date | Week | Distance | Recorded time | Apple 5K time | Avg pace | Avg HR | km1 | km2 | km3 | km4 | km5 | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-27 | W35 THU | 5.02 km | 22:39 | **22:23** | 4:30/km | 152 | 4:46 @136bpm | 4:37 @146bpm | 4:29 @154bpm | 4:19 @160bpm | 4:15 @164bpm | **PASS — Gate 1 valid.** Every km faster than the last (31s total negative split), no sprint finish, reserve reported (~1km fast or ~3km slower). Avg cadence 178, avg power 331W. HR distribution Z3 8:02/Z4 9:41/Z5 3:30. This is a controlled clean baseline, not an all-out 5km ceiling. |
+
+**Working fresh range implied:** ~4:15–4:25/km (upper end). Candidate compromised-pace corridor (unvalidated, carried from W33): 4:25–4:35/km. Full context: `archive/2026/week_35_report.md`.
+
+## W35 Warm-up / Easy Support Runs
+
+| Date | Week | Distance | Time | Avg Pace | Avg HR | Notes |
+|---|---|---|---|---|---|---|
+| 2026-08-25 | W35 TUE | 1.02 km | 6:04 | 5:55/km | 127 | Warm-up before lower strength + sled session |
+| 2026-08-26 | W35 WED | 3.02 km | 19:16 | 6:23/km | 126 | Indoor, easy deload run day before Gate 1. Splits 6:47/6:06/6:03 — HR stabilized at 129bpm km2–3, pace improved slightly without added HR cost. Clean, no hidden tempo. |
+| 2026-08-27 | W35 THU | 2.02 km | 12:01 | 5:56/km | 126 | Warm-up before Gate 1 benchmark. |
 
 ---
 

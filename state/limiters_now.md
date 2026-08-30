@@ -2,100 +2,81 @@
 
 > **High-frequency file. Updated whenever active limiter or risk changes. Overwrite, do not append.**
 
-**Last updated:** 2026-08-23 (Sunday — W34 close-out: **new top-priority open item — Tuesday cardiac event mishandled, physician contact required before next quality session**; pull-up hard rule held clean for the first time in 4 weeks; lower-leg "string" fully resolved; BBJ untouched all week; corridor test deliberately not attempted this week, by design)
+**Last updated:** 2026-08-30 (Sunday — W35/Gate 1 close-out: **cardiac item fully closed, athlete-directed policy change**; Master Plan v2.3 formally adopted; primary limiter hierarchy reframed around v2.3's confirmed-limiter vs high-priority-unknown split; written-plan-vs-actual gap retired as a tracked risk, per athlete direction)
 
 ---
 
-## OPEN — Cardiac event, W34 Tuesday 2026-08-18 (highest priority, not yet closed)
+## RESOLVED — Cardiac workup complete, standing policy changed (2026-08-30)
 
-**During post-exertion recovery** (sitting, HR falling toward ~90bpm after a heavy lower-body/sled/WB session), the athlete reported a few brief "skipped beat" sensations — no shortness of breath, dizziness, or chest pain, resolved spontaneously in seconds. **Training continued to completion instead of stopping immediately.** This breaches CLAUDE.md hard rule 13 ("any palpitation = immediate abort, no exception") and master-plan non-negotiable rule 9 ("physician review before next quality session") — neither was followed, and no physician contact is documented before Wednesday, Thursday, or Saturday's subsequent quality sessions. Full detail: `reference/medical.md`.
+**Full workup done:** treadmill exercise test + stress echocardiogram (2026-07-27) + Holter monitor (2026-07-16) — all three normal, physician-reviewed. Athlete reports a clear "nothing found" from the cardiologist and has made an informed, explicit, final decision: isolated skipped-beat/ectopic sensations no longer trigger an automatic stop or a mandatory physician-contact requirement. CLAUDE.md hard rule 13 updated accordingly (2026-08-30). Full detail and the athlete's own escalation criteria (dizziness/limb symptoms/chest pain/shortness of breath = still an immediate stop; distressing recurrence, night waking, or life/training impact = still a doctor visit): `reference/medical.md`.
 
-**This sits above every performance item below per the standing decision hierarchy (cardiac → cramp/calf → sleep → HRV → calves → body feel → athlete intent).** Required action: physician contact this week, before any hard session in W35. Not to be treated as resolved by the fact that the rest of the week's training landed without further symptoms.
-
----
-
-## RESOLVED — Cardiac clearance (2026-08-02)
-
-**Stress echocardiogram result: normal** (athlete-reported, test done 2026-07-27). Holter (2026-07-16) also normal. Both legs of the cardiac workup are clear. The restriction on maximal-effort work held since W28 is lifted. Full detail: `reference/medical.md`.
-
-**This does not touch the permanent rule:** any jolt/palpitation sensation → immediate abort, no exception, regardless of test results. **W34 Tuesday is the practical test of that rule, and it wasn't followed — see the OPEN item above.**
+**W34 Tuesday event (2026-08-18)** is retrospectively closed under this policy — no further action required. This item is no longer tracked as an open risk.
 
 ---
 
-## PRIMARY LIMITER
+## MASTER PLAN v2.3 — ADOPTED 2026-08-30
 
-### Compromised-running / quad durability under repeated station fatigue
-- **Status:** Confirmed by two independent sources in the same week (W31). Saturday 2026-08-01's 4-round block (600m run / 252kg sled / 25 WB) showed R1/R2 holding 2:42 flat, then R3/R4 falling to 3:07/3:10 — a clean 25–28 sec fade once the quads were loaded, while sled (11 sec drift) and WB (2 sec drift) barely moved. The athlete's own self-authored progress framework (`08_HYROX_Melbourne_Progress_Framework_W31_Forward.md`) reaches the identical conclusion independently.
-- **W32 update (2026-08-09):** the planned direct test (controlled 2:42–2:50 corridor, repeated under Saturday fatigue) **did not run**. Thursday's rehearsal ran 2:18–2:24 instead — a pacing-discipline miss, not new fitness data — and Saturday's actual compromised block was withheld for unrelated recovery reasons. The limiter is unchanged in ranking but **untested this week**. W33 carries the corridor test forward with a treadmill enforcing the pace mechanically, since the written instruction alone has now been overridden twice (W32 Thu, and structurally the same pattern as other W32 load deviations).
-- **W33 update (2026-08-16):** the structural fix itself failed to run. Thursday's quality session went outdoors instead of the prescribed treadmill (2:22–2:28 vs the 2:53–3:05 target, 25–43s too fast). Saturday's corridor retest happened, but with BBJ fused into the block against the plan's own explicit design to keep the corridor test isolated — the diagnostic is contaminated as well as off-pace (normalised 2:55/2:40/2:39/2:45, only R1 near target). **The compromised-run corridor objective is now unmeasured for a 3rd consecutive week (W31→W32→W33).** Separately, what data does exist this week argues the *quad-durability* half of the limiter is improving, not worsening: zero quad collapse under Saturday's real accumulated hybrid fatigue (4 rounds of run+BBJ+WB). The open question is increasingly **pacing discipline itself**, not raw quad capacity — the athlete cannot yet execute a written pace under any fatigue state, fresh or compromised, mechanical enforcement included.
-- **Reframed 2026-08-15 (athlete's own master-plan amendment, `reference/master_plan.md`):** rather than reading every over-pace run as pure discipline failure, the athlete used W33 Sat's actual data (~2:39–2:55/600m ≈ 4:25–4:35/km under light-to-moderate hybrid fatigue) to set a **provisional candidate compromised race pace of 4:25–4:35/km** — faster than the original corridor's implied ~4:43–4:52/km. Explicitly unvalidated until it survives (1) heavy sled → 800m–1km run and (2) 100m race-load sandbag lunge → 1km run, both formally staged for Phase II/III (W39, W43 respectively). This does not erase the execution-discipline findings below (treadmill not used, BBJ fused into a diagnostic block) — those remain real — but it means the pace numbers themselves are no longer simply "wrong."
-- **Why this matters:** this is not a strength problem (sled) or a WB problem (both already exceed race requirement) — it's local muscular endurance under cumulative fatigue, the exact quality HYROX punishes and the exact quality no single-station test can surface. It is also now clearly entangled with a distinct, unresolved pacing-discipline problem (see tertiary watch items) that is actively preventing the primary limiter from ever being cleanly measured against whichever pace target is current.
-- **Coaching rule:** this is now the dominant development priority per `reference/master_plan.md` §2 (development priority order: running first, then WB density, then quad durability/lunges, then BBJ, then sled pull, then sled push, then farmer carry).
-- **W34 update (2026-08-23):** unlike W31→W33, the corridor test was **deliberately not attempted this week, by design** — the W34 plan intentionally kept Saturday's run below the candidate compromised pace to isolate the new sandbag-lunge variable, and Thursday tested fresh-state pace control rather than compromised running. The corridor objective remains formally unvalidated, but this week's non-measurement is a plan choice, not another discipline failure. Separately, Saturday produced a real positive data point on the *quad-durability* half of this limiter: zero quad collapse under a lunge exposure (~130m@30kg) well beyond race distance, immediately followed by a compromised run and 100 Wall Balls. Thursday also produced a genuine recalibration: fresh 600m pace at 4:50–5:00/km is now too easy (HR only 127–136), so the useful next fresh-quality target is closer to 4:20/km — the running engine keeps outpacing the written prescriptions used to test it. W35 (Gate 1) replaces the corridor-retest approach entirely for one week with a single honest 5km time trial, sidestepping the treadmill-mechanism failure rather than repeating it a 4th time.
+Formally replaces the prior macrocycle. Full document: `reference/master_plan.md`. Limiter hierarchy below is reframed to match v2.3's own vocabulary (confirmed limiter vs high-priority unknown vs race-execution task vs race-status limiter), not a fresh coaching judgment layered on top of it.
 
 ---
 
-## SECONDARY LIMITER
+## CONFIRMED LIMITER 1 — Compromised-run repeatability
 
-### Sleep timing / bedtime discipline
-- **Status:** Long-standing pattern (CLAUDE.md), still active. W31 Thursday (2026-07-30) is the clearest recent case: SleepWatch recorded an acceptable 7h55, but the athlete reported the night felt very poor and described himself as "physically broken" through the morning — only reversed by an unplanned second sleep block before the evening run. Subjective state overriding decent recorded numbers happened twice this week (Wed, Thu) — trust the subjective read over the dashboard when they disagree, consistent with the standing decision hierarchy.
-- **7-day rhythm improved to 80% by Sunday** (from the 53–60% seen across W29) — directionally better, not yet resolved.
-- **W32 update (2026-08-09):** rhythm fell back to 56% by Sunday close (from 81% at W31's peak). Sleep onset met the ≤21:45 target on only ~2 of 4 known nights this week (Tue 21:25 ✓, Wed 21:55 ✗, Thu 21:45 borderline, Sun 23:00 ✗). A real regression, not a data gap — still the standing secondary limiter.
+**Status:** unchanged as the dominant race-performance question since W31 (2026-08-01). W35 did not retest this directly (Gate 1 was a clean/fresh 5km, not a compromised test) — it instead reset the fresh baseline that all future compromised comparisons will be measured against: **22:23 clean 5km, splits 4:46/4:37/4:29/4:19/4:15, negative split, reserve remaining.** W36 Saturday (lunge → 1km) is the next direct data point.
+
+## CONFIRMED LIMITER 2 — Lunge second-half durability
+
+**Status:** newly confirmed and precisely measured, W35 Sat (2026-08-29). Fresh 100m @30kg = **3:50.24** (0–50m 1:39.54 / 50–100m 2:10.70), second-half drift **+31.16s / ~31%**. Capacity is not the issue — completing the distance is easy — the issue is pace decay in the second half. W34's satellite-estimated lunge distance (~121–130m) is corrected to a tape-measured **140m**; the earlier estimate is invalid and should not be used in analysis. Development target: reduce drift toward ≤20%, then ≤15%, without chasing a faster first 50m (W43).
+
+## HIGH-PRIORITY UNKNOWN — BBJ 80m total clock + post-BBJ run cost
+
+**Status:** not yet a confirmed limiter — no formal continuous 80m Men Pro benchmark exists yet. Structurally capable of becoming race-defining (station time + next-km penalty). W37 is the measurement gate: Tuesday 2×40m pacing diagnostic → Saturday 80m continuous + 1km cost. Result determines whether this gets promoted to a confirmed limiter.
+
+## CONFIRMED LIMITER 3 — Sled-pull first-set efficiency at heavy load; race-load status unknown
+
+**Status:** first-set penalty confirmed at 202kg training load (W35 Tue: 67s/61s, 2:00 rest) — but 202kg is ~32% above the actual Men Pro race load of **153kg**. Not yet proven the same penalty exists at race load. W38 tests both loads paired, same session, before classifying this as race-specific.
+
+## RACE-EXECUTION TASK — Wall Ball late-race clock protection
+
+**Status:** W35 Tue accidentally produced a full valid race-volume clock: 4×25@9kg/30s rest = 60/57/58/61s work (236s) + 90s rest = **5:26 total clock**. 1:34 faster than the Sydney race reference (7:00), only 26s outside the 5:00 A-target. Task: protect ~5:26 under Station-8 fatigue, then reduce without raising no-rep risk.
+
+## RACE-STATUS LIMITER — Navigation / course-execution
+
+**Status:** unresolved, zero-score risk (Sydney DQ precedent). **Active deadline: by Tuesday 1 Sep 2026, request provisional work flexibility/leave for the first race-week venue-access opportunity** — this is two days out from this update. See `STATE.md` calendar for the explicit tracked line. Execution (the actual course walk) happens in W50, timed relative to the confirmed wave, not fixed to a calendar date.
 
 ---
 
-## TERTIARY WATCH ITEMS
+## RETIRED AS A TRACKED RISK (2026-08-30, athlete direction) — Written-plan-vs-actual gap
 
-### Heavy-leg-day accumulation (new, 2026-08-02)
-- Tuesday W31 was a heavy lower-body day (sled, BSS, walking lunges, leg press). Wednesday stacked Farmer Carry — a heavy grip/quad-loaded station — directly against it with only one night of recovery, and produced the week's one real red flag: a quadriceps cramp during the final 100m of the carry (resolved ~3 min, no recurrence) plus a weighted-pull-up set that trended toward failure against an explicit "stop 2 shy" cue.
-- **Coaching rule going forward:** build a rest day, or a genuinely upper-only day, between heavy-leg work and farmer carry. This is a scheduling fix, not a capacity problem — both stations are individually strong.
+Previously tracked as an escalating risk across W30–W35 (nearly every week, a written prescription was exceeded, replaced, or restructured same-day). **Athlete has explicitly clarified this is his intended training method, not a compliance failure:** he pushes by feel, treats written targets as floors rather than ceilings, and states directly that imposing limits on him would produce breach after breach rather than adherence — the body responds to push, and growth requires it. This is consistent with the standing self-directed-overload pattern already on record. No further compliance mechanism will be proposed against this pattern. Master Plan v2.3 §3.5's outcome-target prescription rule (write targets to hit or exceed, not ceilings to avoid) is the operative structure going forward — not a behavioral fix layered on top of it.
 
-### Posteromedial distal-calf "string" signal — RESOLVED (2026-08-23)
-- A local pulling/"tight cord" sensation appeared during Thursday W32's over-fast 600m repeats (above the heel, below the calf belly, inner-back lower leg — outside the main Achilles line), ending the quality block one rep early. No swelling, bruising, deformity, or point tenderness at any point; no escalation on 10 bilateral calf raises; weight-bearing and walking preserved throughout. Resolved to 0/10 by Saturday W32, no recurrence Sunday.
-- **W33 update:** recurred once more, Monday 2026-08-10, ~1/10 post-run, after three full rest days — then stayed silent (0/10) through every harder session that followed. Trending toward resolved rather than escalating.
-- **W34 update:** **zero recurrence for the entire week** — the first fully clean week on this signal since it first appeared in W32, including through the heaviest lunge/quad load of the build to date (Saturday's ~130m@30kg sandbag block). Downgraded to resolved. Coaching rule remains standing background knowledge, not an active watch: any recurrence of this specific sensation ends the session immediately.
+---
 
-### Weighted pull-up hard rule — RESOLVED (2026-08-19, pending a second confirmation week)
-- Weighted pull-ups drifted past the written "stop 2 shy of failure" cue into assisted-negative territory on both work sets, W31 Wed and W32 Wed. W33 replaced the cue with an explicit hard rule (no assisted/negative reps, stop at 1–3 reps in reserve) — broken again W33 Thu.
-- **W34 update:** the cue was escalated further into a **fixed pre-committed rep target with a hard stop** (decide the number before set 1, stop there regardless of feel) — **Wednesday 2026-08-19: +20kg, 5/5/5, 15 clean reps, zero assisted/negative reps.** First clean success after three consecutive weeks of breach.
-- **Status:** resolved, but one clean week is a result, not yet a proven pattern. W35 repeats the identical mechanism (same fixed-target/hard-stop structure) to confirm it holds under a second, independent week before being called durable.
+## VO2max — reopened as a live tracked number (2026-08-30)
 
-### BBJ dormancy risk (new, 2026-08-23)
-- BBJ was successfully reintroduced W33 Sat (2026-08-15) after a 7-week gap, with zero quad collapse — the week's headline win. **W34's written 2×20m maintenance touch (Saturday) never happened — BBJ went untouched the entire week.**
-- **Coaching rule going forward:** one exposure followed immediately by a full dormant week risks losing the reintroduction's momentum before it becomes a stable pattern. W35 schedules a light, technique-only touch (Saturday, alongside the SkiErg benchmark) to keep the movement live without turning it into another fitness test during a deload week.
+**Current value: 53 ml/kg/min** (Apple Watch estimate, athlete-reported 2026-08-30), down from the 58 ml/kg/min PR (2026-05-18), attributed to the illness/interruption stretch spanning roughly W22–W34. Trending back up but not yet retested at peak. A real lab VO2max test is aspirational — athlete interest confirmed, cost/availability undecided, no fixed date. Tracked in `reference/records.md`/`STATE.md`; dropped from Master Plan v2.3's own KPI dashboard (§17) but restored here operationally per the plan's adoption note.
 
-### Written-plan-vs-actual gap (carried forward from W30, ongoing — now five weeks running)
-- Three of seven W31 days (Wed partial, Thu, Sat) ran a materially different session than the one written, continuing the pattern flagged in W30. W32 repeated the pattern (Thu run pace, Sat block withheld). W33 repeated it again (BBJ/corridor fusion, treadmill not used, off-plan farmer carry). **W34 repeated it a 5th time, in both directions:** Tuesday's lunges/sled/pull all ran above plan; Wednesday's easy run was skipped; Thursday ignored the treadmill for a 3rd straight week; Friday nearly tripled its written distance with an inserted work block; Saturday's entire headline session changed scope, load, and distance same-day without being written down first (and its key distances were never physically measured); Sunday's distance was cut by more than half (11km→5.03km) on a verbal, unrecorded revision. Not an acute risk on its own, but a structural pattern now spanning five consecutive weeks regardless of whether any individual week's outcome was good or bad.
+---
 
-### Acute illness flare — resolved, with a residual tail into W34 (downgraded from "fully resolved" 2026-08-23)
-- Onset mid-session Tuesday 2026-08-11 (yawning, marked sleepiness, "flat" feeling despite strong morning readiness numbers), followed by yellow nasal mucus, mild gland/lymph-node tenderness, foggy feeling, no confirmed fever (~36.7–37.0°C). Wednesday taken as full rest. By Thursday, energy had returned fully — strong run, strong upper-body session, no post-session crash. No recurrence Friday–Sunday W33.
-- **W34 update:** residual respiratory/cold-like symptoms (phlegm, altered voice, nasal symptoms) persisted into Wednesday 2026-08-19, alongside a need for two daytime naps despite strong HRV — the "resolved within 48h" call at W33 close-out was too clean. **More accurately: resolved as an acute flare, with a residual tail that took roughly a week longer to fully clear.** No further recurrence reported after Wednesday W34.
-- **Coaching note for future reference:** the combination of repeated yawning + severe sleepiness against otherwise-normal or strong morning readiness numbers was, in hindsight, an early illness signal rather than simple fatigue or low motivation. Worth treating that specific combination as a stronger stop signal next time it appears mid-session, rather than pushing through on the strength of good morning data alone. Also worth not declaring a respiratory flare fully closed the moment training resumes normally — the residual tail here outlasted the training-capacity recovery by several days.
+## TERTIARY WATCH ITEMS (carried forward, still active)
 
-### Respiratory/sinus illness (chronic baseline) — resolved as an acute pattern
-- No symptoms reported since early W29 outside the discrete Tue–Wed W33 flare above (tracked separately, resolved). Chronic baseline congestion/mucus remains present most days and is treated as normal per Gate Zero, not a training stop on its own.
+### BBJ dormancy — still open going into W36
+Reintroduced W33 Sat with zero quad collapse, then untouched the entirety of W34 and W35 (no BBJ session either week). Now folded into Master Plan v2.3's own W37 measurement-gate structure (Tuesday 2×40m, Saturday 80m) — the dormancy risk is effectively superseded by the plan's own reintroduction ladder starting W37. No separate action needed before then.
 
-### Calf / Achilles / adductor — data gap closed
-- Explicit rating resumed: ~1/10 pre-session Saturday, 0/10 post; 0/10 confirmed Sunday. No escalation despite a genuinely heavy week (252kg sled, loaded lunges, farmer carry, 200 WB reps). Existing hard rules remain active (0–2/10 Green, 2.5–3.5/10 Yellow, ≥4/10 or night cramp Red) — keep rating daily, but this is no longer an open data gap.
-
-### Navigation-under-fatigue — corrected 2026-08-02: two distinct failure modes, only one addressed so far
-- Saturday's 4-round compromised block held zero navigation errors with continuous loop-counting under real accumulated fatigue — real evidence the counting/attention habit holds under load.
-- **Correction (athlete, 2026-08-02):** the Sydney DQ was not a counting failure — all laps were counted correctly. The actual failure was running the habitual path on Run 8 despite a course-specific briefing instruction (immediate right turn) that differed from the pattern used on the prior seven runs — an autopilot/habit-override failure under fatigue. Melbourne 2025's penalty was the counting-type failure (panicked, forgot to re-enter a loop) — a different mechanism.
-- **Practical read:** the counting drill (kept permanent, cheap, real value) addresses the Melbourne-2025 mechanism. It does not and cannot address the Sydney mechanism — no training-room drill replicates a spread-out, multi-station venue with course-specific turn instructions. **The load-bearing fix is an in-person course walk/recon before race day** — this remains untested/unavailable until real venue access closer to race week. Keep flagged as an open item, not resolved.
+### Sleep timing / bedtime discipline — long-standing, still active
+7-day sleep rhythm across W35: Wed 60%, Fri 53%, Sat ~51% — unchanged from the low-to-mid-50s% band that has persisted for months. Friday's own W35 report flagged this directly: "the main thing to improve is sleep timing consistency, not sleep volume." Volume was generally strong this week (7h45–10h40 nightly); timing consistency remains the open problem. This is unrelated to the written-plan-vs-actual item above and is not retired — it remains a standing limiter per CLAUDE.md's sleep reminder protocol.
 
 ### Medical follow-ups (non-urgent, raise with GP)
-- Lipids elevated: total cholesterol 5.7, LDL 3.9, chol/HDL ratio 4.8, non-HDL 4.5 (all above the lab's own high-risk targets).
-- Glucose discordance: same-draw serum glucose 6.3 (H) vs plasma glucose 5.0 (normal), against an excellent HbA1c 4.9% — likely artifact, not flagged in the athlete's own report, worth mentioning to the GP directly.
+- Lipids elevated: total cholesterol 5.7, LDL 3.9, chol/HDL ratio 4.8, non-HDL 4.5.
+- Glucose discordance: same-draw serum glucose 6.3 (H) vs plasma glucose 5.0 (normal), against excellent HbA1c 4.9% — likely artifact, still worth a direct GP mention.
 
 ---
 
 ## NOT LIMITERS (currently)
 
-- **Cardiac:** cleared (see RESOLVED above). Permanent abort rule unchanged.
-- **B12/anaemia:** bloods clean, B12 mildly high (supplementation-consistent), no anaemia.
-- **Thyroid, liver, inflammation (CRP/ESR):** all normal.
-- **Vitamin D, folate:** strong.
-- **Sled push/pull, WB capacity, Farmer Carry:** all proven well past race requirement — sled and WB reconfirmed again this week under real compromised fatigue, Farmer Carry proven at 300m/2:46. Maintenance stations only, per `reference/master_plan.md` §2/§9.
+- **Cardiac:** workup complete, closed as a standing open item (see above). Athlete's own escalation criteria remain the real safety floor.
+- **B12/anaemia, thyroid, liver, inflammation:** all clean per July bloods.
+- **Sled push, Farmer Carry, SkiErg, WB capacity:** all proven at or beyond race requirement — maintenance stations only, per Master Plan v2.3 §11.
 
 ---
 
@@ -103,7 +84,7 @@
 
 This file updates when:
 1. New limiter identified
-2. Previous limiter resolved or downgraded
+2. Previous limiter resolved, downgraded, or retired by athlete direction
 3. Risk escalates to acute
 4. Risk resolves
-5. Significant new data point (probe result, PR, regression)
+5. Significant new data point (probe result, PR, regression, gate result)

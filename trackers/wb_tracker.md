@@ -48,6 +48,7 @@
 | 2026-05-09 W19 | 4×25 race-fragment | 0:58 | 1:01 | 0:58 | 0:59 | Stable under fragment fatigue |
 | 2026-05-14 W20 THU | 2-round HYROX rhythm | 1:00 | 1:00 | — | — | After push+pull+BBJ; highest fatigue-repeatability mark |
 | 2026-05-16 W20 SAT | 4×25 race-fragment | 1:01 | 1:01 | 1:02 | 1:01 | **Elite consistency lock — almost zero drift over 4 rounds** |
+| 2026-08-25 W35 TUE | 4×25 @9kg/30s rest, full race volume (accidental — plan was 2×25) | 60 | 57 | 58 | 61 | **New locked race-volume total clock (Master Plan v2.3): work 236s + 90s rest (3×30s) = 5:26 total.** Only 4s spread across 100 reps — very stable. 1:34 faster than the Sydney race reference (7:00), 26s outside the 5:00 A-target. Current task: protect ~5:26 under Station-8 fatigue. |
 
 ---
 

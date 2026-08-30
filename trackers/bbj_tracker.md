@@ -1,9 +1,9 @@
 # Burpee Broad Jump (BBJ) Tracker
 
-> **NEW PRIMARY LIMITER identified 2026-05-14. Append-only log.**
+> **Append-only log.**
 
-**Race standard:** 80 reps over ~30 m at HYROX
-**Working distances in training:** 20 m (race-fragment) and 30 m (compromised testing)
+**Official current Men Pro race standard (corrected 2026-08-29, Master Plan v2.3): 80 m continuous, not "80 reps over ~30 m."** The line below is obsolete historical training-format language, kept for context on old rows only — do not use it as the current race standard.
+**Working distances in training:** 20 m (race-fragment) and 30 m (compromised testing); new 2026-08-29 progression adds 40 m and 80 m continuous distances — see "Master Plan v2.3 exposure-ladder" below.
 
 ---
 
@@ -77,3 +77,25 @@ Every BBJ-relevant session adds a new row.
 Source data: session reports in `state/current_week.md` or `archive/2026/week_NN_report.md`.
 
 Special attention: this is the active primary limiter. Every Thursday and Saturday entry must capture R1 vs R2 timing for fade pattern tracking.
+
+---
+
+## Status update, 2026-08-30 (W35 close-out)
+
+**Dormant a 2nd consecutive week (W34, W35) since the W33 Sat reintroduction.** No BBJ session in either week. This is no longer tracked as a standalone "dormancy risk" — Master Plan v2.3 folds the reintroduction directly into its own W37 measurement-gate ladder (see below), so the next BBJ exposure is structured, not a maintenance-touch afterthought.
+
+## Master Plan v2.3 — official standard correction (2026-08-29)
+
+- Current HYROX Men Pro BBJ race distance is **80 m**, not "80 reps over ~30 m." Older tracker wording above is obsolete training-format language only.
+- Formal current 80 m benchmark is still missing.
+- BBJ reclassified from a confirmed primary limiter to a **"highest-priority measurement unknown"** — structurally capable of becoming race-defining (station time + next-km penalty), but not labelled a confirmed limiter until race-distance data exist.
+- Primary KPI going forward: **BBJ + transition + next 1 km total clock** — not station time alone.
+
+## Master Plan v2.3 — W37 exposure ladder (repaired, 2026-08-29)
+
+1. **Tuesday W37 (2026-09-08):** 2×40 m controlled BBJ, measured lane, 0–20m/20–40m splits recorded, 3:00–4:00 full recovery between reps. Success = mechanics/jump-length consistency, not speed.
+2. **Saturday W37 (2026-09-13):** 80 m continuous BBJ baseline (first-ever formal continuous benchmark) → 30–45s transition → 1 km at controlled maximum sustainable effort. Returns two outputs: the 80m station clock/quarter-drift profile, and the post-BBJ 1km cost.
+3. **W37 decision rule:** if station time, quarter drift, or post-BBJ run penalty materially threaten the race budget, BBJ is promoted to a confirmed limiter and W41 accumulated-fatigue testing proceeds. If cost is modest and mechanics stable, BBJ becomes maintain/monitor only.
+4. **W41 (conditional on W37):** 80 m BBJ under accumulated fatigue → 1 km, compared against the W37 fresh baseline.
+
+Required KPIs from W37 onward: total 80m time, 20m splits (0–20/20–40/40–60/60–80), split drift, jump count per 20m, average jump length, cadence, HR entering/leaving, transition time, post-BBJ 1km total + first 250m + final 750m.

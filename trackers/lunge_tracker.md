@@ -29,7 +29,8 @@
 
 | Date | Week | Block | Load | Distance | Time | Notes |
 |---|---|---|---|---|---|---|
-| 2026-08-22 | W34 SAT | Melbourne Phase I W3 | 30 kg sandbag | **~128–136 m (estimated)**, continuous | 6:05 | **First race-load continuous sandbag-lunge exposure of the Melbourne build.** Plan called for 50–75m as a deliberately light, non-maximal baseline; actual distance ran ~2.5× that and ~30% beyond the 100m race distance. Local muscular burn onset ~30th step; technique held; athlete reports capacity remained beyond the completed distance (no forced stop, no cramp). **Distance status: not physically measured — reconstructed post-hoc from Google Maps satellite imagery, ±5–10m uncertainty.** Standing rule from this session: any future distance test uses a physically measured lane before the session, not a post-hoc estimate. Followed immediately by a compromised run (mechanics held, cadence 178) and 100 Wall Balls (61/58/58/54) with one brief transient medial-quadriceps/VMO episode at the WB entry, resolved in ~15s. Full context: `archive/2026/week_34_report.md` |
+| 2026-08-22 | W34 SAT | Melbourne Phase I W3 | 30 kg sandbag | **140 m (corrected 2026-08-29, tape-measured)**, continuous | ~6:00–6:05 | **First race-load continuous sandbag-lunge exposure of the Melbourne build.** Plan called for 50–75m as a deliberately light, non-maximal baseline; actual distance ran well beyond that and beyond the 100m race distance. Local muscular burn onset ~30th step; technique held; athlete reports capacity remained beyond the completed distance (no forced stop, no cramp). **Distance corrected 2026-08-29:** original post-hoc satellite estimate of ~128–136m is invalid; the route was subsequently measured with a tape measure at 140m (≈4:17–4:21/100m pace). Kept as a historical compromised reference (unstandardized conditions inside a larger session), not a clean baseline — see the W35 Sat measured baseline below for that. Followed immediately by a compromised run (mechanics held, cadence 178) and 100 Wall Balls (61/58/58/54) with one brief transient medial-quadriceps/VMO episode at the WB entry, resolved in ~15s. Full context: `archive/2026/week_34_report.md` |
+| 2026-08-29 | W35 SAT | Deload / Gate 1 week | 30 kg sandbag | **100 m exactly measured**, continuous | **3:50.24** | **Official Phase II fresh lunge baseline (Master Plan v2.3).** Splits: 0–50m 1:39.54, 50–100m 2:10.70 — second-half drift +31.16s (~31%). VMO normal before and after, no Achilles/calf issue. Preceded by a full SkiErg 1km benchmark, with ≥3h separation between the two tests to keep both clean. Capacity is clearly not the limiter here — the meaningful signal is second-half pace decay. This becomes the reference number for every future lunge→1km cost test starting W36. Full context: `archive/2026/week_35_report.md` |
 
 ---
 
@@ -73,7 +74,8 @@
 - **Working load (current):** 32+32 kg DB, 30 m × 2 (W20)
 - **Historical peak:** 70 kg KB, 3 × 20–24 (Brisbane W11)
 - **SAT primer:** 56 kg KB
-- **Sandbag race-load (current, unmeasured):** 30 kg × ~128–136 m continuous (W34 SAT 2026-08-22) — first exposure, exceeds 100m race distance under conservative estimate; distance requires physical verification before being treated as a firm benchmark
+- **Sandbag race-load, official fresh 100m baseline:** 30 kg × 100 m (measured lane) = **3:50.24**, split 1:39.54/2:10.70, +31% second-half drift (W35 SAT 2026-08-29) — capacity confirmed, second-half durability is the open question
+- **Sandbag race-load, compromised historical reference (corrected):** 30 kg × 140 m continuous, ~6:00–6:05 (W34 SAT 2026-08-22, distance corrected 2026-08-29 from an invalid ~128–136m satellite estimate)
 
 ---
 

@@ -305,6 +305,28 @@
 
 ---
 
+## W35 (2026-08-24 to 2026-08-30) — Phase I Week 4, Gate 1 / Deload
+
+*Backfilled 2026-08-30 from athlete-supplied daily report pack (seven MD files, 2026-08-24 to 08-30) — see `archive/2026/week_35_report.md` for full plan-vs-actual per day.*
+
+| Date | Day | Sleep h | Restful % | Sleeping HRV ms | Daily HRV %vs baseline | Sleeping HR | Calves/VMO | Body feel | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-24 | MON | 7h45 | 53% | 105 ms | +61% | 51 bpm | not provided | strong | Full rest day, 3.16km Z1 walk only. Exceptionally strong autonomic markers treated as recovery signal, not license to add load. |
+| 2026-08-25 | TUE | 8h00 | 66% | 53 ms | -1% | 52 bpm | not provided | easy, substantial reserve | Lower deload + sled technique. Accidental WB overshoot (100 reps vs planned 50) — the week's only material deload deviation. Sled Pull 202kg 67/61s, Sled Push 242kg 47/39s. |
+| 2026-08-26 | WED | 8h50 | 58% | 68 ms | +24% | 53 bpm | not provided | GREEN | Upper deload + 3.02km easy run, 100% plan compliance. Readiness explicitly called GREEN. |
+| 2026-08-27 | THU | 8h35 | 63% | 66 ms | +24% | 51 bpm | not provided | GREEN | **Gate 1 — PASS.** Clean 5km negative-split benchmark, 22:23, HR152, reserve remaining. |
+| 2026-08-28 | FRI | 8h10 | 55% | 64 ms | -1% | 52 bpm | not provided | GREEN-RECOVERY | Full rest day. No adverse recovery signature after Gate 1's stimulus. 7-day sleep rhythm flagged at 53% as the week's main improvement area. |
+| 2026-08-29 | SAT | 10h40 (incl. nap) | 58% | 44 ms | +14% | 52 bpm | VMO/lower-leg normal (explicitly reported) | Green-Yellow (fragmented sleep structure, weaker sleeping-HRV/HR-dip than best nights) | SkiErg ~3:55-3:59/1km + measured 100m lunge baseline 3:50.24, ≥3h separation between tests. Grade A benchmark day. |
+| 2026-08-30 | SUN | ~7h45 | ~58% | 45 ms | -9% | 54 bpm | not provided | below-peak, no red flag | 8.03km easy run closing W35. Late bedtime, poor subjective sleep, GI bloating; final 3km progressed despite "no finishing surge" instruction — HR stayed controlled at 136bpm throughout. |
+
+## W35 7-day summary
+
+| W35 summary | ~8h35 avg (7 of 7 days provided) | ~59% avg (7 of 7 days provided) | 44–105 ms sleeping range | Sleeping HR 51-54 bpm, consistently low | VMO/calf explicitly checked only Sat (normal); other days not reported | 1 Recovery-pass (Mon) / 1 pass-with-overshoot (Tue) / 1 A/100% (Wed) / 1 Gate1-PASS (Thu) / 1 Recovery-pass (Fri) / 1 A benchmark (Sat) / 1 pass-with-deviation (Sun) | **Gate 1 passed cleanly — new clean 5km baseline (22:23) replaces the failed corridor-test mechanism.** SkiErg and lunge baselines both closed real measurement debts. Master Plan v2.3 formally adopted at close-out. Cardiac item closed by athlete-directed policy change (full workup complete, all normal). 7-day sleep rhythm remained the week's one persistent weak point (~51-53%) despite generally strong nightly volume — timing consistency, not volume, is the open problem. |
+
+**Note:** this week's readiness data is unusually complete (7 of 7 days) compared to recent weeks — full daily report pack was athlete-supplied ahead of close-out rather than logged incrementally via `/morning`.
+
+---
+
 ## Append Protocol
 
 After every Sunday close-out and after every morning readiness gate:
