@@ -9,48 +9,51 @@ TIME ANCHOR
 - Countdown at Monday start: 102 days
 ```
 
-> **Adopted 2026-08-30** directly from Master Plan v2.3 §7 (`reference/master_plan.md`), at the same Sunday close-out that formally adopted v2.3 as the governing macrocycle. Full daily detail: `archive/2026/week_36_plan.md`.
+> **Replaced 2026-08-30, same day as the first draft.** Athlete rejected the v2.3-derived first draft and supplied his own final W36 plan (`HYROX_W36_FINAL_2026-08-31_to_2026-09-06.md`), adopted verbatim. Full detail: `archive/2026/week_36_plan.md`.
 
 ---
 
 ## HEADLINE QUESTION
 
-**What does a full race-load lunge station do to the next 1 km?** Saturday's key test runs 100m sandbag lunges (@30kg, same measured lane as W35's 3:50.24 fresh baseline) directly into a compromised 1km. Row also gets its first Melbourne-build baseline Tuesday — the last station with zero fresh data.
+**What do 100m of race-load lunges cost the next kilometre?** Measured with an internal control inside Saturday's session (1km control run → lunges → transition → 1km test run), not by isolating a benchmark day. Row also gets its first Melbourne-build baseline Tuesday, inside a full hybrid station day (Row + full lower strength + sled push + sled pull + Wall Balls, all in one session).
+
+**Coaching logic (athlete's own framing):** this week keeps building running speed, lower/upper strength, and station exposure in parallel — nothing important is put on hold for a benchmark. Measurement supports training, it does not replace training.
 
 ---
 
 ## OPEN ADMINISTRATIVE ITEM — DUE MONDAY 1 SEP
 
-**Navigation race-status fixture:** flag/request provisional leave or work flexibility for the first athlete-access opportunity in Melbourne race week (9–13 Dec 2026), ahead of the official wave/venue-access schedule being published. This is a hard external date, not training content. See `STATE.md` calendar.
+**Navigation race-status fixture:** flag/request provisional leave or work flexibility for the first athlete-access opportunity in Melbourne race week (9–13 Dec 2026), ahead of the official wave/venue-access schedule being published. See `STATE.md` calendar.
 
 ---
 
 ## DAILY STRUCTURE (summary — full detail in `archive/2026/week_36_plan.md`)
 
-- **Mon 1 Sep:** Reset. Full rest / easy walk. Navigation admin action due today. Running: 0km.
-- **Tue 2 Sep:** Lower maintenance + **Row 1000m race-execution calibration** (RPE ~7.5–8, no sprint either end) before lower strength. Running: warm-up only.
-- **Wed 3 Sep:** Upper strength + easy run 4–7km.
-- **Thu 4 Sep:** **5×600m repeatability** @ ~4:05–4:15/km equivalent, 90s recovery. KPI: spread ≤3–4s, R5 clean.
-- **Fri 5 Sep:** Rest.
-- **Sat 6 Sep:** **KEY TEST** — 100m sandbag lunges @30kg (measured lane) → 30–45s transition → 1km controlled-max HYROX effort. Optional clean-only add-on: 2×[25 WB + 500m].
-- **Sun 7 Sep:** Easy aerobic 8–12km, no threshold finish.
+- **Mon 31 Aug:** 4km easy (HR 120–135) + 10–12min mobility/tissue work. Navigation admin due today.
+- **Tue 1 Sep:** Full hybrid day — Row 1000m (RPE 7.5–8, controlled baseline) → lower strength (Leg Ext/Press/BSS/Walking Lunges/Leg Curl) → Sled Push 232kg×3×20m → Sled Pull 202kg×3×20m (score: Set1−Set3) → WB 2×25@9kg technique only. Running: ~1.2km.
+- **Wed 2 Sep:** Upper strength (Bench→Pull-ups→Dips, target 15–16 clean pull-up reps) + 3km easy run.
+- **Thu 3 Sep:** 5×600m, reference corridor ~2:27–2:33, recovery 90s. Score: Rep1 not fastest, spread ≤3s, Rep5 clean. Running ~7km incl. recoveries.
+- **Fri 4 Sep:** Full rest.
+- **Sat 5 Sep:** **KEY TEST** — 1.5km warm-up → 1km control run → 3–4min recovery → 100m lunges @30kg (same lane as W35) → 30–45s transition → 1km test run → 1km cooldown. Primary score: Run2 − Run1 drift. Running ~4.5–5km.
+- **Sun 6 Sep:** 10km easy default (reduce to 8km only on a real signal), HR 120–135, finish with 2-3km reserve.
 
-**Running volume target: ~27–29km.**
+**Running volume target: ~29.7–30.2km** (Mon 4 / Tue 1.2 / Wed 3 / Thu 7 / Fri 0 / Sat 4.5-5 / Sun 10).
 
 ---
 
 ## W36 SUCCESS CRITERIA
 
-- [ ] Exact post-lunge 1km baseline established
-- [ ] No VMO/calf/Achilles issue through the test
-- [ ] Lunge second-half drift does not worsen materially from 3:50.24 / +31%
-- [ ] Row baseline established, capped effort, no bleed into Thursday
-- [ ] Thursday spread ≤3–4s, R5 clean
-- [ ] Navigation admin request submitted by Monday
-- [ ] ~27–29km total
+- [ ] ~30km completed without degrading lower-body mechanics
+- [ ] Tuesday remains a productive full hybrid training day
+- [ ] Row baseline obtained without becoming a maximal test
+- [ ] Thursday spread ≤3s, Rep 1 not fastest, Rep 5 clean
+- [ ] Saturday Run1/lunges/transition/Run2 all measured, drift recorded
+- [ ] Lunge second-half drift improves from W35's ~31%, or is clearly characterised
+- [ ] Sunday 10km completed with reserve, no VMO/soleus/Achilles flare
+- [ ] Navigation admin request submitted Monday
 
 ---
 
 ## WORKING PRINCIPLE — W36
 
-> **Measure what the clean lunge costs the clean engine. Then close the Row gap.**
+> **The goal is adaptation, not pretty testing. Measurements are embedded inside real training, not purchased by removing it.**

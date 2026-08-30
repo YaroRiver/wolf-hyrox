@@ -1,7 +1,7 @@
 # WEEK W36 — 2026-08-31 (Mon) → 2026-09-06 (Sun)
 ## Annual Week 36 · T−14 · Phase II — Fatigue Mapping + Integration, Week 1 of 5 (Mesocycle A) · Build Week 9 of 23
 
-> **W36 headline (Master Plan v2.3, adopted 2026-08-30):** What does a full race-load lunge station do to the next 1 km? Saturday runs 100m sandbag lunges @30kg (measured lane, same as W35's 3:50.24 baseline) directly into a compromised 1km. Row also gets its first Melbourne-build baseline Tuesday. **Open administrative item due Monday 1 Sep:** navigation race-status fixture — see `STATE.md` calendar. Full plan: `state/current_week_plan.md` / `archive/2026/week_36_plan.md`.
+> **W36 headline (athlete's own final plan, replacing an earlier v2.3-derived draft same day, 2026-08-30):** What do 100m of race-load lunges cost the next kilometre? Measured via an internal control inside Saturday's session (1km control run → lunges → transition → 1km test run), not by isolating a benchmark day — Tuesday stays a full hybrid day (Row baseline + full lower strength + sled push/pull + WB) and running volume steps up to ~30km. **Open administrative item due Monday 1 Sep:** navigation race-status fixture — see `STATE.md` calendar. Full plan: `state/current_week_plan.md` / `archive/2026/week_36_plan.md`.
 
 <!-- Daily entries appended below by /morning and /session workflows -->
 
