@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WOLF PORTAL · SYDNEY // YARO 2026</title>
+<title>WOLF PORTAL · MELBOURNE // YARO 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -158,7 +158,8 @@
 
   .grid-weeks {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    align-items: start;
     gap: 10px;
     margin-bottom: 18px;
   }
@@ -168,6 +169,71 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     margin-bottom: 18px;
+  }
+
+  /* ── PHASE GROUP (collapsible weekly archive) ── */
+  .phase-group {
+    margin-bottom: 10px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    animation: fadeUp .5s ease both;
+  }
+
+  .phase-group[open] { margin-bottom: 18px; }
+
+  .phase-summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 22px;
+    cursor: pointer;
+    user-select: none;
+    transition: background .2s;
+  }
+
+  .phase-summary::-webkit-details-marker { display: none; }
+  .phase-summary::marker { content: ''; }
+
+  .phase-summary:hover { background: var(--surface2); }
+
+  .phase-summary-chevron {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: var(--accent);
+    flex-shrink: 0;
+    transition: transform .2s;
+    display: inline-block;
+  }
+
+  .phase-group[open] .phase-summary-chevron { transform: rotate(90deg); }
+
+  .phase-summary-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--text);
+    flex: 1;
+  }
+
+  .phase-summary-meta {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    color: var(--muted);
+    letter-spacing: 1px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  .phase-group .grid-weeks {
+    padding: 0 16px 16px;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 600px) {
+    .phase-summary { padding: 14px 16px; gap: 10px; }
+    .phase-summary-title { font-size: 16px; }
+    .phase-summary-meta { display: none; }
   }
 
   /* ── NAV CARD ── */
@@ -319,13 +385,51 @@
     min-width: 0; /* prevent long unbreakable strings anywhere in this grid column from expanding the whole 1fr track (was pushing columns 3/5 to 266-284px vs 234-240px elsewhere) */
   }
 
+  /* Fixed-size "square" cards: every week card in the archive grid gets the
+     exact same height, and every text block inside is sized/clamped to fit
+     inside it — no card taller or shorter than another, but a smaller,
+     denser font so the full sentence has room to actually read instead of
+     cutting off after 3-4 words. Full, untruncated text is always one click
+     away on the linked week page — this is a compact preview, not the
+     record. */
   .week-pair .nc {
-    flex: 1;
+    height: 248px;
+    align-items: flex-start;
+    overflow: hidden;
     min-width: 0;
+  }
+
+  .week-pair .nc-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-width: 0;
+  }
+
+  .week-pair .nc-title {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.25;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .week-pair .nc-desc {
     overflow-wrap: anywhere; /* the actual long unbreakable tokens (e.g. "compromised-running/quad") live in nc-desc, not titles */
+    flex: 1 1 auto;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 0;
+  }
+
+  .week-pair .nc-tags {
+    max-height: 40px;
+    overflow: hidden;
+    flex-shrink: 0;
   }
 
   /* ── WEEK BADGE inside card (large) ── */
@@ -405,33 +509,43 @@
 
   <!-- HEADER -->
   <div class="hdr">
-    <div class="hdr-eyebrow"><span class="ld"></span>HYROX Sydney Build · 2026 · Race Complete</div>
+    <div class="hdr-eyebrow"><span class="ld"></span>HYROX Melbourne Build · 2026 · Phase II Live</div>
     <div class="hdr-title">WOLF<br><span class="dim">PORTAL</span></div>
     <div class="hdr-sub">Yaro · Pro Men 45–49 · Target 1:15:00</div>
     <div class="hdr-meta">
-      <div class="hdr-meta-item">Sydney Block <span>W14 → Race — CLOSED</span></div>
-      <div class="hdr-meta-item">Current <span>W36 · Phase II Fatigue Mapping — Build Week 9 of 23 · T−14</span></div>
-      <div class="hdr-meta-item">Sydney Result <span style="color:var(--red);">1:48:24 · DQ Navigational (Run 8)</span></div>
-      <div class="hdr-meta-item">Next <span style="color:var(--green);">HYROX Melbourne · 9–13 Dec 2026, MCEC · Pro Men Fri 11 Dec AM</span></div>
+      <div class="hdr-meta-item">Current <span>W37 · Phase II Fatigue Mapping — Build Week 10 of 23 · T−13</span></div>
+      <div class="hdr-meta-item">This Week <span style="color:var(--accent);">BBJ 80m Gate + Lunge Chain (Sat)</span></div>
       <div class="hdr-meta-item">Gate 1 <span style="color:var(--green);">PASSED 22:23 · Master Plan v2.3 adopted</span></div>
+      <div class="hdr-meta-item">Sydney Result <span style="color:var(--red);">1:48:24 · DQ Navigational (Run 8)</span></div>
+      <div class="hdr-meta-item">Race <span style="color:var(--green);">HYROX Melbourne · 9–13 Dec 2026, MCEC · Pro Men Fri 11 Dec AM</span></div>
     </div>
   </div>
 
-  <!-- STATUS BAR -->
+  <!-- STATUS BAR — live Melbourne-build dashboard strip -->
   <div class="status-bar">
     <div class="sb-item">
-      <div class="sb-val" style="color:var(--red);">DQ</div>
-      <div class="sb-lbl">Race Result</div>
+      <div class="sb-val" style="color:var(--accent);" id="cd-days-sb">–</div>
+      <div class="sb-lbl">Days To Race</div>
     </div>
     <div class="sb-div"></div>
     <div class="sb-item">
-      <div class="sb-val" style="color:var(--green);">W14–27</div>
-      <div class="sb-lbl">Full Build (Closed)</div>
+      <div class="sb-val" style="color:var(--green);">22:23</div>
+      <div class="sb-lbl">Gate 1 · Clean 5km</div>
     </div>
     <div class="sb-div"></div>
     <div class="sb-item">
-      <div class="sb-val" style="color:var(--gold);">60</div>
-      <div class="sb-lbl">Max WB (W12 SUN)</div>
+      <div class="sb-val" style="color:var(--gold);">0:55</div>
+      <div class="sb-lbl">Sled Pull S3 · 202kg</div>
+    </div>
+    <div class="sb-div"></div>
+    <div class="sb-item">
+      <div class="sb-val" style="color:var(--gold);">3:48</div>
+      <div class="sb-lbl">Row 1000m Baseline</div>
+    </div>
+    <div class="sb-div"></div>
+    <div class="sb-item">
+      <div class="sb-val" style="color:var(--orange);">5:26</div>
+      <div class="sb-lbl">WB Race-Volume Clock</div>
     </div>
     <div class="sb-div"></div>
     <div class="sb-item">
@@ -440,18 +554,8 @@
     </div>
     <div class="sb-div"></div>
     <div class="sb-item">
-      <div class="sb-val" style="color:var(--orange);">4:11</div>
-      <div class="sb-lbl">Pace Goal /km</div>
-    </div>
-    <div class="sb-div"></div>
-    <div class="sb-item">
-      <div class="sb-val" style="color:var(--muted);">100</div>
-      <div class="sb-lbl">WB Gate</div>
-    </div>
-    <div class="sb-div"></div>
-    <div class="sb-item">
-      <div class="sb-val" style="color:var(--red);letter-spacing:2px;">1:48:24</div>
-      <div class="sb-lbl">Actual Result 🏁 DQ</div>
+      <div class="sb-val" style="color:var(--muted);font-size:16px;">BBJ Gate</div>
+      <div class="sb-lbl">Active Limiter This Week</div>
     </div>
   </div>
 
@@ -490,24 +594,24 @@
     </a>
   </div>
 
-  <!-- SECTION: PHASE 1 FOUNDATION -->
+  <!-- SECTION: CURRENT WEEK SPOTLIGHT -->
   <div class="divider" style="animation-delay:.11s;">
     <div class="divider-line"></div>
-    <div class="divider-label">Phase I · Consolidate and Recalibrate — Cardiac Cleared, Build Live</div>
+    <div class="divider-label">Phase II · Fatigue Mapping + Integration — Week 2 of 5, Live Now</div>
     <div class="divider-line"></div>
   </div>
 
   <div class="grid-master" style="margin-bottom:12px;">
-    <a class="nc blue" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w36_plan.html" target="_blank" style="animation-delay:.115s;">
+    <a class="nc blue" href="https://github.com/YaroRiver/wolf-hyrox/blob/main/archive/2026/week_37_plan.md" target="_blank" style="animation-delay:.115s;">
       <div class="nc-icon">🎒</div>
       <div class="nc-body">
-        <div class="nc-label">Current Week · Active — Phase II Opens</div>
-        <div class="nc-title">W36 — Week 1: Control → Lunge → Test Run</div>
-        <div class="nc-desc">Phase II opens. Athlete's own final plan (replacing an earlier draft same day): nothing is put on hold for a benchmark. Saturday measures lunge→run cost as an internal control inside a full session — 1km control run → 100m lunges @30kg (same lane as W35's 3:50.24) → transition → 1km test run, scored as the drift between the two runs. Tuesday is a full hybrid day: Row 1000m baseline + full lower strength + sled push/pull + Wall Balls, together. Running volume steps up to ~30km.</div>
+        <div class="nc-label">Current Week · Active — HTML page pending, linked to plan source</div>
+        <div class="nc-title">W37 — BBJ 80m Gate + Lunge Chain</div>
+        <div class="nc-desc">Athlete's own plan: Tuesday BBJ 2×40m pacing diagnostic; Saturday extends into a two-station fatigue chain — 1km control → 80m BBJ (first valid continuous clock) → 1km → 100m lunges @30kg → 1km. Recovers W36's cancelled lunge→1km test in the same session without contaminating the BBJ measurement. Decides whether BBJ is promoted to a confirmed limiter. Entry conditional on the W36 illness episode not worsening.</div>
         <div class="nc-tags">
-          <div class="nc-tag" style="border-color:rgba(0,255,135,.2);color:var(--green);">✔ Cardiac Closed</div>
-          <div class="nc-tag">2026·08·31 → 09·06</div>
-          <div class="nc-tag" style="border-color:rgba(0,229,255,.2);color:var(--accent);">T−14</div>
+          <div class="nc-tag live">◉ Active · In Progress</div>
+          <div class="nc-tag">2026·09·07 → 09·13</div>
+          <div class="nc-tag" style="border-color:rgba(0,229,255,.2);color:var(--accent);">T−13</div>
         </div>
       </div>
       <div class="nc-arrow">→</div>
@@ -522,9 +626,9 @@
         <div class="nc-title">Personal Records</div>
         <div class="nc-desc">Every PR, every lock, one page — VO2max, sled, Wall Balls, running, farmer carry, race results. Where I am right now.</div>
         <div class="nc-tags">
-          <div class="nc-tag" style="border-color:rgba(255,215,0,.2);color:var(--gold);">Sled 252kg</div>
-          <div class="nc-tag" style="border-color:rgba(0,255,135,.2);color:var(--green);">WB 100 Proven</div>
-          <div class="nc-tag">VO2max 58</div>
+          <div class="nc-tag" style="border-color:rgba(255,215,0,.2);color:var(--gold);">Sled Pull 0:55 S3</div>
+          <div class="nc-tag" style="border-color:rgba(0,255,135,.2);color:var(--green);">Gate 1 · 22:23</div>
+          <div class="nc-tag">VO2max 53 (PR 58)</div>
         </div>
       </div>
       <div class="nc-arrow">→</div>
@@ -539,15 +643,30 @@
   </div>
 
   <div class="grid-master" style="margin-bottom:12px;">
-    <a class="nc muted" href="https://yaroriver.github.io/wolf-hyrox/master/hyrox_melbourne_master_plan.html" target="_blank" style="animation-delay:.14s;opacity:.65;">
+    <a class="nc muted" href="https://github.com/YaroRiver/wolf-hyrox/blob/main/reference/master_plan.md" target="_blank" style="animation-delay:.14s;opacity:.65;">
       <div class="nc-icon">🏠</div>
       <div class="nc-body">
-        <div class="nc-label">Master Plan · Superseded · Home Ground</div>
-        <div class="nc-title">Melbourne Master Plan (old draft)</div>
-        <div class="nc-desc">Stale — superseded wall-ball diagnosis, unconfirmed race date. Live plan is the 19-week Phase I–V macrocycle (reference/master_plan.md); full HTML regeneration still open.</div>
+        <div class="nc-label">Master Plan · Live Document · v2.3</div>
+        <div class="nc-title">Melbourne Master Plan v2.3</div>
+        <div class="nc-desc">Current strategy document, adopted 2026-08-30 — replaces every prior macrocycle draft in full. This is the live source; the HTML page below (Home Ground) still reflects an older superseded draft pending full regeneration.</div>
         <div class="nc-tags">
-          <div class="nc-tag" style="border-color:rgba(255,215,0,.2);color:var(--gold);">Content outdated 2026·08·09</div>
-          <div class="nc-tag">See W34 plan card for current phase</div>
+          <div class="nc-tag" style="border-color:rgba(0,255,135,.2);color:var(--green);">v2.3 · Live</div>
+          <div class="nc-tag">Adopted 2026·08·30</div>
+        </div>
+      </div>
+      <div class="nc-arrow">→</div>
+    </a>
+  </div>
+
+  <div class="grid-master" style="margin-bottom:28px;">
+    <a class="nc muted" href="https://yaroriver.github.io/wolf-hyrox/master/hyrox_melbourne_master_plan.html" target="_blank" style="animation-delay:.145s;opacity:.55;">
+      <div class="nc-icon">📁</div>
+      <div class="nc-body">
+        <div class="nc-label">Master Plan HTML · Superseded Draft — Home Ground</div>
+        <div class="nc-title">Melbourne Master Plan (old draft)</div>
+        <div class="nc-desc">Pre-v2.3 draft — kept for the "Home Ground" strategy framing, but its Wall Ball diagnosis and phase structure are superseded. Use the v2.3 link above for anything current. HTML regeneration for v2.3 still open.</div>
+        <div class="nc-tags">
+          <div class="nc-tag" style="border-color:rgba(255,215,0,.2);color:var(--gold);">Superseded 2026·08·30</div>
         </div>
       </div>
       <div class="nc-arrow">→</div>
@@ -600,352 +719,490 @@
     </a>
   </div>
 
-  <!-- SECTION: WEEKS -->
+  <!-- SECTION: WEEKS (phase-grouped, collapsible) -->
   <div class="divider" style="animation-delay:.18s;">
     <div class="divider-line"></div>
-    <div class="divider-label">Weekly Plans + Reports</div>
+    <div class="divider-label">Weekly Archive · Grouped by Phase</div>
     <div class="divider-line"></div>
   </div>
 
-  <div class="grid-weeks">
-
-    <!-- W09 pair -->
+  <details class="phase-group" open>
+    <summary class="phase-summary">
+      <span class="phase-summary-chevron">▸</span>
+      <span class="phase-summary-title">Phase II · Fatigue Mapping + Integration (Mesocycle A) — CURRENT</span>
+      <span class="phase-summary-meta">W36 · 1 week · 2026·08·31 → present</span>
+    </summary>
+    <div class="grid-weeks">
     <div class="week-pair">
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/master/Week_09_wolf_training_block.html" target="_blank" style="animation-delay:.2s;">
-        <div class="nc-wk-badge">W09</div>
+      <a style="animation-delay:0.03s;" class="nc blue" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w36_plan.html" target="_blank">
+        <div class="nc-wk-badge">W36</div>
         <div class="nc-body">
           <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 09 Plan</div>
-          <div class="nc-desc">Wolf Block · 2026·02·23–03·01</div>
+          <div class="nc-title">Week 36 — Phase II Opens: Lunge → Run</div>
+          <div class="nc-desc">First week of Master Plan v2.3's Mesocycle A. Saturday's key test: 100m sandbag lunges @30kg → 1km controlled-max effort, on the same measured lane as W35's baseline. Tuesday closes the Row 1000m data gap, capped at RPE 7.5-8</div>
           <div class="nc-tags">
-            <div class="nc-tag done">✓ Done</div>
-            <div class="nc-tag">Intervals · Sled · WB</div>
+            <div class="nc-tag live">◉ Active · In Progress</div>
+            <div class="nc-tag" style="border-color:rgba(0,229,255,.2);color:var(--accent);">T−14</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
-      <a class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w09_completed.html" target="_blank" style="animation-delay:.24s;">
-        <div class="nc-wk-badge">W09</div>
+    </div>
+    </div>
+  </details>
+
+  <details class="phase-group">
+    <summary class="phase-summary">
+      <span class="phase-summary-chevron">▸</span>
+      <span class="phase-summary-title">Phase I · Consolidate and Recalibrate — Gate 1 Passed</span>
+      <span class="phase-summary-meta">W32–W35 · 4 weeks · 2026·08·03 → 2026·08·30</span>
+    </summary>
+    <div class="grid-weeks">
+    <div class="week-pair">
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w35_plan.html" target="_blank">
+        <div class="nc-wk-badge">W35</div>
+        <div class="nc-body">
+          <div class="nc-label">Week Plan</div>
+          <div class="nc-title">Week 35 — Week 4: Gate 1 + Deload</div>
+          <div class="nc-desc">Athlete's own draft, adopted after comparison. Thursday: 5km negative-split benchmark designed to defeat the "every controlled run becomes a hot start" pattern. Friday: lunge lane physically measured for the first time. Saturday: two baselines separated by 3+ hours. Physician contact re: W34's cardiac event gates both hard days</div>
+          <div class="nc-tags">
+            <div class="nc-tag done">✓ Done</div>
+            <div class="nc-tag" style="border-color:rgba(0,229,255,.2);color:var(--accent);">T−15</div>
+          </div>
+        </div>
+        <div class="nc-arrow">→</div>
+      </a>
+      <a style="animation-delay:0.06s;" class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w35_completed.html" target="_blank">
+        <div class="nc-wk-badge">W35</div>
         <div class="nc-body">
           <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 09 Report</div>
-          <div class="nc-desc">40 unbroken WB · PR achieved · session data</div>
+          <div class="nc-title">Week 35 — Gate 1 PASSED</div>
+          <div class="nc-desc">Clean 5km negative-split benchmark, 22:23, every km faster than the last, reserve remaining. SkiErg and lunge fresh baselines both closed (3:50.24). Wall Ball race-volume clock locked at 5:26. Master Plan v2.3 formally adopted; cardiac item closed after a completed full workup</div>
           <div class="nc-tags">
-            <div class="nc-tag done">✓ Completed</div>
-            <div class="nc-tag">40 WB PR</div>
+            <div class="nc-tag done">✓ Completed · Grade A-</div>
+            <div class="nc-tag" style="border-color:rgba(0,255,135,.2);color:var(--green);">Gate 1 PASS</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
     </div>
 
-    <!-- W10 pair -->
     <div class="week-pair">
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w10_plan.html" target="_blank" style="animation-delay:.26s;">
-        <div class="nc-wk-badge">W10</div>
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w34_plan.html" target="_blank">
+        <div class="nc-wk-badge">W34</div>
         <div class="nc-body">
           <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 10 Plan</div>
-          <div class="nc-desc">Brisbane Build · 2026·03·02–03·08</div>
+          <div class="nc-title">Week 34 — Week 3: Lunge Durability</div>
+          <div class="nc-desc">Sandbag lunges introduced, fully isolated from any pace test. Pull-ups move to a fixed pre-committed rep target. Thursday pins one exact treadmill speed, zero overspeed</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Done</div>
-            <div class="nc-tag">W1/5 · Controlled Build</div>
+            <div class="nc-tag" style="border-color:rgba(0,229,255,.2);color:var(--accent);">T−16</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
-      <a class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w10_completed.html" target="_blank" style="animation-delay:.30s;">
-        <div class="nc-wk-badge">W10</div>
+      <a style="animation-delay:0.06s;" class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w34_completed.html" target="_blank">
+        <div class="nc-wk-badge">W34</div>
         <div class="nc-body">
           <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 10 Report</div>
-          <div class="nc-desc">50 unbroken WB · 205 total · sleep debt alert</div>
+          <div class="nc-title">Week 34 — Sled Pull PR, Cardiac Flag</div>
+          <div class="nc-desc">Sled Pull sub-1:00 at working load, pull-up hard rule held clean for the first time in 4 weeks, zero quad collapse under ~130m@30kg sandbag lunges. But a cardiac event Tuesday was mishandled — training continued instead of stopping — now the standing top-priority item</div>
           <div class="nc-tags">
-            <div class="nc-tag done">✓ Completed</div>
-            <div class="nc-tag">50 WB PR</div>
-            <div class="nc-tag" style="border-color:rgba(255,71,87,.2);color:var(--red);">⚠ Sleep</div>
+            <div class="nc-tag done">✓ Completed · Fitness A / Safety Flag</div>
+            <div class="nc-tag" style="border-color:rgba(255,71,87,.25);color:var(--red);">⚠ Cardiac Flag</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
     </div>
 
-    <!-- W11 pair -->
     <div class="week-pair">
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w11_plan.html" target="_blank" style="animation-delay:.33s;">
-        <div class="nc-wk-badge">W11</div>
+      <a style="animation-delay:0.03s;" class="nc blue" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w33_plan.html" target="_blank">
+        <div class="nc-wk-badge">W33</div>
         <div class="nc-body">
           <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 11 Plan</div>
-          <div class="nc-desc">Intensity Rise · 2026·03·09–03·15</div>
+          <div class="nc-title">Week 33 — Week 2: Consolidate (retry)</div>
+          <div class="nc-desc">Corridor test retried with a treadmill-enforced pace. BBJ re-enters standalone fresh Monday, kept out of Saturday's fatigue block</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Done</div>
-            <div class="nc-tag">W2/5 · 6×1km · 50 WB</div>
+            <div class="nc-tag" style="border-color:rgba(0,229,255,.2);color:var(--accent);">T−17</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
-      <a class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w11_completed.html" target="_blank" style="animation-delay:.36s;">
-        <div class="nc-wk-badge">W11</div>
+      <a style="animation-delay:0.06s;" class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w33_completed.html" target="_blank">
+        <div class="nc-wk-badge">W33</div>
         <div class="nc-body">
           <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 11 Report</div>
-          <div class="nc-desc">50 WB near-UB · 80 total SAT · 4:09 best interval</div>
+          <div class="nc-title">Week 33 — BBJ Reintroduced</div>
+          <div class="nc-desc">Headline objective achieved: BBJ back after 7 weeks dormant, zero quad collapse. New WB race-pattern baseline (6:18). Corridor test still unmeasured — 3rd week running; pull-up rule broken 3rd week</div>
           <div class="nc-tags">
-            <div class="nc-tag done">✓ Completed</div>
-            <div class="nc-tag">50 WB ≈UB</div>
-            <div class="nc-tag" style="border-color:rgba(255,71,87,.2);color:var(--red);">⚠ Sleep</div>
+            <div class="nc-tag done">✓ Completed · Grade A− (BBJ) / C (discipline)</div>
+            <div class="nc-tag" style="border-color:rgba(0,255,135,.2);color:var(--green);">BBJ Back</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
     </div>
 
-    <!-- W12 pair -->
     <div class="week-pair">
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w12_plan.html" target="_blank" style="animation-delay:.39s;">
-        <div class="nc-wk-badge">W12</div>
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w32_plan.html" target="_blank">
+        <div class="nc-wk-badge">W32</div>
         <div class="nc-body">
           <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 12 Plan</div>
-          <div class="nc-desc">Overload Phase · 2026·03·16–03·22</div>
+          <div class="nc-title">Week 32 — Week 1: Consolidate</div>
+          <div class="nc-desc">One variable moves: compromised-run repeatability. Saturday 600m runs open 2:50-2:55, hold within a 10-sec band</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Done</div>
-            <div class="nc-tag">W3/5 · 4:15/km · 220kg sled PR</div>
+            <div class="nc-tag" style="border-color:rgba(0,255,135,.2);color:var(--green);">Race Confirmed</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
-      <a class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w12_completed.html" target="_blank" style="animation-delay:.42s;">
-        <div class="nc-wk-badge">W12</div>
+      <a style="animation-delay:0.06s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w32_completed.html" target="_blank">
+        <div class="nc-wk-badge">W32</div>
         <div class="nc-body">
           <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 12 Report</div>
-          <div class="nc-desc">220kg sled PR · limiter identified · SAT smart call</div>
+          <div class="nc-title">Week 32 — Corridor Untested</div>
+          <div class="nc-desc">Sled Pull 204kg new arc · WB density new best · Farmer Carry PR 2:36.40 — but the week's headline (run corridor discipline) never got measured</div>
           <div class="nc-tags">
-            <div class="nc-tag done">✓ Completed</div>
-            <div class="nc-tag">80 WB SUN</div>
-            <div class="nc-tag" style="border-color:rgba(0,229,255,.2);color:var(--accent);">↑ Overload done</div>
+            <div class="nc-tag done">✓ Completed · Grade B</div>
+            <div class="nc-tag" style="border-color:rgba(255,71,87,.2);color:var(--red);">Corridor Untested</div>
+          </div>
+        </div>
+        <div class="nc-arrow">→</div>
+      </a>
+    </div>
+    </div>
+  </details>
+
+  <details class="phase-group">
+    <summary class="phase-summary">
+      <span class="phase-summary-chevron">▸</span>
+      <span class="phase-summary-title">Phase 0 · Recovery & Clearance (Melbourne bridge)</span>
+      <span class="phase-summary-meta">W28–W31 · 4 weeks · 2026·07·06 → 2026·08·02</span>
+    </summary>
+    <div class="grid-weeks">
+    <div class="week-pair">
+      <a style="animation-delay:0.03s;" class="nc green" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w31_plan.html" target="_blank">
+        <div class="nc-wk-badge">W31</div>
+        <div class="nc-body">
+          <div class="nc-label">Week Plan</div>
+          <div class="nc-title">Week 31 — Stress Echo → Phase 1</div>
+          <div class="nc-desc">Mon 16:00 stress echo settled Phase 0. Cleared — full working loads opened, overload lanes unrestricted</div>
+          <div class="nc-tags">
+            <div class="nc-tag done">✓ Done</div>
+            <div class="nc-tag" style="border-color:rgba(0,255,135,.2);color:var(--green);">Echo Normal</div>
+          </div>
+        </div>
+        <div class="nc-arrow">→</div>
+      </a>
+      <a style="animation-delay:0.06s;" class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w31_completed.html" target="_blank">
+        <div class="nc-wk-badge">W31</div>
+        <div class="nc-body">
+          <div class="nc-label">Week Report</div>
+          <div class="nc-title">Week 31 — Cardiac Cleared</div>
+          <div class="nc-desc">Stress echo normal · sled 252kg compromised · WB 100 reconfirmed · new limiter: compromised-running/quad durability · master plan promoted</div>
+          <div class="nc-tags">
+            <div class="nc-tag done">✓ Completed · Grade A-</div>
+            <div class="nc-tag" style="border-color:rgba(0,255,135,.2);color:var(--green);">Cardiac Cleared</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
     </div>
 
-    <!-- W13 pair -->
     <div class="week-pair">
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w13_plan.html" target="_blank" style="animation-delay:.45s;">
-        <div class="nc-wk-badge">W13</div>
+      <a style="animation-delay:0.03s;" class="nc blue" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w30_plan.html" target="_blank">
+        <div class="nc-wk-badge">W30</div>
         <div class="nc-body">
           <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 13 Plan</div>
-          <div class="nc-desc">Consolidation · 2026·03·23–03·29</div>
+          <div class="nc-title">Week 30 — Return to Training</div>
+          <div class="nc-desc">Real day-pattern + real loads, capped intensity · no max effort until 07-27 stress echo</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Done</div>
-            <div class="nc-tag">W4/5 · VO2max 54↑</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
-      <a class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w13_completed.html" target="_blank" style="animation-delay:.48s;">
-        <div class="nc-wk-badge">W13</div>
+      <a style="animation-delay:0.06s;" class="nc red" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w30_completed.html" target="_blank">
+        <div class="nc-wk-badge">W30</div>
         <div class="nc-body">
           <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 13 Report</div>
-          <div class="nc-desc">VO2max 54 PR · 225kg sled · 10km run clean heart</div>
+          <div class="nc-title">Week 30 — Cap Not Held</div>
+          <div class="nc-desc">Full-intensity return Tue–Thu+Sat, plan exceeded · Sat GRIND 21:28 combined Z4-5 ~44h pre-echo · no cardiac jolt any day</div>
           <div class="nc-tags">
-            <div class="nc-tag done">✓ Completed</div>
-            <div class="nc-tag">VO2max 57 ↑PR</div>
+            <div class="nc-tag done">✓ Completed · Grade C+</div>
+            <div class="nc-tag" style="border-color:rgba(255,71,87,.2);color:var(--red);">Cap Not Held</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
     </div>
 
-    <!-- W14 pair — Sydney Build W1 -->
     <div class="week-pair">
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w14_plan.html" target="_blank" style="animation-delay:.51s;">
-        <div class="nc-wk-badge">W14</div>
-        <div class="nc-body">
-          <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 14 Plan</div>
-          <div class="nc-desc">Sydney Build W1 · Stabilize · 2026·03·30–04·05</div>
-          <div class="nc-tags">
-            <div class="nc-tag done">✓ Done</div>
-            <div class="nc-tag">Sled 240kg PR</div>
-          </div>
-        </div>
-        <div class="nc-arrow">→</div>
-      </a>
-      <a class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w14_completed.html" target="_blank" style="animation-delay:.54s;">
-        <div class="nc-wk-badge">W14</div>
+      <a style="animation-delay:0.03s;" class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w29_completed.html" target="_blank">
+        <div class="nc-wk-badge">W29</div>
         <div class="nc-body">
           <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 14 Report</div>
-          <div class="nc-desc">240kg sled PR · sleep 94 · 140 WB SAT · 7/7</div>
+          <div class="nc-title">Week 29 — Medical Clearance</div>
+          <div class="nc-desc">Holter normal · bloods reviewed · stress echo booked 07-27 · first return run 07-18</div>
           <div class="nc-tags">
-            <div class="nc-tag done">✓ Completed</div>
-            <div class="nc-tag">240kg ↑PR</div>
-            <div class="nc-tag" style="border-color:rgba(0,255,135,.2);color:var(--green);">Sleep 94</div>
+            <div class="nc-tag done">✓ Completed · Grade A-</div>
+            <div class="nc-tag" style="border-color:rgba(0,229,255,.2);color:var(--accent);">Holter Normal</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
     </div>
 
-    <!-- W15 pair — Sydney Build W2 -->
     <div class="week-pair">
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w15_plan.html" target="_blank" style="animation-delay:.57s;">
-        <div class="nc-wk-badge">W15</div>
+      <a style="animation-delay:0.03s;" class="nc muted" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w28_plan.html" target="_blank">
+        <div class="nc-wk-badge">W28</div>
         <div class="nc-body">
-          <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 15 Plan</div>
-          <div class="nc-desc">Sydney Build W2 · Stabilize · 2026·04·06–04·12</div>
+          <div class="nc-label">Recovery Plan</div>
+          <div class="nc-title">Week 28 — Post-Race Recovery</div>
+          <div class="nc-desc">Six binary gates · Phase 0 · 2026·07·06–07·12</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Done</div>
-            <div class="nc-tag">WB 0:53 best set</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
-      <a class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w15_completed.html" target="_blank" style="animation-delay:.60s;">
-        <div class="nc-wk-badge">W15</div>
+      <a style="animation-delay:0.06s;" class="nc muted" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w28_completed.html" target="_blank">
+        <div class="nc-wk-badge">W28</div>
         <div class="nc-body">
           <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 15 Report</div>
-          <div class="nc-desc">140 WB · 4×25 progressive · 0:58→0:53 · 7/7</div>
+          <div class="nc-title">Week 28 Report</div>
+          <div class="nc-desc">Data gap — no daily log kept. Bloods drawn Sat 07-11. Archived for history.</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Completed</div>
-            <div class="nc-tag">WB ↑ progressive</div>
+            <div class="nc-tag">Data Gap</div>
+          </div>
+        </div>
+        <div class="nc-arrow">→</div>
+      </a>
+    </div>
+    </div>
+  </details>
+
+  <details class="phase-group">
+    <summary class="phase-summary">
+      <span class="phase-summary-chevron">▸</span>
+      <span class="phase-summary-title">Sydney Build · Phase 4 — Taper + Race Week</span>
+      <span class="phase-summary-meta">W25–W27 · 3 weeks · 2026·06·15 → 2026·06·29</span>
+    </summary>
+    <div class="grid-weeks">
+    <div class="week-pair">
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w27_plan.html" target="_blank">
+        <div class="nc-wk-badge">W27</div>
+        <div class="nc-body">
+          <div class="nc-label">Race Week</div>
+          <div class="nc-title">Week 27 — Race Week</div>
+          <div class="nc-desc">HYROX Sydney 2026 · Race Day Fri 03·07 · 1:15:00 target · WB break 35–40+20–25+R · Station plan + time model · 2026·06·29–07·03</div>
+          <div class="nc-tags">
+            <div class="nc-tag" style="border-color:rgba(255,71,87,.3);color:var(--red);">★ RACE FRIDAY 03·07·2026</div>
+            <div class="nc-tag">Target 1:15:00</div>
+          </div>
+        </div>
+        <div class="nc-arrow">→</div>
+      </a>
+      <a style="animation-delay:0.06s;" class="nc red" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w27_completed.html" target="_blank">
+        <div class="nc-wk-badge">W27</div>
+        <div class="nc-body">
+          <div class="nc-label">Race Week Report</div>
+          <div class="nc-title">Week 27 Report</div>
+          <div class="nc-desc">1:48:24 · DQ navigational (Run 8, not WB) · Sled Push + Pull both #1 in field · WB 100 clean</div>
+          <div class="nc-tags">
+            <div class="nc-tag done">✓ Completed</div>
+            <div class="nc-tag" style="border-color:rgba(255,71,87,.2);color:var(--red);">DQ · Navigation</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
     </div>
 
-    <!-- W16 pair — Sydney Build W3 · Phase 1 Final -->
     <div class="week-pair">
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w16_plan.html" target="_blank" style="animation-delay:.63s;">
-        <div class="nc-wk-badge">W16</div>
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w26_plan.html" target="_blank">
+        <div class="nc-wk-badge">W26</div>
         <div class="nc-body">
           <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 16 Plan</div>
-          <div class="nc-desc">Sydney Build W3 · Phase 1 Final · 2026·04·13–04·19</div>
+          <div class="nc-title">Week 26 Plan — Taper Week 2</div>
+          <div class="nc-desc">Sydney Build W13 · Phase 4 Taper W2 · Ski/Row orientation Tue ★★★ · Lunge restart · Final HYROX touch · WB skill 30 · 2026·06·22–06·28</div>
           <div class="nc-tags">
-            <div class="nc-tag done">✓ Done</div>
-            <div class="nc-tag">P1 Closed · Sled 240kg</div>
-          </div>
-        </div>
-        <div class="nc-arrow">→</div>
-      </a>
-      <a class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w16_completed.html" target="_blank" style="animation-delay:.66s;">
-        <div class="nc-wk-badge">W16</div>
-        <div class="nc-body">
-          <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 16 Report</div>
-          <div class="nc-desc">Phase 1 Final · SAT cancelled (HRV 27ms) · Sled pull 204kg repeatable</div>
-          <div class="nc-tags">
-            <div class="nc-tag done">✓ Completed</div>
-            <div class="nc-tag">Phase 1 ✓</div>
+            <div class="nc-tag live">◉ Active · In Progress</div>
+            <div class="nc-tag" style="border-color:rgba(255,71,87,.2);color:var(--red);">⚡ 11 days to race</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
     </div>
 
-    <!-- W17 pair — Sydney Build W4 -->
     <div class="week-pair">
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w17_plan.html" target="_blank" style="animation-delay:.69s;">
-        <div class="nc-wk-badge">W17</div>
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w25_plan.html" target="_blank">
+        <div class="nc-wk-badge">W25</div>
         <div class="nc-body">
           <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 17 Plan</div>
-          <div class="nc-desc">Sydney Build W4 · Phase 2 W1 · 2026·04·20–04·26</div>
+          <div class="nc-title">Week 25 Plan — Taper Week 1</div>
+          <div class="nc-desc">Sydney Build W12 · Phase 4 Taper W1 · WB probe 50 confirmed · BBJ restarted · No HRV gating · 2026·06·15–06·21</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Done</div>
-            <div class="nc-tag">245kg PR · 4:16/km</div>
+            <div class="nc-tag">Grade B+ · WB 50 ceiling</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
-      <a class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w17_completed.html" target="_blank" style="animation-delay:.72s;">
-        <div class="nc-wk-badge">W17</div>
+      <a style="animation-delay:0.06s;" class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w25_completed.html" target="_blank">
+        <div class="nc-wk-badge">W25</div>
         <div class="nc-body">
           <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 17 Report</div>
-          <div class="nc-desc">Sled 245kg PR · WB 9kg 58–61s stable · 7/7</div>
+          <div class="nc-title">Week 25 Report</div>
+          <div class="nc-desc">Sydney Build W12 · Taper W1 · WB 50 ceiling confirmed · BBJ restarted · Run 4:03/km · Calves 0/10 · Race strategy locked · 2026·06·15–06·21</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Completed</div>
-            <div class="nc-tag">Sydney Build W4 ✓</div>
+            <div class="nc-tag">Grade B+ · 12 days to race</div>
+          </div>
+        </div>
+        <div class="nc-arrow">→</div>
+      </a>
+    </div>
+    </div>
+  </details>
+
+  <details class="phase-group">
+    <summary class="phase-summary">
+      <span class="phase-summary-chevron">▸</span>
+      <span class="phase-summary-title">Sydney Build · Phase 3 — Disruption / Recovery</span>
+      <span class="phase-summary-meta">W22–W24 · 3 weeks · 2026·05·25 → 2026·06·08</span>
+    </summary>
+    <div class="grid-weeks">
+    <div class="week-pair">
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w24_plan.html" target="_blank">
+        <div class="nc-wk-badge">W24</div>
+        <div class="nc-body">
+          <div class="nc-label">Week Plan</div>
+          <div class="nc-title">Week 24 Plan — Last Build</div>
+          <div class="nc-desc">Sydney Build W11 · Phase 3 Final · WB probe 60–70 · BBJ restart · Lunges restart · 2026·06·08–06·14</div>
+          <div class="nc-tags">
+            <div class="nc-tag done">✓ Done</div>
+            <div class="nc-tag">Grade C+ · Recovery Crisis</div>
+          </div>
+        </div>
+        <div class="nc-arrow">→</div>
+      </a>
+      <a style="animation-delay:0.06s;" class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w24_completed.html" target="_blank">
+        <div class="nc-wk-badge">W24</div>
+        <div class="nc-body">
+          <div class="nc-label">Week Report</div>
+          <div class="nc-title">Week 24 Report</div>
+          <div class="nc-desc">Sydney Build W11 · Recovery Crisis · 1 quality session · Respiratory activation · Sleeping HR 56 Sun · 2026·06·08–06·14</div>
+          <div class="nc-tags">
+            <div class="nc-tag done">✓ Completed</div>
+            <div class="nc-tag">Grade C+ · WB lock 50</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
     </div>
 
-    <!-- W18 pair — Sydney Build W5 -->
     <div class="week-pair">
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w18_plan.html" target="_blank" style="animation-delay:.75s;">
-        <div class="nc-wk-badge">W18</div>
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w23_plan.html" target="_blank">
+        <div class="nc-wk-badge">W23</div>
         <div class="nc-body">
           <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 18 Plan</div>
-          <div class="nc-desc">Sydney Build W5 · Phase 2: Build · Week 2 of 5 · 2026·04·27–05·03</div>
+          <div class="nc-title">Week 23 Plan</div>
+          <div class="nc-desc">Sydney Build W10 · Phase 3 W2 · Re-entry after vaccine disruption · 2026·06·01–06·07</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Done</div>
-            <div class="nc-tag">VO2max 57 ↑PR</div>
+            <div class="nc-tag">2×bike re-entry · No probe · HRV suppressed</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
-      <a class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w18_completed.html" target="_blank" style="animation-delay:.78s;">
-        <div class="nc-wk-badge">W18</div>
+      <a style="animation-delay:0.06s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w23_completed.html" target="_blank">
+        <div class="nc-wk-badge">W23</div>
         <div class="nc-body">
           <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 18 Report</div>
-          <div class="nc-desc">Sydney Build W5 · Phase 2: Build · Week 2 of 5 · VO2max 57 ↑PR · WB 30 clean probe · 7/7</div>
+          <div class="nc-title">Week 23 Report</div>
+          <div class="nc-desc">Recovery Bridge · Grade B− · 2×easy bike · No WB probe · HRV 34–40ms · Sleep 7h49 avg</div>
           <div class="nc-tags">
-            <div class="nc-tag done">✓ Completed</div>
-            <div class="nc-tag">2026·04·27–05·03</div>
+            <div class="nc-tag done">✓ Completed · Grade B−</div>
+            <div class="nc-tag" style="border-color:rgba(255,140,66,.2);color:var(--orange);">⚠ Sinus/HRV suppressed</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
     </div>
 
-    <!-- W19 pair — Sydney Build W6 -->
     <div class="week-pair">
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w19_plan.html" target="_blank" style="animation-delay:.81s;">
-        <div class="nc-wk-badge">W19</div>
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w22_plan.html" target="_blank">
+        <div class="nc-wk-badge">W22</div>
         <div class="nc-body">
           <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 19 Plan</div>
-          <div class="nc-desc">Sydney Build W6 · Phase 2: Build · Week 3 of 5 · 2026·05·04–05·10</div>
+          <div class="nc-title">Week 22 Plan</div>
+          <div class="nc-desc">Sydney Build W9 · Phase 3 W1 · CLIO Version · De-load / Transition · 2026·05·25–05·31</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Done</div>
-            <div class="nc-tag">WB 40 probe · calf protect</div>
+            <div class="nc-tag">Vaccine Wed · WB rhythm Tue · Calf cramp Sat</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
-      <a class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w19_completed.html" target="_blank" style="animation-delay:.84s;">
-        <div class="nc-wk-badge">W19</div>
+      <a style="animation-delay:0.06s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w22_completed.html" target="_blank">
+        <div class="nc-wk-badge">W22</div>
         <div class="nc-body">
           <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 19 Report</div>
-          <div class="nc-desc">WB 40 clean probe · sled pull improving · calf managed · 6/7</div>
+          <div class="nc-title">Week 22 Report</div>
+          <div class="nc-desc">Vaccine Disruption Week · Grade B · WB rhythm 30+30 in 1:09/1:05 · No probe · Calf cramp Sat</div>
           <div class="nc-tags">
-            <div class="nc-tag done">✓ Completed</div>
-            <div class="nc-tag">WB 40 ↑lock</div>
+            <div class="nc-tag done">✓ Completed · Grade B</div>
+            <div class="nc-tag" style="border-color:rgba(255,71,87,.2);color:var(--red);">⚠ Calf Cramp</div>
+          </div>
+        </div>
+        <div class="nc-arrow">→</div>
+      </a>
+    </div>
+    </div>
+  </details>
+
+  <details class="phase-group">
+    <summary class="phase-summary">
+      <span class="phase-summary-chevron">▸</span>
+      <span class="phase-summary-title">Sydney Build · Phase 2 — Build</span>
+      <span class="phase-summary-meta">W17–W21 · 5 weeks · 2026·04·20 → 2026·05·18</span>
+    </summary>
+    <div class="grid-weeks">
+    <div class="week-pair">
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w21_plan.html" target="_blank">
+        <div class="nc-wk-badge">W21</div>
+        <div class="nc-body">
+          <div class="nc-label">Week Plan</div>
+          <div class="nc-title">Week 21 Plan</div>
+          <div class="nc-desc">Sydney Build W8 · Phase 2: Build Final · Week 5 of 5 · 2026·05·18–05·24</div>
+          <div class="nc-tags">
+            <div class="nc-tag done">✓ Done</div>
+            <div class="nc-tag">WB consolidate 50 · BBJ rhythm</div>
+          </div>
+        </div>
+        <div class="nc-arrow">→</div>
+      </a>
+      <a style="animation-delay:0.06s;" class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w21_completed.html" target="_blank">
+        <div class="nc-wk-badge">W21</div>
+        <div class="nc-body">
+          <div class="nc-label">Week Report</div>
+          <div class="nc-title">Week 21 Report</div>
+          <div class="nc-desc">Phase 2 BUILD COMPLETE · 8 weeks zero missed · WB ceiling 50 clean · VO2max 58 PR</div>
+          <div class="nc-tags">
+            <div class="nc-tag done">✓ Completed · Grade A</div>
+            <div class="nc-tag">VO2max 58 · 50 clean WB</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
     </div>
 
-    <!-- W20 pair — Sydney Build W7 -->
     <div class="week-pair">
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w20_plan.html" target="_blank" style="animation-delay:.87s;">
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w20_plan.html" target="_blank">
         <div class="nc-wk-badge">W20</div>
         <div class="nc-body">
           <div class="nc-label">Week Plan</div>
@@ -958,7 +1215,7 @@
         </div>
         <div class="nc-arrow">→</div>
       </a>
-      <a class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w20_completed.html" target="_blank" style="animation-delay:.90s;">
+      <a style="animation-delay:0.06s;" class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w20_completed.html" target="_blank">
         <div class="nc-wk-badge">W20</div>
         <div class="nc-body">
           <div class="nc-label">Week Report</div>
@@ -974,214 +1231,125 @@
       </a>
     </div>
 
-    <!-- W21 pair — Sydney Build W8 · Phase 2 Final — COMPLETED -->
     <div class="week-pair">
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w21_plan.html" target="_blank" style="animation-delay:.93s;">
-        <div class="nc-wk-badge">W21</div>
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w19_plan.html" target="_blank">
+        <div class="nc-wk-badge">W19</div>
         <div class="nc-body">
           <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 21 Plan</div>
-          <div class="nc-desc">Sydney Build W8 · Phase 2: Build Final · Week 5 of 5 · 2026·05·18–05·24</div>
+          <div class="nc-title">Week 19 Plan</div>
+          <div class="nc-desc">Sydney Build W6 · Phase 2: Build · Week 3 of 5 · 2026·05·04–05·10</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Done</div>
-            <div class="nc-tag">WB consolidate 50 · BBJ rhythm</div>
+            <div class="nc-tag">WB 40 probe · calf protect</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
-      <a class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w21_completed.html" target="_blank" style="animation-delay:.96s;">
-        <div class="nc-wk-badge">W21</div>
+      <a style="animation-delay:0.06s;" class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w19_completed.html" target="_blank">
+        <div class="nc-wk-badge">W19</div>
         <div class="nc-body">
           <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 21 Report</div>
-          <div class="nc-desc">Phase 2 BUILD COMPLETE · 8 weeks zero missed · WB ceiling 50 clean · VO2max 58 PR</div>
-          <div class="nc-tags">
-            <div class="nc-tag done">✓ Completed · Grade A</div>
-            <div class="nc-tag">VO2max 58 · 50 clean WB</div>
-          </div>
-        </div>
-        <div class="nc-arrow">→</div>
-      </a>
-    </div>
-
-    <!-- W22 pair — Sydney Build W9 · Phase 3 Week 1 · Vaccine Disruption — COMPLETED -->
-    <div class="week-pair">
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w22_plan.html" target="_blank" style="animation-delay:.99s;">
-        <div class="nc-wk-badge">W22</div>
-        <div class="nc-body">
-          <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 22 Plan</div>
-          <div class="nc-desc">Sydney Build W9 · Phase 3 W1 · CLIO Version · De-load / Transition · 2026·05·25–05·31</div>
-          <div class="nc-tags">
-            <div class="nc-tag done">✓ Done</div>
-            <div class="nc-tag">Vaccine Wed · WB rhythm Tue · Calf cramp Sat</div>
-          </div>
-        </div>
-        <div class="nc-arrow">→</div>
-      </a>
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w22_completed.html" target="_blank" style="animation-delay:1.02s;">
-        <div class="nc-wk-badge">W22</div>
-        <div class="nc-body">
-          <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 22 Report</div>
-          <div class="nc-desc">Vaccine Disruption Week · Grade B · WB rhythm 30+30 in 1:09/1:05 · No probe · Calf cramp Sat</div>
-          <div class="nc-tags">
-            <div class="nc-tag done">✓ Completed · Grade B</div>
-            <div class="nc-tag" style="border-color:rgba(255,71,87,.2);color:var(--red);">⚠ Calf Cramp</div>
-          </div>
-        </div>
-        <div class="nc-arrow">→</div>
-      </a>
-    </div>
-
-    <!-- W23 pair — Sydney Build W10 · Phase 3 Re-entry — COMPLETED -->
-    <div class="week-pair">
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w23_plan.html" target="_blank" style="animation-delay:1.05s;">
-        <div class="nc-wk-badge">W23</div>
-        <div class="nc-body">
-          <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 23 Plan</div>
-          <div class="nc-desc">Sydney Build W10 · Phase 3 W2 · Re-entry after vaccine disruption · 2026·06·01–06·07</div>
-          <div class="nc-tags">
-            <div class="nc-tag done">✓ Done</div>
-            <div class="nc-tag">2×bike re-entry · No probe · HRV suppressed</div>
-          </div>
-        </div>
-        <div class="nc-arrow">→</div>
-      </a>
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w23_completed.html" target="_blank" style="animation-delay:1.08s;">
-        <div class="nc-wk-badge">W23</div>
-        <div class="nc-body">
-          <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 23 Report</div>
-          <div class="nc-desc">Recovery Bridge · Grade B− · 2×easy bike · No WB probe · HRV 34–40ms · Sleep 7h49 avg</div>
-          <div class="nc-tags">
-            <div class="nc-tag done">✓ Completed · Grade B−</div>
-            <div class="nc-tag" style="border-color:rgba(255,140,66,.2);color:var(--orange);">⚠ Sinus/HRV suppressed</div>
-          </div>
-        </div>
-        <div class="nc-arrow">→</div>
-      </a>
-    </div>
-
-    <!-- W24 pair — Sydney Build W11 · Phase 3 Final · LAST BUILD WEEK — ACTIVE -->
-    <div class="week-pair">
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w24_plan.html" target="_blank" style="animation-delay:1.11s;">
-        <div class="nc-wk-badge">W24</div>
-        <div class="nc-body">
-          <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 24 Plan — Last Build</div>
-          <div class="nc-desc">Sydney Build W11 · Phase 3 Final · WB probe 60–70 · BBJ restart · Lunges restart · 2026·06·08–06·14</div>
-          <div class="nc-tags">
-            <div class="nc-tag done">✓ Done</div>
-            <div class="nc-tag">Grade C+ · Recovery Crisis</div>
-          </div>
-        </div>
-        <div class="nc-arrow">→</div>
-      </a>
-      <a class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w24_completed.html" target="_blank" style="animation-delay:1.14s;">
-        <div class="nc-wk-badge">W24</div>
-        <div class="nc-body">
-          <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 24 Report</div>
-          <div class="nc-desc">Sydney Build W11 · Recovery Crisis · 1 quality session · Respiratory activation · Sleeping HR 56 Sun · 2026·06·08–06·14</div>
+          <div class="nc-title">Week 19 Report</div>
+          <div class="nc-desc">WB 40 clean probe · sled pull improving · calf managed · 6/7</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Completed</div>
-            <div class="nc-tag">Grade C+ · WB lock 50</div>
+            <div class="nc-tag">WB 40 ↑lock</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w25_plan.html" target="_blank" style="animation-delay:1.17s;">
-        <div class="nc-wk-badge">W25</div>
+    </div>
+
+    <div class="week-pair">
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w18_plan.html" target="_blank">
+        <div class="nc-wk-badge">W18</div>
         <div class="nc-body">
           <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 25 Plan — Taper Week 1</div>
-          <div class="nc-desc">Sydney Build W12 · Phase 4 Taper W1 · WB probe 50 confirmed · BBJ restarted · No HRV gating · 2026·06·15–06·21</div>
+          <div class="nc-title">Week 18 Plan</div>
+          <div class="nc-desc">Sydney Build W5 · Phase 2: Build · Week 2 of 5 · 2026·04·27–05·03</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Done</div>
-            <div class="nc-tag">Grade B+ · WB 50 ceiling</div>
+            <div class="nc-tag">VO2max 57 ↑PR</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
-      <a class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w25_completed.html" target="_blank" style="animation-delay:1.20s;">
-        <div class="nc-wk-badge">W25</div>
+      <a style="animation-delay:0.06s;" class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w18_completed.html" target="_blank">
+        <div class="nc-wk-badge">W18</div>
         <div class="nc-body">
           <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 25 Report</div>
-          <div class="nc-desc">Sydney Build W12 · Taper W1 · WB 50 ceiling confirmed · BBJ restarted · Run 4:03/km · Calves 0/10 · Race strategy locked · 2026·06·15–06·21</div>
+          <div class="nc-title">Week 18 Report</div>
+          <div class="nc-desc">Sydney Build W5 · Phase 2: Build · Week 2 of 5 · VO2max 57 ↑PR · WB 30 clean probe · 7/7</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Completed</div>
-            <div class="nc-tag">Grade B+ · 12 days to race</div>
+            <div class="nc-tag">2026·04·27–05·03</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w26_plan.html" target="_blank" style="animation-delay:1.23s;">
-        <div class="nc-wk-badge">W26</div>
+    </div>
+
+    <div class="week-pair">
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w17_plan.html" target="_blank">
+        <div class="nc-wk-badge">W17</div>
         <div class="nc-body">
           <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 26 Plan — Taper Week 2</div>
-          <div class="nc-desc">Sydney Build W13 · Phase 4 Taper W2 · Ski/Row orientation Tue ★★★ · Lunge restart · Final HYROX touch · WB skill 30 · 2026·06·22–06·28</div>
+          <div class="nc-title">Week 17 Plan</div>
+          <div class="nc-desc">Sydney Build W4 · Phase 2 W1 · 2026·04·20–04·26</div>
           <div class="nc-tags">
-            <div class="nc-tag live">◉ Active · In Progress</div>
-            <div class="nc-tag" style="border-color:rgba(255,71,87,.2);color:var(--red);">⚡ 11 days to race</div>
+            <div class="nc-tag done">✓ Done</div>
+            <div class="nc-tag">245kg PR · 4:16/km</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w27_plan.html" target="_blank" style="animation-delay:1.26s;">
-        <div class="nc-wk-badge">W27</div>
+      <a style="animation-delay:0.06s;" class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w17_completed.html" target="_blank">
+        <div class="nc-wk-badge">W17</div>
         <div class="nc-body">
-          <div class="nc-label">Race Week</div>
-          <div class="nc-title">Week 27 — Race Week</div>
-          <div class="nc-desc">HYROX Sydney 2026 · Race Day Fri 03·07 · 1:15:00 target · WB break 35–40+20–25+R · Station plan + time model · 2026·06·29–07·03</div>
-          <div class="nc-tags">
-            <div class="nc-tag" style="border-color:rgba(255,71,87,.3);color:var(--red);">★ RACE FRIDAY 03·07·2026</div>
-            <div class="nc-tag">Target 1:15:00</div>
-          </div>
-        </div>
-        <div class="nc-arrow">→</div>
-      </a>
-      <a class="nc red" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w27_completed.html" target="_blank" style="animation-delay:1.29s;">
-        <div class="nc-wk-badge">W27</div>
-        <div class="nc-body">
-          <div class="nc-label">Race Week Report</div>
-          <div class="nc-title">Week 27 Report</div>
-          <div class="nc-desc">1:48:24 · DQ navigational (Run 8, not WB) · Sled Push + Pull both #1 in field · WB 100 clean</div>
+          <div class="nc-label">Week Report</div>
+          <div class="nc-title">Week 17 Report</div>
+          <div class="nc-desc">Sled 245kg PR · WB 9kg 58–61s stable · 7/7</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Completed</div>
-            <div class="nc-tag" style="border-color:rgba(255,71,87,.2);color:var(--red);">DQ · Navigation</div>
+            <div class="nc-tag">Sydney Build W4 ✓</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
     </div>
+    </div>
+  </details>
 
-    <!-- W28/W29/W30 pair — Phase 0 bridge to Melbourne -->
+  <details class="phase-group">
+    <summary class="phase-summary">
+      <span class="phase-summary-chevron">▸</span>
+      <span class="phase-summary-title">Sydney Build · Phase 1 — Stabilize</span>
+      <span class="phase-summary-meta">W14–W16 · 3 weeks · 2026·03·30 → 2026·04·13</span>
+    </summary>
+    <div class="grid-weeks">
     <div class="week-pair">
-      <a class="nc muted" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w28_plan.html" target="_blank" style="animation-delay:1.32s;">
-        <div class="nc-wk-badge">W28</div>
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w16_plan.html" target="_blank">
+        <div class="nc-wk-badge">W16</div>
         <div class="nc-body">
-          <div class="nc-label">Recovery Plan</div>
-          <div class="nc-title">Week 28 — Post-Race Recovery</div>
-          <div class="nc-desc">Six binary gates · Phase 0 · 2026·07·06–07·12</div>
+          <div class="nc-label">Week Plan</div>
+          <div class="nc-title">Week 16 Plan</div>
+          <div class="nc-desc">Sydney Build W3 · Phase 1 Final · 2026·04·13–04·19</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Done</div>
+            <div class="nc-tag">P1 Closed · Sled 240kg</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
-      <a class="nc muted" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w28_completed.html" target="_blank" style="animation-delay:1.35s;">
-        <div class="nc-wk-badge">W28</div>
+      <a style="animation-delay:0.06s;" class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w16_completed.html" target="_blank">
+        <div class="nc-wk-badge">W16</div>
         <div class="nc-body">
           <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 28 Report</div>
-          <div class="nc-desc">Data gap — no daily log kept. Bloods drawn Sat 07-11. Archived for history.</div>
+          <div class="nc-title">Week 16 Report</div>
+          <div class="nc-desc">Phase 1 Final · SAT cancelled (HRV 27ms) · Sled pull 204kg repeatable</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Completed</div>
-            <div class="nc-tag">Data Gap</div>
+            <div class="nc-tag">Phase 1 ✓</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
@@ -1189,27 +1357,28 @@
     </div>
 
     <div class="week-pair">
-      <a class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w29_completed.html" target="_blank" style="animation-delay:1.38s;">
-        <div class="nc-wk-badge">W29</div>
-        <div class="nc-body">
-          <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 29 — Medical Clearance</div>
-          <div class="nc-desc">Holter normal · bloods reviewed · stress echo booked 07-27 · first return run 07-18</div>
-          <div class="nc-tags">
-            <div class="nc-tag done">✓ Completed · Grade A-</div>
-            <div class="nc-tag" style="border-color:rgba(0,229,255,.2);color:var(--accent);">Holter Normal</div>
-          </div>
-        </div>
-        <div class="nc-arrow">→</div>
-      </a>
-      <a class="nc blue" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w30_plan.html" target="_blank" style="animation-delay:1.41s;">
-        <div class="nc-wk-badge">W30</div>
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w15_plan.html" target="_blank">
+        <div class="nc-wk-badge">W15</div>
         <div class="nc-body">
           <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 30 — Return to Training</div>
-          <div class="nc-desc">Real day-pattern + real loads, capped intensity · no max effort until 07-27 stress echo</div>
+          <div class="nc-title">Week 15 Plan</div>
+          <div class="nc-desc">Sydney Build W2 · Stabilize · 2026·04·06–04·12</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Done</div>
+            <div class="nc-tag">WB 0:53 best set</div>
+          </div>
+        </div>
+        <div class="nc-arrow">→</div>
+      </a>
+      <a style="animation-delay:0.06s;" class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w15_completed.html" target="_blank">
+        <div class="nc-wk-badge">W15</div>
+        <div class="nc-body">
+          <div class="nc-label">Week Report</div>
+          <div class="nc-title">Week 15 Report</div>
+          <div class="nc-desc">140 WB · 4×25 progressive · 0:58→0:53 · 7/7</div>
+          <div class="nc-tags">
+            <div class="nc-tag done">✓ Completed</div>
+            <div class="nc-tag">WB ↑ progressive</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
@@ -1217,57 +1386,67 @@
     </div>
 
     <div class="week-pair">
-      <a class="nc red" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w30_completed.html" target="_blank" style="animation-delay:1.44s;">
-        <div class="nc-wk-badge">W30</div>
-        <div class="nc-body">
-          <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 30 — Cap Not Held</div>
-          <div class="nc-desc">Full-intensity return Tue–Thu+Sat, plan exceeded · Sat GRIND 21:28 combined Z4-5 ~44h pre-echo · no cardiac jolt any day</div>
-          <div class="nc-tags">
-            <div class="nc-tag done">✓ Completed · Grade C+</div>
-            <div class="nc-tag" style="border-color:rgba(255,71,87,.2);color:var(--red);">Cap Not Held</div>
-          </div>
-        </div>
-        <div class="nc-arrow">→</div>
-      </a>
-      <a class="nc green" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w31_plan.html" target="_blank" style="animation-delay:1.47s;">
-        <div class="nc-wk-badge">W31</div>
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w14_plan.html" target="_blank">
+        <div class="nc-wk-badge">W14</div>
         <div class="nc-body">
           <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 31 — Stress Echo → Phase 1</div>
-          <div class="nc-desc">Mon 16:00 stress echo settled Phase 0. Cleared — full working loads opened, overload lanes unrestricted</div>
+          <div class="nc-title">Week 14 Plan</div>
+          <div class="nc-desc">Sydney Build W1 · Stabilize · 2026·03·30–04·05</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Done</div>
-            <div class="nc-tag" style="border-color:rgba(0,255,135,.2);color:var(--green);">Echo Normal</div>
+            <div class="nc-tag">Sled 240kg PR</div>
+          </div>
+        </div>
+        <div class="nc-arrow">→</div>
+      </a>
+      <a style="animation-delay:0.06s;" class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w14_completed.html" target="_blank">
+        <div class="nc-wk-badge">W14</div>
+        <div class="nc-body">
+          <div class="nc-label">Week Report</div>
+          <div class="nc-title">Week 14 Report</div>
+          <div class="nc-desc">240kg sled PR · sleep 94 · 140 WB SAT · 7/7</div>
+          <div class="nc-tags">
+            <div class="nc-tag done">✓ Completed</div>
+            <div class="nc-tag">240kg ↑PR</div>
+            <div class="nc-tag" style="border-color:rgba(0,255,135,.2);color:var(--green);">Sleep 94</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
     </div>
+    </div>
+  </details>
 
+  <details class="phase-group">
+    <summary class="phase-summary">
+      <span class="phase-summary-chevron">▸</span>
+      <span class="phase-summary-title">Brisbane Block</span>
+      <span class="phase-summary-meta">W09–W13 · 5 weeks · 2026·02·23 → 2026·03·23</span>
+    </summary>
+    <div class="grid-weeks">
     <div class="week-pair">
-      <a class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w31_completed.html" target="_blank" style="animation-delay:1.50s;">
-        <div class="nc-wk-badge">W31</div>
-        <div class="nc-body">
-          <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 31 — Cardiac Cleared</div>
-          <div class="nc-desc">Stress echo normal · sled 252kg compromised · WB 100 reconfirmed · new limiter: compromised-running/quad durability · master plan promoted</div>
-          <div class="nc-tags">
-            <div class="nc-tag done">✓ Completed · Grade A-</div>
-            <div class="nc-tag" style="border-color:rgba(0,255,135,.2);color:var(--green);">Cardiac Cleared</div>
-          </div>
-        </div>
-        <div class="nc-arrow">→</div>
-      </a>
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w32_plan.html" target="_blank" style="animation-delay:1.53s;">
-        <div class="nc-wk-badge">W32</div>
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w13_plan.html" target="_blank">
+        <div class="nc-wk-badge">W13</div>
         <div class="nc-body">
           <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 32 — Week 1: Consolidate</div>
-          <div class="nc-desc">One variable moves: compromised-run repeatability. Saturday 600m runs open 2:50-2:55, hold within a 10-sec band</div>
+          <div class="nc-title">Week 13 Plan</div>
+          <div class="nc-desc">Consolidation · 2026·03·23–03·29</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Done</div>
-            <div class="nc-tag" style="border-color:rgba(0,255,135,.2);color:var(--green);">Race Confirmed</div>
+            <div class="nc-tag">W4/5 · VO2max 54↑</div>
+          </div>
+        </div>
+        <div class="nc-arrow">→</div>
+      </a>
+      <a style="animation-delay:0.06s;" class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w13_completed.html" target="_blank">
+        <div class="nc-wk-badge">W13</div>
+        <div class="nc-body">
+          <div class="nc-label">Week Report</div>
+          <div class="nc-title">Week 13 Report</div>
+          <div class="nc-desc">VO2max 54 PR · 225kg sled · 10km run clean heart</div>
+          <div class="nc-tags">
+            <div class="nc-tag done">✓ Completed</div>
+            <div class="nc-tag">VO2max 57 ↑PR</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
@@ -1275,28 +1454,29 @@
     </div>
 
     <div class="week-pair">
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w32_completed.html" target="_blank" style="animation-delay:1.56s;">
-        <div class="nc-wk-badge">W32</div>
-        <div class="nc-body">
-          <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 32 — Corridor Untested</div>
-          <div class="nc-desc">Sled Pull 204kg new arc · WB density new best · Farmer Carry PR 2:36.40 — but the week's headline (run corridor discipline) never got measured</div>
-          <div class="nc-tags">
-            <div class="nc-tag done">✓ Completed · Grade B</div>
-            <div class="nc-tag" style="border-color:rgba(255,71,87,.2);color:var(--red);">Corridor Untested</div>
-          </div>
-        </div>
-        <div class="nc-arrow">→</div>
-      </a>
-      <a class="nc blue" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w33_plan.html" target="_blank" style="animation-delay:1.59s;">
-        <div class="nc-wk-badge">W33</div>
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w12_plan.html" target="_blank">
+        <div class="nc-wk-badge">W12</div>
         <div class="nc-body">
           <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 33 — Week 2: Consolidate (retry)</div>
-          <div class="nc-desc">Corridor test retried with a treadmill-enforced pace. BBJ re-enters standalone fresh Monday, kept out of Saturday's fatigue block</div>
+          <div class="nc-title">Week 12 Plan</div>
+          <div class="nc-desc">Overload Phase · 2026·03·16–03·22</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Done</div>
-            <div class="nc-tag" style="border-color:rgba(0,229,255,.2);color:var(--accent);">T−17</div>
+            <div class="nc-tag">W3/5 · 4:15/km · 220kg sled PR</div>
+          </div>
+        </div>
+        <div class="nc-arrow">→</div>
+      </a>
+      <a style="animation-delay:0.06s;" class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w12_completed.html" target="_blank">
+        <div class="nc-wk-badge">W12</div>
+        <div class="nc-body">
+          <div class="nc-label">Week Report</div>
+          <div class="nc-title">Week 12 Report</div>
+          <div class="nc-desc">220kg sled PR · limiter identified · SAT smart call</div>
+          <div class="nc-tags">
+            <div class="nc-tag done">✓ Completed</div>
+            <div class="nc-tag">80 WB SUN</div>
+            <div class="nc-tag" style="border-color:rgba(0,229,255,.2);color:var(--accent);">↑ Overload done</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
@@ -1304,28 +1484,29 @@
     </div>
 
     <div class="week-pair">
-      <a class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w33_completed.html" target="_blank" style="animation-delay:1.62s;">
-        <div class="nc-wk-badge">W33</div>
-        <div class="nc-body">
-          <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 33 — BBJ Reintroduced</div>
-          <div class="nc-desc">Headline objective achieved: BBJ back after 7 weeks dormant, zero quad collapse. New WB race-pattern baseline (6:18). Corridor test still unmeasured — 3rd week running; pull-up rule broken 3rd week</div>
-          <div class="nc-tags">
-            <div class="nc-tag done">✓ Completed · Grade A− (BBJ) / C (discipline)</div>
-            <div class="nc-tag" style="border-color:rgba(0,255,135,.2);color:var(--green);">BBJ Back</div>
-          </div>
-        </div>
-        <div class="nc-arrow">→</div>
-      </a>
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w34_plan.html" target="_blank" style="animation-delay:1.65s;">
-        <div class="nc-wk-badge">W34</div>
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w11_plan.html" target="_blank">
+        <div class="nc-wk-badge">W11</div>
         <div class="nc-body">
           <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 34 — Week 3: Lunge Durability</div>
-          <div class="nc-desc">Sandbag lunges introduced, fully isolated from any pace test. Pull-ups move to a fixed pre-committed rep target. Thursday pins one exact treadmill speed, zero overspeed</div>
+          <div class="nc-title">Week 11 Plan</div>
+          <div class="nc-desc">Intensity Rise · 2026·03·09–03·15</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Done</div>
-            <div class="nc-tag" style="border-color:rgba(0,229,255,.2);color:var(--accent);">T−16</div>
+            <div class="nc-tag">W2/5 · 6×1km · 50 WB</div>
+          </div>
+        </div>
+        <div class="nc-arrow">→</div>
+      </a>
+      <a style="animation-delay:0.06s;" class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w11_completed.html" target="_blank">
+        <div class="nc-wk-badge">W11</div>
+        <div class="nc-body">
+          <div class="nc-label">Week Report</div>
+          <div class="nc-title">Week 11 Report</div>
+          <div class="nc-desc">50 WB near-UB · 80 total SAT · 4:09 best interval</div>
+          <div class="nc-tags">
+            <div class="nc-tag done">✓ Completed</div>
+            <div class="nc-tag">50 WB ≈UB</div>
+            <div class="nc-tag" style="border-color:rgba(255,71,87,.2);color:var(--red);">⚠ Sleep</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
@@ -1333,28 +1514,29 @@
     </div>
 
     <div class="week-pair">
-      <a class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w34_completed.html" target="_blank" style="animation-delay:1.68s;">
-        <div class="nc-wk-badge">W34</div>
-        <div class="nc-body">
-          <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 34 — Sled Pull PR, Cardiac Flag</div>
-          <div class="nc-desc">Sled Pull sub-1:00 at working load, pull-up hard rule held clean for the first time in 4 weeks, zero quad collapse under ~130m@30kg sandbag lunges. But a cardiac event Tuesday was mishandled — training continued instead of stopping — now the standing top-priority item</div>
-          <div class="nc-tags">
-            <div class="nc-tag done">✓ Completed · Fitness A / Safety Flag</div>
-            <div class="nc-tag" style="border-color:rgba(255,71,87,.25);color:var(--red);">⚠ Cardiac Flag</div>
-          </div>
-        </div>
-        <div class="nc-arrow">→</div>
-      </a>
-      <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w35_plan.html" target="_blank" style="animation-delay:1.71s;">
-        <div class="nc-wk-badge">W35</div>
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w10_plan.html" target="_blank">
+        <div class="nc-wk-badge">W10</div>
         <div class="nc-body">
           <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 35 — Week 4: Gate 1 + Deload</div>
-          <div class="nc-desc">Athlete's own draft, adopted after comparison. Thursday: 5km negative-split benchmark designed to defeat the "every controlled run becomes a hot start" pattern. Friday: lunge lane physically measured for the first time. Saturday: two baselines separated by 3+ hours. Physician contact re: W34's cardiac event gates both hard days</div>
+          <div class="nc-title">Week 10 Plan</div>
+          <div class="nc-desc">Brisbane Build · 2026·03·02–03·08</div>
           <div class="nc-tags">
             <div class="nc-tag done">✓ Done</div>
-            <div class="nc-tag" style="border-color:rgba(0,229,255,.2);color:var(--accent);">T−15</div>
+            <div class="nc-tag">W1/5 · Controlled Build</div>
+          </div>
+        </div>
+        <div class="nc-arrow">→</div>
+      </a>
+      <a style="animation-delay:0.06s;" class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w10_completed.html" target="_blank">
+        <div class="nc-wk-badge">W10</div>
+        <div class="nc-body">
+          <div class="nc-label">Week Report</div>
+          <div class="nc-title">Week 10 Report</div>
+          <div class="nc-desc">50 unbroken WB · 205 total · sleep debt alert</div>
+          <div class="nc-tags">
+            <div class="nc-tag done">✓ Completed</div>
+            <div class="nc-tag">50 WB PR</div>
+            <div class="nc-tag" style="border-color:rgba(255,71,87,.2);color:var(--red);">⚠ Sleep</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
@@ -1362,35 +1544,35 @@
     </div>
 
     <div class="week-pair">
-      <a class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w35_completed.html" target="_blank" style="animation-delay:1.74s;">
-        <div class="nc-wk-badge">W35</div>
+      <a style="animation-delay:0.03s;" class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/master/Week_09_wolf_training_block.html" target="_blank">
+        <div class="nc-wk-badge">W09</div>
         <div class="nc-body">
-          <div class="nc-label">Week Report</div>
-          <div class="nc-title">Week 35 — Gate 1 PASSED</div>
-          <div class="nc-desc">Clean 5km negative-split benchmark, 22:23, every km faster than the last, reserve remaining. SkiErg and lunge fresh baselines both closed (3:50.24). Wall Ball race-volume clock locked at 5:26. Master Plan v2.3 formally adopted; cardiac item closed after a completed full workup</div>
+          <div class="nc-label">Week Plan</div>
+          <div class="nc-title">Week 09 Plan</div>
+          <div class="nc-desc">Wolf Block · 2026·02·23–03·01</div>
           <div class="nc-tags">
-            <div class="nc-tag done">✓ Completed · Grade A-</div>
-            <div class="nc-tag" style="border-color:rgba(0,255,135,.2);color:var(--green);">Gate 1 PASS</div>
+            <div class="nc-tag done">✓ Done</div>
+            <div class="nc-tag">Intervals · Sled · WB</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
-      <a class="nc blue" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w36_plan.html" target="_blank" style="animation-delay:1.77s;">
-        <div class="nc-wk-badge">W36</div>
+      <a style="animation-delay:0.06s;" class="nc green" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_w09_completed.html" target="_blank">
+        <div class="nc-wk-badge">W09</div>
         <div class="nc-body">
-          <div class="nc-label">Week Plan</div>
-          <div class="nc-title">Week 36 — Phase II Opens: Lunge → Run</div>
-          <div class="nc-desc">First week of Master Plan v2.3's Mesocycle A. Saturday's key test: 100m sandbag lunges @30kg → 1km controlled-max effort, on the same measured lane as W35's baseline. Tuesday closes the Row 1000m data gap, capped at RPE 7.5-8</div>
+          <div class="nc-label">Week Report</div>
+          <div class="nc-title">Week 09 Report</div>
+          <div class="nc-desc">40 unbroken WB · PR achieved · session data</div>
           <div class="nc-tags">
-            <div class="nc-tag live">◉ Active · In Progress</div>
-            <div class="nc-tag" style="border-color:rgba(0,229,255,.2);color:var(--accent);">T−14</div>
+            <div class="nc-tag done">✓ Completed</div>
+            <div class="nc-tag">40 WB PR</div>
           </div>
         </div>
         <div class="nc-arrow">→</div>
       </a>
     </div>
-
-  </div>
+    </div>
+  </details>
 
   <!-- SECTION: ATHLETE + FUTURE -->
   <div class="divider" style="animation-delay:.38s;">
@@ -1403,27 +1585,27 @@
     <a class="nc orange" href="https://yaroriver.github.io/wolf-hyrox/analytics/yaro_athlete_dashboard_v2.html" target="_blank" style="animation-delay:.40s;">
       <div class="nc-icon">👤</div>
       <div class="nc-body">
-        <div class="nc-label">Athlete Profile</div>
+        <div class="nc-label">Athlete Profile · Charts are Sydney Build (W09–W21), historical</div>
         <div class="nc-title">Athlete Report</div>
-        <div class="nc-desc">Yaro · 46y · 196cm · 84kg · VO2max 58 · engine status · strength · priority focus</div>
+        <div class="nc-desc">Yaro · 46y · 196cm · 84kg · VO2max 53 (PR 58, trending back up) · engine status · strength · priority focus. A Melbourne-build dashboard is planned as a follow-up.</div>
         <div class="nc-tags">
           <div class="nc-tag">Pro Men 45–49</div>
-          <div class="nc-tag">VO2max 58 ↑PR</div>
+          <div class="nc-tag">VO2max 53 (PR 58)</div>
           <div class="nc-tag">Iron Viking Gym</div>
         </div>
       </div>
       <div class="nc-arrow">→</div>
     </a>
 
-    <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/plans/wolf_w27_plan.html" target="_blank" style="animation-delay:.43s;">
+    <a class="nc gold" href="https://yaroriver.github.io/wolf-hyrox/completed/wolf_race_final_sydney.html" target="_blank" style="animation-delay:.43s;">
       <div class="nc-icon" style="font-size:18px;">🏁</div>
       <div class="nc-body">
-        <div class="nc-label">Race Week</div>
-        <div class="nc-title">HYROX Sydney — 03·07·2026</div>
-        <div class="nc-desc">Race Day Friday · Pro Men 45–49 · 1:15:00 target · WB 35-40+20-25+R · Station plan + time model · Taper complete</div>
+        <div class="nc-label">Next Race</div>
+        <div class="nc-title">HYROX Melbourne — 11·12·2026</div>
+        <div class="nc-desc">MCEC South Wharf · Pro Men 45–49, provisionally Fri 11 Dec morning wave (window 9–13 Dec) · Target 1:15:00 · Sydney race final (last completed race) linked below</div>
         <div class="nc-tags">
-          <div class="nc-tag" style="border-color:rgba(255,71,87,.3);color:var(--red);">★ RACE FRIDAY 03·07·2026</div>
-          <div class="nc-tag">Est. 63:25 · Buffer 11:35</div>
+          <div class="nc-tag" style="border-color:rgba(0,229,255,.3);color:var(--accent);" id="cd-days-tag">T− days</div>
+          <div class="nc-tag">Sydney Final: 1:48:24 DQ →</div>
         </div>
       </div>
       <div class="nc-arrow">→</div>
@@ -1434,8 +1616,8 @@
 
 <!-- FOOTER -->
 <div class="footer">
-  <div class="footer-l">🐺 WOLF PORTAL · SYDNEY CLOSED · MELBOURNE BUILD LIVE · YARO · PRO MEN 45–49</div>
-  <div class="footer-r">Open any file from the same folder · <span>Melbourne 9–13 Dec 2026</span></div>
+  <div class="footer-l">🐺 WOLF PORTAL · MELBOURNE BUILD LIVE · PHASE II · YARO · PRO MEN 45–49</div>
+  <div class="footer-r">Click a phase to expand its weeks · <span>Melbourne 9–13 Dec 2026</span></div>
 </div>
 
 <script>
@@ -1445,13 +1627,11 @@
     const now  = new Date();
     const diff = race - now;
 
+    const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+
     if (diff <= 0) {
-      ['cd-days','cd-hours','cd-mins','cd-secs'].forEach(id => {
-        const el = document.getElementById(id);
-        if (el) el.textContent = '🏁';
-      });
-      const sb = document.getElementById('cd-days-sb');
-      if (sb) sb.textContent = '🏁';
+      set('cd-days-sb', '🏁');
+      set('cd-days-tag', '🏁 Race Day');
       return;
     }
 
@@ -1460,12 +1640,8 @@
     const mins  = Math.floor((diff % 3600000)  / 60000);
     const secs  = Math.floor((diff % 60000)    / 1000);
 
-    const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
-    set('cd-days',  days);
-    set('cd-hours', String(hours).padStart(2,'0'));
-    set('cd-mins',  String(mins).padStart(2,'0'));
-    set('cd-secs',  String(secs).padStart(2,'0'));
     set('cd-days-sb', days);
+    set('cd-days-tag', `T−${days}d`);
   }
 
   updateCountdown();
