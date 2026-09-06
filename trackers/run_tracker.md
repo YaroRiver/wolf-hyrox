@@ -26,6 +26,7 @@
 | 2026-08-06 W32 THU | Melbourne Phase I W2 | 2:42–2:50 | 4 of 5 completed (1st rep lost to watch fault) | 2:23 / 2:18 / 2:22 / 2:24 | **Ran 18–32 sec faster than the prescribed corridor** — pacing-discipline failure, not a fitness limit; 6 sec total spread shows excellent repeatability at the wrong target. Avg HR 149, peak ~166, well-organised recovery. Session stopped after 5 reps on a posteromedial distal-calf "string" signal (resolved 0/10 by Sat). Full context: `state/current_week.md` (W32 archive) |
 | 2026-08-13 W33 THU | Melbourne Phase I W2 | 2:53–3:05 (treadmill, target 2:55) | 5 of 5 completed (outdoor, not treadmill) | 2:24 / 2:28 / 2:22 / 2:28 / 2:27 | **Ran 25–43 sec faster than the prescribed corridor; the W32 structural fix (treadmill-enforced pace) was not applied** — session run outdoors. Avg 2:25.8, 6 sec spread, avg HR 146, zones Z4 8:01/Z5 1:31. Combined same evening with a full upper-body session + off-plan farmer carry. Corridor pace unmeasured for a 3rd consecutive week. Full context: `archive/2026/week_33_report.md` |
 | 2026-08-20 W34 THU | Melbourne Phase I W3 | 4:50–4:55/km (~2:54–2:57/600m, treadmill 12.3km/h) | 5 of 5 completed (outdoor, not treadmill — 3rd consecutive week) | 2:56 / 2:59 / 3:08 / 2:57 / 2:58 | **Ran essentially on the prescribed pace (unlike W32/W33's overspeed) but the treadmill mechanism itself still wasn't used.** Work HR only 127–136 bpm, nasal breathing throughout — the pace itself is now too easy for a quality stimulus. Rep 3's 3:08 was a pacing-control (GPS-oscillation) error, not fatigue. **Recalibration finding: fresh 600m quality target should move to ~4:20/km (2:36/rep)** — current prescription is stale. Full context: `archive/2026/week_34_report.md` |
+| 2026-09-03 W36 THU | None — deliberate progressive/negative-split speed set, not a fixed corridor | 5 of 5 completed | 2:37 / 2:31 / 2:26 / 2:20 / 2:15 | **Confirms W34's recalibration finding: the old 4:50–4:55/km corridor is stale.** Progressive HR146→162, cadence 175→190, 22s spread — this was a speed/neural-activation ladder, not a repeatability test, and no collapse occurred. Final rep 2:15 (3:46/km) is a new fresh 600m speed data point. **New working estimate for a future repeatability test: ~2:21–2:23/600m — to be proven, not yet confirmed.** Session context: sleepy/flat readiness day, nap-rescued. From `HYROX_W36_FULL_REPORTS` athlete pack, 2026-09-06. |
 
 ---
 
@@ -67,6 +68,7 @@
 | 2026-05-08 | W19 FRI | 5.03 km | — | — | 123 | No Z3+ |
 | 2026-05-15 | W20 FRI | 5.04 km | — | 5:50/km | 127 | No Z3+; clean reset |
 | 2026-08-21 | W34 FRI | 9.06 km | 51:31 | 5:41/km | 135 | Plan called for 3.0–3.5km easy; actual was 2km easy + a genuine **5km steady work block at ~5:13/km (HR 136–148)** + 2km easy exit. Third day this week the written prescription was substantially exceeded. Positive engine signal (paces once costly now controlled), but not the "easy" day as written |
+| 2026-09-02 | W36 WED | 3.04 km | 19:49 | 6:30/km | 133 | Easy run post-upper-strength, stayed genuinely easy despite a subjectively "hard" day. Splits 6:07 (HR141) / 6:11 (HR133) / 6:26 (HR128) — HR trending down as pace held, good control. Power 249W, cadence 157. From `HYROX_W36_FULL_REPORTS` athlete pack, 2026-09-06. |
 
 ---
 
@@ -106,6 +108,9 @@
 | 2026-08-25 | W35 TUE | 1.02 km | 6:04 | 5:55/km | 127 | Warm-up before lower strength + sled session |
 | 2026-08-26 | W35 WED | 3.02 km | 19:16 | 6:23/km | 126 | Indoor, easy deload run day before Gate 1. Splits 6:47/6:06/6:03 — HR stabilized at 129bpm km2–3, pace improved slightly without added HR cost. Clean, no hidden tempo. |
 | 2026-08-27 | W35 THU | 2.02 km | 12:01 | 5:56/km | 126 | Warm-up before Gate 1 benchmark. |
+| 2026-09-01 | W36 TUE | 1.25 km | 7:19 | 5:51/km | 116 | Warm-up before Row Erg baseline + full lower strength/sled session. Cadence 159. |
+| 2026-09-02 | W36 WED | 1.03 km | 6:07 | 5:56/km | 114 | Pre-strength warm-up before upper session. Cadence 158. |
+| 2026-09-03 | W36 THU | 2.02 km | 12:36 | 6:14/km | 119 | Warm-up before 5×600m quality block. Power 253W, cadence 164. |
 
 ---
 

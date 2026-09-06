@@ -327,6 +327,30 @@
 
 ---
 
+## W36 (2026-08-31 → 09-06)
+
+| Date | Day | Sleep h | Restful % | Sleeping HRV ms | Daily HRV %vs baseline | Sleeping HR | Calves/VMO | Body feel | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-31 | MON | 8h20 | 57% (4h45 restful) | 46 ms | -7% | 51 bpm | not provided | felt "slightly off" later, used Lemsip | Planned 4km run not completed (event filming, travel, meal prep); 1.74km walk only, HR82. Recovery/logistics day, no attempt to repay mileage. |
+| 2026-09-01 | TUE | 7h30 | 54% (4h05 restful) | 69 ms | +37% | 53 bpm | posterior/posteromedial **knee** ache flared strongly at rest pre-training (not the usual calf/Achilles zone; athlete-confirmed 2026-09-06 "fine for now") | mild headache/sinus baseline, energy adequate | Row baseline established (~3:48/1000m). Sled Pull 202kg new S3 best (0:55). Sled Push 232kg 45/45/45. WB 100@5:35. |
+| 2026-09-02 | WED | 9h16 (fragmented + naps) | not provided | 30 ms | not provided | 57 bpm | not provided | "low drive," harder than expected subjectively | Bench 80kg=17, Pull-ups +20kg=14 clean, Dips +20kg=28, Farmer Carry 2:44, easy run 3.04km stayed easy despite subjective difficulty. |
+| 2026-09-03 | THU | 8h55 | 44% (3h55 restful) | 59 ms | +7% | 52 bpm | not provided | "sleepy/weak" after work, nap-rescued | 5×600m progressive/negative-split: 2:37/2:31/2:26/2:20/2:15, 22s spread, no collapse — new fresh-speed data point (2:15/600m), not a repeatability result. |
+| 2026-09-04 | FRI | 7h45 | 55% (4h15 restful) | 48 ms | +7% (24h 51.1) | 52 bpm | not provided | full rest day; mild dry nose/throat by evening | **B12 injection done** (closes ~10-week gap, see `reference/medical.md`). New upper-airway symptom onset evening. |
+| 2026-09-05 | SAT | 10h45 (incl. nap) | 50% (5h25 restful) | 83 ms | +48% | 52 bpm | not provided | upper-airway symptoms (dry/irritated nose, mild blockage, dry crusts w/ blood streaks, throat irritation), energy preserved, no fever (36.5–36.8°C) | **Key HYROX session (headline lunge→1km cost test) cancelled — illness.** High sleep/HRV did not override symptomatic status; correct call. |
+| 2026-09-06 | SUN | 8h55 (incl. midday nap) | 49% (HR dip 17%) | 64 ms | +12% (24h 63, spot 91) | 50 bpm | not provided | symptoms persisted, not worsening; swallowing discomfort ~0.5/10, no fever | No running, no HYROX. Light walking only. Return to training Monday contingent on symptoms not worsening. |
+
+## W36 7-day summary
+
+| W36 summary | ~8h47 avg (7 of 7 days provided) | ~51.5% avg (6 of 7 days provided, Wed not stated) | 30–83 ms sleeping range | Daily HRV mostly positive (+7% to +48%) except Mon -7% | Sleeping HR 50-57 bpm | Knee (Tue, one-off, athlete-confirmed resolved) + new upper-airway illness (Fri onset, persisted through Sun) — no calf/Achilles/VMO signal reported | Row baseline landed (Tue), Sled Pull new S3 best (Tue), strong upper strength (Wed) — set against the week's actual headline objective (lunge→1km internal-control test) never executing, illness-driven. |
+
+**Running:** 0 / 1.25 / 4.07 / 6.83 / 0 / 0 / 0 km (Mon–Sun) = **12.15 km total, vs ~30km planned** — gap from Monday logistics + weekend illness management, no compensation attempted.
+
+**B12:** injection given Friday 2026-09-04, closing a gap back to 2026-06-29 (~10 weeks, ~39 days past the ~07-29 due date) that went untracked W29–W36 — see `reference/medical.md`.
+
+**Note:** W36 data supplied as a full 7-day athlete report pack (`HYROX_W36_FULL_REPORTS_2026-08-31_to_2026-09-06`) ahead of Sunday close-out, same pattern as W35.
+
+---
+
 ## Append Protocol
 
 After every Sunday close-out and after every morning readiness gate:

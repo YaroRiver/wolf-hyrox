@@ -17,8 +17,11 @@
 - **Frequency:** once per month
 - **Timing:** typically from the beginning of the month
 - **Dose:** 1 ml per injection
-- **Last injection:** 2026-06-02 (W23 MON — athlete confirmed 2026-06-06)
-- **Previous injection:** 2026-05-14 (W20 THU — calves improved significantly post-injection)
+- **Last confirmed injection:** 2026-09-04 (W36 Fri, athlete-confirmed 2026-09-06 — not logged same-day in the W36 Friday report; closes a real gap, see below)
+- **Next due:** ~2026-10-04
+- **Previous injection:** 2026-06-29 (W27 Mon, sickness-watch day)
+
+**TRACKING GAP, IDENTIFIED 2026-09-06 (W36 close-out, athlete-raised) — RESOLVED:** no B12 mention appeared anywhere in W29–W36 reports; the prior dose (2026-06-29) went ~39 days past its ~07-29 due date, ~10 weeks between injections, before this file caught it. Athlete confirms the next dose was in fact taken 2026-09-04 (Friday), inside that same overdue window. Root cause: the coaching system's own rule to track every injection date and flag overdue timing was not carried forward past W23/W28 — fixed going forward by this dated log; watch that the ~2026-10-04 due date gets logged the day it happens.
 
 ### Coaching Rules
 - Track every B12 injection date in `trackers/readiness_trend.md` or daily current_week.md entries
@@ -160,6 +163,22 @@ A single isolated episode, absent the above, is now logged here (date, time, tra
 **Coaching rules (superseded 2026-08-30 — see "Cardiac Workup Closed" above for the current policy):**
 - ~~If any palpitation sensation returns → immediate session abort~~ — superseded; isolated episodes are now logged, not auto-aborted, following the completed treadmill/echo/Holter workup.
 - HRV pattern monitoring still serves as a general cardiac watch (unchanged).
+
+---
+
+## Upper-Airway Episode — W36 (2026-09-04 onward)
+
+**Onset:** evening of Friday 2026-09-04 — mild dry nose, slight upper-throat/nasopharyngeal irritation and hoarseness. **Escalated Saturday 2026-09-05:** dry/irritated nose, mild left-nostril blockage, dry burning sensation high in the nasopharynx/upper throat, dry nasal crusts with small blood streaks, mild throat irritation/hoarseness, mildly palpable (non-painful) gland/lymph-node region under the ears. No fever throughout (36.5–36.8°C). Energy preserved, no swallowing difficulty, no systemic collapse. **Persisted through Sunday 2026-09-06** with the same symptom set, slightly softer.
+
+**Distinct from the sinus baseline closed out 2026-08-02** — treated as a new acute upper-airway episode (plausible mild viral URI; cold-air mouth breathing during Thursday's outdoor speed session flagged by the athlete as a possible contributing factor to mucosal dryness, not a competing diagnosis).
+
+**Training impact:** Saturday's key HYROX integration session (the week's headline lunge→1km cost test) and Sunday's run were both cancelled — correct calls, no training through active symptoms.
+
+**Coaching note:** this episode fell inside the same window as a ~10-week B12 injection gap (see B12 Protocol above, dose given 2026-09-04); no causal claim made, but consistent with the pernicious-anemia protocol's own logic that B12 timing affects fatigue tolerance and recovery capacity.
+
+## Posterior/Posteromedial Knee — one-off note, W36 Tuesday (2026-09-01)
+
+Athlete reports a posterior/posteromedial knee ache that "flared strongly at rest before training" on Tuesday, did not stop the session. Athlete-confirmed 2026-09-06: **fine for now** — not elevated to a standing watch item. Logged here for the record only; distinct terminology from the existing calf/Achilles/under-knee-pulling watch above, revisit if it recurs rather than assuming the same mechanism.
 
 ---
 

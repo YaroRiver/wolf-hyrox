@@ -22,6 +22,7 @@
 | 2026-05-23 | W21 SAT | Sydney W8 Phase 2 W5 | 28+28 kg | 20 m × 4 (80m total, race-fragment) | splits 48/37/36/37 sec; under HYROX fatigue, settled after R1; calf 2/10 post (no escalation) |
 | 2026-07-28 | W31 TUE | Melbourne Phase 1 W1 | 28+28 kg | 30 m × 3 | Post-cardiac-clearance return; lighter than the 30+30kg plan number but longer distance (30m vs 20m); clean, no calf signal |
 | 2026-08-18 | W34 TUE | Melbourne Phase I W3 | 28+28 kg | 30 m × 3 (90m total) | Plan called for 2×25m maintenance volume; athlete restored the full historical 3-set structure instead — above written prescription, clean execution, no calf signal |
+| 2026-09-01 | W36 TUE | Melbourne Phase II W1 | 28+28 kg | 30 m × 2 | **1:09 / 1:13** — 2 sets not 3 this week, inside a full hybrid strength day (not a dedicated lunge focus). From `HYROX_W36_FULL_REPORTS` athlete pack, 2026-09-06. |
 
 ---
 

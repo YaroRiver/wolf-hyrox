@@ -37,6 +37,7 @@
 | 2026-04-23 W17 THU | 204 kg / 2 rounds | 42s | 43s | Stable race-style |
 | 2026-04-30 W18 THU | 204 kg / 2 rounds | 37s | 42s | R2 cost rising |
 | 2026-05-14 W20 THU | 204 kg / 2 rounds | — | — | Times not captured separately |
+| 2026-09-01 W36 TUE | 232 kg / 3×20m, 60s rest | 45s | 45s | Third set also 45s — excellent repeatability, no PR attempt (working load frozen at 245kg). From `HYROX_W36_FULL_REPORTS` athlete pack, 2026-09-06. |
 
 ---
 

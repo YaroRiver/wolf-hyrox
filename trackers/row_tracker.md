@@ -12,8 +12,13 @@
 | Date | Week | Distance | Time | Avg /500m | Stroke Rate | HR/RPE | Notes |
 |---|---|---|---|---|---|---|---|
 | 2026-06-23 | W26 TUE | Sydney orientation | 1000 m | 4:16 | — | — | Orientation touch alongside SkiErg 4:19. No further data since — station untouched for the rest of the Sydney build and all of the Melbourne build to date. |
+| 2026-09-01 | W36 TUE | Melbourne Phase II W1 | 1003 m | 3:49 | 1:54.4 | 29 spm | ~85% effort (athlete estimate) | **First real Melbourne-build baseline — the scheduled Master Plan v2.3 action for this date.** ~1000m equivalent ~3:48. Working race estimate under fatigue: ~4:00. From `HYROX_W36_FULL_REPORTS` athlete pack, 2026-09-06. |
 
 ---
+
+## W36 Update (2026-09-01)
+
+The "zero fresh-build data" status above is superseded by the row directly above. Station is no longer a blank unknown — see `reference/records.md` and `STATE.md` for the current framing.
 
 ## Master Plan v2.3 — scheduled next action (2026-08-29)
 
