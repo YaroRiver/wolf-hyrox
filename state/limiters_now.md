@@ -22,7 +22,7 @@ Formally replaces the prior macrocycle. Full document: `reference/master_plan.md
 
 ## CONFIRMED LIMITER 1 — Compromised-run repeatability
 
-**Status:** unchanged as the dominant race-performance question since W31 (2026-08-01). W35 did not retest this directly (Gate 1 was a clean/fresh 5km, not a compromised test) — it instead reset the fresh baseline that all future compromised comparisons will be measured against: **22:23 clean 5km, splits 4:46/4:37/4:29/4:19/4:15, negative split, reserve remaining.** W36 Saturday (lunge → 1km) is the next direct data point.
+**Status:** unchanged as the dominant race-performance question since W31 (2026-08-01). W35 did not retest this directly (Gate 1 was a clean/fresh 5km, not a compromised test) — it instead reset the fresh baseline that all future compromised comparisons will be measured against: **22:23 clean 5km, splits 4:46/4:37/4:29/4:19/4:15, negative split, reserve remaining.** W36's designed lunge→1km test was cancelled (illness). **W37 Saturday's fatigue chain (1km control → 80m BBJ → 1km → 100m lunges → 1km) recovers this data point** — Run3−Run1 gives total chain degradation, though under BBJ+chain fatigue rather than the original clean lunge-only design.
 
 ## CONFIRMED LIMITER 2 — Lunge second-half durability
 
@@ -30,7 +30,7 @@ Formally replaces the prior macrocycle. Full document: `reference/master_plan.md
 
 ## HIGH-PRIORITY UNKNOWN — BBJ 80m total clock + post-BBJ run cost
 
-**Status:** not yet a confirmed limiter — no formal continuous 80m Men Pro benchmark exists yet. Structurally capable of becoming race-defining (station time + next-km penalty). W37 is the measurement gate: Tuesday 2×40m pacing diagnostic → Saturday 80m continuous + 1km cost. Result determines whether this gets promoted to a confirmed limiter.
+**Status:** not yet a confirmed limiter — no formal continuous 80m Men Pro benchmark exists yet. Structurally capable of becoming race-defining (station time + next-km penalty). **W37 (current week) is the measurement gate:** Tuesday 2×40m pacing diagnostic → Saturday extends into a two-station chain (1km control → 80m BBJ → 1km → 100m lunges → 1km), athlete's own plan adopted 2026-09-06. Result determines whether this gets promoted to a confirmed limiter.
 
 ## CONFIRMED LIMITER 3 — Sled-pull first-set efficiency at heavy load; race-load status unknown
 

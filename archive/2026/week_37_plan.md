@@ -1,67 +1,163 @@
-# WEEK W37 PLAN — 2026-09-07 (Mon) → 2026-09-13 (Sun)
-## Annual Week 37 · Build Week 10 of 23 · Phase II — Fatigue Mapping + Integration, Week 2 of 5 (Mesocycle A) · T−13
+# WEEK 37 PLAN — 2026-09-07 (Mon) → 2026-09-13 (Sun)
+## Annual Week 37 · T−13 · Phase II — Fatigue Mapping + Integration, Week 2 of 5 (Mesocycle A) · Build Week 10 of 23
+
+> **Replaces the earlier Master-Plan-v2.3-template draft, same day (2026-09-06).** Athlete supplied his own W37 plan (`HYROX_Melbourne_2026_W37_Training_Plan_2026-09-07_to_2026-09-13.md`) and it is adopted below, near-verbatim. Core difference from the first draft: Saturday's session extends the BBJ gate into a **two-station fatigue chain** (1km control → BBJ 80m → 1km → lunges 100m → 1km), recovering W36's lost lunge→1km cost test in the same session rather than deferring it to W39. Coaching assessment of this change is below the plan.
 
 ---
 
-## Entry condition (read before Monday)
+## COACHING ASSESSMENT OF THE CHANGE (2026-09-06)
 
-W36 closed with an active upper-airway illness episode (onset Fri 2026-09-04, still present Sun 2026-09-06 — see `reference/medical.md`) and a ~10-week B12 gap closed Fri 2026-09-04. **Return to full training is conditional on symptoms not worsening overnight, per the athlete's own Sunday decision.** If symptoms are materially present Monday morning, treat Monday and Tuesday as Yellow/Red per `reference/decision_rules.md` and push the BBJ diagnostic to Wednesday rather than forcing it — Tuesday's 2×40m BBJ pacing work only has value if it is genuinely clean.
+**Saturday redesign — adopted, and better than my draft.** My first draft kept Saturday to BBJ+1km only, reasoning that adding anything else would contaminate "the first trustworthy 80m continuous BBJ station clock." On inspection, that reasoning doesn't actually apply here: BBJ's own before/after pair (Run 1 control → BBJ → Run 2) is untouched — the lunge station and Run 3 are added *after* Run 2, not before or during. The BBJ measurement stays exactly as clean as the master plan's own template intended. What changes is that the lunge test is no longer a fresh-state baseline (it can't be compared apples-to-apples to W35's fresh 3:50.24) — but the plan doesn't claim that; it explicitly frames Run3−Run2 as "lunge durability after BBJ + compromised running," a distinct and arguably more race-relevant question (lunges are Station 6 of 8, never fresh in the actual race). This also closes W36's carried-forward lunge measurement gap this week rather than pushing it to W39, which is a genuine improvement on my plan.
 
----
+**Tuesday density — flagged, not blocked.** Tuesday now stacks BBJ 2×40m diagnostic + full lower strength + Sled Push + Sled Pull + full 100-rep Wall Ball in one session. Master Plan v2.3 §3.2's diagnostic exception rule exists specifically to stop a Tuesday diagnostic from becoming a third hard metabolic exposure that costs Thursday's running quality. This is real density. Precedent from W36 Tuesday (an equally dense day — Row + full lower + sled + 100 WB) says the athlete tolerates it and Thursday still landed well (5×600m progressive, no residual-fatigue complaints) — so this isn't blocked, just worth watching: if Thursday's 4×1km comes in flat or with poor spread, this is the first place to look.
 
-## Monday — reset
-Full rest or 30–45 min walk/easy spin. No quality work. Confirm illness trajectory before committing to Tuesday's session as written.
+**Farmer Carry 200m, Wednesday — verified correct.** The plan calls this "race-distance maintenance only" at 200m, not the usual 300m training overload. Checked against `reference/athlete_profile.md`, `reference/master_plan.md` §"Farmers Carry," and `reference/race_strategy.md`: HYROX race distance for this station is confirmed 200m — 300m has been deliberate training overload past race spec. The claim is accurate; adopting as written.
 
-## Tuesday — BBJ 80m measurement gate, Part 1: distance-acclimation / pacing diagnostic
-Per Master Plan v2.3 §7 (W37):
-- 2×40m controlled BBJ on a measured lane, deliberately repeatable cadence (not an opening sprint).
-- Record 0–20m and 20–40m splits for each rep, jumps per 20m, average jump length, any calf/VMO/Achilles signal.
-- Recovery: 3:00–4:00 full walk/rest between the two 40m reps.
-- Success: Rep 2 mechanically comparable to Rep 1, jump length doesn't materially collapse, second 20m of each rep not destroyed by an over-fast opening.
-- **Stop at 2×40m** — this is the bridge between historical 20–30m fragments and Saturday's 80m continuous gate, not a fatigue day.
-- Keep lower-body strength at the low end of planned volume alongside this (standard Tuesday lower pattern per the weekly skeleton), no additional station-density work.
+**Thursday corridor tightened to ~4:16–4:20/km** (Master Plan v2.3 §7 specified 4:20–4:26/km). A reasonable athlete-informed adjustment given W36 Thursday showed clear speed reserve (2:15/600m = 3:46/km on the final rep) — not a factual error, a coaching judgment call reflecting recent data. Adopting as written.
 
-## Wednesday — upper + easy aerobic
-Standard upper strength 30–45min + easy run 4–7km, no hidden tempo. Farmer Carry only if 7–10 day spacing from the last touch (2026-09-02) allows — otherwise skip.
-
-## Thursday — 4×1km threshold-support
-Per Master Plan v2.3 §7:
-- 4×1km at 4:20–4:26/km, 90s easy recovery.
-- KPI: ≤5s rep spread; final rep not slower than the first by more than 3s.
-- This is a repeatability test, unlike W36 Thursday's deliberate progressive/negative-split ladder — the objective this week is holding pace, not building to a fastest rep.
-
-## Friday — rest
-Default full rest. Green-optional: 25–35min easy walk/spin only.
-
-## Saturday — KEY BBJ TEST (80m measurement gate, Part 2)
-Per Master Plan v2.3 §7:
-1. Warm-up.
-2. 80m BBJ continuous on the measured lane, using Tuesday's 40m pacing information.
-3. Record 20m splits, jump count, cadence, jump-length drift, HR.
-4. Transition 30–45s.
-5. 1km controlled maximum sustainable HYROX effort, no sprint finish.
-6. Record first 250m, final 750m, total 1km, HR, cadence, power, RPE.
-
-**Decision rule:** establish a trustworthy 80m baseline and combined BBJ+transition+1km clock; do not pre-judge BBJ as a limiter. If station time, quarter drift, or post-BBJ run penalty materially threaten the race budget, BBJ is promoted to a confirmed limiter and W41 accumulated-fatigue testing proceeds. If cost is modest and mechanics stay stable, BBJ becomes maintain/monitor and later volume reallocates to the larger proven limiter (compromised-run repeatability).
-
-**Do not add the lunge→1km cost retest to this session.** W36's headline lunge→1km test was lost to illness (see `archive/2026/week_36_report.md`) and is a real open item, but stacking it onto the BBJ gate day risks contaminating both signals — the master plan's own v2.3 revision explicitly protects this Saturday from first-exposure contamination. Recommend picking the lunge retest up opportunistically inside W39's multi-station compromised-repeatability week, or as a standalone Saturday if W38's sled-pull validation gate clears with room to spare — confirm with athlete before committing either way.
-
-## Sunday — aerobic durability
-8–12km easy, controlled HR, no threshold finish. Shorten if Saturday's BBJ+1km created unusual local-muscle fatigue, or if illness has not fully cleared.
+Everything else (Monday illness-return checklist, Tuesday BBJ diagnostic structure, Wednesday upper/strength targets, weekly running total ~29.2km against the master plan's ~29–31km target) matches or improves on the master-plan template. No hard-rule conflicts identified.
 
 ---
 
-## Week focus
-Close the second of the Melbourne build's two "highest-priority measurement unknowns" (Row closed W36; BBJ is this week's target). Secondary aim: hold Thursday's running quality to a genuine repeatability standard (≤5s spread) after two consecutive weeks (W34 recalibration, W36 progressive ladder) that were speed-positive but not repeatability-tested.
+## W37 WEEK OBJECTIVE (athlete's own framing)
 
-## Phase-position note
-Phase II (Fatigue Mapping + Integration), Mesocycle A, Week 2 of 5. No phase boundary this week — Mesocycle A runs W36–W40.
+W37 is not a compensation week for the reduced W36 volume. Goals: return to normal build volume without repaying missed kilometres; progress BBJ from 2×40m to 80m continuous; establish BBJ running cost; add a second station into the Saturday fatigue chain; continue strength development; maintain sled and farmer capacity; continue full 100-rep Wall Ball exposure; progress running speed and repeatability; keep the whole hybrid system developing.
 
-## Probe plan
-Saturday's 80m BBJ + 1km is the week's formal measurement gate (not a probe in the WB-ceiling sense) — see Master Plan v2.3 §7 for the full decision rule. No WB/sled/lunge probe scheduled this week.
+> **Build strength, speed, durability and station integration together.**
 
-## Recovery gates
-- Sleep minimum: 7h00 (per `reference/decision_rules.md` Green gate)
-- HRV floor: no more than 15% below baseline for Tuesday/Saturday quality days
-- Calf/VMO/Achilles threshold: ≥4/10 = Red, no high-impact session, no exception
-- Illness-specific gate this week: any worsening of the current upper-airway symptoms (fever, systemic involvement, chest symptoms) is an automatic Red regardless of other markers — this is a new episode, not the resolved sinus baseline.
+---
+
+## MONDAY 7 SEP — EASY RETURN
+
+**Running:** 4km easy. HR ~120–135, no progression, no strides, no fast finish. Use the first 10–15min as a return-to-training check after the upper-respiratory episode.
+
+**Proceed normally if:** temperature is normal; energy is normal; no systemic weakness, chills, body aches or chest symptoms; upper-airway symptoms are stable or improving.
+
+**Mobility:** 10min easy — calves, ankles, hips, adductors.
+
+**Running total: 4km**
+
+---
+
+## TUESDAY 8 SEP — FULL LOWER HYBRID + BBJ BRIDGE
+
+**Warm-up:** ~1.2km easy, then dynamic mobility, 3–4 easy practice burpees/jumps.
+
+**A. BBJ — 2×40m continuous.** Recovery 3:00–4:00. Record 0–20m split, 20–40m split, total time, jump count each 20m, jump-length consistency, cadence, knee/calf/Achilles response. Target: no opening sprint, stable rhythm, second 40m mechanically similar to first. After BBJ: 6–8min recovery.
+
+**B. Lower strength:** Leg Extension 62kg 3×15 · Leg Press 80kg 3×10 · Bulgarian Split Squat 22.5+22.5kg 3×10 each leg · Walking Lunges 28+28kg 2×30m (2:00 rest) · Leg Curl 54kg 3×10. Rule: no failure/no grinding.
+
+**C. Sled Push:** 232kg 3×20m, 60s rest. Reference (W36): 45/45/45s. Goal: maintain repeatability, not add load.
+
+**D. Sled Pull:** 202kg 3×20m, 2:00 rest. W36 reference: 1:23/1:05/0:55. Goal: reduce the first-set penalty through cleaner setup, rope handling, rhythm.
+
+**E. Wall Balls:** 100 reps @9kg, 4×25, 30s rest. Goal: stable 25-rep sets after full lower/hybrid work. No PR chase.
+
+**Running total: ~1.2km**
+
+---
+
+## WEDNESDAY 9 SEP — UPPER + EASY RUN
+
+**Upper strength:** Bench Press 80kg, target 3×6 clean · Weighted Pull-ups +20kg, target ≥15 clean total reps · Weighted Dips +20kg, target 3×10 · One-arm DB Row 35kg 3×10 each · Chin-ups BW 3×6 · V-ups 3×20. Exercise order: Bench → Pull-ups → Dips.
+
+**Farmer Carry:** 2×32kg, 200m — race-distance maintenance only.
+
+**Easy run:** 4km easy, HR ~120–135, relaxed mechanics, no progression, no fast finish.
+
+**Running total: 4km**
+
+---
+
+## THURSDAY 10 SEP — 4×1KM
+
+**Warm-up:** 2km easy, then drills, 3×20s strides — final stride genuinely fast but relaxed.
+
+**Main set:** 4×1km, 90s easy recovery. Reference corridor ~4:16–4:20/km (a reference, not a ceiling).
+
+**Success criteria:** Rep 1 is not the fastest; total spread ≤4–5s; Rep 4 is not slower than Rep 1; no sprint finish; Rep 4 mechanics remain as clean as Rep 2. Goal: activate the nervous system before Rep 1 and finally produce a clean repeatability session.
+
+**Cooldown:** ~1.5km easy.
+
+**Running total: ~8km including recoveries**
+
+---
+
+## FRIDAY 11 SEP — REST
+
+Full rest. Optional: easy walk, light mobility. Do not add missed W36 mileage.
+
+**Running total: 0km**
+
+---
+
+## SATURDAY 12 SEP — KEY W37 FATIGUE CHAIN
+
+**Session structure:** 1km CONTROL → 80m BBJ → 1km → 100m LUNGES → 1km.
+
+This is the main W37 integration session. It preserves the BBJ measurement while adding a second full station after the first post-BBJ run.
+
+**Warm-up:** 2km easy, then mobility, 2–3 short BBJ practice sequences, 2 strides.
+
+**Run 1 — Control:** 1km controlled HYROX effort. Reference ~4:35–4:45/km — not a time trial. Record time, avg HR, power, cadence, RPE. Transition 30–45s.
+
+**Station 1 — BBJ 80m continuous.** Record 0–20m/20–40m/40–60m/60–80m splits, total time, jump count each 20m, jump length, cadence, HR, knee/calf/Achilles response. **This becomes the first valid current 80m BBJ clock.** Transition 30–45s.
+
+**Run 2 — Post-BBJ:** 1km controlled maximum sustainable HYROX effort, no sprint finish. Record first 250m, final 750m, total time, HR, power, cadence, RPE. **Key metric: Run 2 − Run 1 = practical BBJ running penalty.**
+
+**Station 2 — Lunges 100m @30kg.** Record 0–50m/50–100m/total time. Fresh W35 baseline for comparison: 1:39.54 / 2:10.70 / 3:50.24 total. Goal: measure how much lunge durability changes after BBJ + compromised running. Transition 30–45s.
+
+**Run 3 — Post-lunge:** 1km HYROX effort. Record total time, HR, cadence, power, RPE. **Key metrics: Run 3 − Run 2 = additional lunge penalty; Run 3 − Run 1 = total chain degradation.**
+
+**Cooldown:** ~1km easy.
+
+**Running total: ~6km**
+
+---
+
+## SUNDAY 13 SEP — EASY VOLUME
+
+If Saturday was tolerated normally: 6km easy, HR 120–135, no progression, no fast finish, purely aerobic volume.
+
+**Running total: 6km**
+
+---
+
+## WEEKLY RUNNING TOTAL
+
+| Day | Running |
+|---|---:|
+| Monday | 4.0 km |
+| Tuesday | ~1.2 km |
+| Wednesday | 4.0 km |
+| Thursday | ~8.0 km |
+| Friday | 0 km |
+| Saturday | ~6.0 km |
+| Sunday | 6.0 km |
+| **TOTAL** | **~29.2 km** |
+
+---
+
+## W37 SUCCESS CRITERIA
+
+**BBJ:** complete 2×40m Tuesday with split data; complete 80m continuous Saturday; identify whether BBJ deserves promotion to a confirmed limiter.
+
+**Running:** produce a clean 4×1km repeatability set; no opening hero rep; maintain mechanics under fatigue.
+
+**Lunges:** continue heavy short-repeat strength Tuesday; measure 100m durability after BBJ + run Saturday.
+
+**Sleds:** maintain Sled Push repeatability; reduce Sled Pull first-set penalty at 202kg.
+
+**Wall Balls:** complete full 100@9kg; continue durability work without reducing to partial race volume.
+
+**Strength:** Bench 3×6@80kg; Pull-ups ≥15 clean reps@+20kg; Dips 3×10@+20kg.
+
+**Health:** return to full training only if the upper-respiratory episode remains stable or improves. Do not compensate missed W36 mileage.
+
+---
+
+## W37 COACHING PRINCIPLE (athlete's own framing)
+
+> **This week is not built around protecting one test.**
+
+It develops speed, strength, running volume, BBJ durability, lunge durability, sled capacity, full Wall Ball race volume, compromised running, and multi-station fatigue integration — the objective is to keep developing the athlete as a complete hybrid system.
