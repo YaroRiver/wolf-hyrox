@@ -66,8 +66,8 @@ Reintroduced W33 Sat with zero quad collapse, then untouched the entirety of W34
 ### Sleep timing / bedtime discipline — long-standing, still active
 7-day sleep rhythm across W35: Wed 60%, Fri 53%, Sat ~51% — unchanged from the low-to-mid-50s% band that has persisted for months. Friday's own W35 report flagged this directly: "the main thing to improve is sleep timing consistency, not sleep volume." Volume was generally strong this week (7h45–10h40 nightly); timing consistency remains the open problem. This is unrelated to the written-plan-vs-actual item above and is not retired — it remains a standing limiter per CLAUDE.md's sleep reminder protocol.
 
-### B12 injection timing — RESOLVED 2026-09-06
-Gap identified 2026-09-06: last confirmed injection before this had been 2026-06-29 (W27), ~39 days past the ~07-29 due date with zero mention across W29–W36 — a tracking failure on the coaching side, not just a missed dose. Athlete confirms the next dose was already taken **2026-09-04 (W36 Fri)**. Next due ~2026-10-04 — log it same-day this time. See `reference/medical.md`.
+### B12 injection timing — RESOLVED 2026-09-06, next reminder set
+Gap identified 2026-09-06: last confirmed injection before this had been 2026-06-29 (W27), ~39 days past the ~07-29 due date with zero mention across W29–W36 — a tracking failure on the coaching side, not just a missed dose. Athlete confirms the next dose was already taken **2026-09-04 (W36 Fri)**. Next due ~2026-10-04, but **athlete asked to be proactively reminded on 2026-10-01 (Thursday)** instead, to restore his preferred beginning-of-month timing rather than let it drift later each cycle. **Surface this date at every session start until confirmed done.** Log it same-day this time. See `reference/medical.md`.
 
 ### Medical follow-ups (non-urgent, raise with GP)
 - Lipids elevated: total cholesterol 5.7, LDL 3.9, chol/HDL ratio 4.8, non-HDL 4.5.

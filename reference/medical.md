@@ -18,7 +18,7 @@
 - **Timing:** typically from the beginning of the month
 - **Dose:** 1 ml per injection
 - **Last confirmed injection:** 2026-09-04 (W36 Fri, athlete-confirmed 2026-09-06 — not logged same-day in the W36 Friday report; closes a real gap, see below)
-- **Next due:** ~2026-10-04
+- **Next due:** ~2026-10-04. **Athlete-requested proactive reminder: 2026-10-01 (Thursday)** — athlete flagged 2026-09-06 that this cycle ran ~3 days later than his usual beginning-of-month timing and asked to be reminded on the 1st going forward, given the coaching system's own tracking failure this cycle (see gap note above). Surface this date at session start until the injection is confirmed done.
 - **Previous injection:** 2026-06-29 (W27 Mon, sickness-watch day)
 
 **TRACKING GAP, IDENTIFIED 2026-09-06 (W36 close-out, athlete-raised) — RESOLVED:** no B12 mention appeared anywhere in W29–W36 reports; the prior dose (2026-06-29) went ~39 days past its ~07-29 due date, ~10 weeks between injections, before this file caught it. Athlete confirms the next dose was in fact taken 2026-09-04 (Friday), inside that same overdue window. Root cause: the coaching system's own rule to track every injection date and flag overdue timing was not carried forward past W23/W28 — fixed going forward by this dated log; watch that the ~2026-10-04 due date gets logged the day it happens.
